@@ -1,0 +1,108 @@
+;; Object AO_GroupCleaner/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_GroupCleaner/"
+  :tables
+  (list
+
+    (semanticdb-table "AO_GroupCleaner.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AO_GroupCleaner.h" include nil nil [1 29])
+            ("GitVersion.h" include nil nil [30 53])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [54 103])
+            ("tbricks_definitions.h" include nil nil [104 136])
+            ("boost/bind.hpp" include (:system-flag t) nil [137 162])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [164 188])
+            ("AO" type
+               (:members 
+                  ( ("GroupCleaner" type
+                       (:members 
+                          ( ("AO_GroupCleaner" function
+                               (:constructor-flag t
+                                :parent "AO_GroupCleaner"
+                                :arguments 
+                                  ( ("reason" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [266 311])
+                                    ("parameters" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [313 360]))                                  
+                                :type ("AO_GroupCleaner" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [231 562])
+                            ("HandleRunRequest" function
+                               (:parent "AO_GroupCleaner"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [564 1320])
+                            ("HandlePauseRequest" function
+                               (:parent "AO_GroupCleaner"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1322 1458])
+                            ("HandleModifyRequest" function
+                               (:parent "AO_GroupCleaner"
+                                :arguments 
+                                  ( ("modifier" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1502 1544]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1460 1709])
+                            ("HandleValidateRequest" function
+                               (:parent "AO_GroupCleaner"
+                                :arguments 
+                                  ( ("context" variable
+                                       (:reference 1
+                                        :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1755 1791]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1711 2225])
+                            ("HandleDeleteRequest" function
+                               (:parent "AO_GroupCleaner"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2227 2309])
+                            ("GetCurrentStatus" function
+                               (:parent "AO_GroupCleaner"
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2311 2495])
+                            ("UpdateName" function
+                               (:parent "AO_GroupCleaner"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2497 2565])
+                            ("OnCleanerDone" function
+                               (:parent "AO_GroupCleaner"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2567 2631]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [205 2634]))                  
+                :type "namespace")
+                nil [190 2636]))          
+      :file "AO_GroupCleaner.cpp"
+      :pointmax 2698
+      :fsize 2697
+      :lastmodtime '(22149 9728 955962 450000)
+      :unmatched-syntax '((semantic-list 2662 . 2697) (symbol 2638 . 2662)))
+    (semanticdb-table "AO_GroupCleaner.h"
+      :file "AO_GroupCleaner.h"
+      :fsize 1003
+      :lastmodtime '(22149 9728 955962 450000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 17597
+      :lastmodtime '(22006 31481 344662 211000))
+
+
+
+
+
+
+)
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_GroupCleaner!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

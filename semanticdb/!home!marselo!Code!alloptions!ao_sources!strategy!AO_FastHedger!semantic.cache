@@ -1,0 +1,2070 @@
+;; Object AO_FastHedger/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_FastHedger/"
+  :tables
+  (list
+    (semanticdb-table "FastHedgerPlugin.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_STRATEGY_AO_FASTHEDGER_FASTHEDGERPLUGIN_H_" variable (:constant-flag t) nil [165 218])
+            ("strategy/API.h" include (:system-flag t) nil [220 245])
+            ("boost/circular_buffer.hpp" include (:system-flag t) nil [246 282])
+            ("boost/ptr_container/ptr_map.hpp" include (:system-flag t) nil [283 325])
+            ("boost/bimap.hpp" include (:system-flag t) nil [326 352])
+            ("boost/bimap/multiset_of.hpp" include (:system-flag t) nil [353 391])
+            ("AO_SharedGlobal/Trading/AOOrderManager.h" include nil nil [393 444])
+            ("AO_SharedGlobal/Trading/DesiredTrader.h" include nil nil [445 495])
+            ("AO_SharedGlobal/Trading/IVIDProvider.h" include nil nil [496 545])
+            ("AO_SharedGlobal/Ticker/TickerGenerator.h" include nil nil [546 597])
+            ("AO_SharedGlobal/Global/BinaryExport.h" include nil nil [598 646])
+            ("DesiredTraderContainer.h" include nil nil [647 682])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [684 708])
+            ("FastHedgerPlugin" type
+               (:superclasses 
+                  ( ("Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("BestPriceStream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("QuoteFill::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("Order::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("TradeStream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentStream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("ITimerEventHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1008 1015])
+                    ("FastHedgerPlugin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1034 1070])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1071 1109]))                          
+                        :type ("FastHedgerPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1017 1110])
+                    ("FastHedgerPlugin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1112 1140])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1143 1171])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1173 1198])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1200 1227])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1255 1288]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1229 1289])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1318 1354]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1291 1355])
+                    ("private" label nil (reparse-symbol classsubparts) [1356 1364])
+                    ("GetInstrumentStatusScore" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentStatus" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1405 1436]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1366 1437])
+                    ("GetInstrumentFilter" function
+                       (:prototype-flag t
+                        :type ("InstrumentStream::Filters::Filter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1439 1495])
+                    ("HandleBestPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1522 1554])
+                            ("price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BestPrice" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1555 1579]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1501 1580])
+                    ("HandleQuoteFillUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1612 1646])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QuoteFill" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1647 1672]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1585 1673])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1716 1750])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1751 1800]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1678 1801])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1847 1880])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1881 1922])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1923 1975]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1806 1976])
+                    ("HandleOrderUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2004 2038])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Order::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2039 2067]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1981 2068])
+                    ("HandleOrderInvalidate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2100 2131])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OrderIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2132 2158]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2073 2159])
+                    ("HandleTrade" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2182 2213])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2214 2233]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2164 2234])
+                    ("HandleTradeInvalidate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2267 2298])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradeIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2299 2325]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2239 2326])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2353 2385])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2386 2415]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2331 2416])
+                    ("HandleInstrumentInvalidate" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2453 2485])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2486 2518]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2421 2521])
+                    ("HandleTimerEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("timer" variable
+                               (:reference 1
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2548 2562]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2526 2563])
+                    ("UpdateIVID" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("provider" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IVIDProvider" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2585 2614]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2569 2615])
+                    ("HandleFill" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2642 2681])
+                            ("side" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Side" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2684 2701])
+                            ("volume" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2704 2725])
+                            ("price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2728 2747])
+                            ("" variable
+                               (:constant-flag t
+                                :type ("boost::function" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2750 2772])
+                            ("" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2772 2781])
+                            ("" variable (:type ("message" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2784 2792])
+                            ("ranking" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::RankingIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2795 2837]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2620 2838])
+                    ("HandleTrader" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2843 2863])
+                    ("Stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2869 2881])
+                    ("HandleError" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2903 2942])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2943 2965])
+                            ("severity" variable (:type ("Alert::Severity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2966 2991]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2886 2992])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3021 3053]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2998 3054])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3083 3115]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3059 3116])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3144 3176]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3121 3177])
+                    ("ReopenDeltaStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("marketDataIVID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentVenueIdentification" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3206 3258]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3183 3259])
+                    ("ReopenInstrumentParametersStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3264 3304])
+                    ("GenerateTickerMessage" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("orderPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3339 3363])
+                            ("orderVolume" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3366 3392])
+                            ("orderSide" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Side" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3395 3417])
+                            ("hedgePrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3420 3444])
+                            ("hedgeVolume" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3447 3473])
+                            ("instrumentName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3476 3505]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3307 3512])
+                    ("GetSpread" function
+                       (:arguments 
+                          ( ("outSpread" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3533 3551]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3518 3764])
+                    ("GetPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("outPrice" variable
+                               (:reference 1
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3784 3800])
+                            ("hedgeMode" variable (:type "int") (reparse-symbol arg-sub-list) [3801 3815])
+                            ("buyHedge" variable (:type "bool") (reparse-symbol arg-sub-list) [3816 3830])
+                            ("hitTicks" variable (:type "int") (reparse-symbol arg-sub-list) [3831 3844]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3770 3851])
+                    ("FillUnderlying" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3856 3878])
+                    ("SetTradingParameters" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3883 3911])
+                    ("DeleteTracking" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3936 3951]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3916 3952])
+                    ("GenerateDiagnostics" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3984 4005]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3957 4012])
+                    ("StartHitMissTimer" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4014 4039])
+                    ("UpdateUnderlyingRefPrice" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4041 4073])
+                    ("UpdateMaxSpread" function (:type "void") (reparse-symbol classsubparts) [4076 4226])
+                    ("orderManager" variable (:type ("AOOrderManager" type
+                         (:template-specifier 
+                            ( ("DesiredTrader" type nil nil nil)
+                              ("256"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4230 4304])
+                    ("instrumentGroupParameter" variable (:type ("InstrumentGroupParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4350 4400])
+                    ("portfolioParameter" variable (:type ("PortfolioIdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4402 4450])
+                    ("instrumentParameter" variable (:type ("InstrumentIdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4452 4502])
+                    ("mainVenueParameter" variable (:type ("VenueParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4504 4561])
+                    ("reserveVenueParameter" variable (:type ("VenueParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4504 4561])
+                    ("mainMICParameter" variable (:type ("MICParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4563 4614])
+                    ("reserveMICParameter" variable (:type ("MICParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4563 4614])
+                    ("mmPluginIdentifierParameter" variable (:type ("IdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4616 4664])
+                    ("quoteSetIdentifierParameter" variable (:type ("IdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4666 4714])
+                    ("serviceIdentifierParameter" variable (:type ("IdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4716 4763])
+                    ("priceParameter" variable (:type ("PriceParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4765 4795])
+                    ("activeVolumeParameter" variable (:type ("VolumeParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4797 4857])
+                    ("totalVolumeParameter" variable (:type ("VolumeParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4797 4857])
+                    ("sideParameter" variable (:type ("SideParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4859 4887])
+                    ("useSkewDeltaParameter" variable (:type ("BooleanParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4889 4928])
+                    ("hedgeMissModeParameter" variable (:type ("IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4930 4970])
+                    ("hedgeMissModeHitTicksParameter" variable (:type ("IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4972 5020])
+                    ("hedgeTotalVolumeThreshold" variable (:type ("VolumeParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5022 5064])
+                    ("underlying" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5067 5089])
+                    ("minimumVolume" variable (:type ("Volume" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5091 5127])
+                    ("maximumVolume" variable (:type ("Volume" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5091 5127])
+                    ("amountOfOrdersPerPrice" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5129 5160])
+                    ("bestPriceStream" variable (:type ("BestPriceStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5163 5195])
+                    ("bestPrice" variable (:type ("BestPrice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5197 5217])
+                    ("spread" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5220 5259])
+                    ("maxSpreadPct" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5220 5259])
+                    ("maxSpread" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5220 5259])
+                    ("underlyingRefPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5261 5286])
+                    ("averageSpread" variable (:type "double") (reparse-symbol classsubparts) [5288 5309])
+                    ("averageVolume" variable (:type "double") (reparse-symbol classsubparts) [5311 5332])
+                    ("nVolumes" variable (:type "unsigned long") (reparse-symbol classsubparts) [5334 5357])
+                    ("QuoteSetData" type
+                       (:members 
+                          ( ("quoteSetIdentifier" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5385 5415])
+                            ("serviceIdentifier" variable (:type ("ServiceIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5418 5454])
+                            ("quoteFillStream" variable (:type ("QuoteFill::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5457 5491])
+                            ("ToString" function (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5495 5673]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5360 5677])
+                    ("QuoteSetDataMap" type
+                       (:typedef ("boost::ptr_map" type
+                             (:template-specifier 
+                                ( ("Identifier" type nil nil nil)
+                                  ("QuoteSetData" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::ptr_map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5680 5745])
+                    ("quoteSetDataMap" variable (:type ("QuoteSetDataMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5747 5779])
+                    ("trader" variable (:type ("DesiredTraderContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5782 5812])
+                    ("InstrumentData" type
+                       (:members 
+                          ( ("ValidateHitTicks" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("hedge_mode_hit_ticks" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Integer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5870 5916]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5842 5917])
+                            ("GetHitTicks" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ranking" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::RankingIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5936 5978]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5920 5985])
+                            ("delta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5989 6002])
+                            ("factor" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6005 6019])
+                            ("name" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6022 6034])
+                            ("hedgeMode" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6037 6055])
+                            ("aqHedgeMode" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6058 6091])
+                            ("hqHedgeMode" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6058 6091])
+                            ("hedgeModeHitTicks" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6094 6162])
+                            ("aqHedgeModeHitTicks" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6094 6162])
+                            ("hqHedgeModeHitTicks" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6094 6162])
+                            ("kMaxHedgeModeHitTicks" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6165 6208]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5815 6212])
+                    ("InstrumentDataMap" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("InstrumentData" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6214 6283])
+                    ("instrumentDataMap" variable (:type ("InstrumentDataMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6285 6321])
+                    ("UnderlyingOrders" type
+                       (:typedef ("boost::bimap" type
+                             (:template-specifier 
+                                ( ("boost::bimaps::multiset_of" type nil nil nil)
+                                  ("OrderIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::bimap"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6324 6416])
+                    ("underlyingOrders" variable (:type ("UnderlyingOrders" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6418 6452])
+                    ("Orders" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("OrderIdentifier" type nil nil nil)
+                                  ("Order" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6455 6501])
+                    ("Trades" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("TradeIdentifier" type nil nil nil)
+                                  ("Trade" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6503 6549])
+                    ("DeletedItems" type
+                       (:typedef ("boost::bimap" type
+                             (:template-specifier 
+                                ( ("Uuid" type nil nil nil)
+                                  ("boost::bimaps::list_of" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::bimap"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6551 6625])
+                    ("orders" variable (:type ("Orders" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6627 6641])
+                    ("trades" variable (:type ("Trades" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6643 6657])
+                    ("deletedItems" variable (:type ("DeletedItems" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6659 6685])
+                    ("deltaStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6688 6754])
+                    ("helperDeltaStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6688 6754])
+                    ("instrumentParametersStream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6756 6821])
+                    ("instrumentAqParametersStream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6823 6920])
+                    ("instrumentHqParametersStream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6823 6920])
+                    ("underlyingOrderStream" variable (:type ("Order::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6922 6958])
+                    ("orderStream" variable (:type ("Order::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6960 6986])
+                    ("tradeStream" variable (:type ("TradeStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6988 7012])
+                    ("instrumentStream" variable (:type ("InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7014 7048])
+                    ("ividProvider" variable (:type ("IVIDProvider" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7051 7077])
+                    ("conversionTimer" variable (:type ("Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7080 7102])
+                    ("hitMissTimer" variable (:type ("Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7104 7123])
+                    ("spreads" variable (:type ("boost::circular_buffer" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7125 7164])
+                    ("hedgeAlgoLabel" variable (:type ("AlgoLabelOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7167 7199])
+                    ("missedHedgeAlgoLabel" variable (:type ("AlgoLabelOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7201 7239])
+                    ("changeExchangeAlgoLabel" variable (:type ("AlgoLabelOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7241 7282])
+                    ("errorAlgoLabel" variable (:type ("AlgoLabelOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7284 7316])
+                    ("ticker" variable (:type ("AO::Ticker::TickerGenerator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7319 7354])
+                    ("exportValues" variable (:type ("AO::BinaryExport::Values" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7356 7394])
+                    ("exporter" variable (:type ("AO::BinaryExport::Exporter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7396 7432])
+                    ("volumeNeedToHedge" variable (:type "double") (reparse-symbol classsubparts) [7435 7460])
+                    ("lastMissedVolume" variable (:type "double") (reparse-symbol classsubparts) [7462 7486])
+                    ("timerEventsCounter" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7488 7515])
+                    ("m_performance_event" variable (:type ("PerformanceEventTree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7518 7559]))                  
+                :type "class")
+                nil [710 7562]))          
+      :file "FastHedgerPlugin.h"
+      :pointmax 7631
+      :fsize 7630
+      :lastmodtime '(22185 65254 369512 720000)
+      :unmatched-syntax '((punctuation 2782 . 2783) (punctuation 2781 . 2782) (semantic-list 2779 . 2781) (punctuation 2771 . 2772))
+      :lexical-table 
+        '(("AO_SOURCES_STRATEGY_AO_FASTHEDGER_FASTHEDGERPLUGIN_H_")
+          )
+)
+    (semanticdb-table "DesiredTraderContainer.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "DesiredTraderContainer.h"
+      :pointmax 4260
+      :fsize 4259
+      :lastmodtime '(22185 65254 369512 720000)
+      :unmatched-syntax nil)
+    (semanticdb-table "FastHedgerPlugin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FastHedgerPlugin.h" include nil nil [97 126])
+            ("shared/Helpers.cpp" include nil nil [127 156])
+            ("GitVersion.h" include nil nil [157 180])
+            ("boost/bind.hpp" include (:system-flag t) nil [181 206])
+            ("tbricks_definitions.h" include nil nil [207 239])
+            ("SPREAD_HISTORY" variable (:constant-flag t) nil [249 263])
+            ("FastHedgerPlugin::InstrumentData::kMaxHedgeModeHitTicks" variable
+               (:constant-flag t
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [268 342])
+            ("unnamed" type
+               (:members 
+                  ( ("keyDesiredHedgeVolume" variable
+                       (:constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [356 417])
+                    ("keyVolumeMissed" variable
+                       (:constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [418 467])
+                    ("keyVolumeHedged" variable
+                       (:constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [468 517])
+                    ("HedgeModeName" function
+                       (:arguments 
+                          ( ("hedgeMode" variable (:type "int") (reparse-symbol arg-sub-list) [549 563])
+                            ("hitTicks" variable (:type "int") (reparse-symbol arg-sub-list) [564 577]))                          
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [519 952]))                  
+                :type "namespace")
+                nil [344 954])
+            ("FastHedgerPlugin" function
+               (:constructor-flag t
+                :parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("reason" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InitializationReason" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [991 1027])
+                    ("parameters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StrategyParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1028 1066]))                  
+                :type ("FastHedgerPlugin" type (:type "class") nil nil))
+                nil [956 4116])
+            ("FastHedgerPlugin" function
+               (:destructor-flag t
+                :parent "FastHedgerPlugin"
+                :type "void")
+                nil [4118 4184])
+            ("HandleDeleteRequest" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [4186 4270])
+            ("HandleRunRequest" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [4272 6037])
+            ("UpdateUnderlyingRefPrice" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [6039 6283])
+            ("HandleBestPrice" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6324 6356])
+                    ("price" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BestPrice" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6357 6381]))                  
+                :type "void")
+                nil [6285 6893])
+            ("HandleQuoteFillUpdate" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6940 6974])
+                    ("update" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QuoteFill" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6975 7000]))                  
+                :type "void")
+                nil [6895 7391])
+            ("HandleCalculatedInstrumentValues" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7449 7483])
+                    ("update" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7484 7533]))                  
+                :type "void")
+                nil [7393 7960])
+            ("HandleInstrumentAggregateParameters" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("streamId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8021 8054])
+                    ("instrumentId" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8055 8096])
+                    ("update" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8097 8149]))                  
+                :type "void")
+                nil [7962 9607])
+            ("HandleOrderUpdate" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9650 9684])
+                    ("update" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Order::Update" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9685 9713]))                  
+                :type "void")
+                nil [9609 11449])
+            ("HandleOrderInvalidate" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11496 11527])
+                    ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("OrderIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11528 11554]))                  
+                :type "void")
+                nil [11451 11675])
+            ("HandleTrade" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11713 11744])
+                    ("update" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Trade" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11745 11765]))                  
+                :type "void")
+                nil [11677 12930])
+            ("HandleTradeInvalidate" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12978 13009])
+                    ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TradeIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13010 13036]))                  
+                :type "void")
+                nil [12932 13071])
+            ("HandleInstrument" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13113 13145])
+                    ("instrument" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Instrument" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13146 13175]))                  
+                :type "void")
+                nil [13073 14459])
+            ("HandleTimerEvent" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("timer" variable
+                       (:reference 1
+                        :type ("Timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14501 14515]))                  
+                :type "void")
+                nil [14461 16912])
+            ("ReopenDeltaStream" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("marketDataIVID" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentVenueIdentification" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16955 17007]))                  
+                :type "void")
+                nil [16914 17963])
+            ("ReopenInstrumentParametersStream" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [17965 20060])
+            ("UpdateIVID" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("provider" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("IVIDProvider" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20096 20125]))                  
+                :type "void")
+                nil [20062 20974])
+            ("StartHitMissTimer" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [20976 21130])
+            ("HandleFill" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("instrument" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21168 21207])
+                    ("side" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Side" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21209 21226])
+                    ("volume_" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21228 21250])
+                    ("price" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21252 21271])
+                    ("" variable
+                       (:constant-flag t
+                        :type ("boost::function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21273 21295])
+                    ("" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21295 21304])
+                    ("" variable (:type ("message" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21307 21315])
+                    ("ranking" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tbricks::RankingIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21317 21359]))                  
+                :type "void")
+                nil [21132 24126])
+            ("GenerateTickerMessage" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("orderPrice" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24186 24210])
+                    ("orderVolume" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24212 24238])
+                    ("orderSide" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Side" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24240 24262])
+                    ("hedgePrice" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24264 24288])
+                    ("hedgeVolume" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24290 24316])
+                    ("instrumentName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24318 24347]))                  
+                :type ("tbricks::String" type (:type "class") nil nil))
+                nil [24128 25396])
+            ("GetPrice" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("outPrice" variable
+                       (:reference 1
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25430 25446])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [25447 25456])
+                    ("buyHedge" variable (:type "bool") (reparse-symbol arg-sub-list) [25457 25471])
+                    ("hitTicks" variable (:type "int") (reparse-symbol arg-sub-list) [25472 25485]))                  
+                :type "bool")
+                nil [25398 27828])
+            ("GenerateDiagnostics" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("reason" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27875 27896]))                  
+                :type ("String" type (:type "class") nil nil))
+                nil [27830 29435])
+            ("FillUnderlying" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [29437 29867])
+            ("SetTradingParameters" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [29869 30185])
+            ("DeleteTracking" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Uuid" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30225 30240]))                  
+                :type "bool")
+                nil [30187 30694])
+            ("HandleTrader" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [30696 31136])
+            ("HandleError" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("instrument" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31173 31212])
+                    ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31213 31235])
+                    ("severity" variable (:type ("Alert::Severity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31236 31261]))                  
+                :type "void")
+                nil [31138 31520])
+            ("Stop" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [31522 32297])
+            ("HandlePauseRequest" function
+               (:parent "FastHedgerPlugin"
+                :type "void")
+                nil [32299 32468])
+            ("HandleModifyRequest" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("modifier" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StrategyModifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32514 32547]))                  
+                :type "void")
+                nil [32470 36700])
+            ("HandleValidateRequest" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("context" variable
+                       (:reference 1
+                        :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36747 36783]))                  
+                :type "void")
+                nil [36702 38021])
+            ("HandleStreamStale" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38064 38096]))                  
+                :type "void")
+                nil [38023 38202])
+            ("HandleStreamFailed" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38246 38278]))                  
+                :type "void")
+                nil [38204 38387])
+            ("HandleSnapshotEnd" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38430 38462]))                  
+                :type "void")
+                nil [38389 38699])
+            ("GetInstrumentStatusScore" function
+               (:parent "FastHedgerPlugin"
+                :arguments 
+                  ( ("status" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentStatus" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38751 38782]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [38701 38923])
+            ("GetInstrumentFilter" function
+               (:parent "FastHedgerPlugin"
+                :type ("InstrumentStream::Filters::Filter" type (:type "class") nil nil))
+                nil [38925 39375])
+            ("GetHitTicks" function
+               (:parent "FastHedgerPlugin::InstrumentData"
+                :arguments 
+                  ( ("ranking" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tbricks::RankingIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39430 39472]))                  
+                :type "int")
+                nil [39377 39734])
+            ("ValidateHitTicks" function
+               (:parent "FastHedgerPlugin::InstrumentData"
+                :arguments 
+                  ( ("hedge_mode_hit_ticks" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tbricks::Integer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39791 39836]))                  
+                :type "int")
+                nil [39736 40161]))          
+      :file "FastHedgerPlugin.cpp"
+      :pointmax 40210
+      :fsize 40209
+      :lastmodtime '(22185 65254 369512 720000)
+      :unmatched-syntax '((semantic-list 40190 . 40208) (symbol 40166 . 40190) (punctuation 21305 . 21306) (punctuation 21304 . 21305) (semantic-list 21302 . 21304) (punctuation 21294 . 21295))
+      :lexical-table 
+        '(("SPREAD_HISTORY" . ((number "50" 264 . 266)))
+          )
+)
+    (semanticdb-table "tbricks_definitions.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__AOFASTHEDGER__DEFINITIONS_H__" variable (:constant-flag t) nil [201 241])
+            ("strategy/Types.h" include nil nil [243 270])
+            ("strategy/Linkage.h" include nil nil [271 300])
+            ("strategy/pricing/InstrumentCalculatedValueDefinition.h" include nil nil [301 366])
+            ("strategy/calculated_property/CalculatedPropertyDefinition.h" include nil nil [367 437])
+            ("aofasthedger" type
+               (:members 
+                  ( ("plug_ins" type
+                       (:members 
+                          ( ("AO_Order" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::StrategyIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [539 791])
+                            ("AO_FastHedger" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::StrategyIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [836 1093]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [465 1096])
+                    ("instrument_parameters" type
+                       (:members 
+                          ( ("HideMaturity" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1188 1545])
+                            ("HedgeVolumeThreshold" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1611 2065])
+                            ("PreferredEngine" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2129 2496])
+                            ("PreferredSubsystem" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2563 2936])
+                            ("AmountOfOrdersPerPrice" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3007 3545])
+                            ("HedgeMode" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3600 3952])
+                            ("HedgeModeHitTicks" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4017 4386])
+                            ("HedgeAllowedUnderlyingSpread_PERCENTAGE" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4463 4948])
+                            ("UnderlyingInstrument" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5027 5414]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1098 5417])
+                    ("strategy_parameters" type
+                       (:members 
+                          ( ("InstrumentGroup" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5517 5919])
+                            ("DiagnosticAction" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5979 6370])
+                            ("TargetPrice" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6423 6870])
+                            ("BypassSoftLimits" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6931 7346])
+                            ("VenueB" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7404 7783])
+                            ("MIC_A" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7827 8191])
+                            ("MIC_B" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8235 8599])
+                            ("AO_O_MinCredit" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8654 9060])
+                            ("QuoteSetIdentifier" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [9126 9612])
+                            ("VenueA" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [9670 10054])
+                            ("LayerCount" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [10108 10492])
+                            ("GenerateLayers" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [10550 10942])
+                            ("LayerPriceStep" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [10999 11390])
+                            ("HedgeTrade_LEFT_PARENTHESIS_AO_RIGHT_PARENTHESIS" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [11449 11942])
+                            ("UseSkewDelta" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [11999 12412])
+                            ("BinaryMetrics" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [12468 12984])
+                            ("AlgoLabel" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13037 13419])
+                            ("AO_OrderAlgo" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13475 13863])
+                            ("Tag" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13912 14387])
+                            ("AdjustEngine" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14443 14967])
+                            ("ServiceToUse" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15027 15447])
+                            ("DirectTrade" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15502 15888])
+                            ("AllowMarketOrder" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15949 16346])
+                            ("AttemptedToSendOrder" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16412 16850])
+                            ("HedgeMissMode" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16908 17299])
+                            ("HedgeMissModeHitTicks" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [17367 17776])
+                            ("HedgeTotalVolumeThreshold" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [17847 18386])
+                            ("AveragePaidSold" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18445 18851])
+                            ("FilledVolume" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18906 19304])
+                            ("DisclosedVolume" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [19362 19771])
+                            ("ActiveVolume" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [19826 20230])
+                            ("Portfolio" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [20294 20737])
+                            ("TotalVolume" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [20791 21186])
+                            ("AveragePaidBought" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [21247 21659])
+                            ("MIC" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [21701 22185])
+                            ("AveragePaidVolumeSold" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [22251 22677])
+                            ("Side" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [22721 23141])
+                            ("RetainOnDisconnect" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [23204 23683])
+                            ("PartialFillNotAllowed" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [23750 24153])
+                            ("IsExposed" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [24206 24614])
+                            ("AveragePaidVolumeBought" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [24682 25114])
+                            ("Instrument" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [25180 25619])
+                            ("Price" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [25665 26097])
+                            ("Venue" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [26153 26549]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [5419 26552])
+                    ("calculated_properties" type
+                       (:members 
+                          ( ("instrument" type
+                               (:members 
+                                  ( ("HideMaturity" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [26668 27012])
+                                    ("HedgeVolumeThreshold" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27078 27519])
+                                    ("PreferredEngine" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [27583 27937])
+                                    ("PreferredSubsystem" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28004 28364])
+                                    ("AmountOfOrdersPerPrice" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [28435 28960])
+                                    ("HedgeMode" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29015 29354])
+                                    ("HedgeModeHitTicks" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29419 29775])
+                                    ("HedgeAllowedUnderlyingSpread_PERCENTAGE" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [29852 30324])
+                                    ("UnderlyingInstrument" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30403 30777]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [26589 30780])
+                            ("strategy" type
+                               (:members 
+                                  ( ("InstrumentGroup" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [30871 31230])
+                                    ("DiagnosticAction" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31292 31645])
+                                    ("TargetPrice" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [31700 32104])
+                                    ("BypassSoftLimits" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32167 32539])
+                                    ("VenueB" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32599 32940])
+                                    ("MIC_A" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [32986 33312])
+                                    ("MIC_B" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33358 33684])
+                                    ("AO_O_MinCredit" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [33741 34104])
+                                    ("QuoteSetIdentifier" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34172 34615])
+                                    ("VenueA" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [34675 35016])
+                                    ("LayerCount" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35072 35413])
+                                    ("GenerateLayers" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35473 35822])
+                                    ("LayerPriceStep" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [35881 36229])
+                                    ("HedgeTrade_LEFT_PARENTHESIS_AO_RIGHT_PARENTHESIS" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36290 36740])
+                                    ("UseSkewDelta" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [36799 37169])
+                                    ("BinaryMetrics" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [37227 37705])
+                                    ("AlgoLabel" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [37760 38099])
+                                    ("AO_OrderAlgo" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [38157 38502])
+                                    ("Tag" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [38553 38990])
+                                    ("AdjustEngine" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [39048 39529])
+                                    ("ServiceToUse" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [39591 39968])
+                                    ("DirectTrade" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [40025 40368])
+                                    ("AllowMarketOrder" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [40431 40785])
+                                    ("AttemptedToSendOrder" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [40853 41253])
+                                    ("HedgeMissMode" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [41313 41661])
+                                    ("HedgeMissModeHitTicks" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [41731 42097])
+                                    ("HedgeTotalVolumeThreshold" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [42170 42666])
+                                    ("AveragePaidSold" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [42727 43095])
+                                    ("FilledVolume" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [43152 43513])
+                                    ("DisclosedVolume" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [43573 43939])
+                                    ("ActiveVolume" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [43996 44357])
+                                    ("Portfolio" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [44423 44823])
+                                    ("TotalVolume" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [44879 45237])
+                                    ("AveragePaidBought" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [45300 45672])
+                                    ("MIC" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [45716 46157])
+                                    ("AveragePaidVolumeSold" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [46225 46613])
+                                    ("Side" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [46659 47037])
+                                    ("RetainOnDisconnect" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [47102 47538])
+                                    ("PartialFillNotAllowed" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [47607 47972])
+                                    ("IsExposed" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [48027 48397])
+                                    ("AveragePaidVolumeBought" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [48467 48861])
+                                    ("Instrument" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [48929 49325])
+                                    ("Price" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [49373 49762])
+                                    ("Venue" function
+                                       (:typemodifiers ("inline")
+                                        :type ("tbricks::CalculatedPropertyDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [49820 50174]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [30782 50177]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [26554 50180])
+                    ("parameter_contexts" type
+                       (:members 
+                          ( ("Global" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [50334 50679])
+                            ("Risk" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [50814 51170])
+                            ("Trading" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [51250 51554])
+                            ("MM_Quoting" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [51636 51945])
+                            ("MM_Hidden" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [52024 52329])
+                            ("MM_QuotingMultiLevel" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [52435 52778])
+                            ("MM_Shared" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [52875 53198])
+                            ("Validation" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [53299 53627])
+                            ("MM_Peg" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [53701 53998])
+                            ("MM_QuoteResponder" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [54096 54428])
+                            ("OrcImport" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [54508 54814])
+                            ("Orc" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [54859 55124])
+                            ("ClientQuoter" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [55179 55463])
+                            ("Test" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [55509 55776])
+                            ("RK_TestContext" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [55833 56121])
+                            ("EndOfDayValuation" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [56211 56535])
+                            ("TempRTKRS_Context" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [56613 56925])
+                            ("SimulateRanking" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [57042 57391])
+                            ("OneTickQH" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [57443 57721])
+                            ("OneTickFUNGID" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [57777 58063])
+                            ("Sma1" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [58109 58375])
+                            ("Sma2" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [58421 58687])
+                            ("Simulation" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [58794 59128])
+                            ("FastMarketFactors" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [59189 59484])
+                            ("FastGlobal" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [59537 59817])
+                            ("GlobalFastSource" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [59877 60170])
+                            ("MM_HiddenFastSource" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [60233 60532])
+                            ("MM_QuotingFastSource" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [60596 60897])
+                            ("GlobalNormalSource" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [60959 61256])
+                            ("MM_HiddenNormalSource" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [61321 61624])
+                            ("MM_QuotingNormalSource" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [61690 61995])
+                            ("Conditional" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [62074 62381])
+                            ("MorningScript" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [62478 62805])
+                            ("FPGA" function
+                               (:typemodifiers ("inline")
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [62851 63118]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [50182 63121])
+                    ("HedgeMode" type
+                       (:members 
+                          ( ("HedgeModeHit" variable
+                               (:constant-flag t
+                                :default-value (63173 63174)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63158 63174])
+                            ("HedgeModeJoin" variable
+                               (:constant-flag t
+                                :default-value (63210 63211)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63194 63211])
+                            ("HedgeModeMidMarket" variable
+                               (:constant-flag t
+                                :default-value (63252 63253)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63231 63253])
+                            ("HedgeModeHit_PLUS_X" variable
+                               (:constant-flag t
+                                :default-value (63295 63296)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63273 63296]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [63123 63299])
+                    ("HedgeModeEnumerationIdentifier" function
+                       (:typemodifiers ("inline")
+                        :type ("tbricks::Identifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [63301 63551])
+                    ("AO_OrderAlgo" type
+                       (:members 
+                          ( ("AO_OrderAlgoMinCreditBreach" variable
+                               (:constant-flag t
+                                :default-value (63615 63616)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63585 63616])
+                            ("AO_OrderAlgoFairPriceError" variable
+                               (:constant-flag t
+                                :default-value (63659 63660)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63630 63660]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [63553 63663])
+                    ("AO_OrderAlgoEnumerationIdentifier" function
+                       (:typemodifiers ("inline")
+                        :type ("tbricks::Identifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [63665 63918])
+                    ("StrategySide" type
+                       (:members 
+                          ( ("StrategySideBuy" variable
+                               (:constant-flag t
+                                :default-value (63970 63971)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63952 63971])
+                            ("StrategySideSell" variable
+                               (:constant-flag t
+                                :default-value (64004 64005)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [63985 64005])
+                            ("StrategySideShortSell" variable
+                               (:constant-flag t
+                                :default-value (64043 64044)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [64019 64044]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [63920 64047])
+                    ("StrategySideEnumerationIdentifier" function
+                       (:typemodifiers ("inline")
+                        :type ("tbricks::Identifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [64049 64302]))                  
+                :type "namespace")
+                nil [439 64305]))          
+      :file "tbricks_definitions.h"
+      :pointmax 64358
+      :fsize 64357
+      :lastmodtime '(22183 35541 315453 408000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__TBRICKS__AOFASTHEDGER__DEFINITIONS_H__")
+          )
+)
+    (semanticdb-table "DesiredTraderContainer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DesiredTraderContainer.h" include nil nil [1 36])
+            ("AO_SharedGlobal/Global/tbricks_definitions.h" include nil nil [37 92])
+            ("DesiredTraderContainer" function
+               (:constructor-flag t
+                :parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("orderManager_" variable
+                       (:reference 1
+                        :type ("AOOrderManager" type
+                             (:template-specifier 
+                                ( ("DesiredTraderType" type nil nil nil)
+                                  ("256"))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [142 198])
+                    ("performance_event" variable
+                       (:reference 1
+                        :type ("tbricks::PerformanceEventTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [199 248]))                  
+                :type ("DesiredTraderContainer" type (:type "class") nil nil))
+                nil [95 394])
+            ("DesiredTraderContainer" function
+               (:destructor-flag t
+                :parent "DesiredTraderContainer"
+                :type "void")
+                nil [396 459])
+            ("Clear" function
+               (:parent "DesiredTraderContainer"
+                :type "void")
+                nil [461 845])
+            ("SetMinimumVolume" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("volume" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [893 914]))                  
+                :type "void")
+                nil [847 943])
+            ("SetAverageVolume" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("volume" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [991 1012]))                  
+                :type "void")
+                nil [945 1041])
+            ("SetNumberOfOrders" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("orders" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Integer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1090 1112]))                  
+                :type "void")
+                nil [1043 1272])
+            ("SetPortfolio" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("portfolio_" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1316 1354]))                  
+                :type "void")
+                nil [1274 1511])
+            ("SetIVID" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("ivid_" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentVenueIdentification" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1550 1593]))                  
+                :type "void")
+                nil [1513 1730])
+            ("Add" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("price" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1765 1784])
+                    ("volume" variable (:type ("Volume" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1799])
+                    ("availableVolume" variable (:type ("Volume" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1800 1823]))                  
+                :type "void")
+                nil [1732 3928])
+            ("ModifyLast" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("price" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3970 3989])
+                    ("volume" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3990 4011]))                  
+                :type "void")
+                nil [3930 4343])
+            ("CreateAOOrder" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("volume" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Volume" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4388 4409])
+                    ("price" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4410 4429]))                  
+                :type "void")
+                nil [4345 5541])
+            ("ApplyTotalVolThreshold" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("total_volume" variable (:type "double") (reparse-symbol arg-sub-list) [5595 5615])
+                    ("total_volume_threshold" variable (:type "double") (reparse-symbol arg-sub-list) [5618 5648])
+                    ("" variable
+                       (:constant-flag t
+                        :type ("boost::function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5651 5673])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [5673 5691])
+                    ("" variable (:type ("price_calc_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5695 5711]))                  
+                :type "void")
+                nil [5543 7603])
+            ("CheckMissed" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("bid" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7646 7663])
+                    ("ask" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7664 7681])
+                    ("maxSpread" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7682 7706])
+                    ("" variable
+                       (:constant-flag t
+                        :type ("boost::function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7709 7731])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [7732 7750])
+                    ("" variable (:type ("price_calc_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7754 7770]))                  
+                :type "void")
+                nil [7605 9093])
+            ("HandleTraderUpdate" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("trader" variable
+                       (:reference 1
+                        :type ("DesiredTraderType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9143 9169]))                  
+                :type "void")
+                nil [9095 9868])
+            ("HandleTraderFail" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("trader" variable
+                       (:reference 1
+                        :type ("DesiredTraderType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9916 9942])
+                    ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9943 9965]))                  
+                :type "void")
+                nil [9870 10104])
+            ("RemoveTrader" function
+               (:parent "DesiredTraderContainer"
+                :arguments 
+                  ( ("trader" variable
+                       (:pointer 1
+                        :type ("DesiredTraderType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10148 10174]))                  
+                :type "void")
+                nil [10106 10427])
+            ("ToString" function
+               (:parent "DesiredTraderContainer"
+                :type ("String" type (:type "class") nil nil))
+                nil [10430 10920]))          
+      :file "DesiredTraderContainer.cpp"
+      :pointmax 10925
+      :fsize 10924
+      :lastmodtime '(22185 65254 368512 787000)
+      :unmatched-syntax '((punctuation 7752 . 7753) (punctuation 7750 . 7751) (semantic-list 7736 . 7750) (punctuation 7730 . 7731) (punctuation 5693 . 5694) (punctuation 5691 . 5692) (semantic-list 5677 . 5691) (punctuation 5672 . 5673))))
+  :file "!home!marselo!Code!alloptions!ao_sources!strategy!AO_FastHedger!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

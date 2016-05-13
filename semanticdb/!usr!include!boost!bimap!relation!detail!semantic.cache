@@ -1,0 +1,304 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "to_mutable_relation_functor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_DETAIL_TO_MUTABLE_RELATION_FUNCTOR_HPP" variable (:constant-flag t) nil [416 475])
+            ("boost/config.hpp" include (:system-flag t) nil [540 567])
+            ("boost/bimap/relation/support/pair_type_by.hpp" include (:system-flag t) nil [569 625])
+            ("boost/bimap/relation/detail/mutant.hpp" include (:system-flag t) nil [626 675])
+            ("boost/bimap/relation/mutant_relation.hpp" include (:system-flag t) nil [676 727])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("pair_to_relation_functor" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :constant-flag t
+                                                        :arguments 
+                                                          ( ("p" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("BOOST_DEDUCED_TYPENAME::boost::bimaps::relation::support::pair_type_by::type" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [955 1086]))                                                          
+                                                        :type ("Relation" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [921 1132]))                                                  )
+                                                (reparse-symbol namespacesubparts) [845 1135])
+                                            ("get_mutable_relation_functor" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :constant-flag t
+                                                        :arguments 
+                                                          ( ("Relation::above_view" variable
+                                                               (:constant-flag t
+                                                                :type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1996 2047])
+                                                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2048 2051]))                                                          
+                                                        :type ("Relation" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1965 2097]))                                                  )
+                                                (reparse-symbol namespacesubparts) [1896 2100]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [787 2687]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [766 2709]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [747 2733]))                  
+                :type "namespace")
+                nil [729 2755]))          
+      :file "to_mutable_relation_functor.hpp"
+      :pointmax 2848
+      :fsize 2847
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 2683 . 2684) (semantic-list 2244 . 2683) (punctuation 2242 . 2243) (punctuation 2240 . 2241) (symbol 2236 . 2240) (punctuation 2235 . 2236) (symbol 2231 . 2235) (punctuation 2230 . 2231) (symbol 2228 . 2230) (punctuation 2227 . 2228) (symbol 2225 . 2227) (punctuation 2224 . 2225) (symbol 2209 . 2224) (punctuation 2208 . 2209) (punctuation 2207 . 2208) (symbol 2199 . 2207) (punctuation 2198 . 2199) (punctuation 2197 . 2198) (symbol 2191 . 2197) (punctuation 2190 . 2191) (punctuation 2189 . 2190) (symbol 2184 . 2189) (punctuation 2183 . 2184) (punctuation 2182 . 2183) (punctuation 2180 . 2181) (symbol 2152 . 2180) (STRUCT 2145 . 2151) (punctuation 2143 . 2144) (symbol 2138 . 2142) (CLASS 2132 . 2137) (punctuation 2130 . 2131) (symbol 2128 . 2130) (CLASS 2122 . 2127) (punctuation 2120 . 2121) (symbol 2118 . 2120) (CLASS 2112 . 2117) (punctuation 2110 . 2111) (TEMPLATE 2102 . 2110) (punctuation 2046 . 2047) (punctuation 1862 . 1863) (semantic-list 1294 . 1862) (punctuation 1292 . 1293) (punctuation 1290 . 1291) (symbol 1286 . 1290) (punctuation 1285 . 1286) (symbol 1281 . 1285) (punctuation 1280 . 1281) (symbol 1278 . 1280) (punctuation 1277 . 1278) (symbol 1275 . 1277) (punctuation 1274 . 1275) (symbol 1259 . 1274) (punctuation 1258 . 1259) (punctuation 1257 . 1258) (symbol 1249 . 1257) (punctuation 1248 . 1249) (punctuation 1247 . 1248) (symbol 1241 . 1247) (punctuation 1240 . 1241) (punctuation 1239 . 1240) (symbol 1234 . 1239) (punctuation 1233 . 1234) (punctuation 1232 . 1233) (punctuation 1231 . 1232) (symbol 1228 . 1231) (punctuation 1222 . 1223) (symbol 1198 . 1222) (STRUCT 1191 . 1197) (punctuation 1189 . 1190) (symbol 1184 . 1188) (CLASS 1178 . 1183) (punctuation 1176 . 1177) (symbol 1174 . 1176) (CLASS 1168 . 1173) (punctuation 1166 . 1167) (symbol 1164 . 1166) (CLASS 1158 . 1163) (punctuation 1156 . 1157) (symbol 1153 . 1156) (CLASS 1147 . 1152) (punctuation 1145 . 1146) (TEMPLATE 1137 . 1145))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_DETAIL_TO_MUTABLE_RELATION_FUNCTOR_HPP")
+          )
+)
+    (semanticdb-table "metadata_access_builder.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_DETAIL_METADATA_ACCESS_BUILDER_HPP" variable (:constant-flag t) nil [406 461])
+            ("boost/config.hpp" include (:system-flag t) nil [526 553])
+            ("boost/bimap/relation/support/is_tag_of_member_at.hpp" include (:system-flag t) nil [555 618])
+            ("boost/bimap/detail/debug/static_error.hpp" include (:system-flag t) nil [619 671])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [672 710])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [711 748])
+            ("BOOST_BIMAP_SYMMETRIC_METADATA_ACCESS_BUILDER" variable (:constant-flag t) nil [1232 1277]))          
+      :file "metadata_access_builder.hpp"
+      :pointmax 5780
+      :fsize 5779
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_DETAIL_METADATA_ACCESS_BUILDER_HPP")
+          ("BOOST_BIMAP_SYMMETRIC_METADATA_ACCESS_BUILDER" (spp-arg-list ("\\
+" "\\
+" "NAME" "\\
+" "METADATA_BY_LEFT" "\\
+" "METADATA_BY_RIGHT" "\\
+") 1277 . 1629) . 
+              ((TEMPLATE "template" 1788 . 1796) (punctuation "<" 1868 . 1869) (CLASS "class" 1952 . 1957) (symbol "Tag" 1958 . 1961) (punctuation "," 1961 . 1962) (CLASS "class" 2032 . 2037) (symbol "SymmetricType" 2038 . 2051) (punctuation "," 2051 . 2052) (CLASS "class" 2112 . 2117) (symbol "Enable" 2118 . 2124) (punctuation "=" 2125 . 2126) (VOID "void" 2127 . 2131) (punctuation ">" 2188 . 2189) (STRUCT "struct" 2268 . 2274) (symbol "NAME" 2275 . 2279) (semantic-list "{                                                                         \\
+        BOOST_BIMAP_STATIC_ERROR(                                             \\
+            BOOST_PP_CAT(NAME,_FAILURE),                                      \\
+            (SymmetricType,Tag)                                               \\
+        );                                                                    \\
+    }" 2348 . 2749) (punctuation ";" 2749 . 2750) (TEMPLATE "template" 2908 . 2916) (punctuation "<" 2916 . 2917) (CLASS "class" 2918 . 2923) (symbol "Tag" 2924 . 2927) (punctuation "," 2927 . 2928) (CLASS "class" 2929 . 2934) (symbol "SymmetricType" 2935 . 2948) (punctuation ">" 2949 . 2950) (STRUCT "struct" 2988 . 2994) (symbol "NAME" 2995 . 2999) (punctuation "<" 3068 . 3069) (symbol "Tag" 3152 . 3155) (punctuation "," 3155 . 3156) (symbol "SymmetricType" 3157 . 3170) (punctuation "," 3170 . 3171) (symbol "BOOST_DEDUCED_TYPENAME" 3232 . 3254) (symbol "enable_if" 3255 . 3264) (punctuation "<" 3312 . 3313) (punctuation ":" 3396 . 3397) (punctuation ":" 3397 . 3398) (symbol "boost" 3398 . 3403) (punctuation ":" 3403 . 3404) (punctuation ":" 3404 . 3405) (symbol "bimaps" 3405 . 3411) (punctuation ":" 3411 . 3412) (punctuation ":" 3412 . 3413) (symbol "relation" 3413 . 3421) (punctuation ":" 3421 . 3422) (punctuation ":" 3422 . 3423) (symbol "support" 3423 . 3430) (punctuation ":" 3430 . 3431) (punctuation ":" 3431 . 3432) (symbol "is_tag_of_member_at_left" 3432 . 3456) (punctuation "<" 3476 . 3477) (symbol "Tag" 3560 . 3563) (punctuation "," 3563 . 3564) (symbol "SymmetricType" 3640 . 3653) (punctuation ">" 3716 . 3717) (punctuation ">" 3872 . 3873) (punctuation ":" 3873 . 3874) (punctuation ":" 3874 . 3875) (symbol "type" 3875 . 3879) (punctuation ">" 3948 . 3949) (semantic-list "{                                                                         \\
+        typedef BOOST_DEDUCED_TYPENAME SymmetricType::METADATA_BY_LEFT type;  \\
+    }" 4028 . 4189) (punctuation ";" 4189 . 4190) (TEMPLATE "template" 4348 . 4356) (punctuation "<" 4356 . 4357) (CLASS "class" 4358 . 4363) (symbol "Tag" 4364 . 4367) (punctuation "," 4367 . 4368) (CLASS "class" 4369 . 4374) (symbol "SymmetricType" 4375 . 4388) (punctuation ">" 4389 . 4390) (STRUCT "struct" 4428 . 4434) (symbol "NAME" 4435 . 4439) (punctuation "<" 4508 . 4509) (symbol "Tag" 4592 . 4595) (punctuation "," 4595 . 4596) (symbol "SymmetricType" 4597 . 4610) (punctuation "," 4610 . 4611) (symbol "BOOST_DEDUCED_TYPENAME" 4672 . 4694) (symbol "enable_if" 4695 . 4704) (punctuation "<" 4752 . 4753) (punctuation ":" 4836 . 4837) (punctuation ":" 4837 . 4838) (symbol "boost" 4838 . 4843) (punctuation ":" 4843 . 4844) (punctuation ":" 4844 . 4845) (symbol "bimaps" 4845 . 4851) (punctuation ":" 4851 . 4852) (punctuation ":" 4852 . 4853) (symbol "relation" 4853 . 4861) (punctuation ":" 4861 . 4862) (punctuation ":" 4862 . 4863) (symbol "support" 4863 . 4870) (punctuation ":" 4870 . 4871) (punctuation ":" 4871 . 4872) (symbol "is_tag_of_member_at_right" 4872 . 4897) (punctuation "<" 4916 . 4917) (symbol "Tag" 5000 . 5003) (punctuation "," 5003 . 5004) (symbol "SymmetricType" 5080 . 5093) (punctuation ">" 5156 . 5157) (punctuation ">" 5312 . 5313) (punctuation ":" 5313 . 5314) (punctuation ":" 5314 . 5315) (symbol "type" 5315 . 5319) (punctuation ">" 5388 . 5389) (semantic-list "{                                                                         \\
+        typedef BOOST_DEDUCED_TYPENAME SymmetricType::METADATA_BY_RIGHT type; \\
+    }" 5468 . 5629) (punctuation ";" 5629 . 5630)))
+          )
+)
+    (semanticdb-table "access_builder.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_ACCESS_BUILDER_HPP" variable (:constant-flag t) nil [381 420])
+            ("boost/config.hpp" include (:system-flag t) nil [485 512])
+            ("boost/bimap/relation/support/member_with_tag.hpp" include (:system-flag t) nil [514 573])
+            ("boost/bimap/relation/member_at.hpp" include (:system-flag t) nil [574 619])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [620 652])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [653 694])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [695 722])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [723 751])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [752 790])
+            ("BOOST_BIMAP_SYMMETRIC_ACCESS_RESULT_OF_BUILDER" variable (:constant-flag t) nil [1317 1363])
+            ("BOOST_BIMAP_SYMMETRIC_ACCESS_IMPLEMENTATION_BUILDER" variable (:constant-flag t) nil [4039 4090])
+            ("BOOST_BIMAP_SYMMETRIC_ACCESS_INTERFACE_BUILDER" variable (:constant-flag t) nil [7749 7795]))          
+      :file "access_builder.hpp"
+      :pointmax 9240
+      :fsize 9239
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_BIMAP_SYMMETRIC_ACCESS_RESULT_OF_BUILDER" (spp-arg-list ("\\
+" "\\
+" "NAME" "\\
+" "METAFUNCTION_BASE" "\\
+") 1363 . 1634) . 
+              ((NAMESPACE "namespace" 1793 . 1802) (symbol "result_of" 1803 . 1812) (semantic-list "{                                                     \\
+                                                                              \\
+    template< class Tag, class SymmetricType >                                \\
+    struct NAME                                                               \\
+    {                                                                         \\
+        typedef BOOST_DEDUCED_TYPENAME METAFUNCTION_BASE                      \\
+        <                                                                     \\
+            Tag,SymmetricType                                                 \\
+                                                                              \\
+        >::type value_type;                                                   \\
+                                                                              \\
+        typedef BOOST_DEDUCED_TYPENAME mpl::if_< is_const<SymmetricType>,     \\
+                                                                              \\
+            BOOST_DEDUCED_TYPENAME call_traits<value_type>::const_reference,  \\
+                                                                              \\
+            BOOST_DEDUCED_TYPENAME call_traits<value_type>::reference         \\
+                                                                              \\
+        >::type type;                                                         \\
+    };                                                                        \\
+                                                                              \\
+    }" 1813 . 3394)))
+          ("BOOST_BIMAP_SYMMETRIC_ACCESS_IMPLEMENTATION_BUILDER" (spp-arg-list ("\\
+" "\\
+" "NAME" "\\
+" "TP_SYMMETRIC" "\\
+" "PARAMETER_NAME" "\\
+" "LEFT_BODY" "\\
+" "RIGHT_BODY" "\\
+") 4090 . 4596) . 
+              ((NAMESPACE "namespace" 4755 . 4764) (symbol "detail" 4765 . 4771) (semantic-list "{                                                        \\
+                                                                              \\
+                                                                              \\
+                                                                              \\
+    template< class TP_SYMMETRIC >                                            \\
+    BOOST_DEDUCED_TYPENAME result_of::NAME                                    \\
+    <                                                                         \\
+        ::boost::bimaps::relation::member_at::left,TP_SYMMETRIC               \\
+                                                                              \\
+    >::type                                                                   \\
+                                                                              \\
+    NAME( ::boost::bimaps::relation::member_at::left,                         \\
+                  TP_SYMMETRIC & PARAMETER_NAME )                             \\
+    {                                                                         \\
+        LEFT_BODY;                                                            \\
+    }                                                                         \\
+                                                                              \\
+    template< class TP_SYMMETRIC >                                            \\
+    BOOST_DEDUCED_TYPENAME result_of::NAME                                    \\
+    <                                                                         \\
+        ::boost::bimaps::relation::member_at::right,TP_SYMMETRIC              \\
+                                                                              \\
+    >::type                                                                   \\
+                                                                              \\
+    NAME( ::boost::bimaps::relation::member_at::right,                        \\
+                  TP_SYMMETRIC & PARAMETER_NAME )                             \\
+    {                                                                         \\
+        RIGHT_BODY;                                                           \\
+    }                                                                         \\
+                                                                              \\
+    }" 4772 . 7156)))
+          ("BOOST_BIMAP_SYMMETRIC_ACCESS_INTERFACE_BUILDER" (spp-arg-list ("\\
+" "\\
+" "NAME" "\\
+") 7795 . 7986) . 
+              ((TEMPLATE "template" 8145 . 8153) (punctuation "<" 8153 . 8154) (CLASS "class" 8155 . 8160) (symbol "Tag" 8161 . 8164) (punctuation "," 8164 . 8165) (CLASS "class" 8166 . 8171) (symbol "SymmetricType" 8172 . 8185) (punctuation ">" 8186 . 8187) (symbol "BOOST_DEDUCED_TYPENAME" 8225 . 8247) (symbol "result_of" 8248 . 8257) (punctuation ":" 8257 . 8258) (punctuation ":" 8258 . 8259) (symbol "NAME" 8259 . 8263) (punctuation "<" 8263 . 8264) (symbol "Tag" 8264 . 8267) (punctuation "," 8267 . 8268) (symbol "SymmetricType" 8268 . 8281) (punctuation ">" 8281 . 8282) (punctuation ":" 8282 . 8283) (punctuation ":" 8283 . 8284) (symbol "type" 8284 . 8288) (symbol "NAME" 8305 . 8309) (semantic-list "( SymmetricType & s )" 8309 . 8330) (semantic-list "{                                                                         \\
+        typedef BOOST_DEDUCED_TYPENAME ::boost::bimaps::relation::support::   \\
+            member_with_tag                                                   \\
+            <                                                                 \\
+                Tag,SymmetricType                                             \\
+                                                                              \\
+            >::type member_at_tag;                                            \\
+                                                                              \\
+        return detail::NAME(member_at_tag(),s);                               \\
+    }" 8385 . 9106)))
+          ("BOOST_BIMAP_RELATION_ACCESS_BUILDER_HPP")
+          )
+)
+    (semanticdb-table "static_access_builder.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_DETAIL_STATIC_ACCESS_BUILDER_HPP" variable (:constant-flag t) nil [403 456])
+            ("boost/config.hpp" include (:system-flag t) nil [521 548])
+            ("boost/bimap/relation/support/is_tag_of_member_at.hpp" include (:system-flag t) nil [550 613])
+            ("boost/bimap/detail/debug/static_error.hpp" include (:system-flag t) nil [614 666])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [667 705])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [706 743])
+            ("BOOST_BIMAP_SYMMETRIC_STATIC_ACCESS_BUILDER" variable (:constant-flag t) nil [1215 1258]))          
+      :file "static_access_builder.hpp"
+      :pointmax 5841
+      :fsize 5840
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_BIMAP_SYMMETRIC_STATIC_ACCESS_BUILDER" (spp-arg-list ("\\
+" "\\
+" "NAME" "\\
+" "SYMMETRIC_TYPE" "\\
+" "LEFT_BODY" "\\
+" "RIGHT_BODY" "\\
+") 1258 . 1692) . 
+              ((TEMPLATE "template" 1851 . 1859) (punctuation "<" 1931 . 1932) (CLASS "class" 2015 . 2020) (symbol "Tag" 2021 . 2024) (punctuation "," 2024 . 2025) (CLASS "class" 2095 . 2100) (symbol "SYMMETRIC_TYPE" 2101 . 2115) (punctuation "," 2115 . 2116) (CLASS "class" 2175 . 2180) (symbol "Enable" 2181 . 2187) (punctuation "=" 2188 . 2189) (VOID "void" 2190 . 2194) (punctuation ">" 2251 . 2252) (STRUCT "struct" 2331 . 2337) (symbol "NAME" 2338 . 2342) (semantic-list "{                                                                         \\
+        BOOST_BIMAP_STATIC_ERROR(                                             \\
+            BOOST_PP_CAT(NAME,_FAILURE),                                      \\
+            (SYMMETRIC_TYPE,Tag)                                              \\
+        );                                                                    \\
+    }" 2411 . 2812) (punctuation ";" 2812 . 2813) (TEMPLATE "template" 2971 . 2979) (punctuation "<" 2979 . 2980) (CLASS "class" 2981 . 2986) (symbol "Tag" 2987 . 2990) (punctuation "," 2990 . 2991) (CLASS "class" 2992 . 2997) (symbol "SYMMETRIC_TYPE" 2998 . 3012) (punctuation ">" 3013 . 3014) (STRUCT "struct" 3051 . 3057) (symbol "NAME" 3058 . 3062) (punctuation "<" 3131 . 3132) (symbol "Tag" 3215 . 3218) (punctuation "," 3218 . 3219) (symbol "SYMMETRIC_TYPE" 3220 . 3234) (punctuation "," 3234 . 3235) (symbol "BOOST_DEDUCED_TYPENAME" 3295 . 3317) (symbol "enable_if" 3318 . 3327) (punctuation "<" 3375 . 3376) (punctuation ":" 3459 . 3460) (punctuation ":" 3460 . 3461) (symbol "boost" 3461 . 3466) (punctuation ":" 3466 . 3467) (punctuation ":" 3467 . 3468) (symbol "bimaps" 3468 . 3474) (punctuation ":" 3474 . 3475) (punctuation ":" 3475 . 3476) (symbol "relation" 3476 . 3484) (punctuation ":" 3484 . 3485) (punctuation ":" 3485 . 3486) (symbol "support" 3486 . 3493) (punctuation ":" 3493 . 3494) (punctuation ":" 3494 . 3495) (symbol "is_tag_of_member_at_left" 3495 . 3519) (punctuation "<" 3539 . 3540) (symbol "Tag" 3623 . 3626) (punctuation "," 3626 . 3627) (symbol "SYMMETRIC_TYPE" 3703 . 3717) (punctuation ">" 3779 . 3780) (punctuation ">" 3935 . 3936) (punctuation ":" 3936 . 3937) (punctuation ":" 3937 . 3938) (symbol "type" 3938 . 3942) (punctuation ">" 4011 . 4012) (semantic-list "{                                                                         \\
+        LEFT_BODY;                                                            \\
+    }" 4091 . 4252) (punctuation ";" 4252 . 4253) (TEMPLATE "template" 4411 . 4419) (punctuation "<" 4419 . 4420) (CLASS "class" 4421 . 4426) (symbol "Tag" 4427 . 4430) (punctuation "," 4430 . 4431) (CLASS "class" 4432 . 4437) (symbol "SYMMETRIC_TYPE" 4438 . 4452) (punctuation ">" 4453 . 4454) (STRUCT "struct" 4491 . 4497) (symbol "NAME" 4498 . 4502) (punctuation "<" 4571 . 4572) (symbol "Tag" 4655 . 4658) (punctuation "," 4658 . 4659) (symbol "SYMMETRIC_TYPE" 4660 . 4674) (punctuation "," 4674 . 4675) (symbol "BOOST_DEDUCED_TYPENAME" 4735 . 4757) (symbol "enable_if" 4758 . 4767) (punctuation "<" 4815 . 4816) (punctuation ":" 4899 . 4900) (punctuation ":" 4900 . 4901) (symbol "boost" 4901 . 4906) (punctuation ":" 4906 . 4907) (punctuation ":" 4907 . 4908) (symbol "bimaps" 4908 . 4914) (punctuation ":" 4914 . 4915) (punctuation ":" 4915 . 4916) (symbol "relation" 4916 . 4924) (punctuation ":" 4924 . 4925) (punctuation ":" 4925 . 4926) (symbol "support" 4926 . 4933) (punctuation ":" 4933 . 4934) (punctuation ":" 4934 . 4935) (symbol "is_tag_of_member_at_right" 4935 . 4960) (punctuation "<" 4979 . 4980) (symbol "Tag" 5063 . 5066) (punctuation "," 5066 . 5067) (symbol "SYMMETRIC_TYPE" 5143 . 5157) (punctuation ">" 5219 . 5220) (punctuation ">" 5375 . 5376) (punctuation ":" 5376 . 5377) (punctuation ":" 5377 . 5378) (symbol "type" 5378 . 5382) (punctuation ">" 5451 . 5452) (semantic-list "{                                                                         \\
+        RIGHT_BODY;                                                           \\
+    }" 5531 . 5692) (punctuation ";" 5692 . 5693)))
+          ("BOOST_BIMAP_RELATION_DETAIL_STATIC_ACCESS_BUILDER_HPP")
+          )
+)
+    (semanticdb-table "mutant.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_DETAIL_MUTANT_HPP" variable (:constant-flag t) nil [380 418])
+            ("boost/config.hpp" include (:system-flag t) nil [483 510])
+            ("boost/bimap/detail/debug/static_error.hpp" include (:system-flag t) nil [512 564])
+            ("boost/mpl/contains.hpp" include (:system-flag t) nil [565 598])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [599 630])
+            ("boost/utility.hpp" include (:system-flag t) nil [631 659])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [660 694])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [695 736])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [737 765])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [766 804])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("detail" type
+                                       (:members 
+                                          ( ("mutate" function
+                                               (:arguments 
+                                                  ( ("m" variable
+                                                       (:reference 1
+                                                        :type ("Type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1442 1452]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1429 1619])
+                                            ("mutate" function
+                                               (:arguments 
+                                                  ( ("m" variable
+                                                       (:reference 1
+                                                        :type ("Type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1738 1748]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol namespacesubparts) [1725 1922]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [948 1931]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [843 1953]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [824 1977]))                  
+                :type "namespace")
+                nil [806 1999]))          
+      :file "mutant.hpp"
+      :pointmax 2070
+      :fsize 2069
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1724 . 1725) (punctuation 1723 . 1724) (punctuation 1722 . 1723) (punctuation 1719 . 1720) (symbol 1715 . 1719) (CONST 1709 . 1714) (punctuation 1706 . 1707) (punctuation 1705 . 1706) (symbol 1700 . 1704) (punctuation 1698 . 1699) (symbol 1690 . 1698) (punctuation 1688 . 1689) (symbol 1679 . 1688) (symbol 1656 . 1678) (punctuation 1654 . 1655) (symbol 1649 . 1653) (CLASS 1643 . 1648) (punctuation 1641 . 1642) (symbol 1637 . 1641) (CLASS 1631 . 1636) (punctuation 1629 . 1630) (TEMPLATE 1621 . 1629) (punctuation 1428 . 1429) (punctuation 1427 . 1428) (punctuation 1426 . 1427) (punctuation 1423 . 1424) (symbol 1419 . 1423) (punctuation 1416 . 1417) (punctuation 1415 . 1416) (punctuation 1413 . 1414) (symbol 1408 . 1412) (punctuation 1406 . 1407) (symbol 1398 . 1406) (punctuation 1396 . 1397) (symbol 1392 . 1396) (punctuation 1391 . 1392) (punctuation 1390 . 1391) (symbol 1387 . 1390) (punctuation 1385 . 1386) (symbol 1376 . 1385) (symbol 1353 . 1375) (punctuation 1351 . 1352) (symbol 1346 . 1350) (CLASS 1340 . 1345) (punctuation 1338 . 1339) (symbol 1334 . 1338) (CLASS 1328 . 1333) (punctuation 1326 . 1327) (TEMPLATE 1318 . 1326))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_DETAIL_MUTANT_HPP")
+          )
+))
+  :file "!usr!include!boost!bimap!relation!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

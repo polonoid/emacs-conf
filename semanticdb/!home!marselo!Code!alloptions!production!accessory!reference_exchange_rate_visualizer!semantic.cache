@@ -1,0 +1,245 @@
+;; Object reference_exchange_rate_visualizer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "reference_exchange_rate_visualizer/"
+  :tables
+  (list
+    (semanticdb-table "ReferenceExchangeRateVisualizer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ReferenceExchangeRateVisualizer.h" include nil nil [1 45])
+            ("strategy/ReferenceExchangeRate.h" include nil nil [46 89])
+            ("tbricks" type
+               (:members 
+                  ( ("ReferenceExchangeRateVisualizerPlugin" function
+                       (:constructor-flag t
+                        :parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [194 239])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [244 291]))                          
+                        :type ("ReferenceExchangeRateVisualizerPlugin" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [112 1236])
+                    ("InitCurveTable" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1238 1684])
+                    ("SubscribeCurrencies" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("date" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1750 1772]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1686 2988])
+                    ("SubscribeCurve" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("counter_currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3049 3083])
+                            ("currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3088 3114]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2990 3556])
+                    ("UnsubscribeCurve" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("counter_currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3619 3653])
+                            ("currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3658 3684]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3558 4551])
+                    ("ReferenceExchangeRateVisualizerPlugin" function
+                       (:destructor-flag t
+                        :parent "ReferenceExchangeRateVisualizerPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4553 4732])
+                    ("HandleModifyRequest" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4798 4841]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4734 5845])
+                    ("AddNewCurrencyPair" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5847 6699])
+                    ("RemoveSelectedCurrencyPairs" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6701 8024])
+                    ("HandleRunRequest" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8026 8166])
+                    ("HandlePauseRequest" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8168 8320])
+                    ("HandleDeleteRequest" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8322 8510])
+                    ("HandleValidateRequest" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8578 8605]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8512 9039])
+                    ("HandleStreamStale" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9103 9134]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9041 9504])
+                    ("HandleStreamFailed" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9569 9600]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9506 9973])
+                    ("HandleSnapshotEnd" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10037 10068]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9975 10163])
+                    ("HandleRequestReply" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10245 10275])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10280 10294])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10295 10315]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10182 10627])
+                    ("HandleReferenceExchangeRate" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10710 10742])
+                            ("rate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ReferenceExchangeRate::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10743 10786]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10629 12983])
+                    ("HandleReferenceExchangeRateInvalidate" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13076 13108])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13109 13131]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12985 13413])
+                    ("GetSingleCellUpdate" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("table_update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13479 13506])
+                            ("act" variable
+                               (:reference 1
+                                :type ("SetCellTableAction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13507 13532]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [13415 14069])
+                    ("HandleCurrenciesTableUpdate" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("table_update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14143 14170]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14071 17924])
+                    ("GetCurveKey" function
+                       (:parent "ReferenceExchangeRateVisualizerPlugin"
+                        :arguments 
+                          ( ("counter_currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17984 18018])
+                            ("currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18019 18045]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17926 18172]))                  
+                :type "namespace")
+                nil [91 18175]))          
+      :file "ReferenceExchangeRateVisualizer.cpp"
+      :pointmax 18247
+      :fsize 18246
+      :lastmodtime '(21962 60358 487308 618000)
+      :unmatched-syntax '((semantic-list 18198 . 18246) (symbol 18177 . 18198)))
+    (semanticdb-table "ReferenceExchangeRateVisualizer.h"
+      :file "ReferenceExchangeRateVisualizer.h"
+      :fsize 2649
+      :lastmodtime '(21962 60358 487308 618000)))
+  :file "!home!marselo!Code!alloptions!production!accessory!reference_exchange_rate_visualizer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

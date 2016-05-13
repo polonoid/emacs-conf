@@ -1,0 +1,369 @@
+;; Object bovine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bovine/"
+  :tables
+  (list
+    (semanticdb-table "c.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [955 974])
+            ("semantic/analyze" include nil nil [975 1002])
+            ("semantic/bovine" include nil nil [1003 1029])
+            ("semantic/bovine/gcc" include nil nil [1030 1060])
+            ("semantic/idle" include nil nil [1061 1085])
+            ("semantic/lex-spp" include nil nil [1086 1113])
+            ("semantic/bovine/c-by" include nil nil [1114 1145])
+            ("semantic/db-find" include nil nil [1146 1173])
+            ("hideif" include nil nil [1174 1191])
+            ("semantic/find" include nil nil [1214 1238])
+            ("declare-function" code nil nil [1241 1312])
+            ("declare-function" code nil nil [1313 1374])
+            ("declare-function" code nil nil [1375 1434])
+            ("declare-function" code nil nil [1435 1513])
+            ("declare-function" code nil nil [1514 1564])
+            ("declare-function" code nil nil [1565 1613])
+            ("cc-mode" include nil nil [1655 1673])
+            ("if" code nil nil [1676 2255])
+            ("define-child-mode" code nil nil [2267 2351])
+            ("define-child-mode" code nil nil [2352 2448])
+            ("defcustom-mode-local-semantic-dependency-system-include-path" code nil nil [2473 2658])
+            ("semantic-default-c-path" variable nil nil [2660 2901])
+            ("semantic-dependency-include-path" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value semantic-default-c-path)
+                nil [2903 3033])
+            ("if" code nil nil [3153 3232])
+            ("semantic-lex-c-preprocessor-symbol-map-builtin" variable (:default-value (quote (("__THROW" . "") ("__const" . "const") ("__restrict" . "") ("__attribute_pure__" . "") ("__attribute_malloc__" . "") ("__nonnull" . "") ("__wur" . "") ("__declspec" (spp-arg-list ("foo") 1 . 2)) ("__attribute__" (spp-arg-list ("foo") 1 . 2)) ("__asm" (spp-arg-list ("foo") 1 . 2))))) nil [3281 3729])
+            ("semantic-c-in-reset-preprocessor-table" variable nil nil [3731 3930])
+            ("semantic-lex-c-preprocessor-symbol-file" variable nil nil [3932 3980])
+            ("semantic-lex-c-preprocessor-symbol-map" variable nil nil [3981 4028])
+            ("semantic-c-reset-preprocessor-symbol-map" function nil nil [4030 5765])
+            ("add-hook" code nil nil [5845 5919])
+            ("semantic-lex-c-preprocessor-symbol-map" variable nil nil [5921 7276])
+            ("semantic-lex-c-preprocessor-symbol-file" variable nil nil [7278 7853])
+            ("semantic-c-member-of-autocast" variable (:default-value (quote t)) nil [7855 8266])
+            ("define-lex-spp-macro-declaration-analyzer" code nil nil [8268 9741])
+            ("define-lex-spp-macro-undeclaration-analyzer" code nil nil [9743 9994])
+            ("semantic-c-obey-conditional-section-parsing-flag" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [10026 10290])
+            ("semantic-c-skip-conditional-section" function nil nil [10292 11619])
+            ("semantic-c-convert-spp-value-to-hideif-value" function (:arguments ("symbol" "macrovalue")) nil [12095 13059])
+            ("semantic-c-evaluate-symbol-for-hideif" function
+               (:user-visible-flag t
+                :arguments ("spp-symbol"))
+                nil [13061 14378])
+            ("semantic-c-hideif-lookup" function (:arguments ("var")) nil [14629 15054])
+            ("semantic-c-hideif-defined" function (:arguments ("var")) nil [15056 15616])
+            ("semantic-c-takeover-hideif" variable nil nil [15701 15798])
+            ("hif-defined" function (:arguments ("around" "semantic-c" "activate")) nil [15800 16005])
+            ("hif-lookup" function (:arguments ("around" "semantic-c" "activate")) nil [16007 16290])
+            ("define-lex-regex-analyzer" code nil nil [16425 16640])
+            ("semantic-c-do-lex-if" function nil nil [16642 18115])
+            ("define-lex-regex-analyzer" code nil nil [18117 18362])
+            ("semantic-c-do-lex-ifdef" function nil nil [18364 19547])
+            ("define-lex-regex-analyzer" code nil nil [19549 20093])
+            ("define-lex-regex-analyzer" code nil nil [20095 20339])
+            ("define-lex-spp-include-analyzer" code nil nil [20341 20721])
+            ("define-lex-spp-include-analyzer" code nil nil [20723 21094])
+            ("define-lex-regex-analyzer" code nil nil [21097 21280])
+            ("define-lex-regex-analyzer" code nil nil [21282 22261])
+            ("semantic-lex-c-nested-namespace-ignore-second" variable (:default-value t) nil [22263 22794])
+            ("define-lex-regex-analyzer" code nil nil [22796 23431])
+            ("define-lex-regex-analyzer" code nil nil [23433 23636])
+            ("define-lex-regex-analyzer" code nil nil [23638 25387])
+            ("define-lex-regex-analyzer" code nil nil [25389 25632])
+            ("define-lex-regex-analyzer" code nil nil [25634 26038])
+            ("define-lex-regex-analyzer" code nil nil [26040 26398])
+            ("semantic-c-lexer" function (:lexical-analyzer-flag t) nil [26401 27582])
+            ("define-lex-simple-regex-analyzer" code nil nil [27584 27707])
+            ("semantic-cpp-lexer" function (:lexical-analyzer-flag t) nil [27709 28647])
+            ("semantic-parse-region" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("start" "end" "&optional" "nonterminal" "depth" "returnonerror"))
+                nil [28649 30840])
+            ("semantic-c-parse-token-hack-depth" variable nil nil [30842 30960])
+            ("semantic-c-parse-lexical-token" function (:arguments ("lexicaltoken" "nonterminal" "depth" "returnonerror")) nil [30962 33551])
+            ("semantic-c-debug-mode-init-last-mode" variable nil nil [33553 33646])
+            ("semantic-c-debug-mode-init" function
+               (:user-visible-flag t
+                :arguments ("mm"))
+                nil [33648 34155])
+            ("semantic-c-debug-mode-init-pch" function nil nil [34157 34725])
+            ("semantic-expand-c-tag" function (:arguments ("tag")) nil [34727 36375])
+            ("semantic-expand-c-extern-C" function (:arguments ("tag")) nil [36377 36929])
+            ("semantic-expand-c-complex-type" function (:arguments ("tag")) nil [36931 38453])
+            ("semantic-expand-c-tag-namelist" function (:arguments ("tag")) nil [38455 42372])
+            ("semantic-tag-expand-function" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value (quote semantic-expand-c-tag))
+                nil [42374 42519])
+            ("semantic-c-classname" variable nil nil [42521 42837])
+            ("semantic-analyze-split-name" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("name"))
+                nil [42839 43053])
+            ("semantic-c-reconstitute-token" function (:arguments ("tokenpart" "declmods" "typedecl")) nil [43055 46358])
+            ("semantic-c-reconstitute-template" function (:arguments ("tag" "specifier")) nil [46360 46545])
+            ("semantic-format-tag-name" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [46585 46971])
+            ("semantic-format-tag-canonical-name" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent" "color"))
+                nil [46973 47356])
+            ("semantic-format-tag-type" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "color"))
+                nil [47358 48400])
+            ("semantic-find-tags-by-scope-protection" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("scopeprotection" "parent" "&optional" "table"))
+                nil [48402 49266])
+            ("semantic-tag-protection" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent"))
+                nil [49268 50841])
+            ("semantic-find-tags-included" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("&optional" "table"))
+                nil [50843 51408])
+            ("semantic-find-tags-included" function
+               (:parent "arduino-mode"
+                :override-function-flag t
+                :arguments ("&optional" "table"))
+                nil [51491 51983])
+            ("semantic-tag-components" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [51986 52533])
+            ("semantic-c-tag-template" function (:arguments ("tag")) nil [52535 52672])
+            ("semantic-c-tag-template-specifier" function (:arguments ("tag")) nil [52674 52841])
+            ("semantic-c-template-string-body" function (:arguments ("templatespec")) nil [52843 53200])
+            ("semantic-c-template-string" function (:arguments ("token" "parent" "color")) nil [53202 53994])
+            ("semantic-format-tag-concise-prototype" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("token" "&optional" "parent" "color"))
+                nil [53996 54433])
+            ("semantic-format-tag-uml-prototype" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("token" "&optional" "parent" "color"))
+                nil [54435 54849])
+            ("semantic-tag-abstract-p" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag" "&optional" "parent"))
+                nil [54851 55930])
+            ("semantic-c-dereference-typedef" function (:arguments ("type" "scope" "type-declaration")) nil [55932 56800])
+            ("semantic-c--instantiate-template" function (:arguments ("tag" "def-list" "spec-list")) nil [56802 57375])
+            ("semantic-c--template-name-1" function (:arguments ("spec-list")) nil [57377 57741])
+            ("semantic-c--template-name" function (:arguments ("type" "spec-list")) nil [57743 58035])
+            ("semantic-c-dereference-template" function (:arguments ("type" "scope" "type-declaration")) nil [58037 58953])
+            ("semantic-c-dereference-member-of" function (:arguments ("type" "scope" "type-declaration")) nil [59008 59647])
+            ("semantic-c-dereference-namespace" function (:arguments ("type" "scope" "type-declaration")) nil [59884 61788])
+            ("semantic-c-dereference-namespace-alias" function (:arguments ("type" "namespace")) nil [61790 63041])
+            ("semantic-c-check-type-namespace-using" function (:arguments ("type" "namespace")) nil [63126 65072])
+            ("semantic-analyze-dereference-metatype" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("type" "scope" "&optional" "type-declaration"))
+                nil [65075 66250])
+            ("semantic-analyze-type-constants" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("type"))
+                nil [66252 66559])
+            ("semantic-analyze-unsplit-name" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("namelist"))
+                nil [66561 66738])
+            ("semantic-ctxt-scoped-types" function
+               (:parent "c++-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [66740 68590])
+            ("semantic-ctxt-imported-packages" function
+               (:parent "c++-mode"
+                :override-function-flag t
+                :arguments ("&optional" "point"))
+                nil [68592 69457])
+            ("semanticdb-expand-nested-tag" function
+               (:parent "c++-mode"
+                :override-function-flag t
+                :arguments ("tag"))
+                nil [69459 70352])
+            ("semanticdb-find-table-for-include" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("includetag" "&optional" "table"))
+                nil [70354 72537])
+            ("semantic-get-local-variables" function
+               (:parent "c++-mode"
+                :override-function-flag t)
+                nil [72540 73100])
+            ("semantic-idle-summary-current-symbol-info" function
+               (:parent "c-mode"
+                :override-function-flag t)
+                nil [73102 73875])
+            ("semantic--tag-similar-names-p" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag1" "tag2" "blankok"))
+                nil [73877 74228])
+            ("semantic--tag-similar-types-p" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("tag1" "tag2"))
+                nil [74230 75212])
+            ("semantic--tag-attribute-similar-p" function
+               (:parent "c-mode"
+                :override-function-flag t
+                :arguments ("attr" "value1" "value2" "ignorable-attributes"))
+                nil [75215 75644])
+            ("semantic-orphaned-member-metaparent-type" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value "struct")
+                nil [75646 75802])
+            ("semantic-symbol->name-assoc-list" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value (quote ((type . "Types") (variable . "Variables") (function . "Functions") (include . "Includes"))))
+                nil [75804 76035])
+            ("semantic-symbol->name-assoc-list-for-type-parts" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value (quote ((type . "Types") (variable . "Attributes") (function . "Methods") (label . "Labels"))))
+                nil [76037 76299])
+            ("imenu-create-index-function" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value (quote semantic-create-imenu-index))
+                nil [76301 76416])
+            ("semantic-type-relation-separator-character" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value (quote ("." "->" "::")))
+                nil [76418 76579])
+            ("semantic-command-separation-character" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value ";")
+                nil [76581 76689])
+            ("senator-step-at-tag-classes" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value (quote (function variable)))
+                nil [76691 76818])
+            ("semantic-tag-similar-ignorable-attributes" variable
+               (:parent "c-mode"
+                :override-variable-flag t
+                :default-value (quote (:prototype-flag :parent :typemodifiers)))
+                nil [76820 77111])
+            ("semantic-default-c-setup" function nil nil [77128 77666])
+            ("semantic-c-add-preprocessor-symbol" function
+               (:user-visible-flag t
+                :arguments ("sym" "replacement"))
+                nil [77683 78187])
+            ("semantic-c-describe-environment" function (:user-visible-flag t) nil [78208 81541])
+            ("semantic/bovine/c" package nil nil [81543 81571])
+            ("semantic-c-reset-preprocessor-symbol-map" code nil nil [81573 81615]))          
+      :file "c.el"
+      :pointmax 81779
+      :fsize 81778
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax '((close-paren 1673 . 1674) (symbol 1637 . 1654) (open-paren 1636 . 1637) (close-paren 1238 . 1239) (symbol 1194 . 1211) (open-paren 1193 . 1194)))
+    (semanticdb-table "gcc.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("semantic/dep" include nil nil [999 1022])
+            ("semantic-lex-c-preprocessor-symbol-file" variable nil nil [1024 1072])
+            ("semantic-lex-c-preprocessor-symbol-map" variable nil nil [1073 1120])
+            ("declare-function" code nil nil [1121 1200])
+            ("semantic-gcc-query" function (:arguments ("gcc-cmd" "gcc-options")) nil [1213 2223])
+            ("semantic-gcc-get-include-paths" function (:arguments ("lang")) nil [2305 3786])
+            ("semantic-cpp-defs" function (:arguments ("str")) nil [3789 4117])
+            ("semantic-gcc-fields" function (:arguments ("str")) nil [4119 5273])
+            ("semantic-gcc-setup-data" variable nil nil [5275 5612])
+            ("semantic-gcc-setup" function (:user-visible-flag t) nil [5629 10036])
+            ("semantic/bovine/gcc" package nil nil [10038 10068]))          
+      :file "gcc.el"
+      :pointmax 10236
+      :fsize 10235
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "c-by.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("semantic/lex" include nil nil [1050 1073])
+            ("semantic/bovine" include nil nil [1093 1119])
+            ("declare-function" code nil nil [1139 1207])
+            ("declare-function" code nil nil [1208 1279])
+            ("declare-function" code nil nil [1280 1340])
+            ("semantic-c-by--keyword-table" variable
+               (:constant-flag t
+                :default-value (semantic-lex-make-keyword-table (quote (("extern" . EXTERN) ("static" . STATIC) ("const" . CONST) ("volatile" . VOLATILE) ("register" . REGISTER) ("signed" . SIGNED) ("unsigned" . UNSIGNED) ("inline" . INLINE) ("virtual" . VIRTUAL) ("mutable" . MUTABLE) ("explicit" . EXPLICIT) ("struct" . STRUCT) ("union" . UNION) ("enum" . ENUM) ("typedef" . TYPEDEF) ("class" . CLASS) ("typename" . TYPENAME) ("namespace" . NAMESPACE) ("using" . USING) ("new" . NEW) ("delete" . DELETE) ("template" . TEMPLATE) ("throw" . THROW) ("reentrant" . REENTRANT) ("try" . TRY) ("catch" . CATCH) ("operator" . OPERATOR) ("public" . PUBLIC) ("private" . PRIVATE) ("protected" . PROTECTED) ("friend" . FRIEND) ("if" . IF) ("else" . ELSE) ("do" . DO) ("while" . WHILE) ("for" . FOR) ("switch" . SWITCH) ("case" . CASE) ("default" . DEFAULT) ("return" . RETURN) ("break" . BREAK) ("continue" . CONTINUE) ("sizeof" . SIZEOF) ("void" . VOID) ("char" . CHAR) ("wchar_t" . WCHAR) ("short" . SHORT) ("int" . INT) ("long" . LONG) ("float" . FLOAT) ("double" . DOUBLE) ("bool" . BOOL) ("_P" . UNDERP) ("__P" . UNDERUNDERP))) (quote (("__P" summary "Common macro to eliminate prototype compatibility on some compilers") ("_P" summary "Common macro to eliminate prototype compatibility on some compilers") ("bool" summary "Primitive boolean type") ("double" summary "Primitive floating-point type (double-precision 64-bit IEEE 754)") ("float" summary "Primitive floating-point type (single-precision 32-bit IEEE 754)") ("long" summary "Integral primitive type (-9223372036854775808 to 9223372036854775807)") ("int" summary "Integral Primitive Type: (-2147483648 to 2147483647)") ("short" summary "Integral Primitive Type: (-32768 to 32767)") ("wchar_t" summary "Wide Character Type") ("char" summary "Integral Character Type: (0 to 256)") ("void" summary "Built in typeless type: void") ("sizeof" summary "Compile time macro: sizeof(<type or variable>) // size in bytes") ("continue" summary "Non-local continue within a loop (for, do/while): continue;") ("break" summary "Non-local exit within a loop or switch (for, do/while, switch): break;") ("return" summary "return <value>;") ("default" summary "switch (<variable>) { case <constvalue>: code; ... default: code; }") ("case" summary "switch (<variable>) { case <constvalue>: code; ... default: code; }") ("switch" summary "switch (<variable>) { case <constvalue>: code; ... default: code; }") ("for" summary "for(<init>; <condition>; <increment>) { code }") ("while" summary "do { code } while (<condition>); or while (<condition>) { code };") ("do" summary " do { code } while (<condition>);") ("else" summary "if (<condition>) { code } [ else { code } ]") ("if" summary "if (<condition>) { code } [ else { code } ]") ("friend" summary "friend class <CLASSNAME>") ("catch" summary "try { <body> } catch { <catch code> }") ("try" summary "try { <body> } catch { <catch code> }") ("reentrant" summary "<type> <methoddef> (<method args>) reentrant ...") ("throw" summary "<type> <methoddef> (<method args>) throw (<exception>) ...") ("template" summary "template <class TYPE ...> TYPE_OR_FUNCTION") ("delete" summary "delete <object>;") ("new" summary "new <classname>();") ("using" summary "using <namespace>;") ("namespace" summary "Namespace Declaration: namespace <name> { ... };") ("typename" summary "typename is used to handle a qualified name as a typename;") ("class" summary "Class Declaration: class <name>[:parents] { ... };") ("typedef" summary "Arbitrary Type Declaration: typedef <typedeclaration> <name>;") ("enum" summary "Enumeration Type Declaration: enum [name] { ... };") ("union" summary "Union Type Declaration: union [name] { ... };") ("struct" summary "Structure Type Declaration: struct [name] { ... };") ("explicit" summary "Forbids implicit type conversion: explicit <constructor>") ("mutable" summary "Member Declaration Modifier: mutable <type> <name> ...") ("virtual" summary "Method Modifier: virtual <type> <name>(...) ...") ("inline" summary "Function Modifier: inline <return  type> <name>(...) {...};") ("unsigned" summary "Numeric Type Modifier: unsigned <numeric type> <name> ...") ("signed" summary "Numeric Type Modifier: signed <numeric type> <name> ...") ("register" summary "Declaration Modifier: register <type> <name> ...") ("volatile" summary "Declaration Modifier: volatile <type> <name> ...") ("const" summary "Declaration Modifier: const <type> <name> ...") ("static" summary "Declaration Modifier: static <type> <name> ...") ("extern" summary "Declaration Modifier: extern <type> <name> ...")))))
+                nil [1363 6504])
+            ("semantic-c-by--token-table" variable
+               (:constant-flag t
+                :default-value (semantic-lex-make-type-table (quote (("semantic-list" (BRACKETS . "\\[\\]") (PARENS . "()") (VOID_BLCK . "^(void)$") (BRACE_BLCK . "^{") (PAREN_BLCK . "^(") (BRACK_BLCK . "\\[.*\\]$")) ("close-paren" (RBRACE . "}") (RPAREN . ")")) ("open-paren" (LBRACE . "{") (LPAREN . "(")) ("symbol" (RESTRICT . "\\<\\(__\\)?restrict\\>")) ("number" (ZERO . "^0$")) ("string" (CPP . "\"C\\+\\+\"") (C . "\"C\"")) ("punctuation" (OR . "\\`[|]\\'") (HAT . "\\`\\^\\'") (MOD . "\\`[%]\\'") (TILDE . "\\`[~]\\'") (COMA . "\\`[,]\\'") (GREATER . "\\`[>]\\'") (LESS . "\\`[<]\\'") (EQUAL . "\\`[=]\\'") (BANG . "\\`[!]\\'") (MINUS . "\\`[-]\\'") (PLUS . "\\`[+]\\'") (DIVIDE . "\\`[/]\\'") (AMPERSAND . "\\`[&]\\'") (STAR . "\\`[*]\\'") (SEMICOLON . "\\`[;]\\'") (COLON . "\\`[:]\\'") (PERIOD . "\\`[.]\\'") (HASH . "\\`[#]\\'")))) (quote nil)))
+                nil [6506 7614])
+            ("semantic-c-by--parse-table" variable
+               (:constant-flag t
+                :default-value (\` ((bovine-toplevel (declaration)) (bovine-inner-scope (codeblock)) (declaration (macro) (type) (define) (var-or-fun) (extern-c) (template) (using)) (codeblock (define) (codeblock-var-or-fun) (type) (using)) (extern-c-contents (open-paren (\, (semantic-lambda (list nil)))) (declaration) (close-paren (\, (semantic-lambda (list nil))))) (extern-c (EXTERN string "\"C\"" semantic-list (\, (semantic-lambda (semantic-tag "C" (quote extern) :members (semantic-parse-region (car (nth 2 vals)) (cdr (nth 2 vals)) (quote extern-c-contents) 1))))) (EXTERN string "\"C\\+\\+\"" semantic-list (\, (semantic-lambda (semantic-tag "C" (quote extern) :members (semantic-parse-region (car (nth 2 vals)) (cdr (nth 2 vals)) (quote extern-c-contents) 1))))) (EXTERN string "\"C\"" (\, (semantic-lambda (list nil)))) (EXTERN string "\"C\\+\\+\"" (\, (semantic-lambda (list nil))))) (macro (spp-macro-def (\, (semantic-lambda (semantic-tag-new-variable (nth 0 vals) nil nil :constant-flag t)))) (spp-system-include (\, (semantic-lambda (semantic-tag-new-include (nth 0 vals) t)))) (spp-include (\, (semantic-lambda (semantic-tag-new-include (nth 0 vals) nil))))) (define (spp-macro-def (\, (semantic-lambda (semantic-tag-new-variable (nth 0 vals) nil nil :constant-flag t)))) (spp-macro-undef (\, (semantic-lambda (list nil))))) (unionparts (semantic-list (\, (semantic-lambda (semantic-parse-region (car (nth 0 vals)) (cdr (nth 0 vals)) (quote classsubparts) 1))))) (opt-symbol (symbol) nil) (classsubparts (open-paren "{" (\, (semantic-lambda (list nil)))) (close-paren "}" (\, (semantic-lambda (list nil)))) (class-protection opt-symbol punctuation "\\`[:]\\'" (\, (semantic-lambda (semantic-tag (car (nth 0 vals)) (quote label))))) (var-or-fun) (FRIEND func-decl (\, (semantic-lambda (semantic-tag (car (nth 1 vals)) (quote friend))))) (FRIEND CLASS symbol (\, (semantic-lambda (semantic-tag (nth 2 vals) (quote friend))))) (type) (define) (template) nil) (opt-class-parents (punctuation "\\`[:]\\'" class-parents opt-template-specifier (\, (semantic-lambda (list (nth 1 vals))))) ((\, (semantic-lambda)))) (one-class-parent (opt-class-protection opt-class-declmods namespace-symbol (\, (semantic-lambda (semantic-tag-new-type (car (nth 2 vals)) "class" nil nil :protection (car (nth 0 vals)))))) (opt-class-declmods opt-class-protection namespace-symbol (\, (semantic-lambda (semantic-tag-new-type (car (nth 2 vals)) "class" nil nil :protection (car (nth 1 vals))))))) (class-parents (one-class-parent punctuation "\\`[,]\\'" class-parents (\, (semantic-lambda (cons (nth 0 vals) (nth 2 vals))))) (one-class-parent (\, (semantic-lambda (list (nth 0 vals)))))) (opt-class-declmods (class-declmods opt-class-declmods (\, (semantic-lambda (list nil)))) nil) (class-declmods (VIRTUAL)) (class-protection (PUBLIC) (PRIVATE) (PROTECTED)) (opt-class-protection (class-protection (\, (semantic-lambda (nth 0 vals)))) ((\, (semantic-lambda (list "unspecified"))))) (namespaceparts (semantic-list (\, (semantic-lambda (semantic-parse-region (car (nth 0 vals)) (cdr (nth 0 vals)) (quote namespacesubparts) 1))))) (namespacesubparts (open-paren "{" (\, (semantic-lambda (list nil)))) (close-paren "}" (\, (semantic-lambda (list nil)))) (type) (var-or-fun) (define) (class-protection punctuation "\\`[:]\\'" (\, (semantic-lambda (semantic-tag (car (nth 0 vals)) (quote label))))) (template) (using) (spp-include (\, (semantic-lambda (semantic-tag (nth 0 vals) (quote include) :inside-ns t)))) nil) (enumparts (semantic-list (\, (semantic-lambda (semantic-parse-region (car (nth 0 vals)) (cdr (nth 0 vals)) (quote enumsubparts) 1))))) (enumsubparts (symbol opt-assign (\, (semantic-lambda (semantic-tag-new-variable (nth 0 vals) "int" (car (nth 1 vals)) :constant-flag t)))) (open-paren "{" (\, (semantic-lambda (list nil)))) (close-paren "}" (\, (semantic-lambda (list nil)))) (punctuation "\\`[,]\\'" (\, (semantic-lambda (list nil))))) (opt-name (symbol) ((\, (semantic-lambda (list ""))))) (typesimple (struct-or-class opt-class opt-name opt-template-specifier opt-class-parents semantic-list (\, (semantic-lambda (semantic-tag-new-type (car (nth 2 vals)) (car (nth 0 vals)) (let ((semantic-c-classname (cons (car (nth 2 vals)) (car (nth 0 vals))))) (semantic-parse-region (car (nth 5 vals)) (cdr (nth 5 vals)) (quote classsubparts) 1)) (nth 4 vals) :template-specifier (nth 3 vals) :parent (car (nth 1 vals)))))) (struct-or-class opt-class opt-name opt-template-specifier opt-class-parents (\, (semantic-lambda (semantic-tag-new-type (car (nth 2 vals)) (car (nth 0 vals)) nil (nth 4 vals) :template-specifier (nth 3 vals) :prototype t :parent (car (nth 1 vals)))))) (UNION opt-class opt-name unionparts (\, (semantic-lambda (semantic-tag-new-type (car (nth 2 vals)) (nth 0 vals) (nth 3 vals) nil :parent (car (nth 1 vals)))))) (ENUM opt-class opt-name enumparts (\, (semantic-lambda (semantic-tag-new-type (car (nth 2 vals)) (nth 0 vals) (nth 3 vals) nil :parent (car (nth 1 vals)))))) (TYPEDEF declmods typeformbase cv-declmods typedef-symbol-list (\, (semantic-lambda (semantic-tag-new-type (nth 4 vals) (nth 0 vals) nil (list (nth 2 vals))))))) (typedef-symbol-list (typedefname punctuation "\\`[,]\\'" typedef-symbol-list (\, (semantic-lambda (cons (nth 0 vals) (nth 2 vals))))) (typedefname (\, (semantic-lambda (list (nth 0 vals)))))) (typedefname (opt-stars symbol opt-bits opt-array (\, (semantic-lambda (list (nth 0 vals) (nth 1 vals)))))) (struct-or-class (STRUCT) (CLASS)) (type (typesimple punctuation "\\`[;]\\'" (\, (semantic-lambda (nth 0 vals)))) (NAMESPACE symbol namespaceparts (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) (nth 0 vals) (nth 2 vals) nil)))) (NAMESPACE namespaceparts (\, (semantic-lambda (semantic-tag-new-type "unnamed" (nth 0 vals) (nth 1 vals) nil)))) (NAMESPACE symbol punctuation "\\`[=]\\'" typeformbase punctuation "\\`[;]\\'" (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) (nth 0 vals) (list (semantic-tag-new-type (car (nth 3 vals)) (nth 0 vals) nil nil)) nil :kind (quote alias)))))) (using (USING usingname punctuation "\\`[;]\\'" (\, (semantic-lambda (semantic-tag (car (nth 1 vals)) (quote using) :type (nth 1 vals)))))) (usingname (typeformbase (\, (semantic-lambda (semantic-tag-new-type (car (nth 0 vals)) "class" nil nil :prototype t)))) (NAMESPACE typeformbase (\, (semantic-lambda (semantic-tag-new-type (car (nth 1 vals)) "namespace" nil nil :prototype t))))) (template (TEMPLATE template-specifier opt-friend template-definition (\, (semantic-lambda (semantic-c-reconstitute-template (nth 3 vals) (nth 1 vals)))))) (opt-friend (FRIEND) nil) (opt-template-specifier (template-specifier (\, (semantic-lambda (nth 0 vals)))) ((\, (semantic-lambda)))) (template-specifier (punctuation "\\`[<]\\'" template-specifier-types punctuation "\\`[>]\\'" (\, (semantic-lambda (nth 1 vals))))) (template-specifier-types (template-var template-specifier-type-list (\, (semantic-lambda (cons (nth 0 vals) (nth 1 vals))))) nil) (template-specifier-type-list (punctuation "\\`[,]\\'" template-specifier-types (\, (semantic-lambda (nth 1 vals)))) ((\, (semantic-lambda)))) (template-var (template-type opt-template-equal (\, (semantic-lambda (cons (car (nth 0 vals)) (cdr (nth 0 vals)))))) (string (\, (semantic-lambda (list (nth 0 vals))))) (number (\, (semantic-lambda (list (nth 0 vals))))) (opt-stars opt-ref namespace-symbol (\, (semantic-lambda (nth 2 vals)))) (semantic-list (\, (semantic-lambda (list (nth 0 vals))))) (SIZEOF semantic-list (\, (semantic-lambda (list (nth 1 vals)))))) (opt-template-equal (punctuation "\\`[=]\\'" symbol punctuation "\\`[<]\\'" template-specifier-types punctuation "\\`[>]\\'" (\, (semantic-lambda (list (nth 1 vals))))) (punctuation "\\`[=]\\'" symbol (\, (semantic-lambda (list (nth 1 vals))))) ((\, (semantic-lambda)))) (template-type (CLASS symbol (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) "class" nil nil)))) (STRUCT symbol (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) "struct" nil nil)))) (TYPENAME symbol (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) "class" nil nil)))) (declmods typeformbase cv-declmods opt-stars opt-ref variablearg-opt-name (\, (semantic-lambda (semantic-tag-new-type (car (nth 1 vals)) nil nil nil :constant-flag (if (member "const" (append (nth 0 vals) (nth 2 vals))) t nil) :typemodifiers (delete "const" (append (nth 0 vals) (nth 2 vals))) :reference (car (nth 4 vals)) :pointer (car (nth 3 vals))))))) (template-definition (type (\, (semantic-lambda (nth 0 vals)))) (var-or-fun (\, (semantic-lambda (nth 0 vals))))) (opt-stars (punctuation "\\`[*]\\'" opt-starmod opt-stars (\, (semantic-lambda (list (1+ (car (nth 2 vals))))))) ((\, (semantic-lambda (list 0))))) (opt-starmod (STARMOD opt-starmod (\, (semantic-lambda (cons (car (nth 0 vals)) (nth 1 vals))))) ((\, (semantic-lambda)))) (STARMOD (CONST)) (declmods (DECLMOD declmods (\, (semantic-lambda (cons (car (nth 0 vals)) (nth 1 vals))))) (DECLMOD (\, (semantic-lambda (nth 0 vals)))) ((\, (semantic-lambda)))) (DECLMOD (EXTERN) (STATIC) (CVDECLMOD) (INLINE) (REGISTER) (FRIEND) (TYPENAME) (METADECLMOD) (VIRTUAL)) (metadeclmod (METADECLMOD (\, (semantic-lambda))) ((\, (semantic-lambda)))) (CVDECLMOD (CONST) (VOLATILE)) (cv-declmods (CVDECLMOD cv-declmods (\, (semantic-lambda (cons (car (nth 0 vals)) (nth 1 vals))))) (CVDECLMOD (\, (semantic-lambda (nth 0 vals)))) ((\, (semantic-lambda)))) (METADECLMOD (VIRTUAL) (MUTABLE)) (opt-ref (punctuation "\\`[&]\\'" (\, (semantic-lambda (list 1)))) ((\, (semantic-lambda (list 0))))) (typeformbase (typesimple (\, (semantic-lambda (nth 0 vals)))) (STRUCT symbol (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) (nth 0 vals) nil nil)))) (UNION symbol (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) (nth 0 vals) nil nil)))) (ENUM symbol (\, (semantic-lambda (semantic-tag-new-type (nth 1 vals) (nth 0 vals) nil nil)))) (builtintype (\, (semantic-lambda (nth 0 vals)))) (symbol template-specifier (\, (semantic-lambda (semantic-tag-new-type (nth 0 vals) "class" nil nil :template-specifier (nth 1 vals))))) (namespace-symbol-for-typeformbase opt-template-specifier (\, (semantic-lambda (semantic-tag-new-type (car (nth 0 vals)) "class" nil nil :template-specifier (nth 1 vals))))) (symbol (\, (semantic-lambda (list (nth 0 vals)))))) (signedmod (UNSIGNED) (SIGNED)) (builtintype-types (VOID) (CHAR) (WCHAR) (SHORT INT (\, (semantic-lambda (list (concat (nth 0 vals) " " (nth 1 vals)))))) (SHORT) (INT) (LONG INT (\, (semantic-lambda (list (concat (nth 0 vals) " " (nth 1 vals)))))) (FLOAT) (DOUBLE) (BOOL) (LONG DOUBLE (\, (semantic-lambda (list (concat (nth 0 vals) " " (nth 1 vals)))))) (LONG LONG (\, (semantic-lambda (list (concat (nth 0 vals) " " (nth 1 vals)))))) (LONG)) (builtintype (signedmod builtintype-types (\, (semantic-lambda (list (concat (car (nth 0 vals)) " " (car (nth 1 vals))))))) (builtintype-types (\, (semantic-lambda (nth 0 vals)))) (signedmod (\, (semantic-lambda (list (concat (car (nth 0 vals)) " int")))))) (codeblock-var-or-fun (declmods typeformbase declmods opt-ref var-or-func-decl (\, (semantic-lambda (semantic-c-reconstitute-token (nth 4 vals) (nth 0 vals) (nth 1 vals)))))) (var-or-fun (codeblock-var-or-fun (\, (semantic-lambda (nth 0 vals)))) (declmods var-or-func-decl (\, (semantic-lambda (semantic-c-reconstitute-token (nth 1 vals) (nth 0 vals) nil))))) (var-or-func-decl (func-decl (\, (semantic-lambda (nth 0 vals)))) (var-decl (\, (semantic-lambda (nth 0 vals))))) (func-decl (opt-stars opt-class opt-destructor functionname opt-template-specifier opt-under-p arg-list opt-post-fcn-modifiers opt-throw opt-initializers fun-or-proto-end (\, (semantic-lambda (nth 3 vals) (list (quote function) (nth 1 vals) (nth 2 vals) (nth 6 vals) (nth 8 vals) (nth 7 vals)) (nth 0 vals) (nth 10 vals) (list (nth 4 vals)) (nth 9 vals)))) (opt-stars opt-class opt-destructor functionname opt-template-specifier opt-under-p opt-post-fcn-modifiers opt-throw opt-initializers fun-try-end (\, (semantic-lambda (nth 3 vals) (list (quote function) (nth 1 vals) (nth 2 vals) nil (nth 7 vals) (nth 6 vals)) (nth 0 vals) (nth 9 vals) (list (nth 4 vals)) (nth 8 vals))))) (var-decl (varnamelist punctuation "\\`[;]\\'" (\, (semantic-lambda (list (nth 0 vals) (quote variable)))))) (opt-under-p (UNDERP (\, (semantic-lambda (list nil)))) (UNDERUNDERP (\, (semantic-lambda (list nil)))) nil) (opt-initializers (punctuation "\\`[:]\\'" namespace-symbol semantic-list opt-initializers) (punctuation "\\`[,]\\'" namespace-symbol semantic-list opt-initializers) nil) (opt-post-fcn-modifiers (post-fcn-modifiers opt-post-fcn-modifiers (\, (semantic-lambda (cons (nth 0 vals) (nth 1 vals))))) ((\, (semantic-lambda (list nil))))) (post-fcn-modifiers (REENTRANT) (CONST)) (opt-throw (THROW semantic-list (\, (lambda (vals start end) (semantic-bovinate-from-nonterminal (car (nth 1 vals)) (cdr (nth 1 vals)) (quote throw-exception-list))))) nil) (throw-exception-list (namespace-symbol punctuation "\\`[,]\\'" throw-exception-list (\, (semantic-lambda (cons (car (nth 0 vals)) (nth 2 vals))))) (namespace-symbol close-paren ")" (\, (semantic-lambda (nth 0 vals)))) (symbol close-paren ")" (\, (semantic-lambda (list (nth 0 vals))))) (open-paren "(" throw-exception-list (\, (semantic-lambda (nth 1 vals)))) (close-paren ")" (\, (semantic-lambda)))) (opt-bits (punctuation "\\`[:]\\'" number (\, (semantic-lambda (list (nth 1 vals))))) ((\, (semantic-lambda (list nil))))) (opt-array (semantic-list "\\[.*\\]$" opt-array (\, (semantic-lambda (list (cons 1 (car (nth 1 vals))))))) ((\, (semantic-lambda (list nil))))) (opt-assign (punctuation "\\`[=]\\'" expression (\, (semantic-lambda (list (nth 1 vals))))) ((\, (semantic-lambda (list nil))))) (opt-restrict (symbol "\\<\\(__\\)?restrict\\>") nil) (varname (opt-stars opt-restrict namespace-symbol opt-bits opt-array (\, (semantic-lambda (nth 2 vals) (nth 0 vals) (nth 3 vals) (nth 4 vals))))) (variablearg (declmods typeformbase cv-declmods opt-ref variablearg-opt-name (\, (semantic-lambda (semantic-tag-new-variable (list (nth 4 vals)) (nth 1 vals) nil :constant-flag (if (member "const" (append (nth 0 vals) (nth 2 vals))) t nil) :typemodifiers (delete "const" (append (nth 0 vals) (nth 2 vals))) :reference (car (nth 3 vals))))))) (variablearg-opt-name (varname (\, (semantic-lambda (nth 0 vals)))) (opt-stars (\, (semantic-lambda (list "") (nth 0 vals) (list nil nil nil))))) (varname-opt-initializer (semantic-list) (opt-assign) nil) (varnamelist (opt-ref varname varname-opt-initializer punctuation "\\`[,]\\'" varnamelist (\, (semantic-lambda (cons (nth 1 vals) (nth 4 vals))))) (opt-ref varname varname-opt-initializer (\, (semantic-lambda (list (nth 1 vals)))))) (namespace-symbol (symbol opt-template-specifier punctuation "\\`[:]\\'" punctuation "\\`[:]\\'" namespace-symbol (\, (semantic-lambda (list (concat (nth 0 vals) "::" (car (nth 4 vals))))))) (symbol opt-template-specifier (\, (semantic-lambda (list (nth 0 vals)))))) (namespace-symbol-for-typeformbase (symbol opt-template-specifier punctuation "\\`[:]\\'" punctuation "\\`[:]\\'" namespace-symbol-for-typeformbase (\, (semantic-lambda (list (concat (nth 0 vals) "::" (car (nth 4 vals))))))) (symbol (\, (semantic-lambda (list (nth 0 vals)))))) (namespace-opt-class (symbol punctuation "\\`[:]\\'" punctuation "\\`[:]\\'" namespace-opt-class (\, (semantic-lambda (list (concat (nth 0 vals) "::" (car (nth 3 vals))))))) (symbol opt-template-specifier punctuation "\\`[:]\\'" punctuation "\\`[:]\\'" (\, (semantic-lambda (list (nth 0 vals)))))) (opt-class (namespace-opt-class (\, (semantic-lambda (nth 0 vals)))) ((\, (semantic-lambda (list nil))))) (opt-destructor (punctuation "\\`[~]\\'" (\, (semantic-lambda (list t)))) ((\, (semantic-lambda (list nil))))) (arg-list (semantic-list "^(" knr-arguments (\, (semantic-lambda (nth 1 vals)))) (semantic-list "^(" (\, (semantic-lambda (semantic-parse-region (car (nth 0 vals)) (cdr (nth 0 vals)) (quote arg-sub-list) 1)))) (semantic-list "^(void)$" (\, (semantic-lambda)))) (knr-varnamelist (varname punctuation "\\`[,]\\'" knr-varnamelist (\, (semantic-lambda (cons (nth 0 vals) (nth 2 vals))))) (varname (\, (semantic-lambda (list (nth 0 vals)))))) (knr-one-variable-decl (declmods typeformbase cv-declmods knr-varnamelist (\, (semantic-lambda (semantic-tag-new-variable (nreverse (nth 3 vals)) (nth 1 vals) nil :constant-flag (if (member "const" (append (nth 2 vals))) t nil) :typemodifiers (delete "const" (nth 2 vals))))))) (knr-arguments (knr-one-variable-decl punctuation "\\`[;]\\'" knr-arguments (\, (semantic-lambda (append (semantic-expand-c-tag (nth 0 vals)) (nth 2 vals))))) (knr-one-variable-decl punctuation "\\`[;]\\'" (\, (semantic-lambda (semantic-expand-c-tag (nth 0 vals)))))) (arg-sub-list (variablearg (\, (semantic-lambda (nth 0 vals)))) (punctuation "\\`[.]\\'" punctuation "\\`[.]\\'" punctuation "\\`[.]\\'" close-paren ")" (\, (semantic-lambda (semantic-tag-new-variable "..." "vararg" nil)))) (punctuation "\\`[,]\\'" (\, (semantic-lambda (list nil)))) (open-paren "(" (\, (semantic-lambda (list nil)))) (close-paren ")" (\, (semantic-lambda (list nil))))) (operatorsym (punctuation "\\`[<]\\'" punctuation "\\`[<]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "<<=")))) (punctuation "\\`[>]\\'" punctuation "\\`[>]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list ">>=")))) (punctuation "\\`[<]\\'" punctuation "\\`[<]\\'" (\, (semantic-lambda (list "<<")))) (punctuation "\\`[>]\\'" punctuation "\\`[>]\\'" (\, (semantic-lambda (list ">>")))) (punctuation "\\`[=]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "==")))) (punctuation "\\`[<]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "<=")))) (punctuation "\\`[>]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list ">=")))) (punctuation "\\`[!]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "!=")))) (punctuation "\\`[+]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "+=")))) (punctuation "\\`[-]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "-=")))) (punctuation "\\`[*]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "*=")))) (punctuation "\\`[/]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "/=")))) (punctuation "\\`[%]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "%=")))) (punctuation "\\`[&]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "&=")))) (punctuation "\\`[|]\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "|=")))) (punctuation "\\`[-]\\'" punctuation "\\`[>]\\'" punctuation "\\`[*]\\'" (\, (semantic-lambda (list "->*")))) (punctuation "\\`[-]\\'" punctuation "\\`[>]\\'" (\, (semantic-lambda (list "->")))) (semantic-list "()" (\, (semantic-lambda (list "()")))) (semantic-list "\\[\\]" (\, (semantic-lambda (list "[]")))) (punctuation "\\`[<]\\'") (punctuation "\\`[>]\\'") (punctuation "\\`[*]\\'") (punctuation "\\`[+]\\'" punctuation "\\`[+]\\'" (\, (semantic-lambda (list "++")))) (punctuation "\\`[+]\\'") (punctuation "\\`[-]\\'" punctuation "\\`[-]\\'" (\, (semantic-lambda (list "--")))) (punctuation "\\`[-]\\'") (punctuation "\\`[&]\\'" punctuation "\\`[&]\\'" (\, (semantic-lambda (list "&&")))) (punctuation "\\`[&]\\'") (punctuation "\\`[|]\\'" punctuation "\\`[|]\\'" (\, (semantic-lambda (list "||")))) (punctuation "\\`[|]\\'") (punctuation "\\`[/]\\'") (punctuation "\\`[=]\\'") (punctuation "\\`[!]\\'") (punctuation "\\`[~]\\'") (punctuation "\\`[%]\\'") (punctuation "\\`[,]\\'") (punctuation "\\`\\^\\'" punctuation "\\`[=]\\'" (\, (semantic-lambda (list "^=")))) (punctuation "\\`\\^\\'")) (functionname (OPERATOR operatorsym (\, (semantic-lambda (nth 1 vals)))) (semantic-list (\, (lambda (vals start end) (semantic-bovinate-from-nonterminal (car (nth 0 vals)) (cdr (nth 0 vals)) (quote function-pointer))))) (symbol (\, (semantic-lambda (list (nth 0 vals)))))) (function-pointer (open-paren "(" punctuation "\\`[*]\\'" symbol close-paren ")" (\, (semantic-lambda (list (concat "*" (nth 2 vals)))))) (open-paren "(" symbol close-paren ")" (\, (semantic-lambda (list (nth 1 vals)))))) (fun-or-proto-end (punctuation "\\`[;]\\'" (\, (semantic-lambda (list t)))) (semantic-list (\, (semantic-lambda (list nil)))) (punctuation "\\`[=]\\'" number "^0$" punctuation "\\`[;]\\'" (\, (semantic-lambda (list (quote :pure-virtual-flag))))) (fun-try-end (\, (semantic-lambda (list nil))))) (fun-try-end (TRY opt-initializers semantic-list "^{" fun-try-several-catches (\, (semantic-lambda (list nil))))) (fun-try-several-catches (CATCH semantic-list "^(" semantic-list "^{" fun-try-several-catches (\, (semantic-lambda))) (CATCH semantic-list "^{" fun-try-several-catches (\, (semantic-lambda))) ((\, (semantic-lambda)))) (type-cast (semantic-list (\, (lambda (vals start end) (semantic-bovinate-from-nonterminal (car (nth 0 vals)) (cdr (nth 0 vals)) (quote type-cast-list)))))) (type-cast-list (open-paren typeformbase close-paren)) (opt-stuff-after-symbol (semantic-list "^(") (semantic-list "\\[.*\\]$") nil) (multi-stage-dereference (namespace-symbol opt-stuff-after-symbol punctuation "\\`[.]\\'" multi-stage-dereference) (namespace-symbol opt-stuff-after-symbol punctuation "\\`[-]\\'" punctuation "\\`[>]\\'" multi-stage-dereference) (namespace-symbol opt-stuff-after-symbol)) (string-seq (string string-seq (\, (semantic-lambda (list (concat (nth 0 vals) (car (nth 1 vals))))))) (string (\, (semantic-lambda (list (nth 0 vals)))))) (expr-start (punctuation "\\`[-]\\'") (punctuation "\\`[+]\\'") (punctuation "\\`[*]\\'") (punctuation "\\`[&]\\'")) (expr-binop (punctuation "\\`[-]\\'") (punctuation "\\`[+]\\'") (punctuation "\\`[*]\\'") (punctuation "\\`[/]\\'") (punctuation "\\`[&]\\'" punctuation "\\`[&]\\'") (punctuation "\\`[&]\\'") (punctuation "\\`[|]\\'" punctuation "\\`[|]\\'") (punctuation "\\`[|]\\'")) (expression (unaryexpression expr-binop unaryexpression (\, (semantic-lambda (list (identity start) (identity end))))) (unaryexpression (\, (semantic-lambda (list (identity start) (identity end)))))) (unaryexpression (number) (multi-stage-dereference) (NEW multi-stage-dereference) (NEW builtintype-types semantic-list) (namespace-symbol) (string-seq) (type-cast expression) (semantic-list expression) (semantic-list) (expr-start expression)))))
+                nil [7616 40315])
+            ("semantic-c-by--install-parser" function nil nil [40317 40670])
+            ("semantic/bovine/c-by" package nil nil [40710 40741]))          
+      :file "c-by.el"
+      :pointmax 40765
+      :fsize 40764
+      :lastmodtime '(20766 6222 0 0)
+      :unmatched-syntax '((close-paren 1119 . 1120) (symbol 1075 . 1092) (open-paren 1074 . 1075)))
+    (semanticdb-table "clang.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("inversion" include nil nil [1568 1588])
+            ("ede" include nil nil [1589 1603])
+            ("ede/proj" include nil nil [1604 1623])
+            ("ede/cpp-root" include nil nil [1624 1647])
+            ("semantic/analyze" include nil nil [1648 1675])
+            ("semantic/analyze/complete" include nil nil [1676 1712])
+            ("mode-local" include nil nil [1735 1756])
+            ("semantic-clang-binary" variable (:default-value "/usr/bin/clang") nil [1759 1828])
+            ("semantic-clang-arguments" variable (:default-value (quote (""))) nil [1830 1905])
+            ("semantic-clang-temp-filename" variable (:default-value "__SEMANTIC_CLANG_TEMPFILE") nil [1907 2010])
+            ("semantic-clang-activate" function (:user-visible-flag t) nil [2027 2837])
+            ("semantic-clang-deactivate" function (:user-visible-flag t) nil [2839 3587])
+            ("semantic-clang-completion-regexp" function (:arguments ("completetext")) nil [3589 3845])
+            ("semantic-clang-possible-completions" function (:arguments ("context" "flags")) nil [3847 5583])
+            ("semantic-clang-identify" function (:arguments ("str")) nil [5730 6380])
+            ("semantic-clang-generate-tag" function (:arguments ("str1" "str2")) nil [6382 6844])
+            ("semantic-clang-filter-results" function (:arguments ("results" "desired-type" "desired-class" "prefix" "flags")) nil [6846 8076])
+            ("semantic-clang-get-typename-string" function (:arguments ("tag")) nil [8078 8343])
+            ("semantic-clang-version-string" function nil nil [8345 8760])
+            ("semantic-clang-args-from-project" function nil nil [8762 10105])
+            ("semantic/bovine/clang" package nil nil [10108 10140]))          
+      :file "clang.el"
+      :pointmax 10312
+      :fsize 10311
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax '((close-paren 1756 . 1757) (symbol 1715 . 1732) (open-paren 1714 . 1715))))
+  :file "!home!marselo!.emacs.d!lisp!cedet!lisp!cedet!semantic!bovine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

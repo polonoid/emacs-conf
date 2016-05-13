@@ -1,0 +1,288 @@
+;; Object fix_drop_copy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fix_drop_copy/"
+  :tables
+  (list
+    (semanticdb-table "FixDropCopyPlugin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FixDropCopyPlugin.h" include nil nil [1 31])
+            ("strategy/Definitions.h" include nil nil [32 65])
+            ("tbricks_definitions.h" include nil nil [66 98])
+            ("strategy/fix/Message.h" include nil nil [99 132])
+            ("strategy/fix/Session.h" include nil nil [133 166])
+            ("tbricks" type
+               (:members 
+                  ( ("FixDropCopyPlugin" function
+                       (:constructor-flag t
+                        :parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [227 263])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [264 302]))                          
+                        :type ("FixDropCopyPlugin" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [190 2334])
+                    ("FixDropCopyPlugin" function
+                       (:destructor-flag t
+                        :parent "FixDropCopyPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2336 2379])
+                    ("HandleRunRequest" function
+                       (:parent "FixDropCopyPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2381 2583])
+                    ("DoRun" function
+                       (:parent "FixDropCopyPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2585 2978])
+                    ("HandlePauseRequest" function
+                       (:parent "FixDropCopyPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2980 3127])
+                    ("HandleDeleteRequest" function
+                       (:parent "FixDropCopyPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3129 3279])
+                    ("HandleSnapshotEnd" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3323 3355]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3281 3913])
+                    ("HandleModifyRequest" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3959 3993]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3915 4796])
+                    ("AddContraBrokerRow" function
+                       (:parent "FixDropCopyPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4798 5234])
+                    ("HandleContraBrokerTableUpdate" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5290 5311]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5236 5633])
+                    ("HandleValidateRequest" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5681 5709]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5635 5738])
+                    ("HandleLogon" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5776 5799]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5740 6620])
+                    ("HandleMessage" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6660 6683])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6684 6713]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6622 6797])
+                    ("HandleLogout" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6836 6859]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6799 6901])
+                    ("HandleResourceUpdate" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6948 6980])
+                            ("resource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Resource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6981 7007]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6903 7109])
+                    ("HandleResourceInvalidate" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7160 7192])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7193 7215]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7111 7219])
+                    ("HandleTrade" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7257 7289])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7290 7310]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7221 8237])
+                    ("HandleTradeInvalidate" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8285 8317])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradeIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8318 8345]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8239 8394])
+                    ("ConvertTradeToExecReport" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8445 8465])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8466 8485])
+                            ("session" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8486 8515]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8396 12148])
+                    ("ConvertIDToShortString" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12199 12215]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12150 13059])
+                    ("VerifyCheckpoint" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("ptr_stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SharedPointer" type
+                                     (:template-specifier 
+                                        ( ("DropCopyStream" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13102 13151])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13152 13172]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [13061 15915])
+                    ("GetTradeVIID" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15954 15974])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15975 16005])
+                            ("viid" variable
+                               (:reference 1
+                                :type ("VenueInstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16010 16043]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [15917 16534])
+                    ("GetInstrumentISIN" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16580 16610]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16536 17011])
+                    ("FormatPrice" function
+                       (:parent "FixDropCopyPlugin"
+                        :arguments 
+                          ( ("price" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17051 17063]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [17013 17218]))                  
+                :type "namespace")
+                nil [168 17221]))          
+      :file "FixDropCopyPlugin.cpp"
+      :pointmax 17243
+      :fsize 17242
+      :lastmodtime '(21962 60358 566303 116000)
+      :unmatched-syntax nil)
+    (semanticdb-table "FixDropCopyPlugin.h"
+      :file "FixDropCopyPlugin.h"
+      :fsize 3815
+      :lastmodtime '(21962 60358 566303 116000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 14402
+      :lastmodtime '(21962 60358 570302 837000)))
+  :file "!home!marselo!Code!alloptions!production!integration!fix_drop_copy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,716 @@
+;; Object basket_residuals/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "basket_residuals/"
+  :tables
+  (list
+    (semanticdb-table "BasketPlugin.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__BasketPlugin_H__" variable (:constant-flag t) nil [36 54])
+            ("shared/API.h" include nil nil [56 79])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [81 105])
+            ("BasketValue" type
+               (:prototype t
+                :type "class")
+                nil [107 125])
+            ("BasketResidualDeltaValue" type
+               (:prototype t
+                :type "class")
+                nil [126 157])
+            ("BasketPositionDelta" type
+               (:prototype t
+                :type "class")
+                nil [158 184])
+            ("BasketPlugin" type
+               (:superclasses 
+                  ( ("Pricing" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [224 231])
+                    ("BasketPlugin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [249 280]))                          
+                        :type ("BasketPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [236 281])
+                    ("BasketPlugin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [286 302])
+                    ("UpdateParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [330 368]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [308 369])
+                    ("HandlePricingModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingModifyRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [415 452]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [375 453])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [532 566]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [499 567])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [572 604])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [609 643])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [648 683])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [749 776]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [714 777])
+                    ("public" label nil (reparse-symbol classsubparts) [779 786])
+                    ("CreateBasketPositionDelta" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :type ("BasketResidualDeltaValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [839 872]))                          
+                        :type ("BasketPositionDelta" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [791 873])
+                    ("RemoveBasketPositionDelta" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :type ("BasketResidualDeltaValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [909 942]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [878 943])
+                    ("SnapshotDone" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [967 1010]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [949 1011])
+                    ("private" label nil (reparse-symbol classsubparts) [1013 1021])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1026 1039])
+                    ("Create" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1069 1112])
+                            ("instrument_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest::InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1125 1189])
+                            ("value_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest::ValueInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1202 1256]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1044 1257])
+                    ("CheckSnapshot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1263 1284])
+                    ("private" label nil (reparse-symbol classsubparts) [1286 1294])
+                    ("BasketValues" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("CalculatedValueIdentifier" type nil nil nil)
+                                  ("BasketValue" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1299 1374])
+                    ("m_values" variable (:type ("BasketValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1379 1401])
+                    ("PendingSnapshots" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("CalculatedValueIdentifier" type nil nil nil)
+                                  ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1406 1476])
+                    ("m_pending_snapshots" variable (:type ("PendingSnapshots" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1481 1518])
+                    ("PositionDeltas" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("Pair" type nil nil nil)
+                                  ("BasketPositionDelta" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1524 1632])
+                    ("m_position_deltas" variable (:type ("PositionDeltas" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1637 1670]))                  
+                :type "class")
+                nil [186 1673]))          
+      :file "BasketPlugin.h"
+      :pointmax 1704
+      :fsize 1703
+      :lastmodtime '(21962 60358 532305 484000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__BasketPlugin_H__")
+          )
+)
+    (semanticdb-table "BasketPositionDelta.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__BasketPositionDelta_H__" variable (:constant-flag t) nil [43 68])
+            ("shared/API.h" include nil nil [70 93])
+            ("BasketValue.h" include nil nil [94 118])
+            ("BasketRatioHandler.h" include nil nil [151 182])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [184 208])
+            ("BasketPlugin" type
+               (:prototype t
+                :type "class")
+                nil [210 229])
+            ("BasketResidualDeltaValue" type
+               (:prototype t
+                :type "class")
+                nil [230 261])
+            ("InstrumentPositionDelta" type
+               (:prototype t
+                :type "class")
+                nil [262 292])
+            ("BasketRatio" type
+               (:prototype t
+                :type "class")
+                nil [293 311])
+            ("BasketPositionDelta" type
+               (:superclasses 
+                  ( ("Printable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("PositionStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IRequestReplyHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IRatioHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [592 599])
+                    ("BasketPositionDelta" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("portfolio_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [624 665])
+                            ("instrument_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [690 733]))                          
+                        :type ("BasketPositionDelta" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [604 734])
+                    ("BasketPositionDelta" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [740 763])
+                    ("public" label nil (reparse-symbol classsubparts) [765 772])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [825 860])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [895 925]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [795 926])
+                    ("HandleInstrumentInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [971 1006])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1041 1073]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [931 1074])
+                    ("HandlePosition" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1124 1159])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1194 1220]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1096 1221])
+                    ("HandlePositionInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1264 1299])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1334 1356]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1226 1357])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1408 1443]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1377 1444])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1480 1515]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1449 1516])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1553 1588]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1521 1589])
+                    ("HandleRequestReply" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1648 1678])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1715 1729])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1730 1750]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1616 1751])
+                    ("CheckBasketSnapshotDone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1774 1813])
+                    ("public" label nil (reparse-symbol classsubparts) [1815 1822])
+                    ("Add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :type ("BasketResidualDeltaValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1836 1869]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1827 1870])
+                    ("Remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :type ("BasketResidualDeltaValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1887 1920]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1875 1921])
+                    ("GetRatio" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1941 1984])
+                            ("ratio" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1985 2000]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1927 2007])
+                    ("Update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2012 2026])
+                    ("Update" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("diff" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2043 2063]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2031 2064])
+                    ("CheckSnapshotDone" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2069 2094])
+                    ("public" label nil (reparse-symbol classsubparts) [2100 2107])
+                    ("GetName" function (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2112 2178])
+                    ("GetInstrumentIdentifier" function
+                       (:constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2184 2276])
+                    ("GetInstrument" function
+                       (:constant-flag t
+                        :type ("Instrument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2282 2351])
+                    ("GetValue" function
+                       (:constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2357 2412])
+                    ("IsSnapshotDone" function (:type "bool") (reparse-symbol classsubparts) [2418 2477])
+                    ("public" label nil (reparse-symbol classsubparts) [2479 2486])
+                    ("Print" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("strm" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2533 2553]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2504 2560])
+                    ("private" label nil (reparse-symbol classsubparts) [2562 2570])
+                    ("m_portfolio_id" variable (:type ("PortfolioIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2575 2610])
+                    ("m_instrument_id" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2615 2652])
+                    ("m_instrument_stream" variable (:type ("InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2658 2696])
+                    ("m_instrument" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2701 2732])
+                    ("m_position_stream" variable (:type ("PositionStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2738 2774])
+                    ("m_position2instrument" variable (:type ("SparseHash" type
+                         (:template-specifier 
+                            ( ("Identifier" type nil nil nil)
+                              ("InstrumentIdentifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2779 2846])
+                    ("Instruments" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("InstrumentPositionDelta" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2852 2933])
+                    ("m_instruments" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2938 2964])
+                    ("Clients" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("BasketResidualDeltaValue" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2970 3023])
+                    ("m_clients" variable (:type ("Clients" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3028 3046])
+                    ("m_basket_ratio" variable
+                       (:pointer 1
+                        :type ("BasketRatio" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3052 3081])
+                    ("m_value" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3087 3102])
+                    ("m_snapshot_done" variable (:type "bool") (reparse-symbol classsubparts) [3107 3128]))                  
+                :type "class")
+                nil [313 3131]))          
+      :file "BasketPositionDelta.h"
+      :pointmax 3169
+      :fsize 3168
+      :lastmodtime '(21962 60358 532305 484000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__BasketPositionDelta_H__")
+          )
+)
+    (semanticdb-table "BasketValue.h"
+      :file "BasketValue.h"
+      :fsize 532
+      :lastmodtime '(21962 60358 533305 414000))
+    (semanticdb-table "BasketRatioHandler.h"
+      :file "BasketRatioHandler.h"
+      :fsize 235
+      :lastmodtime '(21962 60358 532305 484000))
+    (semanticdb-table "BasketRatio.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__BasketRatio_H__" variable (:constant-flag t) nil [35 52])
+            ("shared/API.h" include nil nil [54 77])
+            ("BasketRatioHandler.h" include nil nil [79 110])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [112 136])
+            ("BasketRatio" type
+               (:superclasses 
+                  ( ("Printable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IRatioHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [274 281])
+                    ("BasketRatio" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("basket_identifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [298 345])
+                            ("handler" variable
+                               (:pointer 1
+                                :type ("IRatioHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [362 386]))                          
+                        :type ("BasketRatio" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [286 387])
+                    ("BasketRatio" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [392 407])
+                    ("public" label nil (reparse-symbol classsubparts) [409 416])
+                    ("GetRatio" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument_identifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [435 486])
+                            ("ratio" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [487 502]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [421 509])
+                    ("IsSnapshotDone" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [515 543])
+                    ("public" label nil (reparse-symbol classsubparts) [545 552])
+                    ("CheckBasketSnapshotDone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [570 609])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [663 698])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [734 764]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [633 765])
+                    ("HandleInstrumentInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [810 845])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [891 923]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [770 924])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [975 1010]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [944 1011])
+                    ("HandleStreamStale" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1047 1082]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1016 1085])
+                    ("HandleStreamFailed" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1122 1157]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1090 1160])
+                    ("public" label nil (reparse-symbol classsubparts) [1162 1169])
+                    ("Print" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("strm" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1195 1215]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1174 1222])
+                    ("private" label nil (reparse-symbol classsubparts) [1224 1232])
+                    ("m_handler" variable
+                       (:pointer 1
+                        :type ("IRatioHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1237 1263])
+                    ("m_instrument_id" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1268 1305])
+                    ("m_instrument" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1310 1334])
+                    ("m_instrument_stream" variable (:type ("InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1339 1376])
+                    ("m_snapshot_done" variable (:type "bool") (reparse-symbol classsubparts) [1381 1402])
+                    ("Components" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("SharedPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1408 1490])
+                    ("m_components" variable (:type ("Components" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1495 1519]))                  
+                :type "class")
+                nil [138 1522]))          
+      :file "BasketRatio.h"
+      :pointmax 1552
+      :fsize 1551
+      :lastmodtime '(21962 60358 532305 484000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__BasketRatio_H__")
+          )
+))
+  :file "!home!marselo!Code!alloptions!production!calculation!basket_residuals!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,145 @@
+;; Object Ticker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Ticker/"
+  :tables
+  (list
+    (semanticdb-table "TickerGenerator.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_AO_SHARED_AO_SHAREDGLOBAL_TICKER_TICKERGENERATOR_H_" variable (:constant-flag t) nil [175 237])
+            ("strategy/API.h" include nil nil [239 264])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [265 297])
+            ("AO" type
+               (:members 
+                  ( ("Ticker" type
+                       (:members 
+                          ( ("TickerGenerator" type
+                               (:superclasses 
+                                  ( ("boost::noncopyable" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [388 395])
+                                    ("TickerGenerator" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("pluginId" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::StrategyIdentifier" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [416 460])
+                                            ("userId" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::UserIdentifier" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [463 501]))                                          
+                                        :type ("TickerGenerator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [397 502])
+                                    ("SetProductGroup" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("productGroup" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [526 571]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [505 572])
+                                    ("SetProductName" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("productName" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::String" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [595 630]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [575 631])
+                                    ("SetProductNames" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("productNames" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("tbricks::String" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [654 703]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [633 704])
+                                    ("SendTicker" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("relatedInstrument" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [726 781])
+                                            ("message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::String" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [784 815])
+                                            ("severity" variable (:type ("tbricks::Alert::Severity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [818 853])
+                                            ("" variable (:type ("tbricks::Alert::SeverityNormal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [854 885]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [707 886])
+                                    ("SendTicker" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("relatedInstruments" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("tbricks::InstrumentIdentifier" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [907 976])
+                                            ("message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::String" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [979 1010])
+                                            ("severity" variable (:type ("tbricks::Alert::Severity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1048])
+                                            ("" variable (:type ("tbricks::Alert::SeverityNormal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1049 1080]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [888 1081])
+                                    ("SendTicker" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("message" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::String" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1103 1134])
+                                            ("severity" variable (:type ("tbricks::Alert::Severity" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1137 1172])
+                                            ("" variable (:type ("tbricks::Alert::SeverityNormal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1173 1204]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1084 1205])
+                                    ("private" label nil (reparse-symbol classsubparts) [1207 1215])
+                                    ("m_pluginId" variable (:type ("tbricks::StrategyIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1217 1256])
+                                    ("m_userId" variable (:type ("tbricks::UserIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1258 1291])
+                                    ("m_productName" variable (:type ("tbricks::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1293 1323]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [334 1326]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [314 1329]))                  
+                :type "namespace")
+                nil [299 1354]))          
+      :file "TickerGenerator.h"
+      :pointmax 1451
+      :fsize 1504
+      :lastmodtime '(22056 58772 0 0)
+      :unmatched-syntax '((punctuation 1171 . 1172) (punctuation 1047 . 1048) (punctuation 852 . 853))
+      :lexical-table 
+        '(("AO_SOURCES_AO_SHARED_AO_SHAREDGLOBAL_TICKER_TICKERGENERATOR_H_")
+          )
+))
+  :file "!home!marselo!src!AO_SharedGlobal!Ticker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

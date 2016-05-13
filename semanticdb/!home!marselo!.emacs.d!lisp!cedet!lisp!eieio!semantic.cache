@@ -1,0 +1,672 @@
+;; Object eieio/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "eieio/"
+  :tables
+  (list
+    (semanticdb-table "eieio.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1791 1804])
+            ("eieio-version" variable (:default-value "1.4") nil [1833 1891])
+            ("eieio-version" function (:user-visible-flag t) nil [1893 2001])
+            ("change-class" function (:arguments ("obj" "class")) nil [114490 114695])
+            ("eieio-list-prin1" function (:arguments ("list")) nil [113928 114445])
+            ("eieio-override-prin1" function (:arguments ("thing")) nil [113533 113926])
+            ("object-write" function
+               (:parent "eieio-default-superclass"
+                :arguments ("this" "comment"))
+                nil [111630 113531])
+            ("object-write" function (:arguments ("comment")) nil [111462 111628])
+            ("eieio-print-depth" variable nil nil [111368 111460])
+            ("object-print" function
+               (:parent "eieio-default-superclass"
+                :arguments ("this" "strings"))
+                nil [110758 111366])
+            ("object-print" function (:arguments ("strings")) nil [110459 110756])
+            ("destructor" function
+               (:parent "eieio-default-superclass"
+                :arguments ("this" "params"))
+                nil [110209 110457])
+            ("destructor" function (:arguments ("params")) nil [110100 110207])
+            ("clone" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj" "params"))
+                nil [109482 110098])
+            ("clone" function (:arguments ("params")) nil [109220 109480])
+            ("no-next-method" function
+               (:parent "eieio-default-superclass"
+                :arguments ("object" "args"))
+                nil [108738 109218])
+            ("no-next-method" function (:arguments ("args")) nil [108614 108736])
+            ("no-applicable-method" function
+               (:parent "eieio-default-superclass"
+                :arguments ("object" "method" "args"))
+                nil [108155 108612])
+            ("no-applicable-method" function (:arguments ("method" "args")) nil [108028 108153])
+            ("slot-unbound" function
+               (:parent "eieio-default-superclass"
+                :arguments ("object" "class" "slot-name" "fn"))
+                nil [107265 108026])
+            ("slot-unbound" function (:arguments ("class" "slot-name" "fn")) nil [107134 107263])
+            ("slot-missing" function
+               (:parent "eieio-default-superclass"
+                :arguments ("object" "slot-name" "operation" "new-value"))
+                nil [106613 107132])
+            ("slot-missing" function (:arguments ("slot-name" "operation" "new-value")) nil [106468 106611])
+            ("initialize-instance" function
+               (:parent "eieio-default-superclass"
+                :arguments ("this" "slots"))
+                nil [105028 106466])
+            ("initialize-instance" function (:arguments ("slots")) nil [104921 105026])
+            ("shared-initialize" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj" "slots"))
+                nil [104432 104919])
+            ("shared-initialize" function (:arguments ("slots")) nil [104282 104430])
+            ("constructor" function
+               (:parent "eieio-default-superclass"
+                :arguments ("class" "newname" "slots"))
+                nil [103450 104280])
+            ("constructor" function (:arguments ("newname" "slots")) nil [103334 103448])
+            ("defalias" code nil nil [103280 103332])
+            ("eieio-default-superclass" type (:type "class") nil [103011 103278])
+            ("if" code nil nil [102013 102626])
+            ("defsetf" code nil nil [101980 102011])
+            ("put" code nil nil [101839 101920])
+            ("put" code nil nil [101738 101838])
+            ("intern" code nil nil [101698 101737])
+            ("put" code nil nil [101647 101696])
+            ("put" code nil nil [101583 101646])
+            ("intern" code nil nil [101559 101582])
+            ("put" code nil nil [101498 101557])
+            ("put" code nil nil [101424 101497])
+            ("intern" code nil nil [101395 101423])
+            ("put" code nil nil [101334 101393])
+            ("put" code nil nil [101264 101333])
+            ("intern" code nil nil [101235 101263])
+            ("put" code nil nil [101180 101233])
+            ("put" code nil nil [101116 101179])
+            ("intern" code nil nil [101090 101115])
+            ("put" code nil nil [101023 101088])
+            ("put" code nil nil [100947 101022])
+            ("intern" code nil nil [100915 100946])
+            ("eieio-attribute-to-initarg" function (:arguments ("class" "attribute")) nil [100570 100866])
+            ("eieio-initarg-to-attribute" function (:arguments ("class" "initarg")) nil [100236 100568])
+            ("eieio-set-defaults" function (:arguments ("obj" "set-all")) nil [99683 100234])
+            ("eieio-generic-form" function (:arguments ("method" "key" "class")) nil [97583 99567])
+            ("eieiomt-sym-optimize" function (:arguments ("s")) nil [96958 97581])
+            ("eieiomt-next" function (:arguments ("class")) nil [96388 96956])
+            ("eieiomt-add" function (:arguments ("method-name" "method" "key" "class")) nil [94444 96386])
+            ("eieiomt-install" function (:arguments ("method-name")) nil [93830 94442])
+            ("eieiomt-optimizing-obarray" variable nil nil [93722 93828])
+            ("call-next-method" function (:arguments ("replacement-args")) nil [91804 92978])
+            ("next-method-p" function nil nil [91623 91802])
+            ("eieiomt-method-list" function (:arguments ("method" "key" "class")) nil [90459 91621])
+            ("eieio-generic-call-primary-only" function (:arguments ("method" "args")) nil [87706 90457])
+            ("eieio-generic-call" function (:arguments ("method" "args")) nil [82391 87704])
+            ("eieio-pre-method-execution-functions" variable nil nil [82193 82389])
+            ("define-obsolete-variable-alias" code nil nil [82079 82192])
+            ("eieio-generic-call-next-method-list" variable nil nil [81832 82077])
+            ("eieio-generic-call-key" variable nil nil [81651 81831])
+            ("eieio-generic-call-arglst" variable nil nil [81542 81650])
+            ("eieio-generic-call-methodname" variable nil nil [81428 81541])
+            ("eieio-class-slot-name-index" function (:arguments ("class" "slot")) nil [80756 81377])
+            ("eieio-slot-name-index" function (:arguments ("class" "obj" "slot")) nil [79478 80754])
+            ("eieio-slot-originating-class-p" function (:arguments ("start-class" "slot")) nil [78987 79476])
+            ("object-remove-from-list" function (:arguments ("object" "slot" "item")) nil [78595 78945])
+            ("object-add-to-list" function (:arguments ("object" "slot" "item" "append")) nil [77788 78593])
+            ("object-assoc-list-safe" function (:arguments ("slot" "list")) nil [77200 77786])
+            ("object-assoc-list" function (:arguments ("slot" "list")) nil [76693 77198])
+            ("object-assoc" function (:arguments ("key" "slot" "list")) nil [76106 76691])
+            ("find-class" function (:arguments ("symbol" "errorp")) nil [75716 76045])
+            ("slot-exists-p" function (:arguments ("object-or-class" "slot")) nil [75353 75714])
+            ("slot-makeunbound" function (:arguments ("object" "slot")) nil [75238 75351])
+            ("slot-boundp" function (:arguments ("object" "slot")) nil [74651 75236])
+            ("eieio-oset-default" function (:arguments ("class" "slot" "value")) nil [73477 74606])
+            ("oset-default" function (:arguments ("class" "slot" "value")) nil [73164 73475])
+            ("eieio-oset" function (:arguments ("obj" "slot" "value")) nil [72161 73162])
+            ("oset" function (:arguments ("obj" "slot" "value")) nil [71910 72159])
+            ("class-slot-initarg" function (:arguments ("class" "slot")) nil [71535 71883])
+            ("object-slots" function (:arguments ("obj")) nil [71315 71533])
+            ("child-of-class-p" function (:arguments ("child" "class")) nil [70877 71313])
+            ("defalias" code nil nil [70830 70875])
+            ("object-of-class-p" function (:arguments ("obj" "class")) nil [70509 70802])
+            ("same-class-p" function (:arguments ("obj" "class")) nil [70229 70507])
+            ("same-class-fast-p" function (:arguments ("obj" "class")) nil [70082 70227])
+            ("class-parent" function (:arguments ("class")) nil [69954 70080])
+            ("class-parent-fast" function (:arguments ("class")) nil [69827 69952])
+            ("defalias" code nil nil [69774 69825])
+            ("defalias" code nil nil [69721 69773])
+            ("class-precedence-list" function (:arguments ("class")) nil [69180 69691])
+            ("eieio-class-precedence-c3" function (:arguments ("class")) nil [68842 69178])
+            ("eieio-class-precedence-bfs" function (:arguments ("class")) nil [68360 68840])
+            ("eieio-class-precedence-dfs" function (:arguments ("class")) nil [67828 68358])
+            ("eieio-c3-merge-lists" function (:arguments ("reversed-partial-result" "remaining-inputs")) nil [66460 67826])
+            ("eieio-c3-candidate" function (:arguments ("class" "remaining-inputs")) nil [66017 66458])
+            ("class-children" function (:arguments ("class")) nil [65767 66015])
+            ("class-children-fast" function (:arguments ("class")) nil [65638 65765])
+            ("class-parents" function (:arguments ("class")) nil [65360 65636])
+            ("class-parents-fast" function (:arguments ("class")) nil [65233 65358])
+            ("object-class-name" function (:arguments ("obj")) nil [65020 65231])
+            ("defalias" code nil nil [64984 65018])
+            ("object-class" function (:arguments ("obj")) nil [64800 64983])
+            ("object-set-name-string" function (:arguments ("obj" "name")) nil [64519 64798])
+            ("object-name-string" function (:arguments ("obj")) nil [64330 64517])
+            ("object-name" function (:arguments ("obj" "extra")) nil [63970 64328])
+            ("class-name" function (:arguments ("class")) nil [63659 63968])
+            ("object-class-fast" function (:arguments ("obj")) nil [63541 63657])
+            ("with-slots" function (:arguments ("spec-list" "object" "body")) nil [62334 63433])
+            ("eieio-default-eval-maybe" function (:arguments ("val")) nil [61947 62307])
+            ("eieio-eval-default-p" function (:arguments ("val")) nil [61785 61945])
+            ("eieio-oref-default" function (:arguments ("obj" "slot")) nil [60799 61783])
+            ("oref-default" function (:arguments ("obj" "slot")) nil [60492 60797])
+            ("defalias" code nil nil [60452 60490])
+            ("defalias" code nil nil [60417 60451])
+            ("eieio-oref" function (:arguments ("obj" "slot")) nil [59220 60415])
+            ("oref" function (:arguments ("obj" "slot")) nil [58995 59218])
+            ("eieio-barf-if-slot-unbound" function (:arguments ("value" "instance" "slotname" "fn")) nil [58527 58958])
+            ("eieio-validate-class-slot-value" function (:arguments ("class" "slot-idx" "value" "slot")) nil [58038 58525])
+            ("eieio-validate-slot-value" function (:arguments ("class" "slot-idx" "value" "slot")) nil [57473 58036])
+            ("eieio-perform-slot-validation" function (:arguments ("spec" "value")) nil [57245 57471])
+            ("eieio--typep" function (:arguments ("val" "type")) nil [55709 57243])
+            ("eieio--defmethod" function (:arguments ("method" "kind" "argclass" "code")) nil [53309 55501])
+            ("defmethod" function (:arguments ("method" "args")) nil [51662 53307])
+            ("eieio-unbind-method-implementations" function (:arguments ("method")) nil [51360 51660])
+            ("eieio-defgeneric-reset-generic-form-primary-only-one" function (:arguments ("method")) nil [50997 51358])
+            ("eieio-defgeneric-form-primary-only-one" function (:arguments ("method" "doc-string" "class" "impl")) nil [48894 50995])
+            ("eieio-defgeneric-reset-generic-form-primary-only" function (:arguments ("method")) nil [48662 48892])
+            ("eieio-defgeneric-form-primary-only" function (:arguments ("method" "doc-string")) nil [48296 48660])
+            ("eieio-defgeneric-reset-generic-form" function (:arguments ("method")) nil [48090 48294])
+            ("eieio-defgeneric-form" function (:arguments ("method" "doc-string")) nil [47750 48088])
+            ("eieio--defgeneric-init-form" function (:arguments ("method" "doc-string")) nil [47183 47748])
+            ("defgeneric" function (:arguments ("method" "args" "doc-string")) nil [46620 47181])
+            ("eieio--defalias" function (:arguments ("name" "body")) nil [46312 46618])
+            ("put" code nil nil [46194 46274])
+            ("make-instance" function (:arguments ("class" "initargs")) nil [45287 46156])
+            ("eieio-copy-parents-into-subclass" function (:arguments ("newc" "parents")) nil [42830 45232])
+            ("eieio-add-new-slot" function (:arguments ("newc" "a" "d" "doc" "type" "cust" "label" "custg" "print" "prot" "init" "alloc" "defaultoverride" "skipnil")) nil [33524 42828])
+            ("eieio-perform-slot-validation-for-default" function (:arguments ("slot" "spec" "value" "skipnil")) nil [33108 33522])
+            ("eieio-defclass" function (:arguments ("cname" "superclasses" "slots" "options-and-doc")) nil [16394 33106])
+            ("eieio-class-un-autoload" function (:arguments ("cname")) nil [16177 16392])
+            ("eieio-defclass-autoload" function (:arguments ("cname" "superclasses" "filename" "doc")) nil [13712 16175])
+            ("eieio-defclass-autoload-map" variable (:default-value (make-vector 7 nil)) nil [13528 13637])
+            ("defclass" function (:arguments ("name" "superclass" "slots" "options-and-doc")) nil [10482 13526])
+            ("class-method-invocation-order" function (:arguments ("class")) nil [10242 10450])
+            ("class-abstract-p" function (:arguments ("class")) nil [10088 10240])
+            ("class-option" function (:arguments ("class" "option")) nil [9889 10086])
+            ("class-option-assoc" function (:arguments ("list" "option")) nil [9736 9887])
+            ("generic-primary-only-one-p" function (:arguments ("method")) nil [9037 9734])
+            ("generic-primary-only-p" function (:arguments ("method")) nil [8342 9035])
+            ("generic-p" function (:arguments ("method")) nil [8067 8340])
+            ("class-constructor" function (:arguments ("class")) nil [7928 8065])
+            ("defalias" code nil nil [7890 7926])
+            ("eieio-object-p" function (:arguments ("obj")) nil [7667 7889])
+            ("class-p" function (:arguments ("class")) nil [7395 7665])
+            ("class-v" function (:arguments ("class")) nil [7189 7393])
+            ("eieio-specialized-key-to-generic-key" function (:arguments ("key")) nil [6888 7146])
+            ("method-num-slots" variable
+               (:constant-flag t
+                :default-value 7)
+                nil [6813 6886])
+            ("method-generic-after" variable
+               (:constant-flag t
+                :default-value 6)
+                nil [6734 6812])
+            ("method-generic-primary" variable
+               (:constant-flag t
+                :default-value 5)
+                nil [6651 6733])
+            ("method-generic-before" variable
+               (:constant-flag t
+                :default-value 4)
+                nil [6570 6650])
+            ("method-num-lists" variable
+               (:constant-flag t
+                :default-value 4)
+                nil [6461 6569])
+            ("method-after" variable
+               (:constant-flag t
+                :default-value 3)
+                nil [6398 6460])
+            ("method-primary" variable
+               (:constant-flag t
+                :default-value 2)
+                nil [6331 6397])
+            ("method-before" variable
+               (:constant-flag t
+                :default-value 1)
+                nil [6266 6330])
+            ("method-static" variable (:constant-flag t) nil [6201 6265])
+            ("object-name" variable
+               (:constant-flag t
+                :default-value 2)
+                nil [6128 6199])
+            ("object-class" variable
+               (:constant-flag t
+                :default-value 1)
+                nil [6047 6127])
+            ("class-num-slots" variable
+               (:constant-flag t
+                :default-value 26)
+                nil [5964 6045])
+            ("class-options" variable
+               (:constant-flag t
+                :default-value 25)
+                nil [5837 5962])
+            ("class-default-object-cache" variable
+               (:constant-flag t
+                :default-value 24)
+                nil [5578 5836])
+            ("class-class-allocation-values" variable
+               (:constant-flag t
+                :default-value 23)
+                nil [5502 5577])
+            ("class-class-allocation-protection" variable
+               (:constant-flag t
+                :default-value 22)
+                nil [5419 5501])
+            ("class-class-allocation-printer" variable
+               (:constant-flag t
+                :default-value 21)
+                nil [5336 5418])
+            ("class-class-allocation-custom-group" variable
+               (:constant-flag t
+                :default-value 20)
+                nil [5254 5335])
+            ("class-class-allocation-custom-label" variable
+               (:constant-flag t
+                :default-value 19)
+                nil [5167 5253])
+            ("class-class-allocation-custom" variable
+               (:constant-flag t
+                :default-value 18)
+                nil [5086 5166])
+            ("class-class-allocation-type" variable
+               (:constant-flag t
+                :default-value 17)
+                nil [5014 5085])
+            ("class-class-allocation-doc" variable
+               (:constant-flag t
+                :default-value 16)
+                nil [4940 5013])
+            ("class-class-allocation-a" variable
+               (:constant-flag t
+                :default-value 15)
+                nil [4871 4939])
+            ("class-initarg-tuples" variable
+               (:constant-flag t
+                :default-value 14)
+                nil [4807 4870])
+            ("class-protection" variable
+               (:constant-flag t
+                :default-value 13)
+                nil [4745 4806])
+            ("class-public-printer" variable
+               (:constant-flag t
+                :default-value 12)
+                nil [4688 4744])
+            ("class-public-custom-group" variable
+               (:constant-flag t
+                :default-value 11)
+                nil [4615 4687])
+            ("class-public-custom-label" variable
+               (:constant-flag t
+                :default-value 10)
+                nil [4542 4614])
+            ("class-public-custom" variable
+               (:constant-flag t
+                :default-value 9)
+                nil [4477 4541])
+            ("class-public-type" variable
+               (:constant-flag t
+                :default-value 8)
+                nil [4421 4476])
+            ("class-public-doc" variable
+               (:constant-flag t
+                :default-value 7)
+                nil [4345 4420])
+            ("class-public-d" variable
+               (:constant-flag t
+                :default-value 6)
+                nil [4283 4344])
+            ("class-public-a" variable
+               (:constant-flag t
+                :default-value 5)
+                nil [4230 4282])
+            ("class-symbol-obarray" variable
+               (:constant-flag t
+                :default-value 4)
+                nil [4038 4134])
+            ("class-children" variable
+               (:constant-flag t
+                :default-value 3)
+                nil [3981 4037])
+            ("class-parent" variable
+               (:constant-flag t
+                :default-value 2)
+                nil [3934 3980])
+            ("class-symbol" variable
+               (:constant-flag t
+                :default-value 1)
+                nil [3870 3933])
+            ("eieio-default-superclass" variable nil nil [3762 3799])
+            ("eieio-unbound" variable
+               (:constant-flag t
+                :default-value (if (and (boundp (quote eieio-unbound)) (symbolp eieio-unbound)) eieio-unbound (make-symbol "unbound")))
+                nil [3457 3655])
+            ("eieio-initializing-object" variable nil nil [3367 3455])
+            ("eieio-optimize-primary-methods-flag" variable (:default-value t) nil [3249 3365])
+            ("eieio-skip-typecheck" variable nil nil [2988 3247])
+            ("eieio-error-unsupported-class-tags" variable nil nil [2752 2986])
+            ("eieio-hook" variable nil nil [2655 2750])
+            ("if" code nil nil [2181 2617])
+            ("eieio-defmethod" function (:arguments ("method" "args")) nil [114812 117505])
+            ("make-obsolete" code nil nil [117506 117563])
+            ("eieio-defgeneric" function (:arguments ("method" "doc-string")) nil [117565 118348])
+            ("make-obsolete" code nil nil [118349 118393])
+            ("eieio-edebug-prin1-to-string" function (:arguments ("object" "noescape")) nil [118426 118933])
+            ("add-hook" code nil nil [118935 120226])
+            ("eieio" package nil nil [120228 120244]))          
+      :file "eieio.el"
+      :pointmax 120265
+      :fsize 120264
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax '((close-paren 114697 . 114698) (symbol 2004 . 2020) (open-paren 2003 . 2004) (close-paren 1804 . 1805) (symbol 1773 . 1790) (open-paren 1772 . 1773)))
+    (semanticdb-table "eieio-speedbar.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("eieio" include nil nil [3668 3684])
+            ("eieio-custom" include nil nil [3685 3708])
+            ("speedbar" include nil nil [3709 3728])
+            ("eieio-speedbar-make-map" function nil nil [3803 4258])
+            ("eieio-speedbar-key-map" variable (:default-value (eieio-speedbar-make-map)) nil [4260 4369])
+            ("eieio-speedbar-menu" variable (:default-value (quote (["Edit Object/Field" speedbar-edit-line t] ["Expand Object" speedbar-expand-line (save-excursion (beginning-of-line) (looking-at "[0-9]+: *.\\+. "))] ["Contract Object" speedbar-contract-line (save-excursion (beginning-of-line) (looking-at "[0-9]+: *.-. "))] "---" ["Customize Object" eieio-speedbar-customize-line (eieio-object-p (speedbar-line-token))]))) nil [4371 4893])
+            ("defalias" code nil nil [4935 4997])
+            ("eieio-speedbar-create" function (:arguments ("map-fn" "map-var" "menu-var" "modename" "fetcher")) nil [4999 5731])
+            ("eieio-speedbar-create-engine" function (:arguments ("map-fn" "map-var" "menu-var" "modename" "fetcher")) nil [5733 6493])
+            ("eieio-speedbar-buttons" function (:arguments ("dir-or-object" "depth" "fetcher")) nil [6495 7279])
+            ("eieio-speedbar-description" function nil nil [7584 7700])
+            ("eieio-speedbar-derive-line-path" function nil nil [7702 7819])
+            ("eieio-speedbar-object-buttonname" function nil nil [7821 7964])
+            ("eieio-speedbar-make-tag-line" function (:arguments ("depth")) nil [7966 8503])
+            ("eieio-speedbar-handle-click" function nil nil [8505 9013])
+            ("eieio-speedbar" type
+               (:members 
+                  ( ("buttontype" variable
+                       (:documentation "The type of expansion button used for objects of this class.
+Possible values are those symbols supported by the `exp-button-type' argument
+to `speedbar-make-tag-line'."
+                        :static-flag t
+                        :default-value "nil"
+                        :type "symbol")
+                        nil nil)
+                    ("buttonface" variable
+                       (:documentation "The face used on the textual part of the button for this class.
+See `speedbar-make-tag-line' for details."
+                        :static-flag t
+                        :default-value "speedbar-tag-face"
+                        :type "(or symbol face)")
+                        nil nil)
+                    ("expanded" variable
+                       (:documentation "State of an object being expanded in speedbar."
+                        :default-value "nil"
+                        :type "boolean")
+                        nil nil))                  
+                :type "class")
+                nil [9277 10150])
+            ("eieio-speedbar-directory-button" type
+               (:superclasses "eieio-speedbar"
+                :members 
+                  ( ("buttontype" variable (:default-value "angle") nil nil)
+                    ("buttonface" variable (:default-value "speedbar-directory-face") nil nil))                  
+                :type "class")
+                nil [10152 10419])
+            ("eieio-speedbar-file-button" type
+               (:superclasses "eieio-speedbar"
+                :members 
+                  ( ("buttontype" variable (:default-value "bracket") nil nil)
+                    ("buttonface" variable (:default-value "speedbar-file-face") nil nil))                  
+                :type "class")
+                nil [10421 10675])
+            ("eieio-speedbar-make-tag-line" function
+               (:parent "eieio-speedbar"
+                :arguments ("object" "depth"))
+                nil [10749 12010])
+            ("eieio-speedbar-child-make-tag-lines" function
+               (:parent "eieio-speedbar"
+                :arguments ("object" "depth"))
+                nil [12012 12254])
+            ("eieio-speedbar-expand" function
+               (:parent "eieio-speedbar"
+                :arguments ("object" "depth"))
+                nil [12256 12700])
+            ("eieio-speedbar-object-click" function (:arguments ("text" "token" "indent")) nil [12749 12944])
+            ("eieio-speedbar-object-expand" function (:arguments ("text" "token" "indent")) nil [12946 13612])
+            ("eieio-speedbar-child-description" function
+               (:parent "eieio-speedbar"
+                :arguments ("obj"))
+                nil [13614 13842])
+            ("eieio-speedbar-item-info" function nil nil [13844 14222])
+            ("eieio-speedbar-find-nearest-object" function (:arguments ("depth")) nil [14224 14777])
+            ("eieio-speedbar-line-path" function (:arguments ("depth")) nil [14779 15316])
+            ("eieio-speedbar-object-children" function
+               (:parent "eieio-speedbar"
+                :arguments ("object"))
+                nil [15396 15740])
+            ("eieio-speedbar" package nil nil [15742 15767]))          
+      :file "eieio-speedbar.el"
+      :pointmax 15801
+      :fsize 15800
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "eieio-base.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("eieio" include nil nil [1096 1112])
+            ("eieio-instance-inheritor" type
+               (:members 
+                  ( ("parent-instance" variable
+                       (:documentation "The parent of this instance.
+If a slot of this class is referenced, and is unbound, then the parent
+is checked for a value."
+                        :type "eieio-instance-inheritor-child")
+                        nil nil))                  
+                :type "class")
+                nil [1300 1835])
+            ("slot-unbound" function
+               (:parent "eieio-instance-inheritor"
+                :arguments ("object" "class" "slot-name" "fn"))
+                nil [1837 2362])
+            ("clone" function
+               (:parent "eieio-instance-inheritor"
+                :arguments ("obj" "params"))
+                nil [2364 3267])
+            ("eieio-instance-inheritor-slot-boundp" function
+               (:parent "eieio-instance-inheritor"
+                :arguments ("object" "slot"))
+                nil [3269 3874])
+            ("eieio-instance-tracker" type
+               (:members 
+                  ( ("tracking-symbol" variable
+                       (:documentation "The symbol used to maintain a list of our instances.
+The instance list is treated as a variable, with new instances added to it."
+                        :static-flag t
+                        :type "symbol")
+                        nil nil))                  
+                :type "class")
+                nil [4069 4516])
+            ("initialize-instance" function
+               (:parent "eieio-instance-tracker"
+                :arguments ("this" "slots"))
+                nil [4518 4935])
+            ("delete-instance" function
+               (:parent "eieio-instance-tracker"
+                :arguments ("this"))
+                nil [4937 5146])
+            ("eieio-instance-tracker-find" function (:arguments ("key" "slot" "list-symbol")) nil [5192 5394])
+            ("eieio-singleton" type
+               (:members 
+                  ( ("singleton" variable
+                       (:documentation "The only instance of this class that will be instantiated.
+Multiple calls to `make-instance' will return this object."
+                        :static-flag t
+                        :type "eieio-singleton")
+                        nil nil))                  
+                :type "class")
+                nil [5759 6137])
+            ("constructor" function
+               (:parent "eieio-singleton"
+                :arguments ("class" "name" "slots"))
+                nil [6139 6648])
+            ("eieio-persistent" type
+               (:members 
+                  ( ("file" variable
+                       (:documentation "The save file for this persistent object.
+This must be a string, and must be specified when the new object is
+instantiated."
+                        :type "string")
+                        nil nil)
+                    ("extension" variable
+                       (:documentation "Extension of files saved by this object.
+Enables auto-choosing nice file names based on name."
+                        :static-flag t
+                        :default-value ".eieio"
+                        :type "string")
+                        nil nil)
+                    ("file-header-line" variable
+                       (:documentation "Header line for the save file.
+This is used with the `object-write' method."
+                        :static-flag t
+                        :default-value ";; EIEIO PERSISTENT OBJECT"
+                        :type "string")
+                        nil nil)
+                    ("do-backups" variable
+                       (:documentation "Saving this object should make backup files.
+Setting to nil will mean no backups are made."
+                        :static-flag t
+                        :default-value "t"
+                        :type "boolean")
+                        nil nil))                  
+                :type "class")
+                nil [7237 8384])
+            ("eieio-persistent-save-interactive" function
+               (:parent "eieio-persistent"
+                :arguments ("this" "prompt" "name"))
+                nil [8386 8861])
+            ("eieio-persistent-read" function (:arguments ("filename" "class" "allow-subclass")) nil [8863 10289])
+            ("eieio-persistent-convert-list-to-object" function (:arguments ("inputlist")) nil [10291 11499])
+            ("eieio-persistent-validate/fix-slot-value" function (:arguments ("class" "slot" "proposed-value")) nil [11501 14145])
+            ("eieio-persistent-slot-type-is-class-p" function (:arguments ("type")) nil [14147 15489])
+            ("object-write" function
+               (:parent "eieio-persistent"
+                :arguments ("this" "comment"))
+                nil [15491 15739])
+            ("eieio-persistent-path-relative" function
+               (:parent "eieio-persistent"
+                :arguments ("this" "file"))
+                nil [15741 15968])
+            ("eieio-persistent-save" function
+               (:parent "eieio-persistent"
+                :arguments ("this" "file"))
+                nil [15970 17276])
+            ("eieio-named" type (:type "class") nil [17519 17673])
+            ("slot-missing" function
+               (:parent "eieio-named"
+                :arguments ("obj" "slot-name" "operation" "new-value"))
+                nil [17675 18442])
+            ("eieio-base" package nil nil [18444 18465]))          
+      :file "eieio-base.el"
+      :pointmax 18495
+      :fsize 18494
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "eieio-custom.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("eieio" include nil nil [1072 1088])
+            ("widget" include nil nil [1089 1106])
+            ("wid-edit" include nil nil [1107 1126])
+            ("custom" include nil nil [1127 1144])
+            ("eieio-widget-test-class" type
+               (:members 
+                  ( ("a-string" variable
+                       (:documentation "A string for testing custom.
+This is the next line of documentation."
+                        :default-value "The moose is loose")
+                        nil nil)
+                    ("listostuff" variable
+                       (:documentation "A list of stuff."
+                        :default-value "(\"1\" \"2\" \"3\")"
+                        :type "list")
+                        nil nil)
+                    ("uninitialized" variable
+                       (:documentation "This slot is not initialized.
+Used to make sure that custom doesn't barf when it encounters one
+of these."
+                        :type "string")
+                        nil nil)
+                    ("a-number" variable
+                       (:documentation "A number of thingies."
+                        :default-value "2")
+                        nil nil))                  
+                :type "class")
+                nil [1355 2228])
+            ("eieio-widget-test" variable (:default-value (eieio-widget-test-class "Foo")) nil [2230 2364])
+            ("eieio-custom-slot-tag-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:foreground "light blue")) (((class color) (background light)) (:foreground "blue")) (t (:italic t))))
+                :type "face")
+                nil [2366 2661])
+            ("eieio-wo" variable nil nil [2663 2762])
+            ("eieio-co" variable nil nil [2763 2859])
+            ("eieio-cog" variable nil nil [2860 2959])
+            ("eieio-custom-ignore-eieio-co" variable nil nil [2962 3138])
+            ("define-widget" code nil nil [3140 3508])
+            ("eieio-slot-value-create" function (:arguments ("widget")) nil [3510 3797])
+            ("eieio-slot-value-get" function (:arguments ("widget")) nil [3799 3918])
+            ("eieio-custom-toggle-hide" function (:arguments ("widget")) nil [3920 4421])
+            ("eieio-custom-toggle-parent" function (:arguments ("widget" "ignore")) nil [4423 4632])
+            ("define-widget" code nil nil [4634 5009])
+            ("eieio-object-match" function (:arguments ("widget" "value")) nil [5011 5111])
+            ("eieio-filter-slot-type" function (:arguments ("widget" "slottype")) nil [5113 5700])
+            ("eieio-object-value-create" function (:arguments ("widget")) nil [5702 9265])
+            ("eieio-object-value-get" function (:arguments ("widget")) nil [9267 10577])
+            ("eieio-done-customizing" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj"))
+                nil [10579 10891])
+            ("customize-object" function (:arguments ("obj" "group")) nil [10908 11091])
+            ("eieio-custom-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map widget-keymap) map)) nil [11093 11243])
+            ("define-derived-mode" code nil nil [11245 11388])
+            ("eieio-customize-object" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj" "group"))
+                nil [11390 12906])
+            ("eieio-custom-object-apply-reset" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj"))
+                nil [12908 13921])
+            ("eieio-custom-widget-insert" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj" "flags"))
+                nil [13923 14222])
+            ("define-widget" code nil nil [14224 14450])
+            ("eieio-object-value-to-abstract" function (:arguments ("widget" "value")) nil [14452 14647])
+            ("eieio-object-abstract-to-value" function (:arguments ("widget" "value")) nil [14649 14780])
+            ("eieio-customize-object-group" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj"))
+                nil [15021 15356])
+            ("eieio-read-custom-group-history" variable nil nil [15358 15443])
+            ("eieio-read-customization-group" function
+               (:parent "eieio-default-superclass"
+                :arguments ("obj"))
+                nil [15445 15979])
+            ("eieio-custom" package nil nil [15981 16004]))          
+      :file "eieio-custom.el"
+      :pointmax 16039
+      :fsize 16038
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!.emacs.d!lisp!cedet!lisp!eieio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

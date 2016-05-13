@@ -1,0 +1,639 @@
+;; Object tablet_chain/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tablet_chain/"
+  :tables
+  (list
+    (semanticdb-table "TabletChain.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("TABLETCHAIN_H_" variable (:constant-flag t) nil [111 125])
+            ("shared/API.h" include nil nil [127 150])
+            ("MaturityDateData.h" include nil nil [151 180])
+            ("TabletChain" type
+               (:superclasses 
+                  ( ("tbricks::Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::InstrumentStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::PositionStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("MaturityDateData::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [443 450])
+                    ("TabletChain" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [467 512])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [513 560]))                          
+                        :type ("TabletChain" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [455 561])
+                    ("TabletChain" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [566 589])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [652 657]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [619 658])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [693 698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [663 699])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [736 741]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [704 742])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [780 823]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [747 824])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [864 900]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [829 901])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [968 1008])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1059 1117]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [922 1118])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1153 1194])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1195 1234]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1123 1235])
+                    ("HandleInstrumentInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1280 1321])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1366 1407]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1240 1408])
+                    ("HandlePosition" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1454 1495])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1496 1531]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1413 1532])
+                    ("HandlePositionInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1587 1628])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1629 1660]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1536 1661])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1698 1739]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1667 1740])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1777 1818]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1745 1819])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1855 1896]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1824 1897])
+                    ("RefreshOptionsAtForward" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1903 1942])
+                    ("AtForwardUpdated" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("dateData" variable
+                               (:reference 1
+                                :type ("MaturityDateData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1977 2005])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CallPutData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2040 2065])
+                            ("snapshotValue" variable (:type "bool") (reparse-symbol arg-sub-list) [2100 2119]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1947 2120])
+                    ("UnderlyingPriceUpdated" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("dateData" variable
+                               (:reference 1
+                                :type ("MaturityDateData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2161 2189]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2125 2190])
+                    ("private" label nil (reparse-symbol classsubparts) [2191 2199])
+                    ("MaturityData" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::CalendarDate" type nil nil nil)
+                                  ("MaturityDateData" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2204 2275])
+                    ("CallPutDataLookup" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("CallPutData" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2280 2361])
+                    ("InstrumentIDs" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2366 2428])
+                    ("Offsets" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2433 2469])
+                    ("IndexForPrice" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::Price" type nil nil nil)
+                                  ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2474 2529])
+                    ("m_chainsTable" variable (:type ("tbricks::TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2535 2573])
+                    ("m_chainsAlternativeTable" variable (:type ("tbricks::TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2578 2627])
+                    ("m_optionsGroup" variable (:type ("tbricks::InstrumentGroupParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2632 2681])
+                    ("m_maxVisibleMaturities" variable (:type ("tbricks::IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2687 2736])
+                    ("m_maxVisibleStrikes" variable (:type ("tbricks::IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2741 2787])
+                    ("m_UITable" variable (:type ("tbricks::TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2793 2827])
+                    ("m_lockToFirstMaturity" variable (:type ("tbricks::BooleanParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2832 2880])
+                    ("m_portfolioIdentifier" variable (:type ("tbricks::PortfolioIdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2886 2946])
+                    ("m_lockPriceTable" variable (:type ("tbricks::TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2952 2993])
+                    ("m_lockPriceInstrument" variable (:type ("tbricks::InstrumentIdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2998 3059])
+                    ("m_lockedPrice" variable (:type ("tbricks::PriceParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3064 3102])
+                    ("m_lockedPriceTickSteps" variable (:type ("tbricks::IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3107 3156])
+                    ("m_optionsStream" variable (:type ("tbricks::InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3218 3260])
+                    ("m_maturityData" variable (:type ("MaturityData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3265 3293])
+                    ("m_calculatedValuesStream" variable (:type ("tbricks::CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3412 3481])
+                    ("m_callPutDataLookup" variable (:type ("CallPutDataLookup" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3486 3524])
+                    ("m_positionStream" variable (:type ("tbricks::PositionStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3547 3588])
+                    ("m_maturityOffsets" variable (:type ("Offsets" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3642 3668])
+                    ("m_visibleFirstMaturityStrikes" variable (:type ("IndexForPrice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3724 3768])
+                    ("m_irrelevantInstruments" variable (:type ("InstrumentIDs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3977 4015])
+                    ("GetFilterForOptions" function
+                       (:prototype-flag t
+                        :type ("tbricks::InstrumentStream::Filters::Filter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4020 4085])
+                    ("InsertInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4424 4463]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4402 4464])
+                    ("InsertInstrumentIdentfier" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4580 4631]))                          
+                        :type ("CallPutDataLookup::iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4526 4632])
+                    ("InstrumentRelevant" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4661 4700]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4637 4701])
+                    ("CloseStreams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4706 4726])
+                    ("OpenOptionsStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4731 4756])
+                    ("OpenCalculationStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4761 4790])
+                    ("ClosePositionStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4887 4914])
+                    ("OpenPositionStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4919 4945])
+                    ("ResetPositionValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4950 4977])
+                    ("CheckData" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4983 5000])
+                    ("SetDefaultValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5005 5029])
+                    ("ResetValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5035 5054])
+                    ("RefreshDataInTables" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("resetMaturityOffsets" variable (:type "bool") (reparse-symbol arg-sub-list) [5084 5110])
+                            ("resetStrikeOffsets" variable (:type "bool") (reparse-symbol arg-sub-list) [5111 5135]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5059 5136])
+                    ("RefreshMaturityScrollData" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5141 5174])
+                    ("GetTableRow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CallPutData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5195 5220]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5179 5221])
+                    ("GetAlternativeTableRow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CallPutData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5253 5278]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5226 5279])
+                    ("InsertStrikesForMaturity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("maturity_it" variable
+                               (:constant-flag t
+                                :type ("MaturityData::iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5314 5355])
+                            ("maturityInsertionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5356 5386]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5284 5387])
+                    ("InsertBasicTableRowData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CallPutData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5421 5446])
+                            ("strikeInsertionIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5447 5475])
+                            ("maturity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::CalendarDate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5476 5515]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5392 5516])
+                    ("InsertMaturityInUITable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("date" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::CalendarDate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5550 5585])
+                            ("dateData" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MaturityDateData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5586 5620]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5521 5621])
+                    ("UpdateCalculatedValuesTableRowData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CallPutData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5666 5691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5626 5692])
+                    ("UpdatePositionTableRowData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CallPutData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5729 5754]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5697 5755])
+                    ("UpdateLockTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("it" variable (:type ("MaturityData::const_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5782 5814]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5761 5815])
+                    ("ModifyShownLockPrices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("increase" variable (:type "bool") (reparse-symbol arg-sub-list) [5847 5861]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5820 5862])
+                    ("UnlockPrice" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5867 5886])
+                    ("LockPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5906 5935]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5891 5936])
+                    ("UpdateLockDataInLockTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5941 5974])
+                    ("UpdateInstrumentDataInLockTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dateTime" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6016 6051]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5979 6052])
+                    ("UpdatePriceDataInLockTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("lowestPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6142 6177]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6110 6178])
+                    ("SetDefaultLockPrices" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6183 6211])
+                    ("SelectDefaultLockInstrument" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6216 6251])
+                    ("HasLockPrices" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6343 6370])
+                    ("GetTickSteps" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [6375 6400])
+                    ("GetCurrentLockPriceMaturityDateData" function
+                       (:prototype-flag t
+                        :type ("MaturityData::const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6405 6472])
+                    ("ModifySettingsIfNecessary" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6510 6543])
+                    ("ModifyMaturityStrikeOffsetsIfNecessary" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6548 6594])
+                    ("ModifyMaturityDateOffsetsIfNecessary" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6599 6643])
+                    ("ModifyVisibleStrikesAndMaturitiesIfNecessary" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6648 6700])
+                    ("SetupChainsTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6706 6730])
+                    ("SetupUITable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6735 6755])
+                    ("SetupLockPriceTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6760 6787])
+                    ("SetDefaultStrikeOffsetForMaturity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("maturityData" variable
+                               (:reference 1
+                                :type ("MaturityDateData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6832 6864]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6793 6865])
+                    ("FixParameterValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6900 6926])
+                    ("HandleTableActions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableParameter" variable (:type ("tbricks::TableParameter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6956 6995])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6996 7043]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6932 7044])
+                    ("HandleAction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("action" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Integer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7067 7099])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::TablePosition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7100 7140]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7049 7141])
+                    ("GetDeltaAsString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("delta" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7180 7210]))                          
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7147 7211]))                  
+                :type "class")
+                nil [182 7214]))          
+      :file "TabletChain.h"
+      :pointmax 7244
+      :fsize 7243
+      :lastmodtime '(21962 60358 288322 477000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TABLETCHAIN_H_")
+          )
+)
+    (semanticdb-table "MaturityDateData.h"
+      :file "MaturityDateData.h"
+      :fsize 3802
+      :lastmodtime '(21962 60358 287322 547000)))
+  :file "!home!marselo!Code!alloptions!beta!strategy!tablet_chain!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

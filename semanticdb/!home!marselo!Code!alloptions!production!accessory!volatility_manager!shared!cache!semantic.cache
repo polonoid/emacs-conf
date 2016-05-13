@@ -1,0 +1,2111 @@
+;; Object cache/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cache/"
+  :tables
+  (list
+    (semanticdb-table "InstrumentGroupVolatilityData.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__APPS__VOLATILITY_MANAGER__SHARED__INSTRUMENT_GROUP_VOLATILITY_DATA_H" variable (:constant-flag t) nil [307 386])
+            ("shared/API.h" include (:system-flag t) nil [388 411])
+            ("../VolatilityManagerSettings.h" include nil nil [412 453])
+            ("../plotting/ZoomingSettings.h" include nil nil [454 494])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [496 520])
+            ("InstrumentGroupVolatilityData" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [564 571])
+                    ("InstrumentGroupVolatilityData" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [576 608])
+                    ("InstrumentGroupVolatilityData" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [613 646])
+                    ("GetGroupName" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [652 686])
+                    ("GetGroupIdentifier" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [691 750])
+                    ("AddInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [775 807]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [756 808])
+                    ("GetInstrumentIdentifiers" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [814 886])
+                    ("FindExampleCallId" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("considerExoticsFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [937 969])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [970 976]))                          
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [892 983])
+                    ("FindExamplePutId" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("considerExoticsFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1032 1064])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1065 1071]))                          
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [988 1078])
+                    ("FindExampleOptionId" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("considerExoticsFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1130 1162])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1163 1169]))                          
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1083 1176])
+                    ("GetExampleCallId" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1182 1236])
+                    ("GetExamplePutId" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1241 1294])
+                    ("GetExampleOptionId" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1299 1353])
+                    ("MergeGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1375 1406]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1359 1407])
+                    ("GetStrikePriceGrid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("strikes" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1437 1467])
+                            ("compareTolerance" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1468 1499]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1413 1512])
+                    ("SetAdditionalInstrumentParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameterDefId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1556 1584])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1585 1607]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1518 1608])
+                    ("GetAdditionalInstrumentParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameterDefId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1651 1679])
+                            ("value" variable
+                               (:reference 1
+                                :type ("AnyType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1680 1696]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1613 1703])
+                    ("GetMaturityDate" function
+                       (:prototype-flag t
+                        :type ("DateTime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1725 1754])
+                    ("GetMaturityDate" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("DateTime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1759 1800])
+                    ("GetRowIndex" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1806 1833])
+                    ("GetColorIndex" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1838 1867])
+                    ("GetATMVolShift" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1873 1911])
+                    ("InstrumentGroupAggregateParametersSnapshotDone" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1917 1977])
+                    ("CloseImpliedVolatilitiesStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1983 2021])
+                    ("GetVolatilityModelParameters" function
+                       (:prototype-flag t
+                        :type ("InstrumentParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2027 2081])
+                    ("GetVolatilityModelParameters" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("InstrumentParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2086 2152])
+                    ("GetCandidateVolatilityModelParameters" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("InstrumentParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2158 2221])
+                    ("GetCandidateVolatilityModelParameters" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :type ("InstrumentParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2226 2301])
+                    ("SetCandidateVolatilityModelParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("volModelParams" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2350 2394]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2307 2395])
+                    ("ClearCandidateVolatilityModelParameters" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2400 2447])
+                    ("GetForwardPrice" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2453 2492])
+                    ("GetUnderlyingPrice" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2497 2538])
+                    ("GetVolatilityTimeToMaturity" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2543 2594])
+                    ("GetVolatilities" function
+                       (:prototype-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2600 2640])
+                    ("GetVolatilities" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2645 2697])
+                    ("GetUnderlyingInstrumentIdentifier" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2703 2774])
+                    ("IsExcluded" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2780 2804])
+                    ("InstrumentCacheSnapshotDone" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2809 2850])
+                    ("GetZoomingSettings" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2899 2916]))                          
+                        :type ("ZoomingSettings" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2856 2923])
+                    ("HasAnyZoomingSettings" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2928 2963])
+                    ("SetVolatilityModelParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3018 3054]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2984 3055])
+                    ("SetGroupIdentifier" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3084 3126]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3060 3127])
+                    ("SetMaturityDate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("maturityDate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3153 3183]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3132 3184])
+                    ("SetRowIndex" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rowIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3206 3228]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3189 3229])
+                    ("SetColorIndex" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("colorIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3253 3277]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3234 3278])
+                    ("SetATMVolShift" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ATMVolShift" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3303 3330]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3283 3331])
+                    ("StoreInstrumentStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3364 3396]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3337 3397])
+                    ("StoreInstrumentGroupAggregateParametersStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupAggregateParameters::Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3453 3511]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3402 3512])
+                    ("StoreImpliedVolatilitiesStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3553 3603]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3517 3604])
+                    ("SetForwardPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("forwardPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3631 3658]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3610 3659])
+                    ("SetForwardPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("forwardPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3685 3713]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3664 3714])
+                    ("SetForwardPriceStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3747 3797]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3720 3798])
+                    ("SetUnderlyingInstrumentId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3834 3866]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3803 3867])
+                    ("SetUnderlyingPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("underlyingPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3896 3926]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3872 3927])
+                    ("SetVolatilityTimeToMaturity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("volatilityTime" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3966 3996]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3933 3997])
+                    ("SetExcluded" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("excluded" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4020 4040]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4003 4041])
+                    ("SetInstrumentCacheSnapshotDone" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("snapshotDone" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4082 4106]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4046 4107])
+                    ("SetZoomingSettings" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4137 4154])
+                            ("zoomingSettings" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ZoomingSettings" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4155 4195]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4113 4196])
+                    ("private" label nil (reparse-symbol classsubparts) [4198 4206])
+                    ("FindRepresentativeOptionIdImpl" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("findCallFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4269 4293])
+                            ("considerExoticsFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4356 4388])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4389 4395]))                          
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4211 4402])
+                    ("private" label nil (reparse-symbol classsubparts) [4404 4412])
+                    ("m_volatilityModelParameters" variable (:type ("InstrumentParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4493 4552])
+                    ("m_pCandidateVolatilityModelParameters" variable
+                       (:pointer 1
+                        :type ("InstrumentParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4557 4626])
+                    ("m_instrumentStream" variable (:type ("InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4707 4770])
+                    ("m_instrumentGroupAggregateParametersStream" variable (:type ("InstrumentGroupAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4775 4862])
+                    ("m_impliedVolatilitiesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4867 4939])
+                    ("m_forwardPriceStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4944 5009])
+                    ("m_cachedVolatilities" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5059 5100])
+                    ("m_cachedForwardPrice" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5178 5206])
+                    ("m_cachedUnderlyingPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5266 5296])
+                    ("m_groupIdentifier" variable (:type ("InstrumentGroupIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5323 5377])
+                    ("m_instrumentIdentifiers" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("InstrumentIdentifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5382 5442])
+                    ("m_cachedExampleCallId" variable
+                       (:typemodifiers ("mutable")
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5447 5505])
+                    ("m_cachedExamplePutId" variable
+                       (:typemodifiers ("mutable")
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5510 5567])
+                    ("m_maturityDate" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5572 5623])
+                    ("m_maturityTimeFallback" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5676 5735])
+                    ("m_pricingTimeDecayGranularity" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5740 5806])
+                    ("m_volatilityTime" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5811 5864])
+                    ("m_rowIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5869 5916])
+                    ("m_colorIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5921 5970])
+                    ("m_underlyingInstrumentId" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5975 6036])
+                    ("m_ATMVolShift" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6041 6091])
+                    ("m_excluded" variable (:type "bool") (reparse-symbol classsubparts) [6097 6116])
+                    ("m_instrumentCacheSnapshotDone" variable (:type "bool") (reparse-symbol classsubparts) [6122 6160])
+                    ("ZoomingSettingsStorage" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [6271 6357])
+                    ("m_zoomingSettingsStorage" variable (:type ("ZoomingSettingsStorage" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6362 6418])
+                    ("m_additionalInstrumentParams" variable (:type ("InstrumentParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6424 6475]))                  
+                :type "class")
+                nil [522 6478]))          
+      :file "InstrumentGroupVolatilityData.h"
+      :pointmax 6570
+      :fsize 6569
+      :lastmodtime '(21962 60358 518306 459000)
+      :unmatched-syntax '((punctuation 4387 . 4388) (number 1500 . 1504) (punctuation 1498 . 1499) (punctuation 1161 . 1162) (punctuation 1063 . 1064) (punctuation 968 . 969))
+      :lexical-table 
+        '(("__TBRICKS__APPS__VOLATILITY_MANAGER__SHARED__INSTRUMENT_GROUP_VOLATILITY_DATA_H")
+          )
+)
+    (semanticdb-table "GroupCache.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__PLUGIN__VOLATILITY_MANAGER__GROUP_CACHE_H" variable (:constant-flag t) nil [70 122])
+            ("InstrumentCache.h" include nil nil [124 152])
+            ("InstrumentGroupVolatilityData.h" include nil nil [153 195])
+            ("InstrumentGroupStreamData.h" include nil nil [196 234])
+            ("shared/volatility/IVolatilityModel.h" include (:system-flag t) nil [235 282])
+            ("shared/API.h" include (:system-flag t) nil [283 306])
+            ("map" include (:system-flag t) nil [307 321])
+            ("double_inf" variable (:constant-flag t) nil [331 341])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [380 404])
+            ("volatility" using (:type ("volatility" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [405 432])
+            ("IVolatilityPlugin" type
+               (:prototype t
+                :type "class")
+                nil [434 458])
+            ("TightVolatilityPoint" type
+               (:prototype t
+                :type "class")
+                nil [459 486])
+            ("TightVolatilityPointCompareStrikes" type
+               (:prototype t
+                :type "struct")
+                nil [487 529])
+            ("GroupVolatilityData" type
+               (:typedef ("std::map" type
+                     (:template-specifier 
+                        ( ("InstrumentGroupIdentifier" type nil nil nil)
+                          ("InstrumentGroupVolatilityData" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "std::map"
+                :type "typedef")
+                nil [653 748])
+            ("GroupStreamData" type
+               (:typedef ("SparseHash" type
+                     (:template-specifier 
+                        ( ("StreamIdentifier" type nil nil nil)
+                          ("InstrumentGroupStreamData" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "SparseHash"
+                :type "typedef")
+                nil [749 829])
+            ("GroupCache" type
+               (:superclasses 
+                  ( ("IRequestReplyHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentGroupAggregateParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentGroupStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1087 1094])
+                    ("IHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1494 1501])
+                            ("HandleSwim" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("insGroupVolData" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1534 1588])
+                                    ("sender" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GroupCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1621 1647]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1510 1652])
+                            ("HandleVolatilityModelParamsChange" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("insGroupVolData" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1708 1762])
+                                    ("sender" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GroupCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1818 1844]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1661 1849])
+                            ("HandleMaturityGroupsReady" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sender" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GroupCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1897 1923]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1858 1928])
+                            ("HandleMaturityGroupInvalidated" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("insGroupVolData" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1981 2035])
+                                    ("sender" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GroupCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2088 2114]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1937 2119])
+                            ("HandleGroupCacheCleared" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sender" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("GroupCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2165 2191]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2128 2196])
+                            ("GetName" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2206 2249]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [1469 2256])
+                    ("AddHandler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pHandler" variable
+                               (:pointer 1
+                                :type ("IHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2278 2298]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2262 2299])
+                    ("DetachHandler" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pHandler" variable
+                               (:pointer 1
+                                :type ("IHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2323 2343]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2304 2344])
+                    ("private" label nil (reparse-symbol classsubparts) [2346 2354])
+                    ("NotifySwim" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("insGroupVolData" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2375 2429]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2359 2430])
+                    ("NotifyVolatilityModelParamsChange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("insGroupVolData" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2474 2528]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2435 2529])
+                    ("NotifyMaturityGroupsReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2534 2567])
+                    ("NotifyMaturityGroupInvalidated" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("insGroupVolData" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2608 2662]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2572 2663])
+                    ("NotifyCleared" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2668 2689])
+                    ("public" label nil (reparse-symbol classsubparts) [2691 2698])
+                    ("EGroupCacheReportMode" type
+                       (:members 
+                          ( ("REPORT_MODE_STANDARD" variable
+                               (:constant-flag t
+                                :default-value (2763 2764)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2740 2764])
+                            ("REPORT_MODE_IMPLIEDS_ONLY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2774 2805]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2703 2806])
+                    ("EFitExcludeRule" type
+                       (:members 
+                          ( ("ExcludeNone" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2847 2859])
+                            ("ExcludeBids" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2868 2880])
+                            ("ExcludeNoSpread" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2889 2905])
+                            ("ExcludeByDelta" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2914 2929])
+                            ("ExcludeWideSpread" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2938 2956])
+                            ("ExcludeByMoneyness" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2965 2984])
+                            ("ExcludeCrossings" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2993 3015]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2812 3016])
+                    ("ConstVolatilityDataIterator" type
+                       (:typedef ("GroupVolatilityData::const_iterator" type (:type "class") nil nil)
+                        :superclasses "GroupVolatilityData::const_iterator"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3022 3094])
+                    ("VolatilityDataIterator" type
+                       (:typedef ("GroupVolatilityData::iterator" type (:type "class") nil nil)
+                        :superclasses "GroupVolatilityData::iterator"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3099 3160])
+                    ("public" label nil (reparse-symbol classsubparts) [3162 3169])
+                    ("GroupCache" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("plugin" variable
+                               (:reference 1
+                                :type ("IVolatilityPlugin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3185 3212])
+                            ("mode" variable (:type ("EGroupCacheReportMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3213 3241])
+                            ("" variable (:type ("REPORT_MODE_STANDARD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3242 3263]))                          
+                        :type ("GroupCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3174 3264])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3313 3355]))                          
+                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3270 3356])
+                    ("FindInstrumentGroupVolatilityData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3434 3476]))                          
+                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3362 3483])
+                    ("FindInstrumentGroupVolatilityData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("maturity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3560 3586]))                          
+                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3488 3593])
+                    ("FindInstrumentGroupVolatilityData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("tableIndex" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3670 3691]))                          
+                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3598 3698])
+                    ("GetCurrentInstrumentGroupVolatilityData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3704 3790])
+                    ("GetCurrentlySelectedGroupIdentifier" function (:type ("InstrumentGroupIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3796 3916])
+                    ("GetCurrentlySelectedGroupIdentifier" function
+                       (:constant-flag t
+                        :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3922 4054])
+                    ("GetStrikeGrid" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("Price" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4060 4106])
+                    ("GetVolatilityDataIterator" function
+                       (:prototype-flag t
+                        :type ("ConstVolatilityDataIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4112 4174])
+                    ("GetVolatilityDataEnd" function
+                       (:prototype-flag t
+                        :type ("ConstVolatilityDataIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4179 4236])
+                    ("GetVolatilityDataIterator" function
+                       (:prototype-flag t
+                        :type ("VolatilityDataIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4242 4293])
+                    ("GetVolatilityDataEnd" function
+                       (:prototype-flag t
+                        :type ("VolatilityDataIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4298 4344])
+                    ("public" label nil (reparse-symbol classsubparts) [4346 4353])
+                    ("HandleInstrumentGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4478 4510])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4511 4542]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4451 4543])
+                    ("HandleInstrumentGroupInvalidate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4585 4617])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4618 4655]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4548 4656])
+                    ("HandleInstrumentGroupAggregateParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4707 4741])
+                            ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4792 4834])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4885 4943]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4661 4944])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4987 5021])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5064 5114]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4949 5115])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5143 5175]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5120 5176])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5205 5237]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5181 5238])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5266 5300]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5243 5301])
+                    ("HandleRequestReply" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5330 5352])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5353 5367])
+                            ("status_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5368 5395]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5306 5396])
+                    ("public" label nil (reparse-symbol classsubparts) [5398 5405])
+                    ("InsertNewInstrumentIntoGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5481 5523])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5562 5604]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5447 5605])
+                    ("HandleInstrumentCacheSnapshotForGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5653 5695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5610 5696])
+                    ("public" label nil (reparse-symbol classsubparts) [5698 5705])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5749 5762])
+                    ("RefreshVolatilitiesForAllGroups" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5767 5806])
+                    ("RefreshStrikeGrid" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5811 5836])
+                    ("CheckAndInsertTableColumns" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("table" variable
+                               (:reference 1
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5881 5895])
+                            ("columns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Uuid" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5896 5930]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5842 5931])
+                    ("ImpliedVolatilitiesToCurve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("minStrikeToShow" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5969 5999])
+                            ("maxStrikeToShow" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6000 6030])
+                            ("volatilityCurve" variable
+                               (:reference 1
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6067 6091])
+                            ("tableRowIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6092 6113])
+                            ("isReferenceCurve" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6150 6179])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6180 6186])
+                            ("nonRefForwardPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6223 6257])
+                            ("" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6258 6265]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5937 6267])
+                    ("AddGroupModelVolatilitesToCurve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("minStrikeToShow" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6310 6340])
+                            ("maxStrikeToShow" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6382 6412])
+                            ("strikeGrid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("Price" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6454 6489])
+                            ("volatilityCurveTable" variable
+                               (:reference 1
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6531 6560]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6273 6561])
+                    ("GetVolatilityDataForTableRows" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rows" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6602 6632])
+                            ("result" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentGroupVolatilityData" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6672 6725]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6567 6726])
+                    ("FindNeighbourMaturities" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("matDate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6761 6786])
+                            ("" variable
+                               (:pointer 1
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6787 6819])
+                            ("" variable (:type ("left" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6820 6825])
+                            ("" variable
+                               (:pointer 1
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6859 6891])
+                            ("" variable (:type ("right" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6892 6898])
+                            ("tight" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6899 6917])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6918 6924]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6732 6925])
+                    ("ShowStrikesWithoutImpliedVolatilities" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("showStrikesWithoutImpliedVolatilities" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6974 7023]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6931 7024])
+                    ("ReopenForwardStreams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7030 7058])
+                    ("ReopenImpliedVolatilitiesStreams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7064 7104])
+                    ("ReopenImpliedVolatilitiesStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("insGroupVolData" variable
+                               (:reference 1
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7146 7194]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7109 7195])
+                    ("ReopenCandidateCurveCalculatedValuesStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("forceReopen" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [7249 7273])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7274 7280]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7201 7281])
+                    ("CloseCandidateCurveCalculatedValuesStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7286 7335])
+                    ("CloseOpenCIVStreamsWithSnapshotDone" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7341 7384])
+                    ("FindNearestMaturity" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("maturityDate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7442 7472]))                          
+                        :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7390 7479])
+                    ("CalculatedValuesForCandidateCurveHash" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [7485 7590])
+                    ("GetCalculatedValuesForCandidateCurve" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("CalculatedValuesForCandidateCurveHash" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7595 7686])
+                    ("RecomputeCurrentATMVolatilities" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7741 7780])
+                    ("SetCurrentGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tableIndex" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7840 7858]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7819 7859])
+                    ("SetCurrentGroupByMaturity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("maturityDate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7895 7925]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7864 7926])
+                    ("GetStrikeRangeForCurrentGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("minStrike" variable
+                               (:reference 1
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7966 7984])
+                            ("maxStrike" variable
+                               (:reference 1
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7985 8003]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7931 8004])
+                    ("CloseImpliedVolStreamForCurrentGroup" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8009 8053])
+                    ("GetCurrentColorIndex" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8059 8095])
+                    ("GetCurrentMaturity" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("DateTime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8100 8142])
+                    ("GetCurrentForwardPrice" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8147 8191])
+                    ("GetCurrentVolatilityTimeToMaturity" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8196 8252])
+                    ("GetCurrentUnderlyingPrice" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8257 8303])
+                    ("GetVolatilityModelParametersForCurrentGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8358 8388]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8309 8395])
+                    ("SetVolatilityModelParametersForCurrentGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8449 8485]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8400 8486])
+                    ("RestoreZoomingSettingsForCurrentGroup" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8492 8543])
+                    ("ExcludePointsByRule" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("excludeRule" variable
+                               (:constant-flag t
+                                :type ("EFitExcludeRule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8574 8608])
+                            ("toggleFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [8609 8631])
+                            ("moneyness" variable
+                               (:constant-flag t
+                                :type ("Moneyness" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8661 8688])
+                            ("" variable (:type ("MoneynessDeepInTheMoney" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8689 8713]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8549 8714])
+                    ("ExcludePointsByRowIndex" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rowIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8748 8770])
+                            ("exclude" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [8771 8790]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8719 8791])
+                    ("GetVolatilityPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("insGroupVolData" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8822 8876])
+                            ("volatilityPoints" variable
+                               (:reference 1
+                                :type ("VolatilityPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8906 8942])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [8972 8989])
+                            ("fitToMidSpread" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [9068 9094])
+                            ("errorMessage" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9095 9117])
+                            ("onlyPointsWithBothImpliedVols" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [9147 9189])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9190 9196])
+                            ("nonRefForwardPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9226 9261])
+                            ("" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9262 9270]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8797 9278])
+                    ("GetVolatilityPointsFromGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9318 9360])
+                            ("volatilityPoints" variable
+                               (:reference 1
+                                :type ("VolatilityPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9399 9435])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [9474 9491])
+                            ("fitToMidSpread" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [9579 9605])
+                            ("errorMessage" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9606 9628])
+                            ("onlyPointsWithBothImpliedVols" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [9667 9709])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9710 9716]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9284 9723])
+                    ("GetVolatilityPointsFromCurrentGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("volatilityPoints" variable
+                               (:reference 1
+                                :type ("VolatilityPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9770 9806])
+                            ("" variable (:type "double") (reparse-symbol arg-sub-list) [9852 9869])
+                            ("fitToMidSpread" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [9964 9990])
+                            ("errorMessage" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9991 10013])
+                            ("onlyPointsWithBothImpliedVols" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10059 10100]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9729 10107])
+                    ("ModifyGroupParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :type ("InstrumentGroupParameters::Modifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10140 10187])
+                            ("row" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10188 10205]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10113 10206])
+                    ("AddVolatilityCurveRow" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("label" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10246 10267])
+                            ("strikePrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10268 10294])
+                            ("volatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10333 10359])
+                            ("include" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10360 10379])
+                            ("colorIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10418 10442])
+                            ("thicknessIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10443 10471])
+                            ("editable" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10510 10530])
+                            ("rowIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10531 10553])
+                            ("volatilityCurveTable" variable
+                               (:reference 1
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10592 10621])
+                            ("editableOnlyWithHandles" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10622 10658])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10659 10665]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10212 10666])
+                    ("GetTableIndexForGroupId" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10700 10742]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10672 10749])
+                    ("GetTableIndexForMaturity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("maturityDate" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10783 10813]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10754 10820])
+                    ("GetMaturityForTableIndex" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("rowIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10865 10887]))                          
+                        :type ("DateTime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10825 10894])
+                    ("GetGroupIdFromTableIndex" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("tableIndex" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10958 10982]))                          
+                        :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10899 10989])
+                    ("UseExoticOptions" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10995 11019])
+                    ("FirstImpliedVolsSnapshotDone" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11025 11067])
+                    ("private" label nil (reparse-symbol classsubparts) [11069 11077])
+                    ("TightVolatilityPoints" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("TightVolatilityPoint" type nil nil nil)
+                                  ("TightVolatilityPointCompareStrikes" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [11082 11179])
+                    ("GetStrikeWithOffset" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("strike" variable
+                               (:reference 1
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11210 11225])
+                            ("strikes" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11226 11262])
+                            ("signedSteps" variable (:type "int") (reparse-symbol arg-sub-list) [11263 11279]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11185 11286])
+                    ("ExcludeActionToMoneyness" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("excludeAction" variable (:type ("VolatilityFitExclude" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11327 11362]))                          
+                        :type ("Moneyness" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11292 11363])
+                    ("SetCurrentGroupById" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11394 11436]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11369 11437])
+                    ("ClearStrikeGrid" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [11443 11466])
+                    ("GetNextAvailableCurveColor" function
+                       (:prototype-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11472 11508])
+                    ("DateTimeCompare" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("first" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11542 11565])
+                            ("second" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11566 11590])
+                            ("tight" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11623 11641])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11642 11648]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11514 11655])
+                    ("HandleCIVStreamSnapshot" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11690 11718]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11661 11719])
+                    ("GetTightVolatilityPointsFromGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11764 11806])
+                            ("tightVolPoints" variable
+                               (:reference 1
+                                :type ("TightVolatilityPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11850 11889])
+                            ("ignoreExclusions" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [11933 11962])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11963 11969]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11725 11976])
+                    ("GetTightVolatilityPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("insGroupVolData" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12011 12065])
+                            ("tightVolatilityPoints" variable
+                               (:reference 1
+                                :type ("TightVolatilityPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12100 12146])
+                            ("ignoreExclusions" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12181 12210])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12211 12217])
+                            ("nonRefForwardPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12252 12287])
+                            ("" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12288 12296]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11981 12304])
+                    ("GetTightVolatilityPointsFromCurrentGroup" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tightVolPoints" variable
+                               (:reference 1
+                                :type ("TightVolatilityPoints" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12355 12394])
+                            ("ignoreExclusions" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12445 12474])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12475 12481]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12309 12488])
+                    ("ExcludeNonTightVolatilityPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("toggleFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12531 12553]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12494 12554])
+                    ("HasOpenCIVStreams" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12560 12591])
+                    ("HasForwardPriceStreamsWithoutSnapshot" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [12596 12647])
+                    ("ParseForwardPriceVolTimeUnderlyingPriceUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12704 12754])
+                            ("insGroupVolData" variable
+                               (:reference 1
+                                :type ("InstrumentGroupVolatilityData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12810 12858]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12653 12859])
+                    ("ParseCalculatedValuesForCandidateCurve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12908 12958]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12864 12959])
+                    ("ParseImpliedVolatilitiesUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13000 13050]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12964 13051])
+                    ("private" label nil (reparse-symbol classsubparts) [13053 13061])
+                    ("m_groupVolatilityData" variable (:type ("GroupVolatilityData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13106 13148])
+                    ("m_groupStreamData" variable (:type ("GroupStreamData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13197 13231])
+                    ("m_currentlySelectedGroupIdentifier" variable (:type ("InstrumentGroupIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13258 13319])
+                    ("m_emptyGroupID" variable (:type ("InstrumentGroupIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13324 13365])
+                    ("m_instrumentGroupParamsModifyRequestID" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13371 13421])
+                    ("m_instrumentCache" variable (:type ("InstrumentCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13426 13460])
+                    ("m_strikeGrid" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("Price" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [13478 13507])
+                    ("m_plugin" variable (:type ("IVolatilityPlugin" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13536 13565])
+                    ("m_nextAvailableColor" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13571 13599])
+                    ("m_nGroups" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13604 13621])
+                    ("m_nStreamsDone" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13626 13648])
+                    ("m_reportMode" variable (:type ("EGroupCacheReportMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13653 13688])
+                    ("m_showStrikesWithoutImpliedVolatilities" variable (:type "bool") (reparse-symbol classsubparts) [13694 13739])
+                    ("m_onceImpliedVolsForCurrentGroupSnapshot" variable (:type "bool") (reparse-symbol classsubparts) [13745 13791])
+                    ("GroupIdForMaturity" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("DateTime" type nil nil nil)
+                                  ("InstrumentGroupIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [13862 13935])
+                    ("m_groupIdForMaturity" variable (:type ("GroupIdForMaturity" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13940 13980])
+                    ("GroupIdForTableIndex" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("InstrumentGroupIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [13986 14056])
+                    ("m_groupIdForTableIndex" variable (:type ("GroupIdForTableIndex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14061 14105])
+                    ("m_calculatedValuesForCandidateCurve" variable (:type ("CalculatedValuesForCandidateCurveHash" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14206 14282])
+                    ("m_calculatedValuesForCandidateCurveActiveRowIds" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("Identifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14287 14375])
+                    ("m_calculatedValuesForCandidateCurveStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14380 14462])
+                    ("m_handlers" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("IHandler" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14520 14555])
+                    ("m_onceNotifiedMaturityGroupsReady" variable (:type "bool") (reparse-symbol classsubparts) [14560 14602]))                  
+                :type "class")
+                nil [831 14605]))          
+      :file "GroupCache.h"
+      :pointmax 14670
+      :fsize 14669
+      :lastmodtime '(21962 60358 518306 459000)
+      :unmatched-syntax '((punctuation 12473 . 12474) (semantic-list 12294 . 12296) (punctuation 12286 . 12287) (punctuation 12209 . 12210) (punctuation 11961 . 11962) (punctuation 11640 . 11641) (punctuation 10657 . 10658) (semantic-list 9869 . 9917) (semantic-list 9859 . 9869) (punctuation 9708 . 9709) (semantic-list 9491 . 9539) (semantic-list 9481 . 9491) (semantic-list 9268 . 9270) (punctuation 9260 . 9261) (punctuation 9188 . 9189) (semantic-list 8989 . 9037) (semantic-list 8979 . 8989) (punctuation 8687 . 8688) (punctuation 7272 . 7273) (punctuation 6916 . 6917) (punctuation 6890 . 6891) (punctuation 6818 . 6819) (semantic-list 6263 . 6265) (punctuation 6256 . 6257) (punctuation 6178 . 6179) (punctuation 3240 . 3241))
+      :lexical-table 
+        '(("__TBRICKS__PLUGIN__VOLATILITY_MANAGER__GROUP_CACHE_H")
+          ("double_inf" . ((semantic-list "(std::numeric_limits<double>::max())" 342 . 378)))
+          )
+)
+    (semanticdb-table "InstrumentCache.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__VOLATILITY_CURVE_MANAGER__INSTRUMENT_CACHE__" variable (:constant-flag t) nil [73 128])
+            ("InstrumentVolatilityData.h" include nil nil [130 167])
+            ("shared/API.h" include (:system-flag t) nil [168 191])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [193 217])
+            ("GroupCache" type
+               (:prototype t
+                :type "class")
+                nil [219 236])
+            ("InstrumentCachedData" type
+               (:typedef ("SparseHash" type
+                     (:template-specifier 
+                        ( ("InstrumentIdentifier" type nil nil nil)
+                          ("InstrumentVolatilityData" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "SparseHash"
+                :type "typedef")
+                nil [299 387])
+            ("InstrumentStreamData" type
+               (:typedef ("SparseHash" type
+                     (:template-specifier 
+                        ( ("StreamIdentifier" type nil nil nil)
+                          ("InstrumentGroupIdentifier" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "SparseHash"
+                :type "typedef")
+                nil [388 473])
+            ("InstrumentCache" type
+               (:superclasses 
+                  ( ("InstrumentStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [534 541])
+                    ("InstrumentCache" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("groupCache" variable
+                               (:reference 1
+                                :type ("GroupCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [562 586]))                          
+                        :type ("InstrumentCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [546 615])
+                    ("public" label nil (reparse-symbol classsubparts) [617 624])
+                    ("HandleInstrumentInvalidate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [685 717])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [718 750]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [653 751])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [778 812])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [813 843]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [756 844])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [872 904]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [849 905])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [934 966]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [910 967])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [995 1027]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [972 1028])
+                    ("RegisterStream" function
+                       (:arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1054 1088])
+                            ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1089 1131]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1034 1187])
+                    ("public" label nil (reparse-symbol classsubparts) [1189 1196])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("iid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1240 1273]))                          
+                        :type ("InstrumentVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1201 1321])
+                    ("Clear" function (:type "void") (reparse-symbol classsubparts) [1327 1375])
+                    ("CacheCalculatedValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1407 1449])
+                            ("definitionId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1450 1476])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1507 1529])
+                            ("error" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1530 1545]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1381 1546])
+                    ("GetVolatilityData" function
+                       (:arguments 
+                          ( ("ii" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest::InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1597 1648]))                          
+                        :type ("InstrumentVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1552 1731])
+                    ("FindVolatilityData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("ii" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest::InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1789 1840]))                          
+                        :type ("InstrumentVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1737 1841])
+                    ("FindVolatilityData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1893 1925]))                          
+                        :type ("InstrumentVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1847 1926])
+                    ("FindVolatilityData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1983 2015]))                          
+                        :type ("InstrumentVolatilityData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1931 2022])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2070 2112]))                          
+                        :type ("InstrumentCachedData::const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2028 2119])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2160 2202]))                          
+                        :type ("InstrumentCachedData::iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2124 2203])
+                    ("end" function (:type ("InstrumentCachedData::const_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2209 2298])
+                    ("end" function (:type ("InstrumentCachedData::iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2303 2380])
+                    ("private" label nil (reparse-symbol classsubparts) [2382 2390])
+                    ("InstrumentCache" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("InstrumentCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2467 2485])
+                    ("InstrumentCache" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2506 2536]))                          
+                        :type ("InstrumentCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2490 2537])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2570 2600]))                          
+                        :type ("InstrumentCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2542 2601])
+                    ("private" label nil (reparse-symbol classsubparts) [2603 2611])
+                    ("m_groupCache" variable (:type ("GroupCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2616 2642])
+                    ("m_instrumentCachedData" variable (:type ("InstrumentCachedData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2704 2750])
+                    ("m_instrumentStreamData" variable (:type ("InstrumentStreamData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2755 2801]))                  
+                :type "class")
+                nil [475 2804]))          
+      :file "InstrumentCache.h"
+      :pointmax 2871
+      :fsize 2870
+      :lastmodtime '(21962 60358 518306 459000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__TBRICKS__VOLATILITY_CURVE_MANAGER__INSTRUMENT_CACHE__")
+          )
+)
+    (semanticdb-table "InstrumentGroupStreamData.h"
+      :file "InstrumentGroupStreamData.h"
+      :fsize 1630
+      :lastmodtime '(21962 60358 518306 459000))
+    (semanticdb-table "InstrumentVolatilityData.h"
+      :file "InstrumentVolatilityData.h"
+      :fsize 4639
+      :lastmodtime '(21962 60358 518306 459000)))
+  :file "!home!marselo!Code!alloptions!production!accessory!volatility_manager!shared!cache!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

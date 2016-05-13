@@ -1,0 +1,435 @@
+;; Object AO_PortfolioPnLVolatility/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_PortfolioPnLVolatility/"
+  :tables
+  (list
+    (semanticdb-table "InstrumentParametersSimulator.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_INSTRUMENTPARAMETERSSIMULATOR_H_" variable (:constant-flag t) nil [51 84])
+            ("AO_SharedGlobal/Global/SigmaPoints.h" include nil nil [86 133])
+            ("boost/optional.hpp" include (:system-flag t) nil [134 163])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [165 189])
+            ("InstrumentParametersSimulator" type
+               (:superclasses 
+                  ( ("InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "private"
+                        :type "class")
+                        nil nil)
+                    ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "private"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [341 348])
+                    ("IHandler" type
+                       (:members 
+                          ( ("SimulationDone" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("simulator" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentParametersSimulator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [399 446]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [371 451]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [350 455])
+                    ("SimulatedParameters" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("InstrumentParameterDefinition" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [458 529])
+                    ("private" label nil (reparse-symbol classsubparts) [531 539])
+                    ("SimulationInstance" type
+                       (:members 
+                          ( ("parameter" variable (:type ("InstrumentParameterDefinition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [572 612])
+                            ("parameterValue" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [615 637])
+                            ("price" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [640 652])
+                            ("<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SimulationInstance" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [670 702]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [655 758]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [541 762])
+                    ("Simulations" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("StreamIdentifier" type nil nil nil)
+                                  ("SimulationInstance" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [765 833])
+                    ("PositionParams" type
+                       (:members 
+                          ( ("PositionParams" function
+                               (:constructor-flag t
+                                :type ("PositionParams" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [862 881])
+                            ("PositionParams" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Position" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [899 924]))                                  
+                                :type ("PositionParams" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [884 925])
+                            ("CalculateValueFactor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [954 983]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [928 984])
+                            ("underlying" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [988 1020])
+                            ("maturityGroup" variable (:type ("InstrumentGroupIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1023 1063])
+                            ("maturity" variable (:type ("Date" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1066 1080])
+                            ("netPosition" variable (:type ("Volume" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1083 1102])
+                            ("adjustment" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1105 1123])
+                            ("factor" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1126 1140])
+                            ("defaultVega" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1143 1162])
+                            ("defaultSigmaPoint" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1165 1190])
+                            ("defaultVolatility" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1193 1218])
+                            ("previousVolatility" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1221 1247])
+                            ("currency" variable (:type ("Currency" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1250 1268])
+                            ("sigmaPoints" variable (:type ("boost::optional" type
+                                 (:template-specifier 
+                                    ( ("AO::SigmaPoints" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1271 1316]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [835 1320])
+                    ("Positions" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("PositionParams" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1323 1388])
+                    ("public" label nil (reparse-symbol classsubparts) [1390 1397])
+                    ("InstrumentParametersSimulator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("handler" variable
+                               (:reference 1
+                                :type ("IHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1429 1447]))                          
+                        :type ("InstrumentParametersSimulator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1399 1448])
+                    ("AddCurrentPosition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1474 1499]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1450 1500])
+                    ("AddStartOfDayPosition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1529 1554]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1502 1555])
+                    ("SetCurrency" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1574 1592]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1557 1593])
+                    ("SetUnderlyingPriceSource" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("underlyingPriceSource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Integer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1625 1671]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1595 1672])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1674 1687])
+                    ("PrepareSimulation" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1689 1714])
+                    ("GetMaturities" function
+                       (:prototype-flag t
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("Date" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1716 1753])
+                    ("GetUnderlyings" function
+                       (:prototype-flag t
+                        :type ("std::set" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1755 1809])
+                    ("GetContribution" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameter" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SimulatedParameters::value_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1834 1883])
+                            ("maturity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1884 1905])
+                            ("useVolatility" variable (:type "bool") (reparse-symbol arg-sub-list) [1906 1925])
+                            ("underlying" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1925 1965])
+                            ("" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1966 1988]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1811 1996])
+                    ("GetParameters" function (:type ("SimulatedParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1998 2064])
+                    ("IsREadyForSimulation" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2066 2094])
+                    ("private" label nil (reparse-symbol classsubparts) [2096 2104])
+                    ("HandleStreamFailed" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2139 2170]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2107 2174])
+                    ("HandleStreamStale" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2207 2238]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2176 2242])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2275 2307]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2244 2308])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2360 2393])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2394 2435])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2436 2488]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2310 2489])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2537 2571])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2572 2621]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2491 2622])
+                    ("GetInstrumentParameters" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2624 2655])
+                    ("StartSimulation" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2657 2680])
+                    ("ConvertToBaseCurrency" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2711 2731])
+                            ("valueCurrency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2732 2762]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2682 2769])
+                    ("GetSigmaPointWeight" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sigmaPoint" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2798 2832])
+                            ("parameter" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SimulatedParameters::value_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2833 2882])
+                            ("positionParams" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PositionParams" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2883 2920]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2771 2927])
+                    ("GetInstrumentsSet" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentsSet" variable
+                               (:reference 1
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentVenueIdentification" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2952 3017]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2929 3018])
+                    ("GetVegaContribution" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameter" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SimulatedParameters::value_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3047 3096])
+                            ("maturity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3097 3118])
+                            ("underlying" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3119 3159])
+                            ("" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3160 3182]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3020 3190])
+                    ("GetVolatilityContribution" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameter" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SimulatedParameters::value_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3225 3274])
+                            ("maturity" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3275 3296])
+                            ("underlying" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3297 3337])
+                            ("" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3338 3360]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3192 3368])
+                    ("DoRateConversions" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3370 3395])
+                    ("private" label nil (reparse-symbol classsubparts) [3397 3405])
+                    ("m_parameters" variable (:type ("SimulatedParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3408 3441])
+                    ("m_currentPositions" variable (:type ("Positions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3487 3516])
+                    ("m_startOfDayPositions" variable (:type ("Positions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3635 3667])
+                    ("m_currency" variable (:type ("Currency" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3786 3806])
+                    ("m_handler" variable (:type ("IHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3865 3885])
+                    ("m_instrumentParametersStream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3887 3954])
+                    ("m_instrumentAggParam" variable (:type ("InstrumentAggregateParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3956 4007])
+                    ("m_defaultCalculatedValuesSimulationStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4009 4086])
+                    ("m_calculatedValuesFxStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4088 4150])
+                    ("m_fxCalcValuesStreamOpened" variable (:type "bool") (reparse-symbol classsubparts) [4152 4184])
+                    ("m_calculatedValuesFx" variable (:type ("CalculatedInstrumentValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4186 4234])
+                    ("m_underlyingPriceSource" variable (:type ("tbricks::Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4236 4277]))                  
+                :type "class")
+                nil [191 4280]))          
+      :file "InstrumentParametersSimulator.h"
+      :pointmax 4289
+      :fsize 4288
+      :lastmodtime '(21962 60358 342 535000)
+      :unmatched-syntax '((semantic-list 3358 . 3360) (punctuation 3336 . 3337) (semantic-list 3180 . 3182) (punctuation 3158 . 3159) (semantic-list 1986 . 1988) (punctuation 1964 . 1965))
+      :lexical-table 
+        '(("_INSTRUMENTPARAMETERSSIMULATOR_H_")
+          )
+))
+  :file "!home!marselo!Code!alloptions!ao_sources!report!AO_PortfolioPnLVolatility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

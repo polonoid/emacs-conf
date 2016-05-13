@@ -1,0 +1,310 @@
+;; Object array/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "array/"
+  :tables
+  (list
+    (semanticdb-table "elem.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_ELEM_HPP" variable (:constant-flag t) nil [655 688])
+            ("boost/preprocessor/array/data.hpp" include (:system-flag t) nil [691 736])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [737 782])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [783 831])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [832 877])
+            ("BOOST_PP_ARRAY_ELEM" variable (:constant-flag t) nil [1104 1123])
+            ("BOOST_PP_ARRAY_ELEM_I" variable (:constant-flag t) nil [1178 1199]))          
+      :file "elem.hpp"
+      :pointmax 1307
+      :fsize 1306
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1297 . 1298) (punctuation 908 . 909) (punctuation 880 . 881) (punctuation 878 . 879) (punctuation 689 . 690) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PREPROCESSOR_ARRAY_ELEM_HPP")
+          ("BOOST_PP_ARRAY_ELEM" (spp-arg-list ("i" "array") 1123 . 1133) . ((symbol "BOOST_PP_ARRAY_ELEM_I" 1134 . 1155) (semantic-list "(i, array)" 1155 . 1165)))
+          ("BOOST_PP_ARRAY_ELEM_I" (spp-arg-list ("i" "array") 1199 . 1209) . ((symbol "BOOST_PP_TUPLE_ELEM" 1210 . 1229) (semantic-list "(BOOST_PP_ARRAY_SIZE(array), i, BOOST_PP_ARRAY_DATA(array))" 1229 . 1288)))
+          )
+)
+    (semanticdb-table "size.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_SIZE_HPP" variable (:constant-flag t) nil [655 688])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [691 739])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [740 785])
+            ("BOOST_PP_ARRAY_SIZE" variable (:constant-flag t) nil [963 982])
+            ("BOOST_PP_ARRAY_SIZE_I" variable (:constant-flag t) nil [1031 1052])
+            ("BOOST_PP_ARRAY_SIZE_II" variable (:constant-flag t) nil [1101 1123]))          
+      :file "size.hpp"
+      :pointmax 1159
+      :fsize 1158
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1149 . 1150) (punctuation 816 . 817) (punctuation 788 . 789) (punctuation 786 . 787) (punctuation 689 . 690) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_SIZE_II" (spp-arg-list ("size" "data") 1123 . 1135) . ((symbol "size" 1136 . 1140)))
+          ("BOOST_PP_ARRAY_SIZE" (spp-arg-list ("array") 982 . 989) . ((symbol "BOOST_PP_ARRAY_SIZE_I" 990 . 1011) (semantic-list "(array)" 1011 . 1018)))
+          ("BOOST_PREPROCESSOR_ARRAY_SIZE_HPP")
+          ("BOOST_PP_ARRAY_SIZE_I" (spp-arg-list ("array") 1052 . 1059) . ((symbol "BOOST_PP_ARRAY_SIZE_II" 1060 . 1082) (symbol "array" 1083 . 1088)))
+          )
+)
+    (semanticdb-table "data.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_DATA_HPP" variable (:constant-flag t) nil [655 688])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [691 739])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [740 785])
+            ("BOOST_PP_ARRAY_DATA" variable (:constant-flag t) nil [963 982])
+            ("BOOST_PP_ARRAY_DATA_I" variable (:constant-flag t) nil [1031 1052])
+            ("BOOST_PP_ARRAY_DATA_II" variable (:constant-flag t) nil [1101 1123]))          
+      :file "data.hpp"
+      :pointmax 1159
+      :fsize 1158
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1149 . 1150) (punctuation 816 . 817) (punctuation 788 . 789) (punctuation 786 . 787) (punctuation 689 . 690) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_DATA" (spp-arg-list ("array") 982 . 989) . ((symbol "BOOST_PP_ARRAY_DATA_I" 990 . 1011) (semantic-list "(array)" 1011 . 1018)))
+          ("BOOST_PP_ARRAY_DATA_I" (spp-arg-list ("array") 1052 . 1059) . ((symbol "BOOST_PP_ARRAY_DATA_II" 1060 . 1082) (symbol "array" 1083 . 1088)))
+          ("BOOST_PREPROCESSOR_ARRAY_DATA_HPP")
+          ("BOOST_PP_ARRAY_DATA_II" (spp-arg-list ("size" "data") 1123 . 1135) . ((symbol "data" 1136 . 1140)))
+          )
+)
+    (semanticdb-table "insert.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_INSERT_HPP" variable (:constant-flag t) nil [657 692])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [695 744])
+            ("boost/preprocessor/array/elem.hpp" include (:system-flag t) nil [745 790])
+            ("boost/preprocessor/array/push_back.hpp" include (:system-flag t) nil [791 841])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [842 887])
+            ("boost/preprocessor/comparison/not_equal.hpp" include (:system-flag t) nil [888 943])
+            ("boost/preprocessor/control/deduce_d.hpp" include (:system-flag t) nil [944 995])
+            ("boost/preprocessor/control/iif.hpp" include (:system-flag t) nil [996 1042])
+            ("boost/preprocessor/control/while.hpp" include (:system-flag t) nil [1043 1091])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [1092 1137])
+            ("BOOST_PP_ARRAY_INSERT" variable (:constant-flag t) nil [1181 1202])
+            ("BOOST_PP_ARRAY_INSERT_I" variable (:constant-flag t) nil [1289 1312])
+            ("BOOST_PP_ARRAY_INSERT_D" variable (:constant-flag t) nil [1667 1690])
+            ("BOOST_PP_ARRAY_INSERT_D_I" variable (:constant-flag t) nil [1767 1792])
+            ("BOOST_PP_ARRAY_INSERT_P" variable (:constant-flag t) nil [2103 2126])
+            ("BOOST_PP_ARRAY_INSERT_P_I" variable (:constant-flag t) nil [2265 2290])
+            ("BOOST_PP_ARRAY_INSERT_O" variable (:constant-flag t) nil [2556 2579])
+            ("BOOST_PP_ARRAY_INSERT_O_I" variable (:constant-flag t) nil [2805 2830]))          
+      :file "insert.hpp"
+      :pointmax 3090
+      :fsize 3089
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 3080 . 3081) (punctuation 2794 . 2795) (punctuation 2401 . 2402) (punctuation 2254 . 2255) (punctuation 1948 . 1949) (punctuation 1409 . 1410) (punctuation 1377 . 1378) (punctuation 1375 . 1376) (punctuation 1170 . 1171) (punctuation 1140 . 1141) (punctuation 1138 . 1139) (punctuation 693 . 694) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_INSERT_D_I" (spp-arg-list ("d" "array" "i" "elem") 1792 . 1811) . ((symbol "BOOST_PP_TUPLE_ELEM" 1812 . 1831) (semantic-list "(5, 3, BOOST_PP_WHILE_ ## d(BOOST_PP_ARRAY_INSERT_P, BOOST_PP_ARRAY_INSERT_O, (0, i, elem, (0, ()), array)))" 1831 . 1939)))
+          ("BOOST_PP_ARRAY_INSERT_O" (spp-arg-list ("d" "state") 2579 . 2589) . ((symbol "BOOST_PP_ARRAY_INSERT_O_I" 2590 . 2615) (semantic-list "(BOOST_PP_TUPLE_ELEM(5, 0, state), BOOST_PP_TUPLE_ELEM(5, 1, state), BOOST_PP_TUPLE_ELEM(5, 2, state), BOOST_PP_TUPLE_ELEM(5, 3, state), BOOST_PP_TUPLE_ELEM(5, 4, state))" 2615 . 2785)))
+          ("BOOST_PP_ARRAY_INSERT_P" (spp-arg-list ("d" "state") 2126 . 2136) . ((symbol "BOOST_PP_ARRAY_INSERT_P_I" 2137 . 2162) (semantic-list "(nil, nil, nil, BOOST_PP_TUPLE_ELEM(5, 3, state), BOOST_PP_TUPLE_ELEM(5, 4, state))" 2162 . 2245)))
+          ("BOOST_PP_ARRAY_INSERT" (spp-arg-list ("array" "i" "elem") 1202 . 1218) . ((symbol "BOOST_PP_ARRAY_INSERT_I" 1219 . 1242) (semantic-list "(BOOST_PP_DEDUCE_D(), array, i, elem)" 1242 . 1279)))
+          ("BOOST_PP_ARRAY_INSERT_D" (spp-arg-list ("d" "array" "i" "elem") 1690 . 1709) . ((symbol "BOOST_PP_ARRAY_INSERT_D_I" 1710 . 1735) (semantic-list "(d, array, i, elem)" 1735 . 1754)))
+          ("BOOST_PP_ARRAY_INSERT_P_I" (spp-arg-list ("_i" "_ii" "_iii" "res" "arr") 2290 . 2315) . ((symbol "BOOST_PP_NOT_EQUAL" 2316 . 2334) (semantic-list "(BOOST_PP_ARRAY_SIZE(res), BOOST_PP_INC(BOOST_PP_ARRAY_SIZE(arr)))" 2334 . 2400)))
+          ("BOOST_PREPROCESSOR_ARRAY_INSERT_HPP")
+          ("BOOST_PP_ARRAY_INSERT_I" (spp-arg-list ("d" "array" "i" "elem") 1312 . 1331) . ((symbol "BOOST_PP_ARRAY_INSERT_D" 1332 . 1355) (semantic-list "(d, array, i, elem)" 1355 . 1374)))
+          ("BOOST_PP_ARRAY_INSERT_O_I" (spp-arg-list ("n" "i" "elem" "res" "arr") 2830 . 2852) . ((semantic-list "(BOOST_PP_IIF(BOOST_PP_NOT_EQUAL(BOOST_PP_ARRAY_SIZE(res), i), BOOST_PP_INC(n), n), i, elem, BOOST_PP_ARRAY_PUSH_BACK(res, BOOST_PP_IIF(BOOST_PP_NOT_EQUAL(BOOST_PP_ARRAY_SIZE(res), i), BOOST_PP_ARRAY_ELEM(n, arr), elem)), arr)" 2853 . 3079)))
+          )
+)
+    (semanticdb-table "pop_back.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_POP_BACK_HPP" variable (:constant-flag t) nil [659 696])
+            ("boost/preprocessor/arithmetic/dec.hpp" include (:system-flag t) nil [699 748])
+            ("boost/preprocessor/array/elem.hpp" include (:system-flag t) nil [749 794])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [795 840])
+            ("boost/preprocessor/repetition/enum.hpp" include (:system-flag t) nil [841 891])
+            ("boost/preprocessor/repetition/deduce_z.hpp" include (:system-flag t) nil [892 946])
+            ("BOOST_PP_ARRAY_POP_BACK" variable (:constant-flag t) nil [992 1015])
+            ("BOOST_PP_ARRAY_POP_BACK_Z" variable (:constant-flag t) nil [1300 1325])
+            ("BOOST_PP_ARRAY_POP_BACK_Z_D" variable (:constant-flag t) nil [1386 1413])
+            ("BOOST_PP_ARRAY_POP_BACK_I" variable (:constant-flag t) nil [1507 1532])
+            ("BOOST_PP_ARRAY_POP_BACK_M" variable (:constant-flag t) nil [1656 1681]))          
+      :file "pop_back.hpp"
+      :pointmax 1733
+      :fsize 1732
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1723 . 1724) (punctuation 1496 . 1497) (punctuation 1113 . 1114) (punctuation 1079 . 1080) (punctuation 1077 . 1078) (punctuation 981 . 982) (punctuation 949 . 950) (punctuation 947 . 948) (punctuation 697 . 698) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_POP_BACK_Z" (spp-arg-list ("z" "array") 1325 . 1335) . ((symbol "BOOST_PP_ARRAY_POP_BACK_Z_D" 1336 . 1363) (semantic-list "(z, array)" 1363 . 1373)))
+          ("BOOST_PP_ARRAY_POP_BACK_M" (spp-arg-list ("z" "n" "data") 1681 . 1693) . ((symbol "BOOST_PP_ARRAY_ELEM" 1694 . 1713) (semantic-list "(n, data)" 1713 . 1722)))
+          ("BOOST_PREPROCESSOR_ARRAY_POP_BACK_HPP")
+          ("BOOST_PP_ARRAY_POP_BACK" (spp-arg-list ("array") 1015 . 1022) . ((symbol "BOOST_PP_ARRAY_POP_BACK_Z" 1023 . 1048) (semantic-list "(BOOST_PP_DEDUCE_Z(), array)" 1048 . 1076)))
+          ("BOOST_PP_ARRAY_POP_BACK_Z_D" (spp-arg-list ("z" "array") 1413 . 1423) . ((symbol "BOOST_PP_ARRAY_POP_BACK_I" 1424 . 1449) (semantic-list "(z, BOOST_PP_ARRAY_SIZE(array), array)" 1449 . 1487)))
+          ("BOOST_PP_ARRAY_POP_BACK_I" (spp-arg-list ("z" "size" "array") 1532 . 1548) . ((semantic-list "(BOOST_PP_DEC(size), (BOOST_PP_ENUM_ ## z(BOOST_PP_DEC(size), BOOST_PP_ARRAY_POP_BACK_M, array)))" 1549 . 1646)))
+          )
+)
+    (semanticdb-table "pop_front.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_POP_FRONT_HPP" variable (:constant-flag t) nil [660 698])
+            ("boost/preprocessor/arithmetic/dec.hpp" include (:system-flag t) nil [701 750])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [751 800])
+            ("boost/preprocessor/array/elem.hpp" include (:system-flag t) nil [801 846])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [847 892])
+            ("boost/preprocessor/repetition/enum.hpp" include (:system-flag t) nil [893 943])
+            ("boost/preprocessor/repetition/deduce_z.hpp" include (:system-flag t) nil [944 998])
+            ("BOOST_PP_ARRAY_POP_FRONT" variable (:constant-flag t) nil [1045 1069])
+            ("BOOST_PP_ARRAY_POP_FRONT_Z" variable (:constant-flag t) nil [1358 1384])
+            ("BOOST_PP_ARRAY_POP_FRONT_Z_D" variable (:constant-flag t) nil [1446 1474])
+            ("BOOST_PP_ARRAY_POP_FRONT_I" variable (:constant-flag t) nil [1569 1595])
+            ("BOOST_PP_ARRAY_POP_FRONT_M" variable (:constant-flag t) nil [1720 1746]))          
+      :file "pop_front.hpp"
+      :pointmax 1812
+      :fsize 1811
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1802 . 1803) (punctuation 1558 . 1559) (punctuation 1169 . 1170) (punctuation 1134 . 1135) (punctuation 1132 . 1133) (punctuation 1034 . 1035) (punctuation 1001 . 1002) (punctuation 999 . 1000) (punctuation 699 . 700) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_POP_FRONT_Z" (spp-arg-list ("z" "array") 1384 . 1394) . ((symbol "BOOST_PP_ARRAY_POP_FRONT_Z_D" 1395 . 1423) (semantic-list "(z, array)" 1423 . 1433)))
+          ("BOOST_PP_ARRAY_POP_FRONT_M" (spp-arg-list ("z" "n" "data") 1746 . 1758) . ((symbol "BOOST_PP_ARRAY_ELEM" 1759 . 1778) (semantic-list "(BOOST_PP_INC(n), data)" 1778 . 1801)))
+          ("BOOST_PREPROCESSOR_ARRAY_POP_FRONT_HPP")
+          ("BOOST_PP_ARRAY_POP_FRONT" (spp-arg-list ("array") 1069 . 1076) . ((symbol "BOOST_PP_ARRAY_POP_FRONT_Z" 1077 . 1103) (semantic-list "(BOOST_PP_DEDUCE_Z(), array)" 1103 . 1131)))
+          ("BOOST_PP_ARRAY_POP_FRONT_Z_D" (spp-arg-list ("z" "array") 1474 . 1484) . ((symbol "BOOST_PP_ARRAY_POP_FRONT_I" 1485 . 1511) (semantic-list "(z, BOOST_PP_ARRAY_SIZE(array), array)" 1511 . 1549)))
+          ("BOOST_PP_ARRAY_POP_FRONT_I" (spp-arg-list ("z" "size" "array") 1595 . 1611) . ((semantic-list "(BOOST_PP_DEC(size), (BOOST_PP_ENUM_ ## z(BOOST_PP_DEC(size), BOOST_PP_ARRAY_POP_FRONT_M, array)))" 1612 . 1710)))
+          )
+)
+    (semanticdb-table "push_back.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_PUSH_BACK_HPP" variable (:constant-flag t) nil [660 698])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [701 750])
+            ("boost/preprocessor/array/data.hpp" include (:system-flag t) nil [751 796])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [797 842])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [843 891])
+            ("boost/preprocessor/punctuation/comma_if.hpp" include (:system-flag t) nil [892 947])
+            ("boost/preprocessor/tuple/rem.hpp" include (:system-flag t) nil [948 992])
+            ("BOOST_PP_ARRAY_PUSH_BACK" variable (:constant-flag t) nil [1242 1266])
+            ("BOOST_PP_ARRAY_PUSH_BACK_D" variable (:constant-flag t) nil [1332 1358])
+            ("BOOST_PP_ARRAY_PUSH_BACK_I" variable (:constant-flag t) nil [1480 1506]))          
+      :file "push_back.hpp"
+      :pointmax 1618
+      :fsize 1617
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1608 . 1609) (punctuation 1469 . 1470) (punctuation 1028 . 1029) (punctuation 995 . 996) (punctuation 993 . 994) (punctuation 699 . 700) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PREPROCESSOR_ARRAY_PUSH_BACK_HPP")
+          ("BOOST_PP_ARRAY_PUSH_BACK_D" (spp-arg-list ("array" "elem") 1358 . 1371) . ((symbol "BOOST_PP_ARRAY_PUSH_BACK_I" 1372 . 1398) (semantic-list "(BOOST_PP_ARRAY_SIZE(array), BOOST_PP_ARRAY_DATA(array), elem)" 1398 . 1460)))
+          ("BOOST_PP_ARRAY_PUSH_BACK_I" (spp-arg-list ("size" "data" "elem") 1506 . 1524) . ((semantic-list "(BOOST_PP_INC(size), (BOOST_PP_TUPLE_REM(size) data BOOST_PP_COMMA_IF(size) elem))" 1525 . 1607)))
+          ("BOOST_PP_ARRAY_PUSH_BACK" (spp-arg-list ("array" "elem") 1266 . 1279) . ((symbol "BOOST_PP_ARRAY_PUSH_BACK_D" 1280 . 1306) (semantic-list "(array, elem)" 1306 . 1319)))
+          )
+)
+    (semanticdb-table "push_front.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_PUSH_FRONT_HPP" variable (:constant-flag t) nil [661 700])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [703 752])
+            ("boost/preprocessor/array/data.hpp" include (:system-flag t) nil [753 798])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [799 844])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [845 893])
+            ("boost/preprocessor/punctuation/comma_if.hpp" include (:system-flag t) nil [894 949])
+            ("boost/preprocessor/tuple/rem.hpp" include (:system-flag t) nil [950 994])
+            ("BOOST_PP_ARRAY_PUSH_FRONT" variable (:constant-flag t) nil [1247 1272])
+            ("BOOST_PP_ARRAY_PUSH_FRONT_D" variable (:constant-flag t) nil [1339 1366])
+            ("BOOST_PP_ARRAY_PUSH_FRONT_I" variable (:constant-flag t) nil [1489 1516]))          
+      :file "push_front.hpp"
+      :pointmax 1628
+      :fsize 1627
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1618 . 1619) (punctuation 1478 . 1479) (punctuation 1031 . 1032) (punctuation 997 . 998) (punctuation 995 . 996) (punctuation 701 . 702) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_PUSH_FRONT" (spp-arg-list ("array" "elem") 1272 . 1285) . ((symbol "BOOST_PP_ARRAY_PUSH_FRONT_D" 1286 . 1313) (semantic-list "(array, elem)" 1313 . 1326)))
+          ("BOOST_PP_ARRAY_PUSH_FRONT_D" (spp-arg-list ("array" "elem") 1366 . 1379) . ((symbol "BOOST_PP_ARRAY_PUSH_FRONT_I" 1380 . 1407) (semantic-list "(BOOST_PP_ARRAY_SIZE(array), BOOST_PP_ARRAY_DATA(array), elem)" 1407 . 1469)))
+          ("BOOST_PP_ARRAY_PUSH_FRONT_I" (spp-arg-list ("size" "data" "elem") 1516 . 1534) . ((semantic-list "(BOOST_PP_INC(size), (elem BOOST_PP_COMMA_IF(size) BOOST_PP_TUPLE_REM(size) data))" 1535 . 1617)))
+          ("BOOST_PREPROCESSOR_ARRAY_PUSH_FRONT_HPP")
+          )
+)
+    (semanticdb-table "remove.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_REMOVE_HPP" variable (:constant-flag t) nil [657 692])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [695 744])
+            ("boost/preprocessor/array/elem.hpp" include (:system-flag t) nil [745 790])
+            ("boost/preprocessor/array/push_back.hpp" include (:system-flag t) nil [791 841])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [842 887])
+            ("boost/preprocessor/comparison/not_equal.hpp" include (:system-flag t) nil [888 943])
+            ("boost/preprocessor/control/deduce_d.hpp" include (:system-flag t) nil [944 995])
+            ("boost/preprocessor/control/iif.hpp" include (:system-flag t) nil [996 1042])
+            ("boost/preprocessor/control/while.hpp" include (:system-flag t) nil [1043 1091])
+            ("boost/preprocessor/tuple/eat.hpp" include (:system-flag t) nil [1092 1136])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [1137 1182])
+            ("BOOST_PP_ARRAY_REMOVE" variable (:constant-flag t) nil [1226 1247])
+            ("BOOST_PP_ARRAY_REMOVE_I" variable (:constant-flag t) nil [1322 1345])
+            ("BOOST_PP_ARRAY_REMOVE_D" variable (:constant-flag t) nil [1676 1699])
+            ("BOOST_PP_ARRAY_REMOVE_D_I" variable (:constant-flag t) nil [1764 1789])
+            ("BOOST_PP_ARRAY_REMOVE_P" variable (:constant-flag t) nil [1944 1967])
+            ("BOOST_PP_ARRAY_REMOVE_O" variable (:constant-flag t) nil [2226 2249])
+            ("BOOST_PP_ARRAY_REMOVE_O_I" variable (:constant-flag t) nil [2696 2721]))          
+      :file "remove.hpp"
+      :pointmax 2907
+      :fsize 2906
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 2897 . 2898) (punctuation 2415 . 2416) (punctuation 2077 . 2078) (punctuation 1933 . 1934) (punctuation 1430 . 1431) (punctuation 1398 . 1399) (punctuation 1396 . 1397) (punctuation 1215 . 1216) (punctuation 1185 . 1186) (punctuation 1183 . 1184) (punctuation 693 . 694) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_REMOVE_I" (spp-arg-list ("d" "array" "i") 1345 . 1358) . ((symbol "BOOST_PP_ARRAY_REMOVE_D" 1359 . 1382) (semantic-list "(d, array, i)" 1382 . 1395)))
+          ("BOOST_PP_ARRAY_REMOVE_D_I" (spp-arg-list ("d" "array" "i") 1789 . 1802) . ((symbol "BOOST_PP_TUPLE_ELEM" 1803 . 1822) (semantic-list "(4, 2, BOOST_PP_WHILE_ ## d(BOOST_PP_ARRAY_REMOVE_P, BOOST_PP_ARRAY_REMOVE_O, (0, i, (0, ()), array)))" 1822 . 1924)))
+          ("BOOST_PP_ARRAY_REMOVE_O" (spp-arg-list ("d" "st") 2249 . 2256) . ((symbol "BOOST_PP_ARRAY_REMOVE_O_I" 2257 . 2282) (semantic-list "(BOOST_PP_TUPLE_ELEM(4, 0, st), BOOST_PP_TUPLE_ELEM(4, 1, st), BOOST_PP_TUPLE_ELEM(4, 2, st), BOOST_PP_TUPLE_ELEM(4, 3, st))" 2282 . 2406)))
+          ("BOOST_PP_ARRAY_REMOVE" (spp-arg-list ("array" "i") 1247 . 1257) . ((symbol "BOOST_PP_ARRAY_REMOVE_I" 1258 . 1281) (semantic-list "(BOOST_PP_DEDUCE_D(), array, i)" 1281 . 1312)))
+          ("BOOST_PP_ARRAY_REMOVE_P" (spp-arg-list ("d" "st") 1967 . 1974) . ((symbol "BOOST_PP_NOT_EQUAL" 1975 . 1993) (semantic-list "(BOOST_PP_TUPLE_ELEM(4, 0, st), BOOST_PP_ARRAY_SIZE(BOOST_PP_TUPLE_ELEM(4, 3, st)))" 1993 . 2076)))
+          ("BOOST_PP_ARRAY_REMOVE_D" (spp-arg-list ("d" "array" "i") 1699 . 1712) . ((symbol "BOOST_PP_ARRAY_REMOVE_D_I" 1713 . 1738) (semantic-list "(d, array, i)" 1738 . 1751)))
+          ("BOOST_PREPROCESSOR_ARRAY_REMOVE_HPP")
+          ("BOOST_PP_ARRAY_REMOVE_O_I" (spp-arg-list ("n" "i" "res" "arr") 2721 . 2737) . ((semantic-list "(BOOST_PP_INC(n), i, BOOST_PP_IIF(BOOST_PP_NOT_EQUAL(n, i), BOOST_PP_ARRAY_PUSH_BACK, BOOST_PP_TUPLE_ELEM_2_0)(res, BOOST_PP_ARRAY_ELEM(n, arr)), arr)" 2738 . 2888)))
+          )
+)
+    (semanticdb-table "replace.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_REPLACE_HPP" variable (:constant-flag t) nil [658 694])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [697 746])
+            ("boost/preprocessor/array/elem.hpp" include (:system-flag t) nil [747 792])
+            ("boost/preprocessor/array/push_back.hpp" include (:system-flag t) nil [793 843])
+            ("boost/preprocessor/comparison/not_equal.hpp" include (:system-flag t) nil [844 899])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [900 948])
+            ("boost/preprocessor/control/deduce_d.hpp" include (:system-flag t) nil [949 1000])
+            ("boost/preprocessor/control/iif.hpp" include (:system-flag t) nil [1001 1047])
+            ("boost/preprocessor/control/while.hpp" include (:system-flag t) nil [1048 1096])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [1097 1142])
+            ("BOOST_PP_ARRAY_REPLACE" variable (:constant-flag t) nil [1187 1209])
+            ("BOOST_PP_ARRAY_REPLACE_I" variable (:constant-flag t) nil [1297 1321])
+            ("BOOST_PP_ARRAY_REPLACE_D" variable (:constant-flag t) nil [1681 1705])
+            ("BOOST_PP_ARRAY_REPLACE_D_I" variable (:constant-flag t) nil [1783 1809])
+            ("BOOST_PP_ARRAY_REPLACE_P" variable (:constant-flag t) nil [1978 2002])
+            ("BOOST_PP_ARRAY_REPLACE_O" variable (:constant-flag t) nil [2278 2302])
+            ("BOOST_PP_ARRAY_REPLACE_O_I" variable (:constant-flag t) nil [2529 2555]))          
+      :file "replace.hpp"
+      :pointmax 2726
+      :fsize 2725
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 2716 . 2717) (punctuation 2518 . 2519) (punctuation 2121 . 2122) (punctuation 1967 . 1968) (punctuation 1420 . 1421) (punctuation 1387 . 1388) (punctuation 1385 . 1386) (punctuation 1176 . 1177) (punctuation 1145 . 1146) (punctuation 1143 . 1144) (punctuation 695 . 696) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PREPROCESSOR_ARRAY_REPLACE_HPP")
+          ("BOOST_PP_ARRAY_REPLACE_D" (spp-arg-list ("d" "array" "i" "elem") 1705 . 1724) . ((symbol "BOOST_PP_ARRAY_REPLACE_D_I" 1725 . 1751) (semantic-list "(d, array, i, elem)" 1751 . 1770)))
+          ("BOOST_PP_ARRAY_REPLACE" (spp-arg-list ("array" "i" "elem") 1209 . 1225) . ((symbol "BOOST_PP_ARRAY_REPLACE_I" 1226 . 1250) (semantic-list "(BOOST_PP_DEDUCE_D(), array, i, elem)" 1250 . 1287)))
+          ("BOOST_PP_ARRAY_REPLACE_D_I" (spp-arg-list ("d" "array" "i" "elem") 1809 . 1828) . ((symbol "BOOST_PP_TUPLE_ELEM" 1829 . 1848) (semantic-list "(5, 3, BOOST_PP_WHILE_ ## d(BOOST_PP_ARRAY_REPLACE_P, BOOST_PP_ARRAY_REPLACE_O, (0, i, elem, (0, ()), array)))" 1848 . 1958)))
+          ("BOOST_PP_ARRAY_REPLACE_I" (spp-arg-list ("d" "array" "i" "elem") 1321 . 1340) . ((symbol "BOOST_PP_ARRAY_REPLACE_D" 1341 . 1365) (semantic-list "(d, array, i, elem)" 1365 . 1384)))
+          ("BOOST_PP_ARRAY_REPLACE_O" (spp-arg-list ("d" "state") 2302 . 2312) . ((symbol "BOOST_PP_ARRAY_REPLACE_O_I" 2313 . 2339) (semantic-list "(BOOST_PP_TUPLE_ELEM(5, 0, state), BOOST_PP_TUPLE_ELEM(5, 1, state), BOOST_PP_TUPLE_ELEM(5, 2, state), BOOST_PP_TUPLE_ELEM(5, 3, state), BOOST_PP_TUPLE_ELEM(5, 4, state))" 2339 . 2509)))
+          ("BOOST_PP_ARRAY_REPLACE_O_I" (spp-arg-list ("n" "i" "elem" "res" "arr") 2555 . 2577) . ((semantic-list "(BOOST_PP_INC(n), i, elem, BOOST_PP_ARRAY_PUSH_BACK(res, BOOST_PP_IIF(BOOST_PP_NOT_EQUAL(n, i), BOOST_PP_ARRAY_ELEM(n, arr), elem)), arr)" 2578 . 2715)))
+          ("BOOST_PP_ARRAY_REPLACE_P" (spp-arg-list ("d" "state") 2002 . 2012) . ((symbol "BOOST_PP_NOT_EQUAL" 2013 . 2031) (semantic-list "(BOOST_PP_TUPLE_ELEM(5, 0, state), BOOST_PP_ARRAY_SIZE(BOOST_PP_TUPLE_ELEM(5, 4, state)))" 2031 . 2120)))
+          )
+)
+    (semanticdb-table "reverse.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_REVERSE_HPP" variable (:constant-flag t) nil [658 694])
+            ("boost/preprocessor/array/data.hpp" include (:system-flag t) nil [697 742])
+            ("boost/preprocessor/array/size.hpp" include (:system-flag t) nil [743 788])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [789 837])
+            ("boost/preprocessor/tuple/reverse.hpp" include (:system-flag t) nil [838 886])
+            ("BOOST_PP_ARRAY_REVERSE" variable (:constant-flag t) nil [1146 1168])
+            ("BOOST_PP_ARRAY_REVERSE_I" variable (:constant-flag t) nil [1220 1244]))          
+      :file "reverse.hpp"
+      :pointmax 1379
+      :fsize 1378
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1369 . 1370) (punctuation 920 . 921) (punctuation 889 . 890) (punctuation 887 . 888) (punctuation 695 . 696) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_ARRAY_REVERSE_I" (spp-arg-list ("array") 1244 . 1251) . ((semantic-list "(BOOST_PP_ARRAY_SIZE(array), BOOST_PP_TUPLE_REVERSE(BOOST_PP_ARRAY_SIZE(array), BOOST_PP_ARRAY_DATA(array)))" 1252 . 1360)))
+          ("BOOST_PP_ARRAY_REVERSE" (spp-arg-list ("array") 1168 . 1175) . ((symbol "BOOST_PP_ARRAY_REVERSE_I" 1176 . 1200) (semantic-list "(array)" 1200 . 1207)))
+          ("BOOST_PREPROCESSOR_ARRAY_REVERSE_HPP")
+          )
+))
+  :file "!usr!include!boost!preprocessor!array!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

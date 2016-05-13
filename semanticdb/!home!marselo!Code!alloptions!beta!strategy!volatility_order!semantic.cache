@@ -1,0 +1,290 @@
+;; Object volatility_order/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "volatility_order/"
+  :tables
+  (list
+    (semanticdb-table "OptionPriceCache.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("OPTION_PRICE_CACHE_H" variable (:constant-flag t) nil [38 58])
+            ("shared/API.h" include (:system-flag t) nil [60 83])
+            ("map" include (:system-flag t) nil [84 98])
+            ("boost/function.hpp" include (:system-flag t) nil [99 128])
+            ("boost/optional.hpp" include (:system-flag t) nil [129 158])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [159 208])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [210 234])
+            ("OPTION_PRICE_CACHE_SIZE" variable (:constant-flag t) nil [244 267])
+            ("OptionPriceCache" type
+               (:superclasses 
+                  ( ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Union" type
+                       (:members 
+                          ( ("Pair" type
+                               (:typedef ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("uint64_t" type nil nil nil)
+                                          ("uint64_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::pair"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [363 406])
+                            ("u" variable (:type ("" type
+                                 (:members 
+                                    ( ("i" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [423 434])
+                                      ("p" variable (:type "double") (reparse-symbol classsubparts) [438 447]))                                    
+                                  :type "union")
+                                  nil nil)) (reparse-symbol classsubparts) [410 454])
+                            ("Union" function
+                               (:constructor-flag t
+                                :type ("Union" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [458 484])
+                            ("Union" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Union" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [493 508]))                                  
+                                :type ("Union" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [487 520])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Union" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [540 555]))                                  
+                                :type ("Union" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [523 599])
+                            ("Union" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("uuid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Uuid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [608 625]))                                  
+                                :type ("Union" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [602 669])
+                            ("Union" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("p" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Price" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [678 693]))                                  
+                                :type ("Union" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [672 727])
+                            ("Uuid" function (:type "int") (reparse-symbol classsubparts) [739 782])
+                            ("<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Union" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [801 816]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [786 846]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [345 850])
+                    ("Map" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("Union" type nil nil nil)
+                                  ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [853 909])
+                    ("public" label nil (reparse-symbol classsubparts) [910 917])
+                    ("UpdateFunc" variable (:type "int") (reparse-symbol classsubparts) [951 962])
+                    ("FailFunc" variable (:type "int") (reparse-symbol classsubparts) [1009 1018])
+                    ("Options" type
+                       (:members 
+                          ( ("Map" type
+                               (:typedef ("SparseHash" type
+                                     (:template-specifier 
+                                        ( ("InstrumentIdentifier" type nil nil nil)
+                                          ("Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "SparseHash"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1041 1094])
+                            ("instrument" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1098 1120])
+                            ("underlyingMIC" variable (:type ("MIC" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1123 1141])
+                            ("side" variable (:type ("Side" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1144 1154])
+                            ("volatilityMargin" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1157 1181])
+                            ("volatilityMap" variable (:type ("Map" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1184 1202])
+                            ("underlyingPrice" variable (:type ("boost::optional" type
+                                 (:template-specifier 
+                                    ( ("Price" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1205 1244])
+                            ("tickRule" variable (:type ("TickRule" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1289 1307]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1021 1311])
+                    ("OptionPriceCache" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("updateFunc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UpdateFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1331 1360])
+                            ("failFunc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FailFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1361 1386]))                          
+                        :type ("OptionPriceCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1314 1426])
+                    ("IsSnapshotDone" function (:type "bool") (reparse-symbol classsubparts) [1429 1529])
+                    ("Open" function
+                       (:arguments 
+                          ( ("type_" variable (:type ("Stream::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1542 1561])
+                            ("options_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1562 1586]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1532 1875])
+                    ("Close" function (:type "void") (reparse-symbol classsubparts) [1878 2094])
+                    ("GetFairPrice" function (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2097 2194])
+                    ("GetFairPrice" function
+                       (:arguments 
+                          ( ("underlyingPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2217 2246]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2197 2627])
+                    ("GetVolatility" function
+                       (:arguments 
+                          ( ("instrumentId_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2651 2693]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2630 2850])
+                    ("Recenter" function (:type "bool") (reparse-symbol classsubparts) [2853 3238])
+                    ("GetDelta" function
+                       (:constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3241 3289])
+                    ("GetVega" function
+                       (:constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3291 3337])
+                    ("ClearOptions" function (:type "void") (reparse-symbol classsubparts) [3340 3384])
+                    ("GetOptions" function
+                       (:constant-flag t
+                        :type ("Options" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3386 3433])
+                    ("private" label nil (reparse-symbol classsubparts) [3434 3442])
+                    ("GetMultiplier" function (:type "int") (reparse-symbol classsubparts) [3444 3565])
+                    ("GetRecalculationBoundary" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3568 3652])
+                    ("GetOverrideParameters" function
+                       (:arguments 
+                          ( ("volatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3698 3723]))                          
+                        :type ("InstrumentParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3655 4738])
+                    ("OpenPriceStream" function
+                       (:arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4762 4775]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4741 7089])
+                    ("OpenVolatilityStream" function (:type "void") (reparse-symbol classsubparts) [7092 8735])
+                    ("RequestVolatilityMode" function (:type "bool") (reparse-symbol classsubparts) [8738 8804])
+                    ("HandleSnapshotEnd" function
+                       (:arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8830 8864]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8807 9160])
+                    ("HandleStreamStale" function
+                       (:arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9186 9220]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9163 9300])
+                    ("HandleStreamFailed" function
+                       (:arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9327 9361]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9303 9442])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9486 9520])
+                            ("update_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9521 9571]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9448 11314])
+                    ("stream" variable
+                       (:dereference 1
+                        :type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11318 11363])
+                    ("current" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11365 11380])
+                    ("type" variable (:type ("Stream::Type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11383 11401])
+                    ("delta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11403 11416])
+                    ("vega" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11418 11430])
+                    ("singlePrice" variable (:type "bool") (reparse-symbol classsubparts) [11432 11449])
+                    ("options" variable (:type ("Options" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11451 11467])
+                    ("priceMap" variable
+                       (:dereference 1
+                        :type ("Map" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11469 11485])
+                    ("update" variable (:type ("UpdateFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11488 11506])
+                    ("fail" variable (:type ("FailFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11508 11522]))                  
+                :type "class")
+                nil [272 11525]))          
+      :file "OptionPriceCache.h"
+      :pointmax 11534
+      :fsize 11533
+      :lastmodtime '(21962 60358 335319 204000)
+      :unmatched-syntax '((punctuation 1007 . 1008) (semantic-list 992 . 1007) (VOID 988 . 992) (punctuation 987 . 988) (symbol 979 . 987) (punctuation 978 . 979) (punctuation 977 . 978) (symbol 972 . 977) (TYPEDEF 964 . 971) (punctuation 949 . 950) (semantic-list 947 . 949) (VOID 943 . 947) (punctuation 942 . 943) (symbol 934 . 942) (punctuation 933 . 934) (punctuation 932 . 933) (symbol 927 . 932) (TYPEDEF 919 . 926) (OPERATOR 730 . 738) (OPERATOR 730 . 738))
+      :lexical-table 
+        '(("OPTION_PRICE_CACHE_SIZE" . ((number "10" 268 . 270)))
+          ("OPTION_PRICE_CACHE_H")
+          )
+))
+  :file "!home!marselo!Code!alloptions!beta!strategy!volatility_order!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

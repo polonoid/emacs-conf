@@ -1,0 +1,473 @@
+;; Object AO_VegaTrader/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_VegaTrader/"
+  :tables
+  (list
+    (semanticdb-table "InstrumentsHelper.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("INSTRUMENTS_HELPER_H" variable (:constant-flag t) nil [38 58])
+            ("shared/API.h" include (:system-flag t) nil [60 83])
+            ("boost/function.hpp" include (:system-flag t) nil [84 113])
+            ("map" include (:system-flag t) nil [114 128])
+            ("algorithm" include (:system-flag t) nil [129 149])
+            ("AO_SharedGlobal/Global/Number.h" include nil nil [150 192])
+            ("AO_SharedGlobal/Global/AO_Utils.h" include nil nil [193 237])
+            ("tbricks_definitions.h" include nil nil [238 270])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [272 296])
+            ("InstrumentsHelper" type
+               (:superclasses 
+                  ( ("InstrumentStream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Data" type
+                       (:members 
+                          ( ("instrument" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [420 442])
+                            ("bidEnabled" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [445 464])
+                            ("askEnabled" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [467 486])
+                            ("trading" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [489 505]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [403 509])
+                    ("Map" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("Data" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [512 563])
+                    ("public" label nil (reparse-symbol classsubparts) [564 571])
+                    ("UpdateFunc" variable (:type "int") (reparse-symbol classsubparts) [632 643])
+                    ("FailFunc" variable (:type "int") (reparse-symbol classsubparts) [690 699])
+                    ("InstrumentsHelper" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("updateFunc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UpdateFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [720 749])
+                            ("failFunc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FailFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [750 775]))                          
+                        :type ("InstrumentsHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [702 815])
+                    ("Close" function (:type "void") (reparse-symbol classsubparts) [818 975])
+                    ("Open" function
+                       (:arguments 
+                          ( ("type" variable (:type ("Stream::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [988 1006])
+                            ("referenceInstrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1007 1045]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [978 2413])
+                    ("IsSnapshotDone" function (:type "bool") (reparse-symbol classsubparts) [2416 2526])
+                    ("CanBuy" function
+                       (:arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2541 2582]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2529 2644])
+                    ("CanSell" function
+                       (:arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2660 2701]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2647 2764])
+                    ("CanTrade" function
+                       (:arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2781 2822])
+                            ("ratio" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2823 2843]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2767 3097])
+                    ("CanTrade" function
+                       (:arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3114 3155])
+                            ("side" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Side" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3156 3173]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3100 3449])
+                    ("GetInstruments" function
+                       (:arguments 
+                          ( ("numberOfStrikes" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3501 3524]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3452 5256])
+                    ("GetInstrument" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5291 5332]))                          
+                        :type ("Instrument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5259 5483])
+                    ("private" label nil (reparse-symbol classsubparts) [5484 5492])
+                    ("HandleInstrument" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5519 5551])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5552 5581]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5497 5741])
+                    ("HandleInstrumentInvalidate" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5779 5811])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5812 5844]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5747 5936])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5983 6016])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6017 6058])
+                            ("update_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6059 6112]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5942 6836])
+                    ("HandleStreamFailed" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6866 6907]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6842 6995])
+                    ("HandleStreamStale" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7024 7065]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7001 7152])
+                    ("HandleSnapshotEnd" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7181 7222]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7158 7312])
+                    ("reference" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7318 7349])
+                    ("instrumentStream" variable (:type ("InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7352 7386])
+                    ("parametersStream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7388 7443])
+                    ("map" variable (:type ("Map" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7446 7454])
+                    ("update" variable (:type ("UpdateFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7457 7475])
+                    ("fail" variable (:type ("FailFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7477 7491]))                  
+                :type "class")
+                nil [298 7494]))          
+      :file "InstrumentsHelper.h"
+      :pointmax 7503
+      :fsize 7502
+      :lastmodtime '(21962 60358 20341 142000)
+      :unmatched-syntax '((punctuation 688 . 689) (semantic-list 673 . 688) (VOID 669 . 673) (punctuation 668 . 669) (symbol 660 . 668) (punctuation 659 . 660) (punctuation 658 . 659) (symbol 653 . 658) (TYPEDEF 645 . 652) (punctuation 630 . 631) (semantic-list 601 . 630) (VOID 597 . 601) (punctuation 596 . 597) (symbol 588 . 596) (punctuation 587 . 588) (punctuation 586 . 587) (symbol 581 . 586) (TYPEDEF 573 . 580))
+      :lexical-table 
+        '(("INSTRUMENTS_HELPER_H")
+          )
+)
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 38498
+      :lastmodtime '(22006 31481 368660 657000))
+    (semanticdb-table "PositionHelper.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("POSITION_HELPER_H" variable (:constant-flag t) nil [35 52])
+            ("shared/API.h" include (:system-flag t) nil [54 77])
+            ("boost/function.hpp" include (:system-flag t) nil [78 107])
+            ("AO_SharedGlobal/Global/Number.h" include nil nil [108 150])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [152 176])
+            ("PositionHelper" type
+               (:superclasses 
+                  ( ("PositionStream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Data" type
+                       (:members 
+                          ( ("Data" function
+                               (:constructor-flag t
+                                :type ("Data" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [292 320])
+                            ("netPosition" variable (:type ("ao::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [324 347])
+                            ("volatility" variable (:type ("ao::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [350 372])
+                            ("volatilityOverride" variable (:type ("ao::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [375 405])
+                            ("vega" variable (:type ("ao::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [408 424])
+                            ("delta" variable (:type ("ao::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [427 444]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [275 448])
+                    ("Map" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("Data" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [451 502])
+                    ("public" label nil (reparse-symbol classsubparts) [503 510])
+                    ("InstrumentFunc" variable (:type "int") (reparse-symbol classsubparts) [584 599])
+                    ("UpdateFunc" variable (:type "int") (reparse-symbol classsubparts) [660 671])
+                    ("FailFunc" variable (:type "int") (reparse-symbol classsubparts) [718 727])
+                    ("PositionHelper" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("instrumentFunc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [745 782])
+                            ("updateFunc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UpdateFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [783 812])
+                            ("failFunc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FailFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [813 838]))                          
+                        :type ("PositionHelper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [730 909])
+                    ("Close" function (:type "void") (reparse-symbol classsubparts) [912 1042])
+                    ("Open" function
+                       (:arguments 
+                          ( ("type" variable (:type ("Stream::Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1055 1073])
+                            ("portfolioId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1074 1113])
+                            ("instruments" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1114 1167])
+                            ("underlyingMIC" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MIC" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1168 1194])
+                            ("" variable (:type ("MIC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1195 1200]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1045 2245])
+                    ("IsOpen" function (:type "bool") (reparse-symbol classsubparts) [2248 2303])
+                    ("IsSnapshotDone" function (:type "bool") (reparse-symbol classsubparts) [2305 2414])
+                    ("GetVolatility" function
+                       (:arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2442 2481]))                          
+                        :type ("ao::Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2417 2645])
+                    ("GetInstrumentVega" function
+                       (:arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2677 2716]))                          
+                        :type ("ao::Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2648 2833])
+                    ("GetDelta" function
+                       (:arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2856 2895]))                          
+                        :type ("ao::Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2836 3013])
+                    ("GetVega" function
+                       (:arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3035 3074]))                          
+                        :type ("ao::Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3016 3236])
+                    ("GetPositionVega" function (:type ("ao::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3239 3497])
+                    ("SetVolatilityOverride" function
+                       (:arguments 
+                          ( ("binary" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Binary" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3527 3548]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3500 4054])
+                    ("private" label nil (reparse-symbol classsubparts) [4056 4064])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4107 4141])
+                            ("update_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4142 4192]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4069 5014])
+                    ("HandlePosition" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5040 5072])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5073 5099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5020 5334])
+                    ("HandlePositionInvalidate" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5370 5402])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5403 5425]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5340 5437])
+                    ("HandleStreamFailed" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5467 5508]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5443 5593])
+                    ("HandleStreamStale" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5622 5663]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5599 5747])
+                    ("HandleSnapshotEnd" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5776 5817]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5753 5907])
+                    ("calculationStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5910 5963])
+                    ("positionStream" variable (:type ("PositionStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5965 5995])
+                    ("map" variable (:type ("Map" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5998 6006])
+                    ("getInstrument" variable (:type ("InstrumentFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6009 6038])
+                    ("update" variable (:type ("UpdateFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6040 6058])
+                    ("fail" variable (:type ("FailFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6060 6074]))                  
+                :type "class")
+                nil [178 6077]))          
+      :file "PositionHelper.h"
+      :pointmax 6086
+      :fsize 6085
+      :lastmodtime '(21962 60358 20341 142000)
+      :unmatched-syntax '((semantic-list 1198 . 1200) (punctuation 1193 . 1194) (punctuation 716 . 717) (semantic-list 701 . 716) (VOID 697 . 701) (punctuation 696 . 697) (symbol 688 . 696) (punctuation 687 . 688) (punctuation 686 . 687) (symbol 681 . 686) (TYPEDEF 673 . 680) (punctuation 658 . 659) (semantic-list 629 . 658) (VOID 625 . 629) (punctuation 624 . 625) (symbol 616 . 624) (punctuation 615 . 616) (punctuation 614 . 615) (symbol 609 . 614) (TYPEDEF 601 . 608) (punctuation 582 . 583) (semantic-list 553 . 582) (punctuation 552 . 553) (symbol 542 . 552) (CONST 536 . 541) (punctuation 535 . 536) (symbol 527 . 535) (punctuation 526 . 527) (punctuation 525 . 526) (symbol 520 . 525) (TYPEDEF 512 . 519))
+      :lexical-table 
+        '(("POSITION_HELPER_H")
+          )
+))
+  :file "!home!marselo!Code!alloptions!ao_sources!strategy!AO_VegaTrader!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

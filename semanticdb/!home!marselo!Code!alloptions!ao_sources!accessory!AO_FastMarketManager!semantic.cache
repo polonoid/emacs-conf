@@ -1,0 +1,1340 @@
+;; Object AO_FastMarketManager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_FastMarketManager/"
+  :tables
+  (list
+    (semanticdb-table "BulkParametersCopier.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BulkParametersCopier.h" include nil nil [104 137])
+            ("boost/foreach.hpp" include (:system-flag t) nil [138 166])
+            ("boost/bind.hpp" include (:system-flag t) nil [167 192])
+            ("boost/make_shared.hpp" include (:system-flag t) nil [193 225])
+            ("ParametersModifierCreatorFactory.h" include nil nil [226 271])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [273 297])
+            ("AO" type
+               (:members 
+                  ( ("BulkParametersCopier" function
+                       (:constructor-flag t
+                        :parent "BulkParametersCopier"
+                        :arguments 
+                          ( ("requests" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("ParametersChangeRequestPtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [360 416])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [418 434])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [434 440])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [449 462]))                          
+                        :type ("BulkParametersCopier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [315 884])
+                    ("OnModifierComplete" function
+                       (:parent "BulkParametersCopier"
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GroupModificationRequestMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [932 976]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [886 1208])
+                    ("OnAllModifiersComplete" function
+                       (:parent "BulkParametersCopier"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1210 1427]))                  
+                :type "namespace")
+                nil [299 1430]))          
+      :file "BulkParametersCopier.cpp"
+      :pointmax 1450
+      :fsize 1449
+      :lastmodtime '(22056 61062 244669 33000)
+      :unmatched-syntax '((punctuation 447 . 448) (CONST 442 . 447) (punctuation 440 . 441) (semantic-list 438 . 440) (punctuation 433 . 434)))
+    (semanticdb-table "BulkParametersCopier.h"
+      :file "BulkParametersCopier.h"
+      :fsize 1329
+      :lastmodtime '(22056 61062 244669 33000))
+    (semanticdb-table "ParametersModifierCreatorFactory.h"
+      :file "ParametersModifierCreatorFactory.h"
+      :fsize 1054
+      :lastmodtime '(22149 9710 589103 999000))
+    (semanticdb-table "BulkParametersModifier.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BulkParametersModifier.h" include nil nil [106 141])
+            ("boost/foreach.hpp" include (:system-flag t) nil [142 170])
+            ("boost/bind.hpp" include (:system-flag t) nil [171 196])
+            ("boost/tuple/tuple_io.hpp" include (:system-flag t) nil [197 232])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [234 258])
+            ("GroupParams" using (:type ("GroupParams" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [259 287])
+            ("AO" type
+               (:members 
+                  ( ("BulkParametersModifier" function
+                       (:constructor-flag t
+                        :parent "BulkParametersModifier"
+                        :arguments 
+                          ( ("requests" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("GroupModificationRequestMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [354 411])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [413 429])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [429 435])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [444 457]))                          
+                        :type ("BulkParametersModifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [305 562])
+                    ("ConvertRequestsMap" function
+                       (:parent "BulkParametersModifier"
+                        :arguments 
+                          ( ("map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GroupModificationRequestMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [660 699]))                          
+                        :type ("InstrumentGroupConfirmingModifier::GroupModifiersMap" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [564 977])
+                    ("Modify" function
+                       (:parent "BulkParametersModifier"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [979 2632])
+                    ("OnModifierApplied" function
+                       (:parent "BulkParametersModifier"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2634 2896])
+                    ("InsertGroupModifiers" function
+                       (:parent "BulkParametersModifier"
+                        :arguments 
+                          ( ("to" variable
+                               (:reference 1
+                                :type ("GroupModificationRequestMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2948 2981])
+                            ("from" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GroupModificationRequestMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2982 3022]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2898 3615]))                  
+                :type "namespace")
+                nil [289 3619]))          
+      :file "BulkParametersModifier.cpp"
+      :pointmax 3639
+      :fsize 3638
+      :lastmodtime '(22149 9728 955962 450000)
+      :unmatched-syntax '((punctuation 442 . 443) (CONST 437 . 442) (punctuation 435 . 436) (semantic-list 433 . 435) (punctuation 428 . 429)))
+    (semanticdb-table "BulkParametersModifier.h"
+      :file "BulkParametersModifier.h"
+      :fsize 1217
+      :lastmodtime '(22056 61062 244669 33000))
+
+
+    (semanticdb-table "FastMarketManager.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FastMarketManager.h" include nil nil [100 130])
+            ("AO_SharedGlobal/Global/UserGroupsHelper.h" include nil nil [131 183])
+            ("boost/foreach.hpp" include (:system-flag t) nil [184 212])
+            ("boost/make_shared.hpp" include (:system-flag t) nil [213 245])
+            ("boost/ref.hpp" include (:system-flag t) nil [246 270])
+            ("boost/bind.hpp" include (:system-flag t) nil [271 296])
+            ("tbricks_definitions.h" include nil nil [297 329])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [331 355])
+            ("AO" type
+               (:members 
+                  ( ("FastMarketManager::BUTTON_ID_NORMAL_MARKET" variable
+                       (:constant-flag t
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [373 455])
+                    ("FastMarketManager::BUTTON_ID_FAST_MARKET" variable
+                       (:constant-flag t
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [456 534])
+                    ("FastMarketManager::BUTTON_ID_ALL_GROUPS_NORMAL_MARKET" variable
+                       (:constant-flag t
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [536 632])
+                    ("FastMarketManager::BUTTON_ID_ALL_GROUPS_FAST_MARKET" variable
+                       (:constant-flag t
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [633 725])
+                    ("FastMarketManager" function
+                       (:constructor-flag t
+                        :parent "FastMarketManager"
+                        :arguments 
+                          ( ("ticker" variable
+                               (:reference 1
+                                :type ("Ticker::TickerGenerator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [766 799])
+                            ("contexts" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MarketModeSwitcherContexts" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [801 844])
+                            ("customGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [846 900])
+                            ("table" variable
+                               (:reference 1
+                                :type ("tbricks::TableParameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [902 934])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [936 952])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [952 958])
+                            ("" variable (:type ("onManagerStale" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [967 982]))                          
+                        :type ("FastMarketManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [727 1156])
+                    ("InitGroups" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("customGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1193 1247]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1158 2759])
+                    ("OnMaturitiesReady" function
+                       (:parent "FastMarketManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2761 2809])
+                    ("OnSettingsModeUpdated" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2857 2907])
+                            ("mode" variable (:type ("MarketSettingsMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2908 2932]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2811 3485])
+                    ("OnApplyingModeStateUpdated" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3540 3590])
+                            ("applyingState" variable (:type ("aofastmarketmanager::FastMarketApplyingModeState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3592 3655]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3487 4278])
+                    ("SwitchMarketMode" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4321 4371])
+                            ("mode" variable (:type ("MarketSettingsMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4372 4396]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4280 6382])
+                    ("OnModeSwitchCompleted" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("groupId" variable (:type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6430 6473])
+                            ("mode" variable (:type ("MarketSettingsMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6474 6498]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6384 7094])
+                    ("SwitchMarketModeForAllGroups" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("mode" variable (:type ("MarketSettingsMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7149 7173]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7096 7357])
+                    ("OnTableCellButtonClick" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7406 7417])
+                            ("buttonId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7418 7450]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7359 8080])
+                    ("OnButtonClick" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("buttonId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8120 8152]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8082 8788])
+                    ("GetGroupAtRow" function
+                       (:parent "FastMarketManager"
+                        :arguments 
+                          ( ("row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8848 8859]))                          
+                        :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8790 9024]))                  
+                :type "namespace")
+                nil [357 9027]))          
+      :file "FastMarketManager.cpp"
+      :pointmax 9047
+      :fsize 9046
+      :lastmodtime '(22149 9701 856646 738000)
+      :unmatched-syntax '((punctuation 965 . 966) (CONST 960 . 965) (punctuation 958 . 959) (semantic-list 956 . 958) (punctuation 951 . 952)))
+    (semanticdb-table "FastMarketManager.h"
+      :file "FastMarketManager.h"
+      :fsize 2627
+      :lastmodtime '(22149 9701 856646 738000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 51313
+      :lastmodtime '(22149 9701 859646 552000))
+    (semanticdb-table "GroupTableRow.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GroupTableRow.h" include nil nil [96 122])
+            ("tbricks_definitions.h" include nil nil [123 155])
+            ("AO" type
+               (:members 
+                  ( ("GroupTableRow" function
+                       (:constructor-flag t
+                        :parent "GroupTableRow"
+                        :arguments 
+                          ( ("fastMarketManagerTable" variable
+                               (:reference 1
+                                :type ("tbricks::TableParameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [204 253])
+                            ("instrumentGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [255 303]))                          
+                        :type ("GroupTableRow" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [173 618])
+                    ("GroupTableRow" function
+                       (:destructor-flag t
+                        :parent "GroupTableRow"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [620 1117])
+                    ("SetSettingsModeState" function
+                       (:parent "GroupTableRow"
+                        :arguments 
+                          ( ("settingsModeState" variable (:type ("aofastmarketmanager::FastMarketSettingsModeState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1160 1227]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1119 1692])
+                    ("SetApplyingModeState" function
+                       (:parent "GroupTableRow"
+                        :arguments 
+                          ( ("applyingModeState" variable (:type ("aofastmarketmanager::FastMarketApplyingModeState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1735 1802]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1694 2267]))                  
+                :type "namespace")
+                nil [157 2270]))          
+      :file "GroupTableRow.cpp"
+      :pointmax 2290
+      :fsize 2289
+      :lastmodtime '(22149 9701 856646 738000)
+      :unmatched-syntax nil)
+    (semanticdb-table "GroupTableRow.h"
+      :file "GroupTableRow.h"
+      :fsize 936
+      :lastmodtime '(22056 61062 245668 968000))
+    (semanticdb-table "InstrumentGroupConfirmingModifier.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("InstrumentGroupConfirmingModifier.h" include nil nil [116 162])
+            ("strategy/API.h" include nil nil [164 189])
+            ("tbricks_definitions.h" include nil nil [190 222])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [224 248])
+            ("AO" type
+               (:members 
+                  ( ("InstrumentGroupConfirmingModifier" function
+                       (:constructor-flag t
+                        :parent "InstrumentGroupConfirmingModifier"
+                        :arguments 
+                          ( ("modifiers" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GroupModifiersMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [337 372])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [374 390])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [390 396])
+                            ("" variable (:type ("onAllModifiersApplied" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [405 427]))                          
+                        :type ("InstrumentGroupConfirmingModifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [266 2405])
+                    ("HandleStreamOpen" function
+                       (:parent "InstrumentGroupConfirmingModifier"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2464 2505]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2407 2954])
+                    ("HandleInstrumentGroupParameters" function
+                       (:parent "InstrumentGroupConfirmingModifier"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3033 3073])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3078 3126])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3131 3188]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2956 3883])
+                    ("HandleStreamStale" function
+                       (:parent "InstrumentGroupConfirmingModifier"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3943 3984]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3885 4103])
+                    ("HandleStreamFailed" function
+                       (:parent "InstrumentGroupConfirmingModifier"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4164 4205]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4105 4319])
+                    ("HandleSnapshotEnd" function
+                       (:parent "InstrumentGroupConfirmingModifier"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4379 4420]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4321 4425]))                  
+                :type "namespace")
+                nil [250 4429]))          
+      :file "InstrumentGroupConfirmingModifier.cpp"
+      :pointmax 4449
+      :fsize 4448
+      :lastmodtime '(22056 61062 245668 968000)
+      :unmatched-syntax '((punctuation 403 . 404) (CONST 398 . 403) (punctuation 396 . 397) (semantic-list 394 . 396) (punctuation 389 . 390)))
+    (semanticdb-table "InstrumentGroupConfirmingModifier.h"
+      :file "InstrumentGroupConfirmingModifier.h"
+      :fsize 1731
+      :lastmodtime '(22056 61062 245668 968000))
+    (semanticdb-table "InstrumentGroupParametersCopier.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("InstrumentGroupParametersCopier.h" include nil nil [114 158])
+            ("boost/bind.hpp" include (:system-flag t) nil [159 184])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [186 210])
+            ("GroupParams" using (:type ("GroupParams" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [211 239])
+            ("AO" type
+               (:members 
+                  ( ("InstrumentGroupParametersCopier" function
+                       (:constructor-flag t
+                        :parent "InstrumentGroupParametersCopier"
+                        :arguments 
+                          ( ("groups" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [324 386])
+                            ("fromContext" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [388 427])
+                            ("toContext" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [429 466])
+                            ("definitions" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [468 539])
+                            ("ignoreParametersSetInAnotherGroup" variable (:type "bool") (reparse-symbol arg-sub-list) [541 580])
+                            ("copyEmptyValues" variable (:type "bool") (reparse-symbol arg-sub-list) [582 603]))                          
+                        :type ("InstrumentGroupParametersCopier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [257 856])
+                    ("SetCallback" function
+                       (:parent "InstrumentGroupParametersCopier"
+                        :arguments 
+                          ( ("callback" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ModifiersReadyCallback" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [908 947]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [858 990])
+                    ("OnSourceParametersReady" function
+                       (:parent "InstrumentGroupParametersCopier"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [992 1434]))                  
+                :type "namespace")
+                nil [241 1437]))          
+      :file "InstrumentGroupParametersCopier.cpp"
+      :pointmax 1457
+      :fsize 1456
+      :lastmodtime '(22149 9701 856646 738000)
+      :unmatched-syntax nil)
+    (semanticdb-table "InstrumentGroupParametersCopier.h"
+      :file "InstrumentGroupParametersCopier.h"
+      :fsize 1366
+      :lastmodtime '(22056 61062 245668 968000))
+    (semanticdb-table "MarketModeSwitcher.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MarketModeSwitcher.h" include nil nil [101 132])
+            ("tbricks_definitions.h" include nil nil [133 165])
+            ("boost/bind.hpp" include (:system-flag t) nil [166 191])
+            ("boost/foreach.hpp" include (:system-flag t) nil [192 220])
+            ("boost/assign.hpp" include (:system-flag t) nil [221 248])
+            ("boost/make_shared.hpp" include (:system-flag t) nil [249 281])
+            ("ParametersCopyRequest.h" include nil nil [282 316])
+            ("ParametersSetRequest.h" include nil nil [317 350])
+            ("ParametersCopySetInThirdContextRequest.h" include nil nil [351 402])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [404 428])
+            ("ip" type
+               (:kind alias
+                :members 
+                  ( ("aofastmarketmanager::instrument_parameters" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [430 488])
+            ("AO" type
+               (:members 
+                  ( ("list_of" function
+                       (:parent "boost::assign"
+                        :arguments 
+                          ( ("" variable (:type ("ip::QuoteAllowedUnderlyingMoveInTimePeriod" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [656 700]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [631 739])
+                    ("list_of" function
+                       (:parent "boost::assign"
+                        :arguments 
+                          ( ("" variable (:type ("ip::MaximumQuoteVolume" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1314 1338]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1289 1365])
+                    ("MarketModeSwitcher" function
+                       (:constructor-flag t
+                        :parent "MarketModeSwitcher"
+                        :arguments 
+                          ( ("contexts" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MarketModeSwitcherContexts" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1451 1494])
+                            ("optionGroupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1496 1552])
+                            ("maturities" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1554 1613])
+                            ("mode" variable (:type ("MarketSettingsMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1615 1639])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1657])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [1657 1697])
+                            ("" variable (:type ("onSwitchComplete" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1706 1723]))                          
+                        :type ("MarketModeSwitcher" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1410 2122])
+                    ("MarketModeSwitcher" function
+                       (:destructor-flag t
+                        :parent "MarketModeSwitcher"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2124 2243])
+                    ("SwitchToNormalMode" function
+                       (:parent "MarketModeSwitcher"
+                        :arguments 
+                          ( ("productGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2291 2346])
+                            ("maturities" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2348 2414]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2245 7991])
+                    ("SwitchToFastMode" function
+                       (:parent "MarketModeSwitcher"
+                        :arguments 
+                          ( ("productGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8037 8092])
+                            ("maturities" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8094 8160]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7993 13458])
+                    ("OnModifierIsApplied" function
+                       (:parent "MarketModeSwitcher"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13460 13595])
+                    ("CreateClearingModifier" function
+                       (:arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13667 13702])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13704 13774]))                          
+                        :type ("tbricks::InstrumentGroupParameters::Modifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13597 14029]))                  
+                :type "namespace")
+                nil [490 14032]))          
+      :file "MarketModeSwitcher.cpp"
+      :pointmax 14052
+      :fsize 14051
+      :lastmodtime '(22149 9728 955962 450000)
+      :unmatched-syntax '((punctuation 1704 . 1705) (CONST 1699 . 1704) (punctuation 1697 . 1698) (semantic-list 1661 . 1697) (punctuation 1656 . 1657) (punctuation 1407 . 1408) (semantic-list 1390 . 1407) (semantic-list 1367 . 1388) (semantic-list 1336 . 1338) (punctuation 1286 . 1287) (symbol 1233 . 1285) (punctuation 1232 . 1233) (punctuation 1231 . 1232) (symbol 1213 . 1231) (punctuation 1211 . 1212) (symbol 1182 . 1211) (punctuation 1181 . 1182) (punctuation 1180 . 1181) (symbol 1173 . 1180) (punctuation 1172 . 1173) (symbol 1166 . 1172) (punctuation 1165 . 1166) (punctuation 1164 . 1165) (symbol 1161 . 1164) (CONST 1155 . 1160) (punctuation 1152 . 1153) (semantic-list 1115 . 1152) (semantic-list 1075 . 1113) (semantic-list 1045 . 1073) (semantic-list 1013 . 1043) (semantic-list 980 . 1011) (semantic-list 961 . 978) (semantic-list 889 . 959) (semantic-list 863 . 887) (semantic-list 824 . 861) (semantic-list 781 . 822) (semantic-list 741 . 779) (semantic-list 698 . 700) (punctuation 628 . 629) (symbol 584 . 627) (punctuation 583 . 584) (punctuation 582 . 583) (symbol 564 . 582) (punctuation 562 . 563) (symbol 533 . 562) (punctuation 532 . 533) (punctuation 531 . 532) (symbol 524 . 531) (punctuation 523 . 524) (symbol 517 . 523) (punctuation 516 . 517) (punctuation 515 . 516) (symbol 512 . 515) (CONST 506 . 511)))
+    (semanticdb-table "MarketModeSwitcher.h"
+      :file "MarketModeSwitcher.h"
+      :fsize 2040
+      :lastmodtime '(22149 9728 955962 450000))
+    (semanticdb-table "ParametersCopyRequest.h"
+      :file "ParametersCopyRequest.h"
+      :fsize 1715
+      :lastmodtime '(22056 61062 246668 904000))
+    (semanticdb-table "ParametersSetRequest.h"
+      :file "ParametersSetRequest.h"
+      :fsize 1526
+      :lastmodtime '(22056 61062 246668 904000))
+
+    (semanticdb-table "MarketModeSwitcherContexts.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MarketModeSwitcherContexts.h" include nil nil [109 148])
+            ("boost/foreach.hpp" include (:system-flag t) nil [149 177])
+            ("AO" type
+               (:members 
+                  ( ("AreAllContextsSetAndUnique" function
+                       (:arguments 
+                          ( ("contexts" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MarketModeSwitcherContexts" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [227 270]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [195 544])
+                    ("SetGlobalContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [596 626]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [546 653])
+                    ("SetGlobalFastSourceContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [715 745]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [655 782])
+                    ("SetGlobalNormalSourceContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [846 876]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [784 915])
+                    ("SetMmQuotingContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [970 1000]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [917 1030])
+                    ("SetMmQuotingFastSourceContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1095 1125]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1032 1165])
+                    ("SetMmQuotingNormalSourceContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1232 1262]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1167 1304])
+                    ("SetMmHiddenContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1358 1388]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1306 1417])
+                    ("SetMmHiddenFastSourceContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1481 1511]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1419 1550])
+                    ("SetMmHiddenNormalSourceContext" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1616 1646]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1552 1687])
+                    ("GetAllContexts" function
+                       (:parent "MarketModeSwitcherContexts"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("tbricks::Identifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [1689 2183]))                  
+                :type "namespace")
+                nil [179 2186]))          
+      :file "MarketModeSwitcherContexts.cpp"
+      :pointmax 2206
+      :fsize 2205
+      :lastmodtime '(22056 61062 245668 968000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MarketModeSwitcherContexts.h"
+      :file "MarketModeSwitcherContexts.h"
+      :fsize 2599
+      :lastmodtime '(22056 61062 245668 968000))
+    (semanticdb-table "MarketSettingsModeMonitor.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MarketSettingsModeMonitor.h" include nil nil [109 147])
+            ("tbricks_definitions.h" include nil nil [148 180])
+            ("boost/foreach.hpp" include (:system-flag t) nil [181 209])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [211 235])
+            ("AO" type
+               (:members 
+                  ( ("MarketSettingsModeMonitor" function
+                       (:constructor-flag t
+                        :parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("groups" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [308 370])
+                            ("context" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [372 407])
+                            ("onModeChanged" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ModeChangedCallback" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [409 450])
+                            ("onApplyingModeStateChanged" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ApplyingModeStateChangedCallback" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [452 519])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [521 537])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [537 543])
+                            ("" variable (:type ("onMonitorStale" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [552 567]))                          
+                        :type ("MarketSettingsModeMonitor" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [253 1502])
+                    ("MarketSettingsModeMonitor" function
+                       (:destructor-flag t
+                        :parent "MarketSettingsModeMonitor"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1504 1603])
+                    ("InitModesMap" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("groups" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1650 1712]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1605 2043])
+                    ("HandleInstrumentGroupAggregateParameters" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2123 2163])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2168 2216])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2221 2287]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2045 3244])
+                    ("SetGroupMode" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3293 3343])
+                            ("mode" variable (:type ("MarketSettingsMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3345 3369]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3246 3512])
+                    ("SetApplyingModeState" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3569 3619])
+                            ("applyingState" variable (:type ("aofastmarketmanager::FastMarketApplyingModeState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3621 3684]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3514 3909])
+                    ("GetModeOfProduct" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("product" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3974 4024]))                          
+                        :type ("MarketSettingsMode" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3911 4397])
+                    ("GetApplyingStateOfProduct" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("product" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4501 4551]))                          
+                        :type ("aofastmarketmanager::FastMarketApplyingModeState" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4399 4965])
+                    ("HandleStreamStale" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5017 5058]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4967 5143])
+                    ("HandleStreamFailed" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5196 5237]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5145 5321])
+                    ("HandleSnapshotEnd" function
+                       (:parent "MarketSettingsModeMonitor"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5373 5414]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5323 5419]))                  
+                :type "namespace")
+                nil [237 5422]))          
+      :file "MarketSettingsModeMonitor.cpp"
+      :pointmax 5442
+      :fsize 5441
+      :lastmodtime '(22149 9701 856646 738000)
+      :unmatched-syntax '((punctuation 550 . 551) (CONST 545 . 550) (punctuation 543 . 544) (semantic-list 541 . 543) (punctuation 536 . 537)))
+    (semanticdb-table "MarketSettingsModeMonitor.h"
+      :file "MarketSettingsModeMonitor.h"
+      :fsize 2950
+      :lastmodtime '(22149 9701 856646 738000))
+    (semanticdb-table "ModifiersHelper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ModifiersHelper.h" include nil nil [99 127])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [129 153])
+            ("GroupParams" using (:type ("GroupParams" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [154 182])
+            ("AO" type
+               (:members 
+                  ( ("CreateModifierFromRequest" function
+                       (:arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ModificationRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [271 306]))                          
+                        :type ("tbricks::InstrumentGroupParameters::Modifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [200 612])
+                    ("MergeParameters" function
+                       (:arguments 
+                          ( ("first" variable (:type ("ParametersMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [644 664])
+                            ("second" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParametersMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [665 693]))                          
+                        :type ("ParametersMap" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [614 1044]))                  
+                :type "namespace")
+                nil [184 1047]))          
+      :file "ModifiersHelper.cpp"
+      :pointmax 1067
+      :fsize 1066
+      :lastmodtime '(22149 9701 856646 738000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ModifiersHelper.h"
+      :file "ModifiersHelper.h"
+      :fsize 807
+      :lastmodtime '(22149 9701 856646 738000))
+    (semanticdb-table "ParametersCopyRequest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ParametersCopyRequest.h" include nil nil [105 139])
+            ("AO" type
+               (:members 
+                  ( ("ParametersCopyRequest" function
+                       (:constructor-flag t
+                        :parent "ParametersCopyRequest"
+                        :arguments 
+                          ( ("groups" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [204 266])
+                            ("fromContext" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [268 307])
+                            ("toContext" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [309 346])
+                            ("definitions" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [348 419])
+                            ("ignoreParametersFromAnotherGroup" variable (:type "bool") (reparse-symbol arg-sub-list) [421 459])
+                            ("copyEmptyParameters" variable (:type "bool") (reparse-symbol arg-sub-list) [461 486]))                          
+                        :type ("ParametersCopyRequest" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [157 708])
+                    ("AcceptVisitor" function
+                       (:parent "ParametersCopyRequest"
+                        :arguments 
+                          ( ("visitor" variable
+                               (:reference 1
+                                :type ("ParametersChangeVisitor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [752 786]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [710 834]))                  
+                :type "namespace")
+                nil [141 837]))          
+      :file "ParametersCopyRequest.cpp"
+      :pointmax 857
+      :fsize 856
+      :lastmodtime '(22056 61062 246668 904000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "ParametersModifierCreatorFactory.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ParametersModifierCreatorFactory.h" include nil nil [116 161])
+            ("boost/make_shared.hpp" include (:system-flag t) nil [162 194])
+            ("InstrumentGroupParametersCopier.h" include nil nil [195 239])
+            ("SimpleInstrumentGroupModifierCreator.h" include nil nil [240 289])
+            ("CopySetInThirdContextModifierCreator.h" include nil nil [290 339])
+            ("ParametersCopyRequest.h" include nil nil [340 374])
+            ("AO" type
+               (:members 
+                  ( ("ParametersModifierCreatorFactory" function
+                       (:constructor-flag t
+                        :parent "ParametersModifierCreatorFactory"
+                        :type ("ParametersModifierCreatorFactory" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [392 465])
+                    ("VisitParametersCopyRequest" function
+                       (:parent "ParametersModifierCreatorFactory"
+                        :arguments 
+                          ( ("copyRequest" variable
+                               (:reference 1
+                                :type ("ParametersCopyRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [533 569]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [467 1043])
+                    ("VisitParametersCopySetInThirdContextRequest" function
+                       (:parent "ParametersModifierCreatorFactory"
+                        :arguments 
+                          ( ("copyRequest" variable
+                               (:reference 1
+                                :type ("ParametersCopySetInThirdContextRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1128 1181]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1045 1475])
+                    ("VisitParametersSetRequest" function
+                       (:parent "ParametersModifierCreatorFactory"
+                        :arguments 
+                          ( ("setRequest" variable
+                               (:reference 1
+                                :type ("ParametersSetRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1542 1576]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1477 1852])
+                    ("GetModifierCreator" function
+                       (:parent "ParametersModifierCreatorFactory"
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("ParametersModifierCreator" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [1854 2228]))                  
+                :type "namespace")
+                nil [376 2231]))          
+      :file "ParametersModifierCreatorFactory.cpp"
+      :pointmax 2251
+      :fsize 2250
+      :lastmodtime '(22149 9710 589103 999000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SimpleInstrumentGroupModifierCreator.h"
+      :file "SimpleInstrumentGroupModifierCreator.h"
+      :fsize 797
+      :lastmodtime '(22056 61062 246668 904000))
+    (semanticdb-table "ParametersSetRequest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ParametersSetRequest.h" include nil nil [104 137])
+            ("boost/assign/list_of.hpp" include (:system-flag t) nil [138 173])
+            ("AO" type
+               (:members 
+                  ( ("ParametersSetRequest" function
+                       (:constructor-flag t
+                        :parent "ParametersSetRequest"
+                        :arguments 
+                          ( ("groups" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [236 298])
+                            ("toContext" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [300 337])
+                            ("definition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [339 396])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [398 428]))                          
+                        :type ("ParametersSetRequest" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [191 520])
+                    ("ParametersSetRequest" function
+                       (:constructor-flag t
+                        :parent "ParametersSetRequest"
+                        :arguments 
+                          ( ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [567 615])
+                            ("toContext" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [617 654])
+                            ("definition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [656 713])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [715 745]))                          
+                        :type ("ParametersSetRequest" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [522 883])
+                    ("AcceptVisitor" function
+                       (:parent "ParametersSetRequest"
+                        :arguments 
+                          ( ("visitor" variable
+                               (:reference 1
+                                :type ("ParametersChangeVisitor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [926 960]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [885 1007]))                  
+                :type "namespace")
+                nil [175 1010]))          
+      :file "ParametersSetRequest.cpp"
+      :pointmax 1030
+      :fsize 1029
+      :lastmodtime '(22056 61062 246668 904000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SerialBulkParametersCopier.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SerialBulkParametersCopier.h" include nil nil [110 149])
+            ("boost/bind.hpp" include (:system-flag t) nil [150 175])
+            ("AO" type
+               (:members 
+                  ( ("SerialBulkParametersCopier" function
+                       (:constructor-flag t
+                        :parent "SerialBulkParametersCopier"
+                        :arguments 
+                          ( ("requests" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::queue" type
+                                     (:template-specifier 
+                                        ( ("BulkRequest" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [250 290])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [292 308])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [308 314])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [323 336]))                          
+                        :type ("SerialBulkParametersCopier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [193 575])
+                    ("ExecuteNextBulkRequest" function
+                       (:parent "SerialBulkParametersCopier"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [577 865]))                  
+                :type "namespace")
+                nil [177 868]))          
+      :file "SerialBulkParametersCopier.cpp"
+      :pointmax 888
+      :fsize 887
+      :lastmodtime '(22056 61062 246668 904000)
+      :unmatched-syntax '((punctuation 321 . 322) (CONST 316 . 321) (punctuation 314 . 315) (semantic-list 312 . 314) (punctuation 307 . 308)))
+    (semanticdb-table "SerialBulkParametersCopier.h"
+      :file "SerialBulkParametersCopier.h"
+      :fsize 888
+      :lastmodtime '(22056 61062 246668 904000))
+    (semanticdb-table "SimpleInstrumentGroupModifierCreator.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SimpleInstrumentGroupModifierCreator.h" include nil nil [120 169])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [171 195])
+            ("GroupParams" using (:type ("GroupParams" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [196 224])
+            ("AO" type
+               (:members 
+                  ( ("SimpleInstrumentGroupModifierCreator" function
+                       (:constructor-flag t
+                        :parent "SimpleInstrumentGroupModifierCreator"
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParametersSetRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [319 355]))                          
+                        :type ("SimpleInstrumentGroupModifierCreator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [242 833])
+                    ("SetCallback" function
+                       (:parent "SimpleInstrumentGroupModifierCreator"
+                        :arguments 
+                          ( ("callback" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ModifiersReadyCallback" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [890 929]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [835 957]))                  
+                :type "namespace")
+                nil [226 960]))          
+      :file "SimpleInstrumentGroupModifierCreator.cpp"
+      :pointmax 980
+      :fsize 979
+      :lastmodtime '(22149 9701 857646 676000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TableCellButtonHelper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TableCellButtonHelper.h" include nil nil [104 138])
+            ("tbricks_definitions.h" include nil nil [139 171])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [173 197])
+            ("AO" type
+               (:members 
+                  ( ("GetTableCellButtonClick" function
+                       (:arguments 
+                          ( ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [273 319]))                          
+                        :type ("boost::optional" type
+                             (:template-specifier 
+                                ( ("TableButtonClick" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [215 964]))                  
+                :type "namespace")
+                nil [199 967]))          
+      :file "TableCellButtonHelper.cpp"
+      :pointmax 987
+      :fsize 986
+      :lastmodtime '(22056 61062 246668 904000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TableCellButtonHelper.h"
+      :file "TableCellButtonHelper.h"
+      :fsize 631
+      :lastmodtime '(22056 61062 247668 840000))
+    (semanticdb-table "ParametersCopySetInThirdContextRequest.h"
+      :file "ParametersCopySetInThirdContextRequest.h"
+      :fsize 2119
+      :lastmodtime '(22149 9710 589103 999000))
+    (semanticdb-table "CopySetInThirdContextModifierCreator.h"
+      :file "CopySetInThirdContextModifierCreator.h"
+      :fsize 1381
+      :lastmodtime '(22149 9710 589103 999000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_FastMarketManager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

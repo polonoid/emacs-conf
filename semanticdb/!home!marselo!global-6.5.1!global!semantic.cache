@@ -1,0 +1,25 @@
+;; Object global/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "global/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("global")) nil [530 551])
+            ("global_SOURCES" variable (:default-value ("global.c" "literal.c" "output.c" "convert.c")) nil [552 607])
+            ("noinst_HEADERS" variable (:default-value ("literal.h" "convert.h" "output.h")) nil [608 654])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@")) nil [655 683])
+            ("LDADD" variable (:default-value ("@LDADD@")) nil [684 700])
+            ("global_LDADD" variable (:default-value ("$(LDADD)" "$(LIBLTDL)")) nil [701 736])
+            ("global_DEPENDENCIES" variable (:default-value ("$(LDADD)" "$(LTDLDEPS)")) nil [736 779])
+            ("man_MANS" variable (:default-value ("global.1")) nil [780 800])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "const.h" "manual.in")) nil [801 844]))          
+      :file "Makefile.am"
+      :pointmax 844
+      :fsize 843
+      :lastmodtime '(22007 34545 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!global-6.5.1!global!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,604 @@
+;; Object AO_MarketStrategiesManager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_MarketStrategiesManager/"
+  :tables
+  (list
+    (semanticdb-table "StrategiesManager.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_STRATEGIESMANAGER_H_" variable (:constant-flag t) nil [41 64])
+            ("UnderlyingMaturities.h" include nil nil [66 99])
+            ("BrokerMarketsManager.h" include nil nil [100 133])
+            ("MarketStrategiesManager" type
+               (:members 
+                  ( ("AO_MarketStrategiesmanagerPlugin" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [172 211])
+                    ("StrategiesManager" type
+                       (:superclasses 
+                          ( ("tbricks::InstrumentAggregateParameters::Stream::IHandler" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil)
+                            ("tbricks::ITimerEventHandler" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil)
+                            ("tbricks::InstrumentStream::IHandler" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [500 507])
+                            ("StrategiesManager" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("plugin" variable
+                                       (:reference 1
+                                        :type ("AO_MarketStrategiesmanagerPlugin" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [528 569]))                                  
+                                :type ("StrategiesManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [510 570])
+                            ("StrategiesManager" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [591 596]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [572 597])
+                            ("Start" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("instrumentGroupId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [611 671]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [600 672])
+                            ("Stop" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [674 686])
+                            ("HandleStreamOpen" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [756 797]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [726 798])
+                            ("HandleStreamStale" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [834 875]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [803 876])
+                            ("HandleStreamFailed" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [913 954]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [881 955])
+                            ("HandleSnapshotEnd" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [991 1032]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [960 1033])
+                            ("HandleInstrumentAggregateParameters" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1135 1176])
+                                    ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1194 1235])
+                                    ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1250 1312]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1086 1313])
+                            ("HandleInstrument" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1380 1421])
+                                    ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1422 1461]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1350 1462])
+                            ("HandleInstrumentInvalidate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1504 1545])
+                                    ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1546 1587]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1464 1588])
+                            ("HandleTimerEvent" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("timer" variable
+                                       (:reference 1
+                                        :type ("tbricks::Timer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1645 1668]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1615 1669])
+                            ("PrintDiagnostics" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1675 1699])
+                            ("private" label nil (reparse-symbol classsubparts) [1701 1709])
+                            ("MinFactorThreshold" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [1736 1775])
+                            ("DeltaNeutralTimerInterval" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("int64_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1780 1831])
+                            ("BrokerComboMap" type
+                               (:typedef ("boost::ptr_map" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                          ("BrokerMarketsManager" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::ptr_map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1847 1937])
+                            ("MarketComboMap" type
+                               (:typedef ("boost::ptr_map" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                          ("ComboInfoDisplayer" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::ptr_map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1942 2030])
+                            ("InstrumentToAggParamMap" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                          ("tbricks::InstrumentAggregateParameters" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2035 2147])
+                            ("InFocusOutrightsMap" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                          ("tbricks::String" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2152 2237])
+                            ("private" label nil (reparse-symbol classsubparts) [2239 2247])
+                            ("m_plugin" variable (:type ("AO_MarketStrategiesmanagerPlugin" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2270 2313])
+                            ("m_instrumentGroup" variable (:type ("tbricks::InstrumentGroup" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2319 2362])
+                            ("m_brokerCombos" variable (:type ("BrokerComboMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2426 2456])
+                            ("m_marketCombos" variable (:type ("MarketComboMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2515 2545])
+                            ("m_focusOutrights" variable (:type ("InFocusOutrightsMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2606 2643])
+                            ("m_aggregateParametersStream" variable (:type ("tbricks::InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2646 2722])
+                            ("m_aggregateParams" variable (:type ("InstrumentToAggParamMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2724 2772])
+                            ("m_underlyingGroupMaturities" variable (:type ("UnderlyingMaturities" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2821 2870])
+                            ("m_deltaNeutralTimer" variable (:type ("tbricks::Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2873 2908])
+                            ("m_instrumentStream" variable (:type ("tbricks::InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2911 2956])
+                            ("private" label nil (reparse-symbol classsubparts) [2958 2966])
+                            ("ResolveComboComponents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("combo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3028 3061])
+                                    ("isBrokerCombo" variable (:type "bool") (reparse-symbol arg-sub-list) [3074 3093]))                                  
+                                :type ("Common::ComboInfoPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2984 3094])
+                            ("UpdateInstrument" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3122 3162])
+                                    ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentAggregateParameters" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3177 3229]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3100 3230])
+                            ("AddBrokerCombo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3256 3294])
+                                    ("overrideDelta" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3309 3346]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3236 3347])
+                            ("RemoveBrokerCombo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("comboId" variable (:type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3376 3414]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3353 3415])
+                            ("AddMarketCombo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3441 3479]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3421 3480])
+                            ("RemoveMarketCombo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("comboId" variable (:type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3509 3547]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3486 3548])
+                            ("IsComboValid" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("comboInfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Common::ComboInfoPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3572 3610]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3554 3617])
+                            ("UpdateInstrument" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3645 3683])
+                                    ("underlyingId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3695 3745]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3623 3746]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [315 3749]))                  
+                :type "namespace")
+                nil [135 3752]))          
+      :file "StrategiesManager.h"
+      :pointmax 3798
+      :fsize 3797
+      :lastmodtime '(22006 31481 351661 758000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AO_STRATEGIESMANAGER_H_")
+          )
+)
+    (semanticdb-table "UnderlyingMaturities.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_UNDERLYINGMATURITIES_H_" variable (:constant-flag t) nil [44 70])
+            ("Common.h" include nil nil [72 91])
+            ("MarketStrategiesManager" type
+               (:members 
+                  ( ("UnderlyingMaturities" type
+                       (:superclasses 
+                          ( ("tbricks::InstrumentGroupStream::IHandler" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [430 437])
+                            ("UnderlyingMaturities" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("UnderlyingMaturities" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [440 463])
+                            ("UnderlyingMaturities" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [487 492]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [465 493])
+                            ("HandleStreamOpen" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [556 597]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [526 598])
+                            ("HandleStreamStale" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [634 675]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [603 676])
+                            ("HandleStreamFailed" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [713 754]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [681 755])
+                            ("HandleSnapshotEnd" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [791 832]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [760 833])
+                            ("HandleInstrumentGroup" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [910 951])
+                                    ("group" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [951 991]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [875 992])
+                            ("HandleInstrumentGroupInvalidate" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1042 1083])
+                                    ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1084 1130]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [997 1131])
+                            ("AddCombo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("comboInfo" variable (:type ("Common::ComboInfoPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1151 1182]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1137 1183])
+                            ("RemoveCombo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("comboId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1206 1251]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1189 1252])
+                            ("Clear" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1258 1271])
+                            ("private" label nil (reparse-symbol classsubparts) [1273 1281])
+                            ("ComboInfo" type
+                               (:members 
+                                  ( ("ComboInfo" function
+                                       (:constructor-flag t
+                                        :type ("ComboInfo" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1335 1348])
+                                    ("ComboInfo" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("groupId" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1365 1415])
+                                            ("expiry" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::CalendarDate" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1416 1452]))                                          
+                                        :type ("ComboInfo" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1355 1520])
+                                    ("ComboInfo" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1527 1542])
+                                    ("underlyingParentGroupId" variable (:type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1549 1608])
+                                    ("underlyingExpiry" variable (:type ("tbricks::CalendarDate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1614 1653]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1310 1657])
+                            ("ComboMap" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                          ("ComboInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1663 1731])
+                            ("InstrumentGroupStreamMap" type
+                               (:typedef ("boost::ptr_map" type
+                                     (:template-specifier 
+                                        ( ("tbricks::StreamIdentifier" type nil nil nil)
+                                          ("tbricks::InstrumentGroupStream" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::ptr_map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1736 1844])
+                            ("DateList" type
+                               (:typedef ("std::set" type
+                                     (:template-specifier 
+                                        ( ("tbricks::CalendarDate" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::set"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1850 1899])
+                            ("MaturitiesMap" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil)
+                                          ("DateList" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1904 1982])
+                            ("private" label nil (reparse-symbol classsubparts) [1984 1992])
+                            ("m_combos" variable (:type ("ComboMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2015 2033])
+                            ("m_maturityStreams" variable (:type ("InstrumentGroupStreamMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2035 2078])
+                            ("m_maturities" variable (:type ("MaturitiesMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2080 2107])
+                            ("private" label nil (reparse-symbol classsubparts) [2109 2117])
+                            ("GetParentGroup" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2188 2226]))                                  
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2138 2227])
+                            ("CheckUnderlyingMaturitites" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2233 2267])
+                            ("IsDefaultMaturity" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("expiry" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::CalendarDate" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2308 2344])
+                                    ("groupId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2370 2420]))                                  
+                                :type ("tbricks::Boolean" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2273 2421])
+                            ("UpdateUExpiryColumn" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("comboId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2452 2497])
+                                    ("defaultExpiry" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Boolean" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2509 2547]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2427 2548]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [349 2551]))                  
+                :type "namespace")
+                nil [93 2554]))          
+      :file "UnderlyingMaturities.h"
+      :pointmax 2600
+      :fsize 2599
+      :lastmodtime '(21962 60357 925347 758000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AO_UNDERLYINGMATURITIES_H_")
+          )
+)
+    (semanticdb-table "BrokerMarketsManager.h"
+      :file "BrokerMarketsManager.h"
+      :fsize 2683
+      :lastmodtime '(21962 60357 924347 828000))
+    (semanticdb-table "Common.h"
+      :file "Common.h"
+      :fsize 3885
+      :lastmodtime '(22006 31481 351661 758000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_MarketStrategiesManager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

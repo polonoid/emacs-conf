@@ -1,0 +1,917 @@
+;; Object AO_IntersectionMarginReport/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_IntersectionMarginReport/"
+  :tables
+  (list
+    (semanticdb-table "GroupsManagerWrapper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GroupsManagerWrapper.h" include nil nil [104 137])
+            ("AO" type
+               (:members 
+                  ( ("GroupsManagerWrapper" function
+                       (:constructor-flag t
+                        :parent "GroupsManagerWrapper"
+                        :arguments 
+                          ( ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [200 238])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [240 256])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [256 262])
+                            ("" variable (:type ("onReady" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [271 279]))                          
+                        :type ("GroupsManagerWrapper" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [155 367])
+                    ("GroupsReady" function
+                       (:parent "GroupsManagerWrapper"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [369 446])
+                    ("IsReady" function
+                       (:parent "GroupsManagerWrapper"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [448 512])
+                    ("GetGroups" function
+                       (:parent "GroupsManagerWrapper"
+                        :type ("GroupsManagerWrapper::GroupsHash" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [514 627])
+                    ("GetDisabledMaturities" function
+                       (:parent "GroupsManagerWrapper"
+                        :type ("GroupsManagerWrapper::DisabledMaturitiesHash" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [629 779])
+                    ("GetProductCurrency" function
+                       (:parent "GroupsManagerWrapper"
+                        :arguments 
+                          ( ("productGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProductGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [840 873]))                          
+                        :type ("tbricks::Currency" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [781 1075])
+                    ("GetInstrumentInfo" function
+                       (:parent "GroupsManagerWrapper"
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1165 1215]))                          
+                        :type ("boost::optional" type
+                             (:template-specifier 
+                                ( ("PublicTrades::InstrumentInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [1077 1395]))                  
+                :type "namespace")
+                nil [139 1398]))          
+      :file "GroupsManagerWrapper.cpp"
+      :pointmax 1418
+      :fsize 1417
+      :lastmodtime '(21962 60357 919348 176000)
+      :unmatched-syntax '((punctuation 269 . 270) (CONST 264 . 269) (punctuation 262 . 263) (semantic-list 260 . 262) (punctuation 255 . 256)))
+    (semanticdb-table "GroupsManagerWrapper.h"
+      :file "GroupsManagerWrapper.h"
+      :fsize 1540
+      :lastmodtime '(21962 60357 920348 107000))
+    (semanticdb-table "MarginCalculator.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MarginCalculator.h" include nil nil [100 129])
+            ("boost/foreach.hpp" include (:system-flag t) nil [130 158])
+            ("AO" type
+               (:members 
+                  ( ("MarginCalculator" function
+                       (:constructor-flag t
+                        :parent "MarginCalculator"
+                        :arguments 
+                          ( ("timeWindow" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::posix_time::time_duration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [213 264])
+                            ("sigmaWindow" variable (:type "double") (reparse-symbol arg-sub-list) [266 285])
+                            ("tradesInChronologicalOrder" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Trade" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [287 340]))                          
+                        :type ("MarginCalculator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [176 547])
+                    ("Match" function
+                       (:parent "MarginCalculator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [549 1390])
+                    ("FindMatch" function
+                       (:parent "MarginCalculator"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1455 1474]))                          
+                        :type ("MarginCalculator::Trades::iterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1392 1732])
+                    ("GetMargin" function
+                       (:parent "MarginCalculator"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [1734 1797])
+                    ("GetMatchStatistics" function
+                       (:parent "MarginCalculator"
+                        :type ("MarginCalculator::StatisticsMap" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1799 1907]))                  
+                :type "namespace")
+                nil [160 1910]))          
+      :file "MarginCalculator.cpp"
+      :pointmax 1930
+      :fsize 1929
+      :lastmodtime '(22149 9701 864646 241000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MarginCalculator.h"
+      :file "MarginCalculator.h"
+      :fsize 1191
+      :lastmodtime '(22149 9701 864646 241000))
+    (semanticdb-table "MarginTableRow.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MarginTableRow.h" include nil nil [98 125])
+            ("tbricks_definitions.h" include nil nil [126 158])
+            ("AO" type
+               (:members 
+                  ( ("MarginTableRow" function
+                       (:constructor-flag t
+                        :parent "MarginTableRow"
+                        :arguments 
+                          ( ("table" variable
+                               (:reference 1
+                                :type ("tbricks::TableParameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [209 241])
+                            ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [243 293])
+                            ("rowName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [295 326])
+                            ("margin" variable (:type "double") (reparse-symbol arg-sub-list) [328 342]))                          
+                        :type ("MarginTableRow" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [176 829])
+                    ("MarginTableRow" function
+                       (:destructor-flag t
+                        :parent "MarginTableRow"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [831 1262]))                  
+                :type "namespace")
+                nil [160 1265]))          
+      :file "MarginTableRow.cpp"
+      :pointmax 1285
+      :fsize 1284
+      :lastmodtime '(21962 60357 920348 107000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MarginTableRow.h"
+      :file "MarginTableRow.h"
+      :fsize 758
+      :lastmodtime '(21962 60357 920348 107000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 12894
+      :lastmodtime '(21962 60357 921348 37000))
+    (semanticdb-table "PublicTradesMarginReporter.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PublicTradesMarginReporter.h" include nil nil [110 149])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [150 199])
+            ("AO_SharedGlobal/Thrift/TimeUtils.h" include nil nil [200 245])
+            ("boost/bind.hpp" include (:system-flag t) nil [246 271])
+            ("boost/uuid/uuid_io.hpp" include (:system-flag t) nil [272 305])
+            ("AO" type
+               (:members 
+                  ( ("PublicTradesMarginReporter" function
+                       (:constructor-flag t
+                        :parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [380 396])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [396 424])
+                            ("" variable (:type ("statusCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [433 448]))                          
+                        :type ("PublicTradesMarginReporter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [323 536])
+                    ("RequestReport" function
+                       (:parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("hostname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [588 620])
+                            ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [623 637])
+                            ("begin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [640 671])
+                            ("end" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [674 703])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [706 744])
+                            ("timeWindow" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Duration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [747 783])
+                            ("sigmaWindow" variable (:type "double") (reparse-symbol arg-sub-list) [786 805])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [808 824])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [824 830])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [839 852]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [538 1458])
+                    ("OnTradesReady" function
+                       (:parent "PublicTradesMarginReporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1460 1620])
+                    ("GetReport" function
+                       (:parent "PublicTradesMarginReporter"
+                        :type ("ProductMarginMap" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1622 1712])
+                    ("ConvertMargin" function
+                       (:parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("product" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProductGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1763 1791])
+                            ("margin" variable (:type "double") (reparse-symbol arg-sub-list) [1792 1806]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [1714 2361])
+                    ("MakeReport" function
+                       (:parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("trades" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProductMaturityTrades" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2421 2457]))                          
+                        :type ("ProductMarginMap" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2363 3451])
+                    ("OnReaderStatus" function
+                       (:parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3501 3531]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3453 3584])
+                    ("SetReporterStatus" function
+                       (:parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3637 3667]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3586 3716])
+                    ("UpdateStatus" function
+                       (:parent "PublicTradesMarginReporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3718 3899])
+                    ("PrintTrade" function
+                       (:parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("ss" variable
+                               (:reference 1
+                                :type ("std::stringstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3945 3968])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3969 3988]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3901 4610])
+                    ("PrintStatistics" function
+                       (:parent "PublicTradesMarginReporter"
+                        :arguments 
+                          ( ("trades" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trades" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4661 4682])
+                            ("map" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MarginCalculator::StatisticsMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4683 4726]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4612 5297]))                  
+                :type "namespace")
+                nil [307 5300]))          
+      :file "PublicTradesMarginReporter.cpp"
+      :pointmax 5320
+      :fsize 5319
+      :lastmodtime '(21962 60357 920348 107000)
+      :unmatched-syntax '((punctuation 837 . 838) (CONST 832 . 837) (punctuation 830 . 831) (semantic-list 828 . 830) (punctuation 823 . 824) (punctuation 431 . 432) (CONST 426 . 431) (punctuation 424 . 425) (semantic-list 400 . 424) (punctuation 395 . 396)))
+    (semanticdb-table "PublicTradesMarginReporter.h"
+      :file "PublicTradesMarginReporter.h"
+      :fsize 2001
+      :lastmodtime '(21962 60357 920348 107000))
+    (semanticdb-table "PublicTradesReader.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PublicTradesReader.h" include nil nil [102 133])
+            ("boost/bind.hpp" include (:system-flag t) nil [134 159])
+            ("AO_SharedGlobal/Thrift/TimeUtils.h" include nil nil [160 205])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [206 255])
+            ("boost/optional.hpp" include (:system-flag t) nil [256 285])
+            ("boost/math/special_functions/fpclassify.hpp" include (:system-flag t) nil [286 340])
+            ("algorithm" include (:system-flag t) nil [341 361])
+            ("AO" type
+               (:members 
+                  ( ("tbricks" using (:type ("tbricks" type
+                         (:prototype t
+                          :type "namespace")
+                          nil nil)) (reparse-symbol namespacesubparts) [379 403])
+                    ("Tbricks::Messages::PublicTradesVisualizer::PublicTradesRequestMessage" using (:type ("Tbricks::Messages::PublicTradesVisualizer::PublicTradesRequestMessage" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [404 480])
+                    ("Tbricks::Messages::PublicTradesVisualizer::RequestMessage" using (:type ("Tbricks::Messages::PublicTradesVisualizer::RequestMessage" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [481 545])
+                    ("Tbricks::Messages::PublicTradesVisualizer::MICSymbol" using (:type ("Tbricks::Messages::PublicTradesVisualizer::MICSymbol" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [546 605])
+                    ("Tbricks::Messages::PublicTradesVisualizer::InvalidRequest" using (:type ("Tbricks::Messages::PublicTradesVisualizer::InvalidRequest" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [606 670])
+                    ("Tbricks::Messages::Shared::BoolWithNa" using (:type ("Tbricks::Messages::Shared::BoolWithNa" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [671 715])
+                    ("PublicTradesThrift" variable (:type "int") (reparse-symbol namespacesubparts) [722 799])
+                    ("boost::posix_time::ptime" using (:type ("boost::posix_time::ptime" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [801 832])
+                    ("boost::posix_time::time_duration" using (:type ("boost::posix_time::time_duration" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [833 872])
+                    ("PublicTradesReader::SIGMA_METRIC_KEY" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [874 944])
+                    ("PublicTradesReader::VEGA_METRIC_KEY" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [945 1008])
+                    ("PublicTradesReader::THEO_METRIC_KEY" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1009 1083])
+                    ("PublicTradesReader" function
+                       (:constructor-flag t
+                        :parent "PublicTradesReader"
+                        :arguments 
+                          ( ("hostname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1126 1158])
+                            ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1160 1174])
+                            ("begin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1176 1207])
+                            ("end" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1209 1238])
+                            ("groupHelper" variable
+                               (:reference 1
+                                :type ("GroupsManagerWrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1240 1275])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1277 1293])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [1293 1321])
+                            ("" variable (:type ("statusCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1330 1345])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1347 1363])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [1363 1369])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1378 1391]))                          
+                        :type ("PublicTradesReader" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1085 1913])
+                    ("OnGroupsHelperReady" function
+                       (:parent "PublicTradesReader"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1915 2612])
+                    ("OnThriftDisconnected" function
+                       (:parent "PublicTradesReader"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2614 2769])
+                    ("FillMicSymbolList" function
+                       (:parent "PublicTradesReader"
+                        :arguments 
+                          ( ("list" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("MICSymbol" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2814 2844]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2771 3360])
+                    ("FillHiddenMaturitiesList" function
+                       (:parent "PublicTradesReader"
+                        :arguments 
+                          ( ("list" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int64_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3412 3440]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3362 3660])
+                    ("OnDataReceived" function
+                       (:parent "PublicTradesReader"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3662 4265])
+                    ("ReceivePublicTrades" function
+                       (:parent "PublicTradesReader"
+                        :arguments 
+                          ( ("publicTrades" variable
+                               (:reference 1
+                                :type ("PublicTradesThrift" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4314 4348])
+                            ("client" variable
+                               (:reference 1
+                                :type ("Tbricks::Messages::PublicTradesVisualizer::MessageManagerClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4350 4423]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4267 4471])
+                    ("OnPublicTradesReceived" function
+                       (:parent "PublicTradesReader"
+                        :arguments 
+                          ( ("publicTrades" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PublicTradesThrift" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4521 4560]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4473 7977])
+                    ("ProcessTrade" function
+                       (:parent "PublicTradesReader"
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8019 8069])
+                            ("tradeTime" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::posix_time::ptime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8071 8113])
+                            ("volume" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8115 8129])
+                            ("sigma" variable (:type "double") (reparse-symbol arg-sub-list) [8131 8144])
+                            ("vega" variable (:type "double") (reparse-symbol arg-sub-list) [8145 8157])
+                            ("price" variable (:type "double") (reparse-symbol arg-sub-list) [8158 8171])
+                            ("theo" variable (:type "double") (reparse-symbol arg-sub-list) [8172 8184]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7979 8691])
+                    ("SortTrades" function
+                       (:parent "PublicTradesReader"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8693 9010])
+                    ("GetData" function
+                       (:parent "PublicTradesReader"
+                        :type ("ProductMaturityTrades" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9012 9095])
+                    ("IsReady" function
+                       (:parent "PublicTradesReader"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9097 9159]))                  
+                :type "namespace")
+                nil [363 9162]))          
+      :file "PublicTradesReader.cpp"
+      :pointmax 9182
+      :fsize 9181
+      :lastmodtime '(22149 9728 957962 326000)
+      :unmatched-syntax '((punctuation 1376 . 1377) (CONST 1371 . 1376) (punctuation 1369 . 1370) (semantic-list 1367 . 1369) (punctuation 1362 . 1363) (punctuation 1328 . 1329) (CONST 1323 . 1328) (punctuation 1321 . 1322) (semantic-list 1297 . 1321) (punctuation 1292 . 1293) (USING 716 . 721)))
+    (semanticdb-table "PublicTradesReader.h"
+      :file "PublicTradesReader.h"
+      :fsize 2491
+      :lastmodtime '(21962 60357 920348 107000))
+    (semanticdb-table "PublicTradesReaderWrapper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/bind.hpp" include (:system-flag t) nil [109 134])
+            ("PublicTradesReaderWrapper.h" include nil nil [135 173])
+            ("AO" type
+               (:members 
+                  ( ("RequestPublicTrades" function
+                       (:parent "PublicTradesReaderWrapper"
+                        :arguments 
+                          ( ("hostname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [245 277])
+                            ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [279 293])
+                            ("begin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [295 326])
+                            ("end" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [328 357])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [359 397])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [399 415])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [415 443])
+                            ("" variable (:type ("statusCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [452 467])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [469 485])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [485 491])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [500 513]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [191 1520])
+                    ("OnGroupsManagerReady" function
+                       (:parent "PublicTradesReaderWrapper"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1522 1855])
+                    ("GetData" function
+                       (:parent "PublicTradesReaderWrapper"
+                        :type ("ProductMaturityTrades" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1857 2085])
+                    ("GetGroupsManager" function
+                       (:parent "PublicTradesReaderWrapper"
+                        :type ("GroupsManagerWrapper" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2087 2325])
+                    ("IsReady" function
+                       (:parent "PublicTradesReaderWrapper"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2327 2432]))                  
+                :type "namespace")
+                nil [175 2435]))          
+      :file "PublicTradesReaderWrapper.cpp"
+      :pointmax 2455
+      :fsize 2454
+      :lastmodtime '(21962 60357 920348 107000)
+      :unmatched-syntax '((punctuation 498 . 499) (CONST 493 . 498) (punctuation 491 . 492) (semantic-list 489 . 491) (punctuation 484 . 485) (punctuation 450 . 451) (CONST 445 . 450) (punctuation 443 . 444) (semantic-list 419 . 443) (punctuation 414 . 415)))
+    (semanticdb-table "PublicTradesReaderWrapper.h"
+      :file "PublicTradesReaderWrapper.h"
+      :fsize 1860
+      :lastmodtime '(21962 60357 920348 107000))
+    (semanticdb-table "ResultTableManager.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ResultTableManager.h" include nil nil [102 133])
+            ("memory" include (:system-flag t) nil [134 151])
+            ("AO" type
+               (:members 
+                  ( ("ResultTableManager" function
+                       (:constructor-flag t
+                        :parent "ResultTableManager"
+                        :arguments 
+                          ( ("table" variable
+                               (:reference 1
+                                :type ("tbricks::TableParameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [208 240]))                          
+                        :type ("ResultTableManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [169 261])
+                    ("Clear" function
+                       (:parent "ResultTableManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [263 316])
+                    ("ShowReport" function
+                       (:parent "ResultTableManager"
+                        :arguments 
+                          ( ("report" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ProductMarginMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [354 385]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [318 921])
+                    ("ShowMaturity" function
+                       (:parent "ResultTableManager"
+                        :arguments 
+                          ( ("productName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [963 998])
+                            ("maturityReport" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MarginMap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1000 1032]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [923 1382]))                  
+                :type "namespace")
+                nil [153 1385]))          
+      :file "ResultTableManager.cpp"
+      :pointmax 1405
+      :fsize 1404
+      :lastmodtime '(21962 60357 920348 107000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ResultTableManager.h"
+      :file "ResultTableManager.h"
+      :fsize 872
+      :lastmodtime '(21962 60357 920348 107000))
+    (semanticdb-table "Trade.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Trade.h" include nil nil [89 107])
+            ("cmath" include (:system-flag t) nil [108 124])
+            ("boost/uuid/uuid_generators.hpp" include (:system-flag t) nil [125 166])
+            ("AO" type
+               (:members 
+                  ( ("Trade" function
+                       (:constructor-flag t
+                        :parent "Trade"
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PairUuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [199 228])
+                            ("tradeTime" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::posix_time::ptime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [230 272])
+                            ("volume" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [274 288])
+                            ("sigma" variable (:type "double") (reparse-symbol arg-sub-list) [290 303])
+                            ("vega" variable (:type "double") (reparse-symbol arg-sub-list) [305 317])
+                            ("price" variable (:type "double") (reparse-symbol arg-sub-list) [319 332])
+                            ("theo" variable (:type "double") (reparse-symbol arg-sub-list) [334 346])
+                            ("instrumentFactor" variable (:type "double") (reparse-symbol arg-sub-list) [348 372]))                          
+                        :type ("Trade" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [184 589])
+                    ("Trade" function
+                       (:constructor-flag t
+                        :parent "Trade"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::uuids::uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [606 635])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PairUuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [637 666])
+                            ("tradeTime" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::posix_time::ptime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [668 710])
+                            ("volume" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [712 726])
+                            ("sigma" variable (:type "double") (reparse-symbol arg-sub-list) [728 741])
+                            ("vega" variable (:type "double") (reparse-symbol arg-sub-list) [743 755])
+                            ("price" variable (:type "double") (reparse-symbol arg-sub-list) [757 770])
+                            ("theo" variable (:type "double") (reparse-symbol arg-sub-list) [772 784])
+                            ("instrumentFactor" variable (:type "double") (reparse-symbol arg-sub-list) [786 810]))                          
+                        :type ("Trade" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [591 995])
+                    ("IsBuy" function
+                       (:parent "Trade"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [997 1051])
+                    ("WithDecreasedVolume" function
+                       (:parent "Trade"
+                        :arguments 
+                          ( ("decreaseBy" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1086 1104]))                          
+                        :type ("Trade" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1053 1378])
+                    ("Margin" function
+                       (:parent "Trade"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [1380 1523])
+                    ("GetTimeDifference" function
+                       (:arguments 
+                          ( ("t1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1576 1592])
+                            ("t2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1593 1609]))                          
+                        :type ("boost::posix_time::time_duration" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1525 1786])
+                    ("<<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1814 1832])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1833 1852]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1788 2117])
+                    ("()" function
+                       (:operator-flag t
+                        :parent "TradeTimeLess"
+                        :arguments 
+                          ( ("left" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2150 2168])
+                            ("right" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2169 2188]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2119 2243]))                  
+                :type "namespace")
+                nil [168 2246]))          
+      :file "Trade.cpp"
+      :pointmax 2266
+      :fsize 2265
+      :lastmodtime '(22149 9701 864646 241000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Trade.h"
+      :file "Trade.h"
+      :fsize 1981
+      :lastmodtime '(22149 9701 864646 241000))
+    (semanticdb-table "TradesMatcher.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TradesMatcher.h" include nil nil [97 123])
+            ("TradesMatcherUtils.h" include nil nil [124 155])
+            ("cmath" include (:system-flag t) nil [156 172])
+            ("sstream" include (:system-flag t) nil [173 191])
+            ("AO" type
+               (:members 
+                  ( ("TradesMatcher" function
+                       (:constructor-flag t
+                        :parent "TradesMatcher"
+                        :arguments 
+                          ( ("timeWindow" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::posix_time::time_duration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [240 291])
+                            ("sigmaWindow" variable (:type "double") (reparse-symbol arg-sub-list) [293 312]))                          
+                        :type ("TradesMatcher" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [209 372])
+                    ("Match" function
+                       (:parent "TradesMatcher"
+                        :arguments 
+                          ( ("t1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [424 440])
+                            ("t2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [441 457]))                          
+                        :type ("boost::optional" type
+                             (:template-specifier 
+                                ( ("MatchResult" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [374 1200])
+                    ("CanBeMatched" function
+                       (:parent "TradesMatcher"
+                        :arguments 
+                          ( ("t1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1235 1251])
+                            ("t2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1252 1268]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1202 1356]))                  
+                :type "namespace")
+                nil [193 1359]))          
+      :file "TradesMatcher.cpp"
+      :pointmax 1379
+      :fsize 1378
+      :lastmodtime '(22149 9701 864646 241000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TradesMatcher.h"
+      :file "TradesMatcher.h"
+      :fsize 853
+      :lastmodtime '(22149 9701 864646 241000))
+    (semanticdb-table "TradesMatcherUtils.h"
+      :file "TradesMatcherUtils.h"
+      :fsize 830
+      :lastmodtime '(22149 9701 864646 241000))
+    (semanticdb-table "TradesMatcherUtils.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TradesMatcherUtils.h" include nil nil [102 133])
+            ("boost/numeric/conversion/cast.hpp" include (:system-flag t) nil [134 178])
+            ("boost/math/special_functions/fpclassify.hpp" include (:system-flag t) nil [179 233])
+            ("cmath" include (:system-flag t) nil [234 250])
+            ("limits" include (:system-flag t) nil [251 268])
+            ("AO" type
+               (:members 
+                  ( ("TradesMatcherUtils" type
+                       (:members 
+                          ( ("GetMatchVolume" function
+                               (:arguments 
+                                  ( ("t1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [361 377])
+                                    ("t2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [378 394]))                                  
+                                :type ("boost::tuple" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil)
+                                          ("size_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [317 731])
+                            ("GetVolumeForVega" function
+                               (:arguments 
+                                  ( ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [757 776])
+                                    ("vega" variable (:type "double") (reparse-symbol arg-sub-list) [777 789]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [733 1222])
+                            ("CanBeMatched" function
+                               (:arguments 
+                                  ( ("t1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1244 1260])
+                                    ("t2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1262 1278])
+                                    ("timeWindow" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::posix_time::time_duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1280 1331])
+                                    ("sigmaWindow" variable (:type "double") (reparse-symbol arg-sub-list) [1333 1352]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1224 1785]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [285 1788]))                  
+                :type "namespace")
+                nil [270 1825]))          
+      :file "TradesMatcherUtils.cpp"
+      :pointmax 1845
+      :fsize 1844
+      :lastmodtime '(22149 9701 864646 241000)
+      :unmatched-syntax nil))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_IntersectionMarginReport!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

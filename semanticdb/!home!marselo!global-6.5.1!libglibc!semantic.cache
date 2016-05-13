@@ -1,0 +1,25 @@
+;; Object libglibc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libglibc/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("noinst_LIBRARIES" variable (:default-value ("libgloglibc.a")) nil [536 569])
+            ("INCS" variable (:default-value ("regex.h" "getopt.h" "obstack.h" "hash-string.h" "getopt_int.h")) nil [570 631])
+            ("SRCS" variable (:default-value ("regex.c" "getopt.c" "getopt1.c" "snprintf.c" "obstack.c" "hash-string.c")) nil [631 700])
+            ("noinst_HEADERS" variable (:default-value ("$(INCS)" "sqlite3.h")) nil [716 751])
+            ("libgloglibc_a_SOURCES" variable (:default-value ("$(SRCS)" "sqlite3.c")) nil [751 793])
+            ("noinst_HEADERS" variable (:default-value ("$(INCS)")) nil [798 823])
+            ("libgloglibc_a_SOURCES" variable (:default-value ("$(SRCS)")) nil [823 855])
+            ("libgloglibc_a_DEPENDENCIES" variable (:default-value ("$(libgloglibc_a_LIBADD)")) nil [862 915])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-DSQLITE_THREADSAFE=0" "-DSQLITE_OMIT_LOAD_EXTENSION")) nil [916 995]))          
+      :file "Makefile.am"
+      :pointmax 995
+      :fsize 994
+      :lastmodtime '(22007 34545 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!global-6.5.1!libglibc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

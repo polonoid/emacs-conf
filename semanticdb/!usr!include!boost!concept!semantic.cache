@@ -1,0 +1,62 @@
+;; Object concept/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "concept/"
+  :tables
+  (list
+    (semanticdb-table "assert.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_CONCEPT_ASSERT_DWA2006430_HPP" variable (:constant-flag t) nil [241 276])
+            ("boost/config.hpp" include (:system-flag t) nil [278 306])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [307 346])
+            ("boost/concept/detail/general.hpp" include (:system-flag t) nil [1547 1592])
+            ("BOOST_CONCEPT_ASSERT" variable (:constant-flag t) nil [1730 1750]))          
+      :file "assert.hpp"
+      :pointmax 1865
+      :fsize 1864
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_CONCEPT_ASSERT_DWA2006430_HPP")
+          ("BOOST_CONCEPT_ASSERT" (spp-arg-list ("ModelInParens") 1750 . 1765) . ((symbol "BOOST_CONCEPT_ASSERT_FN" 1772 . 1795) (semantic-list "(void(*)ModelInParens)" 1795 . 1817)))
+          )
+)
+    (semanticdb-table "usage.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_CONCEPT_USAGE_DWA2006919_HPP" variable (:constant-flag t) nil [240 274])
+            ("boost/concept/assert.hpp" include (:system-flag t) nil [276 312])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [313 352])
+            ("boost" type
+               (:members 
+                  ( ("concept" type
+                       (:members 
+                          ( ("usage_requirements" type
+                               (:template 
+                                  ( ("Model" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("usage_requirements" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [544 592]))                                  )
+                                (reparse-symbol namespacesubparts) [489 595])
+                            ("BOOST_CONCEPT_USAGE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [898 917]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [372 1074]))                  
+                :type "namespace")
+                nil [354 1075]))          
+      :file "usage.hpp"
+      :pointmax 1150
+      :fsize 1149
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_CONCEPT_USAGE_DWA2006919_HPP")
+          ("BOOST_CONCEPT_USAGE" (spp-arg-list ("model") 917 . 924) . 
+              ((symbol "BOOST_CONCEPT_ASSERT" 968 . 988) (semantic-list "((boost::concept::usage_requirements<model>))" 988 . 1033) (punctuation ";" 1033 . 1034) (punctuation "~" 1043 . 1044) (symbol "model" 1044 . 1049) (semantic-list "()" 1049 . 1051)))
+          )
+))
+  :file "!usr!include!boost!concept!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

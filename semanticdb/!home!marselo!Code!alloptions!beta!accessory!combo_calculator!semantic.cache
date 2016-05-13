@@ -1,0 +1,1899 @@
+;; Object combo_calculator/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "combo_calculator/"
+  :tables
+  (list
+    (semanticdb-table "LiveCalculatedValuesHandler.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__APPS__COMBO_CALCULATOR__LIVE_CALCULATED_VALUES_HANDLER_H" variable (:constant-flag t) nil [85 152])
+            ("Enumerations.h" include nil nil [154 179])
+            ("strategy/instrument/CalculatedInstrumentValues.h" include (:system-flag t) nil [180 239])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [241 265])
+            ("LiveCalculatedValuesHandler" type
+               (:superclasses 
+                  ( ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [356 363])
+                    ("IHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [393 400])
+                            ("HandleComboLiveCalculatedValueUpdate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("calculatedValueId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Uuid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [459 490])
+                                    ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Variant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [491 514])
+                                    ("mode" variable
+                                       (:constant-flag t
+                                        :type ("VolatilityMode::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [573 605]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [409 610])
+                            ("HandleLegLiveCalculatedValueUpdate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("legId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [667 702])
+                                    ("calculatedValueId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Uuid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [703 734])
+                                    ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Variant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [791 814])
+                                    ("mode" variable
+                                       (:constant-flag t
+                                        :type ("VolatilityMode::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [815 847])
+                                    ("valueKind" variable
+                                       (:constant-flag t
+                                        :type ("ValueKind::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [904 936])
+                                    ("updateState" variable
+                                       (:constant-flag t
+                                        :type ("UpdateState::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [937 973]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [619 978])
+                            ("HandleUnderlyingLiveCalculatedValueUpdate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("underlyingId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1042 1084])
+                                    ("calculatedValueId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Uuid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1085 1116])
+                                    ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Variant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1180 1203])
+                                    ("mode" variable
+                                       (:constant-flag t
+                                        :type ("VolatilityMode::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1204 1236]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [987 1241])
+                            ("HandleComboLiveImpliedVolatilityUpdate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("impliedVolType" variable
+                                       (:constant-flag t
+                                        :type ("ComboImpliedVolatilityType::type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1303 1357])
+                                    ("impliedVolatility" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1418 1451]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1251 1456])
+                            ("HandleLiveCalculatedValuesHandlerError" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("error" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1518 1539]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1466 1544])
+                            ("ComboImpliedVolatilityMakesSense" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1554 1612]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [368 1619])
+                    ("public" label nil (reparse-symbol classsubparts) [1621 1628])
+                    ("LiveCalculatedValuesHandler" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("callback" variable
+                               (:reference 1
+                                :type ("IHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1661 1681]))                          
+                        :type ("LiveCalculatedValuesHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1633 1682])
+                    ("LiveCalculatedValuesHandler" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1687 1726])
+                    ("SetComboIdentifier" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("comboId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1756 1793]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1732 1794])
+                    ("UpdateComboPriceForImpliedVolatility" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1842 1862])
+                            ("impliedVolType" variable
+                               (:constant-flag t
+                                :type ("ComboImpliedVolatilityType::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1863 1917])
+                            ("updateMode" variable
+                               (:constant-flag t
+                                :type ("UpdateMode::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1964 1998]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1800 1999])
+                    ("AddLeg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("legId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2017 2052])
+                            ("staticVolatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2053 2086])
+                            ("" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2087 2095]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2005 2097])
+                    ("UpdateLegStaticVolatility" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("legId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2133 2168])
+                            ("staticVolatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2169 2201]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2102 2202])
+                    ("UpdateLegSimulationPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("legId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2238 2273])
+                            ("simulationPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2274 2304]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2208 2305])
+                    ("UpdateLegSimulationVolatility" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("legId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2345 2380])
+                            ("simulationVol" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2381 2410]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2310 2411])
+                    ("AddUnderlying" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("underlyingId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2436 2478]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2417 2479])
+                    ("GetVolatilityMode" function
+                       (:prototype-flag t
+                        :type ("VolatilityMode::type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2485 2532])
+                    ("SwitchVolatilityMode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mode" variable
+                               (:constant-flag t
+                                :type ("VolatilityMode::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2563 2595]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2537 2596])
+                    ("Start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2602 2615])
+                    ("Stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2620 2632])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2637 2650])
+                    ("IsActive" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2656 2678])
+                    ("private" label nil (reparse-symbol classsubparts) [2680 2688])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2731 2765])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2808 2858]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2693 2859])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2888 2920]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2864 2921])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2949 2981]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2926 2982])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3010 3042]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2987 3043])
+                    ("AddOrUpdateLegVolOption" type
+                       (:members 
+                          ( ("type" type
+                               (:members 
+                                  ( ("Add" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3118 3122])
+                                    ("Update" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3135 3151]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [3094 3152]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [3049 3159])
+                    ("AddOrUpdateLegStaticVolatility" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("legId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3201 3236])
+                            ("staticVolatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3237 3269])
+                            ("option" variable
+                               (:constant-flag t
+                                :type ("AddOrUpdateLegVolOption::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3310 3353]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3165 3354])
+                    ("OpenOrModifyComboLegsUnderlyingsStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3360 3406])
+                    ("OpenOrModifyComboImpliedVolatilityStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("impliedVolType" variable
+                               (:constant-flag t
+                                :type ("ComboImpliedVolatilityType::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3458 3512]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3412 3513])
+                    ("CheckAndCloseComboImpliedVolatilityStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("impliedVolType" variable
+                               (:constant-flag t
+                                :type ("ComboImpliedVolatilityType::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3565 3619]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3518 3620])
+                    ("ProcessComboLegsUnderlyingsStreamUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3671 3721]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3626 3722])
+                    ("ProcessComboImpliedVolatilityUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3768 3818])
+                            ("impliedVolType" variable
+                               (:constant-flag t
+                                :type ("ComboImpliedVolatilityType::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3864 3918]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3727 3919])
+                    ("ProcessLegSimulationVolatilityUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("activeRowId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3966 3991])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3992 4042]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3924 4043])
+                    ("ProcessLegSimulationPriceUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("activeRowId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4085 4110])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4111 4161]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4048 4162])
+                    ("HasPendingLegSimulations" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4168 4206])
+                    ("private" label nil (reparse-symbol classsubparts) [4208 4216])
+                    ("StreamCompareByIdentifier" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4263 4270])
+                            ("StreamCompareByIdentifier" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("streamId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4305 4339]))                                  
+                                :type ("StreamCompareByIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4279 4365])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4391 4441]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4375 4512])
+                            ("private" label nil (reparse-symbol classsubparts) [4518 4526])
+                            ("StreamCompareByIdentifier" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("StreamCompareByIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4535 4563])
+                            ("m_streamId" variable (:type ("StreamIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4572 4600]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [4221 4607])
+                    ("LegSimulationMode" type
+                       (:members 
+                          ( ("type" type
+                               (:members 
+                                  ( ("PriceToVol" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4676 4687])
+                                    ("VolToPrice" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4700 4720]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [4652 4721]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [4613 4728])
+                    ("LegValues" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4760 4767])
+                            ("LegValues" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("streamHandler" variable
+                                       (:reference 1
+                                        :type ("LiveCalculatedValuesHandler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4786 4830]))                                  
+                                :type ("LegValues" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4776 4831])
+                            ("LegValues" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LegValues" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4850 4874]))                                  
+                                :type ("LegValues" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4840 4875])
+                            ("CheckSimulationModeAndUpdateStreams" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("legId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4926 4961]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4885 4962])
+                            ("m_streamHandler" variable (:type ("LiveCalculatedValuesHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4972 5018])
+                            ("m_staticVol" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5028 5048])
+                            ("m_simulationVol" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5057 5081])
+                            ("m_simulationPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5090 5116])
+                            ("m_volToPriceSimulationStreamActiveRowId" variable (:type ("Uuid" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5126 5174])
+                            ("m_volToPriceSimulationStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5183 5248])
+                            ("m_priceToVolSimulationStreamActiveRowId" variable (:type ("Uuid" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5258 5306])
+                            ("m_priceToVolSimulationStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5315 5380])
+                            ("m_legSimulationMode" variable (:type ("LegSimulationMode::type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5390 5438])
+                            ("m_simulationDone" variable
+                               (:typemodifiers ("mutable")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5447 5480])
+                            ("private" label nil (reparse-symbol classsubparts) [5486 5494])
+                            ("LegValues" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("LegValues" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5565 5577])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("LegValues" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5608 5632]))                                  
+                                :type ("LegValues" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5586 5633]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [4734 5640])
+                    ("private" label nil (reparse-symbol classsubparts) [5642 5650])
+                    ("m_callback" variable (:type ("IHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5655 5706])
+                    ("m_comboId" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5712 5746])
+                    ("LegValuesHash" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("LegValues" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5752 5817])
+                    ("m_legValues" variable (:type ("LegValuesHash" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5822 5850])
+                    ("m_underlyingIds" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("InstrumentIdentifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5856 5908])
+                    ("m_comboLegsUnderlyingsLiveStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5914 5983])
+                    ("m_rowIdsForComboLegsUnderlyingsStream" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("Identifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5988 6062])
+                    ("m_volatilityMode" variable (:type ("VolatilityMode::type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6067 6120])
+                    ("m_comboPricesForImpliedVolCalculations" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Price" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6126 6193])
+                    ("m_rowIdsForComboImpliedVolStreams" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Identifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6198 6260])
+                    ("m_comboImpliedVolStreams" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("CalculatedInstrumentValues::Stream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6265 6340])
+                    ("m_isActive" variable (:type "bool") (reparse-symbol classsubparts) [6346 6365]))                  
+                :type "class")
+                nil [267 6368]))          
+      :file "LiveCalculatedValuesHandler.h"
+      :pointmax 6448
+      :fsize 6447
+      :lastmodtime '(21962 60358 52338 914000)
+      :unmatched-syntax '((semantic-list 2093 . 2095) (punctuation 2085 . 2086))
+      :lexical-table 
+        '(("__TBRICKS__APPS__COMBO_CALCULATOR__LIVE_CALCULATED_VALUES_HANDLER_H")
+          )
+)
+    (semanticdb-table "Enumerations.h"
+      :file "Enumerations.h"
+      :fsize 1126
+      :lastmodtime '(21962 60358 51338 983000))
+    (semanticdb-table "StreamDataManager.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__PLUGIN__COMBO_CALCULATOR__COMBO_CONTROLLER_H" variable (:constant-flag t) nil [319 374])
+            ("shared/API.h" include nil nil [376 399])
+            ("tbricks_definitions.h" include nil nil [400 432])
+            ("ComboContainer.h" include nil nil [433 460])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [462 486])
+            ("ComboCalculator" type
+               (:prototype t
+                :type "class")
+                nil [488 510])
+            ("ComboContainer" type
+               (:prototype t
+                :type "class")
+                nil [511 532])
+            ("StreamDataManager" type
+               (:superclasses 
+                  ( ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("BestPriceStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ITimerEventHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [865 872])
+                    ("LegInfo" type
+                       (:members 
+                          ( ("m_shortName" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [931 950])
+                            ("m_underlyingId" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [959 995])
+                            ("m_ratio" variable (:type "double") (reparse-symbol classsubparts) [1004 1019])
+                            ("m_fairMarketPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1028 1053])
+                            ("m_strikePrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1062 1083])
+                            ("m_volatility" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1092 1112])
+                            ("m_price" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1121 1136])
+                            ("m_impliedVolatility" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1145 1172])
+                            ("m_px" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1181 1193])
+                            ("m_delta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1325 1340])
+                            ("m_skewDelta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1349 1368])
+                            ("m_underlyingDelta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1377 1402])
+                            ("m_underlyingSkewDelta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1411 1440])
+                            ("m_currentUnderlyingPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1486 1518])
+                            ("m_overrideUnderlyingPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1527 1560])
+                            ("m_multiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1569 1589])
+                            ("m_priceChanged" variable (:type "bool") (reparse-symbol classsubparts) [1599 1619])
+                            ("m_maturityDate" variable (:type ("CalendarDate" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1629 1657]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [877 1664])
+                    ("HashLegs" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("LegInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1670 1723])
+                    ("EImpliedVolatilities" type
+                       (:members 
+                          ( ("IMPLIED_VOLS_BROKER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1769 1789])
+                            ("IMPLIED_VOLS_EXCHANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1798 1820])
+                            ("IMPLIED_VOLS_IMPLIED" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1829 1881]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1729 1882])
+                    ("private" label nil (reparse-symbol classsubparts) [1884 1892])
+                    ("ValueToStrategyParameter" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("Uuid" type nil nil nil)
+                                  ("Uuid" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1897 1947])
+                    ("public" label nil (reparse-symbol classsubparts) [1949 1956])
+                    ("BidAndAskChangedFlag" type
+                       (:members 
+                          ( ("BID" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1998 2002])
+                            ("ASK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2011 2015])
+                            ("BID_AND_ASK" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2024 2041]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [1962 2042])
+                    ("StreamDataManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("comboCalculator" variable
+                               (:reference 1
+                                :type ("ComboCalculator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2066 2100]))                          
+                        :type ("StreamDataManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2048 2101])
+                    ("StreamDataManager" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2106 2127])
+                    ("CreateComboTemporary" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2133 2161])
+                    ("HandleOverrideUnderlyingPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("overrideUnderlyingPrice" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2203 2240])
+                            ("underlyingId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2280 2322]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2168 2323])
+                    ("RestoreComboContent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2354 2392]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2329 2393])
+                    ("CreateOTCInstrument" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2399 2426])
+                    ("MarkExchangeComboAsFavorite" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2431 2466])
+                    ("ISUpdateInstrument" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2472 2498])
+                    ("ISUpdateInstrumentParameters" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2503 2539])
+                    ("ParseBasketBBO" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2545 2567])
+                    ("ParseExchangeBBO" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2572 2596])
+                    ("ParseUnderlyingPrices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2629 2679]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2602 2680])
+                    ("ParseComponentPrices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2711 2760]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2685 2761])
+                    ("ParseComponentImpliedVolatilities" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2805 2854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2766 2855])
+                    ("ParseCalculatedValues" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2887 2936])
+                            ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2937 2971]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2860 2972])
+                    ("ParseDeltaPerPx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("deltaPerPx" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2998 3018])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3019 3068]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2977 3069])
+                    ("ParseComboImpliedVolatilities" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("whichVols" variable
+                               (:constant-flag t
+                                :type ("EImpliedVolatilities" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3109 3146])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3147 3197]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3074 3198])
+                    ("ReopenInstrumentStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3204 3234])
+                    ("ReopenInstrumentParametersStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3239 3279])
+                    ("ReopenCalculationStreams" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pLegData" variable
+                               (:pointer 1
+                                :type ("HashLegs" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3314 3335])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3336 3341])
+                            ("underlyingPriceInt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Integer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3342 3378])
+                            ("" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3379 3388])
+                            ("live" variable (:type "bool") (reparse-symbol arg-sub-list) [3390 3401])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3402 3408]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3284 3409])
+                    ("ReopenDeltaPerPxCalculationStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Px" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3453 3471]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3414 3472])
+                    ("ReopenUnderlyingPricesStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3477 3513])
+                    ("ReopenComponentPricesStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3518 3553])
+                    ("ReopenComponentImpliedVolatilitiesStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("underlyingPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Integer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3604 3636])
+                            ("" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3637 3646]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3558 3648])
+                    ("ReopenComboImpliedVolatilitiesStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("whichVols" variable
+                               (:constant-flag t
+                                :type ("EImpliedVolatilities" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3695 3732])
+                            ("bidAskChangedFlag" variable
+                               (:constant-flag t
+                                :type ("BidAndAskChangedFlag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3733 3778])
+                            ("underlyingPrice" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3779 3804])
+                            ("" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3805 3814]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3653 3816])
+                    ("WhichBBOStream" type
+                       (:members 
+                          ( ("BBO_STREAM_BASKET" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3852 3870])
+                            ("BBO_STREAM_EXCHANGE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3879 3904]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3822 3905])
+                    ("ReopenBBOStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3911 3934])
+                    ("ReopenBBOStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("venueId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("VenueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3960 3992])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4018 4060])
+                            ("whichBBO" variable
+                               (:constant-flag t
+                                :type ("WhichBBOStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4086 4116]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3939 4117])
+                    ("ResolveExchangeCombo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4123 4151])
+                    ("SetMaxNumOfAttemptsToResolveExchangeCombo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("maxNumOfAttempts" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4204 4234]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4157 4235])
+                    ("GetComboIdentifier" function (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4241 4318])
+                    ("GetUnderlyingInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4368 4408]))                          
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4323 4409])
+                    ("GetMaturityGroup" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4454 4484]))                          
+                        :type ("InstrumentGroup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4414 4485])
+                    ("GetDeltaNeutralRatio" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("delta" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [4517 4536])
+                            ("multiplier" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [4537 4561])
+                            ("desiredComboDelta" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [4592 4623])
+                            ("deltaPerPx" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4624 4650])
+                            ("gcd_mult" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4681 4703])
+                            ("ratio" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4704 4719])
+                            ("underlying_is_futures_with_different_multiplier" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4750 4809])
+                            ("underlying_is_already_in_combo" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [4840 4882]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4491 4889])
+                    ("SetPxForComponent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4918 4959])
+                            ("px" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4987 5004])
+                            ("numberOfTicks" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5005 5029]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4895 5030])
+                    ("SetOverrideImpliedVolatilityForComponent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5081 5122])
+                            ("implied_volatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5173 5207])
+                            ("numberOfTicks" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5258 5282]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5035 5283])
+                    ("SetOverridePriceForComponent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5322 5363])
+                            ("overridePrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5402 5430])
+                            ("numberOfTicks" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5469 5493]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5288 5494])
+                    ("SetOverrideUnderlyingPriceForComponent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5543 5584])
+                            ("overridePrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5633 5661])
+                            ("numberOfTicks" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [5710 5734]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5499 5735])
+                    ("AddComponent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5758 5800])
+                            ("ratio" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [5801 5820])
+                            ("relativeChange" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5843 5869])
+                            ("skipISUpdate" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5870 5895])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5896 5902]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5740 5903])
+                    ("RemoveLeg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5923 5965]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5908 5966])
+                    ("MakeDeltaNeutral" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("deltaPerPx" variable
+                               (:constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5993 6018])
+                            ("" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6019 6027]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5971 6029])
+                    ("Reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6034 6047])
+                    ("CanCreateInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("failReason" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6078 6098]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6053 6105])
+                    ("ExchangeCreateInstrument" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6111 6143])
+                    ("CanExchangeCreateInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("failReason" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6181 6201])
+                            ("pCanCreateInverseCombo" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6202 6233])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6234 6239]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6148 6240])
+                    ("GetLegData" function (:type ("HashLegs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6246 6291])
+                    ("ClearPluginFairAndGreeks" function
+                       (:prototype-flag t
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6297 6336])
+                    ("GetUnderlyingPriceForComponent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("componentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6480 6521]))                          
+                        :type ("Price" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6443 6522])
+                    ("FixAllOverridenUnderlyingPrices" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6619 6658])
+                    ("ResetAllOverridenUnderlyingPrices" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6730 6771])
+                    ("GetCombinationType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("comboTypeName" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6929 6952]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6905 6953])
+                    ("ClearPreviouslyCreatedTemporary" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6996 7028]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6959 7029])
+                    ("InvertCombo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7035 7054])
+                    ("CloseCalcStreamOnNextSnapshot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7060 7097])
+                    ("GetComboPx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Px" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7119 7131]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7103 7138])
+                    ("strikeLess" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("first" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("InstrumentIdentifier" type nil nil nil)
+                                          ("LegInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7167 7221])
+                            ("second" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("InstrumentIdentifier" type nil nil nil)
+                                          ("LegInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7249 7304]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7144 7389])
+                    ("PotentiallyDeltaNeutral" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7512 7549])
+                    ("ExchangeComboCreated" function (:type "bool") (reparse-symbol classsubparts) [7555 7623])
+                    ("OTCComboCreated" function (:type "bool") (reparse-symbol classsubparts) [7628 7686])
+                    ("AutoPxFlag" function (:type "bool") (reparse-symbol classsubparts) [7692 7736])
+                    ("SetPendingPxUpdateFlag" function
+                       (:arguments 
+                          ( ("pendingPxUpdateFlag" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [7770 7801]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7742 7846])
+                    ("IsUnderlyingCFI" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("cfi" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CFI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7880 7896]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [7852 7897])
+                    ("SetUnderlyingPriceIncrement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("inc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7936 7954]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7903 7955])
+                    ("ReopenCalculationStreamsForAllUnderlyingPriceLayers" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("overrideUnderlyingPrice" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8017 8054])
+                            ("underlyingId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8055 8097]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7960 8098])
+                    ("SetCacheParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("countCachedLayers" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8128 8153])
+                            ("maxCacheSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8154 8174]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8104 8175])
+                    ("CloseUnderlyingPriceStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8181 8215])
+                    ("InvalidateCaches" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8221 8245])
+                    ("ExchangeComboFavorited" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [8251 8287])
+                    ("HandleRequestReply" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8325 8347])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8348 8362])
+                            ("statusText" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8399 8425]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8293 8426])
+                    ("SetOTCComboParameters" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8432 8461])
+                    ("private" label nil (reparse-symbol classsubparts) [8463 8471])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8506 8538])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8539 8569]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8476 8570])
+                    ("HandleInstrumentInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8615 8647])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8648 8680]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8575 8681])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8732 8764])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8815 8865]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8686 8866])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8920 8952])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9006 9038])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9092 9145]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8871 9146])
+                    ("HandleBestPrice" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9181 9213])
+                            ("price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BestPrice" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9214 9238]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9152 9239])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9276 9308]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9245 9309])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9346 9378]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9314 9379])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9415 9447]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9384 9448])
+                    ("HandleTimerEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("timer" variable
+                               (:reference 1
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9484 9498]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9454 9499])
+                    ("private" label nil (reparse-symbol classsubparts) [9501 9509])
+                    ("StreamDataManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9583 9615]))                          
+                        :type ("StreamDataManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9565 9616])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamDataManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9651 9683]))                          
+                        :type ("StreamDataManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9621 9684])
+                    ("private" label nil (reparse-symbol classsubparts) [9686 9694])
+                    ("CreateFIXML" function
+                       (:prototype-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9699 9720])
+                    ("GetTargetGroup" function
+                       (:prototype-flag t
+                        :type ("InstrumentGroup" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9725 9764])
+                    ("GetCurrency" function
+                       (:prototype-flag t
+                        :type ("Currency" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9769 9798])
+                    ("GetPriceFormat" function
+                       (:prototype-flag t
+                        :type ("Integer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9803 9834])
+                    ("GetCommonVenue" function
+                       (:prototype-flag t
+                        :type ("Venue" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9839 9868])
+                    ("GetTickRule" function
+                       (:prototype-flag t
+                        :type ("TickRule" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9873 9896])
+                    ("GetLegWithLongestMaturity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("legWithLongestMaturity" variable
+                               (:reference 1
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9932 9968])
+                            ("getOptionLeg" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10004 10028]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9901 10035])
+                    ("GetExchangeComboStructure" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("comboStruct" variable
+                               (:reference 1
+                                :type ("CombinationCreator::Structure" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10072 10116])
+                            ("foundLegWithZeroRoundedRatio" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10152 10188])
+                            ("inverseCombo" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10224 10249])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10250 10256]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10041 10257])
+                    ("FigureOutWhichImpliedVolatilitiesAreBeingDealtWith" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("whichVols" variable
+                               (:constant-flag t
+                                :type ("EImpliedVolatilities" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10319 10356])
+                            ("" variable
+                               (:pointer 1
+                                :type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10417 10454])
+                            ("" variable (:type ("pStream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10455 10463])
+                            ("" variable
+                               (:pointer 1
+                                :type ("ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10524 10546])
+                            ("" variable (:type ("pImpliedBidVolDefinition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10547 10572])
+                            ("" variable
+                               (:pointer 1
+                                :type ("ParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10633 10655])
+                            ("" variable (:type ("pImpliedAskVolDefinition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10656 10681]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10263 10682])
+                    ("CheckOneCashLeg" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Px" variable
+                               (:reference 1
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10709 10720])
+                            ("ratio" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10721 10736]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10688 10743])
+                    ("FindCashLeg" function
+                       (:prototype-flag t
+                        :type ("HashLegs::const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10749 10794])
+                    ("SetPxIfNeeded" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10800 10821])
+                    ("CheckOneUnderlying" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("checkPresenceInCombo" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10851 10884])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10885 10891]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10827 10898])
+                    ("GetOneUnderlying" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniqueUnderlyingId" variable
+                               (:reference 1
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10925 10967]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10903 10974])
+                    ("GetIncrementMultiplier" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("number" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [11010 11030]))                          
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10979 11031])
+                    ("TryResolveCombo" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [11037 11060])
+                    ("GetClosestMaturityAmongLegs" function
+                       (:prototype-flag t
+                        :type ("CalendarDate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11066 11115])
+                    ("private" label nil (reparse-symbol classsubparts) [11117 11125])
+                    ("m_plugin" variable (:type ("ComboCalculator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11130 11157])
+                    ("m_valuesToCalculate" variable (:type ("ValueToStrategyParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11163 11208])
+                    ("m_legData" variable (:type ("HashLegs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11214 11233])
+                    ("m_instrumentStream" variable (:type ("InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11239 11278])
+                    ("m_instrumentParametersStream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11283 11350])
+                    ("m_underlyingPricesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11356 11417])
+                    ("m_componentPricesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11536 11596])
+                    ("m_componentImpliedVolatilitiesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11715 11788])
+                    ("m_calculatedValuesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11958 12019])
+                    ("m_comboImpliedVolatilitiesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12142 12211])
+                    ("m_comboExchangeImpliedVolatilitiesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12280 12357])
+                    ("m_comboImpliedMarketImpliedVolailitiesStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12434 12515])
+                    ("m_comboDeltaPerPxStream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12592 12652])
+                    ("m_createRequestId" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12658 12712])
+                    ("m_modifyRequestId" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12717 12771])
+                    ("m_otcCreateRequestId" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12776 12833])
+                    ("m_exchangeCreateRequestId" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12838 12900])
+                    ("m_favoriteComboRequestId" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12905 12966])
+                    ("m_comboIdentifier" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12972 13026])
+                    ("m_postponedModifier" variable (:type ("Instrument::Modifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13032 13088])
+                    ("m_comboExchangeBBOStream" variable (:type ("BestPriceStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13094 13155])
+                    ("m_comboExchangeBBO" variable (:type ("BestPrice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13160 13215])
+                    ("m_comboBasketBBOStream" variable (:type ("BestPriceStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13221 13280])
+                    ("m_comboBasketBBO" variable (:type ("BestPrice" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13285 13338])
+                    ("m_pBrokerImpliedBidVolDefinition" variable
+                       (:pointer 1
+                        :type ("ParameterDefinition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13344 13413])
+                    ("m_pBrokerImpliedAskVolDefinition" variable
+                       (:pointer 1
+                        :type ("ParameterDefinition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13418 13487])
+                    ("m_pExchangeImpliedBidVolDefinition" variable
+                       (:pointer 1
+                        :type ("ParameterDefinition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13492 13563])
+                    ("m_pExchangeImpliedAskVolDefinition" variable
+                       (:pointer 1
+                        :type ("ParameterDefinition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13568 13639])
+                    ("m_pImpliedMarketImpliedBidVolDefinition" variable
+                       (:pointer 1
+                        :type ("ParameterDefinition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13644 13720])
+                    ("m_pImpliedMarketImpliedAskVolDefinition" variable
+                       (:pointer 1
+                        :type ("ParameterDefinition" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13725 13801])
+                    ("m_closeCalcStreamOnNextSnapshot" variable (:type "bool") (reparse-symbol classsubparts) [13807 13846])
+                    ("m_exchangeComboCreated" variable (:type "bool") (reparse-symbol classsubparts) [13851 13881])
+                    ("m_OTCComboCreated" variable (:type "bool") (reparse-symbol classsubparts) [13886 13911])
+                    ("m_autoPxFlag" variable (:type "bool") (reparse-symbol classsubparts) [13916 13936])
+                    ("m_alreadyFoundPx" variable (:type "bool") (reparse-symbol classsubparts) [13941 13965])
+                    ("m_pendingPxUpdate" variable (:type "bool") (reparse-symbol classsubparts) [13970 13995])
+                    ("m_addNextCompositeLegAsIs" variable (:type "bool") (reparse-symbol classsubparts) [14001 14034])
+                    ("m_underlyingPriceStreamModified" variable (:type "bool") (reparse-symbol classsubparts) [14039 14078])
+                    ("m_optionParamsStreamUuid" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14084 14127])
+                    ("m_optionParamsComboStreamUuid" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14132 14180])
+                    ("m_optionParamsPxStreamUuid" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14185 14230])
+                    ("m_optionParamsComponentPriceStreamUuid" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14235 14292])
+                    ("m_optionParamsUnderlyingPriceStreamUuid" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14297 14355])
+                    ("m_optionParamsCalculatedValuesStreamUuid" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [14360 14420])
+                    ("m_overrideUnderlyingPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14426 14488])
+                    ("m_currentOverrideUnderlyingPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14493 14562])
+                    ("m_currentOverrideUnderlyingPriceInt" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14567 14639])
+                    ("m_deltaCurrentOverrideUnderlyingPrice" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14644 14718])
+                    ("m_countCachedLayers" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14723 14779])
+                    ("m_maxCacheSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14784 14835])
+                    ("m_underlyingPriceIncrement" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14840 14903])
+                    ("ComboImpliedVolatilitiesData" type
+                       (:members 
+                          ( ("m_askImpliedVol" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14955 14978])
+                            ("m_bidImpliedVol" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14987 15010]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [14909 15017])
+                    ("CacheLegs" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("Integer" type nil nil nil)
+                                  ("HashLegs" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [15023 15071])
+                    ("CacheComboImpliedVolatilities" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("Integer" type nil nil nil)
+                                  ("ComboImpliedVolatilitiesData" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [15076 15164])
+                    ("CacheStream" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("StreamIdentifier" type nil nil nil)
+                                  ("Integer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [15169 15227])
+                    ("ComboCalculatedValues" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("Uuid" type nil nil nil)
+                                  ("Double" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [15233 15285])
+                    ("CacheComboCalculatedValues" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("Integer" type nil nil nil)
+                                  ("ComboCalculatedValues" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [15290 15368])
+                    ("m_comboImpliedVolatilitiesData" variable (:type ("ComboImpliedVolatilitiesData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15374 15442])
+                    ("m_legDataCached" variable (:type ("CacheLegs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15448 15501])
+                    ("m_comboBrokerDataCached" variable (:type ("CacheComboImpliedVolatilities" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15506 15567])
+                    ("m_streamCached" variable (:type ("CacheStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15572 15624])
+                    ("m_comboCachedCalculatedValues" variable (:type ("CacheComboCalculatedValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15629 15696])
+                    ("m_optionLayersCalculatedValuesStreamUuid" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil)
+                              ("Integer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [15702 15766])
+                    ("m_optionLayersStreamUuid" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil)
+                              ("Integer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [15771 15819])
+                    ("m_optionLayersImpliedVolatilitiesStreamUuid" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil)
+                              ("Integer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [15824 15891])
+                    ("m_optionLayersComboImpliedVolatilitiesStreamUuid" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("Uuid" type nil nil nil)
+                              ("Integer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [15896 15968])
+                    ("StreamList" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("StreamIdentifier" type nil nil nil)
+                                  ("SharedPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [15974 16074])
+                    ("m_calculatedValuesStreamList" variable (:type ("StreamList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16079 16124])
+                    ("m_impliedVolatilitiesStreamList" variable (:type ("StreamList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16129 16177])
+                    ("m_comboImpliedVolatilitiesStreamList" variable (:type ("StreamList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16182 16235])
+                    ("m_comboContainer" variable (:type ("ComboContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16241 16274])
+                    ("m_exchangeComboMarkedAsFavoriteFlag" variable (:type ("std::pair" type
+                         (:template-specifier 
+                            ( ("InstrumentIdentifier" type nil nil nil)
+                              ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [16280 16356])
+                    ("m_creationFollowedPostponedModification" variable (:type "bool") (reparse-symbol classsubparts) [16362 16414])
+                    ("m_numRemainingAttemptsToResolveCombo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16420 16469])
+                    ("m_numMaxAttemptsToResolveCombo" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16474 16517])
+                    ("m_resolveTimer" variable (:type ("Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16522 16549])
+                    ("m_comboInstrumentParams" variable (:type ("InstrumentParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16555 16600]))                  
+                :type "class")
+                nil [534 16603]))          
+      :file "StreamDataManager.h"
+      :pointmax 16672
+      :fsize 16671
+      :lastmodtime '(22006 31481 369660 592000)
+      :unmatched-syntax '((punctuation 10883 . 10884) (punctuation 10654 . 10655) (punctuation 10545 . 10546) (punctuation 10453 . 10454) (punctuation 10248 . 10249) (punctuation 6232 . 6233) (semantic-list 6025 . 6027) (punctuation 6017 . 6018) (punctuation 5894 . 5895) (semantic-list 3812 . 3814) (punctuation 3803 . 3804) (semantic-list 3644 . 3646) (punctuation 3635 . 3636) (punctuation 3400 . 3401) (semantic-list 3386 . 3388) (punctuation 3377 . 3378) (punctuation 3334 . 3335))
+      :lexical-table 
+        '(("__TBRICKS__PLUGIN__COMBO_CALCULATOR__COMBO_CONTROLLER_H")
+          )
+)
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 102976
+      :lastmodtime '(21962 60358 57338 565000))
+    (semanticdb-table "ComboContainer.h"
+      :file "ComboContainer.h"
+      :fsize 1531
+      :lastmodtime '(21962 60358 51338 983000)))
+  :file "!home!marselo!Code!alloptions!beta!accessory!combo_calculator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

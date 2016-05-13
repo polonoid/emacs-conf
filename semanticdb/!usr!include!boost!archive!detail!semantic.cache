@@ -1,0 +1,47 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "decl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ARCHIVE_DETAIL_DECL_HPP" variable (:constant-flag t) nil [47 76])
+            ("boost/config.hpp" include (:system-flag t) nil [801 828])
+            ("boost/preprocessor/facilities/empty.hpp" include (:system-flag t) nil [829 879])
+            ("BOOST_ARCHIVE_DECL" variable (:constant-flag t) nil [2601 2619])
+            ("BOOST_WARCHIVE_DECL" variable (:constant-flag t) nil [2679 2698])
+            ("BOOST_ARCHIVE_OR_WARCHIVE_DECL" variable (:constant-flag t) nil [2769 2799]))          
+      :file "decl.hpp"
+      :pointmax 2853
+      :fsize 2852
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ARCHIVE_DECL" (spp-arg-list ("T") 2619 . 2622) . ((symbol "T" 2623 . 2624)))
+          ("BOOST_ARCHIVE_OR_WARCHIVE_DECL" (spp-arg-list ("T") 2799 . 2802) . ((symbol "T" 2803 . 2804)))
+          ("BOOST_WARCHIVE_DECL" (spp-arg-list ("T") 2698 . 2701) . ((symbol "T" 2702 . 2703)))
+          ("BOOST_ARCHIVE_DETAIL_DECL_HPP")
+          )
+)
+    (semanticdb-table "abi_prefix.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/config/abi_prefix.hpp" include (:system-flag t) nil [429 467]))          
+      :file "abi_prefix.hpp"
+      :pointmax 652
+      :fsize 651
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "abi_suffix.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/config/abi_suffix.hpp" include (:system-flag t) nil [475 513]))          
+      :file "abi_suffix.hpp"
+      :pointmax 604
+      :fsize 603
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!include!boost!archive!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

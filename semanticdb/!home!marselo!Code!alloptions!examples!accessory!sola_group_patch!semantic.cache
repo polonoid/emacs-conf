@@ -1,0 +1,40 @@
+;; Object sola_group_patch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sola_group_patch/"
+  :tables
+  (list
+    (semanticdb-table "tbricks_definitions.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("tbricks_definitions.h" include nil nil [146 178])
+            ("tbricks" type
+               (:members 
+                  ( ("plug_ins" type
+                       (:members 
+                          ( ("SOLA_GroupPatch" function (:type ("tbricks::StrategyIdentifier" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [224 476]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [201 479])
+                    ("instrument_parameters" type (:type "namespace") (reparse-symbol namespacesubparts) [482 519])
+                    ("strategy_parameters" type
+                       (:members 
+                          ( ("DryRun" function (:type ("tbricks::ParameterDefinition" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [555 908]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [521 912])
+                    ("calculated_values" type (:type "namespace") (reparse-symbol namespacesubparts) [914 946])
+                    ("extra_data" type (:type "namespace") (reparse-symbol namespacesubparts) [948 974])
+                    ("roles" type (:type "namespace") (reparse-symbol namespacesubparts) [976 996])
+                    ("rankings" type (:type "namespace") (reparse-symbol namespacesubparts) [998 1021]))                  
+                :type "namespace")
+                nil [180 1024]))          
+      :file "tbricks_definitions.cpp"
+      :pointmax 1026
+      :fsize 1025
+      :lastmodtime '(21962 60358 450311 195000)
+      :unmatched-syntax nil)
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 738
+      :lastmodtime '(21962 60358 450311 195000)))
+  :file "!home!marselo!Code!alloptions!examples!accessory!sola_group_patch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

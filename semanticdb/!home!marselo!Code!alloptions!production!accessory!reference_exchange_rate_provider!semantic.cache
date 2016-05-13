@@ -1,0 +1,217 @@
+;; Object reference_exchange_rate_provider/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "reference_exchange_rate_provider/"
+  :tables
+  (list
+    (semanticdb-table "ReferenceExchangeRateProvider.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ReferenceExchangeRateProvider.h" include nil nil [1 43])
+            ("strategy/ReferenceExchangeRate.h" include nil nil [44 87])
+            ("tbricks" type
+               (:members 
+                  ( ("ReferenceExchangeRateProviderPlugin" function
+                       (:constructor-flag t
+                        :parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [188 233])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [238 285]))                          
+                        :type ("ReferenceExchangeRateProviderPlugin" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [110 886])
+                    ("ReferenceExchangeRateProviderPlugin" function
+                       (:destructor-flag t
+                        :parent "ReferenceExchangeRateProviderPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [888 1059])
+                    ("HandleModifyRequest" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1124 1167]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1062 1398])
+                    ("HandleRunRequest" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1400 1549])
+                    ("DoRun" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1551 1821])
+                    ("HandlePauseRequest" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1823 2024])
+                    ("HandleDeleteRequest" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2026 2230])
+                    ("HandleValidateRequest" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2296 2323]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2232 2719])
+                    ("HandleTimerEvent" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("timer" variable
+                               (:reference 1
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2780 2794]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2721 3078])
+                    ("HandleStreamStale" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3140 3171]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3080 3568])
+                    ("HandleStreamFailed" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3631 3662]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3570 4061])
+                    ("HandleSnapshotEnd" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4123 4154]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4063 5153])
+                    ("HandleInstrumentGroup" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5219 5260])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5265 5304]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5155 5695])
+                    ("HandleInstrumentGroupInvalidate" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5771 5812])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5817 5863]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5697 6171])
+                    ("HandleInstrumentGroupParameters" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6247 6289])
+                            ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6294 6345])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6350 6408]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6173 7172])
+                    ("HandleRequestReply" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7252 7282])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7287 7301])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7302 7322]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7191 7945])
+                    ("CreateExchangeRateRequests" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8016 8058])
+                            ("counter_currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8063 8097])
+                            ("rates" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8102 8122]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7947 10172])
+                    ("ReportRequest" function
+                       (:parent "ReferenceExchangeRateProviderPlugin"
+                        :arguments 
+                          ( ("opts" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ReferenceExchangeRate::Options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10237 10281]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10174 10524]))                  
+                :type "namespace")
+                nil [89 10527]))          
+      :file "ReferenceExchangeRateProvider.cpp"
+      :pointmax 10597
+      :fsize 10596
+      :lastmodtime '(21962 60358 486308 687000)
+      :unmatched-syntax '((semantic-list 10550 . 10596) (symbol 10529 . 10550)))
+    (semanticdb-table "ReferenceExchangeRateProvider.h"
+      :file "ReferenceExchangeRateProvider.h"
+      :fsize 2781
+      :lastmodtime '(21962 60358 487308 618000)))
+  :file "!home!marselo!Code!alloptions!production!accessory!reference_exchange_rate_provider!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

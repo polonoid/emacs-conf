@@ -1,0 +1,125 @@
+;; Object AO_PositionReporter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_PositionReporter/"
+  :tables
+  (list
+    (semanticdb-table "PositionUpdateReporter.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PositionUpdateReporter.h" include nil nil [1 36])
+            ("AO_PositionreporterPlugin.h" include nil nil [37 75])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [77 101])
+            ("Tbricks::Messages::PositionUpdateReporter" using (:type ("Tbricks::Messages::PositionUpdateReporter" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [102 160])
+            ("AO" type
+               (:members 
+                  ( ("PositionUpdateReporter" function
+                       (:constructor-flag t
+                        :parent "PositionUpdateReporter"
+                        :arguments 
+                          ( ("plugin" variable
+                               (:pointer 1
+                                :type ("AO_PositionreporterPlugin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [225 259]))                          
+                        :type ("PositionUpdateReporter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [178 356])
+                    ("PositionUpdateReporter" function
+                       (:destructor-flag t
+                        :parent "PositionUpdateReporter"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [406 411]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [358 424])
+                    ("Start" function
+                       (:parent "PositionUpdateReporter"
+                        :arguments 
+                          ( ("address" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [461 492])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [493 502]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [426 720])
+                    ("Stop" function
+                       (:parent "PositionUpdateReporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [722 925])
+                    ("OpenConnections" function
+                       (:parent "PositionUpdateReporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [927 1612])
+                    ("HandleTimerEvent" function
+                       (:parent "PositionUpdateReporter"
+                        :arguments 
+                          ( ("timer" variable
+                               (:reference 1
+                                :type ("tbricks::Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1660 1683]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1614 1733])
+                    ("GetState" function
+                       (:parent "PositionUpdateReporter"
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1735 1818])
+                    ("GetEndpoint" function
+                       (:parent "PositionUpdateReporter"
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1820 2024])
+                    ("SendPositionUpdate" function
+                       (:parent "PositionUpdateReporter"
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2074 2109]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2026 3326])
+                    ("SendInvalidatePositionUpdate" function
+                       (:parent "PositionUpdateReporter"
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3386 3421]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3328 4338])
+                    ("FillMessage" function
+                       (:parent "PositionUpdateReporter"
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4381 4416])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("PositionUpdate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4417 4437]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4340 5293]))                  
+                :type "namespace")
+                nil [162 5296]))          
+      :file "PositionUpdateReporter.cpp"
+      :pointmax 5297
+      :fsize 5296
+      :lastmodtime '(21962 60357 931347 341000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PositionUpdateReporter.h"
+      :file "PositionUpdateReporter.h"
+      :fsize 1587
+      :lastmodtime '(21962 60357 931347 341000))
+    (semanticdb-table "AO_PositionreporterPlugin.h"
+      :file "AO_PositionreporterPlugin.h"
+      :fsize 3159
+      :lastmodtime '(21962 60357 930347 410000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_PositionReporter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

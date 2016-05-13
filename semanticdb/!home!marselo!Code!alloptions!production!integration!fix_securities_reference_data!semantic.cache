@@ -1,0 +1,537 @@
+;; Object fix_securities_reference_data/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fix_securities_reference_data/"
+  :tables
+  (list
+    (semanticdb-table "FixSecuritiesPlugin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FixSecuritiesPlugin.h" include nil nil [1 33])
+            ("tbricks_definitions.h" include nil nil [34 66])
+            ("strategy/fix/Message.h" include nil nil [67 100])
+            ("strategy/fix/Session.h" include nil nil [101 134])
+            ("tbricks" type
+               (:members 
+                  ( ("FixSecuritiesPlugin" function
+                       (:constructor-flag t
+                        :parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [198 234])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [235 273]))                          
+                        :type ("FixSecuritiesPlugin" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [157 594])
+                    ("FixSecuritiesPlugin" function
+                       (:destructor-flag t
+                        :parent "FixSecuritiesPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [596 643])
+                    ("HandleRunRequest" function
+                       (:parent "FixSecuritiesPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [645 742])
+                    ("DoRun" function
+                       (:parent "FixSecuritiesPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [744 1155])
+                    ("HandlePauseRequest" function
+                       (:parent "FixSecuritiesPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1157 1281])
+                    ("HandleDeleteRequest" function
+                       (:parent "FixSecuritiesPlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1283 1410])
+                    ("HandleModifyRequest" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1458 1492]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1412 1763])
+                    ("HandleValidateRequest" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1813 1841]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1765 1870])
+                    ("HandleResourceUpdate" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1919 1951])
+                            ("resource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Resource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1952 1978]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1872 2080])
+                    ("HandleSnapshotEnd" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2126 2158]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2082 2358])
+                    ("HandleResourceInvalidate" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2411 2443])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2444 2466]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2360 2470])
+                    ("HandleLogon" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2510 2533]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2472 2585])
+                    ("HandleMessage" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2627 2650])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2651 2680]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2587 3275])
+                    ("HandleLogout" function
+                       (:parent "FixSecuritiesPlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3316 3339]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3277 3381]))                  
+                :type "namespace")
+                nil [136 3384]))          
+      :file "FixSecuritiesPlugin.cpp"
+      :pointmax 3406
+      :fsize 3405
+      :lastmodtime '(21962 60358 571302 768000)
+      :unmatched-syntax nil)
+    (semanticdb-table "FixSecuritiesPlugin.h"
+      :file "FixSecuritiesPlugin.h"
+      :fsize 2324
+      :lastmodtime '(21962 60358 571302 768000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 1799
+      :lastmodtime '(21962 60358 576302 419000))
+    (semanticdb-table "SecurityDefinitionHandler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("shared/fix/ConvertUtil.h" include nil nil [1 36])
+            ("SecurityDefinitionHandler.h" include nil nil [37 75])
+            ("tbricks" type
+               (:members 
+                  ( ("SecurityDefinitionHandler" function
+                       (:constructor-flag t
+                        :parent "SecurityDefinitionHandler"
+                        :type ("SecurityDefinitionHandler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [98 207])
+                    ("Initialize" function
+                       (:parent "SecurityDefinitionHandler"
+                        :arguments 
+                          ( ("params" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("FixMapping" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [252 278]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [209 313])
+                    ("HandleSecurityDefinitionRequest" function
+                       (:parent "SecurityDefinitionHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [379 402])
+                            ("sdr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [403 428]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [315 5111])
+                    ("SendSecurityDefAck" function
+                       (:parent "SecurityDefinitionHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5164 5187])
+                            ("sdr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5188 5213])
+                            ("result" variable (:type "int") (reparse-symbol arg-sub-list) [5218 5229])
+                            ("err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5230 5249]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5113 5704])
+                    ("ConvertInstrumentToSecDef" function
+                       (:parent "SecurityDefinitionHandler"
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5764 5794])
+                            ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5795 5821])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5822 5841])
+                            ("session" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5842 5871]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5706 6464])
+                    ("HandleRequestReply" function
+                       (:parent "SecurityDefinitionHandler"
+                        :arguments 
+                          ( ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6517 6547])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6548 6562])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6563 6583]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6466 8017]))                  
+                :type "namespace")
+                nil [77 8020]))          
+      :file "SecurityDefinitionHandler.cpp"
+      :pointmax 8021
+      :fsize 8020
+      :lastmodtime '(21962 60358 571302 768000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SecurityDefinitionHandler.h"
+      :file "SecurityDefinitionHandler.h"
+      :fsize 1273
+      :lastmodtime '(21962 60358 571302 768000))
+    (semanticdb-table "SecurityGroupParametersHandler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SecurityGroupParametersHandler.h" include nil nil [1 44])
+            ("tbricks" type
+               (:members 
+                  ( ("SecurityGroupParametersHandler" function
+                       (:constructor-flag t
+                        :parent "SecurityGroupParametersHandler"
+                        :type ("SecurityGroupParametersHandler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [67 165])
+                    ("Initialize" function
+                       (:parent "SecurityGroupParametersHandler"
+                        :arguments 
+                          ( ("params" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("FixMapping" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [215 241]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [167 276])
+                    ("HandleSecurityGroupParameterRequest" function
+                       (:parent "SecurityGroupParametersHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [351 374])
+                            ("sgr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [375 400]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [278 5194])
+                    ("SendSecurityGrpAck" function
+                       (:parent "SecurityGroupParametersHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5252 5275])
+                            ("sgr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5276 5301])
+                            ("result" variable (:type "int") (reparse-symbol arg-sub-list) [5306 5317])
+                            ("err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5318 5337]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5196 5938])
+                    ("HandleRequestReply" function
+                       (:parent "SecurityGroupParametersHandler"
+                        :arguments 
+                          ( ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5996 6026])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6027 6041])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6042 6062]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5940 7137])
+                    ("HandleInstrumentGroupAggregateParameters" function
+                       (:parent "SecurityGroupParametersHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7222 7253])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7258 7297])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7302 7359]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7139 8689])
+                    ("HandleSnapshotEnd" function
+                       (:parent "SecurityGroupParametersHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8746 8778]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8691 8782]))                  
+                :type "namespace")
+                nil [46 8785]))          
+      :file "SecurityGroupParametersHandler.cpp"
+      :pointmax 8786
+      :fsize 8785
+      :lastmodtime '(21962 60358 572302 698000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SecurityGroupParametersHandler.h"
+      :file "SecurityGroupParametersHandler.h"
+      :fsize 1656
+      :lastmodtime '(21962 60358 572302 698000))
+    (semanticdb-table "SecurityListHandler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("shared/fix/ConvertUtil.h" include nil nil [1 36])
+            ("SecurityListHandler.h" include nil nil [37 69])
+            ("tbricks" type
+               (:members 
+                  ( ("SecurityListHandler" function
+                       (:constructor-flag t
+                        :parent "SecurityListHandler"
+                        :type ("SecurityListHandler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [92 188])
+                    ("Initialize" function
+                       (:parent "SecurityListHandler"
+                        :arguments 
+                          ( ("params" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("FixMapping" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [227 253]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [190 288])
+                    ("HandleSecurityListRequest" function
+                       (:parent "SecurityListHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [342 365])
+                            ("slr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [366 391]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [290 7887])
+                    ("HandleInstrument" function
+                       (:parent "SecurityListHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7932 7964])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7965 7995]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7889 10521])
+                    ("HandleInstrumentInvalidate" function
+                       (:parent "SecurityListHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10576 10608])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10609 10641]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10523 11707])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:parent "SecurityListHandler"
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11776 11809])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11814 11855])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11860 11912]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11709 13072])
+                    ("HandleSnapshotEnd" function
+                       (:parent "SecurityListHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13118 13150]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13074 15520])
+                    ("ConvertInstrumentToSecList" function
+                       (:template 
+                          ( ("ParamsT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15603 15633])
+                            ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ParamsT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15634 15657])
+                            ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15662 15688])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15689 15708])
+                            ("session" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15709 15738]))                          
+                        :parent "SecurityListHandler")
+                        (reparse-symbol namespacesubparts) [15522 16477])
+                    ("SendSecurityListAck" function
+                       (:parent "SecurityListHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16525 16548])
+                            ("slr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16549 16574])
+                            ("result" variable (:type "int") (reparse-symbol arg-sub-list) [16579 16590])
+                            ("err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16591 16610]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16479 17101]))                  
+                :type "namespace")
+                nil [71 17104]))          
+      :file "SecurityListHandler.cpp"
+      :pointmax 17105
+      :fsize 17104
+      :lastmodtime '(21962 60358 572302 698000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SecurityListHandler.h"
+      :file "SecurityListHandler.h"
+      :fsize 2667
+      :lastmodtime '(21962 60358 572302 698000)))
+  :file "!home!marselo!Code!alloptions!production!integration!fix_securities_reference_data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

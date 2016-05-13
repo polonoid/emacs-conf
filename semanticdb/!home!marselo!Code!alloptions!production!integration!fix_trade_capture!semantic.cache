@@ -1,0 +1,726 @@
+;; Object fix_trade_capture/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fix_trade_capture/"
+  :tables
+  (list
+    (semanticdb-table "FixTradeCapturePlugin.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FixTradeCapturePlugin.h" include nil nil [1 35])
+            ("tbricks_definitions.h" include nil nil [36 68])
+            ("strategy/fix/Message.h" include nil nil [69 102])
+            ("strategy/fix/Session.h" include nil nil [103 136])
+            ("tbricks" type
+               (:members 
+                  ( ("FixTradeCapturePlugin" function
+                       (:constructor-flag t
+                        :parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [203 239])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [240 278]))                          
+                        :type ("FixTradeCapturePlugin" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [158 1171])
+                    ("FixTradeCapturePlugin" function
+                       (:destructor-flag t
+                        :parent "FixTradeCapturePlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1173 1224])
+                    ("HandleRunRequest" function
+                       (:parent "FixTradeCapturePlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1226 1471])
+                    ("CanRun" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("failReason" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1509 1528]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1474 1782])
+                    ("DoRun" function
+                       (:parent "FixTradeCapturePlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1784 2182])
+                    ("HandlePauseRequest" function
+                       (:parent "FixTradeCapturePlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2184 2621])
+                    ("HandleDeleteRequest" function
+                       (:parent "FixTradeCapturePlugin"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2623 2752])
+                    ("HandleSnapshotEnd" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2800 2832]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2754 3441])
+                    ("HandleModifyRequest" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3491 3525]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3443 3790])
+                    ("HandleValidateRequest" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3842 3870]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3792 4329])
+                    ("HandleLogon" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4371 4394]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4331 4489])
+                    ("HandleMessage" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4533 4556])
+                            ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4557 4586]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4491 5433])
+                    ("HandleLogout" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5476 5499]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5435 5588])
+                    ("HandlePortfolioUpdate" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5640 5672])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5673 5706]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5590 5822])
+                    ("HandlePortfolioInvalidate" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5878 5910])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5911 5942]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5824 5946])
+                    ("HandleResourceUpdate" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5997 6029])
+                            ("resource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Resource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6030 6056]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5948 6158])
+                    ("HandleResourceInvalidate" function
+                       (:parent "FixTradeCapturePlugin"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6213 6245])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6246 6268]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6160 6272]))                  
+                :type "namespace")
+                nil [138 6275]))          
+      :file "FixTradeCapturePlugin.cpp"
+      :pointmax 6297
+      :fsize 6296
+      :lastmodtime '(21962 60358 576302 419000)
+      :unmatched-syntax nil)
+    (semanticdb-table "FixTradeCapturePlugin.h"
+      :file "FixTradeCapturePlugin.h"
+      :fsize 2836
+      :lastmodtime '(21962 60358 576302 419000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 6491
+      :lastmodtime '(21962 60358 580302 141000))
+    (semanticdb-table "PortfolioDefinitionHandler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PortfolioDefinitionHandler.h" include nil nil [1 40])
+            ("tbricks" type
+               (:members 
+                  ( ("HandlePortfolioDefinitionRequest" function
+                       (:parent "PortfolioDefinitionHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [129 152])
+                            ("pdr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [153 178]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [63 2233])
+                    ("HandlePortfolioUpdate" function
+                       (:parent "PortfolioDefinitionHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2290 2322])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2323 2356]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2235 3482])
+                    ("HandlePortfolioInvalidate" function
+                       (:parent "PortfolioDefinitionHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3543 3575])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3576 3607]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3484 3611])
+                    ("HandleSnapshotEnd" function
+                       (:parent "PortfolioDefinitionHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3664 3696]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3613 4405])
+                    ("ConvertPortfolioToPD" function
+                       (:parent "PortfolioDefinitionHandler"
+                        :arguments 
+                          ( ("portfolio" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Portfolio" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4461 4489])
+                            ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4490 4516])
+                            ("pd" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4517 4535])
+                            ("session" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4536 4565]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4407 5437])
+                    ("SendPDRAck" function
+                       (:parent "PortfolioDefinitionHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5483 5506])
+                            ("pdr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5507 5532])
+                            ("request_result" variable (:type "int") (reparse-symbol arg-sub-list) [5533 5552])
+                            ("desc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5553 5573]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5439 6244]))                  
+                :type "namespace")
+                nil [42 6247]))          
+      :file "PortfolioDefinitionHandler.cpp"
+      :pointmax 6248
+      :fsize 6247
+      :lastmodtime '(21962 60358 577302 350000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PortfolioDefinitionHandler.h"
+      :file "PortfolioDefinitionHandler.h"
+      :fsize 1357
+      :lastmodtime '(21962 60358 577302 350000))
+    (semanticdb-table "TradeCaptureReportHandler.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("shared/fix/ConvertUtil.h" include nil nil [1 36])
+            ("TradeCaptureReportHandler.h" include nil nil [37 75])
+            ("tbricks" type
+               (:members 
+                  ( ("TradeCaptureReportHandler" function
+                       (:constructor-flag t
+                        :parent "TradeCaptureReportHandler"
+                        :type ("TradeCaptureReportHandler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [98 269])
+                    ("Initialize" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("portfolios" variable
+                               (:pointer 1
+                                :type ("Hash" type
+                                     (:template-specifier 
+                                        ( ("String" type nil nil nil)
+                                          ("PortfolioIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [314 361])
+                            ("fix_extra_data" variable
+                               (:pointer 1
+                                :type ("FixMapping" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [362 390])
+                            ("trade_type_filter" variable
+                               (:pointer 1
+                                :type ("TradeTypeFilter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [395 431]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [271 554])
+                    ("SetUseHostModifiedTime" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("hmdt" variable (:type "bool") (reparse-symbol arg-sub-list) [611 621]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [556 662])
+                    ("HandleTradeCaptureReportRequest" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [728 751])
+                            ("tcrr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [752 778]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [664 7092])
+                    ("HandleTradeCaptureReport" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7151 7174])
+                            ("tcr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7175 7200]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7094 8008])
+                    ("HandleTradeCaptureReportAck" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8070 8093])
+                            ("tcra" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8094 8120]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8010 8704])
+                    ("HandleTradeCaptureReportRequestAck" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8773 8796])
+                            ("tcrra" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8797 8824]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8706 9542])
+                    ("CreateTrade" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9588 9611])
+                            ("tcr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9612 9637]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9544 18821])
+                    ("ModifyTrade" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18867 18890])
+                            ("tcr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18891 18916])
+                            ("b_delete" variable (:type "bool") (reparse-symbol arg-sub-list) [18917 18931]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18823 25350])
+                    ("GetInstrumentISIN" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25404 25434]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [25352 25835])
+                    ("GetTradeVIID" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25882 25902])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25903 25933])
+                            ("viid" variable
+                               (:reference 1
+                                :type ("VenueInstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25938 25971]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [25837 26462])
+                    ("SendTCReportRequestAck" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26519 26542])
+                            ("tcrr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26543 26569])
+                            ("request_result" variable (:type "int") (reparse-symbol arg-sub-list) [26574 26593])
+                            ("status" variable (:type "int") (reparse-symbol arg-sub-list) [26594 26605])
+                            ("err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26606 26625]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26464 27281])
+                    ("SendTCReportAck" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("session" variable
+                               (:reference 1
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27331 27354])
+                            ("tcr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27355 27380])
+                            ("rpt_status" variable (:type "int") (reparse-symbol arg-sub-list) [27385 27400])
+                            ("reason" variable (:type "int") (reparse-symbol arg-sub-list) [27401 27412])
+                            ("err" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27413 27432]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27283 28831])
+                    ("HandleTrade" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28877 28909])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28910 28930]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [28833 31966])
+                    ("HandleTradeInvalidate" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32022 32054])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradeIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32055 32082]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31968 32892])
+                    ("HandlePosition" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32941 32973])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32974 33000]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32894 34792])
+                    ("HandlePositionInvalidate" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34851 34883])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34884 34906]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34794 35839])
+                    ("HandleRequestReply" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35892 35922])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35923 35937])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35938 35958]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [35841 36687])
+                    ("HandleSnapshotEnd" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36739 36771]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36689 37976])
+                    ("ConvertTradeToFIXMessage" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("tcr_stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TCRStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38035 38064])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38069 38089])
+                            ("invalidate" variable (:type "bool") (reparse-symbol arg-sub-list) [38090 38106])
+                            ("tcr" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38107 38126])
+                            ("session" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38127 38156]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [37978 44546])
+                    ("ConvertPositionToFIXMessage" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("tcr_stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TCRStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44608 44637])
+                            ("pos_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44642 44668])
+                            ("rpt_pos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RptPos" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44669 44692])
+                            ("invalidate" variable (:type "bool") (reparse-symbol arg-sub-list) [44693 44709])
+                            ("tcr" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44710 44729])
+                            ("session" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Session" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44730 44759]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [44548 47114])
+                    ("IsDuplicateUpdate" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("TCRStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47166 47185])
+                            ("trade_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradeIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47186 47219])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47220 47245]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [47116 47684])
+                    ("HandleOrderUpdate" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47736 47770])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Order::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47771 47799]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47686 47915])
+                    ("UpdateTrade" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47961 47981])
+                            ("trade_stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [47982 48020])
+                            ("order_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [48021 48045]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47917 50388])
+                    ("SetExchangeOrderId" function
+                       (:parent "TradeCaptureReportHandler"
+                        :arguments 
+                          ( ("info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [50441 50464]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [50390 50892]))                  
+                :type "namespace")
+                nil [77 50895]))          
+      :file "TradeCaptureReportHandler.cpp"
+      :pointmax 50896
+      :fsize 50895
+      :lastmodtime '(21962 60358 577302 350000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TradeCaptureReportHandler.h"
+      :file "TradeCaptureReportHandler.h"
+      :fsize 5079
+      :lastmodtime '(21962 60358 577302 350000)))
+  :file "!home!marselo!Code!alloptions!production!integration!fix_trade_capture!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

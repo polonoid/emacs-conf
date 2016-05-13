@@ -1,0 +1,938 @@
+;; Object container_adaptor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "container_adaptor/"
+  :tables
+  (list
+    (semanticdb-table "unordered_map_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_UNORDERED_MAP_ADAPTOR_HPP" variable (:constant-flag t) nil [448 503])
+            ("boost/config.hpp" include (:system-flag t) nil [568 595])
+            ("boost/bimap/container_adaptor/unordered_associative_container_adaptor.hpp" include (:system-flag t) nil [597 681])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [682 714])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [715 746])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [747 779])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1534 1542])
+                                    ("boost::bimaps::container_adaptor::unordered_associative_container_adaptor" variable (:type "int") (reparse-symbol namespacesubparts) [1543 3653]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [818 3658]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [799 3691]))                  
+                :type "namespace")
+                nil [781 3713]))          
+      :file "unordered_map_adaptor.hpp"
+      :pointmax 3802
+      :fsize 3801
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1542 . 1543) (punctuation 1527 . 1528) (symbol 1505 . 1526) (CLASS 1499 . 1504) (punctuation 1497 . 1498) (punctuation 1495 . 1496) (punctuation 1494 . 1495) (symbol 1488 . 1494) (punctuation 1487 . 1488) (punctuation 1486 . 1487) (symbol 1483 . 1486) (punctuation 1481 . 1482) (symbol 1454 . 1480) (CLASS 1448 . 1453) (punctuation 1441 . 1442) (symbol 1439 . 1441) (punctuation 1438 . 1439) (punctuation 1437 . 1438) (symbol 1434 . 1437) (punctuation 1433 . 1434) (punctuation 1432 . 1433) (symbol 1427 . 1432) (punctuation 1426 . 1427) (punctuation 1425 . 1426) (punctuation 1423 . 1424) (symbol 1392 . 1410) (CLASS 1386 . 1391) (punctuation 1380 . 1381) (symbol 1378 . 1380) (punctuation 1377 . 1378) (punctuation 1376 . 1377) (symbol 1373 . 1376) (punctuation 1372 . 1373) (punctuation 1371 . 1372) (symbol 1366 . 1371) (punctuation 1365 . 1366) (punctuation 1364 . 1365) (punctuation 1362 . 1363) (symbol 1331 . 1353) (CLASS 1325 . 1330) (punctuation 1319 . 1320) (symbol 1317 . 1319) (punctuation 1316 . 1317) (punctuation 1315 . 1316) (symbol 1312 . 1315) (punctuation 1311 . 1312) (punctuation 1310 . 1311) (symbol 1305 . 1310) (punctuation 1304 . 1305) (punctuation 1303 . 1304) (punctuation 1301 . 1302) (symbol 1270 . 1290) (CLASS 1264 . 1269) (punctuation 1258 . 1259) (symbol 1256 . 1258) (punctuation 1255 . 1256) (punctuation 1254 . 1255) (symbol 1251 . 1254) (punctuation 1250 . 1251) (punctuation 1249 . 1250) (symbol 1244 . 1249) (punctuation 1243 . 1244) (punctuation 1242 . 1243) (punctuation 1240 . 1241) (symbol 1209 . 1239) (CLASS 1203 . 1208) (punctuation 1197 . 1198) (symbol 1195 . 1197) (punctuation 1194 . 1195) (punctuation 1193 . 1194) (symbol 1190 . 1193) (punctuation 1189 . 1190) (punctuation 1188 . 1189) (symbol 1183 . 1188) (punctuation 1182 . 1183) (punctuation 1181 . 1182) (punctuation 1179 . 1180) (symbol 1148 . 1173) (CLASS 1142 . 1147) (punctuation 1136 . 1137) (symbol 1134 . 1136) (punctuation 1133 . 1134) (punctuation 1132 . 1133) (symbol 1129 . 1132) (punctuation 1128 . 1129) (punctuation 1127 . 1128) (symbol 1122 . 1127) (punctuation 1121 . 1122) (punctuation 1120 . 1121) (punctuation 1118 . 1119) (symbol 1087 . 1110) (CLASS 1081 . 1086) (punctuation 1074 . 1075) (symbol 1056 . 1074) (CLASS 1050 . 1055) (punctuation 1044 . 1045) (symbol 1031 . 1044) (CLASS 1025 . 1030) (punctuation 1019 . 1020) (symbol 1006 . 1019) (CLASS 1000 . 1005) (punctuation 994 . 995) (symbol 986 . 994) (CLASS 980 . 985) (punctuation 973 . 974) (symbol 969 . 973) (CLASS 963 . 968) (punctuation 957 . 958) (TEMPLATE 948 . 956))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_UNORDERED_MAP_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "unordered_set_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_UNORDERED_SET_ADAPTOR_HPP" variable (:constant-flag t) nil [448 503])
+            ("boost/config.hpp" include (:system-flag t) nil [568 595])
+            ("boost/bimap/container_adaptor/unordered_associative_container_adaptor.hpp" include (:system-flag t) nil [597 681])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [682 714])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [715 746])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1501 1509])
+                                    ("boost::bimaps::container_adaptor::unordered_associative_container_adaptor" variable (:type "int") (reparse-symbol namespacesubparts) [1510 2684]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [785 2688]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [766 2721]))                  
+                :type "namespace")
+                nil [748 2743]))          
+      :file "unordered_set_adaptor.hpp"
+      :pointmax 2832
+      :fsize 2831
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1509 . 1510) (punctuation 1494 . 1495) (symbol 1472 . 1493) (CLASS 1466 . 1471) (punctuation 1464 . 1465) (punctuation 1462 . 1463) (punctuation 1461 . 1462) (symbol 1455 . 1461) (punctuation 1454 . 1455) (punctuation 1453 . 1454) (symbol 1450 . 1453) (punctuation 1448 . 1449) (symbol 1421 . 1447) (CLASS 1415 . 1420) (punctuation 1408 . 1409) (symbol 1406 . 1408) (punctuation 1405 . 1406) (punctuation 1404 . 1405) (symbol 1401 . 1404) (punctuation 1400 . 1401) (punctuation 1399 . 1400) (symbol 1394 . 1399) (punctuation 1393 . 1394) (punctuation 1392 . 1393) (punctuation 1390 . 1391) (symbol 1359 . 1377) (CLASS 1353 . 1358) (punctuation 1347 . 1348) (symbol 1345 . 1347) (punctuation 1344 . 1345) (punctuation 1343 . 1344) (symbol 1340 . 1343) (punctuation 1339 . 1340) (punctuation 1338 . 1339) (symbol 1333 . 1338) (punctuation 1332 . 1333) (punctuation 1331 . 1332) (punctuation 1329 . 1330) (symbol 1298 . 1320) (CLASS 1292 . 1297) (punctuation 1286 . 1287) (symbol 1284 . 1286) (punctuation 1283 . 1284) (punctuation 1282 . 1283) (symbol 1279 . 1282) (punctuation 1278 . 1279) (punctuation 1277 . 1278) (symbol 1272 . 1277) (punctuation 1271 . 1272) (punctuation 1270 . 1271) (punctuation 1268 . 1269) (symbol 1237 . 1257) (CLASS 1231 . 1236) (punctuation 1225 . 1226) (symbol 1223 . 1225) (punctuation 1222 . 1223) (punctuation 1221 . 1222) (symbol 1218 . 1221) (punctuation 1217 . 1218) (punctuation 1216 . 1217) (symbol 1211 . 1216) (punctuation 1210 . 1211) (punctuation 1209 . 1210) (punctuation 1207 . 1208) (symbol 1176 . 1206) (CLASS 1170 . 1175) (punctuation 1164 . 1165) (symbol 1162 . 1164) (punctuation 1161 . 1162) (punctuation 1160 . 1161) (symbol 1157 . 1160) (punctuation 1156 . 1157) (punctuation 1155 . 1156) (symbol 1150 . 1155) (punctuation 1149 . 1150) (punctuation 1148 . 1149) (punctuation 1146 . 1147) (symbol 1115 . 1140) (CLASS 1109 . 1114) (punctuation 1103 . 1104) (symbol 1101 . 1103) (punctuation 1100 . 1101) (punctuation 1099 . 1100) (symbol 1096 . 1099) (punctuation 1095 . 1096) (punctuation 1094 . 1095) (symbol 1089 . 1094) (punctuation 1088 . 1089) (punctuation 1087 . 1088) (punctuation 1085 . 1086) (symbol 1054 . 1077) (CLASS 1048 . 1053) (punctuation 1041 . 1042) (symbol 1023 . 1041) (CLASS 1017 . 1022) (punctuation 1011 . 1012) (symbol 998 . 1011) (CLASS 992 . 997) (punctuation 986 . 987) (symbol 973 . 986) (CLASS 967 . 972) (punctuation 961 . 962) (symbol 953 . 961) (CLASS 947 . 952) (punctuation 940 . 941) (symbol 936 . 940) (CLASS 930 . 935) (punctuation 924 . 925) (TEMPLATE 915 . 923))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_UNORDERED_SET_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "unordered_associative_container_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_UNORDERED_ASSOCIATIVE_CONTAINER_ADAPTOR_HPP" variable (:constant-flag t) nil [503 576])
+            ("boost/config.hpp" include (:system-flag t) nil [641 668])
+            ("boost/bimap/container_adaptor/associative_container_adaptor.hpp" include (:system-flag t) nil [670 744])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [745 772])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [773 804])
+            ("boost/mpl/push_front.hpp" include (:system-flag t) nil [805 840])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [841 873])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [874 906])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("unordered_associative_container_adaptor_base" type
+                                       (:template 
+                                          ( ("Base" type (:type "class") nil nil)
+                                            ("Iterator" type (:type "class") nil nil)
+                                            ("ConstIterator" type (:type "class") nil nil)
+                                            ("LocalIterator" type (:type "class") nil nil)
+                                            ("ConstLocalIterator" type (:type "class") nil nil)
+                                            ("KeyType" type (:type "class") nil nil)
+                                            ("IteratorToBaseConverter" type (:type "class") nil nil)
+                                            ("IteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("LocalIteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ValueToBaseConverter" type (:type "class") nil nil)
+                                            ("ValueFromBaseConverter" type (:type "class") nil nil)
+                                            ("KeyToBaseConverter" type (:type "class") nil nil)
+                                            ("FunctorsFromDerivedClasses" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2430 2435]))                                          )
+                                        (reparse-symbol namespacesubparts) [1043 2438])
+                                    ("unordered_associative_container_adaptor" type
+                                       (:superclasses 
+                                          ( ("unordered_associative_container_adaptor_base::type" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("base_" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4056 4067])
+                                            ("public" label nil (reparse-symbol classsubparts) [4154 4161])
+                                            ("key_equal" variable (:type ("Base::key_equal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4198 4224])
+                                            ("hasher" variable (:type ("Base::hasher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4260 4280])
+                                            ("local_iterator" type
+                                               (:typedef ("LocalIterator" type (:type "class") nil nil)
+                                                :superclasses "LocalIterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4286 4328])
+                                            ("const_local_iterator" type
+                                               (:typedef ("ConstLocalIterator" type (:type "class") nil nil)
+                                                :superclasses "ConstLocalIterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4333 4381])
+                                            ("protected" label nil (reparse-symbol classsubparts) [4387 4397])
+                                            ("local_iterator_from_base" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4934 4964])
+                                            ("public" label nil (reparse-symbol classsubparts) [5051 5058])
+                                            ("unordered_associative_container_adaptor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("c" variable
+                                                       (:reference 1
+                                                        :type ("Base" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5113 5122]))                                                  
+                                                :type ("unordered_associative_container_adaptor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5073 5144])
+                                            ("protected" label nil (reparse-symbol classsubparts) [5150 5160])
+                                            ("unordered_associative_container_adaptor_" type
+                                               (:typedef ("unordered_associative_container_adaptor" type (:type "class") nil nil)
+                                                :superclasses "unordered_associative_container_adaptor"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5167 5272])
+                                            ("public" label nil (reparse-symbol classsubparts) [5359 5366])
+                                            ("bucket_count" function (:type ("base_::size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5421 5514])
+                                            ("max_bucket_count" function (:type ("base_::size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5543 5644])
+                                            ("bucket_size" function
+                                               (:arguments 
+                                                  ( ("base_::size_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5711 5752])
+                                                    ("" variable (:type ("n" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5751 5753]))                                                  
+                                                :type ("base_::size_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5673 5815])
+                                            ("bucket" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CompatibleKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5913 5937]))                                                  
+                                                :type ("base_::size_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5880 6126])
+                                            ("begin" function
+                                               (:arguments 
+                                                  ( ("base_::size_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6159 6200])
+                                                    ("" variable (:type ("n" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6199 6201]))                                                  
+                                                :type ("local_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6132 6353])
+                                            ("begin" function
+                                               (:arguments 
+                                                  ( ("base_::size_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6386 6427])
+                                                    ("" variable (:type ("n" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6426 6428]))                                                  
+                                                :type ("const_local_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6359 6586])
+                                            ("end" function
+                                               (:arguments 
+                                                  ( ("base_::size_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6617 6658])
+                                                    ("" variable (:type ("n" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6657 6659]))                                                  
+                                                :type ("local_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6592 6809])
+                                            ("end" function
+                                               (:arguments 
+                                                  ( ("base_::size_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6840 6881])
+                                                    ("" variable (:type ("n" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6880 6882]))                                                  
+                                                :type ("const_local_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6815 7038])
+                                            ("load_factor" function (:type "float") (reparse-symbol classsubparts) [7064 7144])
+                                            ("max_load_factor" function (:type "float") (reparse-symbol classsubparts) [7150 7238])
+                                            ("max_load_factor" function
+                                               (:arguments 
+                                                  ( ("z" variable (:type "float") (reparse-symbol arg-sub-list) [7265 7273]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7244 7333])
+                                            ("rehash" function
+                                               (:arguments 
+                                                  ( ("base_::size_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7351 7392])
+                                                    ("" variable (:type ("n" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7391 7393]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7339 7444])
+                                            ("begin" function (:type ("base_::iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7555 7641])
+                                            ("end" function (:type ("base_::iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7670 7752])
+                                            ("begin" function (:type ("base_::const_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7781 7879])
+                                            ("end" function (:type ("base_::const_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7908 8002]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [3204 8006]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [945 8010]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [926 8043]))                  
+                :type "namespace")
+                nil [908 8065]))          
+      :file "unordered_associative_container_adaptor.hpp"
+      :pointmax 8171
+      :fsize 8170
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((symbol 7885 . 7907) (symbol 7758 . 7780) (symbol 7647 . 7669) (symbol 7532 . 7554) (symbol 5857 . 5879) (punctuation 5851 . 5852) (symbol 5837 . 5850) (CLASS 5831 . 5836) (punctuation 5829 . 5830) (TEMPLATE 5821 . 5829) (symbol 5650 . 5672) (symbol 5520 . 5542) (symbol 5398 . 5420) (EXPLICIT 5064 . 5072) (punctuation 4933 . 4934) (punctuation 4932 . 4933) (punctuation 4931 . 4932) (symbol 4878 . 4908) (punctuation 4818 . 4819) (punctuation 4817 . 4818) (symbol 4780 . 4800) (punctuation 4758 . 4759) (symbol 4738 . 4758) (punctuation 4737 . 4738) (punctuation 4736 . 4737) (symbol 4732 . 4736) (symbol 4709 . 4731) (punctuation 4687 . 4688) (symbol 4673 . 4687) (punctuation 4651 . 4652) (symbol 4637 . 4651) (punctuation 4636 . 4637) (punctuation 4635 . 4636) (symbol 4631 . 4635) (symbol 4608 . 4630) (punctuation 4586 . 4587) (symbol 4542 . 4569) (punctuation 4541 . 4542) (punctuation 4540 . 4541) (symbol 4534 . 4540) (punctuation 4503 . 4504) (punctuation 4502 . 4503) (symbol 4472 . 4502) (punctuation 4471 . 4472) (symbol 4466 . 4471) (punctuation 4465 . 4466) (punctuation 4464 . 4465) (symbol 4461 . 4464) (punctuation 4460 . 4461) (punctuation 4459 . 4460) (symbol 4454 . 4459) (punctuation 4453 . 4454) (punctuation 4452 . 4453) (punctuation 4442 . 4443) (symbol 4439 . 4442) (punctuation 4438 . 4439) (punctuation 4437 . 4438) (symbol 4434 . 4437) (symbol 4411 . 4433) (TYPEDEF 4403 . 4410) (symbol 4237 . 4259) (TYPEDEF 4229 . 4236) (symbol 4175 . 4197) (TYPEDEF 4167 . 4174) (punctuation 4055 . 4056) (punctuation 4054 . 4055) (punctuation 4053 . 4054) (symbol 4021 . 4047) (punctuation 4011 . 4012) (symbol 3993 . 4011) (punctuation 3983 . 3984) (symbol 3961 . 3983) (punctuation 3959 . 3960) (symbol 3939 . 3959) (punctuation 3929 . 3930) (symbol 3899 . 3929) (punctuation 3889 . 3890) (symbol 3864 . 3889) (punctuation 3862 . 3863) (symbol 3839 . 3862) (punctuation 3829 . 3830) (symbol 3822 . 3829) (punctuation 3812 . 3813) (symbol 3794 . 3812) (punctuation 3792 . 3793) (symbol 3779 . 3792) (punctuation 3769 . 3770) (symbol 3756 . 3769) (punctuation 3754 . 3755) (symbol 3746 . 3754) (punctuation 3744 . 3745) (symbol 3740 . 3744) (punctuation 3730 . 3731) (symbol 3681 . 3725) (symbol 3658 . 3680) (TYPEDEF 3650 . 3657) (punctuation 3202 . 3203) (punctuation 3199 . 3200) (punctuation 3198 . 3199) (symbol 3192 . 3198) (punctuation 3191 . 3192) (punctuation 3190 . 3191) (symbol 3187 . 3190) (punctuation 3185 . 3186) (symbol 3154 . 3180) (CLASS 3148 . 3153) (punctuation 3141 . 3142) (symbol 3139 . 3141) (punctuation 3138 . 3139) (punctuation 3137 . 3138) (symbol 3134 . 3137) (punctuation 3133 . 3134) (punctuation 3132 . 3133) (symbol 3127 . 3132) (punctuation 3126 . 3127) (punctuation 3125 . 3126) (punctuation 3123 . 3124) (symbol 3092 . 3110) (CLASS 3086 . 3091) (punctuation 3080 . 3081) (symbol 3078 . 3080) (punctuation 3077 . 3078) (punctuation 3076 . 3077) (symbol 3073 . 3076) (punctuation 3072 . 3073) (punctuation 3071 . 3072) (symbol 3066 . 3071) (punctuation 3065 . 3066) (punctuation 3064 . 3065) (punctuation 3062 . 3063) (symbol 3031 . 3053) (CLASS 3025 . 3030) (punctuation 3019 . 3020) (symbol 3017 . 3019) (punctuation 3016 . 3017) (punctuation 3015 . 3016) (symbol 3012 . 3015) (punctuation 3011 . 3012) (punctuation 3010 . 3011) (symbol 3005 . 3010) (punctuation 3004 . 3005) (punctuation 3003 . 3004) (punctuation 3001 . 3002) (symbol 2970 . 2990) (CLASS 2964 . 2969) (punctuation 2958 . 2959) (symbol 2956 . 2958) (punctuation 2955 . 2956) (punctuation 2954 . 2955) (symbol 2951 . 2954) (punctuation 2950 . 2951) (punctuation 2949 . 2950) (symbol 2944 . 2949) (punctuation 2943 . 2944) (punctuation 2942 . 2943) (punctuation 2940 . 2941) (symbol 2909 . 2939) (CLASS 2903 . 2908) (punctuation 2897 . 2898) (symbol 2895 . 2897) (punctuation 2894 . 2895) (punctuation 2893 . 2894) (symbol 2890 . 2893) (punctuation 2889 . 2890) (punctuation 2888 . 2889) (symbol 2883 . 2888) (punctuation 2882 . 2883) (punctuation 2881 . 2882) (punctuation 2879 . 2880) (symbol 2848 . 2873) (CLASS 2842 . 2847) (punctuation 2836 . 2837) (symbol 2834 . 2836) (punctuation 2833 . 2834) (punctuation 2832 . 2833) (symbol 2829 . 2832) (punctuation 2828 . 2829) (punctuation 2827 . 2828) (symbol 2822 . 2827) (punctuation 2821 . 2822) (punctuation 2820 . 2821) (punctuation 2818 . 2819) (symbol 2787 . 2810) (CLASS 2781 . 2786) (punctuation 2774 . 2775) (symbol 2767 . 2774) (CLASS 2761 . 2766) (punctuation 2754 . 2755) (symbol 2736 . 2754) (CLASS 2730 . 2735) (punctuation 2724 . 2725) (symbol 2711 . 2724) (CLASS 2705 . 2710) (punctuation 2698 . 2699) (symbol 2685 . 2698) (CLASS 2679 . 2684) (punctuation 2673 . 2674) (symbol 2665 . 2673) (CLASS 2659 . 2664) (punctuation 2652 . 2653) (symbol 2648 . 2652) (CLASS 2642 . 2647) (punctuation 2636 . 2637) (TEMPLATE 2627 . 2635) (punctuation 2428 . 2429) (symbol 2418 . 2422) (punctuation 2417 . 2418) (punctuation 2416 . 2417) (punctuation 2415 . 2416) (symbol 2401 . 2405) (punctuation 2400 . 2401) (punctuation 2399 . 2400) (punctuation 2398 . 2399) (symbol 2337 . 2367) (punctuation 2261 . 2262) (punctuation 2260 . 2261) (symbol 2221 . 2239) (punctuation 2195 . 2196) (symbol 2175 . 2195) (punctuation 2174 . 2175) (punctuation 2173 . 2174) (symbol 2169 . 2173) (symbol 2146 . 2168) (punctuation 2120 . 2121) (symbol 2107 . 2120) (punctuation 2081 . 2082) (symbol 2067 . 2081) (punctuation 2066 . 2067) (punctuation 2065 . 2066) (symbol 2061 . 2065) (symbol 2038 . 2060) (punctuation 2012 . 2013) (symbol 1964 . 1991) (punctuation 1963 . 1964) (punctuation 1962 . 1963) (symbol 1956 . 1962) (punctuation 1917 . 1918) (punctuation 1916 . 1917) (symbol 1886 . 1916) (punctuation 1885 . 1886) (symbol 1880 . 1885) (punctuation 1879 . 1880) (punctuation 1878 . 1879) (symbol 1875 . 1878) (punctuation 1874 . 1875) (punctuation 1873 . 1874) (symbol 1868 . 1873) (punctuation 1867 . 1868) (punctuation 1866 . 1867) (punctuation 1848 . 1849) (symbol 1845 . 1848) (punctuation 1844 . 1845) (punctuation 1843 . 1844) (symbol 1840 . 1843) (symbol 1817 . 1839) (punctuation 1802 . 1803) (symbol 1776 . 1802) (punctuation 1761 . 1762) (symbol 1751 . 1761) (punctuation 1750 . 1751) (punctuation 1749 . 1750) (symbol 1746 . 1749) (symbol 1723 . 1745) (punctuation 1712 . 1713) (symbol 1694 . 1712) (punctuation 1684 . 1685) (symbol 1662 . 1684) (punctuation 1660 . 1661) (symbol 1637 . 1657) (punctuation 1627 . 1628) (symbol 1602 . 1627) (punctuation 1600 . 1601) (symbol 1577 . 1600) (punctuation 1567 . 1568) (symbol 1560 . 1567) (punctuation 1558 . 1559) (symbol 1545 . 1558) (punctuation 1543 . 1544) (symbol 1535 . 1543) (punctuation 1533 . 1534) (symbol 1529 . 1533) (punctuation 1519 . 1520) (symbol 1485 . 1514) (TYPEDEF 1477 . 1484))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_UNORDERED_ASSOCIATIVE_CONTAINER_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "associative_container_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_ASSOCIATIVE_CONTAINER_ADAPTOR_HPP" variable (:constant-flag t) nil [473 536])
+            ("boost/config.hpp" include (:system-flag t) nil [601 628])
+            ("utility" include (:system-flag t) nil [630 648])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [650 681])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [682 709])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [710 742])
+            ("boost/bimap/container_adaptor/detail/identity_converters.hpp" include (:system-flag t) nil [743 814])
+            ("boost/bimap/container_adaptor/container_adaptor.hpp" include (:system-flag t) nil [815 877])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [878 910])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("associative_container_adaptor_base" type
+                                       (:template 
+                                          ( ("Base" type (:type "class") nil nil)
+                                            ("Iterator" type (:type "class") nil nil)
+                                            ("ConstIterator" type (:type "class") nil nil)
+                                            ("KeyType" type (:type "class") nil nil)
+                                            ("IteratorToBaseConverter" type (:type "class") nil nil)
+                                            ("IteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ValueToBaseConverter" type (:type "class") nil nil)
+                                            ("ValueFromBaseConverter" type (:type "class") nil nil)
+                                            ("KeyToBaseConverter" type (:type "class") nil nil)
+                                            ("FunctorsFromDerivedClasses" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2080 2085]))                                          )
+                                        (reparse-symbol namespacesubparts) [1046 2088])
+                                    ("associative_container_adaptor" type
+                                       (:superclasses 
+                                          ( ("associative_container_adaptor_base::type" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("base_" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3387 3398])
+                                            ("public" label nil (reparse-symbol classsubparts) [3404 3411])
+                                            ("key_type" type
+                                               (:typedef ("KeyType" type (:type "class") nil nil)
+                                                :superclasses "KeyType"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3417 3442])
+                                            ("protected" label nil (reparse-symbol classsubparts) [3448 3458])
+                                            ("key_to_base" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3766 3783])
+                                            ("public" label nil (reparse-symbol classsubparts) [3789 3796])
+                                            ("associative_container_adaptor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("c" variable
+                                                       (:reference 1
+                                                        :type ("Base" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3841 3850]))                                                  
+                                                :type ("associative_container_adaptor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3811 3872])
+                                            ("protected" label nil (reparse-symbol classsubparts) [3878 3888])
+                                            ("associative_container_adaptor_" type
+                                               (:typedef ("associative_container_adaptor" type (:type "class") nil nil)
+                                                :superclasses "associative_container_adaptor"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3895 3964])
+                                            ("public" label nil (reparse-symbol classsubparts) [4051 4058])
+                                            ("erase" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CompatibleKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4146 4170]))                                                  
+                                                :type ("base_::size_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4123 4290])
+                                            ("erase" function
+                                               (:arguments 
+                                                  ( ("base_::iterator" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4427 4469])
+                                                    ("" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4466 4470]))                                                  
+                                                :type ("base_::iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4396 4536])
+                                            ("erase" function
+                                               (:arguments 
+                                                  ( ("base_::iterator" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4596 4640])
+                                                    ("" variable (:type ("first" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4635 4641])
+                                                    ("base_::iterator" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4650 4693])
+                                                    ("" variable (:type ("last" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4689 4694]))                                                  
+                                                :type ("base_::iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4565 4767])
+                                            ("count" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CompatibleKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4855 4879]))                                                  
+                                                :type ("base_::size_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4832 4990])
+                                            ("find" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CompatibleKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5076 5100]))                                                  
+                                                :type ("base_::iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5055 5311])
+                                            ("find" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CompatibleKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5411 5435]))                                                  
+                                                :type ("base_::const_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5376 5679])
+                                            ("equal_range" function
+                                               (:template 
+                                                  ( ("CompatibleKey" type (:type "class") nil nil))                                                  
+                                                :type ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("BOOST_DEDUCED_TYPENAME" type nil nil nil)
+                                                          ("BOOST_DEDUCED_TYPENAME" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CompatibleKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5858 5882]))                                                  )
+                                                (reparse-symbol classsubparts) [5685 6638])
+                                            ("equal_range" function
+                                               (:template 
+                                                  ( ("CompatibleKey" type (:type "class") nil nil))                                                  
+                                                :type ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("BOOST_DEDUCED_TYPENAME" type nil nil nil)
+                                                          ("BOOST_DEDUCED_TYPENAME" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CompatibleKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6829 6853]))                                                  )
+                                                (reparse-symbol classsubparts) [6644 7639]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2697 7643]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [949 7647]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [930 7680]))                  
+                :type "namespace")
+                nil [912 7702]))          
+      :file "associative_container_adaptor.hpp"
+      :pointmax 7801
+      :fsize 7800
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((symbol 5353 . 5375) (punctuation 5347 . 5348) (symbol 5333 . 5346) (CLASS 5327 . 5332) (punctuation 5325 . 5326) (TEMPLATE 5317 . 5325) (symbol 5032 . 5054) (punctuation 5026 . 5027) (symbol 5012 . 5025) (CLASS 5006 . 5011) (punctuation 5004 . 5005) (TEMPLATE 4996 . 5004) (symbol 4809 . 4831) (punctuation 4803 . 4804) (symbol 4789 . 4802) (CLASS 4783 . 4788) (punctuation 4781 . 4782) (TEMPLATE 4773 . 4781) (symbol 4542 . 4564) (symbol 4373 . 4395) (symbol 4100 . 4122) (punctuation 4094 . 4095) (symbol 4080 . 4093) (CLASS 4074 . 4079) (punctuation 4072 . 4073) (TEMPLATE 4064 . 4072) (EXPLICIT 3802 . 3810) (punctuation 3765 . 3766) (punctuation 3764 . 3765) (punctuation 3763 . 3764) (symbol 3730 . 3748) (punctuation 3686 . 3687) (punctuation 3685 . 3686) (symbol 3665 . 3672) (punctuation 3663 . 3664) (symbol 3655 . 3663) (punctuation 3654 . 3655) (punctuation 3653 . 3654) (symbol 3649 . 3653) (symbol 3626 . 3648) (punctuation 3608 . 3609) (symbol 3575 . 3595) (punctuation 3574 . 3575) (punctuation 3573 . 3574) (symbol 3567 . 3573) (punctuation 3544 . 3545) (punctuation 3543 . 3544) (symbol 3525 . 3543) (punctuation 3524 . 3525) (symbol 3519 . 3524) (punctuation 3518 . 3519) (punctuation 3517 . 3518) (symbol 3514 . 3517) (punctuation 3513 . 3514) (punctuation 3512 . 3513) (symbol 3507 . 3512) (punctuation 3506 . 3507) (punctuation 3505 . 3506) (punctuation 3503 . 3504) (symbol 3500 . 3503) (punctuation 3499 . 3500) (punctuation 3498 . 3499) (symbol 3495 . 3498) (symbol 3472 . 3494) (TYPEDEF 3464 . 3471) (punctuation 3386 . 3387) (punctuation 3385 . 3386) (punctuation 3384 . 3385) (symbol 3352 . 3378) (punctuation 3342 . 3343) (symbol 3324 . 3342) (punctuation 3322 . 3323) (symbol 3300 . 3322) (punctuation 3298 . 3299) (symbol 3278 . 3298) (punctuation 3268 . 3269) (symbol 3243 . 3268) (punctuation 3241 . 3242) (symbol 3218 . 3241) (punctuation 3208 . 3209) (symbol 3201 . 3208) (punctuation 3199 . 3200) (symbol 3186 . 3199) (punctuation 3184 . 3185) (symbol 3176 . 3184) (punctuation 3174 . 3175) (symbol 3170 . 3174) (punctuation 3160 . 3161) (symbol 3121 . 3155) (TYPENAME 3112 . 3120) (TYPEDEF 3104 . 3111) (punctuation 2695 . 2696) (punctuation 2693 . 2694) (punctuation 2692 . 2693) (symbol 2686 . 2692) (punctuation 2685 . 2686) (punctuation 2684 . 2685) (symbol 2681 . 2684) (punctuation 2679 . 2680) (symbol 2652 . 2678) (CLASS 2646 . 2651) (punctuation 2639 . 2640) (symbol 2637 . 2639) (punctuation 2636 . 2637) (punctuation 2635 . 2636) (symbol 2632 . 2635) (punctuation 2631 . 2632) (punctuation 2630 . 2631) (symbol 2625 . 2630) (punctuation 2624 . 2625) (punctuation 2623 . 2624) (punctuation 2621 . 2622) (symbol 2595 . 2613) (CLASS 2589 . 2594) (punctuation 2583 . 2584) (symbol 2581 . 2583) (punctuation 2580 . 2581) (punctuation 2579 . 2580) (symbol 2576 . 2579) (punctuation 2575 . 2576) (punctuation 2574 . 2575) (symbol 2569 . 2574) (punctuation 2568 . 2569) (punctuation 2567 . 2568) (punctuation 2565 . 2566) (symbol 2539 . 2561) (CLASS 2533 . 2538) (punctuation 2527 . 2528) (symbol 2525 . 2527) (punctuation 2524 . 2525) (punctuation 2523 . 2524) (symbol 2520 . 2523) (punctuation 2519 . 2520) (punctuation 2518 . 2519) (symbol 2513 . 2518) (punctuation 2512 . 2513) (punctuation 2511 . 2512) (punctuation 2509 . 2510) (symbol 2483 . 2503) (CLASS 2477 . 2482) (punctuation 2471 . 2472) (symbol 2469 . 2471) (punctuation 2468 . 2469) (punctuation 2467 . 2468) (symbol 2464 . 2467) (punctuation 2463 . 2464) (punctuation 2462 . 2463) (symbol 2457 . 2462) (punctuation 2456 . 2457) (punctuation 2455 . 2456) (punctuation 2453 . 2454) (symbol 2427 . 2452) (CLASS 2421 . 2426) (punctuation 2415 . 2416) (symbol 2413 . 2415) (punctuation 2412 . 2413) (punctuation 2411 . 2412) (symbol 2408 . 2411) (punctuation 2407 . 2408) (punctuation 2406 . 2407) (symbol 2401 . 2406) (punctuation 2400 . 2401) (punctuation 2399 . 2400) (punctuation 2397 . 2398) (symbol 2371 . 2394) (CLASS 2365 . 2370) (punctuation 2358 . 2359) (symbol 2351 . 2358) (CLASS 2345 . 2350) (punctuation 2338 . 2339) (symbol 2325 . 2338) (CLASS 2319 . 2324) (punctuation 2313 . 2314) (symbol 2305 . 2313) (CLASS 2299 . 2304) (punctuation 2292 . 2293) (symbol 2288 . 2292) (CLASS 2282 . 2287) (punctuation 2276 . 2277) (TEMPLATE 2267 . 2275) (punctuation 2078 . 2079) (symbol 2068 . 2072) (punctuation 2067 . 2068) (punctuation 2066 . 2067) (punctuation 2065 . 2066) (symbol 2051 . 2055) (punctuation 2050 . 2051) (punctuation 2049 . 2050) (punctuation 2048 . 2049) (symbol 1999 . 2017) (punctuation 1923 . 1924) (punctuation 1922 . 1923) (symbol 1894 . 1901) (punctuation 1892 . 1893) (symbol 1884 . 1892) (punctuation 1883 . 1884) (punctuation 1882 . 1883) (symbol 1878 . 1882) (symbol 1855 . 1877) (punctuation 1829 . 1830) (symbol 1788 . 1808) (punctuation 1787 . 1788) (punctuation 1786 . 1787) (symbol 1780 . 1786) (punctuation 1741 . 1742) (punctuation 1740 . 1741) (symbol 1722 . 1740) (punctuation 1721 . 1722) (symbol 1716 . 1721) (punctuation 1715 . 1716) (punctuation 1714 . 1715) (symbol 1711 . 1714) (punctuation 1710 . 1711) (punctuation 1709 . 1710) (symbol 1704 . 1709) (punctuation 1703 . 1704) (punctuation 1702 . 1703) (punctuation 1700 . 1701) (symbol 1697 . 1700) (punctuation 1696 . 1697) (punctuation 1695 . 1696) (symbol 1692 . 1695) (symbol 1669 . 1691) (punctuation 1654 . 1655) (symbol 1628 . 1654) (punctuation 1613 . 1614) (symbol 1603 . 1613) (punctuation 1602 . 1603) (punctuation 1601 . 1602) (symbol 1598 . 1601) (symbol 1575 . 1597) (punctuation 1564 . 1565) (symbol 1542 . 1564) (punctuation 1540 . 1541) (symbol 1517 . 1537) (punctuation 1507 . 1508) (symbol 1482 . 1507) (punctuation 1480 . 1481) (symbol 1457 . 1480) (punctuation 1446 . 1447) (symbol 1433 . 1446) (punctuation 1431 . 1432) (symbol 1423 . 1431) (punctuation 1412 . 1413) (symbol 1408 . 1412) (punctuation 1398 . 1399) (symbol 1376 . 1393) (TYPEDEF 1368 . 1375))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_ASSOCIATIVE_CONTAINER_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "map_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_MAP_ADAPTOR_HPP" variable (:constant-flag t) nil [418 463])
+            ("boost/config.hpp" include (:system-flag t) nil [528 555])
+            ("boost/bimap/container_adaptor/ordered_associative_container_adaptor.hpp" include (:system-flag t) nil [557 639])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [640 671])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [672 704])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [705 737])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1488 1496])
+                                    ("boost::bimaps::container_adaptor::ordered_associative_container_adaptor" variable (:type "int") (reparse-symbol namespacesubparts) [1497 3585]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [776 3589]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [757 3622]))                  
+                :type "namespace")
+                nil [739 3644]))          
+      :file "map_adaptor.hpp"
+      :pointmax 3723
+      :fsize 3722
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1496 . 1497) (punctuation 1481 . 1482) (symbol 1469 . 1480) (CLASS 1463 . 1468) (punctuation 1461 . 1462) (punctuation 1459 . 1460) (punctuation 1458 . 1459) (symbol 1452 . 1458) (punctuation 1451 . 1452) (punctuation 1450 . 1451) (symbol 1447 . 1450) (punctuation 1445 . 1446) (symbol 1418 . 1444) (CLASS 1412 . 1417) (punctuation 1405 . 1406) (symbol 1403 . 1405) (punctuation 1402 . 1403) (punctuation 1401 . 1402) (symbol 1398 . 1401) (punctuation 1397 . 1398) (punctuation 1396 . 1397) (symbol 1391 . 1396) (punctuation 1390 . 1391) (punctuation 1389 . 1390) (punctuation 1387 . 1388) (symbol 1354 . 1372) (CLASS 1348 . 1353) (punctuation 1342 . 1343) (symbol 1340 . 1342) (punctuation 1339 . 1340) (punctuation 1338 . 1339) (symbol 1335 . 1338) (punctuation 1334 . 1335) (punctuation 1333 . 1334) (symbol 1328 . 1333) (punctuation 1327 . 1328) (punctuation 1326 . 1327) (punctuation 1324 . 1325) (symbol 1291 . 1313) (CLASS 1285 . 1290) (punctuation 1279 . 1280) (symbol 1277 . 1279) (punctuation 1276 . 1277) (punctuation 1275 . 1276) (symbol 1272 . 1275) (punctuation 1271 . 1272) (punctuation 1270 . 1271) (symbol 1265 . 1270) (punctuation 1264 . 1265) (punctuation 1263 . 1264) (punctuation 1261 . 1262) (symbol 1228 . 1248) (CLASS 1222 . 1227) (punctuation 1216 . 1217) (symbol 1214 . 1216) (punctuation 1213 . 1214) (punctuation 1212 . 1213) (symbol 1209 . 1212) (punctuation 1208 . 1209) (punctuation 1207 . 1208) (symbol 1202 . 1207) (punctuation 1201 . 1202) (punctuation 1200 . 1201) (punctuation 1198 . 1199) (symbol 1165 . 1197) (CLASS 1159 . 1164) (punctuation 1153 . 1154) (symbol 1151 . 1153) (punctuation 1150 . 1151) (punctuation 1149 . 1150) (symbol 1146 . 1149) (punctuation 1145 . 1146) (punctuation 1144 . 1145) (symbol 1139 . 1144) (punctuation 1138 . 1139) (punctuation 1137 . 1138) (punctuation 1135 . 1136) (symbol 1102 . 1127) (CLASS 1096 . 1101) (punctuation 1090 . 1091) (symbol 1088 . 1090) (punctuation 1087 . 1088) (punctuation 1086 . 1087) (symbol 1083 . 1086) (punctuation 1082 . 1083) (punctuation 1081 . 1082) (symbol 1076 . 1081) (punctuation 1075 . 1076) (punctuation 1074 . 1075) (punctuation 1072 . 1073) (symbol 1039 . 1062) (CLASS 1033 . 1038) (punctuation 1026 . 1027) (symbol 1006 . 1026) (CLASS 1000 . 1005) (punctuation 994 . 995) (symbol 979 . 994) (CLASS 973 . 978) (punctuation 967 . 968) (symbol 954 . 967) (CLASS 948 . 953) (punctuation 942 . 943) (symbol 934 . 942) (CLASS 928 . 933) (punctuation 921 . 922) (symbol 917 . 921) (CLASS 911 . 916) (punctuation 905 . 906) (TEMPLATE 896 . 904))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_MAP_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "set_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_SET_ADAPTOR_HPP" variable (:constant-flag t) nil [418 463])
+            ("boost/config.hpp" include (:system-flag t) nil [528 555])
+            ("boost/bimap/container_adaptor/ordered_associative_container_adaptor.hpp" include (:system-flag t) nil [557 639])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [640 671])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [672 704])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1455 1463])
+                                    ("boost::bimaps::container_adaptor::ordered_associative_container_adaptor" variable (:type "int") (reparse-symbol namespacesubparts) [1464 2617]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [743 2621]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [724 2654]))                  
+                :type "namespace")
+                nil [706 2676]))          
+      :file "set_adaptor.hpp"
+      :pointmax 2756
+      :fsize 2755
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1463 . 1464) (punctuation 1448 . 1449) (symbol 1436 . 1447) (CLASS 1430 . 1435) (punctuation 1428 . 1429) (punctuation 1426 . 1427) (punctuation 1425 . 1426) (symbol 1419 . 1425) (punctuation 1418 . 1419) (punctuation 1417 . 1418) (symbol 1414 . 1417) (punctuation 1412 . 1413) (symbol 1385 . 1411) (CLASS 1379 . 1384) (punctuation 1372 . 1373) (symbol 1370 . 1372) (punctuation 1369 . 1370) (punctuation 1368 . 1369) (symbol 1365 . 1368) (punctuation 1364 . 1365) (punctuation 1363 . 1364) (symbol 1358 . 1363) (punctuation 1357 . 1358) (punctuation 1356 . 1357) (punctuation 1354 . 1355) (symbol 1321 . 1339) (CLASS 1315 . 1320) (punctuation 1309 . 1310) (symbol 1307 . 1309) (punctuation 1306 . 1307) (punctuation 1305 . 1306) (symbol 1302 . 1305) (punctuation 1301 . 1302) (punctuation 1300 . 1301) (symbol 1295 . 1300) (punctuation 1294 . 1295) (punctuation 1293 . 1294) (punctuation 1291 . 1292) (symbol 1258 . 1280) (CLASS 1252 . 1257) (punctuation 1246 . 1247) (symbol 1244 . 1246) (punctuation 1243 . 1244) (punctuation 1242 . 1243) (symbol 1239 . 1242) (punctuation 1238 . 1239) (punctuation 1237 . 1238) (symbol 1232 . 1237) (punctuation 1231 . 1232) (punctuation 1230 . 1231) (punctuation 1228 . 1229) (symbol 1195 . 1215) (CLASS 1189 . 1194) (punctuation 1183 . 1184) (symbol 1181 . 1183) (punctuation 1180 . 1181) (punctuation 1179 . 1180) (symbol 1176 . 1179) (punctuation 1175 . 1176) (punctuation 1174 . 1175) (symbol 1169 . 1174) (punctuation 1168 . 1169) (punctuation 1167 . 1168) (punctuation 1165 . 1166) (symbol 1132 . 1164) (CLASS 1126 . 1131) (punctuation 1120 . 1121) (symbol 1118 . 1120) (punctuation 1117 . 1118) (punctuation 1116 . 1117) (symbol 1113 . 1116) (punctuation 1112 . 1113) (punctuation 1111 . 1112) (symbol 1106 . 1111) (punctuation 1105 . 1106) (punctuation 1104 . 1105) (punctuation 1102 . 1103) (symbol 1069 . 1094) (CLASS 1063 . 1068) (punctuation 1057 . 1058) (symbol 1055 . 1057) (punctuation 1054 . 1055) (punctuation 1053 . 1054) (symbol 1050 . 1053) (punctuation 1049 . 1050) (punctuation 1048 . 1049) (symbol 1043 . 1048) (punctuation 1042 . 1043) (punctuation 1041 . 1042) (punctuation 1039 . 1040) (symbol 1006 . 1029) (CLASS 1000 . 1005) (punctuation 993 . 994) (symbol 973 . 993) (CLASS 967 . 972) (punctuation 961 . 962) (symbol 946 . 961) (CLASS 940 . 945) (punctuation 934 . 935) (symbol 921 . 934) (CLASS 915 . 920) (punctuation 909 . 910) (symbol 901 . 909) (CLASS 895 . 900) (punctuation 888 . 889) (symbol 884 . 888) (CLASS 878 . 883) (punctuation 872 . 873) (TEMPLATE 863 . 871))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_SET_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "container_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_CONTAINER_ADAPTOR_HPP" variable (:constant-flag t) nil [436 487])
+            ("boost/config.hpp" include (:system-flag t) nil [552 579])
+            ("utility" include (:system-flag t) nil [581 599])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [601 628])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [629 661])
+            ("boost/bimap/container_adaptor/detail/identity_converters.hpp" include (:system-flag t) nil [662 733])
+            ("boost/iterator/iterator_traits.hpp" include (:system-flag t) nil [734 779])
+            ("boost/bimap/container_adaptor/detail/functor_bag.hpp" include (:system-flag t) nil [781 844])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [845 876])
+            ("boost/mpl/copy.hpp" include (:system-flag t) nil [877 906])
+            ("boost/mpl/front_inserter.hpp" include (:system-flag t) nil [907 946])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [947 979])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("container_adaptor" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1702 1709])
+                                            ("iterator" type
+                                               (:typedef ("Iterator" type (:type "class") nil nil)
+                                                :superclasses "Iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1715 1741])
+                                            ("const_iterator" type
+                                               (:typedef ("ConstIterator" type (:type "class") nil nil)
+                                                :superclasses "ConstIterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1746 1783])
+                                            ("value_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1858 1874])
+                                            ("pointer" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1948 1961])
+                                            ("reference" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2035 2050])
+                                            ("const_reference" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2124 2145])
+                                            ("size_type" variable (:type ("Base::size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2182 2208])
+                                            ("difference_type" variable (:type ("Base::difference_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2244 2282])
+                                            ("iterator_to_base" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2814 2836])
+                                            ("iterator_from_base" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3374 3398])
+                                            ("value_to_base" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3838 3857])
+                                            ("value_from_base" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4303 4324])
+                                            ("public" label nil (reparse-symbol classsubparts) [4411 4418])
+                                            ("container_adaptor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("c" variable
+                                                       (:reference 1
+                                                        :type ("Base" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4451 4460]))                                                  
+                                                :type ("container_adaptor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4433 4473])
+                                            ("protected" label nil (reparse-symbol classsubparts) [4479 4489])
+                                            ("base_type" type
+                                               (:typedef ("Base" type (:type "class") nil nil)
+                                                :superclasses "Base"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4495 4518])
+                                            ("container_adaptor_" type
+                                               (:typedef ("container_adaptor" type (:type "class") nil nil)
+                                                :superclasses "container_adaptor"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4524 4569])
+                                            ("base" function
+                                               (:constant-flag t
+                                                :type ("Base" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4575 4622])
+                                            ("base" function (:type ("Base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4633 4674])
+                                            ("public" label nil (reparse-symbol classsubparts) [4761 4768])
+                                            ("size" function (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4774 4849])
+                                            ("max_size" function (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4854 4929])
+                                            ("empty" function (:type "bool") (reparse-symbol classsubparts) [4934 5009])
+                                            ("begin" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5015 5122])
+                                            ("end" function (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5128 5231])
+                                            ("begin" function (:type ("const_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5237 5356])
+                                            ("end" function (:type ("const_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5362 5477])
+                                            ("erase" function
+                                               (:arguments 
+                                                  ( ("pos" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5499 5512]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5484 5670])
+                                            ("erase" function
+                                               (:arguments 
+                                                  ( ("first" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5691 5706])
+                                                    ("last" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5707 5721]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [5676 5977])
+                                            ("clear" function (:type "void") (reparse-symbol classsubparts) [5983 6031])
+                                            ("insert" function
+                                               (:template 
+                                                  ( ("InputIterator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("iterBegin" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6085 6109])
+                                                    ("iterEnd" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6110 6132]))                                                  )
+                                                (reparse-symbol classsubparts) [6037 6328])
+                                            ("insert" function
+                                               (:arguments 
+                                                  ( ("x" variable (:type ("BOOST_DEDUCED_TYPENAME::boost::call_traits::param_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6376 6448]))                                                  
+                                                :type ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("iterator" type nil nil nil)
+                                                          ("bool" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [6334 6755])
+                                            ("insert" function
+                                               (:arguments 
+                                                  ( ("pos" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6777 6790])
+                                                    ("x" variable (:type ("BOOST_DEDUCED_TYPENAME::boost::call_traits::param_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6811 6883]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6761 7119])
+                                            ("swap" function
+                                               (:arguments 
+                                                  ( ("c" variable
+                                                       (:reference 1
+                                                        :type ("container_adaptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7136 7159]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7125 7204])
+                                            ("protected" label nil (reparse-symbol classsubparts) [7290 7300])
+                                            ("functor" function
+                                               (:template 
+                                                  ( ("Functor" type (:type "class") nil nil))                                                  
+                                                :type ("Functor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7306 7416])
+                                            ("functor" function
+                                               (:template 
+                                                  ( ("Functor" type (:type "class") nil nil))                                                  
+                                                :type ("Functor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7422 7544])
+                                            ("private" label nil (reparse-symbol classsubparts) [7630 7638])
+                                            ("dwfb" variable (:type ("boost::bimaps::container_adaptor::detail::data_with_functor_bag" type
+                                                 (:template-specifier 
+                                                    ( ("Base" type (:reference 1) nil nil)
+                                                      ("BOOST_DEDUCED_TYPENAME" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [7646 8062]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1593 8065]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1113 8069]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1001 8102]))                  
+                :type "namespace")
+                nil [983 8124]))          
+      :file "container_adaptor.hpp"
+      :pointmax 8208
+      :fsize 8207
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 7645 . 7646) (punctuation 7644 . 7645) (EXPLICIT 4424 . 4432) (punctuation 4302 . 4303) (punctuation 4301 . 4302) (punctuation 4300 . 4301) (symbol 4255 . 4277) (punctuation 4195 . 4196) (punctuation 4194 . 4195) (symbol 4167 . 4177) (punctuation 4145 . 4146) (symbol 4135 . 4145) (punctuation 4134 . 4135) (punctuation 4133 . 4134) (symbol 4129 . 4133) (symbol 4106 . 4128) (punctuation 4084 . 4085) (symbol 4043 . 4067) (punctuation 4021 . 4022) (punctuation 4020 . 4021) (symbol 4014 . 4020) (punctuation 4013 . 4014) (punctuation 4012 . 4013) (symbol 3995 . 4012) (punctuation 3994 . 3995) (punctuation 3993 . 3994) (symbol 3987 . 3993) (punctuation 3986 . 3987) (punctuation 3985 . 3986) (symbol 3980 . 3985) (punctuation 3979 . 3980) (punctuation 3978 . 3979) (punctuation 3947 . 3948) (punctuation 3946 . 3947) (symbol 3924 . 3946) (punctuation 3923 . 3924) (symbol 3918 . 3923) (punctuation 3917 . 3918) (punctuation 3916 . 3917) (symbol 3913 . 3916) (punctuation 3912 . 3913) (punctuation 3911 . 3912) (symbol 3906 . 3911) (punctuation 3905 . 3906) (punctuation 3904 . 3905) (punctuation 3902 . 3903) (symbol 3899 . 3902) (punctuation 3898 . 3899) (punctuation 3897 . 3898) (symbol 3894 . 3897) (symbol 3871 . 3893) (TYPEDEF 3863 . 3870) (punctuation 3837 . 3838) (punctuation 3836 . 3837) (punctuation 3835 . 3836) (symbol 3792 . 3812) (punctuation 3732 . 3733) (punctuation 3731 . 3732) (symbol 3704 . 3714) (punctuation 3682 . 3683) (symbol 3672 . 3682) (punctuation 3671 . 3672) (punctuation 3670 . 3671) (symbol 3666 . 3670) (symbol 3643 . 3665) (punctuation 3621 . 3622) (symbol 3582 . 3604) (punctuation 3560 . 3561) (punctuation 3559 . 3560) (symbol 3553 . 3559) (punctuation 3552 . 3553) (punctuation 3551 . 3552) (symbol 3534 . 3551) (punctuation 3533 . 3534) (punctuation 3532 . 3533) (symbol 3526 . 3532) (punctuation 3525 . 3526) (punctuation 3524 . 3525) (symbol 3519 . 3524) (punctuation 3518 . 3519) (punctuation 3517 . 3518) (punctuation 3486 . 3487) (punctuation 3485 . 3486) (symbol 3465 . 3485) (punctuation 3464 . 3465) (symbol 3459 . 3464) (punctuation 3458 . 3459) (punctuation 3457 . 3458) (symbol 3454 . 3457) (punctuation 3453 . 3454) (punctuation 3452 . 3453) (symbol 3447 . 3452) (punctuation 3446 . 3447) (punctuation 3445 . 3446) (punctuation 3443 . 3444) (symbol 3440 . 3443) (punctuation 3439 . 3440) (punctuation 3438 . 3439) (symbol 3435 . 3438) (symbol 3412 . 3434) (TYPEDEF 3404 . 3411) (punctuation 3373 . 3374) (punctuation 3372 . 3373) (punctuation 3371 . 3372) (symbol 3323 . 3348) (punctuation 3263 . 3264) (punctuation 3262 . 3263) (symbol 3231 . 3245) (punctuation 3229 . 3230) (symbol 3205 . 3219) (punctuation 3204 . 3205) (punctuation 3203 . 3204) (symbol 3199 . 3203) (symbol 3176 . 3198) (punctuation 3154 . 3155) (symbol 3146 . 3154) (punctuation 3144 . 3145) (symbol 3120 . 3128) (punctuation 3119 . 3120) (punctuation 3118 . 3119) (symbol 3114 . 3118) (symbol 3091 . 3113) (punctuation 3069 . 3070) (symbol 3025 . 3052) (punctuation 3003 . 3004) (punctuation 3002 . 3003) (symbol 2996 . 3002) (punctuation 2995 . 2996) (punctuation 2994 . 2995) (symbol 2977 . 2994) (punctuation 2976 . 2977) (punctuation 2975 . 2976) (symbol 2969 . 2975) (punctuation 2968 . 2969) (punctuation 2967 . 2968) (symbol 2962 . 2967) (punctuation 2961 . 2962) (punctuation 2960 . 2961) (punctuation 2929 . 2930) (punctuation 2928 . 2929) (symbol 2903 . 2928) (punctuation 2902 . 2903) (symbol 2897 . 2902) (punctuation 2896 . 2897) (punctuation 2895 . 2896) (symbol 2892 . 2895) (punctuation 2891 . 2892) (punctuation 2890 . 2891) (symbol 2885 . 2890) (punctuation 2884 . 2885) (punctuation 2883 . 2884) (punctuation 2881 . 2882) (symbol 2878 . 2881) (punctuation 2877 . 2878) (punctuation 2876 . 2877) (symbol 2873 . 2876) (symbol 2850 . 2872) (TYPEDEF 2842 . 2849) (punctuation 2813 . 2814) (punctuation 2812 . 2813) (punctuation 2811 . 2812) (symbol 2765 . 2788) (punctuation 2705 . 2706) (punctuation 2704 . 2705) (symbol 2673 . 2687) (punctuation 2671 . 2672) (symbol 2647 . 2661) (punctuation 2646 . 2647) (punctuation 2645 . 2646) (symbol 2641 . 2645) (symbol 2618 . 2640) (punctuation 2596 . 2597) (symbol 2588 . 2596) (punctuation 2586 . 2587) (symbol 2562 . 2570) (punctuation 2561 . 2562) (punctuation 2560 . 2561) (symbol 2556 . 2560) (symbol 2533 . 2555) (punctuation 2511 . 2512) (symbol 2469 . 2494) (punctuation 2447 . 2448) (punctuation 2446 . 2447) (symbol 2440 . 2446) (punctuation 2439 . 2440) (punctuation 2438 . 2439) (symbol 2421 . 2438) (punctuation 2420 . 2421) (punctuation 2419 . 2420) (symbol 2413 . 2419) (punctuation 2412 . 2413) (punctuation 2411 . 2412) (symbol 2406 . 2411) (punctuation 2405 . 2406) (punctuation 2404 . 2405) (punctuation 2373 . 2374) (punctuation 2372 . 2373) (symbol 2349 . 2372) (punctuation 2348 . 2349) (symbol 2343 . 2348) (punctuation 2342 . 2343) (punctuation 2341 . 2342) (symbol 2338 . 2341) (punctuation 2337 . 2338) (punctuation 2336 . 2337) (symbol 2331 . 2336) (punctuation 2330 . 2331) (punctuation 2329 . 2330) (punctuation 2327 . 2328) (symbol 2324 . 2327) (punctuation 2323 . 2324) (punctuation 2322 . 2323) (symbol 2319 . 2322) (symbol 2296 . 2318) (TYPEDEF 2288 . 2295) (symbol 2221 . 2243) (TYPEDEF 2213 . 2220) (symbol 2159 . 2181) (TYPEDEF 2151 . 2158) (punctuation 2123 . 2124) (punctuation 2122 . 2123) (punctuation 2121 . 2122) (symbol 2106 . 2120) (punctuation 2104 . 2105) (symbol 2086 . 2104) (symbol 2063 . 2085) (TYPEDEF 2055 . 2062) (punctuation 2034 . 2035) (punctuation 2033 . 2034) (punctuation 2032 . 2033) (symbol 2023 . 2031) (punctuation 2015 . 2016) (symbol 1997 . 2015) (symbol 1974 . 1996) (TYPEDEF 1966 . 1973) (punctuation 1947 . 1948) (punctuation 1946 . 1947) (punctuation 1945 . 1946) (symbol 1936 . 1944) (punctuation 1928 . 1929) (symbol 1910 . 1926) (symbol 1887 . 1909) (TYPEDEF 1879 . 1886) (punctuation 1857 . 1858) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (symbol 1846 . 1854) (punctuation 1838 . 1839) (symbol 1820 . 1834) (symbol 1797 . 1819) (TYPEDEF 1789 . 1796) (punctuation 1591 . 1592) (punctuation 1589 . 1590) (punctuation 1588 . 1589) (symbol 1582 . 1588) (punctuation 1581 . 1582) (punctuation 1580 . 1581) (symbol 1577 . 1580) (punctuation 1575 . 1576) (symbol 1548 . 1574) (CLASS 1542 . 1547) (punctuation 1535 . 1536) (symbol 1533 . 1535) (punctuation 1532 . 1533) (punctuation 1531 . 1532) (symbol 1528 . 1531) (punctuation 1527 . 1528) (punctuation 1526 . 1527) (symbol 1521 . 1526) (punctuation 1520 . 1521) (punctuation 1519 . 1520) (punctuation 1517 . 1518) (symbol 1491 . 1513) (CLASS 1485 . 1490) (punctuation 1479 . 1480) (symbol 1477 . 1479) (punctuation 1476 . 1477) (punctuation 1475 . 1476) (symbol 1472 . 1475) (punctuation 1471 . 1472) (punctuation 1470 . 1471) (symbol 1465 . 1470) (punctuation 1464 . 1465) (punctuation 1463 . 1464) (punctuation 1461 . 1462) (symbol 1435 . 1455) (CLASS 1429 . 1434) (punctuation 1423 . 1424) (symbol 1421 . 1423) (punctuation 1420 . 1421) (punctuation 1419 . 1420) (symbol 1416 . 1419) (punctuation 1415 . 1416) (punctuation 1414 . 1415) (symbol 1409 . 1414) (punctuation 1408 . 1409) (punctuation 1407 . 1408) (punctuation 1405 . 1406) (symbol 1379 . 1404) (CLASS 1373 . 1378) (punctuation 1367 . 1368) (symbol 1365 . 1367) (punctuation 1364 . 1365) (punctuation 1363 . 1364) (symbol 1360 . 1363) (punctuation 1359 . 1360) (punctuation 1358 . 1359) (symbol 1353 . 1358) (punctuation 1352 . 1353) (punctuation 1351 . 1352) (punctuation 1349 . 1350) (symbol 1323 . 1346) (CLASS 1317 . 1322) (punctuation 1310 . 1311) (symbol 1297 . 1310) (CLASS 1291 . 1296) (punctuation 1285 . 1286) (symbol 1277 . 1285) (CLASS 1271 . 1276) (punctuation 1264 . 1265) (symbol 1260 . 1264) (CLASS 1254 . 1259) (punctuation 1248 . 1249) (TEMPLATE 1239 . 1247))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_CONTAINER_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "ordered_associative_container_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_ORDERED_ASSOCIATIVE_CONTAINER_ADAPTOR_HPP" variable (:constant-flag t) nil [497 568])
+            ("boost/config.hpp" include (:system-flag t) nil [633 660])
+            ("boost/bimap/container_adaptor/associative_container_adaptor.hpp" include (:system-flag t) nil [662 736])
+            ("boost/bimap/container_adaptor/detail/comparison_adaptor.hpp" include (:system-flag t) nil [737 807])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [808 835])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [836 867])
+            ("boost/mpl/push_front.hpp" include (:system-flag t) nil [868 903])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [904 936])
+            ("boost/operators.hpp" include (:system-flag t) nil [937 967])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [968 1000])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("ordered_associative_container_adaptor_base" type
+                                       (:template 
+                                          ( ("Base" type (:type "class") nil nil)
+                                            ("Iterator" type (:type "class") nil nil)
+                                            ("ConstIterator" type (:type "class") nil nil)
+                                            ("ReverseIterator" type (:type "class") nil nil)
+                                            ("ConstReverseIterator" type (:type "class") nil nil)
+                                            ("KeyType" type (:type "class") nil nil)
+                                            ("IteratorToBaseConverter" type (:type "class") nil nil)
+                                            ("IteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ReverseIteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ValueToBaseConverter" type (:type "class") nil nil)
+                                            ("ValueFromBaseConverter" type (:type "class") nil nil)
+                                            ("KeyToBaseConverter" type (:type "class") nil nil)
+                                            ("FunctorsFromDerivedClasses" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2519 2524]))                                          )
+                                        (reparse-symbol namespacesubparts) [1136 2527])
+                                    ("boost::totally_ordered" variable (:type "int") (reparse-symbol namespacesubparts) [3734 9410]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1039 9414]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1020 9447]))                  
+                :type "namespace")
+                nil [1002 9469]))          
+      :file "ordered_associative_container_adaptor.hpp"
+      :pointmax 9573
+      :fsize 9572
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 3733 . 3734) (punctuation 3732 . 3733) (punctuation 3725 . 3726) (symbol 3721 . 3725) (punctuation 3720 . 3721) (punctuation 3719 . 3720) (punctuation 3718 . 3719) (symbol 3686 . 3712) (punctuation 3676 . 3677) (symbol 3658 . 3676) (punctuation 3656 . 3657) (symbol 3634 . 3656) (punctuation 3632 . 3633) (symbol 3612 . 3632) (punctuation 3602 . 3603) (symbol 3570 . 3602) (punctuation 3560 . 3561) (symbol 3535 . 3560) (punctuation 3533 . 3534) (symbol 3510 . 3533) (punctuation 3500 . 3501) (symbol 3493 . 3500) (punctuation 3491 . 3492) (symbol 3471 . 3491) (punctuation 3469 . 3470) (symbol 3454 . 3469) (punctuation 3444 . 3445) (symbol 3431 . 3444) (punctuation 3429 . 3430) (symbol 3421 . 3429) (punctuation 3419 . 3420) (symbol 3415 . 3419) (punctuation 3405 . 3406) (symbol 3358 . 3400) (PUBLIC 3351 . 3357) (punctuation 3344 . 3345) (symbol 3306 . 3343) (CLASS 3300 . 3305) (punctuation 3298 . 3299) (punctuation 3296 . 3297) (punctuation 3295 . 3296) (symbol 3289 . 3295) (punctuation 3288 . 3289) (punctuation 3287 . 3288) (symbol 3284 . 3287) (punctuation 3282 . 3283) (symbol 3255 . 3281) (CLASS 3249 . 3254) (punctuation 3242 . 3243) (symbol 3240 . 3242) (punctuation 3239 . 3240) (punctuation 3238 . 3239) (symbol 3235 . 3238) (punctuation 3234 . 3235) (punctuation 3233 . 3234) (symbol 3228 . 3233) (punctuation 3227 . 3228) (punctuation 3226 . 3227) (punctuation 3224 . 3225) (symbol 3191 . 3209) (CLASS 3185 . 3190) (punctuation 3179 . 3180) (symbol 3177 . 3179) (punctuation 3176 . 3177) (punctuation 3175 . 3176) (symbol 3172 . 3175) (punctuation 3171 . 3172) (punctuation 3170 . 3171) (symbol 3165 . 3170) (punctuation 3164 . 3165) (punctuation 3163 . 3164) (punctuation 3161 . 3162) (symbol 3128 . 3150) (CLASS 3122 . 3127) (punctuation 3116 . 3117) (symbol 3114 . 3116) (punctuation 3113 . 3114) (punctuation 3112 . 3113) (symbol 3109 . 3112) (punctuation 3108 . 3109) (punctuation 3107 . 3108) (symbol 3102 . 3107) (punctuation 3101 . 3102) (punctuation 3100 . 3101) (punctuation 3098 . 3099) (symbol 3065 . 3085) (CLASS 3059 . 3064) (punctuation 3053 . 3054) (symbol 3051 . 3053) (punctuation 3050 . 3051) (punctuation 3049 . 3050) (symbol 3046 . 3049) (punctuation 3045 . 3046) (punctuation 3044 . 3045) (symbol 3039 . 3044) (punctuation 3038 . 3039) (punctuation 3037 . 3038) (punctuation 3035 . 3036) (symbol 3002 . 3034) (CLASS 2996 . 3001) (punctuation 2990 . 2991) (symbol 2988 . 2990) (punctuation 2987 . 2988) (punctuation 2986 . 2987) (symbol 2983 . 2986) (punctuation 2982 . 2983) (punctuation 2981 . 2982) (symbol 2976 . 2981) (punctuation 2975 . 2976) (punctuation 2974 . 2975) (punctuation 2972 . 2973) (symbol 2939 . 2964) (CLASS 2933 . 2938) (punctuation 2927 . 2928) (symbol 2925 . 2927) (punctuation 2924 . 2925) (punctuation 2923 . 2924) (symbol 2920 . 2923) (punctuation 2919 . 2920) (punctuation 2918 . 2919) (symbol 2913 . 2918) (punctuation 2912 . 2913) (punctuation 2911 . 2912) (punctuation 2909 . 2910) (symbol 2876 . 2899) (CLASS 2870 . 2875) (punctuation 2863 . 2864) (symbol 2856 . 2863) (CLASS 2850 . 2855) (punctuation 2843 . 2844) (symbol 2823 . 2843) (CLASS 2817 . 2822) (punctuation 2811 . 2812) (symbol 2796 . 2811) (CLASS 2790 . 2795) (punctuation 2784 . 2785) (symbol 2771 . 2784) (CLASS 2765 . 2770) (punctuation 2759 . 2760) (symbol 2751 . 2759) (CLASS 2745 . 2750) (punctuation 2738 . 2739) (symbol 2734 . 2738) (CLASS 2728 . 2733) (punctuation 2722 . 2723) (TEMPLATE 2713 . 2721) (punctuation 2517 . 2518) (symbol 2507 . 2511) (punctuation 2506 . 2507) (punctuation 2505 . 2506) (punctuation 2504 . 2505) (symbol 2490 . 2494) (punctuation 2489 . 2490) (punctuation 2488 . 2489) (punctuation 2487 . 2488) (symbol 2424 . 2456) (punctuation 2348 . 2349) (punctuation 2347 . 2348) (symbol 2306 . 2326) (punctuation 2280 . 2281) (symbol 2258 . 2280) (punctuation 2257 . 2258) (punctuation 2256 . 2257) (symbol 2252 . 2256) (symbol 2229 . 2251) (punctuation 2203 . 2204) (symbol 2188 . 2203) (punctuation 2162 . 2163) (symbol 2146 . 2162) (punctuation 2145 . 2146) (punctuation 2144 . 2145) (symbol 2140 . 2144) (symbol 2117 . 2139) (punctuation 2091 . 2092) (symbol 2043 . 2070) (punctuation 2042 . 2043) (punctuation 2041 . 2042) (symbol 2035 . 2041) (punctuation 1996 . 1997) (punctuation 1995 . 1996) (symbol 1963 . 1995) (punctuation 1962 . 1963) (symbol 1957 . 1962) (punctuation 1956 . 1957) (punctuation 1955 . 1956) (symbol 1952 . 1955) (punctuation 1951 . 1952) (punctuation 1950 . 1951) (symbol 1945 . 1950) (punctuation 1944 . 1945) (punctuation 1943 . 1944) (punctuation 1925 . 1926) (symbol 1922 . 1925) (punctuation 1921 . 1922) (punctuation 1920 . 1921) (symbol 1917 . 1920) (symbol 1894 . 1916) (punctuation 1879 . 1880) (symbol 1853 . 1879) (punctuation 1838 . 1839) (symbol 1828 . 1838) (punctuation 1827 . 1828) (punctuation 1826 . 1827) (symbol 1823 . 1826) (symbol 1800 . 1822) (punctuation 1789 . 1790) (symbol 1771 . 1789) (punctuation 1769 . 1770) (symbol 1747 . 1769) (punctuation 1745 . 1746) (symbol 1725 . 1745) (punctuation 1715 . 1716) (symbol 1690 . 1715) (punctuation 1688 . 1689) (symbol 1665 . 1688) (punctuation 1655 . 1656) (symbol 1648 . 1655) (punctuation 1646 . 1647) (symbol 1633 . 1646) (punctuation 1631 . 1632) (symbol 1623 . 1631) (punctuation 1621 . 1622) (symbol 1617 . 1621) (punctuation 1607 . 1608) (symbol 1578 . 1607) (TYPEDEF 1570 . 1577))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_ORDERED_ASSOCIATIVE_CONTAINER_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "multimap_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_MULTIMAP_ADAPTOR_HPP" variable (:constant-flag t) nil [433 483])
+            ("boost/config.hpp" include (:system-flag t) nil [548 575])
+            ("boost/bimap/container_adaptor/ordered_associative_container_adaptor.hpp" include (:system-flag t) nil [577 659])
+            ("boost/bimap/container_adaptor/detail/non_unique_container_helper.hpp" include (:system-flag t) nil [660 739])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [740 772])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [773 804])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1565 1573])
+                                    ("boost::bimaps::container_adaptor::ordered_associative_container_adaptor" variable (:type "int") (reparse-symbol namespacesubparts) [1574 3013]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [843 3017]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [824 3050]))                  
+                :type "namespace")
+                nil [806 3072]))          
+      :file "multimap_adaptor.hpp"
+      :pointmax 3157
+      :fsize 3156
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1573 . 1574) (punctuation 1558 . 1559) (symbol 1541 . 1557) (CLASS 1535 . 1540) (punctuation 1533 . 1534) (punctuation 1531 . 1532) (punctuation 1530 . 1531) (symbol 1524 . 1530) (punctuation 1523 . 1524) (punctuation 1522 . 1523) (symbol 1519 . 1522) (punctuation 1517 . 1518) (symbol 1490 . 1516) (CLASS 1484 . 1489) (punctuation 1477 . 1478) (symbol 1475 . 1477) (punctuation 1474 . 1475) (punctuation 1473 . 1474) (symbol 1470 . 1473) (punctuation 1469 . 1470) (punctuation 1468 . 1469) (symbol 1463 . 1468) (punctuation 1462 . 1463) (punctuation 1461 . 1462) (punctuation 1459 . 1460) (symbol 1426 . 1444) (CLASS 1420 . 1425) (punctuation 1414 . 1415) (symbol 1412 . 1414) (punctuation 1411 . 1412) (punctuation 1410 . 1411) (symbol 1407 . 1410) (punctuation 1406 . 1407) (punctuation 1405 . 1406) (symbol 1400 . 1405) (punctuation 1399 . 1400) (punctuation 1398 . 1399) (punctuation 1396 . 1397) (symbol 1363 . 1385) (CLASS 1357 . 1362) (punctuation 1351 . 1352) (symbol 1349 . 1351) (punctuation 1348 . 1349) (punctuation 1347 . 1348) (symbol 1344 . 1347) (punctuation 1343 . 1344) (punctuation 1342 . 1343) (symbol 1337 . 1342) (punctuation 1336 . 1337) (punctuation 1335 . 1336) (punctuation 1333 . 1334) (symbol 1300 . 1320) (CLASS 1294 . 1299) (punctuation 1288 . 1289) (symbol 1286 . 1288) (punctuation 1285 . 1286) (punctuation 1284 . 1285) (symbol 1281 . 1284) (punctuation 1280 . 1281) (punctuation 1279 . 1280) (symbol 1274 . 1279) (punctuation 1273 . 1274) (punctuation 1272 . 1273) (punctuation 1270 . 1271) (symbol 1237 . 1269) (CLASS 1231 . 1236) (punctuation 1225 . 1226) (symbol 1223 . 1225) (punctuation 1222 . 1223) (punctuation 1221 . 1222) (symbol 1218 . 1221) (punctuation 1217 . 1218) (punctuation 1216 . 1217) (symbol 1211 . 1216) (punctuation 1210 . 1211) (punctuation 1209 . 1210) (punctuation 1207 . 1208) (symbol 1174 . 1199) (CLASS 1168 . 1173) (punctuation 1162 . 1163) (symbol 1160 . 1162) (punctuation 1159 . 1160) (punctuation 1158 . 1159) (symbol 1155 . 1158) (punctuation 1154 . 1155) (punctuation 1153 . 1154) (symbol 1148 . 1153) (punctuation 1147 . 1148) (punctuation 1146 . 1147) (punctuation 1144 . 1145) (symbol 1111 . 1134) (CLASS 1105 . 1110) (punctuation 1098 . 1099) (symbol 1078 . 1098) (CLASS 1072 . 1077) (punctuation 1066 . 1067) (symbol 1051 . 1066) (CLASS 1045 . 1050) (punctuation 1039 . 1040) (symbol 1026 . 1039) (CLASS 1020 . 1025) (punctuation 1014 . 1015) (symbol 1006 . 1014) (CLASS 1000 . 1005) (punctuation 993 . 994) (symbol 989 . 993) (CLASS 983 . 988) (punctuation 977 . 978) (TEMPLATE 968 . 976))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_MULTIMAP_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "multiset_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_MULTISET_ADAPTOR_HPP" variable (:constant-flag t) nil [433 483])
+            ("boost/config.hpp" include (:system-flag t) nil [548 575])
+            ("boost/bimap/container_adaptor/ordered_associative_container_adaptor.hpp" include (:system-flag t) nil [577 659])
+            ("boost/bimap/container_adaptor/detail/non_unique_container_helper.hpp" include (:system-flag t) nil [660 739])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [740 772])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [773 804])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1565 1573])
+                                    ("boost::bimaps::container_adaptor::ordered_associative_container_adaptor" variable (:type "int") (reparse-symbol namespacesubparts) [1574 2817]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [843 2821]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [824 2854]))                  
+                :type "namespace")
+                nil [806 2876]))          
+      :file "multiset_adaptor.hpp"
+      :pointmax 2960
+      :fsize 2959
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1573 . 1574) (punctuation 1558 . 1559) (symbol 1541 . 1557) (CLASS 1535 . 1540) (punctuation 1533 . 1534) (punctuation 1531 . 1532) (punctuation 1530 . 1531) (symbol 1524 . 1530) (punctuation 1523 . 1524) (punctuation 1522 . 1523) (symbol 1519 . 1522) (punctuation 1517 . 1518) (symbol 1490 . 1516) (CLASS 1484 . 1489) (punctuation 1477 . 1478) (symbol 1475 . 1477) (punctuation 1474 . 1475) (punctuation 1473 . 1474) (symbol 1470 . 1473) (punctuation 1469 . 1470) (punctuation 1468 . 1469) (symbol 1463 . 1468) (punctuation 1462 . 1463) (punctuation 1461 . 1462) (punctuation 1459 . 1460) (symbol 1426 . 1444) (CLASS 1420 . 1425) (punctuation 1414 . 1415) (symbol 1412 . 1414) (punctuation 1411 . 1412) (punctuation 1410 . 1411) (symbol 1407 . 1410) (punctuation 1406 . 1407) (punctuation 1405 . 1406) (symbol 1400 . 1405) (punctuation 1399 . 1400) (punctuation 1398 . 1399) (punctuation 1396 . 1397) (symbol 1363 . 1385) (CLASS 1357 . 1362) (punctuation 1351 . 1352) (symbol 1349 . 1351) (punctuation 1348 . 1349) (punctuation 1347 . 1348) (symbol 1344 . 1347) (punctuation 1343 . 1344) (punctuation 1342 . 1343) (symbol 1337 . 1342) (punctuation 1336 . 1337) (punctuation 1335 . 1336) (punctuation 1333 . 1334) (symbol 1300 . 1320) (CLASS 1294 . 1299) (punctuation 1288 . 1289) (symbol 1286 . 1288) (punctuation 1285 . 1286) (punctuation 1284 . 1285) (symbol 1281 . 1284) (punctuation 1280 . 1281) (punctuation 1279 . 1280) (symbol 1274 . 1279) (punctuation 1273 . 1274) (punctuation 1272 . 1273) (punctuation 1270 . 1271) (symbol 1237 . 1269) (CLASS 1231 . 1236) (punctuation 1225 . 1226) (symbol 1223 . 1225) (punctuation 1222 . 1223) (punctuation 1221 . 1222) (symbol 1218 . 1221) (punctuation 1217 . 1218) (punctuation 1216 . 1217) (symbol 1211 . 1216) (punctuation 1210 . 1211) (punctuation 1209 . 1210) (punctuation 1207 . 1208) (symbol 1174 . 1199) (CLASS 1168 . 1173) (punctuation 1162 . 1163) (symbol 1160 . 1162) (punctuation 1159 . 1160) (punctuation 1158 . 1159) (symbol 1155 . 1158) (punctuation 1154 . 1155) (punctuation 1153 . 1154) (symbol 1148 . 1153) (punctuation 1147 . 1148) (punctuation 1146 . 1147) (punctuation 1144 . 1145) (symbol 1111 . 1134) (CLASS 1105 . 1110) (punctuation 1098 . 1099) (symbol 1078 . 1098) (CLASS 1072 . 1077) (punctuation 1066 . 1067) (symbol 1051 . 1066) (CLASS 1045 . 1050) (punctuation 1039 . 1040) (symbol 1026 . 1039) (CLASS 1020 . 1025) (punctuation 1014 . 1015) (symbol 1006 . 1014) (CLASS 1000 . 1005) (punctuation 993 . 994) (symbol 989 . 993) (CLASS 983 . 988) (punctuation 977 . 978) (TEMPLATE 968 . 976))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_MULTISET_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "list_map_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_LIST_MAP_ADAPTOR_HPP" variable (:constant-flag t) nil [371 421])
+            ("boost/config.hpp" include (:system-flag t) nil [486 513])
+            ("boost/mpl/list.hpp" include (:system-flag t) nil [515 544])
+            ("boost/mpl/push_front.hpp" include (:system-flag t) nil [545 580])
+            ("boost/bimap/container_adaptor/list_adaptor.hpp" include (:system-flag t) nil [582 639])
+            ("boost/bimap/container_adaptor/detail/identity_converters.hpp" include (:system-flag t) nil [640 711])
+            ("boost/bimap/container_adaptor/detail/key_extractor.hpp" include (:system-flag t) nil [712 777])
+            ("boost/bimap/container_adaptor/detail/comparison_adaptor.hpp" include (:system-flag t) nil [778 848])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [849 880])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [881 913])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [914 941])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("list_map_adaptor_base" type
+                                       (:template 
+                                          ( ("Base" type (:type "class") nil nil)
+                                            ("Iterator" type (:type "class") nil nil)
+                                            ("ConstIterator" type (:type "class") nil nil)
+                                            ("ReverseIterator" type (:type "class") nil nil)
+                                            ("ConstReverseIterator" type (:type "class") nil nil)
+                                            ("IteratorToBaseConverter" type (:type "class") nil nil)
+                                            ("IteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ReverseIteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ValueToBaseConverter" type (:type "class") nil nil)
+                                            ("ValueFromBaseConverter" type (:type "class") nil nil)
+                                            ("KeyFromBaseValueConverter" type (:type "class") nil nil)
+                                            ("FunctorsFromDerivedClasses" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2283 2288]))                                          )
+                                        (reparse-symbol namespacesubparts) [1077 2291])
+                                    ("list_map_adaptor" type
+                                       (:superclasses 
+                                          ( ("list_map_adaptor_base::type" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("base_" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3754 3765])
+                                            ("public" label nil (reparse-symbol classsubparts) [3850 3857])
+                                            ("key_type" variable (:type ("Iterator::value_type::first_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3894 3937])
+                                            ("data_type" variable (:type ("Iterator::value_type::second_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3973 4017])
+                                            ("protected" label nil (reparse-symbol classsubparts) [4023 4033])
+                                            ("key_from_base_value" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4314 4339])
+                                            ("public" label nil (reparse-symbol classsubparts) [4426 4433])
+                                            ("list_map_adaptor" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("c" variable
+                                                       (:reference 1
+                                                        :type ("Base" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4465 4474]))                                                  
+                                                :type ("list_map_adaptor" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4448 4496])
+                                            ("protected" label nil (reparse-symbol classsubparts) [4502 4512])
+                                            ("list_map_adaptor_" type
+                                               (:typedef ("list_map_adaptor" type (:type "class") nil nil)
+                                                :superclasses "list_map_adaptor"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4518 4561])
+                                            ("public" label nil (reparse-symbol classsubparts) [4647 4654])
+                                            ("remove_if" function
+                                               (:template 
+                                                  ( ("Predicate" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("pred" variable (:type ("Predicate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4816 4831]))                                                  )
+                                                (reparse-symbol classsubparts) [4769 5166])
+                                            ("unique" function (:type "void") (reparse-symbol classsubparts) [5172 5595])
+                                            ("unique" function
+                                               (:template 
+                                                  ( ("BinaryPredicate" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("binary_pred" variable (:type ("BinaryPredicate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5651 5679]))                                                  )
+                                                (reparse-symbol classsubparts) [5601 6023])
+                                            ("merge" function
+                                               (:arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("list_map_adaptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6040 6061]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6029 6471])
+                                            ("merge" function
+                                               (:template 
+                                                  ( ("Compare" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("list_map_adaptor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6518 6539])
+                                                    ("comp" variable (:type ("Compare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6540 6553]))                                                  )
+                                                (reparse-symbol classsubparts) [6477 6890])
+                                            ("sort" function (:type "void") (reparse-symbol classsubparts) [6896 7307])
+                                            ("sort" function
+                                               (:template 
+                                                  ( ("Compare" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("comp" variable (:type ("Compare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7353 7366]))                                                  )
+                                                (reparse-symbol classsubparts) [7313 7693]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [2995 7697]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [980 7701]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [961 7734]))                  
+                :type "namespace")
+                nil [943 7756]))          
+      :file "list_map_adaptor.hpp"
+      :pointmax 7840
+      :fsize 7839
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((EXPLICIT 4439 . 4447) (punctuation 4313 . 4314) (punctuation 4312 . 4313) (punctuation 4311 . 4312) (symbol 4271 . 4296) (punctuation 4227 . 4228) (punctuation 4226 . 4227) (symbol 4215 . 4225) (punctuation 4214 . 4215) (punctuation 4213 . 4214) (symbol 4205 . 4213) (symbol 4182 . 4204) (punctuation 4180 . 4181) (symbol 4157 . 4180) (punctuation 4156 . 4157) (punctuation 4155 . 4156) (symbol 4149 . 4155) (punctuation 4126 . 4127) (punctuation 4125 . 4126) (symbol 4100 . 4125) (punctuation 4099 . 4100) (symbol 4094 . 4099) (punctuation 4093 . 4094) (punctuation 4092 . 4093) (symbol 4089 . 4092) (punctuation 4088 . 4089) (punctuation 4087 . 4088) (symbol 4082 . 4087) (punctuation 4081 . 4082) (punctuation 4080 . 4081) (punctuation 4078 . 4079) (symbol 4075 . 4078) (punctuation 4074 . 4075) (punctuation 4073 . 4074) (symbol 4070 . 4073) (symbol 4047 . 4069) (TYPEDEF 4039 . 4046) (symbol 3950 . 3972) (TYPEDEF 3942 . 3949) (symbol 3871 . 3893) (TYPEDEF 3863 . 3870) (punctuation 3753 . 3754) (punctuation 3752 . 3753) (punctuation 3751 . 3752) (symbol 3719 . 3745) (punctuation 3709 . 3710) (symbol 3684 . 3709) (punctuation 3674 . 3675) (symbol 3652 . 3674) (punctuation 3650 . 3651) (symbol 3630 . 3650) (punctuation 3620 . 3621) (symbol 3588 . 3620) (punctuation 3578 . 3579) (symbol 3553 . 3578) (punctuation 3551 . 3552) (symbol 3528 . 3551) (punctuation 3518 . 3519) (symbol 3498 . 3518) (punctuation 3496 . 3497) (symbol 3481 . 3496) (punctuation 3479 . 3480) (symbol 3466 . 3479) (punctuation 3464 . 3465) (symbol 3456 . 3464) (punctuation 3454 . 3455) (symbol 3450 . 3454) (punctuation 3440 . 3441) (symbol 3414 . 3435) (symbol 3391 . 3413) (TYPEDEF 3383 . 3390) (punctuation 2993 . 2994) (punctuation 2991 . 2992) (punctuation 2990 . 2991) (symbol 2984 . 2990) (punctuation 2983 . 2984) (punctuation 2982 . 2983) (symbol 2979 . 2982) (punctuation 2977 . 2978) (symbol 2950 . 2976) (CLASS 2944 . 2949) (punctuation 2937 . 2938) (symbol 2935 . 2937) (punctuation 2934 . 2935) (punctuation 2933 . 2934) (symbol 2930 . 2933) (punctuation 2929 . 2930) (punctuation 2928 . 2929) (symbol 2923 . 2928) (punctuation 2922 . 2923) (punctuation 2921 . 2922) (punctuation 2919 . 2920) (symbol 2886 . 2911) (CLASS 2880 . 2885) (punctuation 2874 . 2875) (symbol 2872 . 2874) (punctuation 2871 . 2872) (punctuation 2870 . 2871) (symbol 2867 . 2870) (punctuation 2866 . 2867) (punctuation 2865 . 2866) (symbol 2860 . 2865) (punctuation 2859 . 2860) (punctuation 2858 . 2859) (punctuation 2856 . 2857) (symbol 2823 . 2845) (CLASS 2817 . 2822) (punctuation 2811 . 2812) (symbol 2809 . 2811) (punctuation 2808 . 2809) (punctuation 2807 . 2808) (symbol 2804 . 2807) (punctuation 2803 . 2804) (punctuation 2802 . 2803) (symbol 2797 . 2802) (punctuation 2796 . 2797) (punctuation 2795 . 2796) (punctuation 2793 . 2794) (symbol 2760 . 2780) (CLASS 2754 . 2759) (punctuation 2748 . 2749) (symbol 2746 . 2748) (punctuation 2745 . 2746) (punctuation 2744 . 2745) (symbol 2741 . 2744) (punctuation 2740 . 2741) (punctuation 2739 . 2740) (symbol 2734 . 2739) (punctuation 2733 . 2734) (punctuation 2732 . 2733) (punctuation 2730 . 2731) (symbol 2697 . 2729) (CLASS 2691 . 2696) (punctuation 2685 . 2686) (symbol 2683 . 2685) (punctuation 2682 . 2683) (punctuation 2681 . 2682) (symbol 2678 . 2681) (punctuation 2677 . 2678) (punctuation 2676 . 2677) (symbol 2671 . 2676) (punctuation 2670 . 2671) (punctuation 2669 . 2670) (punctuation 2667 . 2668) (symbol 2634 . 2659) (CLASS 2628 . 2633) (punctuation 2622 . 2623) (symbol 2620 . 2622) (punctuation 2619 . 2620) (punctuation 2618 . 2619) (symbol 2615 . 2618) (punctuation 2614 . 2615) (punctuation 2613 . 2614) (symbol 2608 . 2613) (punctuation 2607 . 2608) (punctuation 2606 . 2607) (punctuation 2604 . 2605) (symbol 2571 . 2594) (CLASS 2565 . 2570) (punctuation 2558 . 2559) (symbol 2538 . 2558) (CLASS 2532 . 2537) (punctuation 2526 . 2527) (symbol 2511 . 2526) (CLASS 2505 . 2510) (punctuation 2499 . 2500) (symbol 2486 . 2499) (CLASS 2480 . 2485) (punctuation 2474 . 2475) (symbol 2466 . 2474) (CLASS 2460 . 2465) (punctuation 2453 . 2454) (symbol 2449 . 2453) (CLASS 2443 . 2448) (punctuation 2437 . 2438) (TEMPLATE 2428 . 2436) (punctuation 2281 . 2282) (symbol 2271 . 2275) (punctuation 2270 . 2271) (punctuation 2269 . 2270) (punctuation 2268 . 2269) (symbol 2254 . 2258) (punctuation 2253 . 2254) (punctuation 2252 . 2253) (punctuation 2251 . 2252) (symbol 2195 . 2220) (punctuation 2119 . 2120) (punctuation 2118 . 2119) (symbol 2086 . 2096) (punctuation 2085 . 2086) (punctuation 2084 . 2085) (symbol 2076 . 2084) (symbol 2053 . 2075) (punctuation 2027 . 2028) (symbol 1983 . 2006) (punctuation 1982 . 1983) (punctuation 1981 . 1982) (symbol 1975 . 1981) (punctuation 1936 . 1937) (punctuation 1935 . 1936) (symbol 1910 . 1935) (punctuation 1909 . 1910) (symbol 1904 . 1909) (punctuation 1903 . 1904) (punctuation 1902 . 1903) (symbol 1899 . 1902) (punctuation 1898 . 1899) (punctuation 1897 . 1898) (symbol 1892 . 1897) (punctuation 1891 . 1892) (punctuation 1890 . 1891) (punctuation 1888 . 1889) (symbol 1885 . 1888) (punctuation 1884 . 1885) (punctuation 1883 . 1884) (symbol 1880 . 1883) (symbol 1857 . 1879) (punctuation 1842 . 1843) (symbol 1816 . 1842) (punctuation 1801 . 1802) (symbol 1791 . 1801) (punctuation 1790 . 1791) (punctuation 1789 . 1790) (symbol 1786 . 1789) (symbol 1763 . 1785) (punctuation 1752 . 1753) (symbol 1730 . 1752) (punctuation 1728 . 1729) (symbol 1708 . 1728) (punctuation 1697 . 1698) (symbol 1665 . 1697) (punctuation 1654 . 1655) (symbol 1629 . 1654) (punctuation 1627 . 1628) (symbol 1604 . 1627) (punctuation 1593 . 1594) (symbol 1573 . 1593) (punctuation 1571 . 1572) (symbol 1556 . 1571) (punctuation 1554 . 1555) (symbol 1541 . 1554) (punctuation 1539 . 1540) (symbol 1531 . 1539) (punctuation 1520 . 1521) (symbol 1516 . 1520) (punctuation 1506 . 1507) (symbol 1489 . 1501) (TYPEDEF 1481 . 1488))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_LIST_MAP_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "list_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_LIST_ADAPTOR_HPP" variable (:constant-flag t) nil [421 467])
+            ("boost/config.hpp" include (:system-flag t) nil [532 559])
+            ("boost/bimap/container_adaptor/sequence_container_adaptor.hpp" include (:system-flag t) nil [561 632])
+            ("boost/bimap/container_adaptor/detail/comparison_adaptor.hpp" include (:system-flag t) nil [633 703])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [704 736])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [737 768])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [769 801])
+            ("functional" include (:system-flag t) nil [802 823])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol namespacesubparts) [1513 1521])
+                                    ("boost::bimaps::container_adaptor::sequence_container_adaptor" variable (:type "int") (reparse-symbol namespacesubparts) [1522 7446]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [862 7450]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [843 7483]))                  
+                :type "namespace")
+                nil [825 7505]))          
+      :file "list_adaptor.hpp"
+      :pointmax 7585
+      :fsize 7584
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1521 . 1522) (punctuation 1506 . 1507) (symbol 1493 . 1505) (CLASS 1487 . 1492) (punctuation 1485 . 1486) (punctuation 1483 . 1484) (punctuation 1482 . 1483) (symbol 1476 . 1482) (punctuation 1475 . 1476) (punctuation 1474 . 1475) (symbol 1471 . 1474) (punctuation 1469 . 1470) (symbol 1442 . 1468) (CLASS 1436 . 1441) (punctuation 1429 . 1430) (symbol 1427 . 1429) (punctuation 1426 . 1427) (punctuation 1425 . 1426) (symbol 1422 . 1425) (punctuation 1421 . 1422) (punctuation 1420 . 1421) (symbol 1415 . 1420) (punctuation 1414 . 1415) (punctuation 1413 . 1414) (punctuation 1411 . 1412) (symbol 1378 . 1400) (CLASS 1372 . 1377) (punctuation 1366 . 1367) (symbol 1364 . 1366) (punctuation 1363 . 1364) (punctuation 1362 . 1363) (symbol 1359 . 1362) (punctuation 1358 . 1359) (punctuation 1357 . 1358) (symbol 1352 . 1357) (punctuation 1351 . 1352) (punctuation 1350 . 1351) (punctuation 1348 . 1349) (symbol 1315 . 1335) (CLASS 1309 . 1314) (punctuation 1303 . 1304) (symbol 1301 . 1303) (punctuation 1300 . 1301) (punctuation 1299 . 1300) (symbol 1296 . 1299) (punctuation 1295 . 1296) (punctuation 1294 . 1295) (symbol 1289 . 1294) (punctuation 1288 . 1289) (punctuation 1287 . 1288) (punctuation 1285 . 1286) (symbol 1252 . 1284) (CLASS 1246 . 1251) (punctuation 1240 . 1241) (symbol 1238 . 1240) (punctuation 1237 . 1238) (punctuation 1236 . 1237) (symbol 1233 . 1236) (punctuation 1232 . 1233) (punctuation 1231 . 1232) (symbol 1226 . 1231) (punctuation 1225 . 1226) (punctuation 1224 . 1225) (punctuation 1222 . 1223) (symbol 1189 . 1214) (CLASS 1183 . 1188) (punctuation 1177 . 1178) (symbol 1175 . 1177) (punctuation 1174 . 1175) (punctuation 1173 . 1174) (symbol 1170 . 1173) (punctuation 1169 . 1170) (punctuation 1168 . 1169) (symbol 1163 . 1168) (punctuation 1162 . 1163) (punctuation 1161 . 1162) (punctuation 1159 . 1160) (symbol 1126 . 1149) (CLASS 1120 . 1125) (punctuation 1113 . 1114) (symbol 1093 . 1113) (CLASS 1087 . 1092) (punctuation 1081 . 1082) (symbol 1066 . 1081) (CLASS 1060 . 1065) (punctuation 1054 . 1055) (symbol 1041 . 1054) (CLASS 1035 . 1040) (punctuation 1029 . 1030) (symbol 1021 . 1029) (CLASS 1015 . 1020) (punctuation 1008 . 1009) (symbol 1004 . 1008) (CLASS 998 . 1003) (punctuation 992 . 993) (TEMPLATE 983 . 991))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_LIST_ADAPTOR_HPP")
+          )
+)
+    (semanticdb-table "sequence_container_adaptor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_CONTAINER_ADAPTOR_SEQUENCE_CONTAINER_ADAPTOR_HPP" variable (:constant-flag t) nil [471 531])
+            ("boost/config.hpp" include (:system-flag t) nil [596 623])
+            ("utility" include (:system-flag t) nil [625 643])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [645 672])
+            ("boost/mpl/vector.hpp" include (:system-flag t) nil [673 704])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [705 737])
+            ("boost/bimap/container_adaptor/detail/identity_converters.hpp" include (:system-flag t) nil [738 809])
+            ("boost/bimap/container_adaptor/container_adaptor.hpp" include (:system-flag t) nil [810 872])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [873 905])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("container_adaptor" type
+                               (:members 
+                                  ( ("sequence_container_adaptor_base" type
+                                       (:template 
+                                          ( ("Base" type (:type "class") nil nil)
+                                            ("Iterator" type (:type "class") nil nil)
+                                            ("ConstIterator" type (:type "class") nil nil)
+                                            ("ReverseIterator" type (:type "class") nil nil)
+                                            ("ConstReverseIterator" type (:type "class") nil nil)
+                                            ("IteratorToBaseConverter" type (:type "class") nil nil)
+                                            ("IteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ReverseIteratorFromBaseConverter" type (:type "class") nil nil)
+                                            ("ValueToBaseConverter" type (:type "class") nil nil)
+                                            ("ValueFromBaseConverter" type (:type "class") nil nil)
+                                            ("FunctorsFromDerivedClasses" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2332 2337]))                                          )
+                                        (reparse-symbol namespacesubparts) [1041 2340])
+                                    ("boost::totally_ordered" variable (:type "int") (reparse-symbol namespacesubparts) [3407 10413]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [944 10416]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [925 10449]))                  
+                :type "namespace")
+                nil [907 10471]))          
+      :file "sequence_container_adaptor.hpp"
+      :pointmax 10564
+      :fsize 10563
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 3406 . 3407) (punctuation 3405 . 3406) (punctuation 3398 . 3399) (symbol 3394 . 3398) (punctuation 3393 . 3394) (punctuation 3392 . 3393) (punctuation 3391 . 3392) (symbol 3359 . 3385) (punctuation 3349 . 3350) (symbol 3327 . 3349) (punctuation 3325 . 3326) (symbol 3305 . 3325) (punctuation 3295 . 3296) (symbol 3263 . 3295) (punctuation 3253 . 3254) (symbol 3228 . 3253) (punctuation 3226 . 3227) (symbol 3203 . 3226) (punctuation 3193 . 3194) (symbol 3173 . 3193) (punctuation 3171 . 3172) (symbol 3156 . 3171) (punctuation 3146 . 3147) (symbol 3133 . 3146) (punctuation 3131 . 3132) (symbol 3123 . 3131) (punctuation 3121 . 3122) (symbol 3117 . 3121) (punctuation 3107 . 3108) (symbol 3071 . 3102) (PUBLIC 3064 . 3070) (punctuation 3057 . 3058) (symbol 3030 . 3056) (CLASS 3024 . 3029) (punctuation 3022 . 3023) (punctuation 3020 . 3021) (punctuation 3019 . 3020) (symbol 3013 . 3019) (punctuation 3012 . 3013) (punctuation 3011 . 3012) (symbol 3008 . 3011) (punctuation 3006 . 3007) (symbol 2979 . 3005) (CLASS 2973 . 2978) (punctuation 2966 . 2967) (symbol 2964 . 2966) (punctuation 2963 . 2964) (punctuation 2962 . 2963) (symbol 2959 . 2962) (punctuation 2958 . 2959) (punctuation 2957 . 2958) (symbol 2952 . 2957) (punctuation 2951 . 2952) (punctuation 2950 . 2951) (punctuation 2948 . 2949) (symbol 2914 . 2936) (CLASS 2908 . 2913) (punctuation 2902 . 2903) (symbol 2900 . 2902) (punctuation 2899 . 2900) (punctuation 2898 . 2899) (symbol 2895 . 2898) (punctuation 2894 . 2895) (punctuation 2893 . 2894) (symbol 2888 . 2893) (punctuation 2887 . 2888) (punctuation 2886 . 2887) (punctuation 2884 . 2885) (symbol 2850 . 2870) (CLASS 2844 . 2849) (punctuation 2838 . 2839) (symbol 2836 . 2838) (punctuation 2835 . 2836) (punctuation 2834 . 2835) (symbol 2831 . 2834) (punctuation 2830 . 2831) (punctuation 2829 . 2830) (symbol 2824 . 2829) (punctuation 2823 . 2824) (punctuation 2822 . 2823) (punctuation 2820 . 2821) (symbol 2786 . 2818) (CLASS 2780 . 2785) (punctuation 2774 . 2775) (symbol 2772 . 2774) (punctuation 2771 . 2772) (punctuation 2770 . 2771) (symbol 2767 . 2770) (punctuation 2766 . 2767) (punctuation 2765 . 2766) (symbol 2760 . 2765) (punctuation 2759 . 2760) (punctuation 2758 . 2759) (punctuation 2756 . 2757) (symbol 2722 . 2747) (CLASS 2716 . 2721) (punctuation 2710 . 2711) (symbol 2708 . 2710) (punctuation 2707 . 2708) (punctuation 2706 . 2707) (symbol 2703 . 2706) (punctuation 2702 . 2703) (punctuation 2701 . 2702) (symbol 2696 . 2701) (punctuation 2695 . 2696) (punctuation 2694 . 2695) (punctuation 2692 . 2693) (symbol 2658 . 2681) (CLASS 2652 . 2657) (punctuation 2645 . 2646) (symbol 2625 . 2645) (CLASS 2619 . 2624) (punctuation 2613 . 2614) (symbol 2598 . 2613) (CLASS 2592 . 2597) (punctuation 2585 . 2586) (symbol 2572 . 2585) (CLASS 2566 . 2571) (punctuation 2560 . 2561) (symbol 2552 . 2560) (CLASS 2546 . 2551) (punctuation 2539 . 2540) (symbol 2535 . 2539) (CLASS 2529 . 2534) (punctuation 2523 . 2524) (TEMPLATE 2514 . 2522) (punctuation 2330 . 2331) (symbol 2320 . 2324) (punctuation 2319 . 2320) (punctuation 2318 . 2319) (punctuation 2317 . 2318) (symbol 2303 . 2307) (punctuation 2302 . 2303) (punctuation 2301 . 2302) (punctuation 2300 . 2301) (symbol 2237 . 2269) (punctuation 2161 . 2162) (punctuation 2160 . 2161) (symbol 2119 . 2139) (punctuation 2093 . 2094) (symbol 2071 . 2093) (punctuation 2070 . 2071) (punctuation 2069 . 2070) (symbol 2065 . 2069) (symbol 2042 . 2064) (punctuation 2016 . 2017) (symbol 2001 . 2016) (punctuation 1974 . 1975) (symbol 1958 . 1974) (punctuation 1957 . 1958) (punctuation 1956 . 1957) (symbol 1952 . 1956) (symbol 1929 . 1951) (punctuation 1903 . 1904) (symbol 1855 . 1882) (punctuation 1854 . 1855) (punctuation 1853 . 1854) (symbol 1847 . 1853) (punctuation 1808 . 1809) (punctuation 1807 . 1808) (symbol 1775 . 1807) (punctuation 1774 . 1775) (symbol 1769 . 1774) (punctuation 1768 . 1769) (punctuation 1767 . 1768) (symbol 1764 . 1767) (punctuation 1763 . 1764) (punctuation 1762 . 1763) (symbol 1757 . 1762) (punctuation 1756 . 1757) (punctuation 1755 . 1756) (punctuation 1737 . 1738) (symbol 1734 . 1737) (punctuation 1733 . 1734) (punctuation 1732 . 1733) (symbol 1729 . 1732) (symbol 1706 . 1728) (punctuation 1691 . 1692) (symbol 1665 . 1691) (punctuation 1650 . 1651) (symbol 1640 . 1650) (punctuation 1639 . 1640) (punctuation 1638 . 1639) (symbol 1635 . 1638) (symbol 1612 . 1634) (punctuation 1601 . 1602) (symbol 1579 . 1601) (punctuation 1577 . 1578) (symbol 1557 . 1577) (punctuation 1547 . 1548) (symbol 1522 . 1547) (punctuation 1520 . 1521) (symbol 1497 . 1520) (punctuation 1487 . 1488) (symbol 1474 . 1487) (punctuation 1472 . 1473) (symbol 1464 . 1472) (punctuation 1462 . 1463) (symbol 1458 . 1462) (punctuation 1448 . 1449) (symbol 1426 . 1443) (TYPEDEF 1418 . 1425))
+      :lexical-table 
+        '(("BOOST_BIMAP_CONTAINER_ADAPTOR_SEQUENCE_CONTAINER_ADAPTOR_HPP")
+          )
+))
+  :file "!usr!include!boost!bimap!container_adaptor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

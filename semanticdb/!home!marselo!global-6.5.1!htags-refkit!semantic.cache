@@ -1,0 +1,18 @@
+;; Object htags-refkit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "htags-refkit/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("README" "htags_path2url.c")) nil [530 567])
+            ("htags_path2url" function (:arguments ("htags_path2url.c")) nil [568 653]))          
+      :file "Makefile.am"
+      :pointmax 653
+      :fsize 652
+      :lastmodtime '(22007 34545 0 0)
+      :unmatched-syntax '((shell-command 602 . 652) (bol 601 . 601))))
+  :file "!home!marselo!global-6.5.1!htags-refkit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

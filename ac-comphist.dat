@@ -1,0 +1,170 @@
+((("rtags-find-references" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("set" .
+   [1 0 0])
+  ("u_map" .
+   [0 0 0 1 0])
+  ("m" .
+   [1])
+  ("unordered_map" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("MessageHeaderOut" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(const tbricks::String &a_name)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("SetName" .
+   [1 0 0 0 0 0 0])
+  ("clearParametersPlugin_" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("clearParametersPlugin" .
+   [1 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("instrumentStream_" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("GetUuid" .
+   [1 0 0 0 0 0 0])
+  ("mmPluginInstrumentGroups_" .
+   [0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("map" .
+   [7 1 0])
+  ("m_expandedParentGroups" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(const tbricks::StrategyParameters &parameters)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("GetParameter" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_serializedData" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("m_streamManager" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("m_stream" .
+   [0 0 0 1 0 0 0 0])
+  ("a1" .
+   [3 0])
+  ("a2" .
+   [3 0])
+  ("b" .
+   [2])
+  ("make_pair" .
+   [1 0 0 0 0 0 0 0 0])
+  ("pair" .
+   [1 0 0 0])
+  ("p" .
+   [1])
+  ("func" .
+   [1 0 0 0])
+  ("min_element" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("first" .
+   [2 0 0 0 0])
+  ("last" .
+   [3 0 0 0])
+  ("T" .
+   [3])
+  ("i" .
+   [3])
+  ("value" .
+   [2 0 0 0 0])
+  ("size_t" .
+   [2 0 0 0 0 0])
+  ("auto-complete" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("vector" .
+   [4 0 0 0 1 0])
+  ("std" .
+   [38 0 0])
+  ("instruments" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("(size_type __n" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("(size_type __n, char __c)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("resize" .
+   [1 0 0 0 1 0])
+  ("test_str" .
+   [2 0 0 0 3 0 0 0])
+  ("GetParameters" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("VenueMicCurrencyKeyType" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("AssignedSchedules" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("schedules" .
+   [2 0 0 0 0 0 0 0 0])
+  ("m_tableParametterFeeSchedules" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_tableParametterFeeSchedulesOld" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("sche" .
+   [1 0 0 0])
+  ("capacity" .
+   [1 0 0 0 0 0 0 0])
+  ("()" .
+   [0 3])
+  ("/opt/tbricks/sdk" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("setenv" .
+   [1 0 0 0 0 0])
+  ("1" .
+   [2])
+  ("cout" .
+   [17 0 1 0])
+  ("val" .
+   [2 0 0])
+  ("endl" .
+   [8 0 0 1])
+  ("boost/signals2.hpp" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("include" .
+   [0 0 0 0 1 1 0])
+  ("main" .
+   [4 0 0 0])
+  ("boost" .
+   [2 0 0 0 0])
+  ("signals2" .
+   [0 0 0 0 0 0 0 1])
+  ("signal" .
+   [1 0 0 0 0 0])
+  ("connect" .
+   [1 0 0 0 2 0 0])
+  ("f1" .
+   [1 0])
+  ("(const " .
+   [0 0 0 0 0 0 1])
+  ("(const slot_type &slot)" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("f2" .
+   [1 0])
+  ("s" .
+   [1])
+  ("boost/optional.hpp" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("optional" .
+   [0 0 0 0 0 1 0 0])
+  ("d" .
+   [2])
+  ("CXX" .
+   [1 0 0])
+  ("it" .
+   [3 0])
+  ("(basic_ostream<_CharT, _Traits> &__os)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("A" .
+   [3])
+  ("a" .
+   [6])
+  ("m_userPreferencesStream" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [1 0 0 0 0 1 0])
+  ("GetName" .
+   [1 0 0 0 0 0 0])
+  ("mmPluginInstrumentIds_" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("IsLast" .
+   [0 0 1 0 0 0])
+  ("underlying" .
+   [0 0 0 0 0 0 0 0 1 0])
+  ("imr_multiaddr" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("cmake-ide-flags-c++" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))

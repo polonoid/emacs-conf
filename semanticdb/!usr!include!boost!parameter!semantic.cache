@@ -1,0 +1,1669 @@
+;; Object parameter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "parameter/"
+  :tables
+  (list
+    (semanticdb-table "parameters.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETERS_031014_HPP" variable (:constant-flag t) nil [285 312])
+            ("boost/detail/is_xxx.hpp" include (:system-flag t) nil [314 348])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [350 391])
+            ("boost/mpl/lambda.hpp" include (:system-flag t) nil [393 424])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [425 455])
+            ("boost/mpl/always.hpp" include (:system-flag t) nil [456 487])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [488 516])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [517 544])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [545 572])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [573 606])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [607 635])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [636 668])
+            ("boost/mpl/pair.hpp" include (:system-flag t) nil [669 698])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [700 740])
+            ("boost/type_traits/remove_reference.hpp" include (:system-flag t) nil [741 790])
+            ("boost/preprocessor/repetition/enum.hpp" include (:system-flag t) nil [792 841])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [842 898])
+            ("boost/preprocessor/repetition/enum_trailing_params.hpp" include (:system-flag t) nil [899 964])
+            ("boost/preprocessor/arithmetic/sub.hpp" include (:system-flag t) nil [965 1013])
+            ("boost/preprocessor/repetition/repeat.hpp" include (:system-flag t) nil [1014 1065])
+            ("boost/preprocessor/repetition/enum_shifted.hpp" include (:system-flag t) nil [1066 1123])
+            ("boost/preprocessor/repetition/enum_binary_params.hpp" include (:system-flag t) nil [1124 1187])
+            ("boost/preprocessor/repetition/enum_shifted_params.hpp" include (:system-flag t) nil [1188 1252])
+            ("boost/preprocessor/seq/elem.hpp" include (:system-flag t) nil [1253 1295])
+            ("boost/preprocessor/iteration/iterate.hpp" include (:system-flag t) nil [1296 1347])
+            ("boost/preprocessor/facilities/intercept.hpp" include (:system-flag t) nil [1348 1402])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [1403 1440])
+            ("boost/parameter/aux_/arg_list.hpp" include (:system-flag t) nil [1442 1486])
+            ("boost/parameter/aux_/yesno.hpp" include (:system-flag t) nil [1487 1528])
+            ("boost/parameter/aux_/void.hpp" include (:system-flag t) nil [1529 1569])
+            ("boost/parameter/aux_/default.hpp" include (:system-flag t) nil [1570 1613])
+            ("boost/parameter/aux_/unwrap_cv_reference.hpp" include (:system-flag t) nil [1614 1669])
+            ("boost/parameter/aux_/tagged_argument.hpp" include (:system-flag t) nil [1670 1721])
+            ("boost/parameter/aux_/tag.hpp" include (:system-flag t) nil [1722 1761])
+            ("boost/parameter/aux_/template_keyword.hpp" include (:system-flag t) nil [1762 1814])
+            ("boost/parameter/aux_/set.hpp" include (:system-flag t) nil [1815 1854])
+            ("boost/parameter/config.hpp" include (:system-flag t) nil [1855 1892])
+            ("parameter_" type
+               (:members 
+                  ( ("unmatched_argument" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("BOOST_MPL_ASSERT" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1976 2019])
+                            ("type" type
+                               (:typedef ("int")
+                                :superclasses "int"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2026 2043]))                          )
+                        (reparse-symbol namespacesubparts) [1919 2048]))                  
+                :type "namespace")
+                nil [1894 2051])
+            ("boost" type
+               (:members 
+                  ( ("reference_wrapper" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [2096 2138])
+                    ("parameter" type
+                       (:members 
+                          ( ("aux" type
+                               (:members 
+                                  ( ("use_default" type (:type "struct") (reparse-symbol namespacesubparts) [2179 2201]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2163 2203])
+                            ("required" type
+                               (:members 
+                                  ( ("key_type" type
+                                       (:typedef ("Tag" type (:type "class") nil nil)
+                                        :superclasses "Tag"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3056 3077])
+                                    ("predicate" type
+                                       (:typedef ("Predicate" type (:type "class") nil nil)
+                                        :superclasses "Predicate"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3082 3110]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3034 3113])
+                            ("optional" type
+                               (:members 
+                                  ( ("key_type" type
+                                       (:typedef ("Tag" type (:type "class") nil nil)
+                                        :superclasses "Tag"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3194 3215])
+                                    ("predicate" type
+                                       (:typedef ("Predicate" type (:type "class") nil nil)
+                                        :superclasses "Predicate"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3220 3248]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3172 3251])
+                            ("deduced" type
+                               (:template 
+                                  ( ("Tag" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("key_type" type
+                                       (:typedef ("Tag" type (:type "class") nil nil)
+                                        :superclasses "Tag"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3295 3316]))                                  )
+                                (reparse-symbol namespacesubparts) [3253 3319])
+                            ("aux" type
+                               (:members 
+                                  ( ("type" variable (:type "int") (reparse-symbol namespacesubparts) [3730 3740])
+                                    ("is_deduced" type
+                                       (:template 
+                                          ( ("S" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::eval_if::type" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3744 3946])
+                                    ("get_tag_type0" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("T::key_type" type (:type "class") nil nil)
+                                                :superclasses "T::key_type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4434 4468]))                                          )
+                                        (reparse-symbol namespacesubparts) [4382 4473])
+                                    ("tag_type" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::eval_if" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4694 4907])
+                                    ("has_default" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::not_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4911 4989])
+                                    ("get_predicate_or_default" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :superclasses "T"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5098 5113]))                                          )
+                                        (reparse-symbol namespacesubparts) [5035 5118])
+                                    ("get_predicate_or_default" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::always" type
+                                                     (:template-specifier 
+                                                        ( ("mpl::true_" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "mpl::always"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5191 5228]))                                          
+                                        :template-specifier 
+                                          ( ("use_default" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5122 5233])
+                                    ("get_predicate" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5403 5419]))                                          )
+                                        (reparse-symbol namespacesubparts) [5275 5424])
+                                    ("predicate" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::eval_if" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5428 5668])
+                                    ("as_parameter_requirements" type
+                                       (:template 
+                                          ( ("ParameterSpec" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [6188 6193]))                                          )
+                                        (reparse-symbol namespacesubparts) [5921 6198])
+                                    ("is_named_argument" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("mpl::or_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [6202 6342])
+                                    ("satisfies" type
+                                       (:template 
+                                          ( ("ArgList" type (:type "class") nil nil)
+                                            ("ParameterRequirements" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [7241 7246])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7247 7254]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [7208 7468])
+                                            ("type" type
+                                               (:typedef ("mpl::bool_" type
+                                                     (:template-specifier 
+                                                        ( ("satisfies::value" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "mpl::bool_"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [7476 7518]))                                          )
+                                        (reparse-symbol namespacesubparts) [6439 7530])
+                                    ("tag_deduced" type
+                                       (:template 
+                                          ( ("UsedArgs" type (:type "class") nil nil)
+                                            ("Spec" type (:type "class") nil nil)
+                                            ("Arg" type (:type "class") nil nil)
+                                            ("TagFn" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [8291 8296]))                                          )
+                                        (reparse-symbol namespacesubparts) [8007 8301])
+                                    ("deduce_tag" type
+                                       (:template 
+                                          ( ("Argument" type (:type "class") nil nil)
+                                            ("ArgumentPack" type (:type "class") nil nil)
+                                            ("DeducedArgs" type (:type "class") nil nil)
+                                            ("UsedArgs" type (:type "class") nil nil)
+                                            ("TagFn" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [8305 8449])
+                                    ("lambda_tag" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [8489 8507])
+                                    ("deduce_tag0" type
+                                       (:template 
+                                          ( ("Argument" type (:type "class") nil nil)
+                                            ("ArgumentPack" type (:type "class") nil nil)
+                                            ("DeducedArgs" type (:type "class") nil nil)
+                                            ("UsedArgs" type (:type "class") nil nil)
+                                            ("TagFn" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("spec" type
+                                               (:typedef ("DeducedArgs::spec" type (:type "class") nil nil)
+                                                :superclasses "DeducedArgs::spec"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8702 8742])
+                                            ("condition" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8937 8952])
+                                            ("BOOST_MPL_ASSERT" function
+                                               (:prototype-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [9015 9181])
+                                            ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9394 9404]))                                          )
+                                        (reparse-symbol namespacesubparts) [8547 9409])
+                                    ("deduce_tag" type
+                                       (:template 
+                                          ( ("Argument" type (:type "class") nil nil)
+                                            ("ArgumentPack" type (:type "class") nil nil)
+                                            ("DeducedArgs" type (:type "class") nil nil)
+                                            ("UsedArgs" type (:type "class") nil nil)
+                                            ("TagFn" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::eval_if::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [10195 10396]))                                          )
+                                        (reparse-symbol namespacesubparts) [10041 10401])
+                                    ("make_arg_list_aux" type
+                                       (:template 
+                                          ( ("List" type (:type "class") nil nil)
+                                            ("DeducedArgs" type (:type "class") nil nil)
+                                            ("TagFn" type (:type "class") nil nil)
+                                            ("Positional" type (:type "class") nil nil)
+                                            ("UsedArgs" type (:type "class") nil nil)
+                                            ("ArgumentPack" type (:type "class") nil nil)
+                                            ("Error" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [10405 10593])
+                                    ("insert_tagged" type
+                                       (:template 
+                                          ( ("UsedArgs" type (:type "class") nil nil)
+                                            ("Tagged" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10869 10879]))                                          )
+                                        (reparse-symbol namespacesubparts) [10710 10884])
+                                    ("make_arg_list0" type
+                                       (:template 
+                                          ( ("List" type (:type "class") nil nil)
+                                            ("DeducedArgs" type (:type "class") nil nil)
+                                            ("TagFn" type (:type "class") nil nil)
+                                            ("Positional" type (:type "class") nil nil)
+                                            ("UsedArgs" type (:type "class") nil nil)
+                                            ("ArgumentPack" type (:type "class") nil nil)
+                                            ("Error" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("parameter_spec" type
+                                               (:typedef ("List::spec" type (:type "class") nil nil)
+                                                :superclasses "List::spec"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [11531 11574])
+                                            ("tag_" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11624 11634])
+                                            ("is_tagged" type
+                                               (:typedef ("is_named_argument" type
+                                                     (:template-specifier 
+                                                        ( ("argument" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "is_named_argument"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [11642 11688])
+                                            ("positional" type
+                                               (:typedef ("mpl::and_" type
+                                                     (:template-specifier 
+                                                        ( ("mpl::not_" type nil nil nil)
+                                                          ("Positional" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "mpl::and_"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [11816 11972])
+                                            ("used_args" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::eval_if::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [12237 12390])
+                                            ("deduced_data" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::eval_if::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [12548 12762])
+                                            ("tagged" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::eval_if::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [12820 13285])
+                                            ("error" type
+                                               (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::if_::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [13380 13600])
+                                            ("argument_pack" type
+                                               (:typedef ("mpl::if_::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::if_::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [13608 13760])
+                                            ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13982 13992]))                                          )
+                                        (reparse-symbol namespacesubparts) [11042 13997])
+                                    ("make_arg_list_aux" type
+                                       (:template 
+                                          ( ("List" type (:type "class") nil nil)
+                                            ("DeducedArgs" type (:type "class") nil nil)
+                                            ("TagFn" type (:type "class") nil nil)
+                                            ("Positional" type (:type "class") nil nil)
+                                            ("DeducedSet" type (:type "class") nil nil)
+                                            ("ArgumentPack" type (:type "class") nil nil)
+                                            ("Error" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::eval_if::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [15877 16111]))                                          )
+                                        (reparse-symbol namespacesubparts) [15677 16116])
+                                    ("make_arg_list" type
+                                       (:members 
+                                          ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [16520 16530]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [16363 16535])
+                                    ("item" type
+                                       (:template 
+                                          ( ("Spec" type (:type "class") nil nil)
+                                            ("Arg" type (:type "class") nil nil)
+                                            ("Tail" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("spec" type
+                                               (:typedef ("Spec" type (:type "class") nil nil)
+                                                :superclasses "Spec"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [16653 16671])
+                                            ("arg" type
+                                               (:typedef ("Arg" type (:type "class") nil nil)
+                                                :superclasses "Arg"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [16788 16804])
+                                            ("tail" type
+                                               (:typedef ("Tail" type (:type "class") nil nil)
+                                                :superclasses "Tail"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [16811 16829]))                                          )
+                                        (reparse-symbol namespacesubparts) [16576 16834])
+                                    ("make_item" type
+                                       (:template 
+                                          ( ("Spec" type (:type "class") nil nil)
+                                            ("Arg" type (:type "class") nil nil)
+                                            ("Tail" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [16957 16962]))                                          )
+                                        (reparse-symbol namespacesubparts) [16838 16967])
+                                    ("make_items" type
+                                       (:template 
+                                          ( ("Spec" type (:type "class") nil nil)
+                                            ("Arg" type (:type "class") nil nil)
+                                            ("Tail" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::eval_if::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [17076 17224]))                                          )
+                                        (reparse-symbol namespacesubparts) [17001 17229])
+                                    ("deduced_item" type
+                                       (:template 
+                                          ( ("ParameterSpec" type (:type "class") nil nil)
+                                            ("Tail" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("spec" type
+                                               (:typedef ("ParameterSpec" type (:type "class") nil nil)
+                                                :superclasses "ParameterSpec"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [17369 17396])
+                                            ("tail" type
+                                               (:typedef ("Tail" type (:type "class") nil nil)
+                                                :superclasses "Tail"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [17403 17421]))                                          )
+                                        (reparse-symbol namespacesubparts) [17286 17426])
+                                    ("make_deduced_item" type
+                                       (:template 
+                                          ( ("Spec" type (:type "class") nil nil)
+                                            ("Tail" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [17601 17606]))                                          )
+                                        (reparse-symbol namespacesubparts) [17482 17611])
+                                    ("make_deduced_items" type
+                                       (:template 
+                                          ( ("Spec" type (:type "class") nil nil)
+                                            ("Tail" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("mpl::eval_if::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::eval_if::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [17687 17929]))                                          )
+                                        (reparse-symbol namespacesubparts) [17615 17934])
+                                    ("BOOST_PARAMETER_make_arg_list" variable (:constant-flag t) (reparse-symbol namespacesubparts) [18165 18194])
+                                    ("BOOST_PARAMETER_right_angle" variable (:constant-flag t) (reparse-symbol namespacesubparts) [18396 18423])
+                                    ("BOOST_PARAMETER_build_arg_list" variable (:constant-flag t) (reparse-symbol namespacesubparts) [18447 18477])
+                                    ("BOOST_PARAMETER_make_deduced_list" variable (:constant-flag t) (reparse-symbol namespacesubparts) [18845 18878])
+                                    ("BOOST_PARAMETER_build_deduced_list" variable (:constant-flag t) (reparse-symbol namespacesubparts) [19017 19051])
+                                    ("tag_keyword_arg" type
+                                       (:members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("K" type (:type "class") nil nil)
+                                                    ("T" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :superclasses 
+                                                  ( ("tag" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  )
+                                                (reparse-symbol classsubparts) [19442 19517]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [19409 19522])
+                                    ("tag_template_keyword_arg" type
+                                       (:members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("K" type (:type "class") nil nil)
+                                                    ("T" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("template_keyword" type
+                                                             (:template-specifier 
+                                                                ( ("K" type nil nil nil)
+                                                                  ("T" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :superclasses "template_keyword"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [19633 19668]))                                                  )
+                                                (reparse-symbol classsubparts) [19568 19677]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [19526 19682]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [3321 19685])
+                            ("BOOST_PARAMETER_FORWARD_TYPEDEF" variable (:constant-flag t) (reparse-symbol namespacesubparts) [19712 19743])
+                            ("BOOST_PARAMETER_FORWARD_TYPEDEFS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [19867 19899])
+                            ("BOOST_PARAMETER_TEMPLATE_ARGS" variable (:constant-flag t) (reparse-symbol namespacesubparts) [19995 20024])
+                            ("parameters" type
+                               (:members 
+                                  ( ("deduced_list" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20372 20390])
+                                    ("match" type
+                                       (:members 
+                                          ( ("type" variable (:type "int") (reparse-symbol classsubparts) [23297 23302]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [22687 23310])
+                                    ("bind" type
+                                       (:members 
+                                          ( ("result" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24244 24256])
+                                            ("type" type
+                                               (:typedef ("mpl::first::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::first::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [24266 24313]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [23964 24320])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :type ("aux::empty_arg_list" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [24778 24865])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("a0" variable
+                                               (:reference 1
+                                                :type ("A0" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [25113 25120]))                                          
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [25093 25726])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("a0" variable
+                                               (:reference 1
+                                                :type ("A0" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26056 26063])
+                                            ("a1" variable
+                                               (:reference 1
+                                                :type ("A1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [26064 26071]))                                          
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [26036 26743])
+                                    ("BOOST_PP_ITERATION_PARAMS_1" variable (:constant-flag t) (reparse-symbol classsubparts) [26807 26834]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [20187 26955]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2140 26958]))                  
+                :type "namespace")
+                nil [2077 26984]))          
+      :file "parameters.hpp"
+      :pointmax 27044
+      :fsize 27043
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((semantic-list 26949 . 26951) (symbol 26933 . 26949) (symbol 26925 . 26932) (punctuation 26924 . 26925) (punctuation 26035 . 26036) (punctuation 26034 . 26035) (punctuation 26033 . 26034) (symbol 26024 . 26028) (punctuation 26023 . 26024) (punctuation 26022 . 26023) (punctuation 26021 . 26022) (symbol 25997 . 26012) (punctuation 25996 . 25997) (punctuation 25995 . 25996) (symbol 25992 . 25995) (punctuation 25990 . 25991) (symbol 25967 . 25979) (punctuation 25965 . 25966) (punctuation 25953 . 25954) (punctuation 25939 . 25940) (symbol 25920 . 25922) (punctuation 25919 . 25920) (symbol 25916 . 25919) (punctuation 25894 . 25895) (symbol 25890 . 25894) (punctuation 25889 . 25890) (punctuation 25888 . 25889) (symbol 25885 . 25888) (punctuation 25883 . 25884) (symbol 25866 . 25868) (punctuation 25865 . 25866) (symbol 25862 . 25865) (punctuation 25844 . 25845) (symbol 25840 . 25844) (punctuation 25839 . 25840) (punctuation 25838 . 25839) (symbol 25835 . 25838) (punctuation 25821 . 25822) (symbol 25808 . 25821) (punctuation 25807 . 25808) (punctuation 25806 . 25807) (symbol 25803 . 25806) (TYPENAME 25794 . 25802) (punctuation 25784 . 25785) (symbol 25779 . 25784) (punctuation 25778 . 25779) (punctuation 25777 . 25778) (symbol 25774 . 25777) (TYPENAME 25765 . 25773) (punctuation 25759 . 25760) (symbol 25757 . 25759) (CLASS 25751 . 25756) (punctuation 25749 . 25750) (symbol 25747 . 25749) (CLASS 25741 . 25746) (punctuation 25740 . 25741) (TEMPLATE 25732 . 25740) (punctuation 25092 . 25093) (punctuation 25091 . 25092) (punctuation 25090 . 25091) (symbol 25081 . 25085) (punctuation 25080 . 25081) (punctuation 25079 . 25080) (punctuation 25078 . 25079) (symbol 25054 . 25069) (punctuation 25053 . 25054) (punctuation 25052 . 25053) (symbol 25049 . 25052) (punctuation 25047 . 25048) (symbol 25024 . 25036) (punctuation 25022 . 25023) (punctuation 25010 . 25011) (symbol 24995 . 24997) (punctuation 24994 . 24995) (symbol 24991 . 24994) (punctuation 24973 . 24974) (symbol 24969 . 24973) (punctuation 24968 . 24969) (punctuation 24967 . 24968) (symbol 24964 . 24967) (punctuation 24950 . 24951) (symbol 24937 . 24950) (punctuation 24936 . 24937) (punctuation 24935 . 24936) (symbol 24932 . 24935) (TYPENAME 24923 . 24931) (punctuation 24913 . 24914) (symbol 24908 . 24913) (punctuation 24907 . 24908) (punctuation 24906 . 24907) (symbol 24903 . 24906) (TYPENAME 24894 . 24902) (punctuation 24888 . 24889) (symbol 24886 . 24888) (CLASS 24880 . 24885) (punctuation 24879 . 24880) (TEMPLATE 24871 . 24879) (semantic-list #("(n, BOOST_PARAMETER_FORWARD_TYPEDEF, (src)(dest))" 0 1 (macros (("dest" symbol "parameter_spec" 24390 . 24404) ("src" symbol "PS" 24386 . 24388) ("n" symbol "BOOST_PARAMETER_MAX_ARITY" 24359 . 24384)))) 24326 . 24405) (symbol "BOOST_PP_REPEAT" 24326 . 24405) (punctuation 24243 . 24244) (punctuation 24242 . 24243) (punctuation 24241 . 24242) (symbol 24208 . 24232) (punctuation 24207 . 24208) (punctuation 24206 . 24207) (symbol 24203 . 24206) (punctuation 24201 . 24202) (symbol 24178 . 24190) (punctuation 24176 . 24177) (symbol 24161 . 24165) (punctuation 24160 . 24161) (punctuation 24159 . 24160) (semantic-list #("(n, BOOST_PARAMETER_right_angle, _)" 0 1 (macros (("argument_type" symbol "PS" 24140 . 24142) ("parameter_spec" symbol "make_items" 24128 . 24138) ("make" symbol "aux" 24123 . 24126) ("n" symbol "BOOST_PARAMETER_MAX_ARITY" 24096 . 24121)))) 24048 . 24159) (symbol "BOOST_PP_REPEAT" 24048 . 24159) (punctuation ">" 24048 . 24159) (symbol "void_" 24048 . 24159) (punctuation "<" 24048 . 24159) (symbol "identity" 24048 . 24159) (punctuation ":" 24048 . 24159) (punctuation ":" 24048 . 24159) (symbol "mpl" 24048 . 24159) (semantic-list #("(                                                                  \\
+      n, BOOST_PARAMETER_make_arg_list, (make)(parameter_spec)(argument_type))" 0 1 (macros (("argument_type" symbol "PS" 24140 . 24142) ("parameter_spec" symbol "make_items" 24128 . 24138) ("make" symbol "aux" 24123 . 24126) ("n" symbol "BOOST_PARAMETER_MAX_ARITY" 24096 . 24121)))) 24048 . 24159) (symbol "BOOST_PP_REPEAT" 24048 . 24159) (TYPENAME 24039 . 24047) (punctuation 24025 . 24026) (symbol 24012 . 24025) (punctuation 24011 . 24012) (punctuation 24010 . 24011) (symbol 24007 . 24010) (TYPENAME 23998 . 24006) (TYPEDEF 23990 . 23997) (punctuation 24243 . 24244) (punctuation 24242 . 24243) (punctuation 24241 . 24242) (symbol 24208 . 24232) (punctuation 24207 . 24208) (punctuation 24206 . 24207) (symbol 24203 . 24206) (punctuation 24201 . 24202) (symbol 24178 . 24190) (punctuation 24176 . 24177) (symbol 24161 . 24165) (punctuation 24160 . 24161) (punctuation 24159 . 24160) (semantic-list #("(n, BOOST_PARAMETER_right_angle, _)" 0 1 (macros (("argument_type" symbol "PS" 24140 . 24142) ("parameter_spec" symbol "make_items" 24128 . 24138) ("make" symbol "aux" 24123 . 24126) ("n" symbol "BOOST_PARAMETER_MAX_ARITY" 24096 . 24121)))) 24048 . 24159) (symbol "BOOST_PP_REPEAT" 24048 . 24159) (punctuation ">" 24048 . 24159) (symbol "void_" 24048 . 24159) (punctuation "<" 24048 . 24159) (symbol "identity" 24048 . 24159) (punctuation ":" 24048 . 24159) (punctuation ":" 24048 . 24159) (symbol "mpl" 24048 . 24159) (semantic-list #("(                                                                  \\
+      n, BOOST_PARAMETER_make_arg_list, (make)(parameter_spec)(argument_type))" 0 1 (macros (("argument_type" symbol "PS" 24140 . 24142) ("parameter_spec" symbol "make_items" 24128 . 24138) ("make" symbol "aux" 24123 . 24126) ("n" symbol "BOOST_PARAMETER_MAX_ARITY" 24096 . 24121)))) 24048 . 24159) (symbol "BOOST_PP_REPEAT" 24048 . 24159) (TYPENAME 24039 . 24047) (punctuation 24025 . 24026) (symbol 24012 . 24025) (punctuation 24011 . 24012) (punctuation 24010 . 24011) (symbol 24007 . 24010) (TYPENAME 23998 . 24006) (TYPEDEF 23990 . 23997) (punctuation 23958 . 23959) (semantic-list 23848 . 23934) (symbol 23821 . 23848) (punctuation 23898 . 23899) (punctuation 23476 . 23477) (TEMPLATE 23467 . 23475) (punctuation 23295 . 23296) (semantic-list 23255 . 23286) (symbol 23235 . 23255) (punctuation 23221 . 23222) (symbol 23211 . 23221) (TYPEDEF 23203 . 23210) (punctuation 23295 . 23296) (semantic-list 23255 . 23286) (symbol 23235 . 23255) (punctuation 23221 . 23222) (symbol 23211 . 23221) (TYPEDEF 23203 . 23210) (punctuation 22681 . 22682) (semantic-list 22583 . 22669) (symbol 22556 . 22583) (punctuation 22633 . 22634) (punctuation 22211 . 22212) (TEMPLATE 22203 . 22211) (punctuation 20371 . 20372) (punctuation 20370 . 20371) (semantic-list #("(n, BOOST_PARAMETER_right_angle, _)" 0 1 (macros (("parameter_spec" symbol "make_deduced_items" 20342 . 20360) ("make" symbol "aux" 20337 . 20340) ("n" symbol "BOOST_PARAMETER_MAX_ARITY" 20310 . 20335)))) 20266 . 20370) (symbol "BOOST_PP_REPEAT" 20266 . 20370) (punctuation ">" 20266 . 20370) (symbol "void_" 20266 . 20370) (punctuation "<" 20266 . 20370) (symbol "identity" 20266 . 20370) (punctuation ":" 20266 . 20370) (punctuation ":" 20266 . 20370) (symbol "mpl" 20266 . 20370) (semantic-list #("(                                                                  \\
+      n, BOOST_PARAMETER_make_deduced_list, (make)(parameter_spec))" 0 1 (macros (("parameter_spec" symbol "make_deduced_items" 20342 . 20360) ("make" symbol "aux" 20337 . 20340) ("n" symbol "BOOST_PARAMETER_MAX_ARITY" 20310 . 20335)))) 20266 . 20370) (symbol "BOOST_PP_REPEAT" 20266 . 20370) (TYPENAME 20257 . 20265) (TYPEDEF 20249 . 20256) (punctuation 20185 . 20186) (semantic-list 20123 . 20184) (symbol 20102 . 20123) (punctuation "=" 20151 . 20181) (punctuation 20100 . 20101) (symbol 20093 . 20096) (CLASS 20087 . 20092) (punctuation 20080 . 20081) (TEMPLATE 20072 . 20080) (punctuation 17599 . 17600) (symbol 17595 . 17599) (punctuation 17594 . 17595) (punctuation 17593 . 17594) (symbol 17589 . 17593) (TYPENAME 17580 . 17588) (punctuation 17578 . 17579) (symbol 17574 . 17578) (punctuation 17573 . 17574) (symbol 17561 . 17573) (TYPEDEF 17553 . 17560) (punctuation 16955 . 16956) (symbol 16951 . 16955) (punctuation 16950 . 16951) (punctuation 16949 . 16950) (symbol 16945 . 16949) (TYPENAME 16936 . 16944) (punctuation 16934 . 16935) (symbol 16931 . 16934) (punctuation 16929 . 16930) (symbol 16925 . 16929) (punctuation 16924 . 16925) (symbol 16920 . 16924) (TYPEDEF 16912 . 16919) (punctuation 16519 . 16520) (punctuation 16518 . 16519) (punctuation 16517 . 16518) (symbol 16505 . 16510) (punctuation 16503 . 16504) (symbol 16489 . 16503) (punctuation 16487 . 16488) (symbol 16483 . 16487) (punctuation 16482 . 16483) (punctuation 16481 . 16482) (symbol 16478 . 16481) (punctuation 16476 . 16477) (symbol 16471 . 16476) (punctuation 16470 . 16471) (punctuation 16469 . 16470) (symbol 16466 . 16469) (punctuation 16464 . 16465) (symbol 16459 . 16464) (punctuation 16457 . 16458) (symbol 16446 . 16457) (punctuation 16444 . 16445) (symbol 16440 . 16444) (punctuation 16428 . 16429) (symbol 16411 . 16428) (TYPENAME 16402 . 16410) (TYPEDEF 16394 . 16401) (punctuation 16359 . 16360) (symbol 16351 . 16356) (punctuation 16350 . 16351) (punctuation 16349 . 16350) (symbol 16346 . 16349) (punctuation 16344 . 16345) (symbol 16333 . 16343) (CLASS 16327 . 16332) (punctuation 16325 . 16326) (symbol 16315 . 16320) (CLASS 16309 . 16314) (punctuation 16307 . 16308) (symbol 16291 . 16302) (CLASS 16285 . 16290) (punctuation 16283 . 16284) (symbol 16274 . 16278) (CLASS 16268 . 16273) (punctuation 16260 . 16261) (TEMPLATE 16251 . 16259) (punctuation 13981 . 13982) (punctuation 13980 . 13981) (punctuation 13979 . 13980) (symbol 13967 . 13972) (punctuation 13965 . 13966) (symbol 13943 . 13956) (punctuation 13941 . 13942) (symbol 13926 . 13932) (punctuation 13925 . 13926) (punctuation 13924 . 13925) (symbol 13912 . 13924) (TYPENAME 13903 . 13911) (punctuation 13901 . 13902) (symbol 13882 . 13892) (punctuation 13880 . 13881) (symbol 13866 . 13871) (punctuation 13864 . 13865) (symbol 13844 . 13855) (punctuation 13842 . 13843) (symbol 13829 . 13833) (punctuation 13828 . 13829) (punctuation 13827 . 13828) (symbol 13823 . 13827) (TYPENAME 13814 . 13822) (punctuation 13802 . 13803) (symbol 13785 . 13802) (TYPENAME 13776 . 13784) (TYPEDEF 13768 . 13775) (punctuation 11623 . 11624) (punctuation 11622 . 11623) (punctuation 11621 . 11622) (symbol 11607 . 11621) (punctuation 11606 . 11607) (symbol 11598 . 11606) (TYPENAME 11589 . 11597) (TYPEDEF 11581 . 11588) (punctuation 10868 . 10869) (punctuation 10867 . 10868) (punctuation 10866 . 10867) (symbol 10851 . 10859) (punctuation 10850 . 10851) (punctuation 10849 . 10850) (symbol 10843 . 10849) (TYPENAME 10834 . 10842) (punctuation 10832 . 10833) (symbol 10824 . 10832) (punctuation 10812 . 10813) (symbol 10805 . 10812) (punctuation 10804 . 10805) (punctuation 10803 . 10804) (symbol 10800 . 10803) (TYPENAME 10791 . 10799) (TYPEDEF 10783 . 10790) (punctuation 9393 . 9394) (punctuation 9392 . 9393) (punctuation 9391 . 9392) (punctuation 9383 . 9384) (symbol 9378 . 9383) (punctuation 9376 . 9377) (symbol 9368 . 9376) (punctuation 9366 . 9367) (symbol 9362 . 9366) (punctuation 9361 . 9362) (punctuation 9360 . 9361) (symbol 9349 . 9360) (TYPENAME 9340 . 9348) (punctuation 9338 . 9339) (symbol 9326 . 9338) (punctuation 9324 . 9325) (symbol 9316 . 9324) (punctuation 9315 . 9316) (symbol 9305 . 9315) (punctuation 9303 . 9304) (punctuation 9293 . 9294) (symbol 9288 . 9293) (punctuation 9286 . 9287) (symbol 9278 . 9286) (punctuation 9276 . 9277) (symbol 9272 . 9276) (punctuation 9270 . 9271) (symbol 9262 . 9270) (punctuation 9261 . 9262) (symbol 9250 . 9261) (punctuation 9248 . 9249) (symbol 9230 . 9239) (punctuation 9218 . 9219) (symbol 9211 . 9218) (punctuation 9210 . 9211) (punctuation 9209 . 9210) (symbol 9206 . 9209) (TYPENAME 9197 . 9205) (TYPEDEF 9189 . 9196) (semantic-list 9032 . 9179) (punctuation 8936 . 8937) (punctuation 8935 . 8936) (punctuation 8934 . 8935) (symbol 8915 . 8927) (punctuation 8913 . 8914) (symbol 8896 . 8904) (punctuation 8894 . 8895) (symbol 8881 . 8885) (punctuation 8880 . 8881) (punctuation 8879 . 8880) (punctuation 8878 . 8879) (symbol 8857 . 8867) (punctuation 8855 . 8856) (symbol 8846 . 8855) (punctuation 8845 . 8846) (punctuation 8844 . 8845) (symbol 8840 . 8844) (TYPENAME 8831 . 8839) (punctuation 8815 . 8816) (symbol 8809 . 8815) (punctuation 8808 . 8809) (punctuation 8807 . 8808) (symbol 8804 . 8807) (TYPENAME 8795 . 8803) (punctuation 8783 . 8784) (symbol 8772 . 8783) (punctuation 8771 . 8772) (punctuation 8770 . 8771) (symbol 8767 . 8770) (TYPENAME 8758 . 8766) (TYPEDEF 8750 . 8757) (punctuation 8289 . 8290) (symbol 8278 . 8282) (punctuation 8277 . 8278) (punctuation 8276 . 8277) (punctuation 8275 . 8276) (symbol 8271 . 8275) (punctuation 8270 . 8271) (punctuation 8269 . 8270) (punctuation 8268 . 8269) (symbol 8264 . 8268) (punctuation 8263 . 8264) (symbol 8255 . 8263) (TYPENAME 8246 . 8254) (punctuation 8244 . 8245) (symbol 8236 . 8244) (punctuation 8235 . 8236) (symbol 8228 . 8235) (punctuation 8227 . 8228) (punctuation 8226 . 8227) (symbol 8223 . 8226) (TYPENAME 8214 . 8222) (punctuation 8212 . 8213) (symbol 8199 . 8203) (punctuation 8198 . 8199) (punctuation 8197 . 8198) (punctuation 8196 . 8197) (symbol 8193 . 8196) (punctuation 8191 . 8192) (symbol 8187 . 8191) (punctuation 8186 . 8187) (punctuation 8185 . 8186) (punctuation 8184 . 8185) (symbol 8180 . 8184) (punctuation 8179 . 8180) (symbol 8171 . 8179) (TYPENAME 8162 . 8170) (punctuation 8160 . 8161) (symbol 8155 . 8160) (punctuation 8154 . 8155) (symbol 8143 . 8154) (punctuation 8142 . 8143) (punctuation 8141 . 8142) (symbol 8138 . 8141) (TYPENAME 8129 . 8137) (punctuation 8117 . 8118) (symbol 8113 . 8117) (punctuation 8112 . 8113) (punctuation 8111 . 8112) (symbol 8108 . 8111) (TYPEDEF 8100 . 8107) (punctuation 7830 . 7831) (semantic-list 7828 . 7830) (punctuation 7824 . 7825) (symbol 7813 . 7817) (punctuation 7812 . 7813) (punctuation 7811 . 7812) (punctuation 7810 . 7811) (symbol 7797 . 7810) (punctuation 7796 . 7797) (symbol 7771 . 7796) (TYPENAME 7762 . 7770) (punctuation 7760 . 7761) (symbol 7744 . 7751) (punctuation 7732 . 7733) (symbol 7723 . 7732) (punctuation 7721 . 7722) (symbol 7691 . 7716) (STRUCT 7684 . 7690) (punctuation 7680 . 7681) (symbol 7667 . 7680) (CLASS 7661 . 7666) (punctuation 7659 . 7660) (symbol 7652 . 7659) (CLASS 7646 . 7651) (punctuation 7645 . 7646) (TEMPLATE 7636 . 7644) (semantic-list 7255 . 7459) (punctuation 7253 . 7254) (punctuation 6186 . 6187) (symbol 6175 . 6179) (punctuation 6174 . 6175) (punctuation 6173 . 6174) (punctuation 6172 . 6173) (symbol 6159 . 6172) (punctuation 6158 . 6159) (symbol 6147 . 6158) (TYPENAME 6138 . 6146) (punctuation 6136 . 6137) (symbol 6123 . 6127) (punctuation 6122 . 6123) (punctuation 6121 . 6122) (punctuation 6120 . 6121) (symbol 6107 . 6120) (punctuation 6106 . 6107) (symbol 6097 . 6106) (TYPENAME 6088 . 6096) (punctuation 6086 . 6087) (symbol 6073 . 6077) (punctuation 6072 . 6073) (punctuation 6071 . 6072) (punctuation 6070 . 6071) (symbol 6057 . 6070) (punctuation 6056 . 6057) (symbol 6048 . 6056) (TYPENAME 6039 . 6047) (punctuation 6027 . 6028) (symbol 6005 . 6027) (TYPEDEF 5997 . 6004) (punctuation 5402 . 5403) (punctuation 5401 . 5402) (punctuation 5400 . 5401) (symbol 5391 . 5400) (punctuation 5390 . 5391) (punctuation 5389 . 5390) (symbol 5388 . 5389) (TYPENAME 5379 . 5387) (punctuation 5378 . 5379) (symbol 5354 . 5378) (TYPENAME 5335 . 5343) (TYPEDEF 5327 . 5334) (punctuation 4689 . 4690) (semantic-list 4687 . 4689) (punctuation 4683 . 4684) (punctuation 4675 . 4676) (symbol 4667 . 4675) (punctuation 4666 . 4667) (punctuation 4665 . 4666) (symbol 4664 . 4665) (TYPENAME 4655 . 4663) (punctuation 4654 . 4655) (symbol 4646 . 4654) (punctuation 4645 . 4646) (punctuation 4644 . 4645) (symbol 4641 . 4644) (punctuation 4639 . 4640) (punctuation 4629 . 4630) (symbol 4621 . 4629) (punctuation 4620 . 4621) (punctuation 4619 . 4620) (symbol 4618 . 4619) (TYPENAME 4609 . 4617) (punctuation 4608 . 4609) (symbol 4595 . 4608) (punctuation 4593 . 4594) (punctuation 4583 . 4584) (symbol 4575 . 4583) (punctuation 4574 . 4575) (punctuation 4573 . 4574) (symbol 4572 . 4573) (TYPENAME 4563 . 4571) (punctuation 4562 . 4563) (symbol 4548 . 4562) (punctuation 4536 . 4537) (symbol 4529 . 4536) (punctuation 4528 . 4529) (punctuation 4527 . 4528) (symbol 4524 . 4527) (punctuation 4522 . 4523) (symbol 4505 . 4517) (STRUCT 4498 . 4504) (punctuation 4494 . 4495) (symbol 4493 . 4494) (CLASS 4487 . 4492) (punctuation 4486 . 4487) (TEMPLATE 4477 . 4485) (punctuation 3729 . 3730) (punctuation 3728 . 3729) (punctuation 3727 . 3728) (symbol 3712 . 3720) (punctuation 3711 . 3712) (punctuation 3710 . 3711) (symbol 3709 . 3710) (TYPENAME 3700 . 3708) (punctuation 3688 . 3689) (symbol 3674 . 3688) (punctuation 3672 . 3673) (symbol 3656 . 3667) (STRUCT 3649 . 3655) (punctuation 3645 . 3646) (symbol 3644 . 3645) (CLASS 3638 . 3643) (punctuation 3637 . 3638) (TEMPLATE 3628 . 3636) (semantic-list 3599 . 3624) (symbol 3576 . 3599) (number 3622 . 3623) (semantic-list 3550 . 3573) (symbol 3527 . 3550) (number 3571 . 3572) (semantic-list 3501 . 3524) (symbol 3478 . 3501) (number 3522 . 3523) (punctuation 3170 . 3171) (symbol 3159 . 3170) (punctuation 3158 . 3159) (punctuation 3157 . 3158) (symbol 3154 . 3157) (punctuation 3152 . 3153) (symbol 3142 . 3151) (CLASS 3136 . 3141) (punctuation 3134 . 3135) (symbol 3131 . 3134) (CLASS 3125 . 3130) (punctuation 3124 . 3125) (TEMPLATE 3115 . 3123) (punctuation 3032 . 3033) (symbol 3021 . 3032) (punctuation 3020 . 3021) (punctuation 3019 . 3020) (symbol 3016 . 3019) (punctuation 3014 . 3015) (symbol 3004 . 3013) (CLASS 2998 . 3003) (punctuation 2996 . 2997) (symbol 2993 . 2996) (CLASS 2987 . 2992) (punctuation 2986 . 2987) (TEMPLATE 2977 . 2985) (semantic-list 1993 . 2017))
+      :lexical-table 
+        '(("BOOST_PARAMETER_make_arg_list" (spp-arg-list ("z" "n" "names") 18194 . 18207) . 
+              ((symbol "BOOST_PP_SEQ_ELEM" 18221 . 18238) (semantic-list "(0,names)" 18238 . 18247) (punctuation "<" 18247 . 18248) (symbol "BOOST_PP_CAT" 18283 . 18295) (semantic-list "(BOOST_PP_SEQ_ELEM(1,names), n)" 18295 . 18326) (punctuation "," 18326 . 18327) (symbol "BOOST_PP_CAT" 18341 . 18353) (semantic-list "(BOOST_PP_SEQ_ELEM(2,names), n)" 18353 . 18384) (punctuation "," 18384 . 18385)))
+          ("BOOST_PARAMETER_FORWARD_TYPEDEF" (spp-arg-list ("z" "i" "names") 19743 . 19756) . 
+              ((TYPEDEF "typedef" 19763 . 19770) (symbol "BOOST_PP_CAT" 19771 . 19783) (semantic-list "(BOOST_PP_SEQ_ELEM(0,names),i)" 19783 . 19813) (symbol "BOOST_PP_CAT" 19814 . 19826) (semantic-list "(BOOST_PP_SEQ_ELEM(1,names),i)" 19826 . 19856) (punctuation ";" 19856 . 19857)))
+          ("BOOST_PARAMETER_FORWARD_TYPEDEFS" (spp-arg-list ("n" "src" "dest") 19899 . 19913) . ((symbol "BOOST_PP_REPEAT" 19920 . 19935) (semantic-list "(n, BOOST_PARAMETER_FORWARD_TYPEDEF, (src)(dest))" 19935 . 19984)))
+          ("BOOST_PARAMETER_right_angle" (spp-arg-list ("z" "n" "text") 18423 . 18435) . ((punctuation ">" 18436 . 18437)))
+          ("BOOST_PARAMETERS_031014_HPP")
+          ("BOOST_PARAMETER_build_arg_list" (spp-arg-list ("n" "make" "parameter_spec" "argument_type") 18477 . 18517) . 
+              ((symbol "BOOST_PP_REPEAT" 18527 . 18542) (semantic-list "(                                                                  \\
+      n, BOOST_PARAMETER_make_arg_list, (make)(parameter_spec)(argument_type))" 18542 . 18689) (symbol "mpl" 18703 . 18706) (punctuation ":" 18706 . 18707) (punctuation ":" 18707 . 18708) (symbol "identity" 18708 . 18716) (punctuation "<" 18716 . 18717) (symbol "void_" 18717 . 18722) (punctuation ">" 18722 . 18723) (symbol "BOOST_PP_REPEAT" 18785 . 18800) (semantic-list "(n, BOOST_PARAMETER_right_angle, _)" 18800 . 18835)))
+          ("BOOST_PARAMETER_make_deduced_list" (spp-arg-list ("z" "n" "names") 18878 . 18891) . 
+              ((symbol "BOOST_PP_SEQ_ELEM" 18901 . 18918) (semantic-list "(0,names)" 18918 . 18927) (punctuation "<" 18927 . 18928) (symbol "BOOST_PP_CAT" 18963 . 18975) (semantic-list "(BOOST_PP_SEQ_ELEM(1,names), n)" 18975 . 19006) (punctuation "," 19006 . 19007)))
+          ("BOOST_PP_ITERATION_PARAMS_1" . ((semantic-list "(3,( \\
+        3,BOOST_PARAMETER_MAX_ARITY,<boost/parameter/aux_/overloads.hpp> \\
+    ))" 26835 . 26923)))
+          ("BOOST_PARAMETER_build_deduced_list" (spp-arg-list ("n" "make" "parameter_spec") 19051 . 19076) . 
+              ((symbol "BOOST_PP_REPEAT" 19097 . 19112) (semantic-list "(                                                                  \\
+      n, BOOST_PARAMETER_make_deduced_list, (make)(parameter_spec))" 19112 . 19248) (symbol "mpl" 19269 . 19272) (punctuation ":" 19272 . 19273) (punctuation ":" 19273 . 19274) (symbol "identity" 19274 . 19282) (punctuation "<" 19282 . 19283) (symbol "void_" 19283 . 19288) (punctuation ">" 19288 . 19289) (symbol "BOOST_PP_REPEAT" 19355 . 19370) (semantic-list "(n, BOOST_PARAMETER_right_angle, _)" 19370 . 19405)))
+          )
+)
+    (semanticdb-table "keyword.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("KEYWORD_050328_HPP" variable (:constant-flag t) nil [273 291])
+            ("boost/parameter/aux_/unwrap_cv_reference.hpp" include (:system-flag t) nil [293 348])
+            ("boost/parameter/aux_/tag.hpp" include (:system-flag t) nil [349 388])
+            ("boost/parameter/aux_/default.hpp" include (:system-flag t) nil [389 432])
+            ("boost" type
+               (:members 
+                  ( ("parameter" type
+                       (:members 
+                          ( ("keyword" type
+                               (:template 
+                                  ( ("Tag" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("=" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("aux::tag::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [940 945]))                                          
+                                        :typemodifiers ("typename")
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [865 1045])
+                                    ("|" function
+                                       (:template 
+                                          ( ("Default" type (:type "class") nil nil))                                          
+                                        :type ("aux::default_" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil)
+                                                  ("Default" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("default_" variable
+                                               (:reference 1
+                                                :type ("Default" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1122 1140]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [1051 1212])
+                                    ("||" function
+                                       (:template 
+                                          ( ("Default" type (:type "class") nil nil))                                          
+                                        :type ("aux::lazy_default" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil)
+                                                  ("Default" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("default_" variable
+                                               (:reference 1
+                                                :type ("Default" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1294 1312]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [1218 1388])
+                                    ("public" label nil (reparse-symbol classsubparts) [2259 2266])
+                                    ("instance" variable
+                                       (:typemodifiers ("static")
+                                        :type ("keyword" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2639 2674])
+                                    ("get" function
+                                       (:typemodifiers ("static")
+                                        :type ("keyword" type
+                                             (:template-specifier 
+                                                ( ("Tag" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2716 2806]))                                  )
+                                (reparse-symbol namespacesubparts) [823 2809])
+                            ("keyword::instance" variable (:type ("keyword" type
+                                 (:template-specifier 
+                                    ( ("Tag" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [2811 2879])
+                            ("BOOST_PARAMETER_KEYWORD" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4181 4204]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [452 5239]))                  
+                :type "namespace")
+                nil [434 5240]))          
+      :file "keyword.hpp"
+      :pointmax 5302
+      :fsize 5301
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("KEYWORD_050328_HPP")
+          ("BOOST_PARAMETER_KEYWORD" (spp-arg-list ("tag_namespace" "name") 4204 . 4224) . 
+              ((NAMESPACE "namespace" 4247 . 4256) (symbol "tag_namespace" 4257 . 4270) (semantic-list "{                                                               \\
+      struct name                                                   \\
+      {                                                             \\
+          static char const* keyword_name()                         \\
+          {                                                         \\
+              return #name;                                         \\
+          }                                                         \\
+      };                                                            \\
+    }" 4317 . 4878) (NAMESPACE "namespace" 4947 . 4956) (semantic-list "{                                                               \\
+       ::boost::parameter::keyword<tag_namespace::name> const& name \\
+       = ::boost::parameter::keyword<tag_namespace::name>::instance;\\
+    }" 5017 . 5228)))
+          )
+)
+    (semanticdb-table "binding.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_BINDING_DWA200558_HPP" variable (:constant-flag t) nil [243 280])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [282 313])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [314 346])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [347 376])
+            ("boost/parameter/aux_/result_of0.hpp" include (:system-flag t) nil [377 424])
+            ("boost/parameter/aux_/void.hpp" include (:system-flag t) nil [425 466])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [467 508])
+            ("boost" type
+               (:members 
+                  ( ("parameter" type
+                       (:members 
+                          ( ("binding_eti" type
+                               (:template 
+                                  ( ("Parameters" type (:type "class") nil nil)
+                                    ("Keyword" type (:type "class") nil nil)
+                                    ("Default" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1813 1823])
+                                    ("BOOST_MPL_ASSERT_NOT" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1829 1957]))                                  )
+                                (reparse-symbol namespacesubparts) [1266 2093])
+                            ("lazy_binding" type
+                               (:template 
+                                  ( ("Parameters" type (:type "class") nil nil)
+                                    ("Keyword" type (:type "class") nil nil)
+                                    ("DefaultFn" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2921 2931]))                                  )
+                                (reparse-symbol namespacesubparts) [2683 2934]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [614 2938]))                  
+                :type "namespace")
+                nil [596 2939]))          
+      :file "binding.hpp"
+      :pointmax 3019
+      :fsize 3018
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 2920 . 2921) (punctuation 2919 . 2920) (punctuation 2918 . 2919) (symbol 2910 . 2915) (punctuation 2909 . 2910) (punctuation 2908 . 2909) (symbol 2905 . 2908) (punctuation 2903 . 2904) (symbol 2894 . 2898) (punctuation 2893 . 2894) (punctuation 2892 . 2893) (punctuation 2891 . 2892) (symbol 2882 . 2891) (punctuation 2881 . 2882) (symbol 2871 . 2881) (punctuation 2870 . 2871) (punctuation 2869 . 2870) (symbol 2866 . 2869) (TYPENAME 2857 . 2865) (punctuation 2855 . 2856) (symbol 2843 . 2850) (punctuation 2841 . 2842) (symbol 2829 . 2836) (punctuation 2828 . 2829) (punctuation 2827 . 2828) (symbol 2817 . 2827) (TYPENAME 2808 . 2816) (punctuation 2800 . 2801) (symbol 2789 . 2800) (punctuation 2788 . 2789) (punctuation 2787 . 2788) (symbol 2784 . 2787) (TYPENAME 2775 . 2783) (TYPEDEF 2767 . 2774) (semantic-list 1850 . 1955) (punctuation 1812 . 1813) (punctuation 1811 . 1812) (punctuation 1810 . 1811) (symbol 1800 . 1805) (punctuation 1799 . 1800) (punctuation 1798 . 1799) (symbol 1795 . 1798) (punctuation 1794 . 1795) (symbol 1787 . 1794) (punctuation 1786 . 1787) (symbol 1779 . 1786) (punctuation 1778 . 1779) (symbol 1771 . 1778) (punctuation 1770 . 1771) (punctuation 1769 . 1770) (symbol 1759 . 1769) (TYPENAME 1750 . 1758) (punctuation 1740 . 1741) (symbol 1729 . 1740) (punctuation 1728 . 1729) (punctuation 1727 . 1728) (symbol 1724 . 1727) (TYPENAME 1715 . 1723) (TYPEDEF 1707 . 1714))
+      :lexical-table 
+        '(("BOOST_PARAMETER_BINDING_DWA200558_HPP")
+          )
+)
+    (semanticdb-table "value_type.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_VALUE_TYPE_060921_HPP" variable (:constant-flag t) nil [274 311])
+            ("boost/mpl/apply.hpp" include (:system-flag t) nil [313 344])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [345 377])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [378 407])
+            ("boost/parameter/aux_/result_of0.hpp" include (:system-flag t) nil [408 455])
+            ("boost/parameter/aux_/void.hpp" include (:system-flag t) nil [456 497])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [498 539])
+            ("boost" type
+               (:members 
+                  ( ("parameter" type
+                       (:members 
+                          ( ("value_type_eti" type
+                               (:template 
+                                  ( ("Parameters" type (:type "class") nil nil)
+                                    ("Keyword" type (:type "class") nil nil)
+                                    ("Default" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1858 1868])
+                                    ("BOOST_MPL_ASSERT_NOT" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1874 2002]))                                  )
+                                (reparse-symbol namespacesubparts) [1301 2141])
+                            ("lazy_value_type" type
+                               (:template 
+                                  ( ("Parameters" type (:type "class") nil nil)
+                                    ("Keyword" type (:type "class") nil nil)
+                                    ("DefaultFn" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2982 2992]))                                  )
+                                (reparse-symbol namespacesubparts) [2740 2995]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [645 2999]))                  
+                :type "namespace")
+                nil [627 3000]))          
+      :file "value_type.hpp"
+      :pointmax 3081
+      :fsize 3080
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 2981 . 2982) (punctuation 2980 . 2981) (punctuation 2979 . 2980) (symbol 2970 . 2976) (punctuation 2969 . 2970) (punctuation 2968 . 2969) (symbol 2965 . 2968) (punctuation 2963 . 2964) (symbol 2954 . 2958) (punctuation 2953 . 2954) (punctuation 2952 . 2953) (punctuation 2951 . 2952) (symbol 2942 . 2951) (punctuation 2941 . 2942) (symbol 2931 . 2941) (punctuation 2930 . 2931) (punctuation 2929 . 2930) (symbol 2926 . 2929) (TYPENAME 2917 . 2925) (punctuation 2915 . 2916) (symbol 2903 . 2910) (punctuation 2901 . 2902) (symbol 2889 . 2896) (punctuation 2888 . 2889) (punctuation 2887 . 2888) (symbol 2877 . 2887) (TYPENAME 2868 . 2876) (punctuation 2860 . 2861) (symbol 2849 . 2860) (punctuation 2848 . 2849) (punctuation 2847 . 2848) (symbol 2844 . 2847) (TYPENAME 2835 . 2843) (TYPEDEF 2827 . 2834) (semantic-list 1895 . 2000) (punctuation 1857 . 1858) (punctuation 1856 . 1857) (punctuation 1855 . 1856) (symbol 1844 . 1850) (punctuation 1843 . 1844) (punctuation 1842 . 1843) (symbol 1839 . 1842) (punctuation 1838 . 1839) (symbol 1831 . 1838) (punctuation 1830 . 1831) (symbol 1823 . 1830) (punctuation 1822 . 1823) (symbol 1815 . 1822) (punctuation 1814 . 1815) (punctuation 1813 . 1814) (symbol 1803 . 1813) (TYPENAME 1794 . 1802) (punctuation 1784 . 1785) (symbol 1773 . 1784) (punctuation 1772 . 1773) (punctuation 1771 . 1772) (symbol 1768 . 1771) (TYPENAME 1759 . 1767) (TYPEDEF 1751 . 1758))
+      :lexical-table 
+        '(("BOOST_PARAMETER_VALUE_TYPE_060921_HPP")
+          )
+)
+    (semanticdb-table "macros.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_MACROS_050412_HPP" variable (:constant-flag t) nil [291 324])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [326 370])
+            ("boost/preprocessor/repetition/repeat_from_to.hpp" include (:system-flag t) nil [371 430])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [431 479])
+            ("boost/preprocessor/logical/bool.hpp" include (:system-flag t) nil [480 526])
+            ("boost/preprocessor/punctuation/comma_if.hpp" include (:system-flag t) nil [527 581])
+            ("boost/preprocessor/control/expr_if.hpp" include (:system-flag t) nil [582 631])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [632 688])
+            ("boost/preprocessor/repetition/enum_binary_params.hpp" include (:system-flag t) nil [689 752])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [753 790])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [791 829])
+            ("BOOST_PARAMETER_FUN_TEMPLATE_HEAD1" variable (:constant-flag t) nil [839 873])
+            ("BOOST_PARAMETER_FUN_TEMPLATE_HEAD0" variable (:constant-flag t) nil [935 969])
+            ("BOOST_PARAMETER_MATCH_TYPE" variable (:constant-flag t) nil [1337 1363])
+            ("BOOST_PARAMETER_FUN_DECL" variable (:constant-flag t) nil [1397 1421])
+            ("BOOST_PARAMETER_FUN" variable (:constant-flag t) nil [3336 3355])
+            ("BOOST_PARAMETER_MEMFUN" variable (:constant-flag t) nil [4175 4197]))          
+      :file "macros.hpp"
+      :pointmax 4793
+      :fsize 4792
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_MEMFUN" (spp-arg-list ("ret" "name" "lo" "hi" "parameters") 4197 . 4228) . 
+              ((symbol "BOOST_PP_REPEAT_FROM_TO" 4343 . 4366) (semantic-list "(                                                        \\
+        lo, BOOST_PP_INC(hi), BOOST_PARAMETER_FUN_DECL, (ret, name, parameters))" 4366 . 4505) (TEMPLATE "template" 4601 . 4609) (punctuation "<" 4609 . 4610) (CLASS "class" 4610 . 4615) (symbol "Params" 4616 . 4622) (punctuation ">" 4622 . 4623) (symbol "ret" 4687 . 4690) (symbol "BOOST_PP_CAT" 4691 . 4703) (semantic-list "(name, _with_named_params)" 4703 . 4729) (semantic-list "(Params const& p)" 4729 . 4746)))
+          ("BOOST_PARAMETER_FUN_TEMPLATE_HEAD0" (spp-arg-list ("n") 969 . 972))
+          ("BOOST_PARAMETER_MACROS_050412_HPP")
+          ("BOOST_PARAMETER_FUN_TEMPLATE_HEAD1" (spp-arg-list ("n") 873 . 876) . 
+              ((TEMPLATE "template" 883 . 891) (punctuation "<" 891 . 892) (symbol "BOOST_PP_ENUM_PARAMS" 892 . 912) (semantic-list "(n, class T)" 912 . 924) (punctuation ">" 924 . 925)))
+          ("BOOST_PARAMETER_FUN_DECL" (spp-arg-list ("z" "n" "params") 1421 . 1435) . 
+              ((symbol "BOOST_PP_CAT" 1565 . 1577) (semantic-list "(BOOST_PARAMETER_FUN_TEMPLATE_HEAD, BOOST_PP_BOOL(n))" 1577 . 1630) (semantic-list "(n)" 1630 . 1633) (symbol "BOOST_PP_TUPLE_ELEM" 1737 . 1756) (semantic-list "(3, 0, params)" 1756 . 1770) (symbol "BOOST_PP_TUPLE_ELEM" 1827 . 1846) (semantic-list "(3, 1, params)" 1846 . 1860) (semantic-list "(                                          \\
+            BOOST_PP_ENUM_BINARY_PARAMS(n, T, const& p)                             \\
+            BOOST_PP_COMMA_IF(n)                                                    \\
+            BOOST_PARAMETER_MATCH_TYPE(n,BOOST_PP_TUPLE_ELEM(3, 2, params))         \\
+            kw = BOOST_PP_TUPLE_ELEM(3, 2, params)()                                \\
+        )" 1860 . 2258) (semantic-list "{                                                                               \\
+        return BOOST_PP_CAT(BOOST_PP_TUPLE_ELEM(3, 1, params), _with_named_params)( \\
+            kw(BOOST_PP_ENUM_PARAMS(n, p))                                          \\
+        );                                                                          \\
+    }" 2339 . 2684)))
+          ("BOOST_PARAMETER_FUN" (spp-arg-list ("ret" "name" "lo" "hi" "parameters") 3355 . 3386) . 
+              ((TEMPLATE "template" 3504 . 3512) (punctuation "<" 3512 . 3513) (CLASS "class" 3513 . 3518) (symbol "Params" 3519 . 3525) (punctuation ">" 3525 . 3526) (symbol "ret" 3590 . 3593) (symbol "BOOST_PP_CAT" 3594 . 3606) (semantic-list "(name, _with_named_params)" 3606 . 3632) (semantic-list "(Params const& p)" 3632 . 3649) (punctuation ";" 3649 . 3650) (symbol "BOOST_PP_REPEAT_FROM_TO" 3762 . 3785) (semantic-list "(                                                        \\
+        lo, BOOST_PP_INC(hi), BOOST_PARAMETER_FUN_DECL, (ret, name, parameters))" 3785 . 3924) (TEMPLATE "template" 4020 . 4028) (punctuation "<" 4028 . 4029) (CLASS "class" 4029 . 4034) (symbol "Params" 4035 . 4041) (punctuation ">" 4041 . 4042) (symbol "ret" 4106 . 4109) (symbol "BOOST_PP_CAT" 4110 . 4122) (semantic-list "(name, _with_named_params)" 4122 . 4148) (semantic-list "(Params const& p)" 4148 . 4165)))
+          ("BOOST_PARAMETER_MATCH_TYPE" (spp-arg-list ("n" "param") 1363 . 1373) . ((symbol "param" 1374 . 1379)))
+          )
+)
+    (semanticdb-table "match.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_MATCH_DWA2005714_HPP" variable (:constant-flag t) nil [242 278])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [280 319])
+            ("boost/preprocessor/seq/enum.hpp" include (:system-flag t) nil [320 363])
+            ("BOOST_PARAMETER_SEQ_ENUM" variable (:constant-flag t) nil [696 720])
+            ("BOOST_PARAMETER_MATCH_DEFAULTS" variable (:constant-flag t) nil [1566 1596])
+            ("BOOST_PARAMETER_MATCH" variable (:constant-flag t) nil [1772 1793]))          
+      :file "match.hpp"
+      :pointmax 2111
+      :fsize 2110
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_MATCH_DWA2005714_HPP")
+          ("BOOST_PARAMETER_MATCH_DEFAULTS" (spp-arg-list ("ArgTypes") 1596 . 1606))
+          ("BOOST_PARAMETER_MATCH" (spp-arg-list ("ParameterSpec" "ArgTypes" "name") 1793 . 1824) . 
+              ((TYPENAME "typename" 1833 . 1841) (symbol "ParameterSpec" 1842 . 1855) (punctuation ":" 1856 . 1857) (punctuation ":" 1857 . 1858) (symbol "match" 1858 . 1863) (punctuation "<" 1863 . 1864) (symbol "BOOST_PARAMETER_SEQ_ENUM" 1903 . 1927) (semantic-list "(ArgTypes)" 1927 . 1937) (symbol "BOOST_PARAMETER_MATCH_DEFAULTS" 1969 . 1999) (semantic-list "(ArgTypes)" 1999 . 2009) (punctuation ">" 2031 . 2032) (punctuation ":" 2032 . 2033) (punctuation ":" 2033 . 2034) (symbol "type" 2034 . 2038) (symbol "name" 2039 . 2043) (punctuation "=" 2044 . 2045) (symbol "ParameterSpec" 2046 . 2059) (semantic-list "()" 2060 . 2062)))
+          ("BOOST_PARAMETER_SEQ_ENUM" (spp-arg-list ("seq") 720 . 725) . ((symbol "BOOST_PP_SEQ_ENUM" 726 . 743) (semantic-list "(seq)" 743 . 748)))
+          )
+)
+    (semanticdb-table "name.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_NAME_060806_HPP" variable (:constant-flag t) nil [268 299])
+            ("boost/parameter/keyword.hpp" include (:system-flag t) nil [301 340])
+            ("boost/parameter/value_type.hpp" include (:system-flag t) nil [341 383])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [384 423])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [424 462])
+            ("boost/preprocessor/stringize.hpp" include (:system-flag t) nil [463 507])
+            ("boost/preprocessor/control/iif.hpp" include (:system-flag t) nil [508 554])
+            ("boost/preprocessor/tuple/eat.hpp" include (:system-flag t) nil [555 599])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [600 645])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [646 684])
+            ("boost/preprocessor/detail/is_binary.hpp" include (:system-flag t) nil [1938 1990])
+            ("BOOST_PARAMETER_IS_BINARY" variable (:constant-flag t) nil [2001 2026])
+            ("BOOST_PARAMETER_NAME_OBJECT" variable (:constant-flag t) nil [2313 2340])
+            ("BOOST_PARAMETER_BASIC_NAME" variable (:constant-flag t) nil [2677 2703])
+            ("BOOST_PARAMETER_COMPLEX_NAME_TUPLE1" variable (:constant-flag t) nil [4066 4101])
+            ("BOOST_PARAMETER_COMPLEX_NAME_TUPLE" variable (:constant-flag t) nil [4161 4195])
+            ("BOOST_PARAMETER_COMPLEX_NAME_TAG" variable (:constant-flag t) nil [4306 4338])
+            ("BOOST_PARAMETER_COMPLEX_NAME_NAMESPACE" variable (:constant-flag t) nil [4449 4487])
+            ("BOOST_PARAMETER_COMPLEX_NAME" variable (:constant-flag t) nil [4592 4620])
+            ("BOOST_PARAMETER_SIMPLE_NAME" variable (:constant-flag t) nil [5018 5045])
+            ("BOOST_PARAMETER_NAME" variable (:constant-flag t) nil [5154 5174])
+            ("BOOST_PARAMETER_TEMPLATE_KEYWORD" variable (:constant-flag t) nil [5581 5613]))          
+      :file "name.hpp"
+      :pointmax 6251
+      :fsize 6250
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_COMPLEX_NAME_TAG" (spp-arg-list ("name") 4338 . 4344) . ((symbol "BOOST_PP_TUPLE_ELEM" 4371 . 4390) (semantic-list "(2, 0, BOOST_PARAMETER_COMPLEX_NAME_TUPLE(name))" 4390 . 4438)))
+          ("BOOST_PARAMETER_BASIC_NAME" (spp-arg-list ("tag_namespace" "tag" "name") 2703 . 2729) . 
+              ((NAMESPACE "namespace" 2742 . 2751) (symbol "tag_namespace" 2752 . 2765) (semantic-list "{                                                               \\
+      struct tag                                                    \\
+      {                                                             \\
+          static char const* keyword_name()                         \\
+          {                                                         \\
+              return BOOST_PP_STRINGIZE(tag);                       \\
+          }                                                         \\
+                                                                    \\
+          typedef boost::parameter::value_type<                     \\
+              boost::mpl::_2, tag, boost::parameter::void_          \\
+          > _;                                                      \\
+                                                                    \\
+          typedef boost::parameter::value_type<                     \\
+              boost::mpl::_2, tag, boost::parameter::void_          \\
+          > _1;                                                     \\
+      };                                                            \\
+    }" 2812 . 3933) (symbol "BOOST_PARAMETER_NAME_OBJECT" 4002 . 4029) (semantic-list "(tag_namespace::tag, name)" 4029 . 4055)))
+          ("BOOST_PARAMETER_NAME_060806_HPP")
+          ("BOOST_PARAMETER_IS_BINARY" (spp-arg-list ("x") 2026 . 2029) . ((symbol "BOOST_PP_IS_BINARY" 2030 . 2048) (semantic-list "(x)" 2048 . 2051)))
+          ("BOOST_PARAMETER_NAME_OBJECT" (spp-arg-list ("tag" "name") 2340 . 2351) . ((NAMESPACE "namespace" 2377 . 2386) (semantic-list "{                                                               \\
+       ::boost::parameter::keyword<tag> const& name                 \\
+       = ::boost::parameter::keyword<tag>::instance;                \\
+    }" 2447 . 2658)))
+          ("BOOST_PARAMETER_COMPLEX_NAME_TUPLE1" (spp-arg-list ("tag" "namespace") 4101 . 4116) . 
+              ((semantic-list "(tag, namespace)" 4131 . 4147) (punctuation "," 4147 . 4148) (punctuation "~" 4149 . 4150)))
+          ("BOOST_PARAMETER_NAME" (spp-arg-list ("name") 5174 . 5180) . 
+              ((symbol "BOOST_PP_IIF" 5219 . 5231) (semantic-list "(                                                   \\
+        BOOST_PARAMETER_IS_BINARY(name)                             \\
+      , BOOST_PARAMETER_COMPLEX_NAME                                \\
+      , BOOST_PARAMETER_SIMPLE_NAME                                 \\
+    )" 5231 . 5500) (semantic-list "(name)" 5500 . 5506)))
+          ("BOOST_PARAMETER_COMPLEX_NAME" (spp-arg-list ("name") 4620 . 4626) . ((symbol "BOOST_PARAMETER_BASIC_NAME" 4657 . 4683) (semantic-list "(                                     \\
+        BOOST_PARAMETER_COMPLEX_NAME_NAMESPACE(name)                \\
+      , BOOST_PP_TUPLE_EAT(2) name                                  \\
+      , BOOST_PARAMETER_COMPLEX_NAME_TAG(name)                      \\
+    )" 4683 . 4938)))
+          ("BOOST_PARAMETER_TEMPLATE_KEYWORD" (spp-arg-list ("name") 5613 . 5619) . 
+              ((NAMESPACE "namespace" 5646 . 5655) (symbol "tag" 5656 . 5659) (semantic-list "{                                                               \\
+      struct name;                                                  \\
+    }" 5716 . 5857) (TEMPLATE "template" 5926 . 5934) (punctuation "<" 5935 . 5936) (CLASS "class" 5936 . 5941) (symbol "T" 5942 . 5943) (punctuation ">" 5943 . 5944) (STRUCT "struct" 5996 . 6002) (symbol "name" 6003 . 6007) (punctuation ":" 6068 . 6069) (symbol "boost" 6070 . 6075) (punctuation ":" 6075 . 6076) (punctuation ":" 6076 . 6077) (symbol "parameter" 6077 . 6086) (punctuation ":" 6086 . 6087) (punctuation ":" 6087 . 6088) (symbol "template_keyword" 6088 . 6104) (punctuation "<" 6104 . 6105) (symbol "tag" 6105 . 6108) (punctuation ":" 6108 . 6109) (punctuation ":" 6109 . 6110) (symbol "name" 6110 . 6114) (punctuation "," 6114 . 6115) (symbol "T" 6116 . 6117) (punctuation ">" 6117 . 6118) (semantic-list "{}" 6136 . 6138) (punctuation ";" 6138 . 6139)))
+          ("BOOST_PARAMETER_COMPLEX_NAME_TUPLE" (spp-arg-list ("name") 4195 . 4201) . ((symbol "BOOST_PP_TUPLE_ELEM" 4226 . 4245) (semantic-list "(2, 0, (BOOST_PARAMETER_COMPLEX_NAME_TUPLE1 name))" 4245 . 4295)))
+          ("BOOST_PARAMETER_SIMPLE_NAME" (spp-arg-list ("name") 5045 . 5051) . ((symbol "BOOST_PARAMETER_BASIC_NAME" 5083 . 5109) (semantic-list "(tag, name, BOOST_PP_CAT(_, name))" 5109 . 5143)))
+          ("BOOST_PARAMETER_COMPLEX_NAME_NAMESPACE" (spp-arg-list ("name") 4487 . 4493) . ((symbol "BOOST_PP_TUPLE_ELEM" 4514 . 4533) (semantic-list "(2, 1, BOOST_PARAMETER_COMPLEX_NAME_TUPLE(name))" 4533 . 4581)))
+          )
+)
+    (semanticdb-table "preprocessor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_PREPROCESSOR_060206_HPP" variable (:constant-flag t) nil [276 315])
+            ("boost/parameter/parameters.hpp" include (:system-flag t) nil [317 359])
+            ("boost/parameter/binding.hpp" include (:system-flag t) nil [360 399])
+            ("boost/parameter/match.hpp" include (:system-flag t) nil [400 437])
+            ("boost/parameter/aux_/parenthesized_type.hpp" include (:system-flag t) nil [439 494])
+            ("boost/parameter/aux_/cast.hpp" include (:system-flag t) nil [495 536])
+            ("boost/parameter/aux_/preprocessor/flatten.hpp" include (:system-flag t) nil [537 594])
+            ("boost/preprocessor/repetition/repeat_from_to.hpp" include (:system-flag t) nil [596 656])
+            ("boost/preprocessor/control/if.hpp" include (:system-flag t) nil [657 702])
+            ("boost/preprocessor/control/expr_if.hpp" include (:system-flag t) nil [703 753])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [754 811])
+            ("boost/preprocessor/repetition/enum_binary_params.hpp" include (:system-flag t) nil [812 876])
+            ("boost/preprocessor/repetition/enum_trailing.hpp" include (:system-flag t) nil [877 936])
+            ("boost/preprocessor/seq/first_n.hpp" include (:system-flag t) nil [937 983])
+            ("boost/preprocessor/seq/for_each_product.hpp" include (:system-flag t) nil [984 1039])
+            ("boost/preprocessor/seq/for_each_i.hpp" include (:system-flag t) nil [1040 1089])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [1091 1136])
+            ("boost/preprocessor/seq/fold_left.hpp" include (:system-flag t) nil [1138 1186])
+            ("boost/preprocessor/seq/size.hpp" include (:system-flag t) nil [1187 1230])
+            ("boost/preprocessor/seq/enum.hpp" include (:system-flag t) nil [1231 1274])
+            ("boost/preprocessor/detail/is_nullary.hpp" include (:system-flag t) nil [1276 1328])
+            ("boost/mpl/always.hpp" include (:system-flag t) nil [1330 1362])
+            ("boost/mpl/apply_wrap.hpp" include (:system-flag t) nil [1363 1399])
+            ("boost" type
+               (:members 
+                  ( ("parameter" type
+                       (:members 
+                          ( ("aux" type
+                               (:members 
+                                  ( ("argument_pack" type
+                                       (:members 
+                                          ( ("result" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4366 4378])
+                                            ("type" type
+                                               (:typedef ("mpl::first::type" type (:type "class") nil nil)
+                                                :superclasses "mpl::first::type"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4383 4430]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4059 4433])
+                                    ("as_lvalue" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("value" variable
+                                               (:reference 1
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4572 4581])
+                                            ("" variable (:type "long") (reparse-symbol arg-sub-list) [4582 4587]))                                          )
+                                        (reparse-symbol namespacesubparts) [4540 4609])
+                                    ("as_lvalue" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4649 4664])
+                                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [4665 4669]))                                          )
+                                        (reparse-symbol namespacesubparts) [4611 4691]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1521 5822]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1499 5823]))                  
+                :type "namespace")
+                nil [1481 5824])
+            ("BOOST_PARAMETER_IS_NULLARY" variable (:constant-flag t) nil [6217 6243])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION_CHECK_STATIC_static" variable (:constant-flag t) nil [6288 6339])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION_IS_STATIC" variable (:constant-flag t) nil [6352 6393])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION_STRIP_STATIC_static" variable (:constant-flag t) nil [6554 6605])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION_STRIP_STATIC" variable (:constant-flag t) nil [6616 6660])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION_STATIC" variable (:constant-flag t) nil [7372 7410])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION_NAME" variable (:constant-flag t) nil [7534 7570])
+            ("BOOST_PARAMETER_ARITY_RANGE_M_optional" variable (:constant-flag t) nil [7811 7849])
+            ("BOOST_PARAMETER_ARITY_RANGE_M_deduced_optional" variable (:constant-flag t) nil [7872 7918])
+            ("BOOST_PARAMETER_ARITY_RANGE_M_required" variable (:constant-flag t) nil [7941 7979])
+            ("BOOST_PARAMETER_ARITY_RANGE_M_deduced_required" variable (:constant-flag t) nil [8016 8062])
+            ("BOOST_PARAMETER_ARITY_RANGE_M" variable (:constant-flag t) nil [8100 8129])
+            ("BOOST_PARAMETER_ARITY_RANGE" variable (:constant-flag t) nil [8280 8307])
+            ("BOOST_PARAMETER_FN_ARG_QUALIFIER" variable (:constant-flag t) nil [8515 8547])
+            ("BOOST_PARAMETER_FN_ARG_NAME" variable (:constant-flag t) nil [8599 8626])
+            ("BOOST_PARAMETER_FN_ARG_PRED" variable (:constant-flag t) nil [8678 8705])
+            ("BOOST_PARAMETER_FN_ARG_DEFAULT" variable (:constant-flag t) nil [8757 8787])
+            ("BOOST_PARAMETETER_FUNCTION_EAT_KEYWORD_QUALIFIER_out" variable (:constant-flag t) nil [8839 8891])
+            ("BOOST_PARAMETETER_FUNCTION_EAT_KEYWORD_QUALIFIER_in_out" variable (:constant-flag t) nil [8904 8959])
+            ("BOOST_PARAMETER_FUNCTION_IS_KEYWORD_QUALIFIER" variable (:constant-flag t) nil [9026 9071])
+            ("BOOST_PARAMETETER_FUNCTION_GET_KEYWORD_QUALIFIER_out" variable (:constant-flag t) nil [9202 9254])
+            ("BOOST_PARAMETETER_FUNCTION_GET_KEYWORD_QUALIFIER_in_out" variable (:constant-flag t) nil [9269 9324])
+            ("BOOST_PARAMETER_FUNCTION_KEYWORD_GET" variable (:constant-flag t) nil [9339 9375])
+            ("BOOST_PARAMETER_FUNCTION_KEYWORD" variable (:constant-flag t) nil [9606 9638])
+            ("BOOST_PARAMETER_FN_ARG_KEYWORD" variable (:constant-flag t) nil [9827 9857])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_TEMPLATE_Z" variable (:constant-flag t) nil [9993 10041])
+            ("BOOST_PARAMETER_FUNCTION_FWD_MATCH_Z" variable (:constant-flag t) nil [10490 10526])
+            ("BOOST_PARAMETER_FUNCTION_PARAMETERS_NAME" variable (:constant-flag t) nil [10574 10614])
+            ("BOOST_PARAMETER_FUNCTION_RESULT_NAME" variable (:constant-flag t) nil [10850 10886])
+            ("BOOST_PARAMETER_IMPL" variable (:constant-flag t) nil [11284 11304])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION00" variable (:constant-flag t) nil [11401 11440])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION0" variable (:constant-flag t) nil [13053 13091])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_ARITY_0" variable (:constant-flag t) nil [13299 13344])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_ARITY_N" variable (:constant-flag t) nil [13520 13565])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION" variable (:constant-flag t) nil [13931 13968])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS0" variable (:constant-flag t) nil [14159 14198])
+            ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS" variable (:constant-flag t) nil [14503 14541])
+            ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_optional" variable (:constant-flag t) nil [14795 14849])
+            ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_required" variable (:constant-flag t) nil [14885 14939])
+            ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_deduced_optional" variable (:constant-flag t) nil [14975 15037])
+            ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_deduced_required" variable (:constant-flag t) nil [15100 15162])
+            ("BOOST_PARAMETER_FUNCTION_PARAMETERS" variable (:constant-flag t) nil [17113 17148])
+            ("BOOST_PARAMETER_FUNCTION_RESULT_ARG" variable (:constant-flag t) nil [18336 18371])
+            ("BOOST_PARAMETER_FUNCTION_RESULT_" variable (:constant-flag t) nil [18459 18491])
+            ("BOOST_PARAMETER_FUNCTION_RESULT" variable (:constant-flag t) nil [19301 19332])
+            ("BOOST_PARAMETER_FUNCTION_IMPL_HEAD" variable (:constant-flag t) nil [19467 19501])
+            ("BOOST_PARAMETER_FUNCTION_IMPL_FWD" variable (:constant-flag t) nil [19773 19806])
+            ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_required" variable (:constant-flag t) nil [19876 19919])
+            ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_deduced_required" variable (:constant-flag t) nil [20173 20224])
+            ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_optional" variable (:constant-flag t) nil [20309 20352])
+            ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_deduced_optional" variable (:constant-flag t) nil [20606 20657])
+            ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG" variable (:constant-flag t) nil [20742 20776])
+            ("BOOST_PARAMETER_FUNCTION_SPLIT_ARGS" variable (:constant-flag t) nil [21007 21042])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG_NAME" variable (:constant-flag t) nil [21208 21258])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_TEMPLATE_ARG" variable (:constant-flag t) nil [21404 21458])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG" variable (:constant-flag t) nil [21608 21653])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_PARAMETER" variable (:constant-flag t) nil [21834 21885])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_NAME" variable (:constant-flag t) nil [21998 22035])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS" variable (:constant-flag t) nil [22373 22415])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_DEFAULT" variable (:constant-flag t) nil [22826 22871])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_GET_ARG" variable (:constant-flag t) nil [23057 23106])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_BODY" variable (:constant-flag t) nil [23353 23399])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_ACTUAL_DEFAULT" variable (:constant-flag t) nil [24102 24154])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_DEFAULT_BODY" variable (:constant-flag t) nil [24342 24392])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION0" variable (:constant-flag t) nil [26168 26210])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION" variable (:constant-flag t) nil [27251 27292])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_GET_ARG" variable (:constant-flag t) nil [27934 27974])
+            ("BOOST_PARAMETER_FUNCTION_INITIAL_DISPATCH_FUNCTION" variable (:constant-flag t) nil [28397 28447])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_LAYER_AUX" variable (:constant-flag t) nil [29194 29236])
+            ("BOOST_PARAMETER_FUNCTION_DEFAULT_LAYER" variable (:constant-flag t) nil [30371 30409])
+            ("BOOST_PARAMETER_FUNCTION_HEAD" variable (:constant-flag t) nil [30685 30714])
+            ("BOOST_PARAMETER_FUNCTION_AUX" variable (:constant-flag t) nil [31122 31150])
+            ("BOOST_PARAMETER_FUNCTION" variable (:constant-flag t) nil [31868 31892])
+            ("BOOST_PARAMETER_BASIC_FUNCTION_AUX" variable (:constant-flag t) nil [32294 32328])
+            ("BOOST_PARAMETER_BASIC_FUNCTION" variable (:constant-flag t) nil [33126 33156])
+            ("BOOST_PARAMETER_BASIC_MEMBER_FUNCTION_AUX" variable (:constant-flag t) nil [33564 33605])
+            ("BOOST_PARAMETER_BASIC_MEMBER_FUNCTION" variable (:constant-flag t) nil [34386 34423])
+            ("BOOST_PARAMETER_BASIC_CONST_MEMBER_FUNCTION" variable (:constant-flag t) nil [34630 34673])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION_AUX" variable (:constant-flag t) nil [34882 34917])
+            ("BOOST_PARAMETER_MEMBER_FUNCTION" variable (:constant-flag t) nil [35600 35631])
+            ("BOOST_PARAMETER_CONST_MEMBER_FUNCTION" variable (:constant-flag t) nil [35995 36032])
+            ("BOOST_PARAMETER_FUNCTION_ARGUMENT" variable (:constant-flag t) nil [36447 36480])
+            ("BOOST_PARAMETER_PARENTHESIZED_BASE" variable (:constant-flag t) nil [36834 36868])
+            ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR00" variable (:constant-flag t) nil [36929 36971])
+            ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR0" variable (:constant-flag t) nil [37938 37979])
+            ("BOOST_PARAMETER_FUNCTION_FWD_PRODUCT" variable (:constant-flag t) nil [38190 38226])
+            ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR_ARITY_0" variable (:constant-flag t) nil [38270 38318])
+            ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR_ARITY_N" variable (:constant-flag t) nil [38497 38545])
+            ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR" variable (:constant-flag t) nil [38914 38954])
+            ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTORS0" variable (:constant-flag t) nil [39151 39193])
+            ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTORS" variable (:constant-flag t) nil [39477 39518])
+            ("BOOST_PARAMETER_CONSTRUCTOR_AUX" variable (:constant-flag t) nil [39701 39732])
+            ("BOOST_PARAMETER_CONSTRUCTOR" variable (:constant-flag t) nil [40067 40094])
+            ("BOOST_PARAMETER_FUNCTION_FWD_COMBINATION" variable (:constant-flag t) nil [40325 40365])
+            ("BOOST_PARAMETER_FUNCTION_FWD_COMBINATION" variable (:constant-flag t) nil [41164 41204])
+            ("BOOST_PARAMETER_FUNCTION_FWD_COMBINATIONS" variable (:constant-flag t) nil [41468 41509]))          
+      :file "preprocessor.hpp"
+      :pointmax 41649
+      :fsize 41648
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 4365 . 4366) (punctuation 4364 . 4365) (punctuation 4363 . 4364) (symbol 4352 . 4358) (punctuation 4351 . 4352) (punctuation 4350 . 4351) (symbol 4347 . 4350) (punctuation 4345 . 4346) (symbol 4323 . 4338) (punctuation 4321 . 4322) (symbol 4302 . 4314) (punctuation 4301 . 4302) (punctuation 4300 . 4301) (symbol 4290 . 4300) (TYPENAME 4281 . 4289) (punctuation 4279 . 4280) (symbol 4268 . 4272) (punctuation 4267 . 4268) (punctuation 4266 . 4267) (semantic-list 4165 . 4266) (symbol 4135 . 4165) (TYPENAME 4126 . 4134) (punctuation 4116 . 4117) (symbol 4103 . 4116) (TYPENAME 4094 . 4102) (TYPEDEF 4086 . 4093) (punctuation 4057 . 4058) (semantic-list 3960 . 4056) (symbol 3933 . 3960) (punctuation 4006 . 4007) (punctuation 3931 . 3932) (symbol 3918 . 3928) (CLASS 3912 . 3917) (punctuation 3906 . 3907) (TEMPLATE 3897 . 3905))
+      :lexical-table 
+        '(("BOOST_PARAMETETER_FUNCTION_GET_KEYWORD_QUALIFIER_out" (spp-arg-list ("x") 9254 . 9257) . ((symbol "x" 9258 . 9259)))
+          ("BOOST_PARAMETER_FUNCTION_PARAMETERS_NAME" (spp-arg-list ("base") 10614 . 10620) . ((symbol "BOOST_PP_CAT" 10627 . 10639) (semantic-list "( \\
+        boost_param_parameters_ \\
+      , BOOST_PP_CAT(__LINE__, BOOST_PARAMETER_MEMBER_FUNCTION_NAME(base)) \\
+    )" 10639 . 10759)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS" (spp-arg-list ("result" "name" "args" "const_" "combinations") 14541 . 14581) . ((symbol "BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS0" 14588 . 14627) (semantic-list "( \\
+        result, name, args, const_, combinations, BOOST_PARAMETER_ARITY_RANGE(args) \\
+    )" 14627 . 14722)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_DEFAULT_BODY" (spp-arg-list ("name" "n" "split_args" "tag_ns" "const_") 24392 . 24429) . 
+              ((TEMPLATE "template" 24436 . 24444) (punctuation "<" 24445 . 24446) (CLASS "class" 24457 . 24462) (symbol "ResultType" 24463 . 24473) (punctuation "," 24482 . 24483) (CLASS "class" 24484 . 24489) (symbol "Args" 24490 . 24494) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS" 24505 . 24547) (semantic-list "( \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_TEMPLATE_ARG \\
+          , BOOST_PP_INC(n) \\
+          , split_args \\
+        )" 24547 . 24684) (punctuation ">" 24691 . 24692) (symbol "BOOST_PARAMETER_MEMBER_FUNCTION_STATIC" 24699 . 24737) (semantic-list "(name)" 24737 . 24743) (symbol "ResultType" 24750 . 24760) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_NAME" 24761 . 24798) (semantic-list "(name)" 24798 . 24804) (semantic-list "( \\
+        ResultType(*)() \\
+      , Args const& args \\
+      , long \\
+        BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS( \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG \\
+          , BOOST_PP_INC(n) \\
+          , split_args \\
+        ) \\
+      , boost::parameter::aux::use_default_tag \\
+    )" 24804 . 25111) (symbol "BOOST_PP_EXPR_IF" 25112 . 25128) (semantic-list "(const_, const)" 25128 . 25143) (semantic-list "{ \\
+        return BOOST_PARAMETER_FUNCTION_DEFAULT_NAME(name)( \\
+            (ResultType(*)())0 \\
+          , args \\
+          , 0L \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS( \\
+                BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_PARAMETER \\
+              , BOOST_PP_INC(n) \\
+              , split_args \\
+            ) \\
+          , BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_ACTUAL_DEFAULT( \\
+                BOOST_PP_SEQ_ELEM( \\
+                    BOOST_PP_SUB(BOOST_PP_TUPLE_ELEM(4,2,split_args), BOOST_PP_INC(n)) \\
+                  , BOOST_PP_TUPLE_ELEM(4,3,split_args) \\
+                ) \\
+            ) \\
+        ); \\
+    }" 25150 . 25798)))
+          ("BOOST_PARAMETER_FUNCTION_INITIAL_DISPATCH_FUNCTION" (spp-arg-list ("name" "split_args" "const_" "tag_ns") 28447 . 28481) . 
+              ((TEMPLATE "template" 28488 . 28496) (punctuation "<" 28497 . 28498) (CLASS "class" 28498 . 28503) (symbol "Args" 28504 . 28508) (punctuation ">" 28508 . 28509) (TYPENAME "typename" 28516 . 28524) (symbol "BOOST_PARAMETER_FUNCTION_RESULT_NAME" 28525 . 28561) (semantic-list "(name)" 28561 . 28567) (punctuation "<" 28567 . 28568) (symbol "Args" 28568 . 28572) (punctuation ">" 28572 . 28573) (punctuation ":" 28573 . 28574) (punctuation ":" 28574 . 28575) (symbol "type" 28575 . 28579) (symbol "BOOST_PARAMETER_MEMBER_FUNCTION_STATIC" 28586 . 28624) (semantic-list "(name)" 28624 . 28630) (symbol "BOOST_PARAMETER_IMPL" 28637 . 28657) (semantic-list "(name)" 28657 . 28663) (semantic-list "(Args const& args)" 28663 . 28681) (symbol "BOOST_PP_EXPR_IF" 28682 . 28698) (semantic-list "(const_, const)" 28698 . 28713) (semantic-list "{ \\
+        return BOOST_PARAMETER_FUNCTION_DEFAULT_NAME(name)( \\
+            (typename BOOST_PARAMETER_FUNCTION_RESULT_NAME(name)<Args>::type(*)())0 \\
+          , args \\
+          , 0L \\
+ \\
+            BOOST_PP_SEQ_FOR_EACH( \\
+                BOOST_PARAMETER_FUNCTION_DEFAULT_GET_ARG \\
+              , tag_ns \\
+              , BOOST_PP_TUPLE_ELEM(4,1,split_args) \\
+            ) \\
+ \\
+        ); \\
+    }" 28720 . 29123)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_LAYER" (spp-arg-list ("name" "args" "skip_fwd_decl" "const_" "tag_ns") 30409 . 30452) . ((symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_LAYER_AUX" 30459 . 30501) (semantic-list "( \\
+        name, BOOST_PARAMETER_FUNCTION_SPLIT_ARGS(args), skip_fwd_decl, const_, tag_ns \\
+    )" 30501 . 30599)))
+          ("BOOST_PARAMETER_FUNCTION" (spp-arg-list ("result" "name" "tag_namespace" "args") 31892 . 31927) . ((symbol "BOOST_PARAMETER_FUNCTION_AUX" 31937 . 31965) (semantic-list "(                                       \\
+        result, name, tag_namespace                                      \\
+      , BOOST_PARAMETER_FLATTEN(3, 2, 3, args)                           \\
+    )" 31965 . 32162)))
+          ("BOOST_PARAMETER_MEMBER_FUNCTION_IS_STATIC" (spp-arg-list ("name") 6393 . 6399) . ((symbol "BOOST_PARAMETER_IS_NULLARY" 6406 . 6432) (semantic-list "( \\
+        BOOST_PP_CAT(BOOST_PARAMETER_MEMBER_FUNCTION_CHECK_STATIC_,name) \\
+    )" 6432 . 6516)))
+          ("BOOST_PARAMETER_MEMBER_FUNCTION_STATIC" (spp-arg-list ("name") 7410 . 7416) . ((symbol "BOOST_PP_EXPR_IF" 7423 . 7439) (semantic-list "( \\
+        BOOST_PARAMETER_MEMBER_FUNCTION_IS_STATIC(name) \\
+      , static \\
+    )" 7439 . 7523)))
+          ("BOOST_PARAMETER_FUNCTION_RESULT" (spp-arg-list ("result" "name" "args") 19332 . 19352) . ((symbol "BOOST_PARAMETER_FUNCTION_RESULT_" 19360 . 19392) (semantic-list "(result, name, args)" 19392 . 19412)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR0" (spp-arg-list ("r" "data" "elem") 37979 . 37994) . ((symbol "BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR00" 38001 . 38043) (semantic-list "( \\
+        BOOST_PP_TUPLE_ELEM(6,0,data) \\
+      , BOOST_PP_TUPLE_ELEM(6,1,data) \\
+      , r \\
+      , data \\
+      , elem \\
+    )" 38043 . 38174)))
+          ("BOOST_PARAMETER_MEMBER_FUNCTION_STRIP_STATIC_static")
+          ("BOOST_PARAMETER_FUNCTION_IS_KEYWORD_QUALIFIER" (spp-arg-list ("x") 9071 . 9074) . ((symbol "BOOST_PP_IS_EMPTY" 9081 . 9098) (semantic-list "( \\
+        BOOST_PP_CAT(BOOST_PARAMETETER_FUNCTION_EAT_KEYWORD_QUALIFIER_, x) \\
+    )" 9098 . 9184)))
+          ("BOOST_PARAMETER_FUNCTION_IMPL_FWD" (spp-arg-list ("name") 19806 . 19812) . 
+              ((symbol "BOOST_PARAMETER_FUNCTION_IMPL_HEAD" 19819 . 19853) (semantic-list "(name)" 19853 . 19859) (punctuation ";" 19859 . 19860)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_PARAMETER" (spp-arg-list ("r" "_" "arg") 21885 . 21896) . 
+              ((punctuation "," 21903 . 21904) (symbol "BOOST_PARAMETER_FN_ARG_KEYWORD" 21905 . 21935) (semantic-list "(arg)" 21935 . 21940)))
+          ("BOOST_PARAMETER_BASIC_FUNCTION" (spp-arg-list ("result" "name" "tag_namespace" "args") 33156 . 33191) . ((symbol "BOOST_PARAMETER_BASIC_FUNCTION_AUX" 33199 . 33233) (semantic-list "(                                     \\
+        result, name, tag_namespace                                     \\
+      , BOOST_PARAMETER_FLATTEN(2, 2, 3, args)                          \\
+    )" 33233 . 33426)))
+          ("BOOST_PARAMETER_ARITY_RANGE_M_optional" (spp-arg-list ("state") 7849 . 7856) . ((symbol "state" 7857 . 7862)))
+          ("BOOST_PARAMETER_FN_ARG_KEYWORD" (spp-arg-list ("x") 9857 . 9860) . ((symbol "BOOST_PARAMETER_FUNCTION_KEYWORD" 9867 . 9899) (semantic-list "( \\
+        BOOST_PARAMETER_FN_ARG_NAME(x) \\
+    )" 9899 . 9949)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_DEFAULT" (spp-arg-list ("arg" "tag_namespace") 22871 . 22891) . 
+              ((symbol "boost" 22898 . 22903) (punctuation ":" 22903 . 22904) (punctuation ":" 22904 . 22905) (symbol "parameter" 22905 . 22914) (punctuation ":" 22914 . 22915) (punctuation ":" 22915 . 22916) (symbol "keyword" 22916 . 22923) (punctuation "<" 22923 . 22924) (symbol "tag_namespace" 22935 . 22948) (punctuation ":" 22948 . 22949) (punctuation ":" 22949 . 22950) (symbol "BOOST_PARAMETER_FN_ARG_KEYWORD" 22950 . 22980) (semantic-list "(arg)" 22980 . 22985) (punctuation ">" 22992 . 22993) (punctuation ":" 22993 . 22994) (punctuation ":" 22994 . 22995) (symbol "instance" 22995 . 23003) (punctuation "|" 23004 . 23005) (symbol "boost" 23006 . 23011) (punctuation ":" 23011 . 23012) (punctuation ":" 23012 . 23013) (symbol "parameter" 23013 . 23022) (punctuation ":" 23022 . 23023) (punctuation ":" 23023 . 23024) (symbol "aux" 23024 . 23027) (punctuation ":" 23027 . 23028) (punctuation ":" 23028 . 23029) (symbol "use_default_tag" 23029 . 23044) (semantic-list "()" 23044 . 23046)))
+          ("BOOST_PARAMETER_BASIC_MEMBER_FUNCTION" (spp-arg-list ("result" "name" "tag_namespace" "args") 34423 . 34458) . ((symbol "BOOST_PARAMETER_BASIC_MEMBER_FUNCTION_AUX" 34465 . 34506) (semantic-list "( \\
+        result, name, tag_namespace \\
+      , BOOST_PARAMETER_FLATTEN(2, 2, 3, args) \\
+      , 0 \\
+    )" 34506 . 34614)))
+          ("BOOST_PARAMETER_PARENTHESIZED_BASE" (spp-arg-list ("x") 36868 . 36871) . ((symbol "BOOST_PARAMETER_PARENTHESIZED_TYPE" 36872 . 36906) (semantic-list "(x)" 36906 . 36909)))
+          ("BOOST_PARAMETER_FUNCTION_KEYWORD_GET" (spp-arg-list ("x") 9375 . 9378) . ((symbol "BOOST_PP_CAT" 9385 . 9397) (semantic-list "(BOOST_PARAMETETER_FUNCTION_GET_KEYWORD_QUALIFIER_, x)" 9397 . 9451)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_TEMPLATE_Z" (spp-arg-list ("z" "n") 10041 . 10047) . 
+              ((TEMPLATE "template" 10054 . 10062) (punctuation "<" 10062 . 10063) (symbol "BOOST_PP_ENUM_PARAMS_Z" 10063 . 10085) (semantic-list "(z, n, class ParameterArgumentType)" 10085 . 10120) (punctuation ">" 10120 . 10121)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION0" (spp-arg-list ("r" "data" "elem") 13091 . 13106) . ((symbol "BOOST_PARAMETER_FUNCTION_FWD_FUNCTION00" 13113 . 13152) (semantic-list "( \\
+        BOOST_PP_TUPLE_ELEM(7,0,data) \\
+      , BOOST_PP_TUPLE_ELEM(7,1,data) \\
+      , r \\
+      , data \\
+      , elem \\
+    )" 13152 . 13283)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION" (spp-arg-list ("z" "n" "data") 13968 . 13980) . 
+              ((symbol "BOOST_PP_IF" 13987 . 13998) (semantic-list "( \\
+        n \\
+      , BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_ARITY_N \\
+      , BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_ARITY_0 \\
+    )" 13998 . 14131) (semantic-list "(z,n,data)" 14131 . 14141)))
+          ("BOOST_PARAMETER_FUNCTION_RESULT_" (spp-arg-list ("result" "name" "args") 18491 . 18511) . 
+              ((TEMPLATE "template" 18552 . 18560) (punctuation "<" 18561 . 18562) (CLASS "class" 18562 . 18567) (symbol "Args" 18568 . 18572) (punctuation ">" 18572 . 18573) (STRUCT "struct" 18650 . 18656) (symbol "BOOST_PARAMETER_FUNCTION_RESULT_NAME" 18657 . 18693) (semantic-list "(name)" 18693 . 18699) (semantic-list "{                                                                                           \\
+        typedef typename BOOST_PARAMETER_PARENTHESIZED_TYPE(result) type;                       \\
+    }" 18748 . 18945) (punctuation ";" 18945 . 18946)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_BODY" (spp-arg-list ("name" "n" "split_args" "tag_namespace") 23399 . 23435) . ((semantic-list "{ \\
+        return BOOST_PARAMETER_FUNCTION_DEFAULT_NAME(name)( \\
+            (ResultType(*)())0 \\
+          , args \\
+          , 0L \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS( \\
+                BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_PARAMETER \\
+              , n \\
+              , split_args \\
+            ) \\
+          , BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_GET_ARG( \\
+                BOOST_PP_SEQ_ELEM( \\
+                    BOOST_PP_SUB(BOOST_PP_TUPLE_ELEM(4,2,split_args), n) \\
+                  , BOOST_PP_TUPLE_ELEM(4,3,split_args) \\
+                ) \\
+              , tag_namespace \\
+            ) \\
+        ); \\
+    }" 23442 . 24091)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION0" (spp-arg-list ("z" "n" "data") 26210 . 26222) . 
+              ((TEMPLATE "template" 26229 . 26237) (punctuation "<" 26238 . 26239) (CLASS "class" 26250 . 26255) (symbol "ResultType" 26256 . 26266) (punctuation "," 26275 . 26276) (CLASS "class" 26277 . 26282) (symbol "Args" 26283 . 26287) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS" 26298 . 26340) (semantic-list "( \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_TEMPLATE_ARG \\
+          , n \\
+          , BOOST_PP_TUPLE_ELEM(5,1,data) \\
+        )" 26340 . 26482) (punctuation ">" 26489 . 26490) (symbol "BOOST_PARAMETER_MEMBER_FUNCTION_STATIC" 26497 . 26535) (semantic-list "(BOOST_PP_TUPLE_ELEM(5,0,data))" 26535 . 26566) (symbol "ResultType" 26573 . 26583) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_NAME" 26584 . 26621) (semantic-list "(BOOST_PP_TUPLE_ELEM(5,0,data))" 26621 . 26652) (semantic-list "( \\
+        ResultType(*)() \\
+      , Args const& args \\
+      , int \\
+        BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS( \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG \\
+          , n \\
+          , BOOST_PP_TUPLE_ELEM(5,1,data) \\
+        ) \\
+    )" 26652 . 26914) (symbol "BOOST_PP_EXPR_IF" 26915 . 26931) (semantic-list "(BOOST_PP_TUPLE_ELEM(5,2,data), const)" 26931 . 26969) (symbol "BOOST_PP_IF" 26976 . 26987) (semantic-list "( \\
+        n \\
+      , BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_BODY \\
+      , ; BOOST_PP_TUPLE_EAT(4) \\
+    )" 26987 . 27099) (semantic-list "( \\
+        BOOST_PP_TUPLE_ELEM(5,0,data) \\
+      , n \\
+      , BOOST_PP_TUPLE_ELEM(5,1,data) \\
+      , BOOST_PP_TUPLE_ELEM(5,3,data) \\
+    )" 27099 . 27240)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_LAYER_AUX" (spp-arg-list ("\\
+" "name" "split_args" "skip_fwd_decl" "const_" "tag_namespace" "\\
+") 29236 . 29304) . 
+              ((symbol "BOOST_PP_REPEAT_FROM_TO" 29311 . 29334) (semantic-list "( \\
+        0 \\
+      , BOOST_PP_INC(BOOST_PP_TUPLE_ELEM(4, 2, split_args)) \\
+      , BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION \\
+      , (name, split_args, const_, tag_namespace, skip_fwd_decl) \\
+    )" 29334 . 29536) (symbol "BOOST_PARAMETER_FUNCTION_INITIAL_DISPATCH_FUNCTION" 29546 . 29596) (semantic-list "(name, split_args, const_, tag_namespace)" 29596 . 29637) (TEMPLATE "template" 29646 . 29654) (punctuation "<" 29655 . 29656) (CLASS "class" 29667 . 29672) (symbol "ResultType" 29673 . 29683) (punctuation "," 29692 . 29693) (CLASS "class" 29694 . 29699) (symbol "Args" 29700 . 29704) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS" 29715 . 29757) (semantic-list "( \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_TEMPLATE_ARG \\
+          , 0 \\
+          , split_args \\
+        )" 29757 . 29880) (punctuation ">" 29887 . 29888) (symbol "BOOST_PARAMETER_MEMBER_FUNCTION_STATIC" 29895 . 29933) (semantic-list "(name)" 29933 . 29939) (symbol "ResultType" 29946 . 29956) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_NAME" 29957 . 29994) (semantic-list "(name)" 29994 . 30000) (semantic-list "( \\
+        ResultType(*)() \\
+      , Args const& args \\
+      , int \\
+        BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS( \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG \\
+          , 0 \\
+          , split_args \\
+        ) \\
+    )" 30000 . 30243) (symbol "BOOST_PP_EXPR_IF" 30244 . 30260) (semantic-list "(const_, const)" 30260 . 30275)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR" (spp-arg-list ("z" "n" "data") 38954 . 38966) . 
+              ((symbol "BOOST_PP_IF" 38973 . 38984) (semantic-list "( \\
+        n \\
+      , BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR_ARITY_N \\
+      , BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR_ARITY_0 \\
+    )" 38984 . 39123) (semantic-list "(z,n,data)" 39123 . 39133)))
+          ("BOOST_PARAMETER_PREPROCESSOR_060206_HPP")
+          ("BOOST_PARAMETER_MEMBER_FUNCTION_CHECK_STATIC_static" . ((semantic-list "()" 6340 . 6342)))
+          ("BOOST_PARAMETER_MEMBER_FUNCTION_STRIP_STATIC" (spp-arg-list ("name") 6660 . 6666) . ((symbol "BOOST_PP_CAT" 6673 . 6685) (semantic-list "(BOOST_PARAMETER_MEMBER_FUNCTION_STRIP_STATIC_, name)" 6685 . 6738)))
+          ("BOOST_PARAMETER_MEMBER_FUNCTION_NAME" (spp-arg-list ("name") 7570 . 7576) . 
+              ((symbol "BOOST_PP_IF" 7583 . 7594) (semantic-list "( \\
+        BOOST_PARAMETER_MEMBER_FUNCTION_IS_STATIC(name) \\
+      , BOOST_PARAMETER_MEMBER_FUNCTION_STRIP_STATIC \\
+      , name BOOST_PP_TUPLE_EAT(1) \\
+    )" 7594 . 7753) (semantic-list "(name)" 7753 . 7759)))
+          ("BOOST_PARAMETER_ARITY_RANGE_M_required" (spp-arg-list ("state") 7979 . 7986) . ((symbol "BOOST_PP_INC" 7987 . 7999) (semantic-list "(state)" 7999 . 8006)))
+          ("BOOST_PARAMETER_IMPL" (spp-arg-list ("base") 11304 . 11310) . ((symbol "BOOST_PP_CAT" 11317 . 11329) (semantic-list "(boost_param_impl,BOOST_PARAMETER_MEMBER_FUNCTION_NAME(base))" 11329 . 11390)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION00" (spp-arg-list ("z" "n" "r" "data" "elem") 11440 . 11461) . 
+              ((symbol "BOOST_PP_IF" 11468 . 11479) (semantic-list "( \\
+        n \\
+      , BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_TEMPLATE_Z, BOOST_PP_TUPLE_EAT(2) \\
+    )" 11479 . 11582) (semantic-list "(z,n)" 11582 . 11587) (symbol "BOOST_PARAMETER_MEMBER_FUNCTION_STATIC" 11594 . 11632) (semantic-list "(BOOST_PP_TUPLE_ELEM(7,3,data))" 11632 . 11663) (INLINE "inline" 11670 . 11676) (symbol "BOOST_PP_EXPR_IF" 11683 . 11699) (semantic-list "(n, typename)" 11699 . 11712) (symbol "BOOST_PARAMETER_FUNCTION_RESULT_NAME" 11723 . 11759) (semantic-list "(BOOST_PP_TUPLE_ELEM(7,3,data))" 11759 . 11790) (punctuation "<" 11790 . 11791) (symbol "BOOST_PP_EXPR_IF" 11804 . 11820) (semantic-list "(n, typename)" 11820 . 11833) (symbol "boost" 11844 . 11849) (punctuation ":" 11849 . 11850) (punctuation ":" 11850 . 11851) (symbol "parameter" 11851 . 11860) (punctuation ":" 11860 . 11861) (punctuation ":" 11861 . 11862) (symbol "aux" 11862 . 11865) (punctuation ":" 11865 . 11866) (punctuation ":" 11866 . 11867) (symbol "argument_pack" 11867 . 11880) (punctuation "<" 11880 . 11881) (symbol "BOOST_PARAMETER_FUNCTION_PARAMETERS_NAME" 11896 . 11936) (semantic-list "(BOOST_PP_TUPLE_ELEM(7,3,data))" 11936 . 11967) (symbol "BOOST_PP_COMMA_IF" 11982 . 11999) (semantic-list "(n)" 11999 . 12002) (symbol "BOOST_PP_IF" 12017 . 12028) (semantic-list "( \\
+                n, BOOST_PP_SEQ_ENUM, BOOST_PP_TUPLE_EAT(1) \\
+            )" 12028 . 12107) (semantic-list "(elem)" 12107 . 12113) (punctuation ">" 12124 . 12125) (punctuation ":" 12125 . 12126) (punctuation ":" 12126 . 12127) (symbol "type" 12127 . 12131) (punctuation ">" 12138 . 12139) (punctuation ":" 12139 . 12140) (punctuation ":" 12140 . 12141) (symbol "type" 12141 . 12145) (symbol "BOOST_PARAMETER_MEMBER_FUNCTION_NAME" 12152 . 12188) (semantic-list "(BOOST_PP_TUPLE_ELEM(7,3,data))" 12188 . 12219) (semantic-list "( \\
+        BOOST_PP_IF( \\
+            n \\
+          , BOOST_PP_SEQ_FOR_EACH_I_R \\
+          , BOOST_PP_TUPLE_EAT(4) \\
+        )( \\
+            r \\
+          , BOOST_PARAMETER_FUNCTION_ARGUMENT \\
+          , ~ \\
+          , elem \\
+        ) \\
+        BOOST_PP_IF(n, BOOST_PARAMETER_FUNCTION_FWD_MATCH_Z, BOOST_PP_TUPLE_EAT(4))( \\
+            z \\
+          , BOOST_PP_TUPLE_ELEM(7,3,data) \\
+          , BOOST_PARAMETER_FUNCTION_PARAMETERS_NAME(BOOST_PP_TUPLE_ELEM(7,3,data)) \\
+          , n \\
+        ) \\
+    )" 12219 . 12728) (symbol "BOOST_PP_EXPR_IF" 12729 . 12745) (semantic-list "(BOOST_PP_TUPLE_ELEM(7,4,data), const)" 12745 . 12783) (semantic-list "{ \\
+        return BOOST_PARAMETER_IMPL(BOOST_PP_TUPLE_ELEM(7,3,data))( \\
+            BOOST_PARAMETER_FUNCTION_PARAMETERS_NAME(BOOST_PP_TUPLE_ELEM(7,3,data))()( \\
+                BOOST_PP_ENUM_PARAMS_Z(z, n, a) \\
+            ) \\
+        ); \\
+    }" 12790 . 13037)))
+          ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_deduced_optional" (spp-arg-list ("tag") 15037 . 15042) . 
+              ((symbol "optional" 15049 . 15057) (punctuation "<" 15057 . 15058) (symbol "boost" 15058 . 15063) (punctuation ":" 15063 . 15064) (punctuation ":" 15064 . 15065) (symbol "parameter" 15065 . 15074) (punctuation ":" 15074 . 15075) (punctuation ":" 15075 . 15076) (symbol "deduced" 15076 . 15083) (punctuation "<" 15083 . 15084) (symbol "tag" 15084 . 15087) (punctuation ">" 15087 . 15088)))
+          ("BOOST_PARAMETER_FUNCTION_RESULT_ARG" (spp-arg-list ("z" "_" "i" "x") 18371 . 18383) . 
+              ((symbol "BOOST_PP_COMMA_IF" 18390 . 18407) (semantic-list "(i)" 18407 . 18410) (CLASS "class" 18411 . 18416) (symbol "BOOST_PP_TUPLE_ELEM" 18417 . 18436) (semantic-list "(3,1,x)" 18436 . 18443)))
+          ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG" (spp-arg-list ("s" "state" "arg") 20776 . 20791) . 
+              ((symbol "BOOST_PP_CAT" 20798 . 20810) (semantic-list "( \\
+        BOOST_PARAMETER_FUNCTION_SPLIT_ARG_ \\
+      , BOOST_PARAMETER_FN_ARG_QUALIFIER(arg) \\
+    )" 20810 . 20913) (semantic-list "(state, arg)" 20913 . 20925)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_NAME" (spp-arg-list ("name") 22035 . 22041) . ((symbol "BOOST_PP_CAT" 22048 . 22060) (semantic-list "( \\
+        boost_param_default_ \\
+      , BOOST_PP_CAT(__LINE__, BOOST_PARAMETER_MEMBER_FUNCTION_NAME(name)) \\
+    )" 22060 . 22177)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_COMBINATIONS" (spp-arg-list ("args") 41509 . 41515) . ((symbol "BOOST_PP_SEQ_FOR_EACH_I" 41522 . 41545) (semantic-list "(BOOST_PARAMETER_FUNCTION_FWD_COMBINATION, ~, args)" 41545 . 41596)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS0" (spp-arg-list ("\\
+" "result" "name" "args" "const_" "combinations" "range" "\\
+") 14198 . 14252) . ((symbol "BOOST_PP_REPEAT_FROM_TO" 14259 . 14282) (semantic-list "( \\
+        BOOST_PP_TUPLE_ELEM(2,0,range), BOOST_PP_TUPLE_ELEM(2,1,range) \\
+      , BOOST_PARAMETER_FUNCTION_FWD_FUNCTION \\
+      , (result,name,const_,combinations,BOOST_PP_TUPLE_ELEM(2,1,range)) \\
+    )" 14282 . 14487)))
+          ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_optional" (spp-arg-list ("state" "arg") 20352 . 20364) . ((semantic-list "( \\
+        BOOST_PP_TUPLE_ELEM(4, 0, state) \\
+      , BOOST_PP_TUPLE_ELEM(4, 1, state) \\
+      , BOOST_PP_INC(BOOST_PP_TUPLE_ELEM(4, 2, state)) \\
+      , BOOST_PP_SEQ_PUSH_BACK(BOOST_PP_TUPLE_ELEM(4, 3, state), arg) \\
+    )" 20371 . 20595)))
+          ("BOOST_PARAMETER_FUNCTION_SPLIT_ARGS" (spp-arg-list ("args") 21042 . 21048) . ((symbol "BOOST_PP_SEQ_FOLD_LEFT" 21055 . 21077) (semantic-list "( \\
+        BOOST_PARAMETER_FUNCTION_SPLIT_ARG \\
+      , (0,BOOST_PP_SEQ_NIL, 0,BOOST_PP_SEQ_NIL) \\
+      , args \\
+    )" 21077 . 21197)))
+          ("BOOST_PARAMETER_FUNCTION_AUX" (spp-arg-list ("result" "name" "tag_namespace" "args") 31150 . 31185) . 
+              ((symbol "BOOST_PARAMETER_FUNCTION_HEAD" 31195 . 31224) (semantic-list "(result, name, tag_namespace, args)" 31224 . 31259) (symbol "BOOST_PARAMETER_FUNCTION_IMPL_HEAD" 31274 . 31308) (semantic-list "(name)" 31308 . 31314) (punctuation ";" 31314 . 31315) (symbol "BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS" 31324 . 31362) (semantic-list "(                                  \\
+        result, name, args, 0                                                \\
+      , BOOST_PARAMETER_FUNCTION_FWD_COMBINATIONS(args)                      \\
+    )" 31362 . 31562) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_LAYER" 31719 . 31757) (semantic-list "(name, args, 0, 0, tag_namespace)" 31757 . 31790)))
+          ("BOOST_PARAMETETER_FUNCTION_EAT_KEYWORD_QUALIFIER_in_out" (spp-arg-list ("x") 8959 . 8962))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_ARITY_0" (spp-arg-list ("z" "n" "data") 13344 . 13356) . ((symbol "BOOST_PARAMETER_FUNCTION_FWD_FUNCTION00" 13363 . 13402) (semantic-list "( \\
+        z, n, BOOST_PP_DEDUCE_R() \\
+      , (z, n, BOOST_PP_TUPLE_REM(5) data) \\
+      , ~ \\
+    )" 13402 . 13504)))
+          ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_deduced_required" (spp-arg-list ("tag") 15162 . 15167) . 
+              ((symbol "required" 15174 . 15182) (punctuation "<" 15182 . 15183) (symbol "boost" 15183 . 15188) (punctuation ":" 15188 . 15189) (punctuation ":" 15189 . 15190) (symbol "parameter" 15190 . 15199) (punctuation ":" 15199 . 15200) (punctuation ":" 15200 . 15201) (symbol "deduced" 15201 . 15208) (punctuation "<" 15208 . 15209) (symbol "tag" 15209 . 15212) (punctuation ">" 15212 . 15213)))
+          ("BOOST_PARAMETER_FUNCTION_IMPL_HEAD" (spp-arg-list ("name") 19501 . 19507) . 
+              ((TEMPLATE "template" 19524 . 19532) (punctuation "<" 19533 . 19534) (CLASS "class" 19534 . 19539) (symbol "Args" 19540 . 19544) (punctuation ">" 19544 . 19545) (TYPENAME "typename" 19586 . 19594) (symbol "BOOST_PARAMETER_FUNCTION_RESULT_NAME" 19595 . 19631) (semantic-list "(name)" 19631 . 19637) (punctuation "<" 19637 . 19638) (symbol "Args" 19651 . 19655) (punctuation ">" 19710 . 19711) (punctuation ":" 19711 . 19712) (punctuation ":" 19712 . 19713) (symbol "type" 19713 . 19717) (symbol "BOOST_PARAMETER_IMPL" 19718 . 19738) (semantic-list "(name)" 19738 . 19744) (semantic-list "(Args const& args)" 19744 . 19762)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_ARGUMENTS" (spp-arg-list ("macro" "n" "split_args") 22415 . 22437) . 
+              ((symbol "BOOST_PP_SEQ_FOR_EACH" 22444 . 22465) (semantic-list "( \\
+        macro \\
+      , ~ \\
+      , BOOST_PP_TUPLE_ELEM(4,1,split_args) \\
+    )" 22465 . 22548) (symbol "BOOST_PP_SEQ_FOR_EACH" 22555 . 22576) (semantic-list "( \\
+        macro \\
+      , ~ \\
+      , BOOST_PP_SEQ_FIRST_N( \\
+          BOOST_PP_SUB(BOOST_PP_TUPLE_ELEM(4,2,split_args), n) \\
+        , BOOST_PP_TUPLE_ELEM(4,3,split_args) \\
+        ) \\
+    )" 22576 . 22770)))
+          ("BOOST_PARAMETER_FUNCTION_HEAD" (spp-arg-list ("result" "name" "tag_namespace" "args") 30714 . 30749) . 
+              ((symbol "BOOST_PARAMETER_FUNCTION_RESULT" 30760 . 30791) (semantic-list "(result, name, args)" 30791 . 30811) (symbol "BOOST_PARAMETER_FUNCTION_PARAMETERS" 30920 . 30955) (semantic-list "(tag_namespace, name, args)" 30955 . 30982) (symbol "BOOST_PARAMETER_FUNCTION_PARAMETERS_NAME" 30998 . 31038) (semantic-list "(name)" 31038 . 31044) (punctuation ";" 31044 . 31045)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR_ARITY_0" (spp-arg-list ("z" "n" "data") 38318 . 38330) . ((symbol "BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR00" 38337 . 38379) (semantic-list "( \\
+        z, n, BOOST_PP_DEDUCE_R() \\
+      , (z, n, BOOST_PP_TUPLE_REM(4) data) \\
+      , ~ \\
+    )" 38379 . 38481)))
+          ("BOOST_PARAMETER_CONSTRUCTOR_AUX" (spp-arg-list ("class_" "base" "tag_namespace" "args") 39732 . 39767) . 
+              ((symbol "BOOST_PARAMETER_FUNCTION_PARAMETERS" 39774 . 39809) (semantic-list "(tag_namespace, ctor, args)" 39809 . 39836) (symbol "BOOST_PP_CAT" 39856 . 39868) (semantic-list "(constructor_parameters, __LINE__)" 39868 . 39902) (punctuation ";" 39902 . 39903) (symbol "BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTORS" 39912 . 39953) (semantic-list "( \\
+        class_, base, args \\
+      , BOOST_PARAMETER_FUNCTION_FWD_COMBINATIONS(args) \\
+    )" 39953 . 40049)))
+          ("BOOST_PARAMETER_ARITY_RANGE_M" (spp-arg-list ("s" "state" "x") 8129 . 8142) . 
+              ((symbol "BOOST_PP_CAT" 8149 . 8161) (semantic-list "( \\
+        BOOST_PARAMETER_ARITY_RANGE_M_ \\
+      , BOOST_PARAMETER_FN_ARG_QUALIFIER(x) \\
+    )" 8161 . 8257) (semantic-list "(state)" 8257 . 8264)))
+          ("BOOST_PARAMETER_FN_ARG_DEFAULT" (spp-arg-list ("x") 8787 . 8790) . ((symbol "BOOST_PP_TUPLE_ELEM" 8797 . 8816) (semantic-list "(4,3,x)" 8816 . 8823)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_MATCH_Z" (spp-arg-list ("z" "name" "parameters" "n") 10526 . 10550))
+          ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_optional" (spp-arg-list ("tag") 14849 . 14854) . 
+              ((symbol "optional" 14861 . 14869) (punctuation "<" 14869 . 14870) (symbol "tag" 14870 . 14873)))
+          ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_required" (spp-arg-list ("state" "arg") 19919 . 19931) . ((semantic-list "( \\
+        BOOST_PP_INC(BOOST_PP_TUPLE_ELEM(4, 0, state)) \\
+      , BOOST_PP_SEQ_PUSH_BACK(BOOST_PP_TUPLE_ELEM(4, 1, state), arg) \\
+      , BOOST_PP_TUPLE_ELEM(4, 2, state) \\
+      , BOOST_PP_TUPLE_ELEM(4, 3, state) \\
+    )" 19938 . 20162)))
+          ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_deduced_optional" (spp-arg-list ("state" "arg") 20657 . 20669) . ((symbol "BOOST_PARAMETER_FUNCTION_SPLIT_ARG_optional" 20676 . 20719) (semantic-list "(state, arg)" 20719 . 20731)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_GET_ARG" (spp-arg-list ("arg" "tag_ns") 23106 . 23119) . ((symbol "BOOST_PARAMETER_FUNCTION_CAST" 23126 . 23155) (semantic-list "( \\
+        args[ \\
+            BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_DEFAULT( \\
+                arg, tag_ns \\
+            ) \\
+        ] \\
+      , BOOST_PARAMETER_FN_ARG_PRED(arg) \\
+    )" 23155 . 23342)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_GET_ARG" (spp-arg-list ("r" "tag_ns" "arg") 27974 . 27990) . 
+              ((punctuation "," 27997 . 27998) (symbol "BOOST_PARAMETER_FUNCTION_CAST" 27999 . 28028) (semantic-list "( \\
+          args[ \\
+              boost::parameter::keyword<tag_ns::BOOST_PARAMETER_FN_ARG_KEYWORD(arg)>::instance \\
+          ] \\
+        , BOOST_PARAMETER_FN_ARG_PRED(arg) \\
+      )" 28028 . 28213)))
+          ("BOOST_PARAMETER_BASIC_CONST_MEMBER_FUNCTION" (spp-arg-list ("result" "name" "tag_namespace" "args") 34673 . 34708) . ((symbol "BOOST_PARAMETER_BASIC_MEMBER_FUNCTION_AUX" 34715 . 34756) (semantic-list "( \\
+        result, name, tag_namespace \\
+      , BOOST_PARAMETER_FLATTEN(2, 2, 3, args) \\
+      , 1 \\
+    )" 34756 . 34864)))
+          ("BOOST_PARAMETER_FUNCTION_ARGUMENT" (spp-arg-list ("r" "_" "i" "elem") 36480 . 36495) . 
+              ((symbol "BOOST_PP_COMMA_IF" 36502 . 36519) (semantic-list "(i)" 36519 . 36522) (symbol "elem" 36523 . 36527) (punctuation "&" 36527 . 36528) (symbol "BOOST_PP_CAT" 36529 . 36541) (semantic-list "(a, i)" 36541 . 36547)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_PRODUCT" (spp-arg-list ("r" "product") 38226 . 38238) . ((semantic-list "(product)" 38245 . 38254)))
+          ("BOOST_PARAMETER_ARITY_RANGE_M_deduced_optional" (spp-arg-list ("state") 7918 . 7925) . ((symbol "state" 7926 . 7931)))
+          ("BOOST_PARAMETETER_FUNCTION_EAT_KEYWORD_QUALIFIER_out" (spp-arg-list ("x") 8891 . 8894))
+          ("BOOST_PARAMETER_BASIC_FUNCTION_AUX" (spp-arg-list ("result" "name" "tag_namespace" "args") 32328 . 32363) . 
+              ((symbol "BOOST_PARAMETER_FUNCTION_HEAD" 32373 . 32402) (semantic-list "(result, name, tag_namespace, args)" 32402 . 32437) (symbol "BOOST_PARAMETER_FUNCTION_IMPL_FWD" 32529 . 32562) (semantic-list "(name)" 32562 . 32568) (symbol "BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS" 32685 . 32723) (semantic-list "(                                 \\
+        result, name, args, 0                                               \\
+      , BOOST_PARAMETER_FUNCTION_FWD_COMBINATIONS(args)                     \\
+    )" 32723 . 32920) (symbol "BOOST_PARAMETER_FUNCTION_IMPL_HEAD" 33075 . 33109) (semantic-list "(name)" 33109 . 33115)))
+          ("BOOST_PARAMETER_CONST_MEMBER_FUNCTION" (spp-arg-list ("result" "name" "tag_namespace" "args") 36032 . 36067) . ((symbol "BOOST_PARAMETER_MEMBER_FUNCTION_AUX" 36077 . 36112) (semantic-list "(                                       \\
+        result, name, tag_namespace, 1                                     \\
+      , BOOST_PARAMETER_FLATTEN(3, 2, 3, args)                           \\
+    )" 36112 . 36311)))
+          ("BOOST_PARAMETER_FN_ARG_NAME" (spp-arg-list ("x") 8626 . 8629) . ((symbol "BOOST_PP_TUPLE_ELEM" 8636 . 8655) (semantic-list "(4,1,x)" 8655 . 8662)))
+          ("BOOST_PARAMETER_FN_ARG_PRED" (spp-arg-list ("x") 8705 . 8708) . ((symbol "BOOST_PP_TUPLE_ELEM" 8715 . 8734) (semantic-list "(4,2,x)" 8734 . 8741)))
+          ("BOOST_PARAMETER_FUNCTION_PARAMETERS_QUALIFIER_required" (spp-arg-list ("tag") 14939 . 14944) . 
+              ((symbol "required" 14951 . 14959) (punctuation "<" 14959 . 14960) (symbol "tag" 14960 . 14963)))
+          ("BOOST_PARAMETER_FUNCTION_PARAMETERS" (spp-arg-list ("tag_namespace" "base" "args") 17148 . 17175) . 
+              ((TEMPLATE "template" 17194 . 17202) (punctuation "<" 17203 . 17204) (CLASS "class" 17204 . 17209) (symbol "BoostParameterDummy" 17210 . 17229) (punctuation ">" 17229 . 17230) (STRUCT "struct" 17280 . 17286) (symbol "BOOST_PP_CAT" 17287 . 17299) (semantic-list "(                                                            \\
+            BOOST_PP_CAT(boost_param_params_, __LINE__)                             \\
+          , BOOST_PARAMETER_MEMBER_FUNCTION_NAME(base)                              \\
+    )" 17299 . 17539) (punctuation ":" 17540 . 17541) (symbol "boost" 17542 . 17547) (punctuation ":" 17547 . 17548) (punctuation ":" 17548 . 17549) (symbol "parameter" 17549 . 17558) (punctuation ":" 17558 . 17559) (punctuation ":" 17559 . 17560) (symbol "parameters" 17560 . 17570) (punctuation "<" 17570 . 17571) (symbol "BOOST_PP_SEQ_FOR_EACH_I" 17632 . 17655) (semantic-list "(                                                \\
+                BOOST_PARAMETER_FUNCTION_PARAMETERS_M, tag_namespace, args          \\
+            )" 17655 . 17805) (punctuation ">" 17886 . 17887) (semantic-list "{}" 17968 . 17970) (punctuation ";" 17970 . 17971) (TYPEDEF "typedef" 18140 . 18147) (symbol "BOOST_PP_CAT" 18148 . 18160) (semantic-list "( \\
+            BOOST_PP_CAT(boost_param_params_, __LINE__) \\
+          , BOOST_PARAMETER_MEMBER_FUNCTION_NAME(base) \\
+    )" 18160 . 18284) (punctuation "<" 18284 . 18285) (INT "int" 18285 . 18288) (punctuation ">" 18288 . 18289)))
+          ("BOOST_PARAMETER_FUNCTION_SPLIT_ARG_deduced_required" (spp-arg-list ("state" "arg") 20224 . 20236) . ((symbol "BOOST_PARAMETER_FUNCTION_SPLIT_ARG_required" 20243 . 20286) (semantic-list "(state, arg)" 20286 . 20298)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_TEMPLATE_ARG" (spp-arg-list ("r" "_" "arg") 21458 . 21469) . 
+              ((punctuation "," 21476 . 21477) (CLASS "class" 21478 . 21483) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG_NAME" 21484 . 21534) (semantic-list "( \\
+              BOOST_PARAMETER_FN_ARG_KEYWORD(arg) \\
+      )" 21534 . 21597)))
+          ("BOOST_PARAMETER_BASIC_MEMBER_FUNCTION_AUX" (spp-arg-list ("result" "name" "tag_namespace" "args" "const_") 33605 . 33648) . 
+              ((symbol "BOOST_PARAMETER_FUNCTION_HEAD" 33655 . 33684) (semantic-list "(result, name, tag_namespace, args)" 33684 . 33719) (symbol "BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS" 33835 . 33873) (semantic-list "(                                             \\
+        result, name, args, const_                                                      \\
+      , BOOST_PARAMETER_FUNCTION_FWD_COMBINATIONS(args)                                 \\
+    )" 33873 . 34106) (symbol "BOOST_PARAMETER_FUNCTION_IMPL_HEAD" 34285 . 34319) (semantic-list "(name)" 34319 . 34325) (symbol "BOOST_PP_EXPR_IF" 34326 . 34342) (semantic-list "(const_, const)" 34342 . 34357)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR00" (spp-arg-list ("z" "n" "r" "data" "elem") 36971 . 36992) . 
+              ((symbol "BOOST_PP_IF" 36999 . 37010) (semantic-list "( \\
+        n \\
+      , BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_TEMPLATE_Z, BOOST_PP_TUPLE_EAT(2) \\
+    )" 37010 . 37113) (semantic-list "(z, n)" 37113 . 37119) (symbol "BOOST_PP_EXPR_IF" 37126 . 37142) (semantic-list "(BOOST_PP_EQUAL(n,1), explicit)" 37142 . 37173) (symbol "BOOST_PP_TUPLE_ELEM" 37180 . 37199) (semantic-list "(6,2,data)" 37199 . 37209) (semantic-list "( \\
+        BOOST_PP_IF( \\
+            n \\
+          , BOOST_PP_SEQ_FOR_EACH_I_R \\
+          , BOOST_PP_TUPLE_EAT(4) \\
+        )( \\
+            r \\
+          , BOOST_PARAMETER_FUNCTION_ARGUMENT \\
+          , ~ \\
+          , elem \\
+        ) \\
+        BOOST_PP_IF(n, BOOST_PARAMETER_FUNCTION_FWD_MATCH_Z, BOOST_PP_TUPLE_EAT(4))( \\
+            z \\
+          , BOOST_PP_TUPLE_ELEM(6,3,data) \\
+          , BOOST_PP_CAT(constructor_parameters, __LINE__) \\
+          , n \\
+        ) \\
+    )" 37209 . 37693) (punctuation ":" 37702 . 37703) (symbol "BOOST_PARAMETER_PARENTHESIZED_BASE" 37704 . 37738) (semantic-list "(BOOST_PP_TUPLE_ELEM(6,3,data))" 37738 . 37769) (semantic-list "( \\
+            BOOST_PP_CAT(constructor_parameters, __LINE__)()( \\
+                BOOST_PP_ENUM_PARAMS_Z(z, n, a) \\
+            ) \\
+        )" 37770 . 37913) (semantic-list "{}" 37920 . 37922)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTORS" (spp-arg-list ("class_" "base" "args" "combinations") 39518 . 39549) . ((symbol "BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTORS0" 39556 . 39598) (semantic-list "( \\
+        class_, base, args, combinations, BOOST_PARAMETER_ARITY_RANGE(args) \\
+    )" 39598 . 39685)))
+          ("BOOST_PARAMETER_CONSTRUCTOR" (spp-arg-list ("class_" "base" "tag_namespace" "args") 40094 . 40129) . ((symbol "BOOST_PARAMETER_CONSTRUCTOR_AUX" 40136 . 40167) (semantic-list "( \\
+        class_, base, tag_namespace \\
+      , BOOST_PARAMETER_FLATTEN(2, 2, 3, args) \\
+    )" 40167 . 40263)))
+          ("BOOST_PARAMETER_IS_NULLARY" (spp-arg-list ("x") 6243 . 6246) . ((symbol "BOOST_PP_IS_NULLARY" 6247 . 6266) (semantic-list "(x)" 6266 . 6269)))
+          ("BOOST_PARAMETER_ARITY_RANGE_M_deduced_required" (spp-arg-list ("state") 8062 . 8069) . ((symbol "BOOST_PP_INC" 8070 . 8082) (semantic-list "(state)" 8082 . 8089)))
+          ("BOOST_PARAMETER_ARITY_RANGE" (spp-arg-list ("args") 8307 . 8313) . ((semantic-list "( \\
+        BOOST_PP_SEQ_FOLD_LEFT(BOOST_PARAMETER_ARITY_RANGE_M, 0, args) \\
+      , BOOST_PP_INC(BOOST_PP_SEQ_SIZE(args)) \\
+    )" 8320 . 8450)))
+          ("BOOST_PARAMETETER_FUNCTION_GET_KEYWORD_QUALIFIER_in_out" (spp-arg-list ("x") 9324 . 9327) . ((symbol "x" 9328 . 9329)))
+          ("BOOST_PARAMETER_FUNCTION_KEYWORD" (spp-arg-list ("x") 9638 . 9641) . 
+              ((symbol "BOOST_PP_IF" 9648 . 9659) (semantic-list "( \\
+        BOOST_PARAMETER_FUNCTION_IS_KEYWORD_QUALIFIER(x) \\
+      , BOOST_PARAMETER_FUNCTION_KEYWORD_GET \\
+      , x BOOST_PP_TUPLE_EAT(1) \\
+    )" 9659 . 9808) (semantic-list "(x)" 9808 . 9811)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_FUNCTION_ARITY_N" (spp-arg-list ("z" "n" "data") 13565 . 13577) . ((symbol "BOOST_PP_SEQ_FOR_EACH" 13584 . 13605) (semantic-list "( \\
+        BOOST_PARAMETER_FUNCTION_FWD_FUNCTION0 \\
+      , (z, n, BOOST_PP_TUPLE_REM(5) data) \\
+      , BOOST_PP_SEQ_FOR_EACH_PRODUCT( \\
+            BOOST_PARAMETER_FUNCTION_FWD_PRODUCT \\
+          , BOOST_PP_SEQ_FIRST_N( \\
+                n, BOOST_PP_TUPLE_ELEM(5,3,data) \\
+            ) \\
+        ) \\
+    )" 13605 . 13915)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG_NAME" (spp-arg-list ("keyword") 21258 . 21267) . ((symbol "BOOST_PP_CAT" 21274 . 21286) (semantic-list "(BOOST_PP_CAT(keyword,_),type)" 21286 . 21316)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_ACTUAL_DEFAULT" (spp-arg-list ("arg") 24154 . 24159) . ((symbol "BOOST_PARAMETER_FUNCTION_CAST" 24166 . 24195) (semantic-list "( \\
+        boost::parameter::aux::as_lvalue(BOOST_PARAMETER_FN_ARG_DEFAULT(arg), 0L) \\
+      , BOOST_PARAMETER_FN_ARG_PRED(arg) \\
+    )" 24195 . 24331)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR_ARITY_N" (spp-arg-list ("z" "n" "data") 38545 . 38557) . ((symbol "BOOST_PP_SEQ_FOR_EACH" 38564 . 38585) (semantic-list "( \\
+        BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR0 \\
+      , (z, n, BOOST_PP_TUPLE_REM(4) data) \\
+      , BOOST_PP_SEQ_FOR_EACH_PRODUCT( \\
+            BOOST_PARAMETER_FUNCTION_FWD_PRODUCT \\
+          , BOOST_PP_SEQ_FIRST_N( \\
+                n, BOOST_PP_TUPLE_ELEM(4,2,data) \\
+            ) \\
+        ) \\
+    )" 38585 . 38898)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTORS0" (spp-arg-list ("class_" "base" "args" "combinations" "range") 39193 . 39230) . ((symbol "BOOST_PP_REPEAT_FROM_TO" 39237 . 39260) (semantic-list "( \\
+        BOOST_PP_TUPLE_ELEM(2,0,range), BOOST_PP_TUPLE_ELEM(2,1,range) \\
+      , BOOST_PARAMETER_FUNCTION_FWD_CONSTRUCTOR \\
+      , (class_,base,combinations,BOOST_PP_TUPLE_ELEM(2,1,range)) \\
+    )" 39260 . 39461)))
+          ("BOOST_PARAMETER_FUNCTION_FWD_COMBINATION" (spp-arg-list ("r" "_" "i" "elem") 41204 . 41219) . ((semantic-list "(BOOST_PP_IF( \\
+        BOOST_PARAMETER_FUNCTION_IS_KEYWORD_QUALIFIER( \\
+            BOOST_PARAMETER_FN_ARG_NAME(elem) \\
+        ) \\
+      , (ParameterArgumentType ## i) \\
+      , (const ParameterArgumentType ## i) \\
+    ))" 41226 . 41449)))
+          ("BOOST_PARAMETER_FN_ARG_QUALIFIER" (spp-arg-list ("x") 8547 . 8550) . ((symbol "BOOST_PP_TUPLE_ELEM" 8557 . 8576) (semantic-list "(4,0,x)" 8576 . 8583)))
+          ("BOOST_PARAMETER_FUNCTION_RESULT_NAME" (spp-arg-list ("base") 10886 . 10892) . ((symbol "BOOST_PP_CAT" 10899 . 10911) (semantic-list "( \\
+        boost_param_result_ \\
+      , BOOST_PP_CAT(__LINE__,BOOST_PARAMETER_MEMBER_FUNCTION_NAME(base)) \\
+    )" 10911 . 11026)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG" (spp-arg-list ("r" "_" "arg") 21653 . 21664) . 
+              ((punctuation "," 21671 . 21672) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION_ARG_NAME" 21673 . 21723) (semantic-list "( \\
+              BOOST_PARAMETER_FN_ARG_KEYWORD(arg) \\
+      )" 21723 . 21786) (punctuation "&" 21786 . 21787) (symbol "BOOST_PARAMETER_FN_ARG_KEYWORD" 21788 . 21818) (semantic-list "(arg)" 21818 . 21823)))
+          ("BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION" (spp-arg-list ("z" "n" "data") 27292 . 27304) . 
+              ((symbol "BOOST_PP_IF" 27311 . 27322) (semantic-list "( \\
+        BOOST_PP_AND( \\
+            BOOST_PP_NOT(n) \\
+          , BOOST_PP_TUPLE_ELEM(5,4,data) \\
+        ) \\
+      , BOOST_PP_TUPLE_EAT(3) \\
+      , BOOST_PARAMETER_FUNCTION_DEFAULT_FUNCTION0 \\
+    )" 27322 . 27526) (semantic-list "(z, n, data)" 27526 . 27538) (symbol "BOOST_PP_IF" 27545 . 27556) (semantic-list "( \\
+        BOOST_PP_EQUAL(n, BOOST_PP_TUPLE_ELEM(4,2,BOOST_PP_TUPLE_ELEM(5,1,data))) \\
+      , BOOST_PP_TUPLE_EAT(5) \\
+      , BOOST_PARAMETER_FUNCTION_DEFAULT_EVAL_DEFAULT_BODY \\
+    )" 27556 . 27742) (semantic-list "( \\
+        BOOST_PP_TUPLE_ELEM(5,0,data) \\
+      , n \\
+      , BOOST_PP_TUPLE_ELEM(5,1,data) \\
+      , BOOST_PP_TUPLE_ELEM(5,3,data) \\
+      , BOOST_PP_TUPLE_ELEM(5,2,data) \\
+    )" 27742 . 27923)))
+          ("BOOST_PARAMETER_MEMBER_FUNCTION_AUX" (spp-arg-list ("result" "name" "tag_namespace" "const_" "args") 34917 . 34960) . 
+              ((symbol "BOOST_PARAMETER_FUNCTION_HEAD" 34970 . 34999) (semantic-list "(result, name, tag_namespace, args)" 34999 . 35034) (symbol "BOOST_PARAMETER_FUNCTION_FWD_FUNCTIONS" 35051 . 35089) (semantic-list "(                                  \\
+        result, name, args, const_                                           \\
+      , BOOST_PARAMETER_FUNCTION_FWD_COMBINATIONS(args)                      \\
+    )" 35089 . 35289) (symbol "BOOST_PARAMETER_FUNCTION_DEFAULT_LAYER" 35446 . 35484) (semantic-list "(name, args, 1, const_, tag_namespace)" 35484 . 35522)))
+          ("BOOST_PARAMETER_MEMBER_FUNCTION" (spp-arg-list ("result" "name" "tag_namespace" "args") 35631 . 35666) . ((symbol "BOOST_PARAMETER_MEMBER_FUNCTION_AUX" 35676 . 35711) (semantic-list "(                                       \\
+        result, name, tag_namespace, 0                                     \\
+      , BOOST_PARAMETER_FLATTEN(3, 2, 3, args)                           \\
+    )" 35711 . 35910)))
+          )
+)
+    (semanticdb-table "config.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PARAMETER_CONFIG_050403_HPP" variable (:constant-flag t) nil [288 321])
+            ("BOOST_PARAMETER_MAX_ARITY" variable (:constant-flag t) nil [366 391]))          
+      :file "config.hpp"
+      :pointmax 447
+      :fsize 446
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_PARAMETER_CONFIG_050403_HPP")
+          ("BOOST_PARAMETER_MAX_ARITY" . ((number "5" 392 . 393)))
+          )
+))
+  :file "!usr!include!boost!parameter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

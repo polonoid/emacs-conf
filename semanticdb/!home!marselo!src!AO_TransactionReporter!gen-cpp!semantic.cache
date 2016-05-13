@@ -1,0 +1,644 @@
+;; Object gen-cpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gen-cpp/"
+  :tables
+  (list
+    (semanticdb-table "message_types.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("message_types.h" include nil nil [139 165])
+            ("algorithm" include (:system-flag t) nil [167 187])
+            ("Tbricks" type
+               (:members 
+                  ( ("Messages" type
+                       (:members 
+                          ( ("TransactionReporter" type
+                               (:members 
+                                  ( ("_kCashTypeValues" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [263 774])
+                                    ("_kCashTypeNames" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [775 1181])
+                                    ("_CashType_VALUES_TO_NAMES" function
+                                       (:prototype-flag t
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("apache::thrift::TEnumIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1243 1311])
+                                            ("" variable (:type ("apache::thrift::TEnumIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1315 1360]))                                          
+                                        :type ("std::map" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil)
+                                                  ("char" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [1182 1362])
+                                    ("PositionChangeMessage::ascii_fingerprint" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [1364 1454])
+                                    ("PositionChangeMessage::binary_fingerprint" variable
+                                       (:dereference 1
+                                        :constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1455 1599])
+                                    ("read" function
+                                       (:parent "PositionChangeMessage"
+                                        :arguments 
+                                          ( ("iprot" variable
+                                               (:pointer 1
+                                                :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1640 1683]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1601 2951])
+                                    ("write" function
+                                       (:parent "PositionChangeMessage"
+                                        :arguments 
+                                          ( ("oprot" variable
+                                               (:pointer 1
+                                                :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2993 3036]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2953 3700])
+                                    ("swap" function
+                                       (:arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3712 3737])
+                                            ("b" variable
+                                               (:reference 1
+                                                :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3738 3763]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [3702 3910])
+                                    ("CashMessage::ascii_fingerprint" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol namespacesubparts) [3912 3992])
+                                    ("CashMessage::binary_fingerprint" variable
+                                       (:dereference 1
+                                        :constant-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3993 4127])
+                                    ("read" function
+                                       (:parent "CashMessage"
+                                        :arguments 
+                                          ( ("iprot" variable
+                                               (:pointer 1
+                                                :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4158 4201]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4129 8409])
+                                    ("write" function
+                                       (:parent "CashMessage"
+                                        :arguments 
+                                          ( ("oprot" variable
+                                               (:pointer 1
+                                                :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8441 8484]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [8411 11127])
+                                    ("swap" function
+                                       (:arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :type ("CashMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11139 11154])
+                                            ("b" variable
+                                               (:reference 1
+                                                :type ("CashMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11155 11170]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [11129 11817]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [230 11820]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [209 11821]))                  
+                :type "namespace")
+                nil [189 11822]))          
+      :file "message_types.cpp"
+      :pointmax 11836
+      :fsize 11835
+      :lastmodtime '(22159 48158 341893 406000)
+      :unmatched-syntax '((punctuation 8440 . 8441) (punctuation 8439 . 8440) (punctuation 4157 . 4158) (punctuation 4156 . 4157) (punctuation 2992 . 2993) (punctuation 2991 . 2992) (punctuation 1639 . 1640) (punctuation 1638 . 1639) (semantic-list 1344 . 1360) (punctuation 1314 . 1315) (punctuation 1313 . 1314) (semantic-list 1272 . 1311) (punctuation 1242 . 1243) (punctuation 1241 . 1242)))
+    (semanticdb-table "message_types.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("message_TYPES_H" variable (:constant-flag t) nil [171 186])
+            ("thrift/Thrift.h" include (:system-flag t) nil [188 214])
+            ("thrift/TApplicationException.h" include (:system-flag t) nil [215 256])
+            ("thrift/protocol/TProtocol.h" include (:system-flag t) nil [257 295])
+            ("thrift/transport/TTransport.h" include (:system-flag t) nil [296 336])
+            ("thrift/cxxfunctional.h" include (:system-flag t) nil [338 371])
+            ("sharedDefinitions_types.h" include nil nil [372 408])
+            ("Tbricks" type
+               (:members 
+                  ( ("Messages" type
+                       (:members 
+                          ( ("TransactionReporter" type
+                               (:members 
+                                  ( ("CashType" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:members 
+                                                  ( ("CASH_TYPE_UNKNOWN" variable
+                                                       (:constant-flag t
+                                                        :default-value (541 542)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [521 542])
+                                                    ("CASH_TYPE_DIVIDEND" variable
+                                                       (:constant-flag t
+                                                        :default-value (569 570)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [548 570])
+                                                    ("CASH_TYPE_FEE" variable
+                                                       (:constant-flag t
+                                                        :default-value (592 593)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [576 593])
+                                                    ("CASH_TYPE_MARGIN" variable
+                                                       (:constant-flag t
+                                                        :default-value (618 619)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [599 619])
+                                                    ("CASH_TYPE_CASH_DELIVERY" variable
+                                                       (:constant-flag t
+                                                        :default-value (651 652)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [625 652])
+                                                    ("CASH_TYPE_FINANCING" variable
+                                                       (:constant-flag t
+                                                        :default-value (680 681)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [658 681])
+                                                    ("CASH_TYPE_DEPOSIT_OR_WITHDRAWAL" variable
+                                                       (:constant-flag t
+                                                        :default-value (721 722)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [687 722])
+                                                    ("CASH_TYPE_CORRECTION" variable
+                                                       (:constant-flag t
+                                                        :default-value (751 752)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [728 752])
+                                                    ("CASH_TYPE_FX" variable
+                                                       (:constant-flag t
+                                                        :default-value (773 774)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [758 774])
+                                                    ("CASH_TYPE_REGULATORY_FEE" variable
+                                                       (:constant-flag t
+                                                        :default-value (807 808)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [780 808])
+                                                    ("CASH_EXCHANGE_CONNECTIVITY_FEE" variable
+                                                       (:constant-flag t
+                                                        :default-value (847 849)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [814 849])
+                                                    ("CASH_MISC_INCOME_OR_EXPENCE" variable
+                                                       (:constant-flag t
+                                                        :default-value (885 887)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [855 887])
+                                                    ("CASH_SPOT_CURRENCY_PNL" variable
+                                                       (:constant-flag t
+                                                        :default-value (918 920)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [893 920])
+                                                    ("CASH_FEE_REBATE" variable
+                                                       (:constant-flag t
+                                                        :default-value (944 946)
+                                                        :type "int")
+                                                        (reparse-symbol enumsubparts) [926 946]))                                                  
+                                                :type "enum")
+                                                (reparse-symbol classsubparts) [505 951]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [485 954])
+                                    ("_CashType_VALUES_TO_NAMES" variable
+                                       (:typemodifiers ("extern")
+                                        :constant-flag t
+                                        :type ("std::map" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil)
+                                                  ("char" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol namespacesubparts) [956 1022])
+                                    ("_PositionChangeMessage__isset" type
+                                       (:members 
+                                          ( ("_PositionChangeMessage__isset" function
+                                               (:constructor-flag t
+                                                :type ("_PositionChangeMessage__isset" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1073 1157])
+                                            ("Id" variable (:type "bool") (reparse-symbol classsubparts) [1160 1168])
+                                            ("SequenceNumber" variable (:type "bool") (reparse-symbol classsubparts) [1171 1191])
+                                            ("update" variable (:type "bool") (reparse-symbol classsubparts) [1194 1206]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1024 1239])
+                                    ("_PositionChangeMessage__isset" type
+                                       (:typedef ("_PositionChangeMessage__isset" type (:type "struct") nil nil)
+                                        :superclasses "_PositionChangeMessage__isset"
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1024 1239])
+                                    ("PositionChangeMessage" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1272 1279])
+                                            ("ascii_fingerprint" variable
+                                               (:pointer 1
+                                                :typemodifiers ("static")
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [1283 1320])
+                                            ("binary_fingerprint" variable
+                                               (:dereference 1
+                                                :typemodifiers ("static")
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1364 1408])
+                                            ("PositionChangeMessage" function
+                                               (:constructor-flag t
+                                                :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1500 1555])
+                                            ("PositionChangeMessage" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1559 1602])
+                                            ("Id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1606 1621])
+                                            ("SequenceNumber" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1624 1647])
+                                            ("update" variable (:type ("Tbricks::Messages::Shared::PositionChange" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1653 1702])
+                                            ("__isset" variable (:type ("_PositionChangeMessage__isset" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1706 1744])
+                                            ("__set_Id" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1762 1785]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1748 1805])
+                                            ("__set_SequenceNumber" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type ("int32_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1835 1853]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1809 1885])
+                                            ("__set_update" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :type ("Tbricks::Messages::Shared::PositionChange" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1916 1963]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1889 1987])
+                                            ("==" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2009 2043]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1991 2241])
+                                            ("!=" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2262 2295]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2244 2335])
+                                            ("<" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2356 2387]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2339 2394])
+                                            ("read" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("iprot" variable
+                                                       (:pointer 1
+                                                        :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2414 2457]))                                                  
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2398 2458])
+                                            ("write" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("oprot" variable
+                                                       (:pointer 1
+                                                        :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2478 2521]))                                                  
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2461 2528]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1241 2532])
+                                    ("swap" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2544 2569])
+                                            ("b" variable
+                                               (:reference 1
+                                                :type ("PositionChangeMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2570 2595]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [2534 2596])
+                                    ("_CashMessage__isset" type
+                                       (:members 
+                                          ( ("_CashMessage__isset" function
+                                               (:constructor-flag t
+                                                :type ("_CashMessage__isset" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [2637 2972])
+                                            ("identifier" variable (:type "bool") (reparse-symbol classsubparts) [2975 2991])
+                                            ("portfolioIdentifier" variable (:type "bool") (reparse-symbol classsubparts) [2994 3019])
+                                            ("creator" variable (:type "bool") (reparse-symbol classsubparts) [3022 3035])
+                                            ("cashType" variable (:type "bool") (reparse-symbol classsubparts) [3038 3052])
+                                            ("hostCreatedDatetime" variable (:type "bool") (reparse-symbol classsubparts) [3055 3080])
+                                            ("hostModifiedDatetime" variable (:type "bool") (reparse-symbol classsubparts) [3083 3109])
+                                            ("cashDatetime" variable (:type "bool") (reparse-symbol classsubparts) [3112 3130])
+                                            ("settlementDate" variable (:type "bool") (reparse-symbol classsubparts) [3133 3153])
+                                            ("cashValue" variable (:type "bool") (reparse-symbol classsubparts) [3156 3171])
+                                            ("currency" variable (:type "bool") (reparse-symbol classsubparts) [3174 3188])
+                                            ("expirationIdentifier" variable (:type "bool") (reparse-symbol classsubparts) [3191 3217])
+                                            ("instrumentIdentifier" variable (:type "bool") (reparse-symbol classsubparts) [3220 3246])
+                                            ("description" variable (:type "bool") (reparse-symbol classsubparts) [3249 3266])
+                                            ("deleted" variable (:type "bool") (reparse-symbol classsubparts) [3269 3282]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [2598 3305])
+                                    ("_CashMessage__isset" type
+                                       (:typedef ("_CashMessage__isset" type (:type "struct") nil nil)
+                                        :superclasses "_CashMessage__isset"
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [2598 3305])
+                                    ("CashMessage" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3328 3335])
+                                            ("ascii_fingerprint" variable
+                                               (:pointer 1
+                                                :typemodifiers ("static")
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol classsubparts) [3339 3376])
+                                            ("binary_fingerprint" variable
+                                               (:dereference 1
+                                                :typemodifiers ("static")
+                                                :constant-flag t
+                                                :type ("uint8_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3420 3464])
+                                            ("CashMessage" function
+                                               (:constructor-flag t
+                                                :type ("CashMessage" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3556 3839])
+                                            ("CashMessage" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3843 3876])
+                                            ("identifier" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3880 3903])
+                                            ("portfolioIdentifier" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3906 3938])
+                                            ("creator" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3941 3961])
+                                            ("cashType" variable (:type ("CashType::type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3964 3988])
+                                            ("hostCreatedDatetime" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3991 4019])
+                                            ("hostModifiedDatetime" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4022 4051])
+                                            ("cashDatetime" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4054 4075])
+                                            ("settlementDate" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4078 4101])
+                                            ("cashValue" variable (:type "double") (reparse-symbol classsubparts) [4104 4121])
+                                            ("currency" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4124 4145])
+                                            ("expirationIdentifier" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4148 4181])
+                                            ("instrumentIdentifier" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4184 4217])
+                                            ("description" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4220 4244])
+                                            ("deleted" variable (:type "bool") (reparse-symbol classsubparts) [4247 4260])
+                                            ("__isset" variable (:type ("_CashMessage__isset" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4264 4292])
+                                            ("__set_identifier" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4318 4341]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4296 4369])
+                                            ("__set_portfolioIdentifier" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4404 4427]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4373 4464])
+                                            ("__set_creator" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4487 4510]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4468 4535])
+                                            ("__set_cashType" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type ("CashType::type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4559 4584]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4539 4610])
+                                            ("__set_hostCreatedDatetime" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type ("int64_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4645 4663]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4614 4700])
+                                            ("__set_hostModifiedDatetime" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type ("int64_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4736 4754]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4704 4792])
+                                            ("__set_cashDatetime" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type ("int64_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4820 4838]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4796 4868])
+                                            ("__set_settlementDate" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type ("int64_t" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4898 4916]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4872 4948])
+                                            ("__set_cashValue" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type "double")
+                                                        (reparse-symbol arg-sub-list) [4973 4990]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [4952 5017])
+                                            ("__set_currency" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5041 5064]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5021 5090])
+                                            ("__set_expirationIdentifier" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5126 5149]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5094 5187])
+                                            ("__set_instrumentIdentifier" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5223 5246]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5191 5284])
+                                            ("__set_description" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5311 5334]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5288 5363])
+                                            ("__set_deleted" function
+                                               (:arguments 
+                                                  ( ("val" variable
+                                                       (:constant-flag t
+                                                        :type "bool")
+                                                        (reparse-symbol arg-sub-list) [5386 5401]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [5367 5426])
+                                            ("==" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CashMessage" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5448 5472]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [5430 6445])
+                                            ("!=" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("rhs" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CashMessage" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6466 6489]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [6448 6529])
+                                            ("<" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("CashMessage" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6550 6571]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [6533 6578])
+                                            ("read" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("iprot" variable
+                                                       (:pointer 1
+                                                        :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6598 6641]))                                                  
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6582 6642])
+                                            ("write" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("oprot" variable
+                                                       (:pointer 1
+                                                        :type ("apache::thrift::protocol::TProtocol" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6662 6705]))                                                  
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6645 6712]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [3307 6716])
+                                    ("swap" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :type ("CashMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6728 6743])
+                                            ("b" variable
+                                               (:reference 1
+                                                :type ("CashMessage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6744 6759]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [6718 6760]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [452 6763]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [431 6764]))                  
+                :type "namespace")
+                nil [411 6765]))          
+      :file "message_types.h"
+      :pointmax 6787
+      :fsize 6786
+      :lastmodtime '(22159 48158 341893 406000)
+      :unmatched-syntax '((punctuation 6661 . 6662) (punctuation 6660 . 6661) (punctuation 6597 . 6598) (punctuation 6596 . 6597) (punctuation 2477 . 2478) (punctuation 2476 . 2477) (punctuation 2413 . 2414) (punctuation 2412 . 2413) (punctuation 1915 . 1916) (punctuation 1914 . 1915) (CONST 1907 . 1912) (punctuation 1652 . 1653) (punctuation 1651 . 1652))
+      :lexical-table 
+        '(("message_TYPES_H")
+          )
+)
+    (semanticdb-table "sharedDefinitions_types.h"
+      :file "sharedDefinitions_types.h"
+      :fsize 17611
+      :lastmodtime '(22159 48158 338893 594000)))
+  :file "!home!marselo!src!AO_TransactionReporter!gen-cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

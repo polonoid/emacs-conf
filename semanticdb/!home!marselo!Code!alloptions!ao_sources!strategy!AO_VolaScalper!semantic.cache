@@ -1,0 +1,502 @@
+;; Object AO_VolaScalper/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_VolaScalper/"
+  :tables
+  (list
+    (semanticdb-table "CIVProvider.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_STRATEGY_AO_VOLASCALPER_CIVPROVIDER_H_" variable (:constant-flag t) nil [152 201])
+            ("shared/API.h" include nil nil [203 226])
+            ("boost/ptr_container/ptr_map.hpp" include nil nil [227 269])
+            ("boost/function.hpp" include nil nil [270 299])
+            ("CIVProvider" type
+               (:superclasses 
+                  ( ("tbricks::CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("ErrorHandler" variable (:type "int") (reparse-symbol classsubparts) [420 433])
+                    ("public" label nil (reparse-symbol classsubparts) [435 442])
+                    ("CIVProvider" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [459 497])
+                            ("errorHandler" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ErrorHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [498 531]))                          
+                        :type ("CIVProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [447 532])
+                    ("CIVProvider" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [537 560])
+                    ("GetInstrumentCIV" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrmId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [645 692]))                          
+                        :type ("tbricks::CalculatedInstrumentValues::InstrumentValues" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [566 693])
+                    ("IsReady" function (:type "bool") (reparse-symbol classsubparts) [699 807])
+                    ("private" label nil (reparse-symbol classsubparts) [809 817])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [853 894]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [823 895])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [931 972]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [900 973])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1010 1051]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [978 1052])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1088 1129]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1057 1130])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1182 1225])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1226 1284]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1136 1285])
+                    ("private" label nil (reparse-symbol classsubparts) [1287 1295])
+                    ("m_calculatedValuesStream" variable (:type ("tbricks::CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1301 1370])
+                    ("m_CalculatedValues" variable (:type ("tbricks::CalculatedInstrumentValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1375 1430])
+                    ("CIVCache" type
+                       (:typedef ("boost::ptr_map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("tbricks::CalculatedInstrumentValues::InstrumentValues" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::ptr_map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1436 1555])
+                    ("m_civCache" variable (:type ("CIVCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1560 1580])
+                    ("m_errorHandler" variable (:type ("ErrorHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1585 1613]))                  
+                :type "class")
+                nil [301 1616]))          
+      :file "CIVProvider.h"
+      :pointmax 1681
+      :fsize 1680
+      :lastmodtime '(21962 60358 21341 73000)
+      :unmatched-syntax '((punctuation 418 . 419) (semantic-list 415 . 417) (VOID 411 . 415) (punctuation 409 . 410) (symbol 401 . 409) (punctuation 400 . 401) (punctuation 399 . 400) (symbol 394 . 399) (TYPEDEF 386 . 393))
+      :lexical-table 
+        '(("AO_SOURCES_STRATEGY_AO_VOLASCALPER_CIVPROVIDER_H_")
+          )
+)
+    (semanticdb-table "ParamProvider.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_STRATEGY_AO_VOLASCALPER_PARAMPROVIDER_H_" variable (:constant-flag t) nil [155 206])
+            ("shared/API.h" include nil nil [208 231])
+            ("boost/function.hpp" include nil nil [232 261])
+            ("ParamProvider" type
+               (:superclasses 
+                  ( ("tbricks::InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("ErrorHandler" variable (:type "int") (reparse-symbol classsubparts) [387 400])
+                    ("public" label nil (reparse-symbol classsubparts) [402 409])
+                    ("ParamProvider" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [425 463])
+                            ("errorHandler" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ErrorHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [464 497]))                          
+                        :type ("ParamProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [411 498])
+                    ("ParamProvider" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [500 525])
+                    ("GetParams" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("instrmId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [585 631])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [632 662]))                          
+                        :type ("tbricks::InstrumentAggregateParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [528 663])
+                    ("private" label nil (reparse-symbol classsubparts) [665 673])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [709 750]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [679 751])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [787 828]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [756 829])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [866 907]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [834 908])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [944 985]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [913 986])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1039 1081])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1082 1132])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1133 1194]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [989 1195])
+                    ("private" label nil (reparse-symbol classsubparts) [1198 1206])
+                    ("m_hiddenParameterStream" variable (:type ("tbricks::InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1209 1280])
+                    ("m_globalParameterStream" variable (:type ("tbricks::InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1282 1353])
+                    ("ParamCache" type
+                       (:typedef ("tbricks::SparseHash" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("tbricks::InstrumentAggregateParameters" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1355 1467])
+                    ("m_hqParams" variable (:type ("ParamCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1469 1491])
+                    ("m_globalParams" variable (:type ("ParamCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1493 1519])
+                    ("m_errorHandler" variable (:type ("ErrorHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1522 1550]))                  
+                :type "class")
+                nil [263 1553]))          
+      :file "ParamProvider.h"
+      :pointmax 1620
+      :fsize 1619
+      :lastmodtime '(21962 60358 21341 73000)
+      :unmatched-syntax '((punctuation 385 . 386) (semantic-list 382 . 384) (VOID 378 . 382) (punctuation 376 . 377) (symbol 368 . 376) (punctuation 367 . 368) (punctuation 366 . 367) (symbol 361 . 366) (TYPEDEF 353 . 360))
+      :lexical-table 
+        '(("AO_SOURCES_STRATEGY_AO_VOLASCALPER_PARAMPROVIDER_H_")
+          )
+)
+    (semanticdb-table "VolaScalper.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_STRATEGY_AO_VOLASCALPER_VOLASCALPER_H_" variable (:constant-flag t) nil [152 201])
+            ("strategy/API.h" include nil nil [203 228])
+            ("boost/scoped_ptr.hpp" include nil nil [229 259])
+            ("boost/ptr_container/ptr_map.hpp" include nil nil [260 301])
+            ("AO_SharedGlobal/Global/InstrumentsCache.h" include nil nil [302 354])
+            ("boost/function.hpp" include nil nil [355 384])
+            ("AO_SharedGlobal/Ticker/TickerGenerator.h" include nil nil [385 436])
+            ("CIVProvider" type
+               (:prototype t
+                :type "class")
+                nil [438 456])
+            ("InstrumentTrader" type
+               (:prototype t
+                :type "class")
+                nil [457 480])
+            ("ParamProvider" type
+               (:prototype t
+                :type "class")
+                nil [481 501])
+            ("QuoteSetStreamManager" type
+               (:prototype t
+                :type "class")
+                nil [502 530])
+            ("QuoteSetManager" type
+               (:prototype t
+                :type "class")
+                nil [531 553])
+            ("VolaScalper" type
+               (:members 
+                  ( ("ErrorHandler" variable (:type "int") (reparse-symbol classsubparts) [611 624])
+                    ("OrderCreated" variable (:type "int") (reparse-symbol classsubparts) [694 707])
+                    ("public" label nil (reparse-symbol classsubparts) [709 716])
+                    ("VolaScalper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [731 769])
+                            ("ticker" variable
+                               (:reference 1
+                                :type ("AO::Ticker::TickerGenerator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [770 806])
+                            ("errorHandler" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ErrorHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [807 840]))                          
+                        :type ("VolaScalper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [718 841])
+                    ("VolaScalper" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [843 866])
+                    ("UpdateSettings" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("marginRetentionMin" variable (:type "double") (reparse-symbol arg-sub-list) [889 915])
+                            ("marginRetentionMax" variable (:type "double") (reparse-symbol arg-sub-list) [916 942])
+                            ("time" variable (:type "int") (reparse-symbol arg-sub-list) [952 961])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [962 972])
+                            ("deltaCutoffMin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [982 1020])
+                            ("deltaCutoffMax" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1021 1059])
+                            ("lifetime" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Duration" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1060 1094]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [869 1095])
+                    ("private" label nil (reparse-symbol classsubparts) [1097 1105])
+                    ("HandleExternalQuoteFillUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::QuoteFill" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1144 1178]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1108 1179])
+                    ("QuoteSetManagerReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1181 1209])
+                    ("CreateOrder" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instmId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1228 1273])
+                            ("vola" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1274 1302])
+                            ("volume" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1303 1333])
+                            ("side" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Side" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1334 1360])
+                            ("created" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OrderCreated" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1361 1389]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1211 1390])
+                    ("ModifyOrder" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instmId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1409 1454])
+                            ("strategyId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1455 1501])
+                            ("vola" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1502 1530])
+                            ("volume" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1531 1561]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1392 1562])
+                    ("private" label nil (reparse-symbol classsubparts) [1564 1572])
+                    ("m_quoteSetManager" variable (:type ("boost::scoped_ptr" type
+                         (:template-specifier 
+                            ( ("QuoteSetManager" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1575 1628])
+                    ("m_quoteSetStreamManager" variable (:type ("boost::scoped_ptr" type
+                         (:template-specifier 
+                            ( ("QuoteSetStreamManager" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1630 1695])
+                    ("m_civProvider" variable (:type ("boost::scoped_ptr" type
+                         (:template-specifier 
+                            ( ("CIVProvider" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1697 1742])
+                    ("m_paramProvider" variable (:type ("boost::scoped_ptr" type
+                         (:template-specifier 
+                            ( ("ParamProvider" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1744 1793])
+                    ("StrikeTradersCache" type
+                       (:typedef ("boost::ptr_map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("InstrumentTrader" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::ptr_map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1796 1887])
+                    ("m_tradersCache" variable (:type ("StrikeTradersCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1889 1923])
+                    ("m_instrumentCache" variable (:type ("AO::InstrumentsCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1925 1964])
+                    ("m_marginRetentionMin" variable (:type "double") (reparse-symbol classsubparts) [1967 1995])
+                    ("m_marginRetentionMax" variable (:type "double") (reparse-symbol classsubparts) [1997 2025])
+                    ("m_time" variable (:type "int") (reparse-symbol classsubparts) [2027 2038])
+                    ("m_steps" variable (:type "int") (reparse-symbol classsubparts) [2040 2052])
+                    ("m_deltaCutoffMin" variable (:type ("tbricks::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2054 2087])
+                    ("m_deltaCutoffMax" variable (:type ("tbricks::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2089 2122])
+                    ("m_lifetime" variable (:type ("tbricks::Duration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2124 2153])
+                    ("m_ordersCreated" variable (:type "int") (reparse-symbol classsubparts) [2156 2176])
+                    ("m_ordersModified" variable (:type "int") (reparse-symbol classsubparts) [2178 2199])
+                    ("m_orderCreatedIntervalStart" variable (:type ("tbricks::DateTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2202 2248])
+                    ("m_orderModifiedIntervalStart" variable (:type ("tbricks::DateTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2250 2297])
+                    ("m_ticker" variable (:type ("AO::Ticker::TickerGenerator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2299 2337])
+                    ("m_errorHandler" variable (:type ("ErrorHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2339 2367]))                  
+                :type "class")
+                nil [555 2370]))          
+      :file "VolaScalper.h"
+      :pointmax 2435
+      :fsize 2434
+      :lastmodtime '(21962 60358 21341 73000)
+      :unmatched-syntax '((punctuation 692 . 693) (semantic-list 655 . 691) (VOID 651 . 655) (punctuation 649 . 650) (symbol 641 . 649) (punctuation 640 . 641) (punctuation 639 . 640) (symbol 634 . 639) (TYPEDEF 626 . 633) (punctuation 609 . 610) (semantic-list 606 . 608) (VOID 602 . 606) (punctuation 600 . 601) (symbol 592 . 600) (punctuation 591 . 592) (punctuation 590 . 591) (symbol 585 . 590) (TYPEDEF 577 . 584))
+      :lexical-table 
+        '(("AO_SOURCES_STRATEGY_AO_VOLASCALPER_VOLASCALPER_H_")
+          )
+))
+  :file "!home!marselo!Code!alloptions!ao_sources!strategy!AO_VolaScalper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

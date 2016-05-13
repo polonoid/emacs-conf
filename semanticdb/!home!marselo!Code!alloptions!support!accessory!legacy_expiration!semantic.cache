@@ -1,0 +1,732 @@
+;; Object legacy_expiration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "legacy_expiration/"
+  :tables
+  (list
+    (semanticdb-table "ExpirationPlugin.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__ExpirationPlugin_H__" variable (:constant-flag t) nil [40 62])
+            ("shared/API.h" include nil nil [64 87])
+            ("strategy/stream/StrategyStream.h" include nil nil [88 131])
+            ("strategy/stream/ExpirationStreamOld.h" include nil nil [132 180])
+            ("strategy/stream/StatisticsStream.h" include nil nil [181 226])
+            ("strategy/stream/PositionStream.h" include nil nil [227 270])
+            ("strategy/instrument/InstrumentAggregateParameters.h" include nil nil [271 333])
+            ("strategy/type/CFIAttributes.h" include nil nil [334 374])
+            ("vector" include (:system-flag t) nil [375 392])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [394 418])
+            ("ExpirationPlugin" type
+               (:superclasses 
+                  ( ("Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IRequestReplyHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("StrategyStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("StatisticsStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("PortfolioStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("PositionStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ExpirationOld::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [923 930])
+                    ("ExpirationPlugin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [952 988])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1010 1048]))                          
+                        :type ("ExpirationPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [935 1049])
+                    ("ExpirationPlugin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1054 1074])
+                    ("private" label nil (reparse-symbol classsubparts) [1076 1084])
+                    ("InstrumentInfo" type
+                       (:members 
+                          ( ("InstrumentInfo" function
+                               (:constructor-flag t
+                                :type ("InstrumentInfo" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1129 1148])
+                            ("InstrumentInfo" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("instr" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1172 1197]))                                  
+                                :type ("InstrumentInfo" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1157 1198])
+                            ("instrument" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1208 1230])
+                            ("strike" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1240 1253])
+                            ("mul" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1262 1273])
+                            ("fctr" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1282 1294])
+                            ("mat_dt" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1311 1327]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1093 1334])
+                    ("instruments_map_t" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("InstrumentInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1340 1409])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1488 1522]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1455 1523])
+                    ("HandleStrategyUpdate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1572 1604])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyUpdate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1605 1635]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1529 1636])
+                    ("HandleStrategyInvalidate" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1688 1720])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1721 1751]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1641 1754])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1760 1792])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1797 1831])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1836 1871])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1937 1964]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1902 1965])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2030 2061]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1999 2062])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2099 2130]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2067 2131])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2167 2198]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2136 2199])
+                    ("HandleStatistics" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2279 2311])
+                            ("statistics" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Statistics" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2312 2342]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2240 2343])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2444 2477])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2486 2527])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2536 2588]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2386 2589])
+                    ("HandlePortfolioUpdate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2664 2696])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2697 2730]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2620 2731])
+                    ("HandlePortfolioInvalidate" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2785 2817])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2818 2849]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2737 2852])
+                    ("HandlePosition" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2931 2963])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2964 2990]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2894 2991])
+                    ("HandlePositionInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3044 3076])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3077 3099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2997 3100])
+                    ("HandleExpiration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3154 3186])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ExpirationOld::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3195 3232]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3124 3233])
+                    ("HandleExpirationInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3288 3320])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3321 3343]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3239 3344])
+                    ("HandleRequestReply" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3403 3433])
+                            ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3442 3456])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3457 3477]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3371 3478])
+                    ("m_position_id" variable
+                       (:constant-flag t
+                        :type ("Uuid" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3484 3509])
+                    ("m_fee_id" variable
+                       (:constant-flag t
+                        :type ("Uuid" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3514 3534])
+                    ("m_invested_id" variable
+                       (:constant-flag t
+                        :type ("Uuid" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3539 3564])
+                    ("m_expiration_id" variable
+                       (:constant-flag t
+                        :type ("Uuid" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3569 3596])
+                    ("m_strategy_stream" variable (:type ("StrategyStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3617 3650])
+                    ("m_statistics_stream" variable (:type ("StatisticsStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3655 3692])
+                    ("m_portfolio_stream" variable (:type ("PortfolioStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3697 3732])
+                    ("m_expiration_stream" variable (:type ("ExpirationOld::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3737 3779])
+                    ("m_instrument_stream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3784 3842])
+                    ("m_underlying_id" variable (:type ("InstrumentIdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3866 3912])
+                    ("m_close_price" variable (:type ("PriceParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3917 3946])
+                    ("m_settlement_price" variable (:type ("PriceParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3951 3985])
+                    ("m_price" variable (:type ("PriceParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3990 4013])
+                    ("m_expiration_date" variable (:type ("DateTimeParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4018 4054])
+                    ("m_table_positions" variable (:type ("TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4059 4092])
+                    ("m_table_expirations" variable (:type ("TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4101 4136])
+                    ("m_state" variable (:type ("IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4141 4166])
+                    ("m_status_text" variable (:type ("StringParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4171 4201])
+                    ("m_expiration_reset" variable (:type ("BooleanParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4206 4242])
+                    ("m_result_period" variable (:type ("IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4247 4280])
+                    ("m_underlying" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4313 4337])
+                    ("m_map_exp_instruments" variable (:type ("instruments_map_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4342 4382])
+                    ("m_vec_portfolios" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Portfolio" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4387 4427])
+                    ("m_vec_position_streams" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("PositionStream" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4432 4483])
+                    ("m_set_create_requests" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("Identifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4489 4532])
+                    ("m_set_delete_requests" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("Identifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4537 4580])
+                    ("m_set_pending_streams" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("Identifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4585 4628])
+                    ("m_table_fee_positions" variable (:type ("Table" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4634 4662])
+                    ("InitPositionsTable" function
+                       (:template 
+                          ( ("Table_T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("table" variable
+                               (:reference 1
+                                :type ("Table_T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4720 4736]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [4668 4737])
+                    ("InitExpirationsTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4742 4770])
+                    ("IsSupportedDerivativeCFI" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("cfi" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CFI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4813 4829]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4776 4830])
+                    ("HandleUnderlyingInstrumentUpdate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4835 4875])
+                    ("SubscribeToInstruments" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4880 4910])
+                    ("HandleExpirationDateUpdate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4915 4949])
+                    ("CalculateOperation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instr_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4999 5033])
+                            ("portfolio_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5042 5083])
+                            ("vol" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5092 5111])
+                            ("xvol" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5112 5132])
+                            ("invested" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5133 5157])
+                            ("operation" variable
+                               (:reference 1
+                                :type ("ExpirationOld::Operation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5166 5203]))                          
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("Double" type nil nil nil)
+                                  ("Volume" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4954 5204])
+                    ("UpdatePositionInTable" function
+                       (:template 
+                          ( ("Table_T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5269 5295])
+                            ("table" variable
+                               (:reference 1
+                                :type ("Table_T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5296 5312])
+                            ("instr_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5321 5355])
+                            ("currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5356 5382])
+                            ("fee_update" variable (:type "bool") (reparse-symbol arg-sub-list) [5383 5399]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [5210 5400])
+                    ("FindPosition" function
+                       (:template 
+                          ( ("Table_T" type (:type "class") nil nil))                          
+                        :type ("size_t" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("table" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table_T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5458 5480])
+                            ("portfolio_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5481 5522])
+                            ("instrument_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5531 5574])
+                            ("currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5575 5601]))                          
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [5406 5602])
+                    ("UpdateExpireOption" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instr_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5632 5666])
+                            ("row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5675 5686])
+                            ("xvol" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Volume" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5687 5707]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5608 5708])
+                    ("GetSingleCellUpdate" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("table_update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5745 5772])
+                            ("act" variable
+                               (:reference 1
+                                :type ("SetCellTableAction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5773 5798]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5713 5799])
+                    ("HandleInstrumentsTableUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("table_update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5838 5865]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5804 5866])
+                    ("HandlePriceUpdate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5871 5896])
+                    ("CreateExpiration" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5901 5925])
+                    ("ResetLastExpiration" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5930 5957])
+                    ("OpenExpirationStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5962 5990])
+                    ("OpenPositionStreams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5995 6022])
+                    ("UpdatePluginStatus" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6027 6053])
+                    ("ValidateExpiration" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("expiration" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ExpirationOld::Options" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6082 6124]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6058 6125])
+                    ("IsResidualCashSupport" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instr" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6157 6182]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6130 6189])
+                    ("IsZeroPrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6211 6232])
+                            ("instr_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6233 6267]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6194 6268]))                  
+                :type "class")
+                nil [420 6271])
+            ("InitPositionsTable" function
+               (:template 
+                  ( ("Table_T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :type ("Table_T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6343 6359]))                  
+                :parent "ExpirationPlugin")
+                nil [6273 7235])
+            ("UpdatePositionInTable" function
+               (:template 
+                  ( ("Table_T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("position" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Position" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7310 7336])
+                    ("table" variable
+                       (:reference 1
+                        :type ("Table_T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7341 7357])
+                    ("instr_info" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7358 7392])
+                    ("currency" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Currency" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7393 7419])
+                    ("fee_update" variable (:type "bool") (reparse-symbol arg-sub-list) [7420 7436]))                  
+                :parent "ExpirationPlugin")
+                nil [7237 10787])
+            ("FindPosition" function
+               (:template 
+                  ( ("Table_T" type (:type "class") nil nil))                  
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("table" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Table_T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10855 10877])
+                    ("portfolio_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10878 10919])
+                    ("instrument_id" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10924 10967])
+                    ("currency" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Currency" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10968 10994]))                  
+                :parent "ExpirationPlugin")
+                nil [10789 12014]))          
+      :file "ExpirationPlugin.h"
+      :pointmax 12049
+      :fsize 12048
+      :lastmodtime '(22018 52174 725530 935000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ExpirationPlugin_H__")
+          )
+))
+  :file "!home!marselo!Code!alloptions!support!accessory!legacy_expiration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

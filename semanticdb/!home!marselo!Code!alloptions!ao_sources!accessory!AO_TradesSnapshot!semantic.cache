@@ -1,0 +1,1622 @@
+;; Object AO_TradesSnapshot/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_TradesSnapshot/"
+  :tables
+  (list
+    (semanticdb-table "AsyncInstrumentResolve.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AsyncInstrumentResolve.h" include nil nil [106 141])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [142 191])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("AsyncInstrumentResolve" function
+                               (:constructor-flag t
+                                :parent "AsyncInstrumentResolve"
+                                :arguments 
+                                  ( ("cache" variable
+                                       (:reference 1
+                                        :type ("InstrumentsCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [285 310])
+                                    ("groups" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [312 374])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [376 392])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [392 398])
+                                    ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [407 420]))                                  
+                                :type ("AsyncInstrumentResolve" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [236 864])
+                            ("AsyncInstrumentResolve" function
+                               (:constructor-flag t
+                                :parent "AsyncInstrumentResolve"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [915 955])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [957 973])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [973 1005])
+                                    ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1014 1027]))                                  
+                                :type ("AsyncInstrumentResolve" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [866 1260])
+                            ("HandleInstrument" function
+                               (:parent "AsyncInstrumentResolve"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1308 1349])
+                                    ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1350 1389]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1262 1499])
+                            ("HandleInstrumentInvalidate" function
+                               (:parent "AsyncInstrumentResolve"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1557 1598])
+                                    ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1599 1640]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1501 1659])
+                            ("HandleStreamStale" function
+                               (:parent "AsyncInstrumentResolve"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1708 1749]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1661 1768])
+                            ("HandleStreamFailed" function
+                               (:parent "AsyncInstrumentResolve"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1818 1859]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1770 1936])
+                            ("HandleSnapshotEnd" function
+                               (:parent "AsyncInstrumentResolve"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1985 2026]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1938 2049])
+                            ("AsyncInstrumentResolveFactory" function
+                               (:constructor-flag t
+                                :parent "AsyncInstrumentResolveFactory"
+                                :type ("AsyncInstrumentResolveFactory" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2051 2196])
+                            ("ResolveInstrument" function
+                               (:parent "AsyncInstrumentResolveFactory"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2254 2294])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2296 2312])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [2312 2355])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2364 2373]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2198 2414])
+                            ("CreateResolver" function
+                               (:parent "AsyncInstrumentResolveFactory"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2502 2542])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2544 2560])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [2560 2603])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2612 2621]))                                  
+                                :type ("std::auto_ptr" type
+                                     (:template-specifier 
+                                        ( ("AsyncInstrumentResolve" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [2416 2714])
+                            ("RunningRequestsCount" function
+                               (:parent "AsyncInstrumentResolveFactory"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2716 2824]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [208 2827]))                  
+                :type "namespace")
+                nil [193 2860]))          
+      :file "AsyncInstrumentResolve.cpp"
+      :pointmax 2880
+      :fsize 2879
+      :lastmodtime '(21962 60357 942346 575000)
+      :unmatched-syntax '((punctuation 2610 . 2611) (CONST 2605 . 2610) (punctuation 2603 . 2604) (semantic-list 2564 . 2603) (punctuation 2559 . 2560) (punctuation 2362 . 2363) (CONST 2357 . 2362) (punctuation 2355 . 2356) (semantic-list 2316 . 2355) (punctuation 2311 . 2312) (punctuation 1012 . 1013) (CONST 1007 . 1012) (punctuation 1005 . 1006) (semantic-list 977 . 1005) (punctuation 972 . 973) (punctuation 405 . 406) (CONST 400 . 405) (punctuation 398 . 399) (semantic-list 396 . 398) (punctuation 391 . 392)))
+    (semanticdb-table "AsyncInstrumentResolve.h"
+      :file "AsyncInstrumentResolve.h"
+      :fsize 2117
+      :lastmodtime '(21962 60357 942346 575000))
+    (semanticdb-table "BboProvider.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BboProvider.h" include nil nil [95 119])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [120 169])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [171 195])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("BboProvider::UNDERLYING_PRICE_HISTORY_ELEMENTS_COUNT" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [240 314])
+                            ("BboProvider" function
+                               (:constructor-flag t
+                                :parent "BboProvider"
+                                :arguments 
+                                  ( ("ivid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [355 406]))                                  
+                                :type ("BboProvider" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [330 639])
+                            ("BboProvider" function
+                               (:destructor-flag t
+                                :parent "BboProvider"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [641 767])
+                            ("Get" function
+                               (:parent "BboProvider"
+                                :arguments 
+                                  ( ("timestamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [857 892]))                                  
+                                :type ("boost::optional" type
+                                     (:template-specifier 
+                                        ( ("boost::tuple" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [769 934])
+                            ("GetDiagnostics" function
+                               (:parent "BboProvider"
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [936 1025])
+                            ("HandleBestPrice" function
+                               (:parent "BboProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1061 1102])
+                                    ("price" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::BestPrice" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1103 1136]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1027 1322])
+                            ("HandleStreamStale" function
+                               (:parent "BboProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1360 1401]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1324 1477])
+                            ("HandleStreamFailed" function
+                               (:parent "BboProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1516 1557]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1479 1693])
+                            ("HandleSnapshotEnd" function
+                               (:parent "BboProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1731 1772]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1695 1960])
+                            ("GetIvid" function
+                               (:parent "BboProvider"
+                                :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1962 2055]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [212 2058]))                  
+                :type "namespace")
+                nil [197 2060]))          
+      :file "BboProvider.cpp"
+      :pointmax 2080
+      :fsize 2079
+      :lastmodtime '(21962 60357 942346 575000)
+      :unmatched-syntax nil)
+    (semanticdb-table "BboProvider.h"
+      :file "BboProvider.h"
+      :fsize 1453
+      :lastmodtime '(21962 60357 942346 575000))
+    (semanticdb-table "CalculatedValuesHelper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CalculatedValuesHelper.h" include nil nil [106 141])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [142 191])
+            ("boost/assign/list_of.hpp" include (:system-flag t) nil [192 227])
+            ("tbricks_definitions.h" include nil nil [228 260])
+            ("AO" type
+               (:members 
+                  ( ("list_of" function
+                       (:parent "boost::assign"
+                        :arguments 
+                          ( ("" variable (:type ("aotradessnapshot::calculated_values::FairMarketPrice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [416 470]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [391 524])
+                    ("CalculatedValuesHelper" function
+                       (:constructor-flag t
+                        :parent "CalculatedValuesHelper"
+                        :arguments 
+                          ( ("ivid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [767 818])
+                            ("underlyingPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [820 858])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [860 876])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [876 942])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [951 964]))                          
+                        :type ("CalculatedValuesHelper" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [718 1467])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:parent "CalculatedValuesHelper"
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1533 1576])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1578 1636]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1469 1665])
+                    ("HandleStreamStale" function
+                       (:parent "CalculatedValuesHelper"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1714 1755]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1667 1840])
+                    ("HandleStreamFailed" function
+                       (:parent "CalculatedValuesHelper"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1890 1931]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1842 2008])
+                    ("HandleSnapshotEnd" function
+                       (:parent "CalculatedValuesHelper"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2057 2098]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2010 2333])
+                    ("GetValues" function
+                       (:parent "CalculatedValuesHelper"
+                        :type ("tbricks::CalculatedInstrumentValues" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2335 2440]))                  
+                :type "namespace")
+                nil [262 2443]))          
+      :file "CalculatedValuesHelper.cpp"
+      :pointmax 2463
+      :fsize 2462
+      :lastmodtime '(21962 60357 942346 575000)
+      :unmatched-syntax '((punctuation 949 . 950) (CONST 944 . 949) (punctuation 942 . 943) (semantic-list 880 . 942) (punctuation 875 . 876) (punctuation 715 . 716) (semantic-list 669 . 715) (semantic-list 621 . 667) (semantic-list 573 . 619) (semantic-list 526 . 571) (semantic-list 468 . 470) (punctuation 388 . 389) (symbol 366 . 387) (punctuation 365 . 366) (punctuation 364 . 365) (symbol 342 . 364) (punctuation 340 . 341) (symbol 305 . 340) (punctuation 304 . 305) (punctuation 303 . 304) (symbol 296 . 303) (punctuation 295 . 296) (symbol 289 . 295) (punctuation 288 . 289) (punctuation 287 . 288) (symbol 284 . 287) (CONST 278 . 283)))
+    (semanticdb-table "CalculatedValuesHelper.h"
+      :file "CalculatedValuesHelper.h"
+      :fsize 1643
+      :lastmodtime '(21962 60357 942346 575000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 26722
+      :lastmodtime '(21962 60357 944346 435000))
+    (semanticdb-table "MetricsGroupUtils.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MetricsGroupUtils.h" include nil nil [101 131])
+            ("tbricks_definitions.h" include nil nil [132 164])
+            ("AO" type
+               (:members 
+                  ( ("MetricsGroupUtils" type
+                       (:members 
+                          ( ("GetGroupsFromMetricsGroup" function
+                               (:arguments 
+                                  ( ("metricsGroup" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [278 333]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroup" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [212 1212]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [181 1215]))                  
+                :type "namespace")
+                nil [166 1217]))          
+      :file "MetricsGroupUtils.cpp"
+      :pointmax 1237
+      :fsize 1236
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MetricsGroupUtils.h"
+      :file "MetricsGroupUtils.h"
+      :fsize 547
+      :lastmodtime '(21962 60357 943346 505000))
+    (semanticdb-table "OptionSnapshotFactory.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OptionSnapshotFactory.h" include nil nil [105 139])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [140 189])
+            ("boost/tuple/tuple_io.hpp" include (:system-flag t) nil [190 225])
+            ("boost/tuple/tuple_comparison.hpp" include (:system-flag t) nil [226 269])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("OptionSnapshotFactory" function
+                               (:constructor-flag t
+                                :parent "OptionSnapshotFactory"
+                                :type ("OptionSnapshotFactory" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [314 432])
+                            ("CreateHelper" function
+                               (:parent "OptionSnapshotFactory"
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MapKey" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [510 528])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [529 545])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [545 611])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type ("onSnapshotReady" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [613 635]))                                  
+                                :type ("std::auto_ptr" type
+                                     (:template-specifier 
+                                        ( ("CalculatedValuesHelper" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [434 762])
+                            ("GetSnapshot" function
+                               (:parent "OptionSnapshotFactory"
+                                :arguments 
+                                  ( ("ivid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [829 880])
+                                    ("underlyingPrice" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Price" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [882 920])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [922 938])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [938 1004])
+                                    ("" variable (:type ("onSnapshotReady" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1029]))                                  
+                                :type ("boost::signals2::connection" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [764 1139]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [286 1142]))                  
+                :type "namespace")
+                nil [271 1175]))          
+      :file "OptionSnapshotFactory.cpp"
+      :pointmax 1195
+      :fsize 1194
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax '((punctuation 1011 . 1012) (CONST 1006 . 1011) (punctuation 1004 . 1005) (semantic-list 942 . 1004) (punctuation 937 . 938) (punctuation 611 . 612) (semantic-list 549 . 611) (punctuation 544 . 545)))
+    (semanticdb-table "OptionSnapshotFactory.h"
+      :file "OptionSnapshotFactory.h"
+      :fsize 1411
+      :lastmodtime '(21962 60357 943346 505000))
+    (semanticdb-table "OutputService.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OutputService.h" include nil nil [97 123])
+            ("tbricks_definitions.h" include nil nil [124 156])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [157 206])
+            ("AO_SharedGlobal/Global/MapUtils.h" include nil nil [207 251])
+            ("AO_SharedGlobal/Global/AO_Utils.h" include nil nil [252 296])
+            ("AO_SharedGlobal/Thrift/TimeUtils.h" include nil nil [297 342])
+            ("boost/optional/optional_io.hpp" include (:system-flag t) nil [343 384])
+            ("boost/tuple/tuple_io.hpp" include (:system-flag t) nil [385 420])
+            ("SnapshotBuilder.h" include nil nil [421 449])
+            ("thrift" type
+               (:kind alias
+                :members 
+                  ( ("Tbricks::Messages::TradesSnapshot" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [451 504])
+            ("cv" type
+               (:kind alias
+                :members 
+                  ( ("aotradessnapshot::calculated_values" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [505 556])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("unnamed" type
+                               (:members 
+                                  ( ("ToThriftUnderlyingSnapshot" function
+                                       (:template 
+                                          ( ("BboType" type (:type "class") nil nil))                                          
+                                        :type ("thrift::UnderlyingSnapshot" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("snapshot" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::tuple" type
+                                                     (:template-specifier 
+                                                        ( ("tbricks::DateTime" type nil nil nil)
+                                                          ("BboType" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [693 750]))                                          )
+                                        (reparse-symbol namespacesubparts) [614 1517])
+                                    ("GetDouble" function
+                                       (:arguments 
+                                          ( ("values" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::CalculatedInstrumentValues::InstrumentValues" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1536 1604])
+                                            ("def" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::InstrumentCalculatedValueDefinition" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1605 1661]))                                          
+                                        :type "double")
+                                        (reparse-symbol namespacesubparts) [1519 1887])
+                                    ("ToThriftOptionSnapshot" function
+                                       (:arguments 
+                                          ( ("values" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::CalculatedInstrumentValues::InstrumentValues" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1935 2003]))                                          
+                                        :type ("thrift::OptionSnapshot" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1889 2341])
+                                    ("GetSeconds" function
+                                       (:arguments 
+                                          ( ("duration" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::Duration" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2358 2392]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [2343 2473]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [601 2476])
+                            ("OutputService::RECONNECT_TIMER" variable
+                               (:constant-flag t
+                                :type ("tbricks::Duration" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2478 2565])
+                            ("OutputService" function
+                               (:constructor-flag t
+                                :parent "OutputService"
+                                :arguments 
+                                  ( ("hostname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2598 2626])
+                                    ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2642]))                                  
+                                :type ("OutputService" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2567 2704])
+                            ("ConnectToThrift" function
+                               (:parent "OutputService"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2706 3081])
+                            ("OnThriftConnected" function
+                               (:parent "OutputService"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3083 3140])
+                            ("OnThriftDisconnected" function
+                               (:parent "OutputService"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3142 3385])
+                            ("SendSnapshots" function
+                               (:parent "OutputService"
+                                :arguments 
+                                  ( ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3423 3451])
+                                    ("timeOffset" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3453 3489])
+                                    ("snapshot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Snapshot" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3491 3516]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3387 4455]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [573 4458]))                  
+                :type "namespace")
+                nil [558 4491]))          
+      :file "OutputService.cpp"
+      :pointmax 4511
+      :fsize 4510
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax nil)
+    (semanticdb-table "OutputService.h"
+      :file "OutputService.h"
+      :fsize 1317
+      :lastmodtime '(21962 60357 943346 505000))
+    (semanticdb-table "SnapshotBuilder.h"
+      :file "SnapshotBuilder.h"
+      :fsize 1986
+      :lastmodtime '(21962 60357 943346 505000))
+
+
+    (semanticdb-table "SnapshotBuilder.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SnapshotBuilder.h" include nil nil [99 127])
+            ("OptionSnapshotFactory.h" include nil nil [128 162])
+            ("TradesSnapshotManager.h" include nil nil [163 197])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [198 247])
+            ("boost/bind.hpp" include (:system-flag t) nil [248 273])
+            ("boost/tuple/tuple_io.hpp" include (:system-flag t) nil [274 309])
+            ("boost/optional/optional_io.hpp" include (:system-flag t) nil [310 351])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("SnapshotBuilder" function
+                               (:constructor-flag t
+                                :parent "SnapshotBuilder"
+                                :arguments 
+                                  ( ("priceProvider" variable
+                                       (:reference 1
+                                        :type ("UnderlyingPriceProvider" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [431 471])
+                                    ("optionSnapshotFactory" variable
+                                       (:reference 1
+                                        :type ("OptionSnapshotFactory" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [473 519])
+                                    ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [521 549])
+                                    ("timestamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [551 586])
+                                    ("makeOptionSnapshot" variable (:type "bool") (reparse-symbol arg-sub-list) [588 612])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [614 630])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [630 668])
+                                    ("" variable (:type ("onReady" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [677 685]))                                  
+                                :type ("SnapshotBuilder" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [396 2930])
+                            ("OnBidOptionSnapshot" function
+                               (:parent "SnapshotBuilder"
+                                :arguments 
+                                  ( ("values" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::CalculatedInstrumentValues::InstrumentValues" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2974 3042]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2932 3225])
+                            ("OnAskOptionSnapshot" function
+                               (:parent "SnapshotBuilder"
+                                :arguments 
+                                  ( ("values" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::CalculatedInstrumentValues::InstrumentValues" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3269 3337]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3227 3520])
+                            ("CheckIfSnapshotReady" function
+                               (:parent "SnapshotBuilder"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3522 3642])
+                            ("IsReady" function
+                               (:parent "SnapshotBuilder"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [3644 3703])
+                            ("OnReady" function
+                               (:parent "SnapshotBuilder"
+                                :arguments 
+                                  ( ("value" variable (:type ("boost::optional" type
+                                         (:template-specifier 
+                                            ( ("Snapshot" type
+                                                 (:reference 1
+                                                  :constant-flag t)
+                                                  nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3735 3774]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3705 3816])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3844 3862])
+                                    ("snapshot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Snapshot" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3863 3888]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3818 4103]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [368 4106]))                  
+                :type "namespace")
+                nil [353 4139]))          
+      :file "SnapshotBuilder.cpp"
+      :pointmax 4159
+      :fsize 4158
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax '((punctuation 675 . 676) (CONST 670 . 675) (punctuation 668 . 669) (semantic-list 634 . 668) (punctuation 629 . 630)))
+    (semanticdb-table "TradesSnapshotManager.h"
+      :file "TradesSnapshotManager.h"
+      :fsize 2783
+      :lastmodtime '(21962 60357 943346 505000))
+    (semanticdb-table "TradeManager.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TradeManager.h" include nil nil [96 121])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [122 171])
+            ("boost/assign/list_inserter.hpp" include (:system-flag t) nil [172 213])
+            ("boost/assign/list_of.hpp" include (:system-flag t) nil [214 249])
+            ("boost/bind.hpp" include (:system-flag t) nil [250 275])
+            ("boost/optional/optional_io.hpp" include (:system-flag t) nil [276 317])
+            ("boost/tuple/tuple_io.hpp" include (:system-flag t) nil [318 353])
+            ("algorithm" include (:system-flag t) nil [354 374])
+            ("TradesSnapshotManager.h" include nil nil [375 409])
+            ("unnamed" type
+               (:members 
+                  ( ("CreateUnderlyingSnapshotOffsets" function (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("tbricks::Duration" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [424 826])
+                    ("QueueFromVector" function
+                       (:arguments 
+                          ( ("vec" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::DateTime" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [874 916]))                          
+                        :type ("std::queue" type
+                             (:template-specifier 
+                                ( ("tbricks::DateTime" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [828 1011]))                  
+                :type "namespace")
+                nil [411 1014])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("TradeManager::UNDERLYING_SNAPSHOTS" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::Duration" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [1059 1167])
+                            ("list_of" function
+                               (:parent "boost::assign"
+                                :arguments 
+                                  ( ("" variable (:type ("tbricks::Duration::Seconds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1264 1293]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1239 1328])
+                            ("TradeManager::START_RECORD_TIME" variable
+                               (:constant-flag t
+                                :type ("tbricks::Time" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1971 2056])
+                            ("TradeManager::END_RECORD_TIME" variable
+                               (:constant-flag t
+                                :type ("tbricks::Time" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2057 2142])
+                            ("TradeManager" function
+                               (:constructor-flag t
+                                :parent "TradeManager"
+                                :arguments 
+                                  ( ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2173 2201])
+                                    ("isOldTrade" variable (:type "bool") (reparse-symbol arg-sub-list) [2203 2219])
+                                    ("priceProvider" variable
+                                       (:reference 1
+                                        :type ("UnderlyingPriceProvider" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2221 2261])
+                                    ("optionSnapshotFactory" variable
+                                       (:reference 1
+                                        :type ("OptionSnapshotFactory" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2263 2309])
+                                    ("outputService" variable
+                                       (:reference 1
+                                        :type ("OutputService" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2311 2341]))                                  
+                                :type ("TradeManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2144 2652])
+                            ("PrepareTimestamps" function
+                               (:parent "TradeManager"
+                                :arguments 
+                                  ( ("isOldTrade" variable (:type "bool") (reparse-symbol arg-sub-list) [2691 2707]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2654 4064])
+                            ("SendSnapshots" function
+                               (:parent "TradeManager"
+                                :arguments 
+                                  ( ("timestamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4099 4134]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4066 4567])
+                            ("OnSnapshotReady" function
+                               (:parent "TradeManager"
+                                :arguments 
+                                  ( ("snapshot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::optional" type
+                                             (:template-specifier 
+                                                ( ("Snapshot" type
+                                                     (:reference 1
+                                                      :constant-flag t)
+                                                      nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4606 4655])
+                                    ("timeOffset" variable (:type ("tbricks::Duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4657 4686]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4569 4815])
+                            ("IsDuringRecordHours" function
+                               (:parent "TradeManager"
+                                :arguments 
+                                  ( ("timestamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4856 4891]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [4817 5002]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1031 5005]))                  
+                :type "namespace")
+                nil [1016 5038]))          
+      :file "TradeManager.cpp"
+      :pointmax 5058
+      :fsize 5057
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax '((punctuation 1968 . 1969) (semantic-list 1938 . 1968) (semantic-list 1906 . 1936) (semantic-list 1874 . 1904) (semantic-list 1842 . 1872) (semantic-list 1810 . 1840) (semantic-list 1754 . 1795) (semantic-list 1723 . 1752) (semantic-list 1692 . 1721) (semantic-list 1661 . 1690) (semantic-list 1630 . 1659) (semantic-list 1599 . 1628) (semantic-list 1565 . 1597) (semantic-list 1531 . 1563) (semantic-list 1497 . 1529) (semantic-list 1464 . 1495) (semantic-list 1431 . 1462) (semantic-list 1398 . 1429) (semantic-list 1364 . 1396) (semantic-list 1330 . 1362) (semantic-list 1290 . 1293) (punctuation 1236 . 1237) (symbol 1219 . 1235) (punctuation 1218 . 1219) (punctuation 1217 . 1218) (symbol 1205 . 1217) (punctuation 1203 . 1204) (symbol 1195 . 1203) (punctuation 1194 . 1195) (punctuation 1193 . 1194) (symbol 1186 . 1193) (punctuation 1185 . 1186) (symbol 1179 . 1185) (punctuation 1178 . 1179) (punctuation 1177 . 1178) (symbol 1174 . 1177) (CONST 1168 . 1173)))
+    (semanticdb-table "TradeManager.h"
+      :file "TradeManager.h"
+      :fsize 2030
+      :lastmodtime '(22149 9728 969961 580000))
+    (semanticdb-table "TradesProvider.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TradesProvider.h" include nil nil [98 125])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [126 175])
+            ("TradeManager.h" include nil nil [176 201])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [203 227])
+            ("AO" type
+               (:members 
+                  ( ("TradesProvider" function
+                       (:constructor-flag t
+                        :parent "TradesProvider"
+                        :arguments 
+                          ( ("portfolios" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::SparseSet" type
+                                     (:template-specifier 
+                                        ( ("tbricks::PortfolioIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [278 345])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [347 363])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [363 390])
+                            ("" variable (:type ("onTradeCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [399 415])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [417 433])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [433 470])
+                            ("" variable (:type ("onTradeInvalidatedCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [479 506]))                          
+                        :type ("TradesProvider" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [245 1162])
+                    ("IsSnapshotDone" function
+                       (:parent "TradesProvider"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1164 1245])
+                    ("HandleTrade" function
+                       (:parent "TradesProvider"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1280 1321])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1322 1351]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1247 1506])
+                    ("HandleTradeInvalidate" function
+                       (:parent "TradesProvider"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1551 1592])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::TradeIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1593 1629]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1508 1796])
+                    ("HandleStreamStale" function
+                       (:parent "TradesProvider"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1837 1878]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1798 1897])
+                    ("HandleStreamFailed" function
+                       (:parent "TradesProvider"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1939 1980]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1899 2049])
+                    ("HandleSnapshotEnd" function
+                       (:parent "TradesProvider"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2090 2131]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2051 2148]))                  
+                :type "namespace")
+                nil [229 2151]))          
+      :file "TradesProvider.cpp"
+      :pointmax 2171
+      :fsize 2170
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax '((punctuation 477 . 478) (CONST 472 . 477) (punctuation 470 . 471) (semantic-list 437 . 470) (punctuation 432 . 433) (punctuation 397 . 398) (CONST 392 . 397) (punctuation 390 . 391) (semantic-list 367 . 390) (punctuation 362 . 363)))
+    (semanticdb-table "TradesProvider.h"
+      :file "TradesProvider.h"
+      :fsize 1571
+      :lastmodtime '(21962 60357 943346 505000))
+    (semanticdb-table "TradesSnapshotManager.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TradesSnapshotManager.h" include nil nil [105 139])
+            ("tbricks_definitions.h" include nil nil [140 172])
+            ("MetricsGroupUtils.h" include nil nil [173 203])
+            ("boost/bind.hpp" include (:system-flag t) nil [204 229])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [230 279])
+            ("unnamed" type
+               (:members 
+                  ( ("GroupsToIds" function
+                       (:arguments 
+                          ( ("groups" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroup" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [353 405]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [293 565])
+                    ("GetMarketMakingPortfolio" function
+                       (:arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [621 671]))                          
+                        :type ("tbricks::PortfolioIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [567 1072]))                  
+                :type "namespace")
+                nil [281 1074])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("TradesSnapshotManager" function
+                               (:constructor-flag t
+                                :parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("metricsGroupId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1166 1223])
+                                    ("hostname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1225 1253])
+                                    ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1255 1269]))                                  
+                                :type ("TradesSnapshotManager" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1119 1871])
+                            ("TradesSnapshotManager" function
+                               (:destructor-flag t
+                                :parent "TradesSnapshotManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1873 1948])
+                            ("OnNewUnderlying" function
+                               (:parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("ivid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1994 2045]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1950 2150])
+                            ("OnInstrumentsReady" function
+                               (:parent "TradesSnapshotManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2152 2463])
+                            ("OnVwapReady" function
+                               (:parent "TradesSnapshotManager"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2465 3495])
+                            ("OnVwapVolumeChanged" function
+                               (:parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3545 3585])
+                                    ("vwapVolume" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Integer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3586 3621]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3497 3802])
+                            ("OnTrade" function
+                               (:parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3840 3868]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3804 4729])
+                            ("OnInstrumentResolved" function
+                               (:parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("trade" variable (:type ("tbricks::Trade" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4780 4801])
+                                    ("isOldTrade" variable (:type "bool") (reparse-symbol arg-sub-list) [4802 4818])
+                                    ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4819 4857]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4731 4967])
+                            ("OnTradeWithInstrument" function
+                               (:parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5019 5047])
+                                    ("isOldTrade" variable (:type "bool") (reparse-symbol arg-sub-list) [5048 5064])
+                                    ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5065 5103]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4969 5813])
+                            ("OnTradeInvalidated" function
+                               (:parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("tradeId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::TradeIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5862 5902]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5815 6030])
+                            ("GetPriceProvider" function
+                               (:parent "TradesSnapshotManager"
+                                :arguments 
+                                  ( ("ivid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6098 6149]))                                  
+                                :type ("UnderlyingPriceProvider" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6032 6524]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1091 6527]))                  
+                :type "namespace")
+                nil [1076 6529]))          
+      :file "TradesSnapshotManager.cpp"
+      :pointmax 6549
+      :fsize 6548
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax nil)
+    (semanticdb-table "UnderlyingHelper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("UnderlyingHelper.h" include nil nil [100 129])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [130 179])
+            ("tbricks_definitions.h" include nil nil [180 212])
+            ("unnamed" type
+               (:members 
+                  ( ("GetUnderlyingFromParameters" function
+                       (:template 
+                          ( ("Params" type (:type "class") nil nil))                          
+                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Params" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [309 330]))                          )
+                        (reparse-symbol namespacesubparts) [227 496]))                  
+                :type "namespace")
+                nil [214 499])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("UnderlyingHelper" function
+                               (:constructor-flag t
+                                :parent "UnderlyingHelper"
+                                :arguments 
+                                  ( ("groups" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [581 643])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [645 661])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [661 667])
+                                    ("" variable (:type ("onReady" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 684])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [686 702])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [702 744])
+                                    ("" variable (:type ("onPreviouslyUnknownUnderlying" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [753 783]))                                  
+                                :type ("UnderlyingHelper" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [544 1563])
+                            ("HandleInstrumentAggregateParameters" function
+                               (:parent "UnderlyingHelper"
+                                :arguments 
+                                  ( ("streamId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1626 1668])
+                                    ("instrumentId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1670 1720])
+                                    ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1722 1783]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1565 2064])
+                            ("HandleStreamStale" function
+                               (:parent "UnderlyingHelper"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2107 2148]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2066 2167])
+                            ("HandleStreamFailed" function
+                               (:parent "UnderlyingHelper"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2211 2252]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2169 2323])
+                            ("HandleSnapshotEnd" function
+                               (:parent "UnderlyingHelper"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2366 2407]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2325 2425])
+                            ("GetUnderlying" function
+                               (:parent "UnderlyingHelper"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2489 2529]))                                  
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2427 2706])
+                            ("IsReady" function
+                               (:parent "UnderlyingHelper"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2708 2784]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [516 2787]))                  
+                :type "namespace")
+                nil [501 2820]))          
+      :file "UnderlyingHelper.cpp"
+      :pointmax 2840
+      :fsize 2839
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax '((punctuation 751 . 752) (CONST 746 . 751) (punctuation 744 . 745) (semantic-list 706 . 744) (punctuation 701 . 702) (punctuation 674 . 675) (CONST 669 . 674) (punctuation 667 . 668) (semantic-list 665 . 667) (punctuation 660 . 661)))
+    (semanticdb-table "UnderlyingHelper.h"
+      :file "UnderlyingHelper.h"
+      :fsize 1728
+      :lastmodtime '(21962 60357 943346 505000))
+    (semanticdb-table "UnderlyingIvidProvider.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("UnderlyingIvidProvider.h" include nil nil [106 141])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [142 191])
+            ("boost/bind.hpp" include (:system-flag t) nil [192 217])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("UnderlyingIvidProvider::EMPTY_IVID" variable
+                               (:constant-flag t
+                                :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [262 342])
+                            ("UnderlyingIvidProvider" function
+                               (:constructor-flag t
+                                :parent "UnderlyingIvidProvider"
+                                :arguments 
+                                  ( ("cache" variable
+                                       (:reference 1
+                                        :type ("InstrumentsCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [393 418])
+                                    ("products" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [420 484])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [486 502])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [502 508])
+                                    ("" variable (:type ("onReady" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [517 525])
+                                    ("onNewUnderlying" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IvidCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [527 563]))                                  
+                                :type ("UnderlyingIvidProvider" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [344 786])
+                            ("OnInstrumentsResolved" function
+                               (:parent "UnderlyingIvidProvider"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [788 1117])
+                            ("OnUnderlyingsReady" function
+                               (:parent "UnderlyingIvidProvider"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1119 1267])
+                            ("OnNewUnderlying" function
+                               (:parent "UnderlyingIvidProvider"
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1314 1354]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1269 1472])
+                            ("OnUnderlyingResolved" function
+                               (:parent "UnderlyingIvidProvider"
+                                :arguments 
+                                  ( ("underlying" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1524 1562]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1474 2067])
+                            ("GetUnderlying" function
+                               (:parent "UnderlyingIvidProvider"
+                                :arguments 
+                                  ( ("instrumentId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2146 2196]))                                  
+                                :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2069 2693])
+                            ("GetAllUnderlyings" function
+                               (:parent "UnderlyingIvidProvider"
+                                :type ("tbricks::SparseSet" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentVenueIdentification" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [2695 2839]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [234 2842]))                  
+                :type "namespace")
+                nil [219 2875]))          
+      :file "UnderlyingIvidProvider.cpp"
+      :pointmax 2895
+      :fsize 2894
+      :lastmodtime '(21962 60357 943346 505000)
+      :unmatched-syntax '((punctuation 515 . 516) (CONST 510 . 515) (punctuation 508 . 509) (semantic-list 506 . 508) (punctuation 501 . 502)))
+    (semanticdb-table "UnderlyingIvidProvider.h"
+      :file "UnderlyingIvidProvider.h"
+      :fsize 1879
+      :lastmodtime '(21962 60357 943346 505000))
+    (semanticdb-table "VwapPriceProvider.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VwapPriceProvider.h" include nil nil [101 131])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [132 181])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [183 207])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("VwapPriceProvider::UNDERLYING_PRICE_HISTORY_ELEMENTS_COUNT" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [252 332])
+                            ("VwapPriceProvider" function
+                               (:constructor-flag t
+                                :parent "VwapPriceProvider"
+                                :arguments 
+                                  ( ("ivid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentVenueIdentification" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [387 438])
+                                    ("vwapVolume" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Volume" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [440 474]))                                  
+                                :type ("VwapPriceProvider" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [348 779])
+                            ("VwapPriceProvider" function
+                               (:destructor-flag t
+                                :parent "VwapPriceProvider"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [781 919])
+                            ("SetVwapVolume" function
+                               (:parent "VwapPriceProvider"
+                                :arguments 
+                                  ( ("volume" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Volume" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [959 989]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [921 1189])
+                            ("Get" function
+                               (:parent "VwapPriceProvider"
+                                :arguments 
+                                  ( ("timestamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1285 1320]))                                  
+                                :type ("boost::optional" type
+                                     (:template-specifier 
+                                        ( ("boost::tuple" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [1191 1362])
+                            ("HandleVWAPPrice" function
+                               (:parent "VwapPriceProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1406 1447])
+                                    ("price" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::VWAPPrice" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1448 1481]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1364 1667])
+                            ("HandleStreamStale" function
+                               (:parent "VwapPriceProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1711 1752]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1669 1828])
+                            ("HandleStreamFailed" function
+                               (:parent "VwapPriceProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1873 1914]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1830 2056])
+                            ("HandleSnapshotEnd" function
+                               (:parent "VwapPriceProvider"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2100 2141]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2058 2329])
+                            ("GetDiagnostics" function
+                               (:parent "VwapPriceProvider"
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2331 2426]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [224 2429]))                  
+                :type "namespace")
+                nil [209 2462]))          
+      :file "VwapPriceProvider.cpp"
+      :pointmax 2482
+      :fsize 2481
+      :lastmodtime '(21962 60357 944346 435000)
+      :unmatched-syntax nil)
+    (semanticdb-table "VwapPriceProvider.h"
+      :file "VwapPriceProvider.h"
+      :fsize 1622
+      :lastmodtime '(21962 60357 944346 435000))
+    (semanticdb-table "VwapVolumeHelper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VwapVolumeHelper.h" include nil nil [100 129])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [130 179])
+            ("tbricks_definitions.h" include nil nil [180 212])
+            ("AO" type
+               (:members 
+                  ( ("TradesSnapshot" type
+                       (:members 
+                          ( ("VwapVolumeHelper" function
+                               (:constructor-flag t
+                                :parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [294 310])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [310 316])
+                                    ("" variable (:type ("onReady" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [325 333])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [335 351])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [351 404])
+                                    ("" variable (:type ("onVolumeChanged" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [413 429]))                                  
+                                :type ("VwapVolumeHelper" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [257 510])
+                            ("AddInstrument" function
+                               (:parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("instrumentId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [549 599]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [512 721])
+                            ("SetInstruments" function
+                               (:parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("instruments" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::SparseSet" type
+                                             (:template-specifier 
+                                                ( ("tbricks::InstrumentIdentifier" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [761 830]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [723 901])
+                            ("OpenStream" function
+                               (:parent "VwapVolumeHelper"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [903 1638])
+                            ("GetVwapVolume" function
+                               (:parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("instrumentId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1689 1739]))                                  
+                                :type ("tbricks::Integer" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1640 1880])
+                            ("HandleInstrumentAggregateParameters" function
+                               (:parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("streamId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1943 1985])
+                                    ("instrumentId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1987 2037])
+                                    ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2039 2100]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1882 2432])
+                            ("HandleStreamStale" function
+                               (:parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2475 2516]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2434 2535])
+                            ("HandleStreamFailed" function
+                               (:parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2579 2620]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2537 2691])
+                            ("HandleSnapshotEnd" function
+                               (:parent "VwapVolumeHelper"
+                                :arguments 
+                                  ( ("stream" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2734 2775]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2693 2860]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [229 2863]))                  
+                :type "namespace")
+                nil [214 2896]))          
+      :file "VwapVolumeHelper.cpp"
+      :pointmax 2916
+      :fsize 2915
+      :lastmodtime '(21962 60357 944346 435000)
+      :unmatched-syntax '((punctuation 411 . 412) (CONST 406 . 411) (punctuation 404 . 405) (semantic-list 355 . 404) (punctuation 350 . 351) (punctuation 323 . 324) (CONST 318 . 323) (punctuation 316 . 317) (semantic-list 314 . 316) (punctuation 309 . 310)))
+    (semanticdb-table "VwapVolumeHelper.h"
+      :file "VwapVolumeHelper.h"
+      :fsize 1822
+      :lastmodtime '(21962 60357 944346 435000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_TradesSnapshot!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,456 @@
+;; Object AO_FinanceOvernightCostGenerator/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_FinanceOvernightCostGenerator/"
+  :tables
+  (list
+    (semanticdb-table "AO_FinanceOvernightCostGenerator.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_ACCESSORY_AO_FINANCEOVERNIGHTCOSTGENERATOR_AO_FINANCEOVERNIGHTCOSTGENERATOR_H_" variable (:constant-flag t) nil [217 306])
+            ("strategy/API.h" include nil nil [308 333])
+            ("gen-cpp/OfcMessageManager.h" include nil nil [334 372])
+            ("set" include (:system-flag t) nil [373 387])
+            ("map" include (:system-flag t) nil [388 402])
+            ("vector" include (:system-flag t) nil [403 420])
+            ("boost/scoped_ptr.hpp" include (:system-flag t) nil [421 452])
+            ("FinanceCostInfo.h" include nil nil [453 481])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [483 507])
+            ("InstrumentCurrencyPair" type
+               (:prototype t
+                :type "struct")
+                nil [509 539])
+            ("AO_FinanceOvernightCostGenerator" type
+               (:superclasses 
+                  ( ("Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("CalculatedPropertiesTable::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("PortfolioStream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil)
+                    ("ITimerEventHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [699 706])
+                    ("AO_FinanceOvernightCostGenerator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [741 786])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [787 834]))                          
+                        :type ("AO_FinanceOvernightCostGenerator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [708 835])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [838 864])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [866 890])
+                    ("HandleDeleteRequest" function (:type "void") (reparse-symbol classsubparts) [892 956])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [983 1017]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [958 1018])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1047 1084]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1020 1085])
+                    ("private" label nil (reparse-symbol classsubparts) [1087 1095])
+                    ("OvernightRates" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("Currency" type nil nil nil)
+                                  ("Double" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1097 1143])
+                    ("ShortStockFees" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("Double" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1145 1203])
+                    ("InstrumentCurrencyToDoubleMap" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentCurrencyPair" type nil nil nil)
+                                  ("Double" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1205 1280])
+                    ("Portfolios" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("PortfolioIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1282 1331])
+                    ("CreateOvernightRatesTable" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :arguments 
+                          ( ("rates" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Tbricks::Messages::OvernightFinancingCostGenerator::PositionOvernightRate" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1388 1488]))                          
+                        :type ("tbricks::Table" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1334 1489])
+                    ("CreateShortStockFeeRatesTable" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :arguments 
+                          ( ("ssfInfo" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tbricks::Messages::OvernightFinancingCostGenerator::ShortStockFeeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1549 1634]))                          
+                        :type ("tbricks::Table" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1491 1635])
+                    ("private" label nil (reparse-symbol classsubparts) [1637 1645])
+                    ("HandleTimerEvent" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("timer" variable
+                               (:reference 1
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1677 1691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1647 1692])
+                    ("private" label nil (reparse-symbol classsubparts) [1694 1702])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1727 1759]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1704 1760])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1786 1818]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1762 1819])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1844 1876]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1821 1877])
+                    ("HandleCalculatedProperties" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1912 1946])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedPropertiesTable::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1947 1995]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1880 1996])
+                    ("HandlePortfolioUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2025 2057])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2058 2091]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1998 2092])
+                    ("HandlePortfolioInvalidate" function
+                       (:arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2125 2157])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2158 2189]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2094 2192])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2195 2208])
+                    ("ProcessError" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2228 2250]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2210 2251])
+                    ("NextPortfolio" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2253 2274])
+                    ("OpenCalculationStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2276 2305])
+                    ("OpenPortfolioStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2307 2334])
+                    ("CreateCash" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("currency" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2352 2377])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2378 2398])
+                            ("description" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2399 2425]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2336 2426])
+                    ("UpdateFinancingCosts" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2429 2457])
+                    ("OnFinancingCostsUpdated" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("useThriftTables" variable (:type "bool") (reparse-symbol arg-sub-list) [2488 2509]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2459 2510])
+                    ("OnCalculatedPropertiesReady" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2513 2548])
+                    ("CreateData" function
+                       (:prototype-flag t
+                        :type ("InstrumentCurrencyToDoubleMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2551 2594])
+                    ("instrumentGroupParameter" variable (:type ("InstrumentGroupParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2597 2647])
+                    ("portfolioParameter" variable (:type ("PortfolioIdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2649 2697])
+                    ("hostnameParameter" variable (:type ("StringParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2699 2733])
+                    ("portParameter" variable (:type ("IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2735 2766])
+                    ("startTimeParameter" variable (:type ("DateTimeParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2768 2805])
+                    ("hasStartedParameter" variable (:type ("BooleanParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2807 2844])
+                    ("cashOvernightRates" variable (:type ("OvernightRates" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2847 2881])
+                    ("marginOvernightRates" variable (:type ("OvernightRates" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2883 2919])
+                    ("shortStockFees" variable (:type ("ShortStockFees" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2921 2951])
+                    ("calculatedPropertiesStream" variable (:type ("CalculatedPropertiesTable::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2954 3015])
+                    ("calculatedProperties" variable (:type ("CalculatedPropertiesTable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3017 3064])
+                    ("portfolioStream" variable (:type ("PortfolioStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3067 3099])
+                    ("portfolios" variable (:type ("Portfolios" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3102 3124])
+                    ("currentPortfolio" variable (:type ("Portfolios::iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3126 3164])
+                    ("m_pFinanceCostInfo" variable (:type ("boost::scoped_ptr" type
+                         (:template-specifier 
+                            ( ("AO::FinanceCostInfo" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3167 3225])
+                    ("m_startWorkTimer" variable (:type ("Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3227 3250]))                  
+                :type "class")
+                nil [541 3253])
+            ("InstrumentCurrencyPair" type
+               (:members 
+                  ( ("InstrumentCurrencyPair" function
+                       (:constructor-flag t
+                        :type ("InstrumentCurrencyPair" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3288 3315])
+                    ("InstrumentCurrencyPair" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3340 3371])
+                            ("c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Currency" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3372 3390]))                          
+                        :type ("InstrumentCurrencyPair" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3317 3433])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("o" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentCurrencyPair" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3451 3483]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3435 3574])
+                    ("instrumentIdentifier" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3577 3619])
+                    ("currency" variable (:type ("Currency" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3621 3639]))                  
+                :type "struct")
+                nil [3255 3642])
+            ("hash_value" function
+               (:arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentCurrencyPair" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3659 3691]))                  
+                :type "int")
+                nil [3644 3770]))          
+      :file "AO_FinanceOvernightCostGenerator.h"
+      :pointmax 3867
+      :fsize 3866
+      :lastmodtime '(21962 60357 900349 500000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AO_SOURCES_ACCESSORY_AO_FINANCEOVERNIGHTCOSTGENERATOR_AO_FINANCEOVERNIGHTCOSTGENERATOR_H_")
+          )
+)
+    (semanticdb-table "FinanceCostInfo.h"
+      :file "FinanceCostInfo.h"
+      :fsize 1928
+      :lastmodtime '(21962 60357 900349 500000))
+    (semanticdb-table "FinanceCostInfo.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FinanceCostInfo.h" include nil nil [99 127])
+            ("strategy/API.h" include nil nil [128 153])
+            ("boost/bind.hpp" include (:system-flag t) nil [154 179])
+            ("AO" type
+               (:members 
+                  ( ("Tbricks::Messages::OvernightFinancingCostGenerator" using (:type ("Tbricks::Messages::OvernightFinancingCostGenerator" type
+                         (:prototype t
+                          :type "namespace")
+                          nil nil)) (reparse-symbol namespacesubparts) [197 264])
+                    ("FinanceCostInfo" function
+                       (:constructor-flag t
+                        :parent "FinanceCostInfo"
+                        :arguments 
+                          ( ("hostName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [301 329])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [331 340])
+                            ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [342 358])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [358 364])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [373 386]))                          
+                        :type ("FinanceCostInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [266 863])
+                    ("OnDataReceived" function
+                       (:parent "FinanceCostInfo"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [865 1603])
+                    ("ReceivePositionOvernightRate" function
+                       (:parent "FinanceCostInfo"
+                        :arguments 
+                          ( ("overnightRate" variable
+                               (:reference 1
+                                :type ("PositionOvernightRateInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1658 1700])
+                            ("client" variable
+                               (:reference 1
+                                :type ("OfcMessageManagerClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1702 1735]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1605 1794])
+                    ("ReceiveShortStockFeeInfo" function
+                       (:parent "FinanceCostInfo"
+                        :arguments 
+                          ( ("shortStockFeeInfo" variable
+                               (:reference 1
+                                :type ("ShortStockFeeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1845 1883])
+                            ("client" variable
+                               (:reference 1
+                                :type ("OfcMessageManagerClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1885 1918]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1796 1972])
+                    ("OnDisconnected" function
+                       (:parent "FinanceCostInfo"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1974 2118]))                  
+                :type "namespace")
+                nil [181 2121]))          
+      :file "FinanceCostInfo.cpp"
+      :pointmax 2141
+      :fsize 2140
+      :lastmodtime '(21962 60357 900349 500000)
+      :unmatched-syntax '((punctuation 371 . 372) (CONST 366 . 371) (punctuation 364 . 365) (semantic-list 362 . 364) (punctuation 357 . 358))))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_FinanceOvernightCostGenerator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

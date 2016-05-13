@@ -1,0 +1,26 @@
+;; Object htags/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "htags/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("bin_PROGRAMS" variable (:default-value ("htags")) nil [554 574])
+            ("htags_SOURCES" variable (:default-value ("htags.c" "defineindex.c" "dupindex.c" "fileindex.c" "cflowindex.c" "src2html.c" "anchor.c" "cache.c" "common.c" "incop.c" "path2url.c" "c.c" "cpp.c" "java.c" "php.c" "asm.c")) nil [575 742])
+            ("noinst_HEADERS" variable (:default-value ("htags.h" "anchor.h" "cache.h" "common.h" "incop.h" "path2url.h" "lexcommon.h")) nil [743 825])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-I$(srcdir)")) nil [826 866])
+            ("LDADD" variable (:default-value ("@LDADD@")) nil [867 883])
+            ("htags_DEPENDENCIES" variable (:default-value ("$(LDADD)")) nil [884 914])
+            ("man_MANS" variable (:default-value ("htags.1")) nil [915 934])
+            ("gtagsdir" variable (:default-value ("${datadir}/gtags")) nil [935 963])
+            ("gtags_DATA" variable (:default-value ("global.cgi.tmpl" "completion.cgi.tmpl" "jscode_suggest.tmpl" "jscode_treeview.tmpl" "style.css.tmpl")) nil [963 1071])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "$(gtags_DATA)" "manual.in" "global.cgi.tmpl.in" "completion.cgi.tmpl.in" "const.h" "c.l" "cpp.l" "java.l" "php.l" "asm.l")) nil [1071 1203]))          
+      :file "Makefile.am"
+      :pointmax 1203
+      :fsize 1202
+      :lastmodtime '(22007 34545 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!global-6.5.1!htags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

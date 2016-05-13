@@ -1,0 +1,30 @@
+;; Object tracing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tracing/"
+  :tables
+  (list
+    (semanticdb-table "tracing.make"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("$(SDK)/makefiles/common_defs.make" include nil nil [423 465])
+            ("get-trace-event-headers" variable (:default-value ("$(foreach ext,$(TRACE_EVENT_HEADERS_EXTENSIONS),$(wildcard $(1)*$(ext) $(1)*/*$(ext) $(1)*/*/*$(ext) $(1)*/*/*/*$(ext)))")) nil [541 688])
+            ("TRACE_EVENT_HEADERS" variable (:default-value ("$(call get-trace-event-headers)")) nil [688 743])
+            ("NAME_" variable (:default-value ("$(shell sed -e 's/ /\\n/g' <<< $(NAME))")) nil [744 792])
+            ("TRACE_EVENT_GENERATED_SOURCE" variable (:default-value ("$(TRACE_EVENT_GENERATED_HEADER:.h=.cpp)")) nil [852 924])
+            ("TRACE_EVENT_OBJECT" variable (:default-value ("$(TRACE_EVENT_GENERATED_HEADER:.h=.o)")) nil [924 984])
+            ("HEADERS" variable (:default-value ("$(dir $(TRACE_EVENT_GENERATED_HEADER))")) nil [985 1035])
+            ("UUID" variable (:default-value ("$(shell $(UUIDGEN) |  sed 's/-//g')")) nil [1058 1102])
+            ("TRACEPOINT_PROVIDER" variable (:default-value ("app_$(UUID)_$(NAME_)")) nil [1102 1146])
+            ("LIBS" variable (:default-value ("lttng-ust")) nil [1147 1165])
+            ("TB_BEFORE_LINK" variable (:default-value ("tracing_before_link")) nil [3050 3088])
+            ("TB_ADDITIONAL_OBJECTS" variable (:default-value ("$(TRACE_EVENT_OBJECT)")) nil [3089 3136])
+            ("TB_AFTER_LINK" variable (:default-value ("tracing_after_link")) nil [3198 3234])
+            ("clean" function nil nil [3262 3363]))          
+      :file "tracing.make"
+      :pointmax 3376
+      :fsize 3375
+      :lastmodtime '(22159 40310 747287 646000)
+      :unmatched-syntax '((symbol 3191 . 3196) (bol 3191 . 3191) (semantic-list 3170 . 3190) (punctuation 3169 . 3170) (semantic-list 3164 . 3168) (punctuation 3163 . 3164) (bol 3163 . 3163) (symbol 3144 . 3162) (symbol 3137 . 3143) (bol 3137 . 3137) (symbol 3043 . 3048) (bol 3043 . 3043) (semantic-list 3012 . 3042) (punctuation 3011 . 3012) (semantic-list 2980 . 3010) (punctuation 2979 . 2980) (semantic-list 2974 . 2978) (punctuation 2973 . 2974) (bol 2973 . 2973) (semantic-list 2892 . 2971) (punctuation 2891 . 2892) (bol 2891 . 2891) (string 2826 . 2889) (symbol 2823 . 2825) (semantic-list 2792 . 2822) (punctuation 2791 . 2792) (symbol 2788 . 2790) (symbol 2783 . 2787) (punctuation 2782 . 2783) (bol 2782 . 2782) (semantic-list 2751 . 2781) (punctuation 2750 . 2751) (symbol 2747 . 2749) (symbol 2742 . 2746) (symbol 2740 . 2741) (semantic-list 2709 . 2739) (punctuation 2708 . 2709) (string 2641 . 2707) (symbol 2637 . 2640) (semantic-list 2631 . 2636) (punctuation 2630 . 2631) (punctuation 2629 . 2630) (bol 2629 . 2629) (string 1971 . 2628) (punctuation 1970 . 1971) (semantic-list 1940 . 1970) (punctuation 1939 . 1940) (string 1792 . 1939) (punctuation 1791 . 1792) (symbol 1767 . 1791) (string 1753 . 1767) (symbol 1750 . 1752) (semantic-list 1719 . 1749) (punctuation 1718 . 1719) (symbol 1716 . 1717) (symbol 1711 . 1715) (punctuation 1710 . 1711) (bol 1710 . 1710) (semantic-list 1678 . 1708) (punctuation 1677 . 1678) (symbol 1675 . 1676) (string 1672 . 1674) (symbol 1667 . 1671) (symbol 1664 . 1666) (symbol 1653 . 1663) (semantic-list 1622 . 1652) (punctuation 1621 . 1622) (string 1590 . 1620) (symbol 1585 . 1589) (punctuation 1584 . 1585) (bol 1584 . 1584) (semantic-list 1553 . 1583) (punctuation 1552 . 1553) (symbol 1549 . 1551) (symbol 1544 . 1548) (symbol 1542 . 1543) (symbol 1537 . 1541) (symbol 1535 . 1536) (semantic-list 1513 . 1534) (punctuation 1512 . 1513) (string 1405 . 1511) (symbol 1401 . 1404) (semantic-list 1395 . 1400) (punctuation 1394 . 1395) (punctuation 1393 . 1394) (bol 1393 . 1393) (string 1390 . 1392) (punctuation 1389 . 1390) (symbol 1363 . 1389) (string 1347 . 1363) (punctuation 1346 . 1347) (semantic-list 1316 . 1346) (punctuation 1315 . 1316) (string 1236 . 1315) (symbol 1233 . 1235) (semantic-list 1202 . 1232) (punctuation 1201 . 1202) (symbol 1199 . 1200) (symbol 1194 . 1198) (punctuation 1193 . 1194) (bol 1193 . 1193) (symbol 1173 . 1192) (symbol 1166 . 1172) (bol 1166 . 1166) (symbol 1055 . 1057) (symbol 1047 . 1054) (punctuation 1045 . 1046) (punctuation 1044 . 1045) (symbol 1036 . 1043) (bol 1036 . 1036) (symbol 849 . 851) (semantic-list 842 . 849) (punctuation 841 . 842) (symbol 824 . 841) (punctuation 822 . 823) (punctuation 821 . 822) (symbol 792 . 820) (bol 792 . 792) (symbol 536 . 540) (symbol 533 . 535) (symbol 528 . 532) (punctuation 526 . 527) (punctuation 525 . 526) (symbol 493 . 523) (bol 493 . 493))))
+  :file "!opt!tbricks!apps_2.7.0!apps!shared!tracing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

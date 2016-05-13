@@ -1,0 +1,479 @@
+;; Object IntegrationReporter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "IntegrationReporter/"
+  :tables
+  (list
+    (semanticdb-table "RealTimeCalculatedValuesProvider.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CalculatedValuesProvider_h" variable (:constant-flag t) nil [44 70])
+            ("strategy/API.h" include (:system-flag t) nil [72 97])
+            ("boost/function.hpp" include (:system-flag t) nil [98 127])
+            ("boost/ptr_container/ptr_map.hpp" include (:system-flag t) nil [128 170])
+            ("CalculatedValuesList.h" include nil nil [171 204])
+            ("AO_SharedGlobal/Global/InstrumentsCache.h" include nil nil [205 257])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [259 283])
+            ("RealTimeCalculatedValuesProvider" type
+               (:superclasses 
+                  ( ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [373 380])
+                    ("UnderlyingFunc" variable (:type "int") (reparse-symbol classsubparts) [466 481])
+                    ("NotifyFunc" variable (:type "int") (reparse-symbol classsubparts) [545 556])
+                    ("ErrorFunc" variable (:type "int") (reparse-symbol classsubparts) [605 615])
+                    ("RealTimeCalculatedValuesProvider" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("cache" variable
+                               (:reference 1
+                                :type ("AO::InstrumentsCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [651 680])
+                            ("f" variable (:type ("NotifyFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [681 694])
+                            ("u" variable (:type ("UnderlyingFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [695 712])
+                            ("e" variable (:type ("ErrorFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [713 725]))                          
+                        :type ("RealTimeCalculatedValuesProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [618 726])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [729 742])
+                    ("SetInstrumentsPerStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentsPerStream" variable (:type "int") (reparse-symbol arg-sub-list) [774 799]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [745 800])
+                    ("SetThrottle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("duration" variable (:type ("Duration" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [819 837]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [802 838])
+                    ("AddInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentIdentifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [860 909]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [841 910])
+                    ("GetValues" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("instrumentIdentifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [965 1014]))                          
+                        :type ("CalculatedInstrumentValues::Values" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [913 1021])
+                    ("RemoveUnderlying" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("underlyingId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1046 1096]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1024 1097])
+                    ("private" label nil (reparse-symbol classsubparts) [1099 1107])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1155 1189])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1190 1239]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1109 1240])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1273 1305]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1242 1306])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1340 1372]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1308 1373])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1406 1438]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1375 1439])
+                    ("StreamData" type
+                       (:members 
+                          ( ("stream" variable
+                               (:pointer 1
+                                :type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1466 1509])
+                            ("values" variable (:type ("CalculatedInstrumentValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1512 1546])
+                            ("options" variable (:type ("CalculatedInstrumentValues::Stream::Options" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1550 1602])
+                            ("instrumentsCount" variable (:type "int") (reparse-symbol classsubparts) [1605 1626])
+                            ("StreamData" function
+                               (:constructor-flag t
+                                :type ("StreamData" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1630 1663])
+                            ("StreamData" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1667 1722]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1443 1726])
+                    ("Values" type
+                       (:typedef ("boost::ptr_map" type
+                             (:template-specifier 
+                                ( ("StreamIdentifier" type nil nil nil)
+                                  ("StreamData" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::ptr_map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1728 1791])
+                    ("Streams" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("Values::iterator" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1793 1856])
+                    ("cache" variable (:type ("AO::InstrumentsCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1859 1888])
+                    ("values" variable (:type ("Values" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1890 1904])
+                    ("streamsByInstrument" variable (:type ("Streams" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1906 1934])
+                    ("emptyValues" variable
+                       (:typemodifiers ("static")
+                        :type ("CalculatedInstrumentValues::Values" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1937 1991])
+                    ("instrumentsPerStream" variable (:type "int") (reparse-symbol classsubparts) [1994 2019])
+                    ("throttle" variable (:type ("Duration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2021 2039])
+                    ("notify" variable (:type ("NotifyFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2041 2059])
+                    ("underlyingFunc" variable (:type ("UnderlyingFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2061 2091])
+                    ("error" variable (:type ("ErrorFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2093 2109]))                  
+                :type "class")
+                nil [285 2112]))          
+      :file "RealTimeCalculatedValuesProvider.h"
+      :pointmax 2122
+      :fsize 2121
+      :lastmodtime '(22149 9701 889644 687000)
+      :unmatched-syntax '((punctuation 603 . 604) (semantic-list 587 . 602) (VOID 583 . 587) (punctuation 581 . 582) (symbol 573 . 581) (punctuation 572 . 573) (punctuation 571 . 572) (symbol 566 . 571) (TYPEDEF 558 . 565) (punctuation 543 . 544) (semantic-list 512 . 542) (VOID 508 . 512) (punctuation 506 . 507) (symbol 498 . 506) (punctuation 497 . 498) (punctuation 496 . 497) (symbol 491 . 496) (TYPEDEF 483 . 490) (punctuation 464 . 465) (semantic-list 434 . 463) (punctuation 433 . 434) (symbol 413 . 433) (CONST 407 . 412) (punctuation 405 . 406) (symbol 397 . 405) (punctuation 396 . 397) (punctuation 395 . 396) (symbol 390 . 395) (TYPEDEF 382 . 389))
+      :lexical-table 
+        '(("CalculatedValuesProvider_h")
+          )
+)
+    (semanticdb-table "CalculatedValuesList.h"
+      :file "CalculatedValuesList.h"
+      :fsize 239
+      :lastmodtime '(22149 9701 889644 687000))
+    (semanticdb-table "ReferencePriceReader.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_ACCESSORY_INTEGRATIONREPORTER_REFERENCEPRICEREADER_H_" variable (:constant-flag t) nil [183 247])
+            ("strategy/API.h" include nil nil [249 274])
+            ("boost/function.hpp" include (:system-flag t) nil [275 304])
+            ("AO" type
+               (:members 
+                  ( ("ReferencePriceReader" type
+                       (:superclasses 
+                          ( ("tbricks::ReferencePriceStream::IHandler" type
+                               (:protection "private"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [402 409])
+                            ("ReferencePriceReader" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [435 451])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [451 457])
+                                    ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [466 479]))                                  
+                                :type ("ReferencePriceReader" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [411 480])
+                            ("InstrumentPricesMap" type
+                               (:typedef ("tbricks::SparseHash" type
+                                     (:template-specifier 
+                                        ( ("tbricks::Identifier" type nil nil nil)
+                                          ("tbricks::ReferencePrice" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "tbricks::SparseHash"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [483 577])
+                            ("PricesMap" type
+                               (:typedef ("tbricks::SparseHash" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                          ("InstrumentPricesMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "tbricks::SparseHash"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [579 669])
+                            ("GetReferencePrices" function
+                               (:prototype-flag t
+                                :type ("PricesMap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [671 714])
+                            ("private" label nil (reparse-symbol classsubparts) [716 724])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [799 808])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [884 893])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [968 977])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1106 1115])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1238 1247])
+                            ("private" label nil (reparse-symbol classsubparts) [1249 1257])
+                            ("m_doneCallback" variable (:type "int") (reparse-symbol classsubparts) [1283 1298])
+                            ("m_stream" variable (:type ("tbricks::ReferencePriceStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1300 1339])
+                            ("m_map" variable (:type ("PricesMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1341 1357]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [322 1360]))                  
+                :type "namespace")
+                nil [306 1363]))          
+      :file "ReferencePriceReader.h"
+      :pointmax 1462
+      :fsize 1461
+      :lastmodtime '(21962 60357 960345 321000)
+      :unmatched-syntax '((punctuation 1281 . 1282) (semantic-list 1279 . 1281) (VOID 1275 . 1279) (punctuation 1274 . 1275) (symbol 1266 . 1274) (punctuation 1265 . 1266) (punctuation 1264 . 1265) (symbol 1259 . 1264) (semantic-list 1160 . 1237) (symbol 1130 . 1160) (VOID 1125 . 1129) (VIRTUAL 1117 . 1124) (semantic-list 1013 . 1105) (symbol 993 . 1013) (VOID 988 . 992) (VIRTUAL 980 . 987) (semantic-list 925 . 967) (symbol 908 . 925) (VOID 903 . 907) (VIRTUAL 895 . 902) (semantic-list 841 . 883) (symbol 823 . 841) (VOID 818 . 822) (VIRTUAL 810 . 817) (semantic-list 756 . 798) (symbol 739 . 756) (VOID 734 . 738) (VIRTUAL 726 . 733) (punctuation 464 . 465) (CONST 459 . 464) (punctuation 457 . 458) (semantic-list 455 . 457) (punctuation 450 . 451))
+      :lexical-table 
+        '(("AO_SOURCES_ACCESSORY_INTEGRATIONREPORTER_REFERENCEPRICEREADER_H_")
+          )
+)
+
+
+    (semanticdb-table "ReferencePriceHelper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ReferencePriceHelper.h" include nil nil [104 137])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [138 187])
+            ("AO_SharedGlobal/Thrift/TimeUtils.h" include nil nil [188 233])
+            ("boost/math/special_functions/fpclassify.hpp" include (:system-flag t) nil [234 288])
+            ("boost/bind.hpp" include (:system-flag t) nil [289 314])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [316 340])
+            ("thrift" type
+               (:kind alias
+                :members 
+                  ( ("Tbricks::Messages::IntegrationReporter" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [341 399])
+            ("AO" type
+               (:members 
+                  ( ("ReferencePriceHelper" function
+                       (:constructor-flag t
+                        :parent "ReferencePriceHelper"
+                        :type ("ReferencePriceHelper" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [417 485])
+                    ("Clear" function
+                       (:parent "ReferencePriceHelper"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [487 583])
+                    ("StoreSnapshot" function
+                       (:parent "ReferencePriceHelper"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tbricks::Messages::IntegrationReporter::TheoSnapshotMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [626 701]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [585 996])
+                    ("Lock" function
+                       (:parent "ReferencePriceHelper"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [998 1068])
+                    ("SendReferencePriceModifiers" function
+                       (:parent "ReferencePriceHelper"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tbricks::Messages::IntegrationReporter::TheoSnapshotMessage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1125 1200]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1070 1376])
+                    ("OnCurrentReferencePricesReady" function
+                       (:parent "ReferencePriceHelper"
+                        :arguments 
+                          ( ("message" variable (:type ("Tbricks::Messages::IntegrationReporter::TheoSnapshotMessage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1435 1503]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1378 2729])
+                    ("CreateMessage" function
+                       (:parent "ReferencePriceHelper"
+                        :type ("thrift::TheoSnapshotMessage" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2731 3063])
+                    ("SendReferencePriceModifier" function
+                       (:parent "ReferencePriceHelper"
+                        :arguments 
+                          ( ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3121 3171])
+                            ("refPrice" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3173 3204])
+                            ("date" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Date" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3206 3232]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3065 3446])
+                    ("HandleRequestReply" function
+                       (:parent "ReferencePriceHelper"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3494 3525])
+                            ("status" variable (:type ("tbricks::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3526 3549])
+                            ("status_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3550 3586]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3448 3730]))                  
+                :type "namespace")
+                nil [401 3733]))          
+      :file "ReferencePriceHelper.cpp"
+      :pointmax 3753
+      :fsize 3752
+      :lastmodtime '(21962 60357 960345 321000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ReferencePriceHelper.h"
+      :file "ReferencePriceHelper.h"
+      :fsize 1689
+      :lastmodtime '(21962 60357 960345 321000))
+    (semanticdb-table "ReferencePriceReader.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ReferencePriceReader.h" include nil nil [104 137])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [138 187])
+            ("AO" type
+               (:members 
+                  ( ("ReferencePriceReader" function
+                       (:constructor-flag t
+                        :parent "ReferencePriceReader"
+                        :arguments 
+                          ( ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [250 266])
+                            ("" variable (:type "void") (reparse-symbol arg-sub-list) [266 272])
+                            ("" variable (:type ("doneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [281 294]))                          
+                        :type ("ReferencePriceReader" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [205 390])
+                    ("HandleReferencePrice" function
+                       (:parent "ReferencePriceReader"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [442 483])
+                            ("price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::ReferencePrice::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [484 530]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [392 611])
+                    ("HandleStreamStale" function
+                       (:parent "ReferencePriceReader"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [658 699]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [613 718])
+                    ("HandleStreamFailed" function
+                       (:parent "ReferencePriceReader"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [766 807]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [720 824])
+                    ("HandleSnapshotEnd" function
+                       (:parent "ReferencePriceReader"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [871 912]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [826 1027])
+                    ("HandleReferencePriceInvalidate" function
+                       (:parent "ReferencePriceReader"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1089 1130])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1131 1162]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1029 1190])
+                    ("GetReferencePrices" function
+                       (:parent "ReferencePriceReader"
+                        :type ("ReferencePriceReader::PricesMap" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1192 1297]))                  
+                :type "namespace")
+                nil [189 1300]))          
+      :file "ReferencePriceReader.cpp"
+      :pointmax 1320
+      :fsize 1319
+      :lastmodtime '(21962 60357 960345 321000)
+      :unmatched-syntax '((punctuation 279 . 280) (CONST 274 . 279) (punctuation 272 . 273) (semantic-list 270 . 272) (punctuation 265 . 266))))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!IntegrationReporter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

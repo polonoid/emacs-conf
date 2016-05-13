@@ -1,0 +1,458 @@
+;; Object one_tick_connector/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "one_tick_connector/"
+  :tables
+  (list
+    (semanticdb-table "OneTickStream.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OneTickStream.h" include nil nil [1 27])
+            ("tbricks_definitions.h" include nil nil [28 60])
+            ("tbricks" type
+               (:members 
+                  ( ("onetick" type
+                       (:members 
+                          ( ("SetConfigResource" function
+                               (:parent "OneTickStream::Options"
+                                :arguments 
+                                  ( ("resource" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [151 174]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [104 215])
+                            ("SetContext" function
+                               (:parent "OneTickStream::Options"
+                                :arguments 
+                                  ( ("context" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [257 279]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [217 308])
+                            ("SetUser" function
+                               (:parent "OneTickStream::Options"
+                                :arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("User" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [347 364]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [310 387])
+                            ("SetOTQResource" function
+                               (:parent "OneTickStream::OTQQuery"
+                                :arguments 
+                                  ( ("resourceName" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [434 461]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [389 503])
+                            ("SetOTQQuery" function
+                               (:parent "OneTickStream::OTQQuery"
+                                :arguments 
+                                  ( ("query" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [547 567]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [505 595])
+                            ("SetOTQParameter" function
+                               (:parent "OneTickStream::OTQQuery"
+                                :arguments 
+                                  ( ("parameter" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [643 667])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [668 688]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [597 758])
+                            ("Empty" function
+                               (:parent "OneTickStream::OTQQuery"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [760 845])
+                            ("AddInstrumentAsSymbol" function
+                               (:parent "OneTickStream::Options"
+                                :arguments 
+                                  ( ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [898 927]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [847 972])
+                            ("SetTimeRange" function
+                               (:parent "OneTickStream::Options"
+                                :arguments 
+                                  ( ("from" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1016 1037])
+                                    ("to" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1038 1057]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [974 1095])
+                            ("SetOTQQuery" function
+                               (:parent "OneTickStream::Options"
+                                :arguments 
+                                  ( ("query" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("OneTickStream::OTQQuery" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1138 1175]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1097 1203])
+                            ("AddField" function
+                               (:parent "OneTickStream::Options"
+                                :arguments 
+                                  ( ("field" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1243 1263]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1205 1362])
+                            ("SetValue" function
+                               (:parent "OneTickStream::Event"
+                                :arguments 
+                                  ( ("field" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1400 1420])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Variant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1421 1442]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1364 1475])
+                            ("ConfigResourceType" function
+                               (:parent "OneTickStream"
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1478 1575])
+                            ("OTQResourceType" function
+                               (:parent "OneTickStream"
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1577 1668])
+                            ("OneTickStream" function
+                               (:constructor-flag t
+                                :parent "OneTickStream"
+                                :arguments 
+                                  ( ("handler" variable
+                                       (:reference 1
+                                        :type ("IHandler" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1704 1722]))                                  
+                                :type ("OneTickStream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1675 2119])
+                            ("OneTickStream" function
+                               (:destructor-flag t
+                                :parent "OneTickStream"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2121 2495])
+                            ("Open" function
+                               (:parent "OneTickStream"
+                                :arguments 
+                                  ( ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Options" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2522 2545]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2497 3070])
+                            ("InternalOpen" function
+                               (:parent "OneTickStream"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3072 3657])
+                            ("InternalOpenOTQQuery" function
+                               (:parent "OneTickStream"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3659 5207])
+                            ("RegisterInstruments" function
+                               (:parent "OneTickStream"
+                                :arguments 
+                                  ( ("instruments" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Instrument" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5250 5293])
+                                    ("querySymbols" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5294 5333]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5210 5664])
+                            ("GetOMDTime" function
+                               (:parent "OneTickStream"
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DateTime" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5707 5725]))                                  
+                                :type ("omd::timeval_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5666 5957])
+                            ("HandleCompleted" function
+                               (:parent "OneTickStream"
+                                :arguments 
+                                  ( ("sender" variable
+                                       (:reference 1
+                                        :type ("ResourceController" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5996 6023]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5960 6973])
+                            ("Close" function
+                               (:parent "OneTickStream"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6976 7007])
+                            ("IsSnapshotDone" function
+                               (:parent "OneTickStream"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [7009 7082])
+                            ("Callback" function
+                               (:constructor-flag t
+                                :parent "OneTickStream::Callback"
+                                :arguments 
+                                  ( ("owner" variable
+                                       (:reference 1
+                                        :type ("OneTickStream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7118 7139]))                                  
+                                :type ("Callback" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7084 7263])
+                            ("replicate" function
+                               (:pointer 1
+                                :parent "OneTickStream::Callback"
+                                :type ("omd::EventProcessor::OutputCallback" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7265 7440])
+                            ("destroy" function
+                               (:parent "OneTickStream::Callback"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7442 7840])
+                            ("GetValue" function
+                               (:parent "OneTickStream::Callback"
+                                :arguments 
+                                  ( ("tick" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("omd::Tick" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7884 7906])
+                                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [7907 7917])
+                                    ("field" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("omd::TickField" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7918 7946]))                                  
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7842 9068])
+                            ("process_symbol_name" function
+                               (:parent "OneTickStream::Callback"
+                                :arguments 
+                                  ( ("symbolName" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9120 9143]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9070 9507])
+                            ("process_event" function
+                               (:parent "OneTickStream::Callback"
+                                :arguments 
+                                  ( ("tick" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tick" type
+                                             (:parent "omd"
+                                              :prototype t
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9554 9582])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("timeval_t" type
+                                             (:parent "omd"
+                                              :prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9582 9617]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9510 10673])
+                            ("process_tick_descriptor" function
+                               (:parent "OneTickStream::Callback"
+                                :arguments 
+                                  ( ("tickDescriptor" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("omd::TickDescriptor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10729 10771]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [10675 11377])
+                            ("process_error" function
+                               (:parent "OneTickStream::Callback"
+                                :arguments 
+                                  ( ("errorCode" variable (:type "int") (reparse-symbol arg-sub-list) [11423 11437])
+                                    ("errorMsg" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [11438 11459]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11379 11535])
+                            ("process_data_quality_change" function
+                               (:parent "OneTickStream::Callback"
+                                :arguments 
+                                  ( ("symbol" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [11595 11614])
+                                    ("dataQuality" variable (:type ("omd::DataQualityType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11615 11648])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("omd::timeval_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11649 11676]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11537 11736])
+                            ("done" function
+                               (:parent "OneTickStream::Callback"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11739 11870]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [83 11873]))                  
+                :type "namespace")
+                nil [62 11887]))          
+      :file "OneTickStream.cpp"
+      :pointmax 11901
+      :fsize 11900
+      :lastmodtime '(21962 60358 131333 411000)
+      :unmatched-syntax nil)
+    (semanticdb-table "VariantHelper.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VariantHelper.h" include nil nil [1 27])
+            ("tbricks" type
+               (:members 
+                  ( ("Convert" function
+                       (:parent "VariantHelper"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [82 102])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [103 124]))                          
+                        :type ("Variant" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [51 1416])
+                    ("Convert" function
+                       (:parent "VariantHelper"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1450 1471])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TypeInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1472 1493]))                          
+                        :type ("Variant" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1419 1807])
+                    ("UpdateCell" function
+                       (:parent "VariantHelper"
+                        :arguments 
+                          ( ("column" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DefinitionBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1840 1869])
+                            ("rowId" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1870 1883])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1884 1905])
+                            ("table" variable
+                               (:reference 1
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1906 1919]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1809 3709])
+                    ("SetParameter" function
+                       (:parent "VariantHelper"
+                        :arguments 
+                          ( ("column" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3744 3788])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Variant" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3789 3810])
+                            ("modifier" variable
+                               (:reference 1
+                                :type ("InstrumentParameters::Modifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3811 3852]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3711 5690])
+                    ("CreateTime" function
+                       (:parent "VariantHelper"
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5724 5740]))                          
+                        :type ("Time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5693 6447]))                  
+                :type "namespace")
+                nil [29 6450]))          
+      :file "VariantHelper.cpp"
+      :pointmax 6473
+      :fsize 6472
+      :lastmodtime '(21962 60358 131333 411000)
+      :unmatched-syntax nil)
+    (semanticdb-table "VariantHelper.h"
+      :file "VariantHelper.h"
+      :fsize 637
+      :lastmodtime '(21962 60358 132333 342000))
+    (semanticdb-table "OneTickStream.h"
+      :file "OneTickStream.h"
+      :fsize 4775
+      :lastmodtime '(21962 60358 131333 411000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 21807
+      :lastmodtime '(21962 60358 136333 63000)))
+  :file "!home!marselo!Code!alloptions!beta!integration!one_tick_connector!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

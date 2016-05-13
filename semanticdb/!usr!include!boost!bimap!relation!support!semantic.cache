@@ -1,0 +1,637 @@
+;; Object support/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "support/"
+  :tables
+  (list
+    (semanticdb-table "data_extractor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_DATA_EXTRACTOR_HPP" variable (:constant-flag t) nil [370 417])
+            ("boost/config.hpp" include (:system-flag t) nil [482 509])
+            ("boost/bimap/relation/detail/metadata_access_builder.hpp" include (:system-flag t) nil [511 577])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type
+                                       (:members 
+                                          ( ("data_extractor_implementation" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :prototype t)
+                                                (reparse-symbol namespacesubparts) [916 991])
+                                            ("data_extractor_implementation" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("rel" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1260 1281]))                                                          
+                                                        :type ("Relation::left_value_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1207 1324])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("rel" variable
+                                                               (:reference 1
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1400 1421]))                                                          
+                                                        :type ("Relation::left_value_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1353 1464]))                                                  
+                                                :superclasses 
+                                                  ( ("std::unary_function" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :template-specifier 
+                                                  ( ("member_at::left" type nil nil nil)
+                                                    ("Relation" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [993 1467])
+                                            ("data_extractor_implementation" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("rel" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1740 1761]))                                                          
+                                                        :type ("Relation::right_value_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1685 1805])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("rel" variable
+                                                               (:reference 1
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1883 1904]))                                                          
+                                                        :type ("Relation::right_value_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1834 1948]))                                                  
+                                                :superclasses 
+                                                  ( ("std::unary_function" type
+                                                       (:protection "public"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :template-specifier 
+                                                  ( ("member_at::right" type nil nil nil)
+                                                    ("Relation" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [1469 1951])
+                                            ("data_extractor" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("data_extractor_implementation" type
+                                                             (:template-specifier 
+                                                                ( ("BOOST_DEDUCED_TYPENAME" type nil nil nil)
+                                                                  ("Relation" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :superclasses "data_extractor_implementation"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2019 2160]))                                                  )
+                                                (reparse-symbol namespacesubparts) [1953 2163])
+                                            ("both_keys_extractor" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("result_type" variable (:type ("Relation::storage_base" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2256 2291])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :constant-flag t
+                                                        :arguments 
+                                                          ( ("rel" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2329 2350]))                                                          
+                                                        :type ("result_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2298 2388])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("rel" variable
+                                                               (:reference 1
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2420 2435]))                                                          
+                                                        :type ("result_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [2394 2473]))                                                  )
+                                                (reparse-symbol namespacesubparts) [2165 2476]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [895 2479]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [874 2502]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [855 2526]))                  
+                :type "namespace")
+                nil [837 2548]))          
+      :file "data_extractor.hpp"
+      :pointmax 2696
+      :fsize 2695
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((symbol 2233 . 2255) (TYPEDEF 2225 . 2232) (symbol 1811 . 1833) (symbol 1662 . 1684) (symbol 1330 . 1352) (symbol 1184 . 1206))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_DATA_EXTRACTOR_HPP")
+          )
+)
+    (semanticdb-table "member_with_tag.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_MEMBER_WITH_TAG_HPP" variable (:constant-flag t) nil [390 438])
+            ("boost/config.hpp" include (:system-flag t) nil [503 530])
+            ("boost/bimap/relation/member_at.hpp" include (:system-flag t) nil [532 577])
+            ("boost/bimap/detail/debug/static_error.hpp" include (:system-flag t) nil [578 630])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [631 669])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [670 710])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [711 740])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [741 769])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [770 798])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type
+                                       (:members 
+                                          ( ("member_with_tag" type
+                                               (:members 
+                                                  ( ("BOOST_BIMAP_STATIC_ERROR" function
+                                                       (:prototype-flag t
+                                                        :arguments 
+                                                          ( ("" variable (:type ("MEMBER_WITH_TAG_FAILURE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2006 2030]))                                                          
+                                                        :type "int")
+                                                        (reparse-symbol classsubparts) [1980 2048]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol namespacesubparts) [1951 2051])
+                                            ("member_with_tag" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("member_at::left" type (:type "class") nil nil)
+                                                        :superclasses "member_at::left"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2149 2178]))                                                  
+                                                :template-specifier 
+                                                  ( ("member_at::left" type nil nil nil)
+                                                    ("Relation" type nil nil nil)
+                                                    ("void" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [2053 2181])
+                                            ("member_with_tag" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("member_at::right" type (:type "class") nil nil)
+                                                        :superclasses "member_at::right"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2280 2310]))                                                  
+                                                :template-specifier 
+                                                  ( ("member_at::right" type nil nil nil)
+                                                    ("Relation" type nil nil nil)
+                                                    ("void" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [2183 2313])
+                                            ("member_with_tag" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("member_at::info" type (:type "class") nil nil)
+                                                        :superclasses "member_at::info"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2411 2440]))                                                  
+                                                :template-specifier 
+                                                  ( ("member_at::info" type nil nil nil)
+                                                    ("Relation" type nil nil nil)
+                                                    ("void" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [2315 2443])
+                                            ("member_with_tag" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("member_at::left" type (:type "class") nil nil)
+                                                        :superclasses "member_at::left"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [2812 2841]))                                                  
+                                                :template-specifier 
+                                                  ( ("Tag" type nil nil nil)
+                                                    ("Relation" type nil nil nil)
+                                                    ("BOOST_DEDUCED_TYPENAME" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [2446 2844])
+                                            ("member_with_tag" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("member_at::right" type (:type "class") nil nil)
+                                                        :superclasses "member_at::right"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3218 3248]))                                                  
+                                                :template-specifier 
+                                                  ( ("Tag" type nil nil nil)
+                                                    ("Relation" type nil nil nil)
+                                                    ("BOOST_DEDUCED_TYPENAME" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [2846 3251])
+                                            ("member_with_tag" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("member_at::info" type (:type "class") nil nil)
+                                                        :superclasses "member_at::info"
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [3619 3648]))                                                  
+                                                :template-specifier 
+                                                  ( ("Tag" type nil nil nil)
+                                                    ("Relation" type nil nil nil)
+                                                    ("BOOST_DEDUCED_TYPENAME" type nil nil nil))                                                  )
+                                                (reparse-symbol namespacesubparts) [3253 3651]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1858 3654]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1837 3677]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1818 3701]))                  
+                :type "namespace")
+                nil [1800 3723]))          
+      :file "member_with_tag.hpp"
+      :pointmax 3873
+      :fsize 3872
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((semantic-list 2031 . 2045) (punctuation 1949 . 1950) (VOID 1944 . 1948) (punctuation 1942 . 1943) (symbol 1935 . 1941) (CLASS 1929 . 1934) (punctuation 1923 . 1924) (symbol 1915 . 1923) (CLASS 1909 . 1914) (punctuation 1903 . 1904) (symbol 1900 . 1903) (CLASS 1894 . 1899) (punctuation 1888 . 1889) (TEMPLATE 1879 . 1887))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_MEMBER_WITH_TAG_HPP")
+          )
+)
+    (semanticdb-table "get_pair_functor.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_GET_PAIR_FUNCTOR_HPP" variable (:constant-flag t) nil [377 426])
+            ("boost/config.hpp" include (:system-flag t) nil [491 518])
+            ("boost/bimap/relation/support/pair_by.hpp" include (:system-flag t) nil [520 571])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type
+                                       (:members 
+                                          ( ("get_pair_functor" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("r" variable
+                                                               (:reference 1
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1121 1135]))                                                          
+                                                        :type ("result_of::pair_by::type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1066 1185])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("r" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1275 1295]))                                                          
+                                                        :type ("result_of::pair_by::type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1214 1345]))                                                  )
+                                                (reparse-symbol namespacesubparts) [975 1348])
+                                            ("get_above_view_functor" type
+                                               (:template 
+                                                  ( ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("r" variable
+                                                               (:reference 1
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1676 1690]))                                                          
+                                                        :type ("Relation::above_view" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1637 1737])
+                                                    ("()" function
+                                                       (:operator-flag t
+                                                        :arguments 
+                                                          ( ("r" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Relation" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1811 1831]))                                                          
+                                                        :type ("Relation::above_view" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1772 1878]))                                                  )
+                                                (reparse-symbol namespacesubparts) [1551 1881]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [631 1884]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [610 1907]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [591 1931]))                  
+                :type "namespace")
+                nil [573 1953]))          
+      :file "get_pair_functor.hpp"
+      :pointmax 2036
+      :fsize 2035
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((symbol 1749 . 1771) (CONST 1743 . 1748) (symbol 1614 . 1636) (symbol 1191 . 1213) (symbol 1043 . 1065))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_GET_PAIR_FUNCTOR_HPP")
+          )
+)
+    (semanticdb-table "opposite_tag.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_OPPOSITE_TAG_HPP" variable (:constant-flag t) nil [396 441])
+            ("boost/config.hpp" include (:system-flag t) nil [506 533])
+            ("boost/bimap/relation/detail/metadata_access_builder.hpp" include (:system-flag t) nil [535 601])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type (:type "namespace") (reparse-symbol namespacesubparts) [998 1181]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [977 1204]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [958 1228]))                  
+                :type "namespace")
+                nil [940 1250]))          
+      :file "opposite_tag.hpp"
+      :pointmax 1329
+      :fsize 1328
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((semantic-list 1129 . 1178) (symbol 1083 . 1128))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_OPPOSITE_TAG_HPP")
+          )
+)
+    (semanticdb-table "pair_type_by.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_PAIR_TYPE_BY_HPP" variable (:constant-flag t) nil [381 426])
+            ("boost/config.hpp" include (:system-flag t) nil [491 518])
+            ("boost/bimap/relation/detail/metadata_access_builder.hpp" include (:system-flag t) nil [520 586])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type (:type "namespace") (reparse-symbol namespacesubparts) [1049 1218]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1028 1241]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1009 1265]))                  
+                :type "namespace")
+                nil [991 1287]))          
+      :file "pair_type_by.hpp"
+      :pointmax 1366
+      :fsize 1365
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((semantic-list 1164 . 1215) (symbol 1118 . 1163))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_PAIR_TYPE_BY_HPP")
+          )
+)
+    (semanticdb-table "get.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_GET_HPP" variable (:constant-flag t) nil [344 380])
+            ("boost/config.hpp" include (:system-flag t) nil [445 472])
+            ("boost/bimap/relation/support/value_type_of.hpp" include (:system-flag t) nil [474 531])
+            ("boost/bimap/relation/detail/access_builder.hpp" include (:system-flag t) nil [533 590])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [592 619])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [620 660])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [661 702])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type
+                                       (:members 
+                                          ( ("detail" type
+                                               (:members 
+                                                  ( ("get" function
+                                                       (:arguments 
+                                                          ( ("" variable (:type ("boost::bimaps::relation::member_at::info" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2940 2981])
+                                                            ("rel" variable
+                                                               (:reference 1
+                                                                :type ("SymmetricType" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [2982 3002]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol namespacesubparts) [2929 3027]))                                                  
+                                                :type "namespace")
+                                                (reparse-symbol namespacesubparts) [2773 3030]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1418 3207]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1397 3230]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1378 3254]))                  
+                :type "namespace")
+                nil [1360 3276]))          
+      :file "get.hpp"
+      :pointmax 3413
+      :fsize 3412
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((semantic-list 3192 . 3203) (symbol 3145 . 3191) (punctuation 2939 . 2940) (punctuation 2938 . 2939) (punctuation 2928 . 2929) (punctuation 2927 . 2928) (punctuation 2926 . 2927) (symbol 2912 . 2925) (punctuation 2910 . 2911) (symbol 2906 . 2910) (punctuation 2905 . 2906) (punctuation 2904 . 2905) (symbol 2895 . 2904) (punctuation 2894 . 2895) (punctuation 2893 . 2894) (symbol 2885 . 2893) (punctuation 2884 . 2885) (punctuation 2883 . 2884) (symbol 2877 . 2883) (punctuation 2876 . 2877) (punctuation 2875 . 2876) (symbol 2870 . 2875) (punctuation 2869 . 2870) (punctuation 2868 . 2869) (punctuation 2862 . 2863) (symbol 2859 . 2862) (punctuation 2858 . 2859) (punctuation 2857 . 2858) (symbol 2848 . 2857) (symbol 2825 . 2847) (punctuation 2823 . 2824) (symbol 2809 . 2822) (CLASS 2803 . 2808) (punctuation 2801 . 2802) (TEMPLATE 2793 . 2801) (semantic-list 2680 . 2771) (symbol 2628 . 2679) (semantic-list 2767 . 2769) (punctuation 2757 . 2758) (RETURN 2748 . 2754) (semantic-list 2740 . 2742) (punctuation 2731 . 2732) (RETURN 2722 . 2728) (semantic-list 2498 . 2528) (symbol 2451 . 2497))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_GET_HPP")
+          )
+)
+    (semanticdb-table "pair_by.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_PAIR_BY_HPP" variable (:constant-flag t) nil [359 399])
+            ("boost/config.hpp" include (:system-flag t) nil [464 491])
+            ("boost/bimap/relation/support/pair_type_by.hpp" include (:system-flag t) nil [493 549])
+            ("boost/bimap/relation/detail/access_builder.hpp" include (:system-flag t) nil [550 607])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type (:type "namespace") (reparse-symbol namespacesubparts) [1318 2849]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1297 2872]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1278 2896]))                  
+                :type "namespace")
+                nil [1260 2918]))          
+      :file "pair_by.hpp"
+      :pointmax 3059
+      :fsize 3058
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((semantic-list 2831 . 2846) (symbol 2784 . 2830) (semantic-list 2587 . 2690) (symbol 2535 . 2586) (semantic-list 2686 . 2688) (punctuation 2671 . 2672) (RETURN 2661 . 2667) (semantic-list 2653 . 2655) (punctuation 2639 . 2640) (RETURN 2629 . 2635) (semantic-list 2402 . 2435) (symbol 2355 . 2401))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_PAIR_BY_HPP")
+          )
+)
+    (semanticdb-table "is_tag_of_member_at.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_IS_TAG_OF_MEMBER_AT_HPP" variable (:constant-flag t) nil [402 454])
+            ("boost/config.hpp" include (:system-flag t) nil [519 546])
+            ("boost/bimap/relation/member_at.hpp" include (:system-flag t) nil [548 593])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [594 634])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [636 665])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [666 704])
+            ("boost/bimap/relation/support/member_with_tag.hpp" include (:system-flag t) nil [705 764])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type
+                                       (:members 
+                                          ( ("" type
+                                               (:parent "is_tag_of_member_at_left"
+                                                :superclasses 
+                                                  ( ("boost::mpl::false_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "struct")
+                                                (reparse-symbol namespacesubparts) [2421 2483])
+                                            ("" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :superclasses 
+                                                  ( ("boost::mpl::true_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :parent "is_tag_of_member_at_left")
+                                                (reparse-symbol namespacesubparts) [2485 2799])
+                                            ("" type
+                                               (:parent "is_tag_of_member_at_right"
+                                                :superclasses 
+                                                  ( ("boost::mpl::false_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "struct")
+                                                (reparse-symbol namespacesubparts) [2943 3006])
+                                            ("" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :superclasses 
+                                                  ( ("boost::mpl::true_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :parent "is_tag_of_member_at_right")
+                                                (reparse-symbol namespacesubparts) [3008 3324])
+                                            ("" type
+                                               (:parent "is_tag_of_member_at_info"
+                                                :superclasses 
+                                                  ( ("boost::mpl::false_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :type "struct")
+                                                (reparse-symbol namespacesubparts) [3468 3530])
+                                            ("" type
+                                               (:template 
+                                                  ( ("Tag" type (:type "class") nil nil)
+                                                    ("Relation" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :superclasses 
+                                                  ( ("boost::mpl::true_" type
+                                                       (:protection "unspecified"
+                                                        :type "class")
+                                                        nil nil))                                                  
+                                                :parent "is_tag_of_member_at_info")
+                                                (reparse-symbol namespacesubparts) [3532 3846]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [2259 3849]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2238 3872]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2219 3896]))                  
+                :type "namespace")
+                nil [2201 3918]))          
+      :file "is_tag_of_member_at.hpp"
+      :pointmax 4072
+      :fsize 4071
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 3466 . 3467) (VOID 3461 . 3465) (punctuation 3459 . 3460) (symbol 3452 . 3458) (CLASS 3446 . 3451) (punctuation 3440 . 3441) (symbol 3432 . 3440) (CLASS 3426 . 3431) (punctuation 3420 . 3421) (symbol 3417 . 3420) (CLASS 3411 . 3416) (punctuation 3405 . 3406) (TEMPLATE 3396 . 3404) (punctuation 2941 . 2942) (VOID 2936 . 2940) (punctuation 2934 . 2935) (symbol 2927 . 2933) (CLASS 2921 . 2926) (punctuation 2915 . 2916) (symbol 2907 . 2915) (CLASS 2901 . 2906) (punctuation 2895 . 2896) (symbol 2892 . 2895) (CLASS 2886 . 2891) (punctuation 2880 . 2881) (TEMPLATE 2871 . 2879) (punctuation 2419 . 2420) (VOID 2414 . 2418) (punctuation 2412 . 2413) (symbol 2405 . 2411) (CLASS 2399 . 2404) (punctuation 2393 . 2394) (symbol 2385 . 2393) (CLASS 2379 . 2384) (punctuation 2373 . 2374) (symbol 2370 . 2373) (CLASS 2364 . 2369) (punctuation 2358 . 2359) (TEMPLATE 2349 . 2357))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_IS_TAG_OF_MEMBER_AT_HPP")
+          )
+)
+    (semanticdb-table "value_type_of.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_BIMAP_RELATION_SUPPORT_VALUE_TYPE_OF_HPP" variable (:constant-flag t) nil [384 430])
+            ("boost/config.hpp" include (:system-flag t) nil [495 522])
+            ("boost/bimap/relation/detail/metadata_access_builder.hpp" include (:system-flag t) nil [524 590])
+            ("boost" type
+               (:members 
+                  ( ("bimaps" type
+                       (:members 
+                          ( ("relation" type
+                               (:members 
+                                  ( ("support" type (:type "namespace") (reparse-symbol namespacesubparts) [1037 1725]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1016 1748]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [997 1772]))                  
+                :type "namespace")
+                nil [979 1794]))          
+      :file "value_type_of.hpp"
+      :pointmax 1874
+      :fsize 1873
+      :lastmodtime '(19204 9333 0 0)
+      :unmatched-syntax '((punctuation 1721 . 1722) (semantic-list 1652 . 1721) (punctuation 1650 . 1651) (symbol 1645 . 1649) (punctuation 1644 . 1645) (punctuation 1643 . 1644) (punctuation 1642 . 1643) (punctuation 1635 . 1636) (symbol 1613 . 1626) (punctuation 1599 . 1600) (symbol 1596 . 1599) (punctuation 1582 . 1583) (symbol 1549 . 1573) (punctuation 1548 . 1549) (punctuation 1547 . 1548) (symbol 1540 . 1547) (punctuation 1539 . 1540) (punctuation 1538 . 1539) (symbol 1530 . 1538) (punctuation 1529 . 1530) (punctuation 1528 . 1529) (symbol 1522 . 1528) (punctuation 1521 . 1522) (punctuation 1520 . 1521) (symbol 1515 . 1520) (punctuation 1514 . 1515) (punctuation 1513 . 1514) (punctuation 1503 . 1504) (symbol 1489 . 1498) (symbol 1466 . 1488) (punctuation 1460 . 1461) (symbol 1447 . 1460) (punctuation 1445 . 1446) (symbol 1442 . 1445) (punctuation 1436 . 1437) (symbol 1422 . 1435) (STRUCT 1415 . 1421) (punctuation 1413 . 1414) (symbol 1399 . 1412) (CLASS 1393 . 1398) (punctuation 1391 . 1392) (symbol 1388 . 1391) (CLASS 1382 . 1387) (punctuation 1380 . 1381) (TEMPLATE 1372 . 1380) (semantic-list 1259 . 1323) (symbol 1213 . 1258))
+      :lexical-table 
+        '(("BOOST_BIMAP_RELATION_SUPPORT_VALUE_TYPE_OF_HPP")
+          )
+))
+  :file "!usr!include!boost!bimap!relation!support!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

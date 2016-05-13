@@ -1,0 +1,2303 @@
+;; Object Pricing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Pricing/"
+  :tables
+  (list
+    (semanticdb-table "AOClampedCubicSpline.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("AOClampedCubicSpline.h" include nil nil [1 34])
+            ("AOClampedCubicSplineImpl.h" include nil nil [36 73])
+            ("../Global/tbricks_definitions.h" include nil nil [74 116])
+            ("shared/API.h" include nil nil [117 140])
+            ("tbricks" type
+               (:members 
+                  ( ("AOClampedCubicSpline" function
+                       (:constructor-flag t
+                        :parent "AOClampedCubicSpline"
+                        :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [163 392])
+                    ("AOClampedCubicSpline" function
+                       (:constructor-flag t
+                        :parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [437 472]))                          
+                        :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [394 1217])
+                    ("=" function
+                       (:operator-flag t
+                        :parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1276 1311]))                          
+                        :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1219 2071])
+                    ("AOClampedCubicSpline" function
+                       (:destructor-flag t
+                        :parent "AOClampedCubicSpline"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2073 2177])
+                    ("GetVolatilityRelativeForSigma" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("sigma" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2238 2259])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2260 2283])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2284 2315]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2179 2611])
+                    ("GetVolatilityForSigma" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("sigma" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2664 2685])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2686 2709])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2710 2741]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2613 2869])
+                    ("GetVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("strike" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2914 2936])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2937 2960])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2961 2992]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2871 3943])
+                    ("GetStrike" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("sigma" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3984 4005])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4006 4029])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4030 4061]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3945 4485])
+                    ("GetSigmaPoint" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("strike" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4530 4552])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4553 4576])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4577 4608]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4487 5402])
+                    ("GetSlope" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("strike" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5442 5464])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5465 5488])
+                            ("spot" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5489 5509])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5510 5541]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5404 6334])
+                    ("GetCurvature" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("strike" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6378 6400])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6401 6424])
+                            ("spot" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6425 6445])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6446 6477]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6336 7281])
+                    ("GetRefVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("currentVol" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7329 7354])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7355 7377])
+                            ("refForward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7378 7403])
+                            ("slope" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7404 7424]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7283 7635])
+                    ("GetCurrentVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("refVol" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7687 7708])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7709 7731])
+                            ("refForward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7732 7757])
+                            ("slope" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7758 7778])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7779 7809]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7637 8572])
+                    ("GetCurrentVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8624 8646])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8647 8677]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8574 8916])
+                    ("GetStraddle" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("volatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8959 8984])
+                            ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8985 9007])
+                            ("volatility_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9008 9039]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8918 9230])
+                    ("GetReferenceVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9232 9324])
+                    ("GetAggregateVolatilityParametersDefinition" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("ignoreActiveOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [9434 9472]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("InstrumentParameterDefinition" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [9326 10772])
+                    ("GetNonaggregateVolatilityParametersDefinition" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("ignoreActiveOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [10885 10923]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("InstrumentParameterDefinition" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10774 12389])
+                    ("GetVolatilityParametersDefinition" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("ignoreActiveOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [12490 12528]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("InstrumentParameterDefinition" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [12391 15204])
+                    ("GetVolatilityExtendedParametersDefinition" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("ignoreActiveOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [15313 15351]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("InstrumentParameterDefinition" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [15206 15610])
+                    ("SET" variable (:constant-flag t) (reparse-symbol namespacesubparts) [15620 15623])
+                    ("UpdateOverrides" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15806 15846]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [15763 19374])
+                    ("ClearOverrides" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [19376 21127])
+                    ("UpdateAggregateVolatilityParameters" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21192 21250]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [21129 21311])
+                    ("UpdateAggregateVolatilityParameters" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupAggregateParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21376 21426]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [21313 21487])
+                    ("UpdateNonaggregateVolatilityParameters" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21555 21604]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [21489 21668])
+                    ("UpdateNonaggregateVolatilityParameters" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("param" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21736 21776]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [21670 21839])
+                    ("GetDisplayName" function
+                       (:parent "AOClampedCubicSpline"
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21841 21918])
+                    ("SET_AND_GET" variable (:constant-flag t) (reparse-symbol namespacesubparts) [21928 21939])
+                    ("SetATMVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("ATM_volatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22136 22178])
+                    ("GetATMVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22136 22178])
+                    ("SetSlopeLeft" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("slope_left" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22184 22218])
+                    ("GetSlopeLeft" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22184 22218])
+                    ("SetSlopeRight" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("slope_right" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22224 22260])
+                    ("GetSlopeRight" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22224 22260])
+                    ("SetATMVolatilitySlope" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("ATM_volatility_slope" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22266 22319])
+                    ("GetATMVolatilitySlope" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22266 22319])
+                    ("SetVolatilitySlopeReferencePrice" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("forward_reference_price" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22325 22392])
+                    ("GetVolatilitySlopeReferencePrice" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22325 22392])
+                    ("SetUnderlyingForwardPriceAdjustment" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("UnderlyingForwardPriceAdjustment" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22398 22477])
+                    ("GetUnderlyingForwardPriceAdjustment" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22398 22477])
+                    ("SetMaximumVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("maximum_volatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22480 22530])
+                    ("GetMaximumVolatility" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22480 22530])
+                    ("SetTiltFactor" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("tilt_factor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22533 22569])
+                    ("GetTiltFactor" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22533 22569])
+                    ("SetSD" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22625 22638])
+                            ("sd" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22639 22657]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22592 22735])
+                    ("GetSD" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22780 22793]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [22737 22897])
+                    ("SetVD" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22932 22945])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [22946 22967]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22899 23041])
+                    ("Normalize" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [23043 23474])
+                    ("GetVD" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23519 23532]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23476 23636])
+                    ("GetVDRelative" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23681 23690]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23638 23961])
+                    ("GetVDRelative" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("parameterDefinition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24006 24064]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [23963 25776])
+                    ("SetVDRelative" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25819 25828])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25829 25850]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25778 25977])
+                    ("Clear" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25980 26562])
+                    ("IsEverythingEmpty" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [26564 27351])
+                    ("IsEverythingSet" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [27353 28136])
+                    ("Empty" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [28138 28211])
+                    ("Ready" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [28213 28531])
+                    ("GetVolatilityForRefFutureAndPoint" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28596 28609]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [28533 28843])
+                    ("Print" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("strm" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29612 29632]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29569 30638])
+                    ("GetParameter" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("parameterDefinition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30682 30740]))                          
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [30640 30808])
+                    ("GetParameter" function
+                       (:parent "AOClampedCubicSpline"
+                        :constant-flag t
+                        :arguments 
+                          ( ("parameterDefinition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30874 30907]))                          
+                        :type ("OverrideValue" type
+                             (:template-specifier 
+                                ( ("Double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [30810 34227])
+                    ("SetParameter" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("parameterDefinition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameterDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34269 34327])
+                            ("parameterValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34328 34358]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [34229 38684])
+                    ("UpdateXValues" function
+                       (:parent "AOClampedCubicSpline"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [38686 38903])
+                    ("ApplyTimeMinimum" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("timeInYears" variable (:type "double") (reparse-symbol arg-sub-list) [38951 38970]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [38905 39041])
+                    ("AddParameter" function
+                       (:parent "AOClampedCubicSpline"
+                        :arguments 
+                          ( ("definitions" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [39083 39139])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39140 39164])
+                            ("ignoreOverride" variable (:type "bool") (reparse-symbol arg-sub-list) [39165 39185]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [39043 39293])
+                    ("UpdateNonaggregateVolatilityParametersImpl" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [39386 39403]))                          
+                        :parent "AOClampedCubicSpline")
+                        (reparse-symbol namespacesubparts) [39295 40943])
+                    ("UpdateAggregateVolatilityParametersImpl" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [41033 41050]))                          
+                        :parent "AOClampedCubicSpline")
+                        (reparse-symbol namespacesubparts) [40945 42361]))                  
+                :type "namespace")
+                nil [142 42364]))          
+      :file "AOClampedCubicSpline.cpp"
+      :pointmax 42386
+      :fsize 42385
+      :lastmodtime '(22006 31481 360661 175000)
+      :unmatched-syntax '((punctuation 22569 . 22570) (punctuation 22530 . 22531) (punctuation 22477 . 22478) (punctuation 22392 . 22393) (punctuation 22319 . 22320) (punctuation 22260 . 22261) (punctuation 22218 . 22219) (punctuation 22178 . 22179))
+      :lexical-table 
+        '(("SET" (spp-arg-list ("definition" "value") 15623 . 15642) . 
+              ((IF "if" 15649 . 15651) (semantic-list "(!value.Get().Empty())" 15652 . 15674) (semantic-list "{ \\
+        modifier.SetParameter(instrument_parameters::definition(), value); \\
+    }" 15675 . 15761)))
+          )
+)
+    (semanticdb-table "AOClampedCubicSpline.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__STRATEGY__VOLATILITY__AO_CCS_MODEL__H" variable (:constant-flag t) nil [66 114])
+            ("shared/API.h" include nil nil [116 139])
+            ("tbricks" type
+               (:members 
+                  ( ("AOClampedCubicSpline" type
+                       (:superclasses 
+                          ( ("tbricks::Printable" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [219 226])
+                            ("AOClampedCubicSpline" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [231 254])
+                            ("AOClampedCubicSpline" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("model" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [280 315]))                                  
+                                :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [259 316])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("model" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [356 391]))                                  
+                                :type ("AOClampedCubicSpline" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [321 392])
+                            ("AOClampedCubicSpline" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [397 429])
+                            ("public" label nil (reparse-symbol classsubparts) [431 438])
+                            ("GetVolatility" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("strike" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [472 494])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [495 518])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [519 550]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [443 557])
+                            ("GetVolatilityForSigma" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sigma" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [596 617])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [618 641])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [642 673]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [559 680])
+                            ("GetVolatilityRelativeForSigma" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sigma" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [727 748])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [749 772])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [773 804]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [682 811])
+                            ("GetSlope" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("strike" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [840 862])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [863 886])
+                                    ("spot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [887 907])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [908 939]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [816 946])
+                            ("GetCurvature" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("strike" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [979 1001])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1002 1025])
+                                    ("spot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1026 1046])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1047 1078]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [951 1085])
+                            ("GetReferenceVolatility" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1090 1136])
+                            ("GetSigmaPoint" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("strike" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1168 1190])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1191 1214])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1215 1246]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1139 1253])
+                            ("GetStrike" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("sigma" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1280 1301])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1302 1325])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1326 1357]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1255 1364])
+                            ("GetVolatilityParametersDefinition" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ignoreOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [1453 1475])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1475 1481]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1368 1488])
+                            ("GetVolatilityExtendedParametersDefinition" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ignoreOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [1583 1605])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1605 1611]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1490 1618])
+                            ("GetAggregateVolatilityParametersDefinition" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ignoreOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [1714 1736])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1736 1742]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1620 1749])
+                            ("GetNonaggregateVolatilityParametersDefinition" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ignoreOverrides" variable (:type "bool") (reparse-symbol arg-sub-list) [1848 1870])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1870 1876]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1751 1883])
+                            ("UpdateOverrides" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("parameters" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentParameters" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1910 1950]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1889 1951])
+                            ("ClearOverrides" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1956 1978])
+                            ("UpdateAggregateVolatilityParameters" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentGroupAggregateParameters::Update" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2032 2090]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1983 2091])
+                            ("UpdateAggregateVolatilityParameters" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentGroupAggregateParameters" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2145 2195]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2096 2196])
+                            ("UpdateNonaggregateVolatilityParameters" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentGroupParameters::Update" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2253 2302]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2201 2303])
+                            ("UpdateNonaggregateVolatilityParameters" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("param" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentGroupParameters" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2357 2397]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2305 2398])
+                            ("SetVolatilityOffset" function
+                               (:arguments 
+                                  ( ("volatility_offset" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SmartDouble" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2429 2467]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2404 2512])
+                            ("GetDisplayName" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2518 2556])
+                            ("GetCurrentVolatility" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("refVol" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2587 2608])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2609 2631])
+                                    ("refForward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2632 2657])
+                                    ("slope" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2658 2678])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2679 2710]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2559 2717])
+                            ("GetRefVolatility" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("currentVol" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2750 2775])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2776 2798])
+                                    ("refForward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2799 2824])
+                                    ("slope" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2825 2845]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2719 2846])
+                            ("GetCurrentVolatility" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2876 2898])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2899 2929]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2848 2936])
+                            ("GetStraddle" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("volatility" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2964 2989])
+                                    ("forward" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2990 3012])
+                                    ("volatility_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3013 3044]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2938 3045])
+                            ("SetParameter" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("parameterDefinition" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentParameterDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3066 3124])
+                                    ("parameterValue" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3125 3155]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3048 3156])
+                            ("GetParameter" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("parameterDefinition" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentParameterDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3178 3236]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3158 3242])
+                            ("GetParameter" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("parameterDefinition" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Uuid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3286 3319]))                                  
+                                :type ("OverrideValue" type
+                                     (:template-specifier 
+                                        ( ("Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3244 3325])
+                            ("public" label nil (reparse-symbol classsubparts) [3326 3333])
+                            ("SetVolatilityModel" function
+                               (:arguments 
+                                  ( ("model" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Integer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3359 3381]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3335 3412])
+                            ("GetVolatilityModel" function
+                               (:constant-flag t
+                                :type ("Integer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3414 3485])
+                            ("SetATMVolatility" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("volatility" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3513 3539]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3491 3540])
+                            ("GetATMVolatility" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3545 3585])
+                            ("SetSD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3603 3616])
+                                    ("sd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3617 3635]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3592 3636])
+                            ("GetSD" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3662 3675]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3641 3682])
+                            ("SetVD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3699 3712])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3713 3734]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3688 3735])
+                            ("GetVD" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3790 3803]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3769 3810])
+                            ("GetVDRelative" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3834 3843]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3813 3850])
+                            ("GetVDRelative" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("parameterDefinition" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentParameterDefinition" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3873 3931]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3852 3938])
+                            ("SetVDRelative" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3959 3968])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3969 3990]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3940 3991])
+                            ("SetSlopeLeft" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slope_left" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4015 4041]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3997 4042])
+                            ("GetSlopeLeft" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4047 4083])
+                            ("SetSlopeRight" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slope_right" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4108 4135]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4089 4136])
+                            ("GetSlopeRight" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4141 4178])
+                            ("SetATMVolatilitySlope" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("volatility" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4215 4241]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4188 4242])
+                            ("GetATMVolatilitySlope" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4247 4292])
+                            ("SetVolatilitySlopeReferencePrice" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("price" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4336 4357]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4298 4358])
+                            ("GetVolatilitySlopeReferencePrice" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4363 4419])
+                            ("SetTiltFactor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("tilt" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4441 4461]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4422 4462])
+                            ("GetTiltFactor" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4467 4504])
+                            ("SetMaximumVolatility" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("volatility" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4533 4559]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4507 4560])
+                            ("GetMaximumVolatility" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4565 4609])
+                            ("SetUnderlyingForwardPriceAdjustment" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("price" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4656 4677]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4615 4678])
+                            ("GetUnderlyingForwardPriceAdjustment" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4683 4742])
+                            ("GetVolatilityForRefFutureAndPoint" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4859 4872]))                                  
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4818 4873])
+                            ("ApplyTimeMinimum" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("timeInYears" variable (:type "double") (reparse-symbol arg-sub-list) [4907 4926]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [4876 4927])
+                            ("public" label nil (reparse-symbol classsubparts) [4929 4936])
+                            ("Clear" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4941 4954])
+                            ("Empty" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4959 4978])
+                            ("Ready" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4983 5002])
+                            ("IsEverythingEmpty" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5008 5038])
+                            ("IsEverythingSet" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5043 5071])
+                            ("Print" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("strm" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5103 5123]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5074 5130])
+                            ("Consts" type
+                               (:members 
+                                  ( ("X_POINTS_COUNT" variable
+                                       (:constant-flag t
+                                        :default-value (5167 5168)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5150 5168])
+                                    ("Y_POINTS_COUNT" variable
+                                       (:constant-flag t
+                                        :default-value (5253 5255)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5236 5255]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [5133 5259])
+                            ("GetActivePointCount" function (:type "int") (reparse-symbol classsubparts) [5262 5318])
+                            ("GetActiveYIndexOffset" function (:type "int") (reparse-symbol classsubparts) [5321 5408])
+                            ("Normalize" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5411 5428])
+                            ("UpdateXValues" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5475 5496])
+                            ("GetInstrmParamOverrides" function
+                               (:constant-flag t
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5499 5601])
+                            ("private" label nil (reparse-symbol classsubparts) [5603 5611])
+                            ("AddParameter" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("definitions" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("InstrumentParameterDefinition" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5632 5688])
+                                    ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5689 5713])
+                                    ("ignoreOverride" variable (:type "bool") (reparse-symbol arg-sub-list) [5714 5734]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5614 5740])
+                            ("UpdateNonaggregateVolatilityParametersImpl" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5813 5830]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [5743 5831])
+                            ("UpdateAggregateVolatilityParametersImpl" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5904 5921]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [5834 5922])
+                            ("Impl" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol classsubparts) [5928 5939])
+                            ("m_impl" variable
+                               (:pointer 1
+                                :type ("Impl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5944 5958])
+                            ("private" label nil (reparse-symbol classsubparts) [5960 5968])
+                            ("m_ATM_volatility" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [5974 6013])
+                            ("m_sd" variable
+                               (:dereference 1
+                                :type ("OverrideValue" type
+                                     (:template-specifier 
+                                        ( ("Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [6018 6061])
+                            ("m_vo" variable
+                               (:dereference 1
+                                :type ("OverrideValue" type
+                                     (:template-specifier 
+                                        ( ("Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [6066 6109])
+                            ("m_slope_left" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6114 6149])
+                            ("m_slope_right" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6154 6190])
+                            ("m_ATM_volatility_slope" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6195 6240])
+                            ("m_forward_reference_price" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6245 6293])
+                            ("m_UnderlyingForwardPriceAdjustment" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6298 6355])
+                            ("m_tilt_factor" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6357 6393])
+                            ("m_maximum_volatility" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6395 6438])
+                            ("m_volatilityModel" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("Integer" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6441 6482])
+                            ("m_activePointCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6485 6511])
+                            ("m_xPointsValid" variable (:type "bool") (reparse-symbol classsubparts) [6513 6533])
+                            ("m_EmptyDouble" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6536 6557])
+                            ("m_EmptyOverideDouble" variable (:type ("OverrideValue" type
+                                 (:template-specifier 
+                                    ( ("tbricks::Double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [6559 6611])
+                            ("m_volatility_offset" variable (:type ("SmartDouble" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6614 6646])
+                            ("m_instrumentParametersOverrides" variable (:type ("InstrumentParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6648 6702]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [162 6705]))                  
+                :type "namespace")
+                nil [141 6708]))          
+      :file "AOClampedCubicSpline.h"
+      :pointmax 6788
+      :fsize 6787
+      :lastmodtime '(22006 31481 360661 175000)
+      :unmatched-syntax '((punctuation 1869 . 1870) (punctuation 1735 . 1736) (punctuation 1604 . 1605) (punctuation 1474 . 1475))
+      :lexical-table 
+        '(("__TBRICKS__STRATEGY__VOLATILITY__AO_CCS_MODEL__H")
+          )
+)
+    (semanticdb-table "AOClampedCubicSplineImpl.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__STRATEGY__VOLATILITY__AO_CCS_MODEL_IMPL__H" variable (:constant-flag t) nil [71 124])
+            ("AOClampedCubicSpline.h" include nil nil [126 159])
+            ("tbricks" type
+               (:members 
+                  ( ("Impl" type
+                       (:parent "AOClampedCubicSpline"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [217 225])
+                            ("cubic_spline" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [259 266])
+                                    ("cubic_spline" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("cubic_spline" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [275 290])
+                                    ("cubic_spline" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("spline" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cubic_spline" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [312 340]))                                          
+                                        :type ("cubic_spline" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [299 341])
+                                    ("public" label nil (reparse-symbol classsubparts) [351 358])
+                                    ("get_value" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [381 390])
+                                            ("value" variable
+                                               (:reference 1
+                                                :type "double")
+                                                (reparse-symbol arg-sub-list) [391 406]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [367 407])
+                                    ("build_clamped_spline" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("double" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [438 468])
+                                            ("y" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("double" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [480 510])
+                                            ("first_deriv_left" variable (:type "double") (reparse-symbol arg-sub-list) [522 546])
+                                            ("first_deriv_right" variable (:type "double") (reparse-symbol arg-sub-list) [558 583])
+                                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [584 593]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [412 594])
+                                    ("build_aspline" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("double" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [617 647])
+                                            ("y" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("double" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [658 688])
+                                            ("first_deriv_left" variable (:type "double") (reparse-symbol arg-sub-list) [699 723])
+                                            ("first_deriv_right" variable (:type "double") (reparse-symbol arg-sub-list) [734 759])
+                                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [760 769]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [598 770])
+                                    ("private" label nil (reparse-symbol classsubparts) [776 784])
+                                    ("m_first_deriv_left" variable (:type "double") (reparse-symbol classsubparts) [793 840])
+                                    ("m_first_deriv_right" variable (:type "double") (reparse-symbol classsubparts) [793 840])
+                                    ("spline_one_interval" type
+                                       (:members 
+                                          ( ("m_a" variable (:type "double") (reparse-symbol classsubparts) [890 921])
+                                            ("m_b" variable (:type "double") (reparse-symbol classsubparts) [890 921])
+                                            ("m_c" variable (:type "double") (reparse-symbol classsubparts) [890 921])
+                                            ("m_d" variable (:type "double") (reparse-symbol classsubparts) [890 921])
+                                            ("m_x" variable (:type "double") (reparse-symbol classsubparts) [890 921]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [849 932])
+                                    ("m_h" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [941 990])
+                                    ("m_alpha" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [941 990])
+                                    ("m_l" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [941 990])
+                                    ("m_mu" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [941 990])
+                                    ("m_z" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [941 990])
+                                    ("m_splines" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("spline_one_interval" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [999 1042])
+                                    ("m_n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1051 1062])
+                                    ("m_last_x" variable (:type "double") (reparse-symbol classsubparts) [1071 1087])
+                                    ("m_last_value" variable (:type "double") (reparse-symbol classsubparts) [1090 1110]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [230 1125])
+                            ("private" label nil (reparse-symbol classsubparts) [1127 1135])
+                            ("EC_CCS" type
+                               (:members 
+                                  ( ("EC_CCS_SUCCESS" variable
+                                       (:constant-flag t
+                                        :default-value (1179 1180)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1162 1180])
+                                    ("EC_CCS_BAD_VOL_TIME" variable
+                                       (:constant-flag t
+                                        :default-value (1212 1214)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1190 1214])
+                                    ("EC_CCS_BAD_ATM_VOL" variable
+                                       (:constant-flag t
+                                        :default-value (1245 1247)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1224 1247])
+                                    ("EC_CCS_BAD_FUT_PRICE" variable
+                                       (:constant-flag t
+                                        :default-value (1280 1282)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1257 1282])
+                                    ("EC_CCS_BAD_REF_PRICE" variable
+                                       (:constant-flag t
+                                        :default-value (1309 1311)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1286 1311])
+                                    ("EC_CCS_BAD_ATM_VOL_SLOPE" variable
+                                       (:constant-flag t
+                                        :default-value (1348 1350)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1321 1350])
+                                    ("EC_CCS_BAD_INDEX" variable
+                                       (:constant-flag t
+                                        :default-value (1379 1381)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1360 1381])
+                                    ("EC_CCS_BAD_CORR_VOL" variable
+                                       (:constant-flag t
+                                        :default-value (1413 1415)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1391 1415])
+                                    ("EC_CCS_BAD_STRIKE" variable
+                                       (:constant-flag t
+                                        :default-value (1445 1447)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1425 1447])
+                                    ("EC_CCS_BAD_SD_ORDER" variable
+                                       (:constant-flag t
+                                        :default-value (1479 1481)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1457 1481])
+                                    ("EC_CCS_ZERO_N" variable
+                                       (:constant-flag t
+                                        :default-value (1507 1510)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1491 1510])
+                                    ("EC_CCS_BAD_SPOT_PRICE" variable
+                                       (:constant-flag t
+                                        :default-value (1544 1547)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1520 1547])
+                                    ("EC_CCS_ZERO_DELTA_F" variable
+                                       (:constant-flag t
+                                        :default-value (1579 1582)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1557 1582])
+                                    ("EC_CCS_SPLINE_NOT_READY" variable
+                                       (:constant-flag t
+                                        :default-value (1612 1615)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1586 1615]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1140 1622])
+                            ("CCS" type
+                               (:members 
+                                  ( ("CCS_CENTER" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1643 1654])
+                                    ("CCS_LEFT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1655 1664])
+                                    ("CCS_RIGHT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1665 1675])
+                                    ("CCS_REF" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1676 1685]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1632 1686])
+                            ("public" label nil (reparse-symbol classsubparts) [1688 1695])
+                            ("Impl" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Impl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1700 1707])
+                            ("set_parameters" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("model" variable (:type "int") (reparse-symbol arg-sub-list) [1733 1743])
+                                    ("ATM_vol" variable (:type "double") (reparse-symbol arg-sub-list) [1744 1759])
+                                    ("sd" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("OverrideValue" type
+                                             (:template-specifier 
+                                                ( ("Double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1760 1793])
+                                    ("vd" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("OverrideValue" type
+                                             (:template-specifier 
+                                                ( ("Double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1800 1833])
+                                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1834 1843])
+                                    ("slope_left" variable (:type "double") (reparse-symbol arg-sub-list) [1869 1887])
+                                    ("slope_right" variable (:type "double") (reparse-symbol arg-sub-list) [1888 1907])
+                                    ("ATM_vol_slope" variable (:type "double") (reparse-symbol arg-sub-list) [1915 1936])
+                                    ("F" variable (:type "double") (reparse-symbol arg-sub-list) [1937 1946])
+                                    ("F0" variable (:type "double") (reparse-symbol arg-sub-list) [1947 1957])
+                                    ("T" variable (:type "double") (reparse-symbol arg-sub-list) [1965 1974])
+                                    ("tiltFactor" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1975 2009])
+                                    ("maximumVolatility" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Double" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2010 2051]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1713 2052])
+                            ("get_volatility" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("X" variable (:type "double") (reparse-symbol arg-sub-list) [2077 2086])
+                                    ("value" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2087 2102]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2058 2103])
+                            ("get_slope" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("X" variable (:type "double") (reparse-symbol arg-sub-list) [2122 2131])
+                                    ("S" variable (:type "double") (reparse-symbol arg-sub-list) [2132 2141])
+                                    ("slope" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2142 2157]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2108 2158])
+                            ("get_curvature" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("X" variable (:type "double") (reparse-symbol arg-sub-list) [2181 2190])
+                                    ("S" variable (:type "double") (reparse-symbol arg-sub-list) [2191 2200])
+                                    ("curvature" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2201 2220]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2163 2221])
+                            ("get_sigma_point" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("X" variable (:type "double") (reparse-symbol arg-sub-list) [2243 2252])
+                                    ("value" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2253 2268]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2223 2269])
+                            ("get_current_volatility" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable (:type "double") (reparse-symbol arg-sub-list) [2298 2307])
+                                    ("value" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2308 2322]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2271 2323])
+                            ("get_string_error" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("err_code" variable (:type "int") (reparse-symbol arg-sub-list) [2355 2368])
+                                    ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2369 2383])
+                                    ("" variable (:type ("err_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2384 2395]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2326 2396])
+                            ("get_ref_volatility" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("currentVol" variable (:type "double") (reparse-symbol arg-sub-list) [2432 2450])
+                                    ("F" variable (:type "double") (reparse-symbol arg-sub-list) [2451 2460])
+                                    ("F0" variable (:type "double") (reparse-symbol arg-sub-list) [2461 2471])
+                                    ("slope" variable (:type "double") (reparse-symbol arg-sub-list) [2472 2485]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [2399 2486])
+                            ("get_straddle" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("volatility" variable (:type "double") (reparse-symbol arg-sub-list) [2515 2533])
+                                    ("F" variable (:type "double") (reparse-symbol arg-sub-list) [2534 2543])
+                                    ("timeInYears" variable (:type "double") (reparse-symbol arg-sub-list) [2544 2563]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [2488 2564])
+                            ("ApplyTimeMinimum" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("timeInYears" variable (:type "double") (reparse-symbol arg-sub-list) [2599 2618]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [2568 2619])
+                            ("private" label nil (reparse-symbol classsubparts) [2621 2629])
+                            ("get_sigma" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("index" variable (:type ("CCS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2645 2655])
+                                    ("X" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2656 2671])
+                                    ("sigma" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2672 2687]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2631 2688])
+                            ("rebuild_clamped_cubic_spline" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("index" variable
+                                       (:constant-flag t
+                                        :type ("CCS" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2726 2742]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2693 2743])
+                            ("private" label nil (reparse-symbol classsubparts) [2745 2753])
+                            ("m_actual" variable
+                               (:dereference 1
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2759 2776])
+                            ("m_CCS" variable
+                               (:dereference 1
+                                :type ("cubic_spline" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2781 2803])
+                            ("m_ATM_vol" variable (:type "double") (reparse-symbol classsubparts) [2809 2894])
+                            ("m_slope_left" variable (:type "double") (reparse-symbol classsubparts) [2809 2894])
+                            ("m_slope_right" variable (:type "double") (reparse-symbol classsubparts) [2809 2894])
+                            ("m_ATM_vol_slope" variable (:type "double") (reparse-symbol classsubparts) [2809 2894])
+                            ("m_F" variable (:type "double") (reparse-symbol classsubparts) [2809 2894])
+                            ("m_F0" variable (:type "double") (reparse-symbol classsubparts) [2809 2894])
+                            ("m_T" variable (:type "double") (reparse-symbol classsubparts) [2809 2894])
+                            ("m_slope_left_adj" variable (:type "double") (reparse-symbol classsubparts) [2899 2942])
+                            ("m_slope_right_adj" variable (:type "double") (reparse-symbol classsubparts) [2899 2942])
+                            ("m_sd" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2947 2978])
+                            ("m_vd" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2947 2978])
+                            ("m_n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2983 2994])
+                            ("m_X" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2999 3040])
+                            ("m_vol_diff_corr" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2999 3040])
+                            ("m_F_step_for_deriv" variable (:type "double") (reparse-symbol classsubparts) [3045 3071])
+                            ("m_tiltFactor" variable (:type ("tbricks::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3074 3103])
+                            ("m_tiltVector" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3108 3141])
+                            ("m_maximum_volatility" variable (:type ("tbricks::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3147 3184])
+                            ("m_model" variable (:type "int") (reparse-symbol classsubparts) [3189 3201]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [182 3204]))                  
+                :type "namespace")
+                nil [161 3207]))          
+      :file "AOClampedCubicSplineImpl.h"
+      :pointmax 3291
+      :fsize 3290
+      :lastmodtime '(22006 31481 361661 110000)
+      :unmatched-syntax '((punctuation 2382 . 2383))
+      :lexical-table 
+        '(("__TBRICKS__STRATEGY__VOLATILITY__AO_CCS_MODEL_IMPL__H")
+          )
+)
+    (semanticdb-table "AOClampedCubicSplineImpl.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cmath" include (:system-flag t) nil [1 17])
+            ("math.h" include (:system-flag t) nil [18 35])
+            ("AOClampedCubicSplineImpl.h" include nil nil [37 74])
+            ("tbricks" type
+               (:members 
+                  ( ("cubic_spline" function
+                       (:constructor-flag t
+                        :parent "AOClampedCubicSpline::Impl::cubic_spline"
+                        :type ("cubic_spline" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [97 260])
+                    ("cubic_spline" function
+                       (:constructor-flag t
+                        :parent "AOClampedCubicSpline::Impl::cubic_spline"
+                        :arguments 
+                          ( ("spline" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cubic_spline" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [317 345]))                          
+                        :type ("cubic_spline" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [262 693])
+                    ("build_clamped_spline" function
+                       (:parent "AOClampedCubicSpline::Impl::cubic_spline"
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [763 792])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [812 841])
+                            ("first_deriv_left" variable (:type "double") (reparse-symbol arg-sub-list) [861 885])
+                            ("first_deriv_right" variable (:type "double") (reparse-symbol arg-sub-list) [905 930])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [950 959]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [695 2960])
+                    ("build_aspline" function
+                       (:parent "AOClampedCubicSpline::Impl::cubic_spline"
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3023 3052])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3071 3100])
+                            ("first_deriv_left" variable (:type "double") (reparse-symbol arg-sub-list) [3119 3143])
+                            ("first_deriv_right" variable (:type "double") (reparse-symbol arg-sub-list) [3162 3187])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3206 3215]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2962 4271])
+                    ("get_value" function
+                       (:parent "AOClampedCubicSpline::Impl::cubic_spline"
+                        :arguments 
+                          ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [4329 4338])
+                            ("value" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [4339 4354]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [4273 6350])
+                    ("Impl" function
+                       (:constructor-flag t
+                        :parent "AOClampedCubicSpline::Impl"
+                        :type ("Impl" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6352 6672])
+                    ("set_parameters" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("model" variable (:type "int") (reparse-symbol arg-sub-list) [6722 6732])
+                            ("ATM_vol" variable (:type "double") (reparse-symbol arg-sub-list) [6733 6748])
+                            ("sd" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("OverrideValue" type
+                                     (:template-specifier 
+                                        ( ("Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6749 6781])
+                            ("vd" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("OverrideValue" type
+                                     (:template-specifier 
+                                        ( ("Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6794 6827])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6828 6837])
+                            ("slope_left" variable (:type "double") (reparse-symbol arg-sub-list) [6851 6869])
+                            ("slope_right" variable (:type "double") (reparse-symbol arg-sub-list) [6870 6889])
+                            ("ATM_vol_slope" variable (:type "double") (reparse-symbol arg-sub-list) [6903 6924])
+                            ("F" variable (:type "double") (reparse-symbol arg-sub-list) [6925 6934])
+                            ("F0" variable (:type "double") (reparse-symbol arg-sub-list) [6935 6945])
+                            ("T" variable (:type "double") (reparse-symbol arg-sub-list) [6959 6968])
+                            ("tiltFactor" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6969 7003])
+                            ("maximumVolatility" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7004 7045]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6674 9337])
+                    ("get_sigma" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("index" variable (:type ("CCS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9381 9391])
+                            ("X" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [9392 9407])
+                            ("sigma" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [9408 9423]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9339 9933])
+                    ("rebuild_clamped_cubic_spline" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("index" variable
+                               (:constant-flag t
+                                :type ("CCS" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9996 10012]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9935 13398])
+                    ("get_current_volatility" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("F" variable (:type "double") (reparse-symbol arg-sub-list) [13455 13464])
+                            ("value" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [13465 13479]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [13400 13706])
+                    ("get_ref_volatility" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("currentVol" variable (:type "double") (reparse-symbol arg-sub-list) [13762 13780])
+                            ("F" variable (:type "double") (reparse-symbol arg-sub-list) [13781 13790])
+                            ("F0" variable (:type "double") (reparse-symbol arg-sub-list) [13791 13801])
+                            ("slope" variable (:type "double") (reparse-symbol arg-sub-list) [13802 13815]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [13708 13929])
+                    ("get_straddle" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("volatility" variable (:type "double") (reparse-symbol arg-sub-list) [13979 13997])
+                            ("F" variable (:type "double") (reparse-symbol arg-sub-list) [13998 14007])
+                            ("timeInYears" variable (:type "double") (reparse-symbol arg-sub-list) [14008 14027]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [13931 14140])
+                    ("get_volatility" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("X" variable
+                               (:constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [14189 14204])
+                            ("value" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [14205 14220]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [14142 14268])
+                    ("get_sigma_point" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("X" variable (:type "double") (reparse-symbol arg-sub-list) [14318 14327])
+                            ("value" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [14328 14343]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [14270 14953])
+                    ("get_slope" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("X" variable (:type "double") (reparse-symbol arg-sub-list) [14997 15006])
+                            ("S" variable (:type "double") (reparse-symbol arg-sub-list) [15007 15016])
+                            ("value" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [15017 15032]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [14955 15817])
+                    ("get_curvature" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("X" variable (:type "double") (reparse-symbol arg-sub-list) [15865 15874])
+                            ("S" variable (:type "double") (reparse-symbol arg-sub-list) [15875 15884])
+                            ("value" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [15885 15900]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [15819 16853])
+                    ("get_string_error" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("err_code" variable (:type "int") (reparse-symbol arg-sub-list) [16905 16918])
+                            ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16919 16933])
+                            ("" variable (:type ("err_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16934 16945]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16855 18478])
+                    ("ApplyTimeMinimum" function
+                       (:parent "AOClampedCubicSpline::Impl"
+                        :arguments 
+                          ( ("timeInYears" variable (:type "double") (reparse-symbol arg-sub-list) [18532 18551]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [18480 18675]))                  
+                :type "namespace")
+                nil [76 18678]))          
+      :file "AOClampedCubicSplineImpl.cpp"
+      :pointmax 18700
+      :fsize 18699
+      :lastmodtime '(22006 31481 361661 110000)
+      :unmatched-syntax '((punctuation 16932 . 16933))))
+  :file "!home!marselo!Code!alloptions!ao_sources!ao_shared!AO_SharedGlobal!Pricing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

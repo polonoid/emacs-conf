@@ -1,0 +1,50 @@
+;; Object contrib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "contrib/"
+  :tables
+  (list
+    (semanticdb-table "eassist.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [4975 4988])
+            ("semantic" include nil nil [4991 5010])
+            ("eassist-string-without-last" function (:arguments ("string" "n")) nil [5091 5252])
+            ("eassist-string-ends-with" function (:arguments ("string" "end")) nil [5254 5401])
+            ("eassist-header-switches" variable (:default-value (quote (("h" "cpp" "cc" "c") ("hpp" "cpp" "cc") ("cpp" "h" "hpp") ("c" "h") ("C" "H") ("H" "C" "CPP" "CC") ("cc" "h" "hpp")))) nil [5576 5991])
+            ("eassist-switch-h-cpp" function (:user-visible-flag t) nil [6008 7300])
+            ("eassist-current-tag" variable nil nil [7464 7539])
+            ("eassist-buffer" variable nil nil [7540 7613])
+            ("eassist-names-column" variable nil nil [7614 7695])
+            ("eassist-methods" variable nil nil [7696 7793])
+            ("eassist-actual-methods" variable nil nil [7794 7905])
+            ("eassist-search-string" variable nil nil [7906 7987])
+            ("eassist-overlays" variable nil nil [7988 8046])
+            ("eassist-function-tags" function nil nil [8048 9246])
+            ("eassist-car-if-list" function (:arguments ("thing")) nil [9248 9396])
+            ("eassist-function-string-triplet" function (:arguments ("f")) nil [9398 9639])
+            ("eassist-format-triplets" function (:arguments ("f")) nil [9641 10741])
+            ("eassist-list-methods" function (:user-visible-flag t) nil [10758 11156])
+            ("eassist-jump-to-method" function (:user-visible-flag t) nil [11158 11768])
+            ("eassist-matches-all" function (:arguments ("string" "substrings")) nil [11770 11987])
+            ("eassist-search-string-updated" function nil nil [11989 12964])
+            ("eassist-key-pressed" function (:arguments ("key")) nil [12966 13148])
+            ("eassist-backspace-pressed" function (:user-visible-flag t) nil [13150 13359])
+            ("eassist-make-key-function" function (:arguments ("key")) nil [13361 13488])
+            ("eassist-key-itself" function (:arguments ("map" "key")) nil [13490 13639])
+            ("eassist-escape" function (:user-visible-flag t) nil [13641 13780])
+            ("eassist-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (suppress-keymap map) (do ((k (string-to-char "a") (+ 1 k))) ((> k (string-to-char "z"))) (define-key map (read-kbd-macro (char-to-string k)) (eassist-make-key-function k))) (do ((k (string-to-char "A") (+ 1 k))) ((> k (string-to-char "Z"))) (define-key map (read-kbd-macro (char-to-string k)) (eassist-make-key-function k))) (do ((k (string-to-char "0") (+ 1 k))) ((> k (string-to-char "9"))) (define-key map (read-kbd-macro (char-to-string k)) (eassist-make-key-function k))) (dolist (k (string-to-list "=><&!")) (define-key map (read-kbd-macro (char-to-string k)) (eassist-make-key-function k))) (eassist-key-itself map (string-to-char " ")) (eassist-key-itself map (string-to-char "_")) (define-key map (kbd "<RET>") (quote eassist-jump-to-method)) (define-key map (kbd "<backspace>") (quote eassist-backspace-pressed)) (define-key map (kbd "<ESC>") (quote eassist-escape)) map)) nil [13782 14866])
+            ("eassist-method" type
+               (:members ("full-line" "name" "position" "tag")
+                :type "struct")
+                nil [14868 14938])
+            ("eassist-mode-init" function nil nil [14940 16571])
+            ("define-derived-mode" code nil nil [16573 16780])
+            ("eassist" package nil nil [16865 16883]))          
+      :file "eassist.el"
+      :pointmax 16910
+      :fsize 16909
+      :lastmodtime '(20757 21970 0 0)
+      :unmatched-syntax '((close-paren 4988 . 4989) (symbol 4955 . 4972) (open-paren 4954 . 4955))))
+  :file "!home!marselo!.emacs.d!lisp!cedet!contrib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

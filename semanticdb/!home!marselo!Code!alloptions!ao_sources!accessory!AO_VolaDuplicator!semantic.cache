@@ -1,0 +1,409 @@
+;; Object AO_VolaDuplicator/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_VolaDuplicator/"
+  :tables
+  (list
+    (semanticdb-table "GroupsParamManager.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("GroupsParamManager.h" include nil nil [1 32])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [33 82])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [84 108])
+            ("AO" type
+               (:members 
+                  ( ("GroupsParamManager" function
+                       (:constructor-flag t
+                        :parent "GroupsParamManager"
+                        :type ("GroupsParamManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [126 172])
+                    ("GroupsParamManager" function
+                       (:destructor-flag t
+                        :parent "GroupsParamManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [176 233])
+                    ("Start" function
+                       (:parent "GroupsParamManager"
+                        :arguments 
+                          ( ("aInsParameterDefinition" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [268 351]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [236 466])
+                    ("GetGroupParameters" function
+                       (:parent "GroupsParamManager"
+                        :constant-flag t
+                        :arguments 
+                          ( ("instrmGrId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [587 632]))                          
+                        :type ("TBricksStreamInstrumentGroupParameters_VD_event::MAP_GROUPID_PARAMETER" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [469 1160])
+                    ("Request" function
+                       (:parent "GroupsParamManager"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1197 1238])
+                            ("req" variable (:type ("REQUEST_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1239 1256])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1257 1281]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1163 1659])
+                    ("_startProcess" function
+                       (:parent "GroupsParamManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1662 1722])
+                    ("_stopProcess" function
+                       (:parent "GroupsParamManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1725 2078])
+                    ("DoInstrmGroupUpdate" function
+                       (:parent "GroupsParamManager"
+                        :arguments 
+                          ( ("instrmGrId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2127 2172]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2081 3014]))                  
+                :type "namespace")
+                nil [110 3018]))          
+      :file "GroupsParamManager.cpp"
+      :pointmax 3020
+      :fsize 3019
+      :lastmodtime '(22056 61062 330663 518000)
+      :unmatched-syntax nil)
+    (semanticdb-table "GroupsParamManager.h"
+      :file "GroupsParamManager.h"
+      :fsize 1462
+      :lastmodtime '(22056 61062 330663 518000))
+    (semanticdb-table "OutputVolas.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OutputVolas.h" include nil nil [1 25])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [26 75])
+            ("shared/API.h" include nil nil [76 99])
+            ("TbricksStream_InstrumentGroup_VD_event.h" include nil nil [100 151])
+            ("AO_SharedGlobal/Global/tbricks_definitions.h" include nil nil [152 207])
+            ("GroupsParamManager.h" include nil nil [208 239])
+            ("AO" type
+               (:members 
+                  ( ("tbricks" using (:type ("tbricks" type
+                         (:prototype t
+                          :type "namespace")
+                          nil nil)) (reparse-symbol namespacesubparts) [258 282])
+                    ("OutputVolas" function
+                       (:constructor-flag t
+                        :parent "OutputVolas"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [309 314]))                          
+                        :type ("OutputVolas" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [284 392])
+                    ("OutputVolas" function
+                       (:destructor-flag t
+                        :parent "OutputVolas"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [421 426]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [395 445])
+                    ("Start" function
+                       (:parent "OutputVolas"
+                        :arguments 
+                          ( ("childInstrumentGroups" variable
+                               (:pointer 1
+                                :type ("TBricksStreamInstrumentGroup_VD_Event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [472 533])
+                            ("parentGrParams" variable
+                               (:pointer 1
+                                :type ("GroupsParamManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [534 572]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [447 722])
+                    ("Request" function
+                       (:parent "OutputVolas"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [751 792])
+                            ("req" variable (:type ("REQUEST_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [793 810])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [811 836]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [724 1090])
+                    ("HandleRequestReply" function
+                       (:parent "OutputVolas"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1130 1160])
+                            ("status" variable (:type ("tbricks::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1161 1184])
+                            ("status_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1185 1220]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1092 1239])
+                    ("_startProcess" function
+                       (:parent "OutputVolas"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1241 1293])
+                    ("_stopProcess" function
+                       (:parent "OutputVolas"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1295 1405])
+                    ("DoInstrmGrParamUpdate" function
+                       (:parent "OutputVolas"
+                        :arguments 
+                          ( ("grId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1448 1487]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1407 3801])
+                    ("SetParametter" function
+                       (:parent "OutputVolas"
+                        :arguments 
+                          ( ("paramId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3836 3865])
+                            ("modifier" variable
+                               (:reference 1
+                                :type ("InstrumentGroupParameters::Modifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3866 3912])
+                            ("parentGrParam" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3913 3970]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3803 4179])
+                    ("GetChildGroup" function
+                       (:parent "OutputVolas"
+                        :arguments 
+                          ( ("parentGroupName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4235 4266]))                          
+                        :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4181 5000]))                  
+                :type "namespace")
+                nil [241 5002]))          
+      :file "OutputVolas.cpp"
+      :pointmax 5003
+      :fsize 5002
+      :lastmodtime '(22056 61062 330663 518000)
+      :unmatched-syntax nil)
+    (semanticdb-table "OutputVolas.h"
+      :file "OutputVolas.h"
+      :fsize 1500
+      :lastmodtime '(22056 61062 330663 518000))
+    (semanticdb-table "TbricksStream_InstrumentGroup_VD_event.h"
+      :file "TbricksStream_InstrumentGroup_VD_event.h"
+      :fsize 895
+      :lastmodtime '(22056 61062 330663 518000))
+    (semanticdb-table "TbricksStream_InstrumentGroupParameters_VD_event.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TbricksStream_InstrumentGroupParameters_VD_event.h" include nil nil [1 62])
+            ("AO_SharedGlobal/Global/tbricks_definitions.h" include nil nil [63 118])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [119 168])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [170 194])
+            ("AO" type
+               (:members 
+                  ( ("HandleInstrumentGroupParameters" function
+                       (:parent "TBricksStreamInstrumentGroupParameters_VD_event"
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [300 342])
+                            ("instrumentGroupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [343 403])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [404 461]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [214 968]))                  
+                :type "namespace")
+                nil [196 973]))          
+      :file "TbricksStream_InstrumentGroupParameters_VD_event.cpp"
+      :pointmax 992
+      :fsize 991
+      :lastmodtime '(22056 61062 330663 518000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TbricksStream_InstrumentGroupParameters_VD_event.h"
+      :file "TbricksStream_InstrumentGroupParameters_VD_event.h"
+      :fsize 934
+      :lastmodtime '(22056 61062 330663 518000))
+    (semanticdb-table "TbricksStream_InstrumentGroup_VD_event.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TbricksStream_InstrumentGroup_VD_event.h" include nil nil [1 52])
+            ("AO_SharedGlobal/Global/tbricks_definitions.h" include nil nil [53 108])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [109 158])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [161 185])
+            ("AO" type
+               (:members 
+                  ( ("HandleInstrumentGroup" function
+                       (:parent "TBricksStreamInstrumentGroup_VD_Event"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [272 313])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [314 355]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [205 729])
+                    ("HandleSnapshotEnd" function
+                       (:parent "TBricksStreamInstrumentGroup_VD_Event"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [794 835]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [732 1006]))                  
+                :type "namespace")
+                nil [187 1011]))          
+      :file "TbricksStream_InstrumentGroup_VD_event.cpp"
+      :pointmax 1030
+      :fsize 1029
+      :lastmodtime '(22056 61062 330663 518000)
+      :unmatched-syntax nil)
+    (semanticdb-table "VolaDuplicator.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VolaDuplicator.h" include nil nil [1 28])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [29 78])
+            ("AO_SharedGlobal/Global/tbricks_definitions.h" include nil nil [79 134])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [136 160])
+            ("AO" type
+               (:members 
+                  ( ("VolaDuplicator" function
+                       (:constructor-flag t
+                        :parent "VolaDuplicator"
+                        :type ("VolaDuplicator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [181 487])
+                    ("VolaDuplicator" function
+                       (:destructor-flag t
+                        :parent "VolaDuplicator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [490 570])
+                    ("Start" function
+                       (:parent "VolaDuplicator"
+                        :arguments 
+                          ( ("parentGrpId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [600 654])
+                            ("childGrpId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [655 709]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [572 899])
+                    ("Request" function
+                       (:parent "VolaDuplicator"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [931 972])
+                            ("req" variable (:type ("REQUEST_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [973 990])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [991 1016]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [901 1317])
+                    ("_startProcess" function
+                       (:parent "VolaDuplicator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1319 1769])
+                    ("_stopProcess" function
+                       (:parent "VolaDuplicator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1771 1979])
+                    ("IsDataComplete" function
+                       (:parent "VolaDuplicator"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1981 2133])
+                    ("SubscribeToGrpParam" function
+                       (:parent "VolaDuplicator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2135 3476])
+                    ("SetChildsInstrmParam" function
+                       (:parent "VolaDuplicator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3478 4182])
+                    ("ClearChildsInstrmParam" function
+                       (:parent "VolaDuplicator"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4184 4534]))                  
+                :type "namespace")
+                nil [162 4537]))          
+      :file "VolaDuplicator.cpp"
+      :pointmax 4538
+      :fsize 4537
+      :lastmodtime '(22149 9728 971961 455000)
+      :unmatched-syntax nil)
+    (semanticdb-table "VolaDuplicator.h"
+      :file "VolaDuplicator.h"
+      :fsize 1328
+      :lastmodtime '(22056 61062 330663 518000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_VolaDuplicator!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,161 @@
+;; Object order_statistics/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "order_statistics/"
+  :tables
+  (list
+    (semanticdb-table "OrderStatisticsPlugin.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__ORDER_STATISTICS__PLUGIN__" variable (:constant-flag t) nil [55 92])
+            ("shared/API.h" include nil nil [94 117])
+            ("StatisticsValue.h" include nil nil [119 147])
+            ("OrderStatisticsPluginInterface.h" include nil nil [148 191])
+            ("shared/PortfolioAggregator.h" include nil nil [192 231])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [233 257])
+            ("PortfolioAggregator" type
+               (:prototype t
+                :type "class")
+                nil [259 285])
+            ("StatisticsValue" type
+               (:prototype t
+                :type "class")
+                nil [286 308])
+            ("OrderStatisticsPlugin" type
+               (:superclasses 
+                  ( ("Pricing" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("IPortfolioAggregatorOwner" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [421 428])
+                    ("OrderStatisticsPlugin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [455 486]))                          
+                        :type ("OrderStatisticsPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [433 487])
+                    ("OrderStatisticsPlugin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [492 517])
+                    ("public" label nil (reparse-symbol classsubparts) [519 526])
+                    ("HandlePricingModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingModifyRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [571 608]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [531 609])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [648 682]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [615 683])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [688 720])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [725 759])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [764 799])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [840 868]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [805 869])
+                    ("Modify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [887 927]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [875 928])
+                    ("HandlePortfolioAggregatorUpdated" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [935 983])
+                    ("private" label nil (reparse-symbol classsubparts) [985 993])
+                    ("OrderStatisticsValuesMap" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("CalculatedValueIdentifier" type nil nil nil)
+                                  ("SharedPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [998 1103])
+                    ("m_statistics_map" variable (:type ("OrderStatisticsValuesMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1108 1150])
+                    ("PortfolioMap" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("PortfolioIdentifier" type nil nil nil)
+                                  ("SharedPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1160 1251])
+                    ("m_portfolios_map" variable (:type ("PortfolioMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1256 1286]))                  
+                :type "class")
+                nil [310 1289]))          
+      :file "OrderStatisticsPlugin.h"
+      :pointmax 1339
+      :fsize 1338
+      :lastmodtime '(21962 60358 535305 275000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__TBRICKS__ORDER_STATISTICS__PLUGIN__")
+          )
+)
+    (semanticdb-table "StatisticsValue.h"
+      :file "StatisticsValue.h"
+      :fsize 1537
+      :lastmodtime '(21962 60358 535305 275000))
+    (semanticdb-table "OrderStatisticsPluginInterface.h"
+      :file "OrderStatisticsPluginInterface.h"
+      :fsize 176
+      :lastmodtime '(21962 60358 535305 275000)))
+  :file "!home!marselo!Code!alloptions!production!calculation!order_statistics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,24 @@
+;; Object AO_PriceRangeBeta/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_PriceRangeBeta/"
+  :tables
+  (list
+    (semanticdb-table "ExtendedInstrumentInfo.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ExtendedInstrumentInfo.cpp"
+      :pointmax 7314
+      :fsize 7497
+      :lastmodtime '(22204 34542 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ExtendedInstrumentInfo.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "ExtendedInstrumentInfo.h"
+      :pointmax 3610
+      :fsize 3714
+      :lastmodtime '(22204 34542 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!src!AO_PriceRangeBeta!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

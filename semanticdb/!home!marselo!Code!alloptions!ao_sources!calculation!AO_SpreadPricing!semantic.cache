@@ -1,0 +1,592 @@
+;; Object AO_SpreadPricing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_SpreadPricing/"
+  :tables
+  (list
+    (semanticdb-table "AO_SpreadPricingPlugin.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_CALCULATION_AO_SPREADPRICING_AO_SPREADPRICINGPLUGIN_H_" variable (:constant-flag t) nil [83 148])
+            ("boost/ptr_container/ptr_vector.hpp" include (:system-flag t) nil [150 195])
+            ("boost/ptr_container/ptr_set.hpp" include (:system-flag t) nil [196 238])
+            ("deque" include (:system-flag t) nil [239 255])
+            ("shared/API.h" include nil nil [257 280])
+            ("InstrumentStreamHelper.h" include nil nil [281 316])
+            ("CalculatedValuesStreamHelper.h" include nil nil [317 358])
+            ("InstrumentParametersStreamHelper.h" include nil nil [359 404])
+            ("CustomGroupStreamHelper.h" include nil nil [405 441])
+            ("SpreadPricingCache.h" include nil nil [442 473])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [475 499])
+            ("AO_SpreadPricingPlugin" type
+               (:superclasses 
+                  ( ("Pricing" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [549 556])
+                    ("AO_SpreadPricingPlugin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [581 612]))                          
+                        :type ("AO_SpreadPricingPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [558 613])
+                    ("AO_SpreadPricingPlugin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [618 644])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [683 717]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [650 718])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [723 755])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [760 794])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [799 834])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [874 901]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [839 902])
+                    ("HandlePricingModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingModifyRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [948 985]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [908 986])
+                    ("Modify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1004 1044]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [992 1045])
+                    ("public" label nil (reparse-symbol classsubparts) [1047 1054])
+                    ("IsSnapshotDone" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1059 1087])
+                    ("SendImpl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1093 1109])
+                    ("private" label nil (reparse-symbol classsubparts) [1111 1119])
+                    ("IsSupportedDefinition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("definition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentCalculatedValueDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1151 1206]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1124 1213])
+                    ("HandleFail" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("error" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1234 1254]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1218 1255])
+                    ("HandleUpdate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1261 1281])
+                    ("InsertUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentUpdate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1305 1337]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1287 1338])
+                    ("InsertPricingUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1368 1404])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SpreadPricingCache::Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1405 1444]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1343 1445])
+                    ("GetMaturityParameter" function
+                       (:constant-flag t
+                        :arguments 
+                          ( ("ranking" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1503 1529])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1530 1569]))                          
+                        :type ("MaturityGroupParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1451 1822])
+                    ("private" label nil (reparse-symbol classsubparts) [1824 1832])
+                    ("m_snapshot_done" variable (:type "bool") (reparse-symbol classsubparts) [1837 1882])
+                    ("m_modify_snapshot_done" variable (:type "bool") (reparse-symbol classsubparts) [1837 1882])
+                    ("cache" variable (:type ("SpreadPricingCache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1888 1913])
+                    ("instrumentStreamHelper" variable (:type ("InstrumentStreamHelper" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1918 1964])
+                    ("customGroupStreamHelper" variable (:type ("CustomGroupStreamHelper" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1969 2017])
+                    ("calculatedValuesStreamHelper" variable (:type ("CalculatedValuesStreamHelper" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2023 2081])
+                    ("InstrumentParametersStreamHelpers" type
+                       (:typedef ("boost::ptr_set" type
+                             (:template-specifier 
+                                ( ("InstrumentParametersStreamHelper" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::ptr_set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2087 2178])
+                    ("instrumentParametersStreamHelpers" variable (:type ("InstrumentParametersStreamHelpers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2183 2251])
+                    ("Updates" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("InstrumentUpdate" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2257 2300])
+                    ("updates" variable (:type ("Updates" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2305 2321])
+                    ("PricingUpdates" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2327 2430])
+                    ("pricingUpdates" variable (:type ("PricingUpdates" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2435 2465]))                  
+                :type "class")
+                nil [501 2468]))          
+      :file "AO_SpreadPricingPlugin.h"
+      :pointmax 2549
+      :fsize 2548
+      :lastmodtime '(22006 31481 361661 110000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AO_SOURCES_CALCULATION_AO_SPREADPRICING_AO_SPREADPRICINGPLUGIN_H_")
+          )
+)
+    (semanticdb-table "InstrumentStreamHelper.h"
+      :file "InstrumentStreamHelper.h"
+      :fsize 4526
+      :lastmodtime '(22006 31481 362661 45000))
+    (semanticdb-table "CalculatedValuesStreamHelper.h"
+      :file "CalculatedValuesStreamHelper.h"
+      :fsize 4638
+      :lastmodtime '(22006 31481 361661 110000))
+    (semanticdb-table "InstrumentParametersStreamHelper.h"
+      :file "InstrumentParametersStreamHelper.h"
+      :fsize 7129
+      :lastmodtime '(22006 31481 361661 110000))
+    (semanticdb-table "CustomGroupStreamHelper.h"
+      :file "CustomGroupStreamHelper.h"
+      :fsize 7822
+      :lastmodtime '(22006 31481 361661 110000))
+    (semanticdb-table "SpreadPricingCache.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_CALCULATION_AO_SPREADPRICING_SPREADPRICINGCACHE_H_" variable (:constant-flag t) nil [79 140])
+            ("shared/API.h" include (:system-flag t) nil [142 165])
+            ("boost/function.hpp" include (:system-flag t) nil [166 195])
+            ("boost/range/algorithm/remove_if.hpp" include (:system-flag t) nil [196 242])
+            ("boost/tuple/tuple.hpp" include (:system-flag t) nil [243 275])
+            ("map" include (:system-flag t) nil [276 290])
+            ("InstrumentUpdate.h" include nil nil [291 320])
+            ("TableValues.h" include nil nil [321 345])
+            ("SpreadPricingCacheHeaders.h" include nil nil [346 384])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [386 410])
+            ("SpreadPricingCache" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [439 446])
+                    ("Value" type
+                       (:typedef ("boost::variant" type
+                             (:template-specifier 
+                                ( ("Integer" type nil nil nil)
+                                  ("Double" type nil nil nil)
+                                  ("Price" type nil nil nil)
+                                  ("Boolean" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::variant"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [448 510])
+                    ("PricingUpdateFunc" variable (:type "int") (reparse-symbol classsubparts) [591 609])
+                    ("CustomGroupGetFunc" variable (:type "int") (reparse-symbol classsubparts) [726 745])
+                    ("MaturityGroupFunc" variable (:type "int") (reparse-symbol classsubparts) [856 874])
+                    ("CalculatedValuesMap" type
+                       (:typedef ("std::multimap" type
+                             (:template-specifier 
+                                ( ("InstrumentCalculatedValueDefinition" type nil nil nil)
+                                  ("CalculatedValueIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::multimap"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [877 983])
+                    ("SpreadPricingCache" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("maturityGroupFunc_" variable (:type ("MaturityGroupFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1005 1042])
+                            ("updateFunc_" variable (:type ("PricingUpdateFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1043 1073])
+                            ("customGroupGetFunc_" variable (:type ("CustomGroupGetFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1074 1113]))                          
+                        :type ("SpreadPricingCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [986 1222])
+                    ("CalculatedInfoKey" type
+                       (:members 
+                          ( ("CalculatedInfoKey" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ranking_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RankingIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1273 1307])
+                                    ("pricing_" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1324]))                                  
+                                :type ("CalculatedInfoKey" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1255 1366])
+                            ("CalculatedInfoKey" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("update_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("InstrumentUpdate" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1387 1419]))                                  
+                                :type ("CalculatedInfoKey" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1369 1491])
+                            ("<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("o" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CalculatedInfoKey" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1510 1537]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1495 1620])
+                            ("ranking" variable (:type ("RankingIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1623 1649])
+                            ("pricing" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1652 1667]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1225 1671])
+                    ("CacheEntry" type
+                       (:members 
+                          ( ("RankingInfo" type
+                               (:members 
+                                  ( ("rankingIdentifier" variable (:type ("Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1723 1752])
+                                    ("spreadType" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1757 1776])
+                                    ("quoteSpreadSkew" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1780 1803])
+                                    ("quoteSpread" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1807 1826])
+                                    ("quoteMinimumBid" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1831 1853])
+                                    ("quoteMinimumAsk" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1857 1879])
+                                    ("spreadFairMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1884 1912])
+                                    ("spreadDeltaMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1916 1945])
+                                    ("spreadVegaMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1949 1977])
+                                    ("spreadVolaMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1981 2009])
+                                    ("spreadDivaMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2013 2041])
+                                    ("spreadOffset" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2045 2065])
+                                    ("spreadMinimum" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2069 2090])
+                                    ("spreadMaximum" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2094 2115]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1697 2120])
+                            ("PricingInfo" type
+                               (:members 
+                                  ( ("fairBid" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2150 2164])
+                                    ("fairAsk" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2168 2182])
+                                    ("fair" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2186 2197])
+                                    ("delta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2201 2214])
+                                    ("vega" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2218 2230])
+                                    ("volatility" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2234 2252])
+                                    ("diva" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2256 2268])
+                                    ("singleUnderlying" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2272 2297])
+                                    ("atmVega" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2301 2316])
+                                    ("forwardPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2321 2340])
+                                    ("gamma" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2344 2357])
+                                    ("vomma" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2361 2374])
+                                    ("volatilityTime" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2378 2400])
+                                    ("daysToMaturity" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2404 2427])
+                                    ("underlyingPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2431 2453]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [2124 2458])
+                            ("CalculatedInfo" type
+                               (:members 
+                                  ( ("values" variable (:type ("CalculatedValuesMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2491 2518])
+                                    ("fairBid" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2523 2537])
+                                    ("fairAsk" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2541 2555])
+                                    ("fair" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2559 2570])
+                                    ("skewedFairBid" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2574 2594])
+                                    ("skewedFairAsk" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2598 2618])
+                                    ("desiredBid" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2622 2639])
+                                    ("desiredAsk" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2643 2660])
+                                    ("stickinessFairBid" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2664 2688])
+                                    ("stickinessBidMargin" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2692 2719])
+                                    ("stickinessFairAsk" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2723 2747])
+                                    ("stickinessAskMargin" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2751 2778])
+                                    ("maximumBid" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2782 2799])
+                                    ("minimumAsk" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2803 2820])
+                                    ("maxSpread" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2824 2841])
+                                    ("bidMargin" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2845 2862])
+                                    ("askMargin" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2866 2883])
+                                    ("delta" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2887 2900])
+                                    ("vega" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2904 2916])
+                                    ("singleUnderlying" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2920 2945])
+                                    ("quoteSpread" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2949 2968])
+                                    ("quoteSpreadMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2972 3001])
+                                    ("quoteSpreadWithMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3005 3038])
+                                    ("ammMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3042 3063])
+                                    ("forwardPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3068 3087])
+                                    ("gamma" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3091 3104])
+                                    ("vomma" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3108 3121])
+                                    ("diva" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3125 3137])
+                                    ("volatilityTime" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3141 3163])
+                                    ("volatility" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3167 3185])
+                                    ("daysToMaturity" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3189 3212])
+                                    ("underlyingPrice" variable (:type ("Price" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3216 3238])
+                                    ("vegaOffset" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3243 3261])
+                                    ("syntheticOffset" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3265 3288])
+                                    ("deltaOffset" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3292 3311])
+                                    ("vegaOffsetMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3315 3343])
+                                    ("syntheticOffsetMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3347 3380])
+                                    ("deltaOffsetMultiplier" variable (:type ("Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3384 3413]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [2462 3418])
+                            ("RankingValues" type
+                               (:typedef ("SparseHash" type
+                                     (:template-specifier 
+                                        ( ("Identifier" type nil nil nil)
+                                          ("RankingInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "SparseHash"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3422 3480])
+                            ("PricingValues" type
+                               (:typedef ("SparseHash" type
+                                     (:template-specifier 
+                                        ( ("size_t" type nil nil nil)
+                                          ("PricingInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "SparseHash"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3483 3537])
+                            ("CalculatedValues" type
+                               (:typedef ("std::map" type
+                                     (:template-specifier 
+                                        ( ("CalculatedInfoKey" type nil nil nil)
+                                          ("CalculatedInfo" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::map"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3540 3609])
+                            ("rankingValues" variable (:type ("RankingValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3613 3641])
+                            ("pricingValues" variable (:type ("PricingValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3644 3672])
+                            ("calculatedValues" variable (:type ("CalculatedValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3675 3709])
+                            ("instrument" variable (:type ("Instrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3713 3735])
+                            ("maturityGroup" variable (:type ("InstrumentGroup" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3738 3768])
+                            ("iti" variable (:type ("InstrumentTradingInformation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3771 3804])
+                            ("parents" variable (:type ("std::set" type
+                                 (:template-specifier 
+                                    ( ("InstrumentIdentifier" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3807 3846]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1674 3850])
+                    ("DataMap" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("CacheEntry" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3853 3914])
+                    ("data" variable (:type ("DataMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3916 3929])
+                    ("maturityGroupFunc" variable (:type ("MaturityGroupFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3932 3968])
+                    ("updateFunc" variable (:type ("PricingUpdateFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3970 3999])
+                    ("customGroupGetFunc" variable (:type ("CustomGroupGetFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4001 4039])
+                    ("Calculate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentUpdate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4057 4089])
+                            ("sendEverything" variable (:type "bool") (reparse-symbol arg-sub-list) [4090 4110]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4042 4111])
+                    ("ClearCalculatedValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4114 4143])
+                    ("ClearRanking" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ranking" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4163 4189]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4145 4190])
+                    ("MergePricingTypes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("active" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SparseSet" type
+                                     (:template-specifier 
+                                        ( ("StrategyParameters" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4215 4259]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4192 4260])
+                    ("defaultValues" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("CalculatedInfoKey" type nil nil nil)
+                              ("CalculatedValuesMap" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4263 4326])
+                    ("GetBidPressure" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("fair" variable
+                               (:reference 1
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4355 4367])
+                            ("margin" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4368 4383])
+                            ("thresholds" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::tuple" type
+                                     (:template-specifier 
+                                        ( ("ao::Double" type nil nil nil)
+                                          ("ao::Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4384 4439]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4329 4440])
+                    ("GetAskPressure" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("fair" variable
+                               (:reference 1
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4468 4480])
+                            ("margin" variable
+                               (:reference 1
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4481 4496])
+                            ("thresholds" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::tuple" type
+                                     (:template-specifier 
+                                        ( ("ao::Double" type nil nil nil)
+                                          ("ao::Double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4497 4552]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4442 4553])
+                    ("ParameterMappings" variable (:type "int") (reparse-symbol classsubparts) [4718 4736])
+                    ("parameterMappings" variable
+                       (:typemodifiers ("static")
+                        :type ("ParameterMappings" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4738 4781]))                  
+                :type "class")
+                nil [412 4784]))          
+      :file "SpreadPricingCache.h"
+      :pointmax 4861
+      :fsize 4860
+      :lastmodtime '(22006 31481 362661 45000)
+      :unmatched-syntax '((punctuation 4716 . 4717) (punctuation 4714 . 4715) (semantic-list 4658 . 4713) (symbol 4652 . 4657) (punctuation 4651 . 4652) (punctuation 4650 . 4651) (symbol 4632 . 4650) (punctuation 4631 . 4632) (symbol 4623 . 4631) (punctuation 4622 . 4623) (punctuation 4621 . 4622) (symbol 4616 . 4621) (punctuation 4614 . 4615) (symbol 4579 . 4614) (punctuation 4578 . 4579) (symbol 4575 . 4578) (punctuation 4574 . 4575) (punctuation 4573 . 4574) (symbol 4570 . 4573) (CONST 4564 . 4569) (TYPEDEF 4556 . 4563) (punctuation 854 . 855) (semantic-list 801 . 854) (punctuation 800 . 801) (symbol 777 . 800) (CONST 771 . 776) (punctuation 770 . 771) (symbol 762 . 770) (punctuation 761 . 762) (punctuation 760 . 761) (symbol 755 . 760) (TYPEDEF 747 . 754) (punctuation 724 . 725) (semantic-list 652 . 724) (punctuation 651 . 652) (symbol 641 . 651) (CONST 635 . 640) (punctuation 634 . 635) (symbol 626 . 634) (punctuation 625 . 626) (punctuation 624 . 625) (symbol 619 . 624) (TYPEDEF 611 . 618) (punctuation 589 . 590) (semantic-list 541 . 589) (VOID 537 . 541) (punctuation 536 . 537) (symbol 528 . 536) (punctuation 527 . 528) (punctuation 526 . 527) (symbol 521 . 526) (TYPEDEF 513 . 520))
+      :lexical-table 
+        '(("AO_SOURCES_CALCULATION_AO_SPREADPRICING_SPREADPRICINGCACHE_H_")
+          )
+)
+    (semanticdb-table "InstrumentUpdate.h"
+      :file "InstrumentUpdate.h"
+      :fsize 1016
+      :lastmodtime '(22006 31481 362661 45000))
+    (semanticdb-table "TableValues.h"
+      :file "TableValues.h"
+      :fsize 2891
+      :lastmodtime '(22006 31481 362661 45000))
+    (semanticdb-table "SpreadPricingCacheHeaders.h"
+      :file "SpreadPricingCacheHeaders.h"
+      :fsize 1215
+      :lastmodtime '(22006 31481 362661 45000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!calculation!AO_SpreadPricing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

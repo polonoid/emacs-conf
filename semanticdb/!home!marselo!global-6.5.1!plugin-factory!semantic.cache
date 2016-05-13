@@ -1,0 +1,31 @@
+;; Object plugin-factory/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugin-factory/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("plugindir" variable (:default-value ("${libdir}/gtags")) nil [530 558])
+            ("plugin_LTLIBRARIES" variable (:default-value ("exuberant-ctags.la")) nil [558 632])
+            ("exuberant_ctags_la_SOURCES" variable (:default-value ("exuberant-ctags.c")) nil [658 705])
+            ("exuberant_ctags_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version" "-no-undefined")) nil [705 771])
+            ("pygments_parser_la_SOURCES" variable (:default-value ("pygments-parser.c")) nil [790 837])
+            ("pygments_parser_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version" "-no-undefined")) nil [837 903])
+            ("user_custom_la_SOURCES" variable (:default-value ("user-custom.c")) nil [915 954])
+            ("user_custom_la_LDFLAGS" variable (:default-value ("-module" "-avoid-version" "-no-undefined")) nil [954 1016])
+            ("gtagsdir" variable (:default-value ("${datadir}/gtags")) nil [1017 1045])
+            ("gtags_DATA" variable (:default-value ("PLUGIN_HOWTO" "PLUGIN_HOWTO.pygments")) nil [1045 1093])
+            ("scriptdir" variable (:default-value ("${datadir}/gtags/script")) nil [1094 1130])
+            ("script_DATA" variable (:default-value ("pygments_parser.py")) nil [1130 1163])
+            ("EXTRA_DIST" variable (:default-value ("$(gtags_DATA)" "${script_DATA}")) nil [1164 1206])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-DDATADIR='\"$(datadir)\"'")) nil [1207 1260])
+            ("install-data-hook" function nil nil [1261 1367]))          
+      :file "Makefile.am"
+      :pointmax 1367
+      :fsize 1366
+      :lastmodtime '(22007 34546 0 0)
+      :unmatched-syntax '((shell-command 1281 . 1366) (bol 1280 . 1280))))
+  :file "!home!marselo!global-6.5.1!plugin-factory!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

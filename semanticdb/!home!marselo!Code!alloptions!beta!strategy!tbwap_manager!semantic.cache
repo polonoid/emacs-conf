@@ -1,0 +1,283 @@
+;; Object tbwap_manager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tbwap_manager/"
+  :tables
+  (list
+    (semanticdb-table "TBWAPManager.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("TBWAPMANAGER_H_" variable (:constant-flag t) nil [113 128])
+            ("shared/API.h" include nil nil [130 153])
+            ("TBWAPManager" type
+               (:superclasses 
+                  ( ("tbricks::Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::IRequestReplyHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [321 328])
+                    ("TBWAPManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [346 391])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [392 439]))                          
+                        :type ("TBWAPManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [333 440])
+                    ("protected" label nil (reparse-symbol classsubparts) [442 452])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [490 495]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [457 496])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [531 536]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [501 537])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [574 579]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [542 580])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [618 661]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [585 662])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [702 738]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [667 739])
+                    ("HandleRequestReply" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [777 808])
+                            ("status" variable (:type ("tbricks::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [845 868])
+                            ("status_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [905 941]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [745 942])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [997 1039])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1093 1143])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1197 1258]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [948 1259])
+                    ("HandleInstrumentAggregateParametersInvalidate" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1323 1366])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1430 1481]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1264 1493])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1531 1572]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1499 1573])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1609 1650]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1578 1651])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1686 1727]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1656 1728])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1764 1805]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1733 1806])
+                    ("protected" label nil (reparse-symbol classsubparts) [1807 1817])
+                    ("TBWAPParameters" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("tbricks::InstrumentAggregateParameters" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1822 1926])
+                    ("Instruments" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1931 1991])
+                    ("m_instrumentGroup" variable (:type ("tbricks::InstrumentGroupParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1997 2049])
+                    ("m_instrumentParameters" variable (:type ("TBWAPParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2055 2094])
+                    ("m_instrumentWithDirtyParameters" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2100 2144])
+                    ("m_parametersStream" variable (:type ("tbricks::InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2150 2216])
+                    ("OpenStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2222 2240])
+                    ("CloseStream" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2245 2264])
+                    ("CreateTBWAP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2324 2373]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2307 2374])
+                    ("OrderSent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2394 2443]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2379 2444])
+                    ("UpdateTBWAPStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2472 2521])
+                            ("status" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2522 2553]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2449 2554])
+                    ("ResetCreateTBWAPParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2647 2696]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2616 2697])
+                    ("ResetTBWAPStatusParameter" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2734 2783]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2703 2784]))                  
+                :type "class")
+                nil [155 2787]))          
+      :file "TBWAPManager.h"
+      :pointmax 2818
+      :fsize 2817
+      :lastmodtime '(21962 60358 294322 59000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TBWAPMANAGER_H_")
+          )
+))
+  :file "!home!marselo!Code!alloptions!beta!strategy!tbwap_manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

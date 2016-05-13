@@ -1,0 +1,265 @@
+;; Object expiration_price_level/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "expiration_price_level/"
+  :tables
+  (list
+    (semanticdb-table "ExpirationPriceLevelPlugin.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__EXPIRATION_PRICE_LEVEL_PLUGIN__" variable (:constant-flag t) nil [60 102])
+            ("shared/API.h" include nil nil [104 127])
+            ("tbricks_definitions.h" include nil nil [129 161])
+            ("PricingInstrument.h" include nil nil [163 193])
+            ("InstrumentIdentification.h" include nil nil [194 231])
+            ("StreamSettings.h" include nil nil [232 259])
+            ("DeliveryInstrument.h" include nil nil [260 291])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [293 317])
+            ("InstrumentIdentification" type
+               (:prototype t
+                :type "class")
+                nil [319 350])
+            ("DeliveryInstrument" type
+               (:prototype t
+                :type "class")
+                nil [351 376])
+            ("PricingInstrument" type
+               (:prototype t
+                :type "class")
+                nil [377 401])
+            ("ExpirationPriceLevelPlugin" type
+               (:superclasses 
+                  ( ("Pricing" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [455 462])
+                    ("ExpirationPriceLevelPlugin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [494 525]))                          
+                        :type ("ExpirationPriceLevelPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [467 526])
+                    ("ExpirationPriceLevelPlugin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [531 561])
+                    ("public" label nil (reparse-symbol classsubparts) [563 570])
+                    ("HandleRunRequest" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [575 609])
+                    ("HandlePauseRequest" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [614 650])
+                    ("HandleDeleteRequest" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [655 692])
+                    ("HandleModifyRequest" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [730 773]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [697 776])
+                    ("HandleValidateRequest" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [816 844]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [781 873])
+                    ("HandlePricingModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingModifyRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [919 948]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [879 949])
+                    ("public" label nil (reparse-symbol classsubparts) [951 958])
+                    ("CreateDeliveryInstrument" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :type ("PricingInstrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1009 1040])
+                            ("underlying_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1075 1118]))                          
+                        :type ("DeliveryInstrument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [963 1119])
+                    ("RemoveDeliveryInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("underlying_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1154 1197]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1124 1198])
+                    ("CreateInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cv_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1226 1266])
+                            ("ins_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentification" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1293 1333])
+                            ("ivid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentVenueIdentification" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1360 1403]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1204 1404])
+                    ("RemoveInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentification" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1431 1467]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1409 1468])
+                    ("Instruments" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentification" type nil nil nil)
+                                  ("SharedPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1474 1567])
+                    ("GetInstruments" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Instruments" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1572 1644])
+                    ("DeliveryInstruments" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("SharedPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1650 1748])
+                    ("GetDeliveryInstruments" function
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DeliveryInstruments" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1753 1850])
+                    ("public" label nil (reparse-symbol classsubparts) [1852 1859])
+                    ("IsSnapshotDone" function (:type "bool") (reparse-symbol classsubparts) [1864 1923])
+                    ("CheckSnapshotDone" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1928 1953])
+                    ("NotifySnapshot" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1958 1980])
+                    ("public" label nil (reparse-symbol classsubparts) [1982 1989])
+                    ("SendImpl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1994 2010])
+                    ("private" label nil (reparse-symbol classsubparts) [2012 2020])
+                    ("Modify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2037 2077]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2025 2078])
+                    ("IsSupportedDefinition" function
+                       (:arguments 
+                          ( ("definition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentCalculatedValueDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2110 2165]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2083 2267])
+                    ("private" label nil (reparse-symbol classsubparts) [2269 2277])
+                    ("m_delivery_instruments" variable
+                       (:pointer 1
+                        :type ("DeliveryInstruments" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2282 2327])
+                    ("m_instruments" variable
+                       (:pointer 1
+                        :type ("Instruments" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2333 2361])
+                    ("m_pending_snapshots_count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2367 2401])
+                    ("m_snapshot_done" variable (:type "bool") (reparse-symbol classsubparts) [2406 2430])
+                    ("m_plugin_modify_version" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2436 2468]))                  
+                :type "class")
+                nil [403 2471]))          
+      :file "ExpirationPriceLevelPlugin.h"
+      :pointmax 2524
+      :fsize 2523
+      :lastmodtime '(21962 60358 121334 108000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__TBRICKS__EXPIRATION_PRICE_LEVEL_PLUGIN__")
+          )
+)
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 20100
+      :lastmodtime '(21962 60358 122334 38000))
+    (semanticdb-table "PricingInstrument.h"
+      :file "PricingInstrument.h"
+      :fsize 3965
+      :lastmodtime '(21962 60358 121334 108000))
+    (semanticdb-table "InstrumentIdentification.h"
+      :file "InstrumentIdentification.h"
+      :fsize 1240
+      :lastmodtime '(21962 60358 121334 108000))
+    (semanticdb-table "StreamSettings.h"
+      :file "StreamSettings.h"
+      :fsize 2083
+      :lastmodtime '(21962 60358 121334 108000))
+    (semanticdb-table "DeliveryInstrument.h"
+      :file "DeliveryInstrument.h"
+      :fsize 3690
+      :lastmodtime '(21962 60358 121334 108000)))
+  :file "!home!marselo!Code!alloptions!beta!calculation!expiration_price_level!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

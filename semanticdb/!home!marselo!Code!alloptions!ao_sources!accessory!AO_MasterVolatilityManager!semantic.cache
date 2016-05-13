@@ -1,0 +1,562 @@
+;; Object AO_MasterVolatilityManager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_MasterVolatilityManager/"
+  :tables
+  (list
+    (semanticdb-table "StreamManager.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("StreamManager_HEADER_INCLUDE_GUARD" variable (:constant-flag t) nil [52 86])
+            ("shared/API.h" include nil nil [88 111])
+            ("StreamManager" type
+               (:superclasses 
+                  ( ("tbricks::InstrumentGroupStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::InstrumentStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::InstrumentGroupAggregateParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::InstrumentGroupParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [432 439])
+                    ("InstrumentExpirationGroups" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil)
+                                  ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [442 580])
+                    ("IHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [628 635])
+                            ("IHandler" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [638 658])
+                            ("HandleInstrumentGroupParameters" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("instrumentGroupId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [708 769]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [661 774])
+                            ("HandleParentGroupAggregateParameters" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("instrumentGroupId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [829 890]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [777 895])
+                            ("HandleMaturityGroupAggregateParameters" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("instrumentGroupId" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [951 1012]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [898 1017])
+                            ("AllDataInSync" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1020 1053])
+                            ("RequestRestart" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1056 1090])
+                            ("ScheduleRestart" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("duration" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1123 1158]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1093 1163]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [609 1167])
+                    ("StreamManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("handler" variable
+                               (:reference 1
+                                :type ("IHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1189 1208]))                          
+                        :type ("StreamManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1174 1209])
+                    ("StreamManager" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1236 1241]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1211 1242])
+                    ("Start" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("list" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1259 1319]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1245 1320])
+                    ("Stop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1322 1336])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1369 1410]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1339 1412])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1445 1486]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1414 1488])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1522 1563]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1490 1565])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1598 1639]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1567 1641])
+                    ("HandleInstrumentGroup" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1680 1721])
+                            ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroup" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1722 1760]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1644 1761])
+                    ("HandleInstrumentGroupInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1809 1850])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1851 1897]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1763 1898])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1932 1973])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1974 2012]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1901 2013])
+                    ("HandleInstrumentInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2056 2097])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2098 2139]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2015 2140])
+                    ("HandleInstrumentGroupAggregateParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2198 2240])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2241 2296])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2297 2363]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2143 2364])
+                    ("HandleInstrumentGroupParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2413 2455])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2456 2511])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2512 2569]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2367 2570])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2620 2663])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2664 2722]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2573 2723])
+                    ("IsAllDataInSync" function (:type "bool") (reparse-symbol classsubparts) [2726 2991])
+                    ("IsBlueMonth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3014 3065]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2994 3066])
+                    ("GetBlueMonth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parentGroupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3116 3173]))                          
+                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3068 3174])
+                    ("IsMaturityHidden" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3201 3252]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3176 3253])
+                    ("GetGroupMaturities" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3335 3386]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3256 3387])
+                    ("GetMaturityExampleInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3458 3509]))                          
+                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3389 3510])
+                    ("GetInstrumentCalculatedValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrmId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3571 3617])
+                            ("calcValueDef" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentCalculatedValueDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3618 3684]))                          
+                        :type ("tbricks::Double" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3512 3685])
+                    ("GetGroupAggregatedParam" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3767 3818]))                          
+                        :type ("tbricks::InstrumentGroupAggregateParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3687 3819])
+                    ("GetParentAggregatedParam" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3902 3953]))                          
+                        :type ("tbricks::InstrumentGroupAggregateParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3821 3954])
+                    ("GetGroupNONAggregatedParam" function
+                       (:prototype-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4032 4083]))                          
+                        :type ("tbricks::InstrumentGroupParameters" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3956 4084])
+                    ("GetGroups" function
+                       (:constant-flag t
+                        :type ("InstrumentExpirationGroups" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4086 4160])
+                    ("IsSigmaXConsistent" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4163 4189])
+                    ("protected" label nil (reparse-symbol classsubparts) [4192 4202])
+                    ("ReceivedAllExampleInstruments" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4205 4244])
+                    ("RetrieveExampleInstrumentsCalculatedValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4246 4298])
+                    ("RetrieveGroupsAggregatedParamValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4300 4345])
+                    ("RetrieveGroupsNONggregatedParamValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4347 4394])
+                    ("RetrieveInstruments" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4396 4425])
+                    ("SortMaturities" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4427 4451])
+                    ("FilterHiddenMaturities" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4453 4485])
+                    ("IsSigmaXConsistent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("parameterId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Uuid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4514 4547]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4488 4548])
+                    ("CompareMaturuties" type
+                       (:members 
+                          ( ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("instrGrFirst" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4600 4655])
+                                    ("instrGrSecond" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4656 4712]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4582 4836]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [4552 4840])
+                    ("private" label nil (reparse-symbol classsubparts) [4842 4850])
+                    ("m_GroupStream" variable (:type ("tbricks::InstrumentGroupStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4852 4897])
+                    ("m_groupsAggregatedParamStream" variable (:type ("tbricks::InstrumentGroupAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4900 4982])
+                    ("m_groupsNONAggregatedParamStream" variable (:type ("tbricks::InstrumentGroupParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4984 5060])
+                    ("m_parentAggregatedParamStream" variable (:type ("tbricks::InstrumentGroupAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5063 5145])
+                    ("m_calculatedValuesStream" variable (:type ("tbricks::CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5148 5217])
+                    ("m_calculatedInstrmValues" variable (:type ("tbricks::CalculatedInstrumentValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5220 5281])
+                    ("GroupsAggregatedParam" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil)
+                                  ("tbricks::InstrumentGroupAggregateParameters" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5284 5411])
+                    ("m_groupsAggregatedParam" variable (:type ("GroupsAggregatedParam" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5413 5459])
+                    ("m_parentAggregatedParam" variable (:type ("GroupsAggregatedParam" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5461 5507])
+                    ("GroupsNONAggregatedParam" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil)
+                                  ("tbricks::InstrumentGroupParameters" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5510 5631])
+                    ("m_groupsNONAggregatedParam" variable (:type ("GroupsNONAggregatedParam" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5633 5685])
+                    ("m_groups" variable (:type ("InstrumentExpirationGroups" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5688 5724])
+                    ("InstrumentStreamToGroup" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::StreamIdentifier" type nil nil nil)
+                                  ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5727 5879])
+                    ("m_instrumentStreamToGroup" variable (:type ("InstrumentStreamToGroup" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5881 5931])
+                    ("ExpirationExampleInstrument" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil)
+                                  ("tbricks::InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5934 6052])
+                    ("m_maturityExampleInstrument" variable (:type ("ExpirationExampleInstrument" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6054 6110])
+                    ("m_handler" variable (:type ("IHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6113 6133])
+                    ("m_dummyEmptyMaturityList" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6136 6211])
+                    ("m_dummyInstrmGroupParam" variable (:type ("tbricks::InstrumentGroupParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6214 6275])
+                    ("m_dummyInstrumGroupAggParam" variable (:type ("tbricks::InstrumentGroupAggregateParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6277 6349]))                  
+                :type "class")
+                nil [113 6352]))          
+      :file "StreamManager.h"
+      :pointmax 6361
+      :fsize 6360
+      :lastmodtime '(21962 60357 927347 619000)
+      :unmatched-syntax '((punctuation 2991 . 2992))
+      :lexical-table 
+        '(("StreamManager_HEADER_INCLUDE_GUARD")
+          )
+))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_MasterVolatilityManager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,125 @@
+;; Object instrument_active_volume/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "instrument_active_volume/"
+  :tables
+  (list
+    (semanticdb-table "InstrumentVolumeCollector.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "InstrumentVolumeCollector.h"
+      :pointmax 2089
+      :fsize 2088
+      :lastmodtime '(21962 60358 123333 969000)
+      :unmatched-syntax nil)
+    (semanticdb-table "UserVolumeCollector.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("USER_VOLUMECOLLECTOR_H_" variable (:constant-flag t) nil [128 151])
+            ("shared/API.h" include nil nil [153 176])
+            ("InstrumentVolumeCollector.h" include nil nil [177 215])
+            ("UserVolumeCollector" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [245 252])
+                    ("UserVolumeCollector" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("handler" variable
+                               (:reference 1
+                                :type ("tbricks::Pricing" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [277 304])
+                            ("user" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::UserIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [305 342]))                          
+                        :type ("UserVolumeCollector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [257 343])
+                    ("UserVolumeCollector" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [348 371])
+                    ("StartRefresh" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [377 397])
+                    ("AddRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [418 467])
+                            ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::CalculatedValueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [488 539])
+                            ("calculation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentCalculatedValueDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [560 625]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [402 626])
+                    ("RefreshDone" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [631 650])
+                    ("ToString" function (:type ("tbricks::String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [656 809])
+                    ("private" label nil (reparse-symbol classsubparts) [811 819])
+                    ("InstrumentCollectors" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("tbricks::SharedPointer" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [824 945])
+                    ("Instruments" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [950 1010])
+                    ("m_handler" variable (:type ("tbricks::Pricing" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1016 1045])
+                    ("m_userID" variable (:type ("tbricks::UserIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1050 1083])
+                    ("m_instrumentCollectors" variable (:type ("InstrumentCollectors" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1088 1132])
+                    ("m_instrumentsToCalculateFor" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1216 1256]))                  
+                :type "class")
+                nil [217 1259])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("strm" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1293 1312])
+                    ("src" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("UserVolumeCollector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1313 1344]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1261 1345]))          
+      :file "UserVolumeCollector.h"
+      :pointmax 1384
+      :fsize 1383
+      :lastmodtime '(21962 60358 123333 969000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("USER_VOLUMECOLLECTOR_H_")
+          )
+))
+  :file "!home!marselo!Code!alloptions!beta!calculation!instrument_active_volume!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

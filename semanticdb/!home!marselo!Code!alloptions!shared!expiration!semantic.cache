@@ -1,0 +1,847 @@
+;; Object expiration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "expiration/"
+  :tables
+  (list
+    (semanticdb-table "ExpirationSetManager.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("EXPIRATIONSETMANAGER_H_" variable (:constant-flag t) nil [128 151])
+            ("shared/API.h" include nil nil [153 176])
+            ("PortfolioWithPositions.h" include nil nil [177 212])
+            ("ExpirationCalculatedValuesManager.h" include nil nil [213 259])
+            ("ExpirationDelivery.h" include nil nil [260 291])
+            ("ExpirationSetManager" type
+               (:superclasses 
+                  ( ("tbricks::PortfolioStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::Expiration::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("PortfolioWithPositions::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ExpirationCalculatedValuesManager::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [528 535])
+                    ("IHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [565 572])
+                            ("HandleAllPortfoliosRetrieved" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("manager" variable
+                                       (:reference 1
+                                        :type ("ExpirationSetManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [623 654]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [581 659])
+                            ("HandleAllPositionsRetrieved" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("manager" variable
+                                       (:reference 1
+                                        :type ("ExpirationSetManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [709 740]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [668 745])
+                            ("HandlePositionsUpdated" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("manager" variable
+                                       (:reference 1
+                                        :type ("ExpirationSetManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [790 821]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [754 826])
+                            ("HandleSetupCompleted" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("manager" variable
+                                       (:reference 1
+                                        :type ("ExpirationSetManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [869 900]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [835 905])
+                            ("HandleUnrecoverableError" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :type ("ExpirationSetManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [952 979])
+                                    ("error" variable
+                                       (:constant-flag t
+                                        :type ("tbricks::String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [980 1008]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [914 1013]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [540 1020])
+                    ("public" label nil (reparse-symbol classsubparts) [1022 1029])
+                    ("ExpirationDeliveries" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::Identifier" type nil nil nil)
+                                  ("ExpirationDelivery" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1034 1113])
+                    ("ExpirationSetManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("handler" variable
+                               (:reference 1
+                                :type ("IHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1251 1270]))                          
+                        :type ("ExpirationSetManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1230 1271])
+                    ("ExpirationSetManager" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1276 1308])
+                    ("SetExpirationSet" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("set" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Integer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1430 1459]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1400 1460])
+                    ("SetExpirationDate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("date" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::DateTime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1496 1527]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1465 1528])
+                    ("SetExpirationIdentifier" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("identifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1653 1692]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1616 1693])
+                    ("Setup" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1857 1878])
+                    ("GetDeliveries" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("ExpirationDeliveries" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1884 1931])
+                    ("GetDeliveries" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :type ("ExpirationDeliveries" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1936 1995])
+                    ("GetExercisePrice" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrumentID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2032 2083]))                          
+                        :type ("tbricks::Price" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2000 2090])
+                    ("GetOldExpiration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :constant-flag t
+                        :type ("tbricks::Expiration" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2205 2266])
+                    ("GetExpirationSet" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("tbricks::Integer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2271 2321])
+                    ("GetExpirationDate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("tbricks::DateTime" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2326 2378])
+                    ("public" label nil (reparse-symbol classsubparts) [2380 2387])
+                    ("HandlePortfolioUpdate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2427 2468])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2508 2550]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2392 2551])
+                    ("HandlePortfolioInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2595 2636])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2680 2720]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2556 2721])
+                    ("HandleExpiration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2769 2812])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Expiration::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2813 2855]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2726 2857])
+                    ("HandleExpirationInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2916 2957])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2958 2989]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2862 2990])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3027 3068]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2997 3069])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3105 3146]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3074 3147])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3184 3225]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3152 3226])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3262 3303]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3231 3304])
+                    ("HandlePositionsRetrieved" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3348 3377]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3310 3378])
+                    ("HandlePositionUpdated" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3418 3447])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3448 3483]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3383 3484])
+                    ("HandlePositionDeleted" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3524 3553])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3554 3589]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3489 3590])
+                    ("HandleUnrecoverableError" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("obj" variable
+                               (:reference 1
+                                :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3633 3662])
+                            ("error" variable
+                               (:constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3663 3691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3595 3692])
+                    ("CalculationDone" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("manager" variable
+                               (:reference 1
+                                :type ("ExpirationCalculatedValuesManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3727 3771]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3698 3772])
+                    ("WaitingForData" function (:type "bool") (reparse-symbol classsubparts) [3779 3851])
+                    ("GetDeliveryInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("derivative" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3917 3966]))                          
+                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3858 3967])
+                    ("protected" label nil (reparse-symbol classsubparts) [3969 3979])
+                    ("PortfolioPositions" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::PortfolioIdentifier" type nil nil nil)
+                                  ("PortfolioWithPositions" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3984 4076])
+                    ("PortfolioIdentifiers" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("tbricks::PortfolioIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [4081 4149])
+                    ("CalculationManagers" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("ExpirationCalculatedValuesManager" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [4154 4259])
+                    ("InstrumentIdentifiers" type
+                       (:typedef ("std::set" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::set"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [4264 4334])
+                    ("Instruments" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("tbricks::Instrument" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [4339 4420])
+                    ("UnderlyingLookup" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("tbricks::InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [4425 4521])
+                    ("m_handler" variable (:type ("IHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4527 4548])
+                    ("m_expirationSet" variable (:type ("tbricks::Integer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4554 4587])
+                    ("m_expirationDate" variable (:type ("tbricks::DateTime" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4592 4627])
+                    ("m_expirationIdentifier" variable (:type ("tbricks::Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4633 4676])
+                    ("m_portfolioPositions" variable (:type ("PortfolioPositions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4682 4722])
+                    ("m_portfolioStream" variable (:type ("tbricks::PortfolioStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4727 4770])
+                    ("m_retrievingPositionsPortfolios" variable (:type ("PortfolioIdentifiers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4775 4828])
+                    ("m_expirationStream" variable (:type ("tbricks::Expiration::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4834 4881])
+                    ("m_oldExpiration" variable (:type ("tbricks::Expiration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4886 4922])
+                    ("m_instantExpiration" variable (:type "bool") (reparse-symbol classsubparts) [4928 4953])
+                    ("m_deliveries" variable (:type ("ExpirationDeliveries" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4959 4993])
+                    ("m_calculationManagers" variable (:type ("CalculationManagers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4999 5041])
+                    ("m_calculatingInstruments" variable (:type ("InstrumentIdentifiers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5046 5093])
+                    ("m_allInstruments" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5169 5198])
+                    ("m_underlyingLookup" variable (:type ("UnderlyingLookup" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5203 5239])
+                    ("m_waitingForData" variable (:type "bool") (reparse-symbol classsubparts) [5295 5317])
+                    ("protected" label nil (reparse-symbol classsubparts) [5319 5329])
+                    ("RetrievePortfolios" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5334 5368])
+                    ("AddPortfolio" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5399 5441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5373 5442])
+                    ("DeletePortfolio" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5476 5516]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5447 5517])
+                    ("RetrieveOldExpiration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5558 5595])
+                    ("SetDeliveriesFromOldExpiration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5600 5646])
+                    ("WorkingWithOldExpiration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5651 5697])
+                    ("UpdateCalculationManagers" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5734 5775])
+                    ("SetDeliveriesFromCalculations" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [5780 5825])
+                    ("public" label nil (reparse-symbol classsubparts) [5827 5834])
+                    ("SetDeliveriesFromProvidedData" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("dataTable" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5935 5968]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5892 5969])
+                    ("protected" label nil (reparse-symbol classsubparts) [5970 5980])
+                    ("WorkingWithInstantExpiration" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5985 6035])
+                    ("AddInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("instrumentIdentifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6083 6142]))                          
+                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6041 6143])
+                    ("AddUnderlyingForInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("instrumentIdentifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6203 6262]))                          
+                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6148 6263])
+                    ("IsInstrumentRelevant" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6302 6341]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6268 6348])
+                    ("DeletePortfolios" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6354 6386])
+                    ("DeleteCalculationManagers" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6391 6432])
+                    ("Reset" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6437 6458])
+                    ("DataSetupCompleted" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [6464 6498]))                  
+                :type "class")
+                nil [293 6501]))          
+      :file "ExpirationSetManager.h"
+      :pointmax 6540
+      :fsize 6539
+      :lastmodtime '(21962 60358 690294 480000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EXPIRATIONSETMANAGER_H_")
+          )
+)
+    (semanticdb-table "PortfolioWithPositions.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PORTFOLIOWITHPOSITIONS_H_" variable (:constant-flag t) nil [132 157])
+            ("shared/API.h" include nil nil [159 182])
+            ("PortfolioWithPositions" type
+               (:superclasses 
+                  ( ("tbricks::PositionStream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [250 257])
+                    ("IHandler" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [287 294])
+                            ("HandlePositionsRetrieved" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [341 370]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [303 375])
+                            ("HandlePositionUpdated" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [419 448])
+                                    ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Position" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [449 484]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [384 489])
+                            ("HandlePositionDeleted" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [533 562])
+                                    ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Position" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [563 598]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [498 603])
+                            ("HandleUnrecoverableError" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [650 679])
+                                    ("error" variable
+                                       (:constant-flag t
+                                        :type ("tbricks::String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [680 708]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [612 713]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [262 720])
+                    ("public" label nil (reparse-symbol classsubparts) [722 729])
+                    ("PortfolioWithPositions" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("handler" variable
+                               (:reference 1
+                                :type ("IHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [757 776])
+                            ("portfolio" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Portfolio" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [777 814]))                          
+                        :type ("PortfolioWithPositions" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [734 815])
+                    ("PortfolioWithPositions" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [820 854])
+                    ("Start" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [860 881])
+                    ("Merge" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [905 947]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [886 948])
+                    ("public" label nil (reparse-symbol classsubparts) [950 957])
+                    ("HandlePosition" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [990 1031])
+                            ("position" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Position" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1032 1067]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [962 1068])
+                    ("HandlePositionInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1111 1152])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Identifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1153 1184]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1073 1185])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1221 1262]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1191 1263])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1299 1340]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1268 1341])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1378 1419]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1346 1420])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1456 1497]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1425 1498])
+                    ("public" label nil (reparse-symbol classsubparts) [1500 1507])
+                    ("Positions" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::Identifier" type nil nil nil)
+                                  ("tbricks::Position" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1512 1579])
+                    ("GetIdentifier" function
+                       (:constant-flag t
+                        :type ("tbricks::Identifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1585 1674])
+                    ("GetPortfolio" function
+                       (:constant-flag t
+                        :type ("tbricks::Portfolio" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1680 1766])
+                    ("GetPositions" function
+                       (:constant-flag t
+                        :type ("Positions" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1776 1853])
+                    ("protected" label nil (reparse-symbol classsubparts) [1859 1869])
+                    ("InstrumentCurrencies" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("tbricks::Currency" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [1975 2063])
+                    ("m_handler" variable (:type ("IHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2069 2090])
+                    ("m_portfolio" variable (:type ("tbricks::Portfolio" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2095 2126])
+                    ("m_positionStream" variable (:type ("tbricks::PositionStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2131 2172])
+                    ("m_positions" variable (:type ("Positions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2177 2199])
+                    ("m_identifier" variable (:type ("tbricks::Identifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2204 2237])
+                    ("m_instrumentCurrencies" variable (:type ("InstrumentCurrencies" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2243 2287]))                  
+                :type "class")
+                nil [184 2290]))          
+      :file "PortfolioWithPositions.h"
+      :pointmax 2331
+      :fsize 2330
+      :lastmodtime '(21962 60358 690294 480000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PORTFOLIOWITHPOSITIONS_H_")
+          )
+)
+    (semanticdb-table "ExpirationCalculatedValuesManager.h"
+      :file "ExpirationCalculatedValuesManager.h"
+      :fsize 2278
+      :lastmodtime '(21962 60358 689294 549000))
+    (semanticdb-table "ExpirationDelivery.h"
+      :file "ExpirationDelivery.h"
+      :fsize 8473
+      :lastmodtime '(21962 60358 689294 549000)))
+  :file "!home!marselo!Code!alloptions!shared!expiration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

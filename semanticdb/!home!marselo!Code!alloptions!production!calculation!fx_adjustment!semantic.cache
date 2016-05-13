@@ -1,0 +1,340 @@
+;; Object fx_adjustment/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fx_adjustment/"
+  :tables
+  (list
+    (semanticdb-table "FXAdjustmentPlugin.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__FX_ADJUSTMENT_PLUGIN__FX_ADJUSTMENT_PLUGIN__" variable (:constant-flag t) nil [73 128])
+            ("shared/API.h" include nil nil [130 153])
+            ("RateValue.h" include nil nil [155 177])
+            ("ExchangeRates.h" include nil nil [178 204])
+            ("ReferenceRate.h" include nil nil [205 231])
+            ("RateParameters.h" include nil nil [232 259])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [261 285])
+            ("FXAdjustmentPlugin" type
+               (:superclasses 
+                  ( ("Pricing" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [331 338])
+                    ("FXAdjustmentPlugin" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [362 393]))                          
+                        :type ("FXAdjustmentPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [343 394])
+                    ("FXAdjustmentPlugin" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [399 421])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [460 494]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [427 495])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [500 532])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [537 571])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [576 611])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [651 678]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [616 679])
+                    ("HandlePricingModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PricingModifyRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [725 762]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [685 763])
+                    ("Modify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [781 821]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [769 822])
+                    ("public" label nil (reparse-symbol classsubparts) [824 831])
+                    ("IsSnapshotDone" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [836 864])
+                    ("SnapshotDone" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [887 930]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [869 931])
+                    ("CheckSnapshotDone" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [936 961])
+                    ("SendImpl" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [967 983])
+                    ("private" label nil (reparse-symbol classsubparts) [985 993])
+                    ("Create" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value_id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValueIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1023 1066])
+                            ("instrument_info" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedValuesRequest::InstrumentInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1079 1143])
+                            ("definition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentCalculatedValueDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1156 1211])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RateValueParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1224 1263]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [998 1264])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1270 1283])
+                    ("IsSupportedDefinition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("definition" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentCalculatedValueDefinition" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1320 1375]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1293 1382])
+                    ("GetRateValueParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rate_value_parameters" variable
+                               (:reference 1
+                                :type ("RateValueParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1415 1459])
+                            ("default_parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1473 1519])
+                            ("column_parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1520 1565]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1387 1566])
+                    ("public" label nil (reparse-symbol classsubparts) [1568 1575])
+                    ("RetainExchangeRates" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ExchangeRatesOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1616 1653])
+                            ("value" variable
+                               (:reference 1
+                                :type ("RateValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1654 1672]))                          
+                        :type ("ExchangeRates" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1580 1673])
+                    ("ReleaseExchangeRates" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ExchangeRatesOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1704 1741])
+                            ("value" variable
+                               (:reference 1
+                                :type ("RateValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1742 1760]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1678 1761])
+                    ("RetainReferenceRate" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ReferenceRateOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1803 1840])
+                            ("value" variable
+                               (:reference 1
+                                :type ("RateValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1841 1859]))                          
+                        :type ("ReferenceRate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1767 1860])
+                    ("ReleaseReferenceRate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("options" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ReferenceRateOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1891 1928])
+                            ("value" variable
+                               (:reference 1
+                                :type ("RateValue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1929 1947]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1865 1948])
+                    ("private" label nil (reparse-symbol classsubparts) [1950 1958])
+                    ("RateValueInfo" type
+                       (:members 
+                          ( ("RateValueInfo" function
+                               (:constructor-flag t
+                                :type ("RateValueInfo" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1994 2085])
+                            ("rate_value" variable (:type ("SharedPointer" type
+                                 (:template-specifier 
+                                    ( ("RateValue" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2095 2131])
+                            ("snapshot_done" variable (:type "bool") (reparse-symbol classsubparts) [2140 2159]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1963 2166])
+                    ("RateValues" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("CalculatedValueIdentifier" type nil nil nil)
+                                  ("RateValueInfo" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2172 2244])
+                    ("m_rate_values" variable (:type ("RateValues" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2249 2274])
+                    ("ExchangeRatesPtr" type
+                       (:typedef ("SharedPointer" type
+                             (:template-specifier 
+                                ( ("ExchangeRates" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SharedPointer"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2280 2334])
+                    ("ExchangeRatesHash" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("ExchangeRatesOptions" type nil nil nil)
+                                  ("ExchangeRatesPtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2339 2416])
+                    ("m_exchange_rates" variable (:type ("ExchangeRatesHash" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2421 2456])
+                    ("ReferenceRatePtr" type
+                       (:typedef ("SharedPointer" type
+                             (:template-specifier 
+                                ( ("ReferenceRate" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SharedPointer"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2462 2516])
+                    ("ReferenceRateHash" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("ReferenceRateOptions" type nil nil nil)
+                                  ("ReferenceRatePtr" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2521 2598])
+                    ("m_reference_exchange_rates" variable (:type ("ReferenceRateHash" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2603 2648])
+                    ("m_pending_snapshots_count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2654 2687])
+                    ("m_snapshot_done" variable (:type "bool") (reparse-symbol classsubparts) [2692 2713])
+                    ("m_wait_modify" variable (:type "bool") (reparse-symbol classsubparts) [2718 2737])
+                    ("m_plugin_modify_version" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2743 2775]))                  
+                :type "class")
+                nil [287 2778]))          
+      :file "FXAdjustmentPlugin.h"
+      :pointmax 2846
+      :fsize 2845
+      :lastmodtime '(21962 60358 534305 345000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__TBRICKS__FX_ADJUSTMENT_PLUGIN__FX_ADJUSTMENT_PLUGIN__")
+          )
+)
+    (semanticdb-table "RateValue.h"
+      :file "RateValue.h"
+      :fsize 1512
+      :lastmodtime '(21962 60358 535305 275000))
+    (semanticdb-table "ExchangeRates.h"
+      :file "ExchangeRates.h"
+      :fsize 2012
+      :lastmodtime '(21962 60358 534305 345000))
+    (semanticdb-table "ReferenceRate.h"
+      :file "ReferenceRate.h"
+      :fsize 1753
+      :lastmodtime '(21962 60358 535305 275000))
+    (semanticdb-table "RateParameters.h"
+      :file "RateParameters.h"
+      :fsize 3587
+      :lastmodtime '(21962 60358 535305 275000)))
+  :file "!home!marselo!Code!alloptions!production!calculation!fx_adjustment!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

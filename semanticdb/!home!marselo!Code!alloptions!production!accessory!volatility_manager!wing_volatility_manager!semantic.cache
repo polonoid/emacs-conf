@@ -1,0 +1,305 @@
+;; Object wing_volatility_manager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wing_volatility_manager/"
+  :tables
+  (list
+    (semanticdb-table "WingATMSlopePathManager.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__APPS__VOLATILITY_MANAGER__WING_ATM_SLOPE_PATH_MANAGER_H" variable (:constant-flag t) nil [84 150])
+            ("WingVolatilityPlugin.h" include nil nil [152 185])
+            ("WingATMSlopePathManager" type
+               (:superclasses 
+                  ( ("IVolatilityModelWatcher" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [522 529])
+                    ("WingATMSlopePathManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("currentModel" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("WingVolatilityModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [558 599])
+                            ("candidateModel" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("WingVolatilityModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [628 671])
+                            ("plugin" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("WingVolatilityPlugin" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [700 736])
+                            ("groupCache" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GroupCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [765 795]))                          
+                        :type ("WingATMSlopePathManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [534 796])
+                    ("WingATMSlopePathManager" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [801 836])
+                    ("HandleATMSlopePathHandlesUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("handles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [966 988])
+                            ("candidateVersion" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [989 1021])
+                            ("modelChanged" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1063 1083])
+                            ("error" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1084 1099]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [929 1100])
+                    ("HandleATMSlopePathTableUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1140 1169])
+                            ("candidateVersion" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1170 1202])
+                            ("modelChanged" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1242 1262])
+                            ("error" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1263 1278]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1105 1279])
+                    ("AddCandidatePoint" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1285 1310])
+                    ("GetLastWingModelParsedFromUpdate" function
+                       (:constant-flag t
+                        :type ("WingVolatilityModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1385 1501])
+                    ("private" label nil (reparse-symbol classsubparts) [1503 1511])
+                    ("WingATMSlopePathManager" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("WingATMSlopePathManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1591 1629]))                          
+                        :type ("WingATMSlopePathManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1567 1630])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("WingATMSlopePathManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1671 1709]))                          
+                        :type ("WingATMSlopePathManager" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1635 1710])
+                    ("private" label nil (reparse-symbol classsubparts) [1712 1720])
+                    ("HandleCandidateVolatilityModelUpdate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("version" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1775 1798]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1725 1799])
+                    ("HandleCurrentVolatilityModelUpdate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("version" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1852 1875]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1804 1876])
+                    ("private" label nil (reparse-symbol classsubparts) [1878 1886])
+                    ("HandleVolatilityModelUpdate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("version" variable
+                               (:constant-flag t
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1924 1947])
+                            ("candidate" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1948 1969]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1891 1970])
+                    ("SetupATMSlopePathCurve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("table" variable
+                               (:reference 1
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2004 2018]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1976 2019])
+                    ("ClearCurrentATMSlopePathCurve" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2025 2062])
+                    ("ClearCandidateATMSlopePathCurveAndHandles" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2067 2116])
+                    ("RedrawCurrentATMSlopePath" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2122 2155])
+                    ("RedrawCandidateATMSlopePath" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("useInternalModel" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2193 2222])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2223 2229]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2160 2230])
+                    ("RedrawATMSlopePathCurve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("curve" variable
+                               (:reference 1
+                                :type ("TableParameter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2264 2287])
+                            ("model" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("WingVolatilityModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2288 2322]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2235 2323])
+                    ("RepositionATMSlopePathHandles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("useInternalModel" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2364 2393])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2394 2400]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2329 2401])
+                    ("UpdateCurrentATMSlopePathTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2407 2445])
+                    ("UpdateCandidateATMSlopePathTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("useInternalModel" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2488 2517])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2518 2524]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2450 2525])
+                    ("UpdateATMSlopePathTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("candidate" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2560 2581])
+                            ("useInternalModel" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2582 2610]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2531 2611])
+                    ("private" label nil (reparse-symbol classsubparts) [2613 2621])
+                    ("m_currentATMSlopePathCurve" variable (:type ("TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2626 2669])
+                    ("m_candidateATMSlopePathCurve" variable (:type ("TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2674 2719])
+                    ("m_ATMSlopePathHandles" variable (:type ("TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2724 2762])
+                    ("m_currentATMSlopePathTable" variable (:type ("TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2768 2811])
+                    ("m_candidateATMSlopePathTable" variable (:type ("TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2816 2861])
+                    ("private" label nil (reparse-symbol classsubparts) [2863 2871])
+                    ("m_currentModel" variable
+                       (:constant-flag t
+                        :type ("WingVolatilityModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2876 2919])
+                    ("m_candidateModel" variable
+                       (:constant-flag t
+                        :type ("WingVolatilityModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2924 2969])
+                    ("m_plugin" variable
+                       (:constant-flag t
+                        :type ("WingVolatilityPlugin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2974 3012])
+                    ("m_groupCache" variable
+                       (:constant-flag t
+                        :type ("GroupCache" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3017 3049])
+                    ("m_lastProcessedCurrentModelModificationVersion" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3055 3114])
+                    ("m_lastProcessedCandidateModelModificationVersion" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3119 3180])
+                    ("m_lastWingModelParsedFromUpdate" variable
+                       (:typemodifiers ("mutable")
+                        :type ("WingVolatilityModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3186 3250])
+                    ("m_ivids" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("InstrumentVenueIdentification" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3277 3329])
+                    ("TickRulesPerInstrumentId" type
+                       (:typedef ("SparseHash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("TickRule" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "SparseHash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3335 3411])
+                    ("m_tickRulesPerInstrumentId" variable (:type ("TickRulesPerInstrumentId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3416 3469]))                  
+                :type "class")
+                nil [458 3472]))          
+      :file "WingATMSlopePathManager.h"
+      :pointmax 3551
+      :fsize 3550
+      :lastmodtime '(21962 60358 524306 41000)
+      :unmatched-syntax '((punctuation 2516 . 2517) (punctuation 2392 . 2393) (punctuation 2221 . 2222))
+      :lexical-table 
+        '(("__TBRICKS__APPS__VOLATILITY_MANAGER__WING_ATM_SLOPE_PATH_MANAGER_H")
+          )
+)
+    (semanticdb-table "WingVolatilityPlugin.h"
+      :file "WingVolatilityPlugin.h"
+      :fsize 9549
+      :lastmodtime '(21962 60358 525305 971000)))
+  :file "!home!marselo!Code!alloptions!production!accessory!volatility_manager!wing_volatility_manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

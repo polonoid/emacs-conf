@@ -1,0 +1,333 @@
+;; Object price_range/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "price_range/"
+  :tables
+  (list
+    (semanticdb-table "LimitsTable.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("LimitsTable_H" variable (:constant-flag t) nil [31 44])
+            ("InstrumentLimits.h" include nil nil [46 75])
+            ("LimitsTable" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [97 104])
+                    ("LimitsTable" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("provider" variable
+                               (:reference 1
+                                :type ("TradingLimitRuleProvider" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [119 154]))                          
+                        :type ("LimitsTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [107 155])
+                    ("LimitsTable" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [179 184]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [158 185])
+                    ("AddRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradingLimitRuleRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [205 244])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [264 293])
+                            ("tradings" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VenueAndMIC" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [294 335]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [189 336])
+                    ("PrepareInstrumentWithoutRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [376 405])
+                            ("tradings" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VenueAndMIC" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [406 447]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [339 448])
+                    ("SetReferencePrices" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [476 505])
+                            ("bid" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [506 523])
+                            ("ask" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Price" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [524 541]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [452 542])
+                    ("DisableTrading" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [565 594])
+                            ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [595 616]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [545 617])
+                    ("DisableTrading" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [640 661]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [620 662])
+                    ("Send" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [666 678])
+                    ("Empty" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [681 700])
+                    ("SetEnableUpdates" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("enableUpdates" variable (:type "bool") (reparse-symbol arg-sub-list) [726 745]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [704 746])
+                    ("ProvideSoftLimits" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("softLimits" variable (:type "bool") (reparse-symbol arg-sub-list) [772 788]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [749 789])
+                    ("SetLimitBothSides" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("limitBothSides" variable (:type "bool") (reparse-symbol arg-sub-list) [815 835]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [792 836])
+                    ("GetInstruments" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instruments" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Instrument" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [860 897]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [840 904])
+                    ("private" label nil (reparse-symbol classsubparts) [905 913])
+                    ("Entries" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("InstrumentLimits" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [916 979])
+                    ("m_provider" variable (:type ("TradingLimitRuleProvider" type (:type "class") nil nil)) (reparse-symbol classsubparts) [983 1038])
+                    ("m_entries" variable (:type ("Entries" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1041 1095])
+                    ("m_enableUpdates" variable (:type "bool") (reparse-symbol classsubparts) [1098 1158])
+                    ("m_provideSoftLimits" variable (:type "bool") (reparse-symbol classsubparts) [1161 1225])
+                    ("m_limitBothSides" variable (:type "bool") (reparse-symbol classsubparts) [1228 1289]))                  
+                :type "class")
+                nil [77 1292]))          
+      :file "LimitsTable.h"
+      :pointmax 1318
+      :fsize 1317
+      :lastmodtime '(21962 60358 581302 71000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LimitsTable_H")
+          )
+)
+    (semanticdb-table "InstrumentLimits.h"
+      :file "InstrumentLimits.h"
+      :fsize 3443
+      :lastmodtime '(21962 60358 581302 71000))
+    (semanticdb-table "TheoreticalPriceCalculator.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("TheoreticalPriceCalculator_H" variable (:constant-flag t) nil [46 74])
+            ("ReferencePriceProviderBase.h" include nil nil [76 115])
+            ("TheoreticalPriceCalculator" type
+               (:superclasses 
+                  ( ("CalculatedInstrumentValues::Stream::IHandler" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [199 206])
+                    ("TheoreticalPriceCalculator" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("handler" variable
+                               (:reference 1
+                                :type ("ReferencePriceProviderBase::IEventHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [235 286]))                          
+                        :type ("TheoreticalPriceCalculator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [208 287])
+                    ("TheoreticalPriceCalculator" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [326 331]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [290 332])
+                    ("AddInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [355 384])
+                            ("activeDuringAuction" variable (:type "bool") (reparse-symbol arg-sub-list) [385 410])
+                            ("marketDataVenue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Venue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [411 440]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [336 441])
+                    ("Clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [444 457])
+                    ("HasInstrument" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [480 509]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [461 516])
+                    ("private" label nil (reparse-symbol classsubparts) [517 525])
+                    ("HandleCalculatedInstrumentValues" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [574 605])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CalculatedInstrumentValues::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [606 655]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [528 656])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [690 721]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [659 722])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [757 788]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [725 789])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [823 854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [792 855])
+                    ("private" label nil (reparse-symbol classsubparts) [857 865])
+                    ("Providers" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("ReferencePriceProviderBase" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [868 942])
+                    ("m_handler" variable (:type ("ReferencePriceProviderBase::IEventHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [946 1002])
+                    ("m_stream" variable (:type ("CalculatedInstrumentValues::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1005 1060])
+                    ("m_options" variable (:type ("CalculatedInstrumentValues::Stream::Options" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1063 1119])
+                    ("m_providers" variable (:type ("Providers" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1122 1180]))                  
+                :type "class")
+                nil [117 1184]))          
+      :file "TheoreticalPriceCalculator.h"
+      :pointmax 1226
+      :fsize 1225
+      :lastmodtime '(21962 60358 581302 71000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TheoreticalPriceCalculator_H")
+          )
+)
+    (semanticdb-table "ReferencePriceProviderBase.h"
+      :file "ReferencePriceProviderBase.h"
+      :fsize 1900
+      :lastmodtime '(21962 60358 581302 71000)))
+  :file "!home!marselo!Code!alloptions!production!limit!price_range!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

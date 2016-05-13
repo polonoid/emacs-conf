@@ -1,0 +1,131 @@
+;; Object Global/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Global/"
+  :tables
+  (list
+    (semanticdb-table "BinaryExport.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("AO_SOURCES_AO_SHARED_AO_SHAREDGLOBAL_GLOBAL_BINARYEXPORT_H_" variable (:constant-flag t) nil [170 229])
+            ("strategy/API.h" include nil nil [231 256])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [257 289])
+            ("AO" type
+               (:members 
+                  ( ("BinaryExport" type
+                       (:members 
+                          ( ("ProductName" type
+                               (:typedef ("tbricks::String" type (:type "class") nil nil)
+                                :superclasses "tbricks::String"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [332 368])
+                            ("ProductValues" type
+                               (:typedef ("tbricks::SparseHash" type
+                                     (:template-specifier 
+                                        ( ("tbricks::String" type nil nil nil)
+                                          ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "tbricks::SparseHash"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [369 436])
+                            ("Values" type
+                               (:typedef ("tbricks::SparseHash" type
+                                     (:template-specifier 
+                                        ( ("ProductName" type nil nil nil)
+                                          ("ProductValues" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "tbricks::SparseHash"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [437 500])
+                            ("Serialize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("values" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Values" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [528 549]))                                  
+                                :type ("tbricks::Binary" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [502 550])
+                            ("Deserialize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("binary" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Binary" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [570 600]))                                  
+                                :type ("Values" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [551 601])
+                            ("Exporter" type
+                               (:superclasses 
+                                  ( ("boost::noncopyable" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [650 657])
+                                    ("Exporter" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("def" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("tbricks::ParameterDefinition" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [677 717]))                                          
+                                        :type ("Exporter" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [668 718])
+                                    ("SetValues" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("values" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Values" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [736 757]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [721 758])
+                                    ("private" label nil (reparse-symbol classsubparts) [760 768])
+                                    ("m_binary" variable (:type ("tbricks::BinaryParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [770 804]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [603 807])
+                            ("MergeValues" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("values" variable
+                                       (:reference 1
+                                        :type ("Values" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [826 842])
+                                    ("update" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Values" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [843 864]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [809 865]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [306 868]))                  
+                :type "namespace")
+                nil [291 899]))          
+      :file "BinaryExport.h"
+      :pointmax 993
+      :fsize 1035
+      :lastmodtime '(22058 16076 0 0)
+      :unmatched-syntax '((EXPLICIT 659 . 667))
+      :lexical-table 
+        '(("AO_SOURCES_AO_SHARED_AO_SHAREDGLOBAL_GLOBAL_BINARYEXPORT_H_")
+          )
+)
+    (semanticdb-table "tbricks_definitions.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "tbricks_definitions.h"
+      :pointmax 832856
+      :fsize 859324
+      :lastmodtime '(22194 932 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!src!AO_SharedGlobal!Global!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

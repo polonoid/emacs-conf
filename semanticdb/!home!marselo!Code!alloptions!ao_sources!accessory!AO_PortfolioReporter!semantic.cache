@@ -1,0 +1,228 @@
+;; Object AO_PortfolioReporter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_PortfolioReporter/"
+  :tables
+  (list
+    (semanticdb-table "PortfolioUpdateReporter.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PortfolioUpdateReporter.h" include nil nil [1 37])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [39 63])
+            ("Tbricks::Messages::PortfolioUpdateReporter" using (:type ("Tbricks::Messages::PortfolioUpdateReporter" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [64 123])
+            ("AO" type
+               (:members 
+                  ( ("PortfolioUpdateReporter" function
+                       (:constructor-flag t
+                        :parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [190 195]))                          
+                        :type ("PortfolioUpdateReporter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [141 274])
+                    ("PortfolioUpdateReporter" function
+                       (:destructor-flag t
+                        :parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [326 331]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [276 344])
+                    ("Start" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("address" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [382 413])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [414 423]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [346 642])
+                    ("Stop" function
+                       (:parent "PortfolioUpdateReporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [644 890])
+                    ("OpenConnections" function
+                       (:parent "PortfolioUpdateReporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [892 1439])
+                    ("OnThriftConnectionFailed" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1496 1523]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1441 1835])
+                    ("HandleTimerEvent" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("timer" variable
+                               (:reference 1
+                                :type ("tbricks::Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1884 1907]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1837 1957])
+                    ("GetState" function
+                       (:parent "PortfolioUpdateReporter"
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1959 2043])
+                    ("HandlePortfolioUpdate" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2097 2138])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Portfolio::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2139 2181]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2045 2783])
+                    ("HandlePortfolioInvalidate" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2841 2882])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2883 2923]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2785 3515])
+                    ("HandleStreamStale" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3565 3606]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3517 3668])
+                    ("HandleStreamFailed" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3719 3760]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3670 3823])
+                    ("HandleSnapshotEnd" function
+                       (:parent "PortfolioUpdateReporter"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3873 3914]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3825 3997]))                  
+                :type "namespace")
+                nil [125 4000]))          
+      :file "PortfolioUpdateReporter.cpp"
+      :pointmax 4001
+      :fsize 4000
+      :lastmodtime '(21962 60357 930347 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PortfolioUpdateReporter.h"
+      :file "PortfolioUpdateReporter.h"
+      :fsize 1739
+      :lastmodtime '(21962 60357 930347 410000))
+    (semanticdb-table "PortfolioUpdateThrift.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PortfolioUpdateThrift.h" include nil nil [105 139])
+            ("AO_SharedGlobal/Global/CollectionPrint.h" include nil nil [140 191])
+            ("stdexcept" include (:system-flag t) nil [192 212])
+            ("Tbricks::Messages::PortfolioUpdateReporter" using (:type ("Tbricks::Messages::PortfolioUpdateReporter" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [214 273])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [274 298])
+            ("AO" type
+               (:members 
+                  ( ("PortfolioUpdateThrift" function
+                       (:constructor-flag t
+                        :parent "PortfolioUpdateThrift"
+                        :arguments 
+                          ( ("hostname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [361 389])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [390 399]))                          
+                        :type ("PortfolioUpdateThrift" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [316 687])
+                    ("SendPortfolioUpdate" function
+                       (:parent "PortfolioUpdateThrift"
+                        :arguments 
+                          ( ("portfolio" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Portfolio" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [737 773]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [689 1338])
+                    ("SendInvalidatePortfolioUpdate" function
+                       (:parent "PortfolioUpdateThrift"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1398 1437]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1340 1864])
+                    ("CreatePortfolioUpdateMessage" function
+                       (:parent "PortfolioUpdateThrift"
+                        :arguments 
+                          ( ("portfolio" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Portfolio" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1978 2014]))                          
+                        :type ("Tbricks::Messages::PortfolioUpdateReporter::PortfolioUpdate" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1866 2862])
+                    ("CreateInvalidatePortfolioMessage" function
+                       (:parent "PortfolioUpdateThrift"
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::PortfolioIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2980 3019]))                          
+                        :type ("Tbricks::Messages::PortfolioUpdateReporter::PortfolioUpdate" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2864 3214]))                  
+                :type "namespace")
+                nil [300 3217]))          
+      :file "PortfolioUpdateThrift.cpp"
+      :pointmax 3237
+      :fsize 3236
+      :lastmodtime '(21962 60357 930347 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "PortfolioUpdateThrift.h"
+      :file "PortfolioUpdateThrift.h"
+      :fsize 1130
+      :lastmodtime '(21962 60357 930347 410000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_PortfolioReporter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

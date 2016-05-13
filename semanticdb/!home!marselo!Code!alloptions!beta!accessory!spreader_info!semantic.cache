@@ -1,0 +1,376 @@
+;; Object spreader_info/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spreader_info/"
+  :tables
+  (list
+    (semanticdb-table "SpreaderInfo.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SPREADERINFO_H_" variable (:constant-flag t) nil [113 128])
+            ("shared/API.h" include nil nil [130 153])
+            ("SpreaderInfo" type
+               (:superclasses 
+                  ( ("tbricks::Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::TradeStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::StrategyStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [283 290])
+                    ("SpreaderInfo" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [308 353])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [354 401]))                          
+                        :type ("SpreaderInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [295 402])
+                    ("SpreaderInfo" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [407 431])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [494 499]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [461 500])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [535 540]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [505 541])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [578 583]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [546 584])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [622 665]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [589 666])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [706 742]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [671 743])
+                    ("HandleStrategyUpdate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [783 824])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyUpdate" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [825 864]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [749 865])
+                    ("HandleStrategyInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [908 949])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [992 1035]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [870 1036])
+                    ("HandleTrade" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1066 1107])
+                            ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1108 1137]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1041 1138])
+                    ("HandleTradeInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1178 1219])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::TradeIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1220 1256]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1143 1257])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1293 1334]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1262 1335])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1372 1413]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1340 1414])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1450 1491]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1419 1492])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1527 1568]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1497 1569])
+                    ("protected" label nil (reparse-symbol classsubparts) [1571 1581])
+                    ("m_inspectedPlugin" variable (:type ("tbricks::StrategyIdentifierParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1586 1641])
+                    ("m_averagePaid" variable (:type ("tbricks::DoubleParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1646 1685])
+                    ("m_table" variable (:type ("tbricks::TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1690 1722])
+                    ("protected" label nil (reparse-symbol classsubparts) [1724 1734])
+                    ("LegData" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1763 1770])
+                            ("LegData" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("LegData" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1779 1789])
+                            ("UpdatedTrade" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1816 1845]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1798 1846])
+                            ("TradeDeleted" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("tradeID" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::TradeIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1873 1914]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1855 1915])
+                            ("GetAveragePrice" function
+                               (:prototype-flag t
+                                :type ("tbricks::Double" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1924 1964])
+                            ("GetFilledVolume" function
+                               (:prototype-flag t
+                                :constant-flag t
+                                :type ("tbricks::Volume" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1973 2021])
+                            ("protected" label nil (reparse-symbol classsubparts) [2026 2036])
+                            ("Trades" type
+                               (:typedef ("tbricks::Hash" type
+                                     (:template-specifier 
+                                        ( ("tbricks::TradeIdentifier" type nil nil nil)
+                                          ("tbricks::Trade" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "tbricks::Hash"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2045 2116])
+                            ("m_trades" variable (:type ("Trades" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2126 2142])
+                            ("m_filledVolume" variable (:type ("tbricks::Volume" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2151 2182])
+                            ("m_volumeTimesPrice" variable (:type ("tbricks::Double" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2191 2226])
+                            ("RemoveTradeVolume" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("volume" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Volume" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2258 2289])
+                                    ("price" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Price" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2290 2319])
+                                    ("side" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Side" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2320 2347]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2235 2348])
+                            ("AddTradeVolume" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("volume" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Volume" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2377 2408])
+                                    ("price" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Price" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2409 2438])
+                                    ("side" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Side" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2439 2466]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2357 2467])
+                            ("RemoveTrade" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::TradeIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2493 2529]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2476 2530])
+                            ("AddTrade" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("trade" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::Trade" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2553 2582]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2539 2583]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [1739 2590])
+                    ("Legs" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("LegData" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2596 2665])
+                    ("m_legs" variable (:type ("Legs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2670 2682])
+                    ("m_tradeStream" variable (:type ("tbricks::TradeStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2688 2723])
+                    ("InstrumentForTrade" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::TradeIdentifier" type nil nil nil)
+                                  ("tbricks::InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2784 2882])
+                    ("m_instrumentForTrade" variable (:type ("InstrumentForTrade" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2887 2927])
+                    ("m_strategyStream" variable (:type ("tbricks::StrategyStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2933 2974])
+                    ("m_strategy" variable (:type ("tbricks::StrategyData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2979 3012])
+                    ("OpenStreams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3018 3037])
+                    ("SetupTable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3043 3061])
+                    ("UpdateTable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("it" variable
+                               (:constant-flag t
+                                :type ("Legs::iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3083 3107]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3066 3108])
+                    ("UpdateStrategyInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3114 3140]))                  
+                :type "class")
+                nil [155 3143]))          
+      :file "SpreaderInfo.h"
+      :pointmax 3174
+      :fsize 3173
+      :lastmodtime '(21962 60358 111334 804000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SPREADERINFO_H_")
+          )
+))
+  :file "!home!marselo!Code!alloptions!beta!accessory!spreader_info!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

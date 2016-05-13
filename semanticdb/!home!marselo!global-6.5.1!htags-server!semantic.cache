@@ -1,0 +1,19 @@
+;; Object htags-server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "htags-server/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("dist_bin_SCRIPTS" variable (:default-value ("htags-server")) nil [530 562])
+            ("man_MANS" variable (:default-value ("htags-server.1")) nil [563 589])
+            ("EXTRA_DIST" variable (:default-value ("$(man_MANS)" "manual.in")) nil [590 625]))          
+      :file "Makefile.am"
+      :pointmax 625
+      :fsize 624
+      :lastmodtime '(22007 34545 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!global-6.5.1!htags-server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

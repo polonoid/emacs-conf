@@ -1,0 +1,181 @@
+;; Object trading_power/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trading_power/"
+  :tables
+  (list
+    (semanticdb-table "LimitRulesStorage.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__LimitRulesStorage_H__" variable (:constant-flag t) nil [275 298])
+            ("shared/API.h" include nil nil [300 323])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [325 349])
+            ("ITradingPowerLimitProvider" type
+               (:prototype t
+                :type "class")
+                nil [351 384])
+            ("LimitRulesStorage" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [414 421])
+                    ("LimitRulesStorage" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("owner" variable
+                               (:pointer 1
+                                :type ("ITradingPowerLimitProvider" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [444 479]))                          
+                        :type ("LimitRulesStorage" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [426 480])
+                    ("LimitRulesStorage" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [485 506])
+                    ("HasPendingRequests" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [536 577]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [512 584])
+                    ("AddPendingRequest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [612 653])
+                            ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::TradingLimitRuleRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [654 703]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [589 704])
+                    ("UpdateRules" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [726 767])
+                            ("bid_cash_limit" variable (:type "double") (reparse-symbol arg-sub-list) [790 812])
+                            ("at_market_bid_limit" variable (:type "double") (reparse-symbol arg-sub-list) [834 861])
+                            ("ask_cash_limit" variable (:type "double") (reparse-symbol arg-sub-list) [883 905])
+                            ("at_market_ask_limit" variable (:type "double") (reparse-symbol arg-sub-list) [927 954])
+                            ("limit" variable (:type "bool") (reparse-symbol arg-sub-list) [976 987]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [709 988])
+                    ("InitRulesForPortfolios" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("portfolios" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("tbricks::PortfolioIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1021 1079]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [993 1080])
+                    ("WithdrawRules" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1085 1106])
+                    ("SetCashValueThrottle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("minRelativeCashValueChange" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1138 1179]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1112 1180])
+                    ("private" label nil (reparse-symbol classsubparts) [1181 1189])
+                    ("SetCashValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rule" variable
+                               (:reference 1
+                                :type ("TradingLimitRule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1213 1236])
+                            ("newCashValue" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Double" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1237 1264]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1195 1265])
+                    ("m_owner" variable
+                       (:pointer 1
+                        :type ("ITradingPowerLimitProvider" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1271 1308])
+                    ("m_minRelativeChange" variable (:type "double") (reparse-symbol classsubparts) [1313 1341])
+                    ("Rules" type
+                       (:members 
+                          ( ("Rules" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("portfolio_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::PortfolioIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1376 1426])
+                                    ("instrument_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1440 1492]))                                  
+                                :type ("Rules" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1370 1938])
+                            ("m_bid_rule" variable (:type ("tbricks::TradingLimitRule" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1948 1985])
+                            ("m_ask_rule" variable (:type ("tbricks::TradingLimitRule" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1994 2031]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1347 2038])
+                    ("PendingRequests" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2044 2161])
+                    ("m_pending_requests" variable (:type ("PendingRequests" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2166 2201])
+                    ("LimitRules" type
+                       (:typedef ("tbricks::Hash" type
+                             (:template-specifier 
+                                ( ("tbricks::PortfolioIdentifier" type nil nil nil)
+                                  ("tbricks::Hash" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "tbricks::Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2207 2325])
+                    ("m_rules" variable (:type ("LimitRules" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2330 2349]))                  
+                :type "class")
+                nil [386 2352]))          
+      :file "LimitRulesStorage.h"
+      :pointmax 2364
+      :fsize 2363
+      :lastmodtime '(21962 60358 140332 785000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__LimitRulesStorage_H__")
+          )
+))
+  :file "!home!marselo!Code!alloptions!beta!limit!trading_power!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

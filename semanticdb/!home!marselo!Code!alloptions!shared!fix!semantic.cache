@@ -1,0 +1,508 @@
+;; Object fix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fix/"
+  :tables
+  (list
+    (semanticdb-table "ConvertUtil.h"
+      :file "ConvertUtil.h"
+      :fsize 821
+      :lastmodtime '(21962 60358 691294 410000))
+    (semanticdb-table "ConvertUtil.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("strategy/fix/Group.h" include nil nil [1 32])
+            ("strategy/fix/Message.h" include nil nil [33 66])
+            ("strategy/fix/Enums.h" include nil nil [67 98])
+            ("ConvertUtil.h" include nil nil [99 123])
+            ("tbricks" type
+               (:members 
+                  ( ("FIX" type
+                       (:members 
+                          ( ("ApplyVIID" function
+                               (:parent "ConvertUtil"
+                                :arguments 
+                                  ( ("viid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("VenueInstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [190 229])
+                                    ("group" variable
+                                       (:reference 1
+                                        :type ("FIX::Group" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [230 249]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [162 1442])
+                            ("ExtractVIID" function
+                               (:parent "ConvertUtil"
+                                :arguments 
+                                  ( ("group" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FIX::Group" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1474 1499])
+                                    ("viid" variable
+                                       (:reference 1
+                                        :type ("VenueInstrumentIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1500 1533]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1444 2464])
+                            ("ApplyInstrumentComponentBlock" function
+                               (:parent "ConvertUtil"
+                                :arguments 
+                                  ( ("instrument" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Instrument" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2514 2544])
+                                    ("apply_components" variable (:type "bool") (reparse-symbol arg-sub-list) [2545 2567])
+                                    ("msg" variable
+                                       (:reference 1
+                                        :type ("Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2568 2582]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2466 4939])
+                            ("ExtractInstrumentIdentifier" function
+                               (:parent "ConvertUtil"
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FIX::Group" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4987 5010])
+                                    ("instrument_id" variable
+                                       (:reference 1
+                                        :type ("Uuid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5011 5032]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4941 5283])
+                            ("ExtractVenueIdentifiers" function
+                               (:parent "ConvertUtil"
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FIX::Group" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5327 5350])
+                                    ("vec_viids" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VenueInstrumentIdentifier" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5351 5402]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5285 6489])
+                            ("ExtractInstrumentComponents" function
+                               (:parent "ConvertUtil"
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FIX::Group" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6537 6560])
+                                    ("vec_components" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("InstrumentComponent" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6561 6611]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6491 7859]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [145 7862]))                  
+                :type "namespace")
+                nil [125 7864]))          
+      :file "ConvertUtil.cpp"
+      :pointmax 7865
+      :fsize 7864
+      :lastmodtime '(21962 60358 691294 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "FixMapping.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FixMapping.h" include nil nil [1 24])
+            ("tbricks" type
+               (:members 
+                  ( ("AddResource" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("resource" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Resource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [76 102]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47 494])
+                    ("ParseInstrumentParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("file_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [539 564])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("XMLReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [565 584]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [496 2230])
+                    ("ParseExtraData" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("file_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2264 2289])
+                            ("reader" variable
+                               (:reference 1
+                                :type ("XMLReader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2290 2309]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2232 3791])
+                    ("Clear" function
+                       (:parent "FixMapping"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3793 3851])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3886 3922])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3923 3942]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3853 3990])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4025 4070])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4071 4090]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3992 4138])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4173 4214])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4215 4234]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4140 4282])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupAggregateParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4317 4367])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4368 4387]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4284 4435])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4470 4514])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4515 4534]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4437 4582])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4617 4670])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4671 4690]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4584 4738])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4773 4822])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4823 4842]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4740 4890])
+                    ("ApplyParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentGroupAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4925 4983])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4984 5003]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4892 5051])
+                    ("ExtractParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Group" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5088 5111])
+                            ("params" variable
+                               (:reference 1
+                                :type ("InstrumentParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5112 5142]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5053 5192])
+                    ("ExtractParameters" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Group" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5229 5252])
+                            ("params" variable
+                               (:reference 1
+                                :type ("InstrumentGroupParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5253 5288]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5194 5338])
+                    ("GetDefinedParameterDefinitions" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("vec_defs" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("InstrumentParameterDefinition" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5388 5442]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5340 5988])
+                    ("MergeParametersUpdate" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :type ("InstrumentAggregateParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6031 6070])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6075 6128]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5990 6658])
+                    ("ApplyParametersImpl" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6719 6736])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6737 6756]))                          
+                        :parent "FixMapping")
+                        (reparse-symbol namespacesubparts) [6660 7684])
+                    ("ExtractParametersImpl" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Group" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7747 7770])
+                            ("params" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7771 7782]))                          
+                        :parent "FixMapping")
+                        (reparse-symbol namespacesubparts) [7686 8973])
+                    ("ApplyExtraData" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("extra_data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ExtraData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9007 9036])
+                            ("msg" variable
+                               (:reference 1
+                                :type ("FIX::Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9037 9056]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8975 10001])
+                    ("ExtractExtraData" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("FIX::Group" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10037 10060])
+                            ("extra_data" variable
+                               (:reference 1
+                                :type ("ExtraData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10061 10084]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10003 11307])
+                    ("GetType" function
+                       (:parent "FixMapping"
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11344 11364]))                          
+                        :type ("TypeInfo::Type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11309 12081]))                  
+                :type "namespace")
+                nil [26 12084]))          
+      :file "FixMapping.cpp"
+      :pointmax 12085
+      :fsize 12084
+      :lastmodtime '(21962 60358 691294 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "FixMapping.h"
+      :file "FixMapping.h"
+      :fsize 2335
+      :lastmodtime '(21962 60358 691294 410000))
+    (semanticdb-table "TradeTypeFilter.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TradeTypeFilter.h" include nil nil [1 29])
+            ("shared/API.h" include nil nil [30 53])
+            ("tbricks" type
+               (:members 
+                  ( ("TradeTypeFilter" function
+                       (:constructor-flag t
+                        :parent "TradeTypeFilter"
+                        :type ("TradeTypeFilter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [76 370])
+                    ("Initialize" function
+                       (:parent "TradeTypeFilter"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [405 438]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [372 5003])
+                    ("CheckTradeType" function
+                       (:parent "TradeTypeFilter"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5042 5062]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5005 5243])
+                    ("CheckTradeFee" function
+                       (:parent "TradeTypeFilter"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5281 5301]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5245 5499])
+                    ("CheckTradeVenue" function
+                       (:parent "TradeTypeFilter"
+                        :arguments 
+                          ( ("trade" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Trade" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5539 5559]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5501 5978])
+                    ("HandleModifyRequest" function
+                       (:parent "TradeTypeFilter"
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6022 6056]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5980 8223])
+                    ("GetSingleCellUpdate" function
+                       (:parent "TradeTypeFilter"
+                        :arguments 
+                          ( ("table_update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8267 8294])
+                            ("act" variable
+                               (:reference 1
+                                :type ("SetCellTableAction" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8295 8320]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [8225 8857]))                  
+                :type "namespace")
+                nil [55 8861]))          
+      :file "TradeTypeFilter.cpp"
+      :pointmax 8862
+      :fsize 8861
+      :lastmodtime '(21962 60358 691294 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TradeTypeFilter.h"
+      :file "TradeTypeFilter.h"
+      :fsize 860
+      :lastmodtime '(21962 60358 691294 410000)))
+  :file "!home!marselo!Code!alloptions!shared!fix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

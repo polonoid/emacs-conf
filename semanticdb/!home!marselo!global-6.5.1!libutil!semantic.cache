@@ -1,0 +1,21 @@
+;; Object libutil/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libutil/"
+  :tables
+  (list
+    (semanticdb-table "Makefile.am"
+      :major-mode 'makefile-automake-mode
+      :tags 
+        '( ("noinst_LIBRARIES" variable (:default-value ("libgloutil.a")) nil [536 568])
+            ("noinst_HEADERS" variable (:default-value ("assoc.h" "conf.h" "dbop.h" "defined.h" "die.h" "find.h" "getdbpath.h" "global.h" "gparam.h" "gtagsop.h" "locatestring.h" "makepath.h" "path.h" "gpathop.h" "strbuf.h" "strmake.h" "tab.h" "test.h" "token.h" "usable.h" "version.h" "is_unixy.h" "abs2rel.h" "split.h" "strlimcpy.h" "linetable.h" "env.h" "char.h" "date.h" "langmap.h" "varray.h" "idset.h" "strhash.h" "xargs.h" "format.h" "encodepath.h" "rewrite.h" "compress.h" "checkalloc.h" "pool.h" "fileop.h" "statistics.h" "args.h" "logging.h")) nil [569 1005])
+            ("libgloutil_a_SOURCES" variable (:default-value ("assoc.c" "conf.c" "dbop.c" "defined.c" "die.c" "find.c" "getdbpath.c" "gtagsop.c" "locatestring.c" "makepath.c" "path.c" "gpathop.c" "strbuf.c" "strmake.c" "tab.c" "test.c" "token.c" "usable.c" "version.c" "is_unixy.c" "abs2rel.c" "split.c" "strlimcpy.c" "linetable.c" "env.c" "char.c" "date.c" "langmap.c" "varray.c" "idset.c" "strhash.c" "xargs.c" "encodepath.c" "rewrite.c" "compress.c" "checkalloc.c" "pool.c" "fileop.c" "statistics.c" "args.c" "logging.c")) nil [1006 1419])
+            ("AM_CPPFLAGS" variable (:default-value ("@AM_CPPFLAGS@" "-DBINDIR='\"$(bindir)\"'" "-DDATADIR='\"$(datadir)\"'" "-DLOCALSTATEDIR='\"$(localstatedir)\"'" "-DSYSCONFDIR='\"$(sysconfdir)\"'")) nil [1420 1576])
+            ("libgloutil_a_DEPENDENCIES" variable (:default-value ("$(libgloutil_a_LIBADD)")) nil [1577 1628]))          
+      :file "Makefile.am"
+      :pointmax 1628
+      :fsize 1627
+      :lastmodtime '(22007 34546 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marselo!global-6.5.1!libutil!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

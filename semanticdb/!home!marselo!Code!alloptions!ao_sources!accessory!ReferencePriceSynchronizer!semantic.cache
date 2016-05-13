@@ -1,0 +1,185 @@
+;; Object ReferencePriceSynchronizer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ReferencePriceSynchronizer/"
+  :tables
+  (list
+    (semanticdb-table "RPMManager.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RPMParser.h" include nil nil [2 24])
+            ("RPMManager.h" include nil nil [25 48])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [50 99])
+            ("AO_SharedGlobal/Global/tbricks_definitions.h" include nil nil [100 155])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [157 181])
+            ("AO" type
+               (:members 
+                  ( ("RPMManager" function
+                       (:constructor-flag t
+                        :parent "RPMManager"
+                        :type ("RPMManager" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [200 260])
+                    ("RPMManager" function
+                       (:destructor-flag t
+                        :parent "RPMManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [267 296])
+                    ("Start" function
+                       (:parent "RPMManager"
+                        :arguments 
+                          ( ("aRetriKeyword" variable (:type ("tbricks::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [321 351])
+                            ("addr" variable (:type ("tbricks::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [351 372])
+                            ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [372 387]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [298 593])
+                    ("Request" function
+                       (:parent "RPMManager"
+                        :arguments 
+                          ( ("req" variable (:type ("REQUEST_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [621 638])
+                            ("ids" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Set" type
+                                     (:template-specifier 
+                                        ( ("tbricks::Uuid" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [639 678]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [596 1728])
+                    ("_startProcess" function
+                       (:parent "RPMManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1731 1805])
+                    ("_stopProcess" function
+                       (:parent "RPMManager"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1807 1863]))                  
+                :type "namespace")
+                nil [183 1867]))          
+      :file "RPMManager.cpp"
+      :pointmax 1869
+      :fsize 1868
+      :lastmodtime '(21962 60357 961345 251000)
+      :unmatched-syntax '((punctuation 1867 . 1868)))
+    (semanticdb-table "RPMParser.h"
+      :file "RPMParser.h"
+      :fsize 587
+      :lastmodtime '(21962 60357 962345 182000))
+    (semanticdb-table "RPMManager.h"
+      :file "RPMManager.h"
+      :fsize 962
+      :lastmodtime '(21962 60357 961345 251000))
+    (semanticdb-table "RPMParser.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RPMParser.h" include nil nil [1 23])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [25 74])
+            ("stdio.h" include (:system-flag t) nil [76 94])
+            ("string.h" include (:system-flag t) nil [95 114])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [116 140])
+            ("AO" type
+               (:members 
+                  ( ("parse" function
+                       (:parent "RPMParser"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Binary" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [181 209])
+                            ("cList" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("COMMAND" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [210 238]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [159 1004])
+                    ("parce_command" function
+                       (:parent "RPMParser"
+                        :arguments 
+                          ( ("s" variable (:type ("tbricks::String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1050 1069]))                          
+                        :type ("RPMParser::COMMAND" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1006 2014]))                  
+                :type "namespace")
+                nil [142 2017]))          
+      :file "RPMParser.cpp"
+      :pointmax 2034
+      :fsize 2033
+      :lastmodtime '(21962 60357 962345 182000)
+      :unmatched-syntax nil)
+    (semanticdb-table "RPMTCPClient.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RPMTCPClient.h" include nil nil [1 26])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [27 76])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [78 102])
+            ("AO" type
+               (:members 
+                  ( ("RPMTCPClient" function
+                       (:constructor-flag t
+                        :parent "RPMTCPClient"
+                        :type ("RPMTCPClient" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [154 217])
+                    ("RPMTCPClient" function
+                       (:destructor-flag t
+                        :parent "RPMTCPClient"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [219 253])
+                    ("HandleData" function
+                       (:parent "RPMTCPClient"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("tbricks::TCPStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [286 314])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Binary" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [315 344]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [255 403])
+                    ("HandleStreamOpen" function
+                       (:parent "RPMTCPClient"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("tbricks::TCPStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [441 469]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [405 576])
+                    ("HandleStreamClose" function
+                       (:parent "RPMTCPClient"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("tbricks::TCPStream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [615 643]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [578 725]))                  
+                :type "namespace")
+                nil [104 729]))          
+      :file "RPMTCPClient.cpp"
+      :pointmax 731
+      :fsize 730
+      :lastmodtime '(21962 60357 962345 182000)
+      :unmatched-syntax '((punctuation 729 . 730)))
+    (semanticdb-table "RPMTCPClient.h"
+      :file "RPMTCPClient.h"
+      :fsize 832
+      :lastmodtime '(21962 60357 962345 182000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!ReferencePriceSynchronizer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object latency_checker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "latency_checker/"
+  :tables
+  (list
+    (semanticdb-table "tbricks_definitions.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "tbricks_definitions.cpp"
+      :pointmax 3324
+      :fsize 3323
+      :lastmodtime '(21962 60358 721292 321000)
+      :unmatched-syntax nil))
+  :file "!home!marselo!Code!alloptions!support!accessory!latency_checker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

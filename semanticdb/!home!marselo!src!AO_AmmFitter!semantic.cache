@@ -1,0 +1,81 @@
+;; Object AO_AmmFitter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_AmmFitter/"
+  :tables
+  (list
+    (semanticdb-table "VolatilityParametersHistory.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VolatilityParametersHistory.h" include nil nil [108 148])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [150 174])
+            ("VolatilityParametersHistory::kVolatilityModelParamIdsMapping" variable
+               (:constant-flag t
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("VolatilityParametersHistory::VolatilityParamIds" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [176 769])
+            ("SetVolatilityModel" function
+               (:parent "VolatilityParametersHistory"
+                :arguments 
+                  ( ("ao_volatility_model" variable (:type ("Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [824 852]))                  
+                :type "void")
+                nil [771 1140])
+            ("Update" function
+               (:parent "VolatilityParametersHistory"
+                :arguments 
+                  ( ("group_parameters" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("InstrumentGroupParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1183 1234]))                  
+                :type "void")
+                nil [1142 1804])
+            ("Print" function
+               (:parent "VolatilityParametersHistory"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1846 1859]))                  
+                :type "void")
+                nil [1806 2244])
+            ("ValuesChanged" function
+               (:parent "VolatilityParametersHistory"
+                :arguments 
+                  ( ("ao_reference_price" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2294 2327])
+                    ("ao_atm_volatility" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Double" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2334 2366]))                  
+                :type "bool")
+                nil [2246 2653]))          
+      :file "VolatilityParametersHistory.cpp"
+      :pointmax 2655
+      :fsize 2736
+      :lastmodtime '(22200 43036 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "VolatilityParametersHistory.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "VolatilityParametersHistory.h"
+      :pointmax 1823
+      :fsize 1887
+      :lastmodtime '(22200 40926 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AO_SOURCES_ACCESSORY_AO_AMMFITTER_VOLATILITYPARAMETERSHISTORY_H_")
+          )
+))
+  :file "!home!marselo!src!AO_AmmFitter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,210 @@
+;; Object AO_InstrumentGroupReporter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AO_InstrumentGroupReporter/"
+  :tables
+  (list
+    (semanticdb-table "MetricsGroupsProvider.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MetricsGroupsProvider.h" include nil nil [105 139])
+            ("boost/assign/list_of.hpp" include (:system-flag t) nil [140 175])
+            ("boost/bind.hpp" include (:system-flag t) nil [176 201])
+            ("tbricks_definitions.h" include nil nil [202 234])
+            ("AO_SharedGlobal/Global/GlobalDefines.h" include nil nil [235 284])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [286 310])
+            ("unnamed" type
+               (:members 
+                  ( ("GetGroupsFromMetricsTable" function
+                       (:arguments 
+                          ( ("table" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Table" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [390 409]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("InstrumentGroupIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [325 789]))                  
+                :type "namespace")
+                nil [312 792])
+            ("AO" type
+               (:members 
+                  ( ("GroupReporter" type
+                       (:members 
+                          ( ("MetricsGroupsProvider" function
+                               (:constructor-flag t
+                                :parent "MetricsGroupsProvider"
+                                :arguments 
+                                  ( ("customGroup" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [883 937])
+                                    ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [939 955])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [955 961])
+                                    ("" variable (:type ("onChanged" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [970 980]))                                  
+                                :type ("MetricsGroupsProvider" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [836 1344])
+                            ("OnParams" function
+                               (:parent "MetricsGroupsProvider"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1346 1838])
+                            ("OnFailure" function
+                               (:parent "MetricsGroupsProvider"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1840 1898])
+                            ("GetGroups" function
+                               (:parent "MetricsGroupsProvider"
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("tbricks::InstrumentGroupIdentifier" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [1900 2016]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [809 2019]))                  
+                :type "namespace")
+                nil [794 2051]))          
+      :file "MetricsGroupsProvider.cpp"
+      :pointmax 2071
+      :fsize 2070
+      :lastmodtime '(22006 31481 345662 146000)
+      :unmatched-syntax '((punctuation 968 . 969) (CONST 963 . 968) (punctuation 961 . 962) (semantic-list 959 . 961) (punctuation 954 . 955)))
+    (semanticdb-table "MetricsGroupsProvider.h"
+      :file "MetricsGroupsProvider.h"
+      :fsize 1035
+      :lastmodtime '(22006 31481 345662 146000))
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 21998
+      :lastmodtime '(22006 31481 350661 823000))
+    (semanticdb-table "Reporter.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Reporter.h" include nil nil [1 22])
+            ("tbricks_definitions.h" include nil nil [23 55])
+            ("boost/assign/list_of.hpp" include (:system-flag t) nil [56 91])
+            ("boost/bind.hpp" include (:system-flag t) nil [92 117])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [119 143])
+            ("Tbricks::Messages::InstrumentGroupReporter" using (:type ("Tbricks::Messages::InstrumentGroupReporter" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [144 203])
+            ("unnamed" type
+               (:members 
+                  ( ("CreateThriftMessage" function
+                       (:arguments 
+                          ( ("group" variable (:type ("tbricks::InstrumentGroup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [247 278])
+                            ("groupParams" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupAggregateParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [280 343]))                          
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [217 1847]))                  
+                :type "namespace")
+                nil [205 1849])
+            ("AO" type
+               (:members 
+                  ( ("Reporter::RECONNECTION_WAIT_TIME" variable
+                       (:constant-flag t
+                        :type ("tbricks::Duration" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1867 1947])
+                    ("list_of" function
+                       (:parent "boost::assign"
+                        :arguments 
+                          ( ("" variable (:type ("aoinstrumentgroupreporter::instrument_parameters::MarketMakingPortfolio" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2056 2129]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2031 2199])
+                    ("Reporter" function
+                       (:constructor-flag t
+                        :parent "Reporter"
+                        :arguments 
+                          ( ("hostname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2299 2331])
+                            ("port" variable (:type "int") (reparse-symbol arg-sub-list) [2333 2342])
+                            ("customGroup" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2344 2398]))                          
+                        :type ("Reporter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2278 2519])
+                    ("OnGroups" function
+                       (:parent "Reporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2521 2913])
+                    ("OnParametersReady" function
+                       (:parent "Reporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2915 3174])
+                    ("OnParametersChanged" function
+                       (:parent "Reporter"
+                        :arguments 
+                          ( ("group" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3211 3259]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3176 3454])
+                    ("OnFailure" function
+                       (:parent "Reporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3456 3501])
+                    ("Connect" function
+                       (:parent "Reporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3503 3901])
+                    ("OnConnected" function
+                       (:parent "Reporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3903 4025])
+                    ("OnDisconnected" function
+                       (:parent "Reporter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4027 4247])
+                    ("GetState" function
+                       (:parent "Reporter"
+                        :type ("tbricks::String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4249 4318])
+                    ("SendInstrumentGroupUpdate" function
+                       (:parent "Reporter"
+                        :arguments 
+                          ( ("groupId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4363 4413])
+                            ("groupParams" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentGroupAggregateParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4415 4478]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4320 4843]))                  
+                :type "namespace")
+                nil [1851 4846]))          
+      :file "Reporter.cpp"
+      :pointmax 4847
+      :fsize 4846
+      :lastmodtime '(22006 31481 345662 146000)
+      :unmatched-syntax '((punctuation 2275 . 2276) (semantic-list 2201 . 2275) (semantic-list 2127 . 2129) (punctuation 2028 . 2029) (symbol 2017 . 2027) (punctuation 2016 . 2017) (punctuation 2015 . 2016) (symbol 2007 . 2015) (punctuation 2005 . 2006) (symbol 1976 . 2005) (punctuation 1975 . 1976) (punctuation 1974 . 1975) (symbol 1967 . 1974) (punctuation 1966 . 1967) (symbol 1960 . 1966) (punctuation 1959 . 1960) (punctuation 1958 . 1959) (symbol 1955 . 1958) (CONST 1949 . 1954)))
+    (semanticdb-table "Reporter.h"
+      :file "Reporter.h"
+      :fsize 1554
+      :lastmodtime '(22006 31481 345662 146000)))
+  :file "!home!marselo!Code!alloptions!ao_sources!accessory!AO_InstrumentGroupReporter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

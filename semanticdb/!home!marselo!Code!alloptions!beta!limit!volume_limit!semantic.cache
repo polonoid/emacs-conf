@@ -1,0 +1,237 @@
+;; Object volume_limit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "volume_limit/"
+  :tables
+  (list
+    (semanticdb-table "VolumeLimit.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__TBRICKS__STRATEGY__VOLUME_LIMIT_PROVIDER__H" variable (:constant-flag t) nil [63 108])
+            ("shared/API.h" include nil nil [110 133])
+            ("tbricks_definitions.h" include nil nil [134 166])
+            ("tbricks" using (:type ("tbricks" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [168 192])
+            ("VolumeLimit" type
+               (:superclasses 
+                  ( ("Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("TradingLimitRuleProvider" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("InstrumentAggregateParameters::Stream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [329 336])
+                    ("VolumeLimit" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [353 388])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [389 426]))                          
+                        :type ("VolumeLimit" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [341 427])
+                    ("VolumeLimit" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [445 450]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [432 451])
+                    ("private" label nil (reparse-symbol classsubparts) [453 461])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [487 522])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [527 559])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [564 598])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [636 669]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [603 670])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [710 737]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [675 738])
+                    ("HandleInstrumentAggregateParameters" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("streamId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [836 869])
+                            ("instrumentId" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [914 955])
+                            ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("InstrumentAggregateParameters::Update" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1000 1052]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [787 1053])
+                    ("HandleStreamOpen" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1118 1149]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1088 1150])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1186 1217]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1155 1218])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1255 1286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1223 1287])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1323 1354]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1292 1355])
+                    ("HandleProvideGeneralRulesRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradingLimitRuleRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1475 1515]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1400 1516])
+                    ("HandleProvideInstrumentRulesRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TradingLimitRuleRequest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1599 1639])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1668 1698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1521 1699])
+                    ("private" label nil (reparse-symbol classsubparts) [1714 1722])
+                    ("LimitData" type
+                       (:members 
+                          ( ("m_iid" variable (:type ("InstrumentIdentifier" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1758 1804])
+                            ("m_requests" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("TradingLimitRuleRequest" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1813 1864])
+                            ("m_parStream" variable (:type ("InstrumentAggregateParameters::Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1873 1925])
+                            ("m_rule" variable (:type ("TradingLimitRule" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1934 1981])
+                            ("m_parameters" variable (:type ("InstrumentAggregateParameters" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1990 2043]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [1727 2050])
+                    ("IIDtoLimitData" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("InstrumentIdentifier" type nil nil nil)
+                                  ("LimitData" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2056 2118])
+                    ("m_instrDatas" variable (:type ("IIDtoLimitData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2123 2151])
+                    ("StreamtoLimitData" type
+                       (:typedef ("Hash" type
+                             (:template-specifier 
+                                ( ("StreamIdentifier" type nil nil nil)
+                                  ("InstrumentIdentifier" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Hash"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2157 2229])
+                    ("m_streamDatas" variable (:type ("StreamtoLimitData" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2234 2266]))                  
+                :type "class")
+                nil [194 2269]))          
+      :file "VolumeLimit.h"
+      :pointmax 2327
+      :fsize 2326
+      :lastmodtime '(21962 60358 141332 715000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__TBRICKS__STRATEGY__VOLUME_LIMIT_PROVIDER__H")
+          )
+)
+    (semanticdb-table "tbricks_definitions.h"
+      :file "tbricks_definitions.h"
+      :fsize 3330
+      :lastmodtime '(21962 60358 141332 715000)))
+  :file "!home!marselo!Code!alloptions!beta!limit!volume_limit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

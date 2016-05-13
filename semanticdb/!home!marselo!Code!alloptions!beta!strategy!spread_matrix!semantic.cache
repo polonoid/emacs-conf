@@ -1,0 +1,482 @@
+;; Object spread_matrix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spread_matrix/"
+  :tables
+  (list
+    (semanticdb-table "SpreadMatrix.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SPREADMATRIX_H_" variable (:constant-flag t) nil [2451 2466])
+            ("SpreadCell.h" include nil nil [2468 2491])
+            ("ControlCell.h" include nil nil [2492 2516])
+            ("SpreadConvenience.h" include nil nil [2517 2547])
+            ("shared/API.h" include nil nil [2548 2571])
+            ("SpreadMatrix" type
+               (:superclasses 
+                  ( ("tbricks::Strategy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("tbricks::InstrumentStream::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("SpreadCell::IHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2693 2700])
+                    ("SpreadMatrix" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("reason" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InitializationReason" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2718 2763])
+                            ("parameters" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2764 2811]))                          
+                        :type ("SpreadMatrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2705 2812])
+                    ("SpreadMatrix" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2817 2833])
+                    ("HandleDeleteRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2896 2901]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2863 2902])
+                    ("HandleRunRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2937 2942]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2907 2943])
+                    ("HandlePauseRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2980 2985]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2948 2986])
+                    ("HandleModifyRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("modifier" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyModifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3024 3067]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2991 3068])
+                    ("HandleValidateRequest" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("context" variable
+                               (:reference 1
+                                :type ("tbricks::ValidationContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3108 3144]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3073 3145])
+                    ("HandleInstrument" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3196 3237])
+                            ("instrument" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::Instrument" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3238 3277]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3166 3278])
+                    ("HandleInstrumentInvalidate" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3323 3364])
+                            ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3409 3450]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3283 3451])
+                    ("HandleStreamStale" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3488 3529]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3457 3530])
+                    ("HandleStreamFailed" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3567 3608]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3535 3609])
+                    ("HandleSnapshotEnd" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StreamIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3645 3686]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3614 3687])
+                    ("HandleCellDataUpdated" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("updatedData" variable
+                               (:reference 1
+                                :type ("SpreadCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3746 3771])
+                            ("type" variable (:type ("SpreadCell::IHandler::UpdateType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3772 3810]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3711 3811])
+                    ("protected" label nil (reparse-symbol classsubparts) [3813 3823])
+                    ("Instruments" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("tbricks::Instrument" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3828 3881])
+                    ("SpreadCellCollection" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("SpreadCell" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3886 3941])
+                    ("ControlCellMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("ControlCell" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [3946 4022])
+                    ("DepthStates" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("tbricks::InstrumentIdentifier" type nil nil nil)
+                                  ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [4027 4093])
+                    ("m_futuresGroupIdentifier" variable (:type ("tbricks::InstrumentGroupParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4099 4158])
+                    ("m_calendarsGroupIdentifier" variable (:type ("tbricks::InstrumentGroupParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4163 4224])
+                    ("m_steps" variable (:type ("tbricks::IntegerParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4229 4263])
+                    ("m_showFutures" variable (:type ("tbricks::BooleanParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4268 4308])
+                    ("m_hideEmptyRows" variable (:type ("tbricks::BooleanParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4313 4355])
+                    ("m_spreadMatrix" variable (:type ("tbricks::TableParameter" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4360 4399])
+                    ("m_futureStream" variable (:type ("tbricks::InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4405 4446])
+                    ("m_calendarStream" variable (:type ("tbricks::InstrumentStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4451 4494])
+                    ("m_allFutures" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4523 4548])
+                    ("m_allCalendars" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4553 4580])
+                    ("m_visibleFutures" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4585 4614])
+                    ("m_visibleCalendars" variable (:type ("Instruments" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4619 4650])
+                    ("m_spreadCells" variable (:type ("SpreadCellCollection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4679 4714])
+                    ("m_controlCellMap" variable (:type ("ControlCellMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4719 4751])
+                    ("m_savedDepthStates" variable (:type ("DepthStates" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4858 4889])
+                    ("GetShowDepth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4912 4953]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4894 4954])
+                    ("SetShowDepth" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4977 5018])
+                            ("show" variable (:type "bool") (reparse-symbol arg-sub-list) [5019 5029]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4959 5030])
+                    ("SetDefaultValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5036 5060])
+                    ("OpenStreams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5066 5085])
+                    ("CloseStreams" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5090 5110])
+                    ("ZeroAllValues" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5116 5137])
+                    ("RefreshAll" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5142 5160])
+                    ("ResetSpreadMatrix" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5166 5191])
+                    ("SetupFutures" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5196 5216])
+                    ("SetupCalendars" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5221 5243])
+                    ("SetupControlCells" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5248 5273])
+                    ("SetupSpreadCells" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5278 5302])
+                    ("RefreshSpreadMatrix" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5307 5334])
+                    ("AddCellToMatrix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("ICell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5469 5482])
+                            ("sortingOffset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5483 5504]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5448 5505])
+                    ("AddDepthRowsForCell" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("ICell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5535 5548]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5510 5549])
+                    ("AddSpreadCellToMatrix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("ICell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5617 5630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5590 5631])
+                    ("UpdateMatrixSpreadCellData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SpreadCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5704 5728]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5672 5729])
+                    ("UpdateMatrixSpreadCellDepthData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SpreadCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5805 5829]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5768 5830])
+                    ("UpdateMatrixSpreadCellBBOData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SpreadCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5904 5928]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5869 5929])
+                    ("GetRowForSpreadCell" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SpreadCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5992 6016]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5968 6017])
+                    ("GetRowForSpreadCellAndDepthLevel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SpreadCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6095 6119])
+                            ("level" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6120 6133]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6058 6134])
+                    ("AddControlCellToMatrix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("ICell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6248 6261]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6220 6262])
+                    ("UpdateMatrixControlCellData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ControlCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6336 6361]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6303 6362])
+                    ("GetRowForControlCell" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ControlCell" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6392 6417]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [6367 6418])
+                    ("HandleTableActions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("update" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::StrategyParameters" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6543 6586]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6519 6587])
+                    ("GetFutureFromRow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6639 6650]))                          
+                        :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6592 6651])
+                    ("DeleteDepthRowsForFuture" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("futureID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6730 6777]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6700 6778])
+                    ("AddDepthRowsForFuture" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("futureID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6810 6857]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6783 6858])
+                    ("UpdateRowsForFuture" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("futureID" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6888 6935]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6863 6936])
+                    ("FindCalendar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("first" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6975 7019])
+                            ("second" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tbricks::InstrumentIdentifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7057 7102]))                          
+                        :type ("tbricks::Instrument" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6942 7103]))                  
+                :type "class")
+                nil [2573 7106]))          
+      :file "SpreadMatrix.h"
+      :pointmax 7137
+      :fsize 7136
+      :lastmodtime '(21962 60358 251325 54000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SPREADMATRIX_H_")
+          )
+)
+    (semanticdb-table "SpreadCell.h"
+      :file "SpreadCell.h"
+      :fsize 2800
+      :lastmodtime '(21962 60358 251325 54000))
+    (semanticdb-table "ControlCell.h"
+      :file "ControlCell.h"
+      :fsize 1919
+      :lastmodtime '(21962 60358 250325 124000))
+    (semanticdb-table "SpreadConvenience.h"
+      :file "SpreadConvenience.h"
+      :fsize 396
+      :lastmodtime '(21962 60358 251325 54000)))
+  :file "!home!marselo!Code!alloptions!beta!strategy!spread_matrix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

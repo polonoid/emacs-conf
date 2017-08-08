@@ -1,170 +1,2232 @@
-((("rtags-find-references" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("set" .
-   [1 0 0])
-  ("u_map" .
-   [0 0 0 1 0])
-  ("m" .
-   [1])
-  ("unordered_map" .
-   [0 0 0 2 0 0 0 0 0 0 0 0 0])
-  ("MessageHeaderOut" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("(const tbricks::String &a_name)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("SetName" .
-   [1 0 0 0 0 0 0])
-  ("clearParametersPlugin_" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("clearParametersPlugin" .
-   [1 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("instrumentStream_" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("GetUuid" .
-   [1 0 0 0 0 0 0])
-  ("mmPluginInstrumentGroups_" .
-   [0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("map" .
-   [7 1 0])
-  ("m_expandedParentGroups" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("(const tbricks::StrategyParameters &parameters)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("GetParameter" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("m_serializedData" .
-   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0])
-  ("m_streamManager" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("m_stream" .
-   [0 0 0 1 0 0 0 0])
-  ("a1" .
-   [3 0])
-  ("a2" .
-   [3 0])
-  ("b" .
-   [2])
-  ("make_pair" .
-   [1 0 0 0 0 0 0 0 0])
-  ("pair" .
-   [1 0 0 0])
-  ("p" .
-   [1])
-  ("func" .
-   [1 0 0 0])
-  ("min_element" .
-   [0 0 0 1 0 0 0 0 0 0 0])
-  ("first" .
-   [2 0 0 0 0])
-  ("last" .
-   [3 0 0 0])
-  ("T" .
-   [3])
-  ("i" .
-   [3])
-  ("value" .
-   [2 0 0 0 0])
-  ("size_t" .
-   [2 0 0 0 0 0])
-  ("auto-complete" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("vector" .
-   [4 0 0 0 1 0])
-  ("std" .
-   [38 0 0])
-  ("instruments" .
+((("iter_bool_pair" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("instrumentNamesMap_" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("piecewise_construct" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("hq_instance" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("getSessions" .
    [1 0 0 0 0 0 0 0 0 0 0])
-  ("(size_type __n" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("(size_type __n, char __c)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("resize" .
-   [1 0 0 0 1 0])
-  ("test_str" .
-   [2 0 0 0 3 0 0 0])
-  ("GetParameters" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("VenueMicCurrencyKeyType" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("AssignedSchedules" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("schedules" .
-   [2 0 0 0 0 0 0 0 0])
-  ("m_tableParametterFeeSchedules" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("m_tableParametterFeeSchedulesOld" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("sche" .
-   [1 0 0 0])
-  ("capacity" .
+  ("timestamp_t" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("AddQuotedField" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("instrumentname" .
+   [4 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Instrument" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("memory" .
+   [1 0 0 0 0 0])
+  ("instrument_names" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("instrumentNames_" .
+   [0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0])
+  ("InstrumentNames" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("make_shared" .
+   [1 0 0 0 0 0 1 0 0 0 0])
+  ("shared_ptr" .
+   [8 0 0 0 0 0 0 0 0 0])
+  ("InstrumentName" .
+   [8 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("security" .
    [1 0 0 0 0 0 0 0])
-  ("()" .
-   [0 3])
-  ("/opt/tbricks/sdk" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setenv" .
-   [1 0 0 0 0 0])
-  ("1" .
-   [2])
-  ("cout" .
-   [17 0 1 0])
-  ("val" .
-   [2 0 0])
-  ("endl" .
-   [8 0 0 1])
-  ("boost/signals2.hpp" .
-   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("include" .
-   [0 0 0 0 1 1 0])
-  ("main" .
+  ("GetInstrumentName" .
+   [0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("instrumentName" .
+   [4 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("iter" .
    [4 0 0 0])
-  ("boost" .
-   [2 0 0 0 0])
-  ("signals2" .
-   [0 0 0 0 0 0 0 1])
-  ("signal" .
+  ("atomic" .
    [1 0 0 0 0 0])
-  ("connect" .
-   [1 0 0 0 2 0 0])
-  ("f1" .
-   [1 0])
-  ("(const " .
-   [0 0 0 0 0 0 1])
-  ("(const slot_type &slot)" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("f2" .
-   [1 0])
-  ("s" .
-   [1])
-  ("boost/optional.hpp" .
-   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("optional" .
-   [0 0 0 0 0 1 0 0])
-  ("d" .
-   [2])
-  ("CXX" .
-   [1 0 0])
-  ("it" .
-   [3 0])
-  ("(basic_ostream<_CharT, _Traits> &__os)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("A" .
-   [3])
-  ("a" .
-   [6])
-  ("m_userPreferencesStream" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("require" .
-   [1 0 0 0 0 1 0])
-  ("GetName" .
+  ("/opt/gcc-" .
+   [3 0 0 0 0 0 0 0 0])
+  ("GCC" .
+   [2 0 0])
+  ("nlohmann" .
+   [1 0 0 0 0 0 0 0])
+  ("timestamp_pair" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kExecutingTraderTag" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("trader_" .
+   [5 0 0 0 0 0 0])
+  ("trader" .
+   [4 0 0 0 0 0])
+  ("exec_rep" .
+   [2 0 0 0 0 0 0 0])
+  ("Decoded" .
+   [0 0 0 1 0 1 0])
+  ("decoder" .
    [1 0 0 0 0 0 0])
-  ("mmPluginInstrumentIds_" .
-   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("IsLast" .
+  ("decoder_" .
+   [0 0 0 0 1 0 0 0])
+  ("encodedSecurityId_" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SecurityIdDecoder" .
+   [1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("enableConcurrentBroadasts" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("decoded_sec_id" .
+   [0 0 0 5 2 0 0 0 0 0 0 0 0 0])
+  ("enc_sec_id" .
+   [4 0 0 0 0 0 2 0 0 0])
+  ("lexical_cast" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("boost/lexical_cast.hpp" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("db_query_result" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("exchange_name" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("exchangeName_" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("exec" .
+   [1 0 0 0])
+  ("id" .
+   [2 0])
+  ("to_string" .
+   [2 0 0 0 0 0 0 0 0])
+  ("ClOrdId" .
+   [0 0 0 1 0 0 0])
+  ("Client" .
    [0 0 1 0 0 0])
-  ("underlying" .
-   [0 0 0 0 0 0 0 0 1 0])
+  ("fix_exec_report" .
+   [1 0 0 0 0 1 1 0 0 0 0 0 0 0 0])
+  ("application" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("sessions_" .
+   [4 0 0 0 0 0 0 0 0])
+  ("SessionID" .
+   [2 0 1 0 0 0 0 0 0])
+  ("exec_rep_cancel" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("exec_resp" .
+   [3 0 0 1 0 0 0 0 0])
+  ("ExecResp" .
+   [0 0 1 0 0 0 0 0])
+  ("query_exec_resp" .
+   [4 0 0 0 0 0 0 1 1 0 0 0 0 0 0])
+  ("client_order_ids" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GenerateExecRespQuery" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("table_name" .
+   [2 0 0 0 0 1 0 0 0 0])
+  ("MemoryWriter" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("query_filter" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("cl_ord_ids" .
+   [1 0 1 0 0 0 0 0 0 0])
+  ("cl_ord_id" .
+   [2 0 1 0 1 0 0 0 0])
+  ("GetDouble" .
+   [3 0 0 1 0 0 0 0 0])
+  ("queryOrdersTime_" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetString" .
+   [5 0 0 2 2 0 0 0 1])
+  ("db_found" .
+   [1 0 0 0 0 0 0 0])
+  ("Parse" .
+   [0 0 0 1 0])
+  ("document" .
+   [7 0 0 0 0 1 0 1])
+  ("doc" .
+   [4 0 3])
+  ("Database" .
+   [0 0 0 0 1 0 0 0])
+  ("config_file" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("group_id" .
+   [3 0 1 0 0 0 0 0])
+  ("group" .
+   [3 0 0 0 0])
+  ("segment_pos" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("segment" .
+   [7 0 0 1 1 0 0])
+  ("db_" .
+   [11 0 0])
+  ("db" .
+   [2 0])
+  ("db_utf8" .
+   [0 0 0 0 1 0 0])
+  ("raw" .
+   [1 0 0])
+  ("influxdb" .
+   [0 0 0 1 0 0 0 0])
+  ("url_" .
+   [2 0 0 0])
+  ("url" .
+   [2 0 0])
+  ("InfluxPoller" .
+   [0 0 0 3 0 0 0 0 0 0 0 0])
+  ("ct" .
+   [9 0])
+  ("store_factory" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("log_factory" .
+   [0 0 0 0 0 1 1 0 0 0 0])
+  ("mar_reporting" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("DropCopyApplication" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("CPUS" .
+   [1 0 0 0])
+  ("dbSocket" .
+   [0 0 1 0 0 0 0 0])
+  ("mdInTime" .
+   [3 0 0 0 0 0 0 0])
+  ("activationSendTime" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activation" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("sendTime" .
+   [1 0 0 0 0 0 0 0])
+  ("dc" .
+   [6 0])
+  ("(const value_type &__x)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("sleep_time" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("FLD_SEQ_NUM" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("FLD_CB_SESSION" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("slopeSign" .
+   [3 0 0 0 0 0 0 0 0])
+  ("true" .
+   [1 0 0 0])
+  ("slope_" .
+   [3 0 0 0 0 0])
+  ("bid_val" .
+   [1 0 0 0 0 0 0])
+  ("SELL" .
+   [1 0 0 0])
+  ("delta_sign_bit" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("max_absolute_delta" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("delta_sign" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("abs" .
+   [3 0 0])
+  ("delta" .
+   [4 0 0 0 0])
+  ("GetType" .
+   [3 0 0 0 0 0 0])
+  ("market" .
+   [2 0 0 0 0 0])
+  ("UNDERLYING" .
+   [0 0 1 0 0 0 0 0 0 0])
+  ("time_before_throttle" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("time_after_throttle" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetTime" .
+   [6 0 0 0 0 0 0])
+  ("ac" .
+   [2 0])
+  ("cbSession" .
+   [4 0 0 0 0 0 0 0 0])
+  ("forward_as_tuple" .
+   [1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0])
+  ("order_id" .
+   [5 0 0 0 0 0 0 0])
+  ("quantity_" .
+   [6 0 0 1 0 0 0 0 0])
+  ("price_" .
+   [7 0 0 0 0 1])
+  ("OrderData" .
+   [2 1 0 0 0 0 0 0 0])
+  ("stored_order_pair" .
+   [3 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("stored_order" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("ntoh" .
+   [5 0 0 0])
+  ("Desired" .
+   [1 0 0 0 0 0 0])
+  ("ulBidCenteredValue" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("hedge_price" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("centerSource" .
+   [4 0 0 0 0 0 0 0 0 0 0 0])
+  ("CenterSource" .
+   [7 0 0 0 0 0 0 0 0 0 0 0])
+  ("hedge_side" .
+   [6 0 0 0 0 0 0 0 0 0])
+  ("center_source" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("uaskdesireds" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("uask" .
+   [1 0 0 0])
+  ("kGammaFixedBinaryDigits" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kGammaMultiplier" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("kExecutionDecision" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("kTradingCapacity" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("kDirectElectronicAccess" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fix_message_field" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("B" .
+   [2])
+  ("sizeof" .
+   [0 0 0 1 0 0])
+  ("r" .
+   [1])
+  ("nodes" .
+   [7 0 0 0 0])
+  ("stdint" .
+   [1 0 0 0 0 0])
+  ("ts" .
+   [1 0])
+  ("ao" .
+   [30 0])
+  ("ss" .
+   [8 0])
+  ("c3" .
+   [1 0])
+  ("halfMinimumSmartDeltaSpread" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("expectedSmartDeltaSpread" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("expected" .
+   [1 0 0 0 0 0 0 0])
+  ("underlyingMoveInTimePeriod" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("EncodeMerge" .
+   [5 0 0 0 0 0 0 0 0 0 0])
+  ("measure_time" .
+   [0 0 1 0 0 0 0 0 0 0 0 0])
+  ("kdefaultAskPrice" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kdefaultBidPrice" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("orig_time" .
+   [1 0 0 0 0 0 0 0 0])
+  ("time" .
+   [8 0 0 0])
+  ("sending_time" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("fill" .
+   [6 0 0 0])
+  ("influx_type" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("ExecType" .
+   [0 0 0 0 1 0 0 0])
+  ("ExecID" .
+   [0 0 0 1 1 0])
+  ("msghdr" .
+   [1 0 0 0 0 0])
+  ("kMaxInterfaceNum" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("to_ullong" .
+   [0 0 2 0 0 0 0 0 0])
+  ("ul" .
+   [2 0])
+  ("uls" .
+   [2 0 0])
+  ("desireds_up_to_date" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("ts1" .
+   [3 0 0])
+  ("transform" .
+   [1 0 0 0 0 0 0 0 0])
+  ("swTimestamp" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("configuration" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("LogMaxUnderlyingDeviationBreach" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ud_breach" .
+   [2 0 1 0 2 3 0 0 0])
+  ("MaxUnderlyingDeviationBreach" .
+   [0 0 0 3 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("hedge" .
+   [2 0 0 0 0])
+  ("delta_one_trade" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("ires" .
+   [1 0 0 0])
+  ("res" .
+   [4 0 0])
+  ("small_num" .
+   [1 0 0 0 0 0 0 0 0])
+  ("option_multiplier" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("(const fpga::UnderlyingSettings &settings)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("GetUnderlyingMoveInTimePeriod" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("undelryingmoveintimeperiod" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SetUndelryingMoveInTimePeriod" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("underlyingMoveInTimePeriod_" .
+   [0 0 0 0 1 1 2 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SetShootOnOutrightsBBOChange" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetShootOnOutrightsBBOChange" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("shootOnOutrightsBBOChange" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("shootOnCombosBBOChange" .
+   [0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kDefaultActiveTradeTimeout" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kDefaultActiveTradesMaxNumber" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activeTradeMaxNumber" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activeTradeTimeout" .
+   [1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("tv_sec" .
+   [0 0 0 1 0 0])
+  ("ts2" .
+   [4 0 0])
+  ("GetActiveTradeTimeout" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetActiveTradesMaxVolume" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetActiveTradesMaxNumber" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activetradetimeout" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SetActiveTradeTimeout" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activetradesmaxnumber" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activeTradesMaxNumber_" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0])
+  ("SetActiveTradesMaxNumber" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activetradesmaxvolume" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cb" .
+   [5 0])
+  ("SetActiveTradesMaxVolume" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("hiddensCircuitBreaker" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("activeTradeTimeout_" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0])
+  ("activeTradesMaxVolume_" .
+   [1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("circuit_breaker" .
+   [0 0 2 7 0 0 0 1 0 0 0 0 0 0 0])
+  ("activeTradesMaxVolume" .
+   [0 0 0 0 2 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("HiddensCircuitBreaker" .
+   [6 0 3 2 9 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("underlying_settings" .
+   [0 0 4 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetUnderlyingSettings" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("underlyingSettings" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("underlyingsettings" .
+   [2 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("maxUnderlyingDeviation" .
+   [1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("tbricks_sockets_per_zmq_io_thread" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ProductCount" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("(Configuration &&)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("info_per_thread" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("InfoPerThread" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("const" .
+   [1 0 0 0 0])
+  ("dbZmq" .
+   [1 0 0 0 0])
+  ("host_port_pair" .
+   [0 0 0 1 2 0 0 0 0 0 0 0 0 0])
+  ("(const std::string &exporter_addr)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("ExtractHostNamePort" .
+   [2 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("host_name_end" .
+   [1 0 0 0 3 0 0 0 0 0 0 0 0])
+  ("host_name_start" .
+   [0 0 0 0 3 0 0 0 0 0 0 0 0 0 0])
+  ("substr" .
+   [1 1 0 0 0 0])
+  ("(c" .
+   [0 1])
+  ("export" .
+   [0 0 1 0 0 0])
+  ("find_last_of" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("exporter_addr" .
+   [4 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("find" .
+   [4 0 0 0])
+  ("hints" .
+   [1 0 0 0 0])
+  ("hostname" .
+   [4 0 0 0 0 0 0 0])
+  ("ip" .
+   [1 0])
+  ("sin_port" .
+   [1 0 0 0 0 0 0 0])
+  ("port" .
+   [5 0 0 0])
+  ("dataMap" .
+   [1 0 0 0 0 0 0])
+  ("mdTime" .
+   [0 0 1 0 0 0])
+  ("applSeqNum" .
+   [1 0 1 0 0 1 0 0 0 0])
+  ("lastApplSeqNum" .
+   [4 0 1 0 1 1 2 1 0 0 0 0 0 0])
+  ("num_of_products" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("instances_size" .
+   [0 0 0 0 2 1 0 0 0 0 0 0 0 0])
+  ("products_per_line" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("instrumentPriceMultiplier" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("price" .
+   [20 0 0 0 0])
+  ("nullptr_t" .
+   [0 0 0 0 1 0 0 0 0])
+  ("(uint64_t cl_ord_id)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("FindOrderIndex" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ThreadFactory" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("append" .
+   [1 0 0 0 0 0])
+  ("criticalMask" .
+   [2 0 0 1 0 1 0 0 0 0 0 0])
+  ("thread_name_buf" .
+   [1 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("tbricks_thread_name" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("info" .
+   [4 0 0 0])
+  ("Info" .
+   [2 0 1 0])
+  ("Config" .
+   [0 0 0 0 0 1])
+  ("cmake-ide-build-dir" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cmake-ide" .
+   [1 0 0 0 0 0 0 0 0])
+  ("setq" .
+   [1 0 0 0])
+  ("askVolume" .
+   [2 0 0 0 0 0 0 0 0])
+  ("bidVolume" .
+   [2 0 0 0 0 0 0 0 0])
+  ("empty_BBO" .
+   [3 0 0 0 0 0 0 0 0])
+  ("stopMulticastPred_" .
+   [0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("close_socket_pred" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetAskVolume" .
+   [1 0 0 0 0 0 1 0 0 0 0 0])
+  ("underlying_BBO" .
+   [0 0 0 1 0 0 0 1 0 0 0 0 0 0])
+  ("orderBook" .
+   [0 0 1 0 0 0 0 0 0])
+  ("snapshotCycleData" .
+   [0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("PrintOB" .
+   [1 0 0 0 0 0 0])
+  ("eobi_snapshot_feed" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("instrumentSummary" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nullptr" .
+   [2 0 0 0 0 0 0])
+  ("msg_" .
+   [2 0 0 0])
+  ("QueuedMessage" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("PacketHeader_ID" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("PartialOrderExecution_ID" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("FullOrderExecution_ID" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ExecutionSummary_ID" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("OrderDelete_ID" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("OrderModifySamePrio_ID" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("OrderModify_ID" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("OrderAdd_ID" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("u" .
+   [2])
+  ("my_union" .
+   [4 0 0 0 0 0 0 0])
+  ("buff" .
+   [2 0 0 0])
+  ("sendingTime_" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("transactionTime_" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("execution_report_cancel" .
+   [0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("DateTimeToNanos" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("loc" .
+   [1 0 0])
+  ("S" .
+   [1])
+  ("NoOpp" .
+   [1 0 0 0 0])
+  ("influx" .
+   [1 0 0 1 0 0])
+  ("Send" .
+   [9 0 0 0])
+  ("m_ss" .
+   [1 0 0 0])
+  ("stringstream" .
+   [3 0 0 0 0 0 0 0 0 0 0 0])
+  ("name" .
+   [8 0 0 0])
+  ("pd" .
+   [1 0])
+  ("SecurityData" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("v" .
+   [2])
+  ("localDesiredCenter" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("key" .
+   [5 0 0])
+  ("emplace" .
+   [2 0 0 0 0 0 0])
+  ("insert" .
+   [1 0 0 0 0 0])
+  ("kMaxVolume" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("k" .
+   [1])
+  ("stdint.h" .
+   [4 0 0 0 0 0 1 1])
+  ("stdio.h" .
+   [0 0 0 0 1 0 0])
+  ("pos" .
+   [2 0 0])
+  ("legs_size" .
+   [0 0 0 1 0 0 0 0 0])
+  ("kMaxLegSize" .
+   [1 0 1 0 0 0 0 0 0 0 0])
+  ("optionMultiplier" .
+   [0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Configuration" .
+   [0 0 0 2 0 1 0 0 0 0 0 0 0])
+  ("hqInstance" .
+   [0 0 3 2 0 0 0 0 0 0])
+  ("HQDataSingleton.h" .
+   [1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("dst_hq_data" .
+   [0 0 0 1 0 1 0 0 0 0 0])
+  ("AtomicUpdateIfEmpty" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("other" .
+   [7 0 0 0 0])
+  ("src_hq_data" .
+   [1 0 1 0 0 0 0 0 0 0 0])
+  ("src_bbo_data" .
+   [0 0 0 3 0 0 0 0 0 0 0 0])
+  ("securityData" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("securityID" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("f" .
+   [15])
+  ("pv" .
+   [2 0])
+  ("second" .
+   [12 0 1 0 0 0])
+  ("security_id_bbo_pair" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("bboDataMap" .
+   [1 0 0 1 0 0 0 0 0 0])
+  ("BBODataMap" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("shared_BBO" .
+   [2 0 0 2 0 0 0 0 0 0])
+  ("security_data" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("hs1" .
+   [3 0 0])
+  ("socketNum_" .
+   [0 0 1 0 0 0 0 0 0 0])
+  ("pio_index" .
+   [11 0 0 0 0 0 0 0 0])
+  ("aligned" .
+   [0 0 0 1 0 0 0])
+  ("__attribute__" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("0UL" .
+   [1 0 0])
+  ("PIOData" .
+   [0 0 0 2 0 0 0])
+  ("sessionsPerPio" .
+   [0 0 2 0 1 0 0 0 0 0 0 1 0 0])
+  ("constexpr" .
+   [4 0 0 0 0 0 1 0 0])
+  ("total_volume" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("hs2" .
+   [5 0 0])
+  ("volume_bbo" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("slope" .
+   [9 0 0 0 0])
+  ("fair" .
+   [6 0 0 0])
+  ("DesiredData" .
+   [5 1 6 1 2 0 0 0 0 0 0])
+  ("(int &desired_data, int &bbo, int &additional_margin, int side)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("CalculateSessionOrderVolume" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("result" .
+   [5 0 0 0 0 0])
+  ("WithMaximumQuoteVolume" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("WithQuoteEdgeVolumeFactor" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("margin_dependent_volume" .
+   [0 0 0 3 0 0 4 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("min" .
+   [2 0 0])
+  ("margin_dependend_volume" .
+   [0 0 0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("quote_volume_edge_factor" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("desired_volume" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("quoteEdgeVolumeFactor" .
+   [0 0 1 1 2 3 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("additional_margin" .
+   [4 1 3 2 11 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("Get" .
+   [9 0 0])
+  ("margin" .
+   [8 0 0 0 0 0])
+  ("desired" .
+   [4 0 0 0 0 0 0])
+  ("HQData" .
+   [7 0 1 0 0 0])
+  ("HQDataSingleton" .
+   [2 0 9 13 0 0 0 0 0 0 0 0 0 0 0])
+  ("quoteVolumeEdgeFactor" .
+   [4 0 1 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("maximumQuoteVolume" .
+   [2 0 1 3 2 1 1 1 0 0 0 0 0 0 0 0 0 0])
+  ("price_increment" .
+   [0 0 0 1 2 1 0 0 0 1 0 0 0 0 0])
+  ("negative_price_strings" .
+   [0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GenerateNegativePriceStringsDict" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("currPrice_" .
+   [0 0 1 0 0 0 0 0 0 0])
+  ("send_order" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("start_time" .
+   [4 0 0 0 0 0 0 0 0 0])
+  ("end_time" .
+   [3 0 0 0 0 0 0 0])
+  ("nSocket" .
+   [2 0 0 1 0 0 0])
+  ("message_size" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("prev_message_size" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nsecs_end" .
+   [2 0 0 1 0 0 0 0 0])
+  ("hs_end" .
+   [6 0 0 0 0 0])
+  ("nsecs_begin" .
+   [1 0 0 0 0 1 0 0 0 0 0])
+  ("desiredCenter" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0])
+  ("center" .
+   [1 0 0 0 0 0])
+  ("usleep" .
+   [2 0 0 0 0 0])
+  ("es" .
+   [4 0])
+  ("bid" .
+   [6 0 0])
+  ("ask" .
+   [9 0 0])
+  ("order_side" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("volume" .
+   [13 0 0 0 0 0])
+  ("ceil" .
+   [1 0 0 0])
+  ("splitVolumePerSession" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("addr" .
+   [2 0 0 0])
+  ("interface" .
+   [1 0 0 0 0 0 0 0 0])
+  ("settings" .
+   [4 0 0 0 0 1 0 0])
+  ("Init" .
+   [2 0 0 0])
+  ("OptionsMarketDataDecoderT" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("UnderlyingMarketDataDecoderT" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ExchangeTradingInterfaceT" .
+   [0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("endif" .
+   [0 0 0 1 0])
+  ("RECEIVE_H" .
+   [0 0 0 2 0 0 0 0 0])
+  ("(uint8_t session)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("SenderSubId" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("CreateOrderMsgs" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kOrderMsgs" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("t" .
+   [20])
+  ("MarketDataSingleton" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("warm_up_order" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("req" .
+   [0 0 1])
+  ("(int, double)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("yn" .
+   [0 1])
+  ("logon" .
+   [2 0 0 0 0])
+  ("ETI_SESSIONS" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("BuildLoggout" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("pio_" .
+   [1 0 0 0])
+  ("int32_t" .
+   [14 0 0 0 0 0 0])
+  ("oss_fix_body" .
+   [1 0 0 0 1 0 0 1 0 0 0 0])
+  ("session" .
+   [36 0 0 0 2 0 0])
+  ("request" .
+   [10 0 0 0 0 0 1])
+  ("subId" .
+   [1 0 0 0 0])
+  ("reply" .
+   [8 0 0 0 1])
+  ("recv_size" .
+   [5 0 0 1 4 0 0 0 0])
+  ("r_buf" .
+   [19 1 0 0 0])
+  ("uint8_t" .
+   [2 1 4 26 9 0 0])
+  ("ETI" .
+   [24 0 0])
+  ("eurex/EurexTradingInterface.h" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("NewOrderComplexRequestT" .
+   [1 0 0 3 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("NewMultiLegOrder" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Encode" .
+   [12 0 0 0 0 0])
+  ("uint32_t" .
+   [6 0 5 12 7 0 0 0])
+  ("OnUnderlyingMove" .
+   [0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("O" .
+   [3])
+  ("on_underlying_move" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("onUnderlyingMove" .
+   [2 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("bool" .
+   [5 0 0 1])
+  ("tm_min" .
+   [3 0 0 0 0 0])
+  ("order_msg_body_str" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetMessageSize" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("GetMergeSize" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("(" .
+   [17])
+  ("order_msg" .
+   [4 0 0 0 0 0 0 0 0])
+  ("noexcept" .
+   [0 0 15 17 4 1 0 0])
+  ("NewOrder" .
+   [7 0 0 6 1 0 0 0])
+  ("kTransactionTime" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("check_sum_pos" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("sum" .
+   [2 0 0])
+  ("GetMessageProd" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("exp4" .
+   [2 0 0 0])
+  ("msg_seq_num" .
+   [2 0 0 1 0 0 0 0 0 0 0])
+  ("ClOrdID" .
+   [1 1 1 2 0 0 0])
+  ("quantity" .
+   [6 0 2 1 0 0 0 0])
+  ("Price" .
+   [3 0 0 0 0])
+  ("buffer" .
+   [18 0 0 0 0 0])
+  ("side" .
+   [21 0 0 0])
+  ("HedgePrice" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("timestamp" .
+   [11 0 0 1 0 1 0 0 0])
+  ("meTimestamp" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("cmake-ide-flags-c++" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("imr_multiaddr" .
    [0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("cmake-ide-flags-c++" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("underlying" .
+   [0 0 1 0 0 0 0 0 1 0])
+  ("IsLast" .
+   [0 0 1 0 0 0])
+  ("mmPluginInstrumentIds_" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetName" .
+   [1 0 0 0 0 0 0])
+  ("require" .
+   [1 0 0 0 0 1 0])
+  ("m_userPreferencesStream" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("a" .
+   [24])
+  ("A" .
+   [9])
+  ("(basic_ostream<_CharT, _Traits> &__os)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("it" .
+   [6 0])
+  ("CXX" .
+   [1 0 0])
+  ("d" .
+   [30])
+  ("optional" .
+   [1 0 0 0 1 1 0 0])
+  ("boost/optional.hpp" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("s" .
+   [29])
+  ("f2" .
+   [1 0])
+  ("(const slot_type &slot)" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(const " .
+   [0 0 0 0 0 0 3])
+  ("f1" .
+   [1 0])
+  ("connect" .
+   [1 0 0 0 2 0 0])
+  ("signal" .
+   [1 0 0 0 0 0])
+  ("signals2" .
+   [0 0 0 0 0 0 0 1])
+  ("boost" .
+   [4 0 0 0 0])
+  ("main" .
+   [20 0 0 0])
+  ("include" .
+   [0 0 0 0 1 1 0])
+  ("boost/signals2.hpp" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("endl" .
+   [50 0 0 1])
+  ("val" .
+   [7 0 0])
+  ("cout" .
+   [98 0 1 0])
+  ("1" .
+   [2])
+  ("setenv" .
+   [1 0 0 0 0 0])
+  ("/opt/tbricks/sdk" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("()" .
+   [0 30])
+  ("capacity" .
+   [1 0 0 0 0 0 0 0])
+  ("sche" .
+   [1 0 0 0])
+  ("m_tableParametterFeeSchedulesOld" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("m_tableParametterFeeSchedules" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("schedules" .
+   [2 0 0 0 0 0 0 0 0])
+  ("AssignedSchedules" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("VenueMicCurrencyKeyType" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetParameters" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("test_str" .
+   [2 0 0 0 3 0 0 0])
+  ("resize" .
+   [1 0 0 0 1 0])
+  ("(size_type __n, char __c)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("(size_type __n" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("instruments" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("std" .
+   [418 0 0])
+  ("vector" .
+   [21 0 0 0 1 0])
+  ("auto-complete" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("size_t" .
+   [26 0 0 0 0 0])
+  ("value" .
+   [50 0 0 0 0])
+  ("i" .
+   [74])
+  ("T" .
+   [9])
+  ("last" .
+   [6 0 0 0])
+  ("first" .
+   [20 1 0 0 1])
+  ("min_element" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("func" .
+   [6 0 0 0])
+  ("p" .
+   [6])
+  ("pair" .
+   [5 0 0 0])
+  ("make_pair" .
+   [2 0 0 0 0 0 0 0 0])
+  ("b" .
+   [3])
+  ("a2" .
+   [3 0])
+  ("a1" .
+   [4 0])
+  ("m_stream" .
+   [0 0 0 1 0 0 0 0])
+  ("m_streamManager" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("m_serializedData" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("GetParameter" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("(const tbricks::StrategyParameters &parameters)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("m_expandedParentGroups" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("map" .
+   [9 1 0])
+  ("mmPluginInstrumentGroups_" .
+   [0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetUuid" .
+   [1 0 0 0 0 0 0])
+  ("instrumentStream_" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("clearParametersPlugin" .
+   [1 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("clearParametersPlugin_" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("SetName" .
+   [1 0 0 0 0 0 0])
+  ("(const tbricks::String &a_name)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("MessageHeaderOut" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("unordered_map" .
+   [1 0 2 2 0 0 0 0 0 0 0 0 0])
+  ("m" .
+   [13])
+  ("u_map" .
+   [0 0 0 1 0])
+  ("set" .
+   [8 0 0])
+  ("rtags-find-references" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("unsigned_to_decimal" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("msg" .
+   [26 0 0])
+  ("sleep" .
+   [11 0 0 0 0])
+  ("exp5" .
+   [1 0 0 1])
+  ("uint64_" .
+   [0 0 0 0 1 0 0])
+  ("symbol" .
+   [4 0 0 0 0 0])
+  ("printf" .
+   [1 0 0 0 0 0])
+  ("msg_seq_number" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetMessageFast" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("buffer1" .
+   [6 0 0 0 0 0 0])
+  ("length1" .
+   [2 0 0 0 0 0 0])
+  ("buffer2" .
+   [4 0 0 0 0 0 0])
+  ("verify" .
+   [1 0 0 0 0 0])
+  ("string" .
+   [127 0 0 0 0 0])
+  ("length2" .
+   [1 0 0 0 0 0 0])
+  ("length" .
+   [4 0 0 0 0 0])
+  ("uint" .
+   [2 0 0 0])
+  ("p_first" .
+   [1 0 0 0 0 0 0])
+  ("order_msg_body_fmt_map" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("send" .
+   [7 0 0 0])
+  ("msg_size" .
+   [6 0 0 0 0 0 0 0])
+  ("GetMessage" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("memcpy" .
+   [1 0 0 0 0 0])
+  ("FIX" .
+   [29 0 0])
+  ("order_msg_body" .
+   [1 0 2 0 0 2 0 0 0 0 0 0 0 0])
+  ("c_str" .
+   [5 0 4 0 0])
+  ("msg_buffer" .
+   [24 0 1 0 0 0 1 0 1 0])
+  ("GetFixedMessage" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("(uint64_t msg_seq_number, char *msg_buffer)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("size" .
+   [19 0 0 0])
+  ("kBodyLength" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("fmt_oss" .
+   [3 0 0 0 0 0 0])
+  ("setfill" .
+   [1 0 0 0 0 0 0])
+  ("fixed" .
+   [1 0 0 0 0])
+  ("setw" .
+   [3 0 0 0])
+  ("GetMessageOld" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("LOG" .
+   [108 0 0])
+  ("equal" .
+   [0 0 1 0 0])
+  ("(_II" .
+   [0 0 0 1])
+  ("msg_size_old" .
+   [1 0 0 0 0 0 1 0 0 0 0 0])
+  ("cache" .
+   [3 0 0 0 0])
+  ("index" .
+   [16 0 0 0 0])
+  ("same" .
+   [1 0 0 0])
+  ("uint64_t" .
+   [9 0 7 9 3 0 1 0])
+  ("sw_timestamp" .
+   [0 0 0 0 0 1 1 0 0 0 0 0])
+  ("sw_timestamp_before" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("size_of_order" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kSOH" .
+   [16 0 1 1])
+  ("kCheckSumTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("order" .
+   [6 0 0 0 0])
+  ("cached" .
+   [1 0 0 0 0 0])
+  ("array" .
+   [5 0 0 0 0])
+  ("OrderQty" .
+   [2 1 0 0 0 1 0 0])
+  ("st" .
+   [2 0])
+  ("h" .
+   [13])
+  ("Heartbeat" .
+   [5 0 0 1 3 0 0 0 0])
+  ("HeartbeatT" .
+   [1 0 3 0 0 0 0 1 0 0])
+  ("message" .
+   [15 0 0 0 0 0 0])
+  ("MsgTypeT" .
+   [1 0 0 0 0 0 0 0])
+  ("message_type" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("QuoteActivationRequestT" .
+   [0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetMultiLegOrderMessageSize" .
+   [0 0 0 0 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetQuoteActivationMessageSize" .
+   [0 0 0 0 0 2 1 1 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("offsetof" .
+   [2 0 0 0 0 0 0 0])
+  ("MarketSegmentID" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 1 0 0])
+  ("QuoteActivation" .
+   [2 0 0 1 0 1 1 0 0 0 0 0 0 0 0])
+  ("GetHeartBeatMessageSize" .
+   [0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("sequenceNum" .
+   [2 1 8 2 0 0 0 0 0 0 0])
+  ("quoteActivation" .
+   [2 0 0 0 0 1 0 0 0 1 0 0 0 0 0])
+  ("reinterpret_cast" .
+   [0 0 1 0 4 0 1 0 1 0 1 0 0 0 0 0])
+  ("N" .
+   [1])
+  ("pStart" .
+   [0 0 2 0 0 0])
+  ("headerLength" .
+   [0 1 1 0 0 0 0 1 0 0 0 0])
+  ("GetOrderMessageSize" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("pio" .
+   [5 0 0])
+  ("efpio" .
+   [1 0 0 0 0])
+  ("pio_buffer" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("offset" .
+   [1 0 0 0 0 0])
+  ("ao_swap" .
+   [1 0 0 0 0 0 0])
+  ("temp" .
+   [1 0 0 0])
+  ("j" .
+   [12])
+  ("reply_inner" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("ao_memcpy" .
+   [0 0 1 0 0 0 0 0 0])
+  ("body_buffer_" .
+   [0 0 0 2 1 0 0 0 0 0 0 0])
+  ("body_length" .
+   [0 0 0 0 2 0 0 0 0 0 0])
+  ("body_str" .
+   [1 0 0 0 0 0 0 0])
+  ("namespace" .
+   [0 0 0 1 2 0 0 0 0])
+  ("log_str" .
+   [0 0 0 0 1 0 0])
+  ("log_buff" .
+   [1 0 0 0 0 0 0 0])
+  ("kSenderSubIDTag" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("num_of_sessions" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0])
+  ("order_msg_body_map" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("order_msg_bodys" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("push_back" .
+   [3 0 3 0 0 0 0 0 0])
+  ("heart_beat_msg_body_map" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("msg_header" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("order_msgs" .
+   [5 0 0 0 0 0 0 0 0 0])
+  ("create_order_msgs" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("pioPerThread" .
+   [0 0 0 5 2 0 2 0 0 0 0 0])
+  ("c" .
+   [10])
+  ("thread_num" .
+   [1 0 0 0 1 0 0 0 0 0])
+  ("pio_per_thread" .
+   [0 0 0 0 0 3 0 1 0 0 0 0 0 0])
+  ("pio_num" .
+   [1 0 0 0 0 0 0])
+  ("session_num" .
+   [0 0 0 0 0 0 0 1 0 0 0])
+  ("pioIndex" .
+   [3 0 0 0 1 0 0 0])
+  ("front" .
+   [4 0 0 0 0])
+  ("oss" .
+   [4 0 0])
+  ("str" .
+   [18 0 0])
+  ("cerr" .
+   [2 0 0 0])
+  ("thread" .
+   [7 0 0 0 0 0])
+  ("nThread" .
+   [0 0 1 0 0 0 0])
+  ("reinterpret_c" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("ICE" .
+   [8 0 0])
+  ("find_pos" .
+   [1 0 0 0 0 0 0 0])
+  ("Formatter" .
+   [0 0 1 0 1 1 0 0 0])
+  ("start" .
+   [1 0 0 0 0])
+  ("end" .
+   [12 0 0])
+  ("end_of_data" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("start_of_data" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ProcessReply" .
+   [0 0 0 1 0 0 0 1 0 0 0 0])
+  ("startData" .
+   [0 0 0 0 0 1 0 0 0])
+  ("incoming" .
+   [1 0 0 0 1 0 0 0])
+  ("endData" .
+   [1 0 0 0 0 0 0])
+  ("received_messages" .
+   [0 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("clientOrderId_" .
+   [0 0 0 2 1 0 0 0 0 0 0 0 0 0])
+  ("client_order_id" .
+   [0 0 0 1 0 0 1 1 0 0 0 0 0 0 0])
+  ("start_iter" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("Push" .
+   [0 0 0 1])
+  ("ExecutionReportFill" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Strategy" .
+   [0 0 0 0 0 0 0 1])
+  ("in" .
+   [40 0])
+  ("strategySecurityId_" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("strategy_security_id" .
+   [1 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fillQty_" .
+   [0 0 0 0 0 1 0 0])
+  ("fill_qty" .
+   [0 0 0 0 0 1 0 0])
+  ("fillPrice_" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("fill_price" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("side_" .
+   [10 0 0 0 0])
+  ("Side" .
+   [7 0 0 0])
+  ("securityId_" .
+   [0 0 0 1 1 1 0 0 0 0 0])
+  ("security_id" .
+   [4 0 0 0 3 2 0 0 0 0 0])
+  ("SecurityID" .
+   [1 0 3 1 1 0 0 0 0 0])
+  ("InstrmntLegExecGrpSeqT" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("LegSide" .
+   [1 0 0 0 0 0 0])
+  ("QuoteActivationResponse" .
+   [0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Reject" .
+   [1 0 0 0 0 0])
+  ("Message" .
+   [5 0 0 0 0 0 0])
+  ("UnprocessedMessage" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("advance" .
+   [2 0 0 0 0 0 0])
+  ("send_bytes" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("(int __n)" .
+   [0 0 0 0 0 0 0 0 1])
+  ("sendMessage" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("TraderLogout" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("isComboTradedLeg_" .
+   [2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("is_combo_traded_leg" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("execution_report_fill" .
+   [2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("is" .
+   [4 0])
+  ("isOrder" .
+   [0 0 0 1 0 0 0])
+  ("send_flags" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("o" .
+   [9])
+  ("SimpleSecurityID" .
+   [2 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mlOrder" .
+   [0 0 0 1 0 0 0])
+  ("int64_t" .
+   [6 0 0 0 0 0 0])
+  ("get_strategy_security_id" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ThreadFuncT" .
+   [3 0 0 0 0 0 0 0 0 0 1])
+  ("thread_func" .
+   [5 0 0 0 0 0 0 0 0 0 0])
+  ("Threads" .
+   [0 0 0 0 0 0 1])
+  ("GetBBO" .
+   [1 0 0 0 0 0])
+  ("multiplierByGranularity" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("G" .
+   [1])
+  ("traded_price" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("levels" .
+   [2 0 0 0 0 0])
+  ("startPrice" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("CenterOnTrade" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("strtoul" .
+   [1 0 0 0 1 0 0])
+  ("kMsgSeqNumTag" .
+   [2 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("zmqMsg" .
+   [0 0 0 0 1 0])
+  ("time_after" .
+   [3 0 1 0 0 0 0 1 0 0])
+  ("time_before" .
+   [3 0 1 0 0 0 1 0 0 0 0])
+  ("reserve" .
+   [2 0 0 0 0 0 0])
+  ("incoming_messages" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("IncomingMessage" .
+   [0 0 0 0 2 0 0 1 0 0 0 0 0 0 0])
+  ("incomingMessages_" .
+   [0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0])
+  ("DelegatedSendBase" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("msg_type" .
+   [5 0 0 0 0 0 0 0])
+  ("config_file_name" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0])
+  ("price_strings" .
+   [2 0 0 0 1 1 0 0 0 0 0 0 0])
+  ("GeneratePriceStringsDict" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(int size)" .
+   [0 0 0 0 0 0 0 0 0 2])
+  ("begin" .
+   [7 0 0 0 0])
+  ("price_string" .
+   [0 1 0 0 0 0 0 0 0 0 0 0])
+  ("Precision" .
+   [1 0 0 1 0 0 0 0 0])
+  ("precision_" .
+   [1 0 0 3 0 0 0 0 0 0])
+  ("negative_price_string" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("MultiPlier" .
+   [0 0 0 2 0 0 0 0 0 0])
+  ("Granularity" .
+   [0 0 0 0 1 1 0 0 0 0 0])
+  ("priceIncrement_" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("bbo" .
+   [20 0 0])
+  ("qty" .
+   [7 0 0])
+  ("CalculateOrderVolume" .
+   [2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("dd" .
+   [8 0])
+  ("CalculateOrderQty" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("desired_data" .
+   [3 0 5 0 3 0 1 0 0 0 0 0])
+  ("MarginDependentVolume" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("factor" .
+   [6 0 0 0 0 0])
+  ("macro.h" .
+   [4 1 0 0 0 0 0])
+  ("user" .
+   [5 0 0 0])
+  ("deltaU" .
+   [4 0 0 1 1 0])
+  ("GetMaxUnderlyingDeviation" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("multiplier" .
+   [0 0 1 4 0 0 0 0 0 0])
+  ("quoteEdgeVolumeFactorOnSpread" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("IsDax" .
+   [0 0 1 0 0])
+  ("Clear" .
+   [5 0 0 0 0])
+  ("tru" .
+   [1 0 0])
+  ("n" .
+   [3])
+  ("Set" .
+   [2 0 0])
+  ("sendOrders" .
+   [1 0 0 1 0 1 0 0 0 0])
+  ("BBOData" .
+   [7 1 4 2 0 0 0])
+  ("SessionOrderVolume" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ETISessionInfo" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("id_num" .
+   [7 0 0 0 1 0])
+  ("ExtractIdNum" .
+   [3 0 0 0 0 0 0 0 0 0 0 0])
+  ("startPIO" .
+   [0 0 0 0 0 0 1 0])
+  ("ostream" .
+   [2 0 0 0 0 0 0])
+  ("os" .
+   [5 0])
+  ("ostringstream" .
+   [1 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("LogTime" .
+   [2 0 0 0 0 0 0])
+  ("GetAsk" .
+   [1 0 0 0 0 0])
+  ("GetBidVolume" .
+   [3 0 0 0 0 0 1 0 0 0 0 0])
+  ("GetBid" .
+   [1 0 0 0 0 0])
+  ("decltype" .
+   [0 0 0 0 1 0 0 0])
+  ("PriceLevelMessage" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("int32" .
+   [0 0 1 0 0])
+  ("activeTrades" .
+   [1 0 0 0 0 0 1 0 0 0 0 0])
+  ("local_BBO" .
+   [2 0 0 0 0 0 2 0 0])
+  ("is_opp" .
+   [5 0 0 0 0 0])
+  ("active_hqdata" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("UpdateEmptyBBOs" .
+   [2 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("inactive_hq_data" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("source_hq_data" .
+   [0 0 0 0 1 0 2 0 0 0 0 0 0 0])
+  ("source_bbo_data" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(HQDataSingleton::HQData *" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("dataB" .
+   [1 0 0 0 0])
+  ("dataA" .
+   [1 0 0 0 0])
+  ("src" .
+   [2 0 0])
+  ("fpga" .
+   [1 0 0 0])
+  ("BBO" .
+   [1 0 0])
+  ("CreateNonCriticalThread" .
+   [0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("RiskValidateVolumeLogic" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(const int &desired_data)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("ActivationConfirmation" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Opportunit" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("Opportunity" .
+   [4 0 0 3 0 0 0 0 0 0 0])
+  ("Log" .
+   [3 0 0])
+  ("aggressorTimestamp" .
+   [0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kMaxNanosBetweenOppAndPt" .
+   [2 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("opportunities" .
+   [0 0 0 9 0 0 0 0 0 0 0 0 0])
+  ("pt" .
+   [4 0])
+  ("Logger" .
+   [4 0 0 0 0 0])
+  ("earlier_opp_timestamp" .
+   [0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("opp" .
+   [6 0 0])
+  ("mdTimestamp" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("sfTimestamp" .
+   [1 0 3 0 0 0 0 0 0 0 0])
+  ("pred" .
+   [1 0 0 0])
+  ("match_pt_with_op_pred" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("match_with_pt_pred" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("e" .
+   [7])
+  ("any_of" .
+   [2 0 0 0 0 0])
+  ("adaptor" .
+   [0 0 1 0 0 0 0])
+  ("filtered" .
+   [0 0 0 1 0 0 0 0])
+  ("pt_timestamp" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("last_opp" .
+   [1 0 0 0 0 0 0 0])
+  ("securityId" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("same_security_id_pred" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("pt_outside_max_time_diff" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("recent_opps_pred" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("first_outdated_opp" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("log_functor" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("x" .
+   [7])
+  ("deque" .
+   [2 0 0 0 0])
+  ("max" .
+   [12 0 0])
+  ("kMaxAbsDelta" .
+   [1 0 0 1 0 1 0 0 0 0 0 0])
+  ("kMaxMargin" .
+   [1 0 2 1 0 0 0 0 0 0])
+  ("GetVolume" .
+   [1 0 0 0 0 0 0 0 0])
+  ("(Hidden)" .
+   [0 2 0 0 0 0 0 7])
+  ("instance" .
+   [4 0 0 1 1 0 0 0])
+  ("shootOnBBOChange" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("is_combo" .
+   [1 0 0 0 0 0 0 0])
+  ("shoot_on_bbo_change" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("ProductSummary" .
+   [0 0 1 5 0 0 0 0 0 0 0 0 0 0])
+  ("SnapshotOrder" .
+   [1 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("InstrumentSummary" .
+   [1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("EOBI" .
+   [13 0 0 0])
+  ("TMsgSeqNum" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("MessageBuffer" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("MsgSeqNum" .
+   [2 0 0 1 0 0 0 0 0])
+  ("void" .
+   [1 0 0 0])
+  ("state" .
+   [10 0 0 0 0])
+  ("State" .
+   [10 0 0 0 0])
+  ("int" .
+   [1 0 0])
+  ("lastMsgSeqNumProcessed" .
+   [1 0 1 1 3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("other_seq_num" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("queued_message" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("comp" .
+   [1 0 0 0])
+  ("productSummary" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("stop_multicast_pred" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("messageLength_" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("snapshotCycleRetries" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("false" .
+   [1 0 1 0 0])
+  ("eobiFeeds" .
+   [1 0 0 0 0 0 0 0 0])
+  ("close" .
+   [1 0 0 0 0])
+  ("UnderlyingBBOEmpty" .
+   [0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("bbo_" .
+   [2 0 0 0])
+  ("StopMulticastPred" .
+   [1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("data" .
+   [5 0 0 0])
+  ("thread_name" .
+   [4 0 0 0 0 0 2 0 0 0 0])
+  ("Critical" .
+   [0 0 0 1 0 0 0 0])
+  ("threadFactory" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("ApplSeqNum" .
+   [2 0 0 3 1 0 0 0 0 0])
+  ("numeric_limits" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("TBodyLen" .
+   [1 1 0 0 0 0 0 0])
+  ("TApplSeqNum" .
+   [1 0 0 0 1 0 0 0 0 0 0])
+  ("HostNameToIP" .
+   [0 0 0 0 2 0 0 0 0 0 0 0])
+  ("(const char *hostname)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("HostNamePortPair" .
+   [0 0 0 1 0 1 0 0 2 0 0 0 0 0 0 0])
+  ("hostname_port_pair" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("zmq_addr" .
+   [1 0 0 0 0 0 0 0])
+  ("exporter" .
+   [1 0 0 0 0 0 0 0])
+  ("assert" .
+   [1 0 0 0 0 0])
+  ("kTbricksSocketsPerZmqIOThread" .
+   [1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Gateway" .
+   [1 0 0 0 0 0 0])
+  ("zmqIOThreadPoolSize" .
+   [1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetGW" .
+   [1 0 0 0 0])
+  ("UnderlyingSettings" .
+   [3 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SetMaxUnderlyingDeviation" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetUnderlyingBbo" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("info_" .
+   [1 0 0 0 0])
+  ("risk_volume_delta" .
+   [3 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GetRiskVolumeDelta" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kDefaultQuoteAllowedGrossVolumeOfGroupTradesTimeWindow" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lround" .
+   [2 0 0 0 0 0])
+  ("ms" .
+   [2 0])
+  ("mid" .
+   [2 0 0])
+  ("bboChangeOppTypeEnabled" .
+   [1 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("has_bbo" .
+   [1 0 0 0 0 0 0])
+  ("IsOppTypeEnabled" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("DataPerThread" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("dataPerThread" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("function" .
+   [3 0 0 0 0 0 0 0])
+  ("data_per_thread_list" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("data_per_thread" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("underlyingBbo" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("ClearUnderlyingBBO" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("numa" .
+   [1 0 0 0])
+  ("iostream" .
+   [1 0 0 0 2 0 0 0])
+  ("numa.h" .
+   [1 0 0 0 0 0])
+  ("bitmask" .
+   [1 0 0 0 0 0 0])
+  ("numa_node_to_cpus_compat" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(int node, unsigned long *buffer, int buffer_len)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("cpu_pos" .
+   [6 0 0 1 0 0 0])
+  ("coresList" .
+   [2 0 0 0 0 0 0 0 0])
+  ("CoresList" .
+   [1 0 0 0 0 0 0 0 0])
+  ("core" .
+   [1 0 0 0])
+  ("cpu" .
+   [9 0 0])
+  ("cpus" .
+   [3 0 0 0])
+  ("cpuList" .
+   [1 0 0 0 0 0 0])
+  ("node" .
+   [1 0 0 0])
+  ("CpuListSortedByNode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ull" .
+   [2 0 0])
+  ("to" .
+   [1 0])
+  ("FLD_EXEC_ID" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("execId" .
+   [0 0 0 0 1 1])
+  ("FLD_EXEC_TYPE" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("execType" .
+   [2 0 1 0 0 0 0 0])
+  ("ordStatus" .
+   [1 0 0 0 0 0 0 0 0])
+  ("GetStart" .
+   [1 0 0 0 0 0 0 0])
+  ("template" .
+   [1 0 0 0 0 0 0 0])
+  ("FLD_ORD_STATUS" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("Fill" .
+   [1 0 0 0])
+  ("tag" .
+   [7 0 0])
+  ("zero_if_missing_timestamp" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("timestamp_or_zero" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("date_time" .
+   [1 0 0 0 0 0 0 0 0])
+  ("kTransactTime" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kTimeStampTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("newBid" .
+   [1 0 0 0 0 0])
+  ("newAsk" .
+   [2 0 0 0 0 0])
+  ("time.h" .
+   [1 0 0 0 0 0])
+  ("MeasureTime" .
+   [4 0 2 0 0 0 0 0 0 0 0])
+  ("hs_start" .
+   [3 0 0 0 0 0 0 0])
+  ("c1" .
+   [4 0])
+  ("c2" .
+   [2 0])
+  ("int8_t" .
+   [3 0 0 0 0 0])
+  ("static_cas" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("ValT" .
+   [3 0 0 0])
+  ("PromoteToPrintableIntegerType" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ValueTypeT" .
+   [7 0 0 0 0 0 0 0 0 0])
+  ("Print" .
+   [7 0 0 0 0])
+  ("Printer" .
+   [1 0 0 0 0 0 0])
+  ("Add" .
+   [4 1 0])
+  ("m_fields" .
+   [0 0 0 0 1 0 0 0])
+  ("m_tags" .
+   [1 0 0 0 0 0])
+  ("AddNameValue" .
+   [5 0 0 0 0 0 0 0 0 0 0 0])
+  ("field" .
+   [1 0 0 0 0])
+  ("logCount" .
+   [2 0 0 0 0 0 0 0])
+  ("CanLog" .
+   [1 0 0 0 0 0])
+  ("logEntries" .
+   [2 0 0 0 1 0 0 0 0 0])
+  ("exec_type" .
+   [3 0 0 0 0 0 0 0 0])
+  ("local_time_t" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("TID_PACKETHEADER" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("TTransactTime" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("PacketHeaderT" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("TransactTime" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("MessageHeaderCompT" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("BodyLen" .
+   [1 0 0 0 0 0 0])
+  ("InstrumentSummaryT" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("ProductSummaryT" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("LastMsgSeqNumProcessed" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("WithFair" .
+   [2 0 0 0 0 0 0 0])
+  ("/home/production/fhdns/ice_hiddens" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("exchange" .
+   [3 0 0 0 0 0 0 0])
+  ("msg_body_dict" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("BuildMsg" .
+   [2 0 0 0 0 0 0 0])
+  ("kMsgSeqNum" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("password" .
+   [1 0 0 0 0 0 0 0])
+  ("kTimeStampPreferenceTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kApplicationVendorTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kApplicationVersionTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kApplicationNameTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kHeartBeatIntTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kEncryptMethodTag" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("kRawDataTag" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("kUserNameTag" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("ubiddesireds" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("no" .
+   [1 0])
+  ("DeltaGammaApproximatedDesired" .
+   [0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("BID" .
+   [9 0 0])
+  ("ASK" .
+   [10 1 0])
+  ("configuration.h" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("BBOData.h" .
+   [1 0 0 1 0 0 0 0 0])
+  ("DESIRED_DATA_H" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("DesiredData.h" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("MarketSnapshot" .
+   [4 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("orderID" .
+   [3 0 0 0 0 0 0])
+  ("orderSequenceID" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("isImplied" .
+   [1 0 0 0 0 0 0 0 0])
+  ("isRFQ" .
+   [1 0 0 0 0])
+  ("orderEntryDateTime" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lastMessageSequenceID" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("marketSnaphot" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("totalSnapshotOrders" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("market_snapshot" .
+   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("MessageType" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("messageBlock_" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("market_snapshot_order" .
+   [0 0 1 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("iMpact_messages" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("num" .
+   [1 0 0])
+  ("MessageBlock" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("MessageHeader" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SecurityId" .
+   [2 0 0 2 6 2 0 0 0 0])
+  ("numOfBookEntries" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("OrderDelete" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("message_block" .
+   [8 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("MessageBlockHeader" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("number_of_messages" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SkipMessageBlock" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("User" .
+   [1 0 0 0])
+  ("userInfo" .
+   [2 0 0 0 0 0 0 0])
+  ("empty" .
+   [1 0 0 0 0])
+  ("sessions" .
+   [3 0 0 0 0 0 0 0])
+  ("GetUserId" .
+   [0 0 0 0 0 0 0 1 0])
+  ("FindUserId" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("SendMessage" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("messages" .
+   [1 0 0 0 0 0 0 0])
+  ("P" .
+   [3])
+  ("messages_" .
+   [2 0 0 0 0 0 0 0 0])
+  ("payload" .
+   [3 0 0 0 0 0 0])
+  ("C" .
+   [1])
+  ("QuoteActivationCache" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("FetchMessage" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("ScheduleQuoteActivation" .
+   [1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("scheduleActivate_" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("timestamp_" .
+   [2 0 0 0 1 0 0 0 0 0])
+  ("payload_" .
+   [5 0 0 0 0 0 0 0])
+  ("Apply" .
+   [1 0 0 0 0])
+  ("Process" .
+   [1 0 0 0 0 0 0])
+  ("my-ac-cc-mode-setup" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete-clang-async" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("json" .
+   [7 0 0 0])
+  ("get" .
+   [3 0 0])
+  ("JsonT" .
+   [0 0 0 0 1])
+  ("columns" .
+   [0 0 0 0 1 0 0])
+  ("columns_index_map" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("at" .
+   [2 0])
+  ("MarFixApplication" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("inc" .
+   [1 0 0])
+  ("ExchangeSettings" .
+   [1 0 3 0 2 1 0 0 0 0 0 0 0 0 0 0])
+  ("MIC" .
+   [6 0 0])
+  ("EncodedIdentifiers" .
+   [0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("exchangeSettings_" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Prefix" .
+   [0 0 0 1 0 0])
+  ("name_" .
+   [4 0 0 0 0])
+  ("MIC_" .
+   [3 0 0 0])
+  ("prefix_" .
+   [1 0 0 0 0 0 0])
+  ("prefix" .
+   [2 0 0 0 0 0])
+  ("encodedIdentifiers_" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("encoded_identifiers" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("dbName_" .
+   [2 0 1 2 0 0 0])
+  ("DataBaseSettings" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0])
+  ("dbHostName_" .
+   [0 0 1 1 0 0 0 0 0 0 0])
+  ("host_name" .
+   [0 0 1 0 0 0 0 0 0])
+  ("dbHostPort_" .
+   [0 0 2 0 0 0 0 0 0 0 0])
+  ("host_port" .
+   [0 0 0 0 1 0 0 0 0])
+  ("return" .
+   [0 0 0 0 1 0])
+  ("db_settings" .
+   [0 0 0 0 1 1 0 0 0 0 0])
+  ("parse" .
+   [3 0 0 0 0])
+  ("databases_json" .
+   [0 0 2 1 0 0 1 0 0 0 0 0 0 0])
+  ("query_values" .
+   [3 0 3 0 1 0 0 0 0 0 0 0])
+  ("db_name" .
+   [14 0 1 0 0 1 0])
+  ("db_present" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("elem" .
+   [1 0 0 0])
+  ("hpp" .
+   [2 0 0])
+  ("query" .
+   [13 0 0 0 0])
+  ("socket_" .
+   [3 0 0 0 0 0 0])
+  ("experimental" .
+   [0 0 0 0 0 1 1 0 0 0 0 0])
+  ("query_result" .
+   [2 0 0 0 0 0 0 0 1 0 0 0])
+  ("QueryDB" .
+   [2 0 0 0 2 0 0])
+  ("pollitem_t" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("rapidjson" .
+   [0 0 0 1 0 0 0 0 0])
+  ("SetDatabaseAsDefault" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("time.hpp" .
+   [1 0 0 0 0 0 0 0])
+  ("now" .
+   [2 0 0])
+  ("time_t" .
+   [1 0 0 0 0 0])
+  ("QueryNewOrdersPerExchange" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("time_" .
+   [1 0 0 1 0])
+  ("correlationTime_" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("correlation_time" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("session_" .
+   [0 0 0 0 1 0 0 0])
+  ("GetInt64" .
+   [0 0 0 1 1 0 0 0])
+  ("GetInt" .
+   [2 0 0 2 0 0])
+  ("new_orders" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("exec_resp_cancel" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("exec_resp_fill" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ord_status" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("new_order" .
+   [5 0 0 0 0 0 0 0 0])
+  ("cl_ord_id_pair" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("receptionTime_" .
+   [0 0 0 1 2 0 0 0 0 0 0 0 0 0])
+  ("reception_time" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("GetMessageTime" .
+   [0 0 0 1 0 0 0 1 0 0 0 0 0 0])
+  ("ascii_char_array" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("db_data" .
+   [2 0 1 0 0 0 0])
+  ("ISIN" .
+   [2 0 0 0])
+  ("ExchageSymbol" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("security_id_source" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SecurityIdSource" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("SecurityIdSourceEnum" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 2 0 0])
+  ("EXECID" .
+   [0 0 0 1 0 0])
+  ("GetUint64" .
+   [0 0 0 0 0 1 0 0 0])
+  ("static_cast" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("GetProductInfo" .
+   [0 0 0 0 0 3 0 0 0 0 0 0 0 0])
+  ("product_" .
+   [4 0 0 0 0 0 0 0])
+  ("productInfo_" .
+   [0 0 0 0 1 1 0 0 0 0 0 0])
+  ("product" .
+   [6 0 0 0 0 0 0])
+  ("product_info" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("productInfo" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("productInfos" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("AddStringField" .
+   [0 0 0 0 0 0 0 1 1 0 0 0 0 0])
+  ("is_arithmetic" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("enable_if_t" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("make_optional" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nullopt" .
+   [1 0 0 0 0 0 0])
+  ("instrument_name" .
+   [2 0 0 0 0 0 1 1 0 0 0 0 0 0 0])))

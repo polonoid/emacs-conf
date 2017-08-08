@@ -1,4 +1,4 @@
-36402
+36404
 50
 Emacs tutorial.  See end for copying conditions.
 
@@ -882,7 +882,7 @@ If you are in the middle of a search and type a control or meta
 character (with a few exceptions--characters that are special in a
 search, such as C-s and C-r), the search is terminated.
 
-C-s starts a search that looks for any occurrence of the search string
+C-s starts a search that looks for any occurrence of PEthe search string
 AFTER the current cursor position.  If you want to search for
 something earlier in the text, type C-r instead.  Everything that we
 have said about C-s also applies to C-r, except that the direction of
